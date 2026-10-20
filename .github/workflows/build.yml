@@ -1,3 +1,4 @@
+# Requiere Settings → Pages → Source: «GitHub Actions» (no «Deploy from a branch»).
 name: Actualizar y publicar
 
 on:
