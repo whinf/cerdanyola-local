@@ -1,0 +1,30 @@
+{
+ "data": [
+  {
+   "lines": [
+    "R8"
+   ],
+   "text": {
+    "es": "Circulació ferroviària a tot el recorregut."
+   }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "Per causes alienes a Rodalies no es pot garantir la prestació del servei. Demanem disculpes als nostres usuaris i recomanem que utilitzin mitjans de transport alternatius."
+   }
+  },
+  {
+   "lines": [
+    "R8"
+   ],
+   "text": {
+    "es": "Servei alternatiu per carretera en tot el seu recorregut."
+   }
+  }
+ ],
+ "fetched": "2026-10-20T18:23:26+02:00"
+}

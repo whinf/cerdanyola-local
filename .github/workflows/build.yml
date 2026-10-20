@@ -1,0 +1,59 @@
+name: Actualizar y publicar
+
+on:
+  schedule:
+    - cron: "17 5,11,15,19 * * *"  # cuatro veces al día (tiempo, agenda, aire, trenes)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["src/**", "static/**", "config.json", ".github/workflows/build.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Tests
+        run: python3 -m unittest discover tests
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Descargar datos y generar la web
+        run: python3 src/build.py --site-url "${{ steps.pages.outputs.base_url }}"
+
+      - name: Guardar los datos nuevos en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Datos $(TZ=Europe/Madrid date +'%Y-%m-%d %H:%M')"
+            git pull --rebase --quiet
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      # Si una fuente lleva 3 días sin responder, este paso falla y GitHub te envía un email.
+      - name: Comprobar las fuentes de datos
+        run: python3 src/build.py --check

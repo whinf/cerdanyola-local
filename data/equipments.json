@@ -1,0 +1,2245 @@
+{
+ "data": [
+  {
+   "address": "Pl. Francesc Layret",
+   "cat": "Administració pública",
+   "cp": "08290",
+   "lat": "41.4913612",
+   "lon": "2.1407842",
+   "name": "Ajuntament de Cerdanyola del Vallès",
+   "phone": "93-5808888",
+   "sub": "Ens locals"
+  },
+  {
+   "address": "Plaça Maragall",
+   "cat": "Administració pública",
+   "cp": "08193",
+   "lat": "41.56440107",
+   "lon": "2.01331119",
+   "name": "Entitat Municipal Descentralitzada de Bellaterra",
+   "phone": "935181830",
+   "sub": "Ens locals"
+  },
+  {
+   "address": "C Francesc Layret s/n",
+   "cat": "Comerç. Consum",
+   "cp": "08290",
+   "lat": "41.491957222",
+   "lon": "2.141558075",
+   "name": "Oficina Municipal d'Informació al Consumidor de Cerdanyola del Vallès",
+   "phone": "935808888",
+   "sub": "Servei públic de Consum"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.486206821",
+   "lon": "2.144835288",
+   "name": "ARXIU CENTRAL DELS JUTJATS DE CERDANYOLA DEL VALLÈS",
+   "phone": "935516739",
+   "sub": "Arxius"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.5034426",
+   "lon": "2.1056996",
+   "name": "ARXIU GENERAL I REGISTRE DE LA UNIVERSITAT AUTÒNOMA DE BARCELONA",
+   "phone": "935812027",
+   "sub": "Arxius"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.491961977",
+   "lon": "2.142066999",
+   "name": "ARXIU MUNICIPAL DE CERDANYOLA DEL VALLÈS",
+   "phone": "935808888",
+   "sub": "Arxius"
+  },
+  {
+   "address": "Plaça d'Enric Granados, 1",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.493010121",
+   "lon": "2.1424771",
+   "name": "BIBLIOTECA CENTRAL DE CERDANYOLA",
+   "phone": "935807602",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.503409334",
+   "lon": "2.105726275",
+   "name": "CENTRE DE DOCUMENTACIÓ EUROPEA. UNIVERSITAT AUTÒNOMA DE BARCELONA",
+   "phone": "935811681",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "Carretera d'Horta, Km. 2",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.472990790715",
+   "lon": "2.12638461577469",
+   "name": "CENTRE DE DOCUMENTACIÓ I RECURSOS EDUCATIUS DEL PARC NATURAL DE LA SERRA DE COLLSEROLA",
+   "phone": "932803552",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.502915451",
+   "lon": "2.104762549",
+   "name": "CSIC. INSTITUT DE CIÈNCIA DE MATERIALS DE BARCELONA. BIBLIOTECA MANUEL CARDONA",
+   "phone": "935801853",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.502915451",
+   "lon": "2.104762549",
+   "name": "CSIC. INSTITUT DE MICROELECTRÒNICA DE BARCELONA. BIBLIOTECA",
+   "phone": "935947700",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.504334128",
+   "lon": "2.106504375",
+   "name": "UNIVERSITAT AUTÒNOMA DE BARCELONA. BIBLIOTECA D'HUMANITATS",
+   "phone": "935812992",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.500383403",
+   "lon": "2.108116214",
+   "name": "UNIVERSITAT AUTÒNOMA DE BARCELONA. BIBLIOTECA DE CIÈNCIA I TECNOLOGIA",
+   "phone": "935811906",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.502275652",
+   "lon": "2.105885641",
+   "name": "UNIVERSITAT AUTÒNOMA DE BARCELONA. BIBLIOTECA DE CIÈNCIES SOCIALS",
+   "phone": "935811801",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.50129972",
+   "lon": "2.103167284",
+   "name": "UNIVERSITAT AUTÒNOMA DE BARCELONA. BIBLIOTECA DE COMUNICACIÓ I HEMEROTECA GENERAL",
+   "phone": "935814004",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.497837444",
+   "lon": "2.105036099",
+   "name": "UNIVERSITAT AUTÒNOMA DE BARCELONA. BIBLIOTECA DE MEDICINA",
+   "phone": "935811918",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.503960523",
+   "lon": "2.097870522",
+   "name": "UNIVERSITAT AUTÒNOMA DE BARCELONA. BIBLIOTECA DE VETERINÀRIA",
+   "phone": "935811549",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.504379625",
+   "lon": "2.106563659",
+   "name": "UNIVERSITAT AUTÒNOMA DE BARCELONA. CARTOTECA GENERAL",
+   "phone": "935812045",
+   "sub": "Biblioteques"
+  },
+  {
+   "address": "Plaça Sant Medir, s/n",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.4910257",
+   "lon": "2.1349354",
+   "name": "CENTRE CIVIC BAMUS-BONASORT",
+   "phone": "935808888",
+   "sub": "Centres culturals: ateneus, centres cívics i cases de cultura"
+  },
+  {
+   "address": "Plaça Maragall, s/n",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.419753",
+   "lon": "2.1812546",
+   "name": "CENTRE CIVIC BELLATERRA",
+   "phone": "935808888",
+   "sub": "Centres culturals: ateneus, centres cívics i cases de cultura"
+  },
+  {
+   "address": "Carrer Mare De Déu De Les Dolors, 17-19",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.4922292",
+   "lon": "2.1325287",
+   "name": "CENTRE CIVIC MONTFLORIT",
+   "phone": "935808888",
+   "sub": "Centres culturals: ateneus, centres cívics i cases de cultura"
+  },
+  {
+   "address": "Plaça Universal, 1-2",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.4972245",
+   "lon": "2.1258083",
+   "name": "CENTRE CIVIC SERRAPARERA",
+   "phone": "935808888",
+   "sub": "Centres culturals: ateneus, centres cívics i cases de cultura"
+  },
+  {
+   "address": "Plaça d'Enric Granados, 1",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.4926898",
+   "lon": "2.1420704",
+   "name": "ESPAI ENRIC GRANADOS",
+   "phone": "936923322",
+   "sub": "Espais d'arts visuals"
+  },
+  {
+   "address": "Carrer Indústria, 38",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.4883453",
+   "lon": "2.1409509",
+   "name": "TEATRE ATENEU DE CERDANYOLA DEL VALLÈS",
+   "phone": "935914133",
+   "sub": "Espais escènics i musicals"
+  },
+  {
+   "address": "Edifici d'Estudiants De La Plaça Cívica, s/n",
+   "cat": "Cultura",
+   "cp": "08193",
+   "lat": "41.5021421",
+   "lon": "2.1038536",
+   "name": "TEATRE DE LA UAB",
+   "phone": "935812449",
+   "sub": "Espais escènics i musicals"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.4910512",
+   "lon": "2.1390614",
+   "name": "MUSEU D'ART DE CERDANYOLA - CAN DOMÈNECH",
+   "phone": "935914130-672036194",
+   "sub": "Museus, col·leccions i centres d'interpretació"
+  },
+  {
+   "address": "NA",
+   "cat": "Cultura",
+   "cp": "08290",
+   "lat": "41.4808212",
+   "lon": "2.1339471",
+   "name": "MUSEU I POBLAT IBÈRIC DE CA N'OLIVER. MUSEU D'HISTÒRIA DE CERDANYOLA",
+   "phone": "936923322-935804500",
+   "sub": "Museus, col·leccions i centres d'interpretació"
+  },
+  {
+   "address": "c. Salcillo, 6-8 /ctra.Bellaterra, 23-25",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.495364",
+   "lon": "2.091881",
+   "name": "Synergy International Christian School",
+   "phone": "",
+   "sub": ""
+  },
+  {
+   "address": "av. Flor de Maig, s/n (Apt. Correus 254)",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.467512",
+   "lon": "2.122693",
+   "name": "CEE Centre de Formació i Treball Flor de Maig",
+   "phone": "935948828",
+   "sub": "Curs d’accés als cicles formatius de grau mitjà (AA01)"
+  },
+  {
+   "address": "pg. Cordelles, 65",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.494141",
+   "lon": "2.136971",
+   "name": "Escola Bressol Cordelles",
+   "phone": "",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "c. Lesseps, 73",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.484959",
+   "lon": "2.152145",
+   "name": "Escola Bressol Turonet",
+   "phone": "",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "c. Aragó, 9",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.494206",
+   "lon": "2.128594",
+   "name": "LLI privada Disney",
+   "phone": "936916832",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "c. Lepant, 64",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.487573",
+   "lon": "2.150113",
+   "name": "LLI privada Ninot",
+   "phone": "935806197",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "c. Escoles, 4",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.489651",
+   "lon": "2.137105",
+   "name": "LLI privada Nins",
+   "phone": "936910953",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "av. Bartomeu, 25",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.498983",
+   "lon": "2.088347",
+   "name": "LLI privada d'En Pitus",
+   "phone": "935940071",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "ptge. Donya Amèlia, 6",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.480442",
+   "lon": "2.130795",
+   "name": "Llar d'infants Montflorit",
+   "phone": "935865596",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "c. Lluís Companys, 1",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.491145",
+   "lon": "2.141057",
+   "name": "Patufet",
+   "phone": "936925995",
+   "sub": "Educació infantil de 1r cicle (EINF1C)"
+  },
+  {
+   "address": "c. Sant Salvador, 8",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.492388",
+   "lon": "2.140319",
+   "name": "Escaladei",
+   "phone": "936920981",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "Campus UAB, s/n (Bellaterra)",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.506353",
+   "lon": "2.102036",
+   "name": "Escola Bellaterra",
+   "phone": "935811030",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "av. Lesseps, 49",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.485206",
+   "lon": "2.148879",
+   "name": "Escola Carles Buïgas",
+   "phone": "936923197",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. de Pizarro, s/n",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.486561",
+   "lon": "2.147002",
+   "name": "Escola Collserola",
+   "phone": "936922595",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. La Sínia,13",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.495701",
+   "lon": "2.14269",
+   "name": "Escola La Sínia",
+   "phone": "935864623",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Greco, 2",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.490093",
+   "lon": "2.148652",
+   "name": "Escola Les Fontetes",
+   "phone": "936922170",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "av. Roma, 57",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.494188",
+   "lon": "2.129115",
+   "name": "Escola Saltells",
+   "phone": "936924550",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "av. de Sant Íscle, 1-3",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.490883",
+   "lon": "2.141342",
+   "name": "Escola Sant Martí",
+   "phone": "936920881",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Diagonal, 41",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.495321",
+   "lon": "2.133251",
+   "name": "Escola Serraparera",
+   "phone": "936922742",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Anselm Clavé, 32",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.487004",
+   "lon": "2.135234",
+   "name": "Escola Turó de Guiera",
+   "phone": "935802072",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Santa Anna, 57",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.496578",
+   "lon": "2.138018",
+   "name": "Escola Xarau",
+   "phone": "936926404",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Cervantes, 5-15",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.491435",
+   "lon": "2.142483",
+   "name": "FEDAC-Cerdanyola",
+   "phone": "936920884",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Sant Iscle, 6",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.490179",
+   "lon": "2.142354",
+   "name": "Montserrat",
+   "phone": "936919752",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Escultor Vallmitjana, 9-15",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.503679",
+   "lon": "2.083458",
+   "name": "Ramon Fuster",
+   "phone": "935864106",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Apel·les Mestres, 11",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.50526",
+   "lon": "2.08356",
+   "name": "Waldorf-Steiner el Til·ler",
+   "phone": "",
+   "sub": "Educació infantil de 2n cicle (EINF2C)"
+  },
+  {
+   "address": "c. Sant Casimir, 16",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.492011",
+   "lon": "2.134744",
+   "name": "Institut Banús",
+   "phone": "935806236",
+   "sub": "Educació secundària obligatòria (ESO)"
+  },
+  {
+   "address": "Pizarro, 35",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.485818",
+   "lon": "2.146658",
+   "name": "Institut Forat del Vent",
+   "phone": "936911451",
+   "sub": "Educació secundària obligatòria (ESO)"
+  },
+  {
+   "address": "c. de l'Àliga, 65",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.487727",
+   "lon": "2.130124",
+   "name": "Institut Gorgs",
+   "phone": "935804354",
+   "sub": "Educació secundària obligatòria (ESO)"
+  },
+  {
+   "address": "c. Serra dels Galliners, s/n",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.497848",
+   "lon": "2.121975",
+   "name": "Institut Jaume Mimó",
+   "phone": "935803994",
+   "sub": "Educació secundària obligatòria (ESO)"
+  },
+  {
+   "address": "Campus U.A.B.",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.506566",
+   "lon": "2.102198",
+   "name": "Institut Pere Calders",
+   "phone": "935801477",
+   "sub": "Educació secundària obligatòria (ESO)"
+  },
+  {
+   "address": "c. Ramon Llull, 29-31 (Bellaterra)",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.502818",
+   "lon": "2.084714",
+   "name": "Bellaire",
+   "phone": "935808164",
+   "sub": "Ensenyaments de règim general"
+  },
+  {
+   "address": "c. Renaixement, 131",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.498277",
+   "lon": "2.12128",
+   "name": "CEE Jeroni de Moragas",
+   "phone": "936922139",
+   "sub": "Ensenyaments de règim general"
+  },
+  {
+   "address": "Edifici Blanc del Campus de la UAB",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.499162",
+   "lon": "2.09857",
+   "name": "Fundació UAB",
+   "phone": "935158095",
+   "sub": "Ensenyaments de règim general"
+  },
+  {
+   "address": "Campus de la UAB, Edifici SAF 3",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.499511",
+   "lon": "2.109513",
+   "name": "Vitae Campus",
+   "phone": "934170514",
+   "sub": "Ensenyaments de règim general"
+  },
+  {
+   "address": "c. Ramon Llull, 16(Bellaterra)",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.502181",
+   "lon": "2.08636",
+   "name": "Esc. de Música Bellaterra",
+   "phone": "935804246",
+   "sub": "Escoles de música (no reglat) (MUSE)"
+  },
+  {
+   "address": "c. Sant Enric, 31",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.48924",
+   "lon": "2.135002",
+   "name": "Esc. de Música Municipal Aulos",
+   "phone": "935805893",
+   "sub": "Escoles de música (no reglat) (MUSE)"
+  },
+  {
+   "address": "c. Romaní, 5",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.495278",
+   "lon": "2.136661",
+   "name": "CFA L'Alzina de Cerdanyola",
+   "phone": "935864459",
+   "sub": "Formació de persones adultes (ADULTS)"
+  },
+  {
+   "address": "c. Ramon Llull, 18(Bellaterra)",
+   "cat": "Educació. Formació",
+   "cp": "08193",
+   "lat": "41.502206",
+   "lon": "2.086332",
+   "name": "Cent.Prof.Mús. El Musical",
+   "phone": "",
+   "sub": "Grau professional de música (MUSP)"
+  },
+  {
+   "address": "Avinguda d'Espanya, 6 C Baixos",
+   "cat": "Educació. Formació",
+   "cp": "08290",
+   "lat": "41.494617627",
+   "lon": "2.131652145",
+   "name": "Oficina Municipal d'Escolarització a Cerdanyola del Vallès",
+   "phone": "617 578 946",
+   "sub": "Oficines municipals d'escolarització"
+  },
+  {
+   "address": "Avinguda del Parc Tecnològic, 12",
+   "cat": "Emergències. Seguretat",
+   "cp": "08290",
+   "lat": "41.485642278",
+   "lon": "2.124030706",
+   "name": "Comissaria de la Policia de la Generalitat - Mossos d'Esquadra a Cerdanyola",
+   "phone": "112",
+   "sub": "Dependències d'atenció policial - Mossos d'Esquadra"
+  },
+  {
+   "address": "Avinguda de Serra Galliners, s/n (Universitat Autònoma de Barcelona)",
+   "cat": "Emergències. Seguretat",
+   "cp": "08193",
+   "lat": "41.503073125",
+   "lon": "2.109501159",
+   "name": "Parc de Bombers de Cerdanyola del Vallès",
+   "phone": "112",
+   "sub": "Parcs de Bombers"
+  },
+  {
+   "address": "Plaça de Sant Medir, s/n",
+   "cat": "Emergències. Seguretat",
+   "cp": "08290",
+   "lat": "41.491023401",
+   "lon": "2.134985754",
+   "name": "Policia Local de Cerdanyola del Vallès",
+   "phone": "93 691 20 00",
+   "sub": "Policies Locals"
+  },
+  {
+   "address": "C. Riu Sec, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.5016779911486",
+   "lon": "2.13098346074793",
+   "name": "BOSC TANCAT",
+   "phone": "935805919",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. 8, s/n (Turó de Sant Pau), Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08193",
+   "lat": "41.5099028586423",
+   "lon": "2.09952584041514",
+   "name": "CAMP DE FUTBOL I PISTA DE BASQUET TURÓ DE SANT PAU",
+   "phone": "935181830",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Camèlies, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4940083744816",
+   "lon": "2.13998721089096",
+   "name": "CEM CAN XARAU",
+   "phone": "936917704",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Montclar, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.502122975716",
+   "lon": "2.13744758160707",
+   "name": "CIRCUIT MUNICIPAL DE RADIOCONTROL",
+   "phone": "935808017",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Pl. de les Oliveres, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08193",
+   "lat": "41.5054021168125",
+   "lon": "2.10451289110144",
+   "name": "FACULTAT DE CIÈNCIES DE L'EDUCACIÓ",
+   "phone": "935811834",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Pl. la Balsa, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.496244313317",
+   "lon": "2.13426688089147",
+   "name": "PARC DE LA URALITA",
+   "phone": "",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Av. Guiera, 6-8, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4834150814982",
+   "lon": "2.1398997158241",
+   "name": "PARC ESPORTIU MUNICIPAL GUIERA",
+   "phone": "935863636",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Camèlies, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4944857161447",
+   "lon": "2.13998089655638",
+   "name": "PAVELLÓ MUNICIPAL CAN XARAU",
+   "phone": "935808017",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Pizarro, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4856964470149",
+   "lon": "2.14506825152402",
+   "name": "PISCINA MUNICIPAL DE LES FONTETES",
+   "phone": "685545799",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Mare de Déu dels Dolors, 17-19, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4811999503437",
+   "lon": "2.13040669141679",
+   "name": "PISCINA MUNICIPAL MONTFLORIT",
+   "phone": "936915262",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Ramon Casas, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4898199470809",
+   "lon": "2.150895899182",
+   "name": "PISTA BASQUET C. RAMON CASAS",
+   "phone": "",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Pl. Enric Granados, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4927830164547",
+   "lon": "2.14235147839265",
+   "name": "PISTA POLIESPORTIVA PL. ENRIC GRANADOS",
+   "phone": "",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Av. de l'Eix Central, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08193",
+   "lat": "41.4992634740588",
+   "lon": "2.10971338225118",
+   "name": "SERVEI D'ACTIVITAT FÍSICA UAB",
+   "phone": "935811934",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Pizarro, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4859868556676",
+   "lon": "2.14657374275344",
+   "name": "SKATE PARK DEL TURONET",
+   "phone": "",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Av. Galícia, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4924144779364",
+   "lon": "2.12689038897231",
+   "name": "ZONA ESPORTIVA MUNICIPAL LA BÒBILA-PINETONS",
+   "phone": "935801327",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Pg. Horta, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.486074994215",
+   "lon": "2.14388936661226",
+   "name": "ZONA ESPORTIVA MUNICIPAL LES FONTETES",
+   "phone": "936927919",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "C. Boters, s/n, Cerdanyola del Vallès",
+   "cat": "Esports. Lleure",
+   "cp": "08290",
+   "lat": "41.4876204163439",
+   "lon": "2.12779328462489",
+   "name": "ZONA ESPOTIVA MUNICIPAL MONTFLORIT",
+   "phone": "935808017",
+   "sub": "Instal·lacions esportives"
+  },
+  {
+   "address": "Passeig de Cordelles, 1 (Baixos del Casal Parroquial)",
+   "cat": "Habitatge",
+   "cp": "08290",
+   "lat": "41.492129449",
+   "lon": "2.139730348",
+   "name": "Borsa Habitatge Cerdanyola del Vallès",
+   "phone": "93 580 99 79",
+   "sub": "Borses joves d'habitatge"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Oficina de Fiscalia",
+   "phone": "935527657",
+   "sub": "Fiscalies"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Atenció al Ciutadà",
+   "phone": "935516720",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "IMLCFC de Cerdanyola del Vallès",
+   "phone": "607072111",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Jutjat de Guàrdia",
+   "phone": "935527653",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Oficina General del Registre Civil",
+   "phone": "935516730",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 1",
+   "phone": "935527675",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 2",
+   "phone": "935527681",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 3",
+   "phone": "935527687",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 4",
+   "phone": "935527693",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 5",
+   "phone": "935527699",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 6",
+   "phone": "935527605",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 7 (VIDO)",
+   "phone": "935527611",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 8",
+   "phone": "935545285",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Servei Comú General de Cerdanyola del Vallès",
+   "phone": "935527621",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Servei Comú d'Execució de Cerdanyola del Vallès",
+   "phone": "935527678",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Servei Comú de Tramitació de Cerdanyola del Vallès",
+   "phone": "935 527 686",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig d'Horta, 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.487679304",
+   "lon": "2.144344302",
+   "name": "Oficina d'Atenció al Ciutadà dels jutjats de Cerdanyola del Vallès",
+   "phone": "93 551 67 20",
+   "sub": "Oficines d'atenció al ciutadà (OAC)"
+  },
+  {
+   "address": "Passeig d'Horta, 19, 1a (Edifici jutjats)",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.487679304",
+   "lon": "2.144344302",
+   "name": "Servei d'Orientació Jurídica (SOJ) a Cerdanyola del Vallès",
+   "phone": "93 692 74 74  Es pot demanar hora a aquest telèfon.",
+   "sub": "Oficines del Servei d'Orientació Jurídica"
+  },
+  {
+   "address": "Carrer de la Clota, s/n (davant del núm. 16)",
+   "cat": "Llengua. Comunicació",
+   "cp": "08290",
+   "lat": "41.498894393",
+   "lon": "2.128336053",
+   "name": "Centre de Normalització Lingüística Vallès Occidental Sud (CNL)",
+   "phone": "677 255 023",
+   "sub": "Centres de normalització lingüística"
+  },
+  {
+   "address": "Carrer de la Clota, s/n (davant del núm. 16)",
+   "cat": "Llengua. Comunicació",
+   "cp": "08290",
+   "lat": "41.498894393",
+   "lon": "2.128336053",
+   "name": "Servei Local de Català de Cerdanyola del Vallès (SLC)",
+   "phone": "93 580 27 51",
+   "sub": "Oficines de català"
+  },
+  {
+   "address": "CTRA. CERDANYOLA-SANT CUGAT KM. 2,2",
+   "cat": "Medi ambient",
+   "cp": "08290",
+   "lat": "3.17347856789793",
+   "lon": "37.5322385064764",
+   "name": "DEIXALLERIA DE CERDANYOLA DEL VALLÈS",
+   "phone": "93 691 74 42",
+   "sub": "Deixalleries"
+  },
+  {
+   "address": "UAB AL COSTAT DEL PARKING",
+   "cat": "Medi ambient",
+   "cp": "08290",
+   "lat": "3.16590706146676",
+   "lon": "37.545532886513",
+   "name": "DEIXALLERIA DE CERDANYOLA DEL VALLÈS (UAB)",
+   "phone": "932235151",
+   "sub": "Deixalleries"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5035",
+   "lon": "2.10558",
+   "name": "Centre d'Estudis Demogràfics (CED)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5011",
+   "lon": "2.10914",
+   "name": "Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5017",
+   "lon": "2.10962",
+   "name": "Centre de Recerca Matemàtica (CRM)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.4978",
+   "lon": "2.10806",
+   "name": "Centre de Recerca en Agrigenòmica (CRAG)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5048",
+   "lon": "2.09665",
+   "name": "Centre de Recerca en Sanitat Animal (CRESA)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5009",
+   "lon": "2.11155",
+   "name": "Centre de Visió per Computador (CVC)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5002",
+   "lon": "2.10766",
+   "name": "Centre d’Estudis i Recerca Espacials de la Universitat Autònoma de Barcelona (CERES)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5012",
+   "lon": "2.11174",
+   "name": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "de les Columnes",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.4977",
+   "lon": "2.10882",
+   "name": "Institut Català de Paleontologia Miquel Crusafont (ICP-MiquelCrusafont)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5019",
+   "lon": "2.10567",
+   "name": "Institut d'Anàlisi Econòmica (IAE)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5014",
+   "lon": "2.11092",
+   "name": "Institut d'Investigació en Intel·ligència Artificial (IIIA)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5021",
+   "lon": "2.11031",
+   "name": "Institut de Ciència de Materials de Barcelona (ICMAB)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5006",
+   "lon": "2.11011",
+   "name": "Institut de Ciències de l'Espai (ICE)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5006",
+   "lon": "2.11011",
+   "name": "Institut de Ciències de l'Espai (ICE)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5016",
+   "lon": "2.1096",
+   "name": "Institut de Física d'Altes Energies (IFAE)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5021",
+   "lon": "2.10978",
+   "name": "Institut de Microelectrònica de Barcelona (IMB-CNM-CSIC)",
+   "phone": "",
+   "sub": "Centres de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5011",
+   "lon": "2.10914",
+   "name": "Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5017",
+   "lon": "2.10962",
+   "name": "Centre de Recerca Matemàtica (CRM)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5009",
+   "lon": "2.11155",
+   "name": "Centre de Visió per Computador (CVC)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "de les Columnes",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.4977",
+   "lon": "2.10882",
+   "name": "Institut Català de Paleontologia Miquel Crusafont (ICP-MiquelCrusafont)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5035",
+   "lon": "2.10565",
+   "name": "Institut Universitari d'Estudis Europeus (IUEE)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5031",
+   "lon": "2.10755",
+   "name": "Institut Universitari d'Estudis Medievals (Medievals)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5035",
+   "lon": "2.10565",
+   "name": "Institut d'Estudis del Treball (IET)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5006",
+   "lon": "2.11012",
+   "name": "Institut d'Història de la Ciència (IHC)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "de les Columnes",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.4977",
+   "lon": "2.10882",
+   "name": "Institut de Ciència i Tecnologia Ambientals (ICTA)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5016",
+   "lon": "2.1096",
+   "name": "Institut de Física d'Altes Energies (IFAE)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "de la Recerca UAB",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5039",
+   "lon": "2.1059",
+   "name": "Institut de Govern i Polítiques Públiques (IGOP)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.4986",
+   "lon": "2.10673",
+   "name": "Institut de Neurociències (IN)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5015",
+   "lon": "2.10333",
+   "name": "Institut de Recerca de l'Esport (IRE-UAB)",
+   "phone": "",
+   "sub": "Estructures universitàries de recerca"
+  },
+  {
+   "address": "Nacional de Microelectrònica",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5023",
+   "lon": "2.10929",
+   "name": "MICRONANOFABS - Sala Blanca Integrada de Micro i Nano Fabricació del Centre Nacional de Microelectrònica del CSIC (SBCNM) (MICRONANOFABS)",
+   "phone": "",
+   "sub": "Infraestructures de suport a la recerca"
+  },
+  {
+   "address": "Universitat Autònoma de Barcelona",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5023",
+   "lon": "2.10391",
+   "name": "NANBIOSIS - Plataformes de Bioenginyeria, Biomaterials i Nanomedicina (CIBER-BBN) (NANBIOSIS)",
+   "phone": "",
+   "sub": "Infraestructures de suport a la recerca"
+  },
+  {
+   "address": "D",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5008",
+   "lon": "2.11066",
+   "name": "RES PIC (IFAE-CIEMAT) (RES-PIC)",
+   "phone": "",
+   "sub": "Infraestructures de suport a la recerca"
+  },
+  {
+   "address": "",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.5048",
+   "lon": "2.09665",
+   "name": "RLASB - Laboratori d’Alta Seguretat Biològica del Centre de Recerca en Sanitat Animal (CReSA) (RLASB)",
+   "phone": "",
+   "sub": "Infraestructures de suport a la recerca"
+  },
+  {
+   "address": "de la Llum",
+   "cat": "Recerca",
+   "cp": "08290",
+   "lat": "41.4862",
+   "lon": "2.11068",
+   "name": "Sincrotró ALBA (ALBA)",
+   "phone": "",
+   "sub": "Infraestructures de suport a la recerca"
+  },
+  {
+   "address": "SENER",
+   "cat": "Recerca",
+   "cp": "08209",
+   "lat": "41.4903",
+   "lon": "2.10698",
+   "name": "Barcelona Synchrotron Park (ParcdelAlba)",
+   "phone": "",
+   "sub": "Parcs científics i tecnològics"
+  },
+  {
+   "address": "Tecnològic del Vallès",
+   "cat": "Recerca",
+   "cp": "08290",
+   "lat": "41.4848",
+   "lon": "2.12727",
+   "name": "Parc Tecnològic del Vallès (PTV)",
+   "phone": "",
+   "sub": "Parcs científics i tecnològics"
+  },
+  {
+   "address": "de Can Domènech (Campus UAB)",
+   "cat": "Recerca",
+   "cp": "08193",
+   "lat": "41.4974",
+   "lon": "2.10796",
+   "name": "Parc de Recerca  UAB (PRUAB)",
+   "phone": "",
+   "sub": "Parcs científics i tecnològics"
+  },
+  {
+   "address": "Pça.Francesc Layret, s/n",
+   "cat": "Serveis socials bàsics",
+   "cp": "08290",
+   "lat": "41.489494",
+   "lon": "2.187649",
+   "name": "Servei Social d'Atenció Primària - Ajuntament Cerdanyola del Vallès",
+   "phone": "936921200",
+   "sub": "Servei bàsic d'atenció social"
+  },
+  {
+   "address": "C.  Campus UAB Edif. H (Apartament H010 Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08913",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament H010",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. H (Apartament H011 Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08913",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament H011",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. H  Bellaterra (Apartament H110)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08913",
+   "lat": "41.3915887",
+   "lon": "2.0055214",
+   "name": "Apartament H110",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. K, bxs. 2a (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K002",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. K, bxs. 3a (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K003",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB edif. K, bxs 11ª (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K011",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. K, 1r 10a (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K110",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Mare de Deu del Pilar, 37 bis",
+   "cat": "Serveis socials bàsics",
+   "cp": "08290",
+   "lat": "41.48857358",
+   "lon": "2.13493623",
+   "name": "SAD ADECUA",
+   "phone": "935940192",
+   "sub": "Servei d'ajuda a domicili"
+  },
+  {
+   "address": "C.  Edifici A. Campus UAB (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "09193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Servei de suport Fundació autònoma solidària",
+   "phone": "935812485",
+   "sub": "Servei de suport als serveis socials bàsics"
+  },
+  {
+   "address": "Ctr.Flor de Maig, s/n km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Centre Sant Medir",
+   "phone": "932120429",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Av. Joan Fàbregas, 32 (Bellaterra)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08193",
+   "lat": "41.50331933",
+   "lon": "2.08710813",
+   "name": "Centre ocupacional els Xiprers",
+   "phone": "937260759",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.de Cerdanyola a Sant Cugat, Km 0",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.482509",
+   "lon": "2.131431",
+   "name": "Equus, Centre Català d'Equinoteràpia i Escola d'Equitació",
+   "phone": "",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, s/n (Km. 2,5)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Institució Montserrat Montero",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,6",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "LLar-Residència Collserola",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, s/n, Km. 2'5",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "La Casona",
+   "phone": "936922500",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de maig, km. 2,8 - Ap. Correus 140",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Llar residència El Bosc",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Llar-residència La Piscina",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Llar-residència el Xalet",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,6",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Residència Canigó",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "C.  Torre Bones Hores, 24",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4931996",
+   "lon": "2.1375367",
+   "name": "Residència per a Persones amb Discapacitat Intel·lectual Joan XXIII",
+   "phone": "936922681",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 3'5",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Residència per a Persones amb Disminució Psíquica Profunda i Greus Trastorns de Conducta Joan Bofill",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Servei d'Autonomia a la pròpia llar Fundació Catalònia",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "C.  Tarragona, 6",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.50694818",
+   "lon": "2.12235493",
+   "name": "Servei de teràpia ocupacional Montflorit Barcanova",
+   "phone": "936928811",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Servei de tutela Fundació Privada Sant Jordi de Catalònia (Disc. Psíquics)",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Av. Europa, núm. 3 -5 Esc.1 1r-1a",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4903868",
+   "lon": "2.1326508",
+   "name": "Cerdanyola I",
+   "phone": "934428829",
+   "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
+  },
+  {
+   "address": "C.  Santa Anna, 10, 4rt 5ª",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49404222",
+   "lon": "2.14228503",
+   "name": "Cerdanyola II",
+   "phone": "934428829",
+   "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
+  },
+  {
+   "address": "C.  Adam i Eva, 4",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4932306",
+   "lon": "2.1465753",
+   "name": "Club Social Cerdanyola del Vallés",
+   "phone": "935809927",
+   "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
+  },
+  {
+   "address": "Av. de Lesseps, 4",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48454618",
+   "lon": "2.14476785",
+   "name": "Centre de Dia per a Gent Gran Cerdanyola",
+   "phone": "935940145",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Camí antic St. Cugat, 103 (Bellaterra)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08193",
+   "lat": "41.4996262",
+   "lon": "2.07994345",
+   "name": "Centre de dia CIM Bellaterra",
+   "phone": "930001401",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Rda.Cerdanyola, 50 (cantonada Isabel II, 12)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4867432",
+   "lon": "2.1541209",
+   "name": "Centre de dia El Meu Avi",
+   "phone": "935920126",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Mare de Deu del Pilar, 37 bis",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48857358",
+   "lon": "2.13493623",
+   "name": "Centro de Dia ADECUA",
+   "phone": "935940192",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Pge.Àngel Guimerà, 8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4855703",
+   "lon": "2.1347618",
+   "name": "Cerdanyola Residència d'Avis",
+   "phone": "935864617",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Camí antic St. Cugat a Sabadell, 103 (Bellaterra)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08193",
+   "lat": "41.4996262",
+   "lon": "2.07994345",
+   "name": "Residència CIM Bellaterra",
+   "phone": "930001401",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Rda.Cerdanyola, 50",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4867432",
+   "lon": "2.1541209",
+   "name": "Residència El Meu Avi",
+   "phone": "935920126",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Rbl.de Montserrat, 2",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4935998",
+   "lon": "2.1435283",
+   "name": "Residència Seniors Ceritània",
+   "phone": "",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Sebastià Garriga, 17",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49095502",
+   "lon": "2.13062941",
+   "name": "Residència geriàtrica l'Olivera",
+   "phone": "935920665",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Av. de Lesseps, 4",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48454618",
+   "lon": "2.14476785",
+   "name": "Residència per a Gent Gran Cerdanyola",
+   "phone": "935940145",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Sebastià Garriga, 17",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49095502",
+   "lon": "2.13062941",
+   "name": "Servei d'acolliment diürn l'Olivera",
+   "phone": "936929560",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Av. Verge de Montserrat, 1",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.63168303",
+   "lon": "2.29626018",
+   "name": "Centre de desenvolupament infantil i atenció precoç de Cerdanyola i Ripollet",
+   "phone": "935920985",
+   "sub": "Serveis comuns adreçats a persones amb discapacitat"
+  },
+  {
+   "address": "C.  de les Vinyes, 11 C",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48769086",
+   "lon": "2.13807235",
+   "name": "Servei d'atenció i informació a les dones del Safareig",
+   "phone": "935806151",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
+   "address": "Pge.Ajuntament, 26-28",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4907165",
+   "lon": "2.1394686",
+   "name": "Servei de Suport de la Iglesia Evangélica Bautista de Cerdanyola del Vallès",
+   "phone": "936924211",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
+   "address": "C.  Campus de Bellaterra, Edifici Estudiants, 1r",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4858142",
+   "lon": "2.0967822",
+   "name": "Servei de suport. Associació Pro Disminuïts de la Universitat Autònoma de Barcelona",
+   "phone": "935812697",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
+   "address": "Pge.de l'Ajuntament, 9, 1er 4ª",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49057659",
+   "lon": "2.1396376",
+   "name": "Servei de suport. Coordinadora de centres de profunds de Catalunya",
+   "phone": "935809663",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
+   "address": "Avinguda Lesseps, 4",
+   "cat": "Societat. Ciutadania. Famílies",
+   "cp": "08290",
+   "lat": "41.484673466",
+   "lon": "2.144657247",
+   "name": "Casal de Gent Gran Cerdanyola",
+   "phone": "93 594 01 45",
+   "sub": "Equipaments cívics"
+  },
+  {
+   "address": "Belles Arts",
+   "cat": "Societat. Ciutadania. Famílies",
+   "cp": "08290",
+   "lat": "41.48765388",
+   "lon": "2.13776421",
+   "name": "Servei d'informació i atenció a les dones (SIAD) de Cerdanyola del Vallès",
+   "phone": "935921647",
+   "sub": "Oficines d'informació a les dones"
+  },
+  {
+   "address": "Carrer de les Escoles, 5",
+   "cat": "Societat. Ciutadania. Famílies",
+   "cp": "08290",
+   "lat": "41.489599944",
+   "lon": "2.136570428",
+   "name": "Oficina d'atenció ciutadana de Cerdanyola del Vallès (Departament de Drets Socials i Inclusió)",
+   "phone": "93 691 82 11",
+   "sub": "Oficines de Benestar Social i Família"
+  },
+  {
+   "address": "Passeig del Pont 45",
+   "cat": "Societat. Ciutadania. Famílies",
+   "cp": "08290",
+   "lat": "41.49229265",
+   "lon": "2.14549019",
+   "name": "Cerdanyola del Vallès - Casal de Joves Altimira",
+   "phone": "935805869",
+   "sub": "Serveis d'Informació Juvenil"
+  },
+  {
+   "address": "Plaça Enric Granados s/n",
+   "cat": "Tecnologia. Innovació",
+   "cp": "08290",
+   "lat": "41.493218651",
+   "lon": "2.142808674",
+   "name": "Casal esportiu Altis",
+   "phone": "",
+   "sub": "Punt TIC"
+  },
+  {
+   "address": "Pl. Enric Granados, 1-2",
+   "cat": "Tecnologia. Innovació",
+   "cp": "08290",
+   "lat": "41.4926898",
+   "lon": "2.1420704",
+   "name": "Punt TIC - Biblioteca Central de Cerdanyola",
+   "phone": "93 580 76 94",
+   "sub": "Punt TIC"
+  },
+  {
+   "address": "Masia Can Serraparera, Av. Roma s/n",
+   "cat": "Tecnologia. Innovació",
+   "cp": "08290",
+   "lat": "41.4960653",
+   "lon": "2.1299526",
+   "name": "Servei municipal d'ocupació,empresa i promoció econòmica de l'Ajuntament de Cerdanyola del Vallès",
+   "phone": "93 594 70 50",
+   "sub": "Punt TIC"
+  },
+  {
+   "address": "Carrer de Torres i Bages, 7",
+   "cat": "Treball",
+   "cp": "08290",
+   "lat": "41.489348936",
+   "lon": "2.140338394",
+   "name": "Oficina de Treball de Cerdanyola del Vallès",
+   "phone": "930 886 200",
+   "sub": "Oficines de treball"
+  },
+  {
+   "address": "Cívica",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5024",
+   "lon": "2.10388",
+   "name": "Departament de Biologia Animal, Biologia Vegetal i Ecologia (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5023",
+   "lon": "2.10686",
+   "name": "Departament de Ciències de l'Antiguitat i de l'Edat Mitjana (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "Cívica",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5024",
+   "lon": "2.10388",
+   "name": "Departament de Geologia (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.4997",
+   "lon": "2.09596",
+   "name": "Escola Fundació Universitat Autònoma de Barcelona-Formació (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5069",
+   "lon": "2.11308",
+   "name": "Escola d'Enginyeria (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5017",
+   "lon": "2.1096",
+   "name": "Facultat d'Economia i Empresa (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.502",
+   "lon": "2.11044",
+   "name": "Facultat de Biociències (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.502",
+   "lon": "2.11044",
+   "name": "Facultat de Ciències (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5017",
+   "lon": "2.1096",
+   "name": "Facultat de Ciències Polítiques i de Sociologia (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5051",
+   "lon": "2.10357",
+   "name": "Facultat de Ciències de l'Educació (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5003",
+   "lon": "2.10422",
+   "name": "Facultat de Ciències de la Comunicació (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5017",
+   "lon": "2.1096",
+   "name": "Facultat de Dret (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5017",
+   "lon": "2.1096",
+   "name": "Facultat de Filosofia i Lletres (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.4987",
+   "lon": "2.10555",
+   "name": "Facultat de Medicina (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5017",
+   "lon": "2.1096",
+   "name": "Facultat de Psicologia i de Logopèdia (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5044",
+   "lon": "2.10494",
+   "name": "Facultat de Traducció i d'Interpretació (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5042",
+   "lon": "2.09786",
+   "name": "Facultat de Veterinària (UAB)",
+   "phone": "",
+   "sub": "Centre docent"
+  },
+  {
+   "address": "",
+   "cat": "Universitats",
+   "cp": "08193",
+   "lat": "41.5024",
+   "lon": "2.10388",
+   "name": "Universitat Autònoma de Barcelona (UAB)",
+   "phone": "",
+   "sub": "Seu central"
+  },
+  {
+   "address": "Campus de Bellaterra de la UAB. Edifici C",
+   "cat": "",
+   "cp": "08193",
+   "lat": "41.500201",
+   "lon": "2.108979",
+   "name": "Consorci Centre de Recerca Matemàtica (CRM)",
+   "phone": "93 581 10 81",
+   "sub": ""
+  },
+  {
+   "address": "Campus de Bellaterra de la UAB. Edifici O",
+   "cat": "",
+   "cp": "08193",
+   "lat": "41.500723",
+   "lon": "2.111664",
+   "name": "Consorci Centre de Visió per Computador (CVC)",
+   "phone": "93 581 18 28",
+   "sub": ""
+  },
+  {
+   "address": "Campus de Bellaterra de la UAB. Edifici C",
+   "cat": "",
+   "cp": "08193",
+   "lat": "41.500201",
+   "lon": "2.108979",
+   "name": "Consorci Institut de Física d'Altes Energies (IFAE)",
+   "phone": "93 581 19 84",
+   "sub": ""
+  },
+  {
+   "address": "Carretera BP 1413, de Cerdanyola del Vallèsa Sant Cugat, km. 3,3",
+   "cat": "",
+   "cp": "08290",
+   "lat": "41.486773",
+   "lon": "2.109929",
+   "name": "Consorci per a la Construcció, Equipament i Explotació del Laboratori de Llum Sincrotró (CELLS - ALBA)",
+   "phone": "93 592 43 00",
+   "sub": ""
+  },
+  {
+   "address": "Campus de Bellaterra de la UAB. Edifici C",
+   "cat": "",
+   "cp": "08193",
+   "lat": "41.500201",
+   "lon": "2.108979",
+   "name": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phone": "93 581 44 08",
+   "sub": ""
+  },
+  {
+   "address": "Avinguda de Serra Galliners, s/n (Universitat Autònoma de Barcelona)",
+   "cat": "",
+   "cp": "08193",
+   "lat": "41.503073125",
+   "lon": "2.109501159",
+   "name": "Regió d'Emergències Metropolitana Nord",
+   "phone": "93 582 03 43",
+   "sub": ""
+  },
+  {
+   "address": "Avinguda de Serra Galliners, s/n (Universitat Autònoma de Barcelona)",
+   "cat": "",
+   "cp": "08193",
+   "lat": "41.503073125",
+   "lon": "2.109501159",
+   "name": "Subdirecció General Operativa",
+   "phone": "93 586 79 82",
+   "sub": ""
+  },
+  {
+   "address": "Avinguda de Serra Galliners, s/n (Universitat Autònoma de Barcelona)",
+   "cat": "",
+   "cp": "08193",
+   "lat": "41.503073125",
+   "lon": "2.109501159",
+   "name": "Subdirecció General de Suport Tècnic, Avaluació i Prevenció",
+   "phone": "93 586 79 86",
+   "sub": ""
+  }
+ ],
+ "fetched": "2026-10-20T18:22:34+02:00"
+}
