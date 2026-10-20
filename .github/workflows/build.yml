@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["src/**", "static/**", "config.json", ".github/workflows/build.yml"]
+    paths: ["src/**", "static/**", "data/**", "config.json", ".github/workflows/build.yml"]
 
 permissions:
   contents: write
