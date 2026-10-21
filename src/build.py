@@ -53,6 +53,7 @@ def update(now):
     for name, fetch, min_hours, _ in SOURCES:
         cached = read(name)
         if cached and min_hours and now - tz.parse_iso(cached["fetched"]) < timedelta(hours=min_hours):
+            health.setdefault(name, {"last_ok": cached["fetched"]})  # caché reciente sin registro previo
             continue
         try:
             data = fetch(now)
