@@ -1,8 +1,630 @@
 {
  "data": {
-  "events": [],
+  "events": [
+   {
+    "category": "",
+    "end": "2026-11-09",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-09-07",
+    "time": "19:30",
+    "title": "Exposició 'Llibres Lliures' de Marutxi Beaumont",
+    "url": "https://www.cerdanyola.cat/agenda/exposicio-llibres-lliures-de-marutxi-beaumont"
+   },
+   {
+    "category": "",
+    "end": "2026-12-20",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-09-18",
+    "time": "18:00",
+    "title": "Programació tardor-hivern Teatre Ateneu",
+    "url": "https://www.cerdanyola.cat/agenda/programacio-tardor-hivern-teatre-ateneu"
+   },
+   {
+    "category": "",
+    "end": "2026-11-28",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-09-29",
+    "time": "18:00",
+    "title": "Tardor literària 'Cerdanyola Lorca 1898-1936'",
+    "url": "https://www.cerdanyola.cat/agenda/tardor-literaria-cerdanyola-lorca-1898-1936"
+   },
+   {
+    "category": "",
+    "end": "2026-12-30",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-09-30",
+    "time": "18:30",
+    "title": "Tardor Solidària 2026",
+    "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-2026"
+   },
+   {
+    "category": "",
+    "end": "2026-10-30",
+    "place": "Vestíbul de les columnes de la Facultat de Filosofia i Lletres",
+    "source": "uab",
+    "start": "2026-10-08",
+    "time": "",
+    "title": "Inauguració de l'exposició «Memòries des de l'Andana»",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/inauguracio-de-l-exposicio-memories-des-de-l-andana-1345828727816.html?detid=1346000690339"
+   },
+   {
+    "category": "",
+    "end": "2027-06-30",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-09",
+    "time": "08:00",
+    "title": "Sala de lectura i estudi a l'Ateneu",
+    "url": "https://www.cerdanyola.cat/agenda/sala-de-lectura-i-estudi-lateneu"
+   },
+   {
+    "category": "",
+    "end": "2026-12-17",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-09",
+    "time": "17:00",
+    "title": "Mes de la Salut Mental a Cerdanyola",
+    "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
+   },
+   {
+    "category": "",
+    "end": "2026-10-30",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-14",
+    "time": "10:30",
+    "title": "Tallers Aula de Cuina del Mercat de Les Fontetes",
+    "url": "https://www.cerdanyola.cat/agenda/tallers-aula-de-cuina-del-mercat-de-les-fontetes-1"
+   },
+   {
+    "category": "",
+    "end": "2026-10-31",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-20",
+    "time": "18:00",
+    "title": "Exposició 'Miquel Sánchez González. Cerdanyola, història, terra i paraula'",
+    "url": "https://www.cerdanyola.cat/agenda/exposicio-miquel-sanchez-gonzalez-cerdanyola-historia-terra-i-paraula"
+   },
+   {
+    "category": "",
+    "end": "2026-10-21",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-10-21",
+    "time": "11:00",
+    "title": "Projecció del film Deprisa, deprisa, de Carlos Saura (1981)",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-deprisa-deprisa-de-carlos-saura-1981-1345828727816.html?detid=1346003251278"
+   },
+   {
+    "category": "Conferències",
+    "end": "2026-10-21",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-21",
+    "time": "16:00",
+    "title": "Taller 'Malestars emocionals i salut mental'. Mes de la Salut Mental",
+    "url": "https://www.cerdanyola.cat/agenda/taller-malestars-emocionals-i-salut-mental-mes-de-la-salut-mental"
+   },
+   {
+    "category": "Actes literaris",
+    "end": "2026-10-21",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-21",
+    "time": "18:00",
+    "title": "Conversa amb l'historiador i escriptor Miquel Sánchez",
+    "url": "https://www.cerdanyola.cat/agenda/conversa-amb-lhistoriador-i-escriptor-miquel-sanchez"
+   },
+   {
+    "category": "",
+    "end": "2026-10-24",
+    "place": "UAB, Institut del Teatre i Palau Robert",
+    "source": "uab",
+    "start": "2026-10-22",
+    "time": "",
+    "title": "Teatre Lliure, 50 anys: passat, present i futur",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/teatre-lliure-50-anys-passat-present-i-futur-1345828727816.html?detid=1346003069516"
+   },
+   {
+    "category": "Cursos i tallers",
+    "end": "2026-10-22",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-22",
+    "time": "10:00",
+    "title": "Taller d'acompanyament al dol migratori",
+    "url": "https://www.cerdanyola.cat/agenda/taller-dacompanyament-al-dol-migratori"
+   },
+   {
+    "category": "",
+    "end": "2026-10-22",
+    "place": "Sala COMTEC (2a planta de la Biblioteca de Comunicació i Hemeroteca General)",
+    "source": "uab",
+    "start": "2026-10-22",
+    "time": "12:00",
+    "title": "L'era de la flexibilitat energètica: autoconsum compartit i emmagatzematge d'energia",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/l-era-de-la-flexibilitat-energetica-autoconsum-compartit-i-emmagatzematge-d-energia-1345828727816.html?detid=1346001174966"
+   },
+   {
+    "category": "",
+    "end": "2026-10-22",
+    "place": "Sala d'Exposicions UAB",
+    "source": "uab",
+    "start": "2026-10-22",
+    "time": "15:30",
+    "title": "Visita a l’exposició \"Ros Ribas instants revelats\". Fotografies dels primers anys del Teatre Lliure.",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/visita-a-l-exposicio-ros-ribas-instants-revelats-fotografies-dels-primers-anys-del-teatre-lliure-1345828727816.html?detid=1346003257244"
+   },
+   {
+    "category": "Actes literaris",
+    "end": "2026-10-22",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-22",
+    "time": "19:00",
+    "title": "Cafè amb lletres amb Irene Pujadas",
+    "url": "https://www.cerdanyola.cat/agenda/cafe-amb-lletres-amb-irene-pujadas"
+   },
+   {
+    "category": "Jornades i seminaris",
+    "end": "2026-10-23",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-23",
+    "time": "16:00",
+    "title": "II Jornades d’Arxius i Recerca Local a la Riba del Ripoll",
+    "url": "https://www.cerdanyola.cat/agenda/ii-jornades-darxius-i-recerca-local-la-riba-del-ripoll"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-10-23",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-23",
+    "time": "17:00",
+    "title": "Donació de plasma",
+    "url": "https://www.cerdanyola.cat/agenda/donacio-de-plasma-2"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-10-23",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-23",
+    "time": "20:00",
+    "title": "Teatre 'Disección de la bondad en tres actos'",
+    "url": "https://www.cerdanyola.cat/agenda/teatre-diseccion-de-la-bondad-en-tres-actos"
+   },
+   {
+    "category": "",
+    "end": "2026-10-24",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-10-24",
+    "time": "10:00",
+    "title": "Veredicte 2a biennal de fotografia Carme Aldana",
+    "url": "https://afocer.cat/event/veredicte-2a-biennal-de-fotografia-carme-aldana/"
+   },
+   {
+    "category": "Hostalaria",
+    "end": "2026-10-25",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-24",
+    "time": "11:30",
+    "title": "Corretapes 2026",
+    "url": "https://www.cerdanyola.cat/agenda/corretapes-2026"
+   },
+   {
+    "category": "",
+    "end": "2026-10-24",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-10-24",
+    "time": "17:30",
+    "title": "Veredicte concurs social color i monocrom d’octubre",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-doctubre-4/"
+   },
+   {
+    "category": "Exposicions",
+    "end": "2026-10-24",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-10-24",
+    "time": "19:00",
+    "title": "Inauguració exposició «La llum de Gallecs» de Miquel Pons al local social",
+    "url": "https://afocer.cat/event/inauguracio-exposicio-la-llum-de-gallecs-de-miquel-pons-al-local-social/"
+   },
+   {
+    "category": "Música",
+    "end": "2026-10-24",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-24",
+    "time": "21:00",
+    "title": "XXXVII Jornadas Culturales Flamencas de Cerdanyola",
+    "url": "https://www.cerdanyola.cat/agenda/xxxvii-jornadas-culturales-flamencas-de-cerdanyola-2"
+   },
+   {
+    "category": "Infància",
+    "end": "2026-10-25",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-25",
+    "time": "11:30",
+    "title": "Jugatecambiental. Art rupestre",
+    "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-art-rupestre"
+   },
+   {
+    "category": "Cursos i tallers",
+    "end": "2026-10-25",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-25",
+    "time": "11:30",
+    "title": "Taller familiar per la tardor 'Pintem la tardor al jardí de Can Llopis'",
+    "url": "https://www.cerdanyola.cat/agenda/taller-familiar-la-tardor-pintem-la-tardor-al-jardi-de-can-llopis"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-10-25",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-25",
+    "time": "12:00",
+    "title": "Jam a la plaça",
+    "url": "https://www.cerdanyola.cat/agenda/jam-la-placa-24"
+   },
+   {
+    "category": "Música",
+    "end": "2026-10-25",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-25",
+    "time": "19:00",
+    "title": "Concert de Tardor de l'OCC",
+    "url": "https://www.cerdanyola.cat/agenda/concert-de-tardor-de-locc-3"
+   },
+   {
+    "category": "Conferències",
+    "end": "2026-10-27",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-27",
+    "time": "18:00",
+    "title": "Tardor Solidària. Xerrada 'Més enllà dels titulars: Les dones a l'Iran avui'",
+    "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-xerrada-mes-enlla-dels-titulars-les-dones-liran-avui"
+   },
+   {
+    "category": "",
+    "end": "2026-10-28",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-10-28",
+    "time": "11:00",
+    "title": "Projecció del film El pico, d'Eloy de la Iglésia",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-el-pico-d-eloy-de-la-iglesia-1345828727816.html?detid=1346003254239"
+   },
+   {
+    "category": "Cursos i tallers",
+    "end": "2026-10-28",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-28",
+    "time": "16:00",
+    "title": "Taller 'Autoprotecció, suport vital i bàsic i DEA'",
+    "url": "https://www.cerdanyola.cat/agenda/taller-autoproteccio-suport-vital-i-basic-i-dea-0"
+   },
+   {
+    "category": "Cinema",
+    "end": "2026-10-28",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-28",
+    "time": "17:30",
+    "title": "Tardor Solidària. Documental 'Sunu Gaal (el nostre cayuco)'",
+    "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-documental-sunu-gaal-el-nostre-cayuco"
+   },
+   {
+    "category": "",
+    "end": "2026-10-29",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-10-29",
+    "time": "19:00",
+    "title": "Xerrada IA per fotografia a càrrec d’Anyul Rivas",
+    "url": "https://afocer.cat/event/xerrada-ia-per-fotografia-a-carrec-danyul-rivas/"
+   },
+   {
+    "category": "Cinema",
+    "end": "2026-10-29",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-29",
+    "time": "20:30",
+    "title": "Cinema: Caso 137",
+    "url": "https://www.cerdanyola.cat/agenda/cinema-caso-137"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-10-30",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-30",
+    "time": "11:00",
+    "title": "Escape City 'L’Escletxa': joc de misteri durant la castanyada per a joves",
+    "url": "https://www.cerdanyola.cat/agenda/escape-city-lescletxa-joc-de-misteri-durant-la-castanyada-joves"
+   },
+   {
+    "category": "Actes literaris",
+    "end": "2026-10-30",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-30",
+    "time": "18:30",
+    "title": "Presentació del llibre 'Com un bosc de cedres'",
+    "url": "https://www.cerdanyola.cat/agenda/presentacio-del-llibre-com-un-bosc-de-cedres"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-10-30",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-30",
+    "time": "20:00",
+    "title": "Teatre 'Loop'",
+    "url": "https://www.cerdanyola.cat/agenda/teatre-loop"
+   },
+   {
+    "category": "Festes populars",
+    "end": "2026-10-31",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-31",
+    "time": "17:30",
+    "title": "Castahalloween a Canaletes",
+    "url": "https://www.cerdanyola.cat/agenda/castahalloween-canaletes"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-10-31",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-31",
+    "time": "18:00",
+    "title": "Passatge del terror al CC Banús",
+    "url": "https://www.cerdanyola.cat/agenda/passatge-del-terror-al-cc-banus"
+   },
+   {
+    "category": "Música",
+    "end": "2026-10-31",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-31",
+    "time": "19:00",
+    "title": "Concert '2016-2026 Echoes of Pink Floyd'",
+    "url": "https://www.cerdanyola.cat/agenda/concert-2016-2026-echoes-pink-floyd"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-10-31",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-31",
+    "time": "19:00",
+    "title": "Halloween a Canaletes",
+    "url": "https://www.cerdanyola.cat/agenda/halloween-canaletes"
+   },
+   {
+    "category": "Festes populars",
+    "end": "2026-11-01",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-01",
+    "time": "10:00",
+    "title": "CastaHalloween 2026",
+    "url": "https://www.cerdanyola.cat/agenda/castahalloween-2026"
+   },
+   {
+    "category": "Exposicions",
+    "end": "2026-11-01",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-01",
+    "time": "10:30",
+    "title": "Ca n'Oliver, un poblat ibèric laietà",
+    "url": "https://www.cerdanyola.cat/agenda/ca-noliver-un-poblat-iberic-laieta-20"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-11-01",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-01",
+    "time": "18:00",
+    "title": "Espectacle de Dansa flamenca 'A ti Federico'",
+    "url": "https://www.cerdanyola.cat/agenda/espectacle-de-dansa-flamenca-ti-federico-0"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-02",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-02",
+    "time": "09:30",
+    "title": "Donació de sang i plasma",
+    "url": "https://www.cerdanyola.cat/agenda/donacio-de-sang-i-plasma-36"
+   },
+   {
+    "category": "Conferències",
+    "end": "2026-11-03",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-03",
+    "time": "18:30",
+    "title": "Tardor Solidària. Xerrada 'La responsabilitat de triar. Alternatives sostenibles al tèxtil global'",
+    "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-xerrada-la-responsabilitat-de-triar-alternatives-sostenibles-al-textil"
+   },
+   {
+    "category": "",
+    "end": "2026-11-04",
+    "place": "Sala Cinema de la UAB",
+    "source": "uab",
+    "start": "2026-11-04",
+    "time": "11:00",
+    "title": "Projecció del film ¿Qué he hecho yo para merecer esto?, de Pedro Almodóvar",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-que-he-hecho-yo-para-merecer-esto-de-pedro-almodovar-1345828727816.html?detid=1346003256667"
+   },
+   {
+    "category": "",
+    "end": "2026-11-05",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-11-05",
+    "time": "13:00",
+    "title": "Projecció del film Edipo, de Pier Paolo Pasolini (1967)",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-edipo-de-pier-paolo-pasolini-1967-1345828727816.html?detid=1346000385676"
+   },
+   {
+    "category": "",
+    "end": "2026-11-05",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-11-05",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligatori de novembre",
+    "url": "https://afocer.cat/event/veredicte-concurs-digital-i-tema-obligatori-de-novembre/"
+   },
+   {
+    "category": "Cinema",
+    "end": "2026-11-05",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-05",
+    "time": "20:30",
+    "title": "Cinema: Rebuilding",
+    "url": "https://www.cerdanyola.cat/agenda/cinema-rebuilding"
+   },
+   {
+    "category": "Esports",
+    "end": "2026-11-08",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-08",
+    "time": "09:00",
+    "title": "Marxerola 2026. Caminada popular i Marxa Nòrdica per Collserola",
+    "url": "https://www.cerdanyola.cat/agenda/marxerola-2026-caminada-popular-i-marxa-nordica-collserola"
+   },
+   {
+    "category": "",
+    "end": "2026-11-12",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-11-12",
+    "time": "18:30",
+    "title": "Fotos de vacances",
+    "url": "https://afocer.cat/event/fotos-de-vacances/"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-11-12",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-12",
+    "time": "20:00",
+    "title": "Musical 'Los Miserables'. Festa de Tardor de Sant Martí",
+    "url": "https://www.cerdanyola.cat/agenda/musical-los-miserables-festa-de-tardor-de-sant-marti"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-11-14",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-14",
+    "time": "17:30",
+    "title": "Monòleg 'Parlant amb Franquesa'. Festa de Tardor de Sant Martí",
+    "url": "https://www.cerdanyola.cat/agenda/monoleg-parlant-amb-franquesa-festa-de-tardor-de-sant-marti"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-14",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-14",
+    "time": "18:00",
+    "title": "Espectacle 'Yunez Chaib en directo'",
+    "url": "https://www.cerdanyola.cat/agenda/espectacle-yunez-chaib-en-directo"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-11-14",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-14",
+    "time": "19:00",
+    "title": "Micro-teatre 'Balneari La Pau Eterna'",
+    "url": "https://www.cerdanyola.cat/agenda/micro-teatre-balneari-la-pau-eterna"
+   },
+   {
+    "category": "Cursos i tallers",
+    "end": "2026-11-18",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-18",
+    "time": "15:00",
+    "title": "Taller 'Autoprotecció, suport vital i bàsic i DEA'",
+    "url": "https://www.cerdanyola.cat/agenda/taller-autoproteccio-suport-vital-i-basic-i-dea-1"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-20",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-20",
+    "time": "09:00",
+    "title": "Oficina mòbil d'Aigües de Barcelona",
+    "url": "https://www.cerdanyola.cat/agenda/oficina-mobil-daigues-de-barcelona-30"
+   },
+   {
+    "category": "Esports",
+    "end": "2026-11-21",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-21",
+    "time": "17:30",
+    "title": "38a edició Milles de Cerdanyola",
+    "url": "https://www.cerdanyola.cat/agenda/38a-edicio-milles-de-cerdanyola"
+   },
+   {
+    "category": "",
+    "end": "2026-11-28",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-11-28",
+    "time": "17:30",
+    "title": "Veredicte concurs social color i monocrom de novembre",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-de-novembre-4/"
+   },
+   {
+    "category": "",
+    "end": "2026-12-15",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-12-15",
+    "time": "15:00",
+    "title": "Projecció del film Gladiator, de Ridley Scott (2000)",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gladiator-de-ridley-scott-2000-1345828727816.html?detid=1346000387117"
+   }
+  ],
   "permanent": [
    {
+    "category": "Exposicions",
     "free": false,
     "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
@@ -10,6 +632,7 @@
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    },
    {
+    "category": "Exposicions",
     "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
@@ -17,6 +640,7 @@
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
    },
    {
+    "category": "Exposicions",
     "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
@@ -25,5 +649,5 @@
    }
   ]
  },
- "fetched": "2026-10-21T17:58:43+02:00"
+ "fetched": "2026-10-21T20:02:45+02:00"
 }
