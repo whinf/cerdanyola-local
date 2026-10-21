@@ -12,9 +12,10 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import timedelta
+from datetime import date, timedelta
 from pathlib import Path
 
+import i18n
 import tz
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -103,13 +104,27 @@ def fetch_weather(now):
 
 
 # ---------- agenda ----------
+# categorías de la Agenda cultural -> mismas etiquetas que usa el Ajuntament
+GENCAT_CATS = {"exposicions": "Exposicions", "rutes-i-visites": "Rutes i visites", "infantil": "Infància",
+               "concerts": "Música", "teatre": "Teatre i dansa", "dansa": "Teatre i dansa", "circ": "Teatre i dansa",
+               "cursos": "Cursos i tallers", "conferencies": "Conferències", "cinema": "Cinema",
+               "festivals-i-mostres": "Festivals", "festes": "Festes populars", "carnavals": "Festes populars",
+               "sardanes": "Festes populars", "fires-i-mercats": "Fires i mercats", "gastronomia": "Hostalaria",
+               "llibres-i-lletres": "Actes literaris", "nadal": "Nadal"}
+
+
+def gencat_category(r):
+    slug = (r.get("tags_categor_es") or "").split(",")[0].strip().rsplit("/", 1)[-1]
+    return GENCAT_CATS.get(slug, slug.replace("-", " ").capitalize())
+
+
 def parse_agenda_gencat(rows, today):
     events, permanent = [], []
     for r in rows:
         links = [u.strip() for u in (r.get("enlla_os") or "").split(",") if u.strip()]
         item = {"title": (r.get("denominaci") or "").strip(), "place": (r.get("espai") or "").strip(),
                 "url": next((u for u in links if "agenda.cultura.gencat.cat" in u), links[0] if links else ""),
-                "free": r.get("gratuita") == "Sí", "source": "gencat"}
+                "free": r.get("gratuita") == "Sí", "category": gencat_category(r), "source": "gencat"}
         if not item["title"]:
             continue
         if r.get("permanent") == "Sí":
@@ -123,20 +138,35 @@ def parse_agenda_gencat(rows, today):
     return events, permanent
 
 
-_ITEM = re.compile(
-    r'content="(\d{4}-\d\d-\d\d)T(\d\d:\d\d)[^"]*"[^>]*class="date-display-(?:single|start)"'
-    r'(?:(?!date-display-(?:single|start)).)*?<a href="(/agenda/[^"#?]+)"[^>]*>\s*<p>(.*?)</p>', re.S)
+_ROW = re.compile(r'<(?:li|div) class="views-row[^"]*"')
+_DATE = re.compile(r'content="(\d{4}-\d\d-\d\d)T(\d\d:\d\d)[^"]*" class="date-display-(single|start|end)"')
+_LINK = re.compile(r'<a href="(/agenda/[^"#?]+)"[^>]*>(.*?)</a>', re.S)
+_TAG = re.compile(r'href="/newsletter/[^"]+"[^>]*>([^<]+)</a>')
+_LAST_PAGE = re.compile(r'pager-last"><a href="/agenda\?page=(\d+)"')
 
 
 def parse_agenda_ajuntament(page, today):
+    """Cada acto es un bloque views-row: fecha de inicio (y de fin, si es un rango), enlace y categoría."""
     out = []
-    for day, hhmm, path, title in _ITEM.findall(page):
-        if day < today.isoformat():
+    for block in _ROW.split(page)[1:]:
+        dates, link = _DATE.findall(block), _LINK.search(block)
+        if not dates or not link:
             continue
-        out.append({"title": html.unescape(re.sub(r"<[^>]+>", "", title)).strip(), "start": day, "end": day,
-                    "time": "" if hhmm == "00:00" else hhmm, "place": "",
-                    "url": "https://www.cerdanyola.cat" + path, "source": "ajuntament"})
+        start, hhmm, _ = dates[0]
+        end = dates[-1][0] if dates[-1][2] == "end" else start
+        if end < today.isoformat():
+            continue
+        tag = _TAG.search(block)
+        out.append({"title": html.unescape(re.sub(r"<[^>]+>", "", link.group(2))).strip(), "start": start,
+                    "end": end, "time": "" if hhmm == "00:00" else hhmm, "place": "",
+                    "category": html.unescape(tag.group(1)).strip() if tag else "",
+                    "url": "https://www.cerdanyola.cat" + link.group(1), "source": "ajuntament"})
     return out
+
+
+def last_page(page):
+    m = _LAST_PAGE.search(page)
+    return int(m.group(1)) if m else 0
 
 
 def merge_events(*lists):
@@ -149,14 +179,106 @@ def merge_events(*lists):
     return out
 
 
+# Calendarios de entidades con WordPress + The Events Calendar: fuente -> (web, categoría por defecto)
+TRIBE_FEEDS = {
+    "blues": ("https://bluesdecerdanyola.com", "Música"),  # Festival de Blues: conciertos en bares (sept.-oct.)
+    "afocer": ("https://afocer.cat", ""),  # Agrupació Foto-Cine Cerdanyola-Ripollet
+}
+
+
+def parse_tribe(doc, source, default_cat, today):
+    out = []
+    for e in doc.get("events", []):
+        venue = e["venue"] if isinstance(e.get("venue"), dict) else {}
+        town = (venue.get("city") or "").lower()
+        if town and "cerdanyola" not in town and "bellaterra" not in town:
+            continue  # AFOCER también organiza actos en Ripollet
+        start, end = e["start_date"][:10], e["end_date"][:10]
+        if end < today.isoformat():
+            continue
+        cats = [html.unescape(c.get("name", "")) for c in e.get("categories", [])]
+        out.append({"title": html.unescape(e["title"]).strip(), "start": start, "end": end,
+                    "time": "" if e.get("all_day") else e["start_date"][11:16],
+                    "place": html.unescape(venue.get("venue") or "").strip(),
+                    "category": next((c for c in cats if c in i18n.AGENDA_CATS), default_cat),
+                    "url": e.get("url", ""), "source": source})
+    return out
+
+
+def fetch_tribe(source, today):
+    site, default_cat = TRIBE_FEEDS[source]
+    url = f"{site}/wp-json/tribe/events/v1/events?per_page=50&start_date={today.isoformat()}"
+    return parse_tribe(get_json(url), source, default_cat, today)
+
+
+# Agenda de la UAB (campus de Bellaterra). Contenido CC BY-NC: válido mientras la web no sea comercial.
+UAB_AGENDA = "https://www.uab.cat/web/agenda-1345828727305.html?categoria={}"
+UAB_CATS = ("1345668589727", "5000000909775")  # agenda cultural, participació estudiantil
+MONTHS_CA = ("gener", "febrer", "març", "abril", "maig", "juny", "juliol", "agost",
+             "setembre", "octubre", "novembre", "desembre")
+_UAB_DAY = re.compile(r",\s*(\d+)\s+(?:de\s+|d[’'])(\w+)")
+_UAB_LINK = re.compile(r"<h4>\s*<a href='([^']+)'>([^<]+)</a>")
+_UAB_END = re.compile(r"(\d+)\s+(\w+)\.?\s+(\d{4})\s*$")
+
+
+def month_ca(word):
+    word = word.lower().rstrip(".")
+    return next((i + 1 for i, m in enumerate(MONTHS_CA) if word and m.startswith(word)), None)
+
+
+def parse_uab(page, today):
+    out = []
+    for chunk in page.split('<h3 class="capcalera-dia">')[1:]:
+        day = _UAB_DAY.search(chunk[:200])
+        if not day or not month_ca(day.group(2)):
+            continue
+        d, m = int(day.group(1)), month_ca(day.group(2))
+        for item in chunk.split('<li class="avanc">')[1:]:
+            link = _UAB_LINK.search(item)
+            if not link:
+                continue
+            rng = re.search(r'class="data">([^<]+)<', item)
+            end_m = _UAB_END.search(rng.group(1)) if rng else None
+            if end_m and month_ca(end_m.group(2)):
+                end = date(int(end_m.group(3)), month_ca(end_m.group(2)), int(end_m.group(1)))
+                start = date(end.year - (m > end.month), m, d)
+            else:  # la cabecera del día no lleva año: el próximo que encaje
+                start = date(today.year, m, d)
+                if start < today - timedelta(days=180):
+                    start = date(today.year + 1, m, d)
+                end = start
+            if end < today:
+                continue
+            hour = re.search(r'class="hora">.*?(\d\d:\d\d)', item, re.S)
+            place = re.search(r'class="lloc">(?:.*?</svg>)?\s*([^<]+?)\s*</li>', item, re.S)
+            out.append({"title": html.unescape(re.sub(r"\s+", " ", link.group(2))).strip(),
+                        "start": start.isoformat(), "end": end.isoformat(), "time": hour.group(1) if hour else "",
+                        "place": html.unescape(place.group(1)) if place else "", "category": "",
+                        "url": "https://www.uab.cat" + html.unescape(link.group(1)), "source": "uab"})
+    return out
+
+
+def fetch_uab(today):
+    return [e for cat in UAB_CATS for e in parse_uab(get_text(UAB_AGENDA.format(cat)), today)]
+
+
 def fetch_agenda(now):
     today = now.date()
     rows = socrata("rhpv-yr4f", where=f"municipi='{AGENDA_MUNICIPI}'", order="data_inici DESC", limit=200)
     gencat, permanent = parse_agenda_gencat(rows, today)
-    ajuntament = []
-    for page in ("", "?page=1"):
-        ajuntament += parse_agenda_ajuntament(get_text("https://www.cerdanyola.cat/agenda" + page), today)
-    return {"events": merge_events(gencat, ajuntament), "permanent": permanent}
+    first = get_text("https://www.cerdanyola.cat/agenda")
+    ajuntament = parse_agenda_ajuntament(first, today)
+    for n in range(1, min(last_page(first), 6) + 1):  # unas 10 fechas por página: ~1 mes
+        time.sleep(10)  # el robots.txt de cerdanyola.cat pide Crawl-delay: 10
+        ajuntament += parse_agenda_ajuntament(get_text(f"https://www.cerdanyola.cat/agenda?page={n}"), today)
+    extra = []
+    jobs = [("uab", lambda: fetch_uab(today))] + [(s, lambda s=s: fetch_tribe(s, today)) for s in TRIBE_FEEDS]
+    for name, job in jobs:
+        try:
+            extra += job()
+        except Exception as exc:  # fuentes secundarias: si una falla, la agenda sigue con las demás
+            print(f"aviso: agenda/{name}: {exc}")
+    return {"events": merge_events(gencat, ajuntament, extra), "permanent": permanent}
 
 
 # ---------- calidad del aire (XVPCA, Generalitat) ----------
@@ -233,6 +355,85 @@ def parse_chargers(rows):
 
 def fetch_chargers(now):
     return parse_chargers(socrata("tb2m-m33b", where="upper(municipi) like '%CERDANYOLA%'", limit=100))
+
+
+# ---------- guía de ocio (OpenStreetMap, ODbL) ----------
+OVERPASS = ("https://overpass-api.de/api/interpreter", "https://overpass.private.coffee/api/interpreter")
+LEISURE_QUERY = """[out:json][timeout:90];
+area["boundary"="administrative"]["admin_level"="8"]["name"="Cerdanyola del Vallès"]->.a;
+(
+ nwr(area.a)["name"]["amenity"~"^(restaurant|fast_food|bar|cafe|ice_cream|pub|biergarten|nightclub|cinema|theatre|arts_centre|community_centre)$"];
+ nwr(area.a)["name"]["tourism"~"^(museum|gallery|viewpoint|picnic_site|attraction)$"];
+ nwr(area.a)["name"]["leisure"~"^(park|nature_reserve|playground|water_park|sports_centre|swimming_pool|stadium|fitness_centre|dance|escape_game|bowling_alley)$"];
+ nwr(area.a)["name"]["historic"~"^(castle|manor|ruins|archaeological_site|monument|memorial|fort|tower|farm)$"];
+ nwr(area.a)["name"]["natural"~"^(spring|peak|cave_entrance)$"];
+ relation(area.a)["name"]["route"~"^(hiking|foot|bicycle|mtb)$"];
+);
+out center tags;"""
+
+# grupo de la guía -> (clave OSM, valores)
+LEISURE_KINDS = [
+    ("nature", "leisure", ("park", "nature_reserve", "playground", "water_park")),
+    ("nature", "tourism", ("viewpoint", "picnic_site")), ("nature", "natural", ("spring", "peak", "cave_entrance")),
+    ("routes", "route", ("hiking", "foot", "bicycle", "mtb")),
+    ("heritage", "historic", ("castle", "manor", "ruins", "archaeological_site", "monument", "memorial", "fort", "tower", "farm")),
+    ("culture", "tourism", ("museum", "gallery", "attraction")),
+    ("culture", "amenity", ("cinema", "theatre", "arts_centre")),
+    ("culture", "leisure", ("escape_game", "bowling_alley")),
+    ("community", "amenity", ("community_centre",)),
+    ("eat", "amenity", ("restaurant", "fast_food")),
+    ("drink", "amenity", ("bar", "cafe", "ice_cream", "biergarten")),
+    ("night", "amenity", ("pub", "nightclub")), ("night", "leisure", ("dance",)),
+    ("sport", "leisure", ("sports_centre", "swimming_pool", "stadium", "fitness_centre")),
+]
+# en OSM muchas plazas pequeñas y piscinas de comunidad están marcadas como parque
+_NOT_A_PARK = re.compile(r"^(\d+|plaça\b.*|parc infantil|.*comunitari.*)$", re.I)
+
+
+def _web(tags):
+    url = (tags.get("website") or tags.get("contact:website") or tags.get("url") or "").split(";")[0].strip()
+    if url.startswith("www."):
+        url = "https://" + url
+    return url if url.startswith(("http://", "https://")) else ""
+
+
+def parse_leisure(doc):
+    out, seen = [], set()
+    for el in doc.get("elements", []):
+        tags = el.get("tags", {})
+        if tags.get("access") in ("private", "no") or tags.get("disused") == "yes":
+            continue
+        kind = next(((g, tags[k]) for g, k, vals in LEISURE_KINDS if tags.get(k) in vals), None)
+        name = (tags.get("name") or "").strip()
+        if not kind or not name or (name.lower(), kind[1]) in seen:
+            continue
+        if kind[1] in ("park", "playground", "swimming_pool") and _NOT_A_PARK.match(name):
+            continue
+        seen.add((name.lower(), kind[1]))
+        pos = el.get("center") or el
+        street = " ".join(x for x in (tags.get("addr:street"), tags.get("addr:housenumber")) if x)
+        km = tags.get("distance", "").replace(",", ".").removesuffix("km").strip()
+        out.append({"name": name, "group": kind[0], "type": kind[1], "cuisine": tags.get("cuisine", ""),
+                    "address": street, "hours": tags.get("opening_hours", ""), "web": _web(tags),
+                    "phone": (tags.get("phone") or tags.get("contact:phone") or "").split(";")[0].strip(),
+                    "km": km if re.fullmatch(r"\d+(\.\d+)?", km) else "", "ref": tags.get("ref", ""),
+                    "lat": pos.get("lat"), "lon": pos.get("lon"), "osm": f'{el["type"]}/{el["id"]}'})
+    return sorted(out, key=lambda e: (e["group"], e["name"].lower()))
+
+
+def fetch_leisure(now):
+    errors = []
+    for url in OVERPASS:  # dos servidores: si uno está saturado, probamos el otro
+        try:
+            doc = json.loads(get_text(url + "?" + urllib.parse.urlencode({"data": LEISURE_QUERY}), timeout=120))
+        except (FetchError, json.JSONDecodeError) as exc:
+            errors.append(str(exc)[:150])
+            continue
+        places = parse_leisure(doc)
+        if len(places) > 50:  # una respuesta casi vacía es un error del servidor, no un cambio real
+            return places
+        errors.append(f"{url}: solo {len(places)} lugares")
+    raise FetchError(" | ".join(errors))
 
 
 # ---------- horas baratas de la luz (web hermana llum-hores) ----------

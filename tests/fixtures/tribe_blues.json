@@ -1,0 +1,137 @@
+{
+ "events": [
+  {
+   "title": "MENPHIS TRAIN",
+   "start_date": "2026-10-01 20:30:00",
+   "end_date": "2026-10-01 20:30:00",
+   "all_day": false,
+   "url": "https://bluesdecerdanyola.com/event/menphis-train/",
+   "venue": {
+    "venue": "Cal Pintxo",
+    "city": "Cerdanyola del valles"
+   },
+   "categories": [
+    {
+     "name": "Cal Pintxo"
+    },
+    {
+     "name": "concert als bars i altres"
+    },
+    {
+     "name": "Prefestival"
+    }
+   ]
+  },
+  {
+   "title": "Blues Jam Session",
+   "start_date": "2026-10-02 01:00:00",
+   "end_date": "2026-10-03 03:00:00",
+   "all_day": false,
+   "url": "https://bluesdecerdanyola.com/event/jam-session-blues-jokers-mc/",
+   "venue": {
+    "venue": "Jokers MC",
+    "city": "Cerdanyola del Valles"
+   },
+   "categories": [
+    {
+     "name": "Activitat"
+    },
+    {
+     "name": "Blues festival"
+    },
+    {
+     "name": "Jokers MC"
+    }
+   ]
+  },
+  {
+   "title": "Temps de Blues",
+   "start_date": "2026-10-02 05:00:00",
+   "end_date": "2026-10-12 04:59:59",
+   "all_day": true,
+   "url": "https://bluesdecerdanyola.com/event/temps-de-blues-2/",
+   "venue": {
+    "venue": "Biblioteca &#8211; Sala Enric Granados",
+    "city": "Cerdanyola del Valles"
+   },
+   "categories": [
+    {
+     "name": "Activitat"
+    },
+    {
+     "name": "Biblioteca de Cerdanyola"
+    },
+    {
+     "name": "Blues festival"
+    }
+   ]
+  },
+  {
+   "title": "THE MOMENTO",
+   "start_date": "2026-10-02 19:30:00",
+   "end_date": "2026-10-02 19:30:00",
+   "all_day": false,
+   "url": "https://bluesdecerdanyola.com/event/the-momento/",
+   "venue": {
+    "venue": "Cervecería 134",
+    "city": "Cerdanyola del Valles"
+   },
+   "categories": [
+    {
+     "name": "Blues festival"
+    },
+    {
+     "name": "Cervecería 134"
+    },
+    {
+     "name": "concert als bars i altres"
+    }
+   ]
+  },
+  {
+   "title": "TXUS BLUES &#038; CÉSAR CANUT",
+   "start_date": "2026-10-02 20:00:00",
+   "end_date": "2026-10-02 20:00:00",
+   "all_day": false,
+   "url": "https://bluesdecerdanyola.com/event/txus-blues-cesar-canut/",
+   "venue": {
+    "venue": "Bar Hoom",
+    "city": "Cerdanyola del valles"
+   },
+   "categories": [
+    {
+     "name": "Bar Hoom"
+    },
+    {
+     "name": "Blues festival"
+    },
+    {
+     "name": "concert als bars i altres"
+    }
+   ]
+  },
+  {
+   "title": "JAN NIETO (Catalunya)",
+   "start_date": "2026-10-02 21:00:00",
+   "end_date": "2026-10-02 21:00:00",
+   "all_day": false,
+   "url": "https://bluesdecerdanyola.com/event/jan-nieto/",
+   "venue": {
+    "venue": "Carpa Xarau",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": [
+    {
+     "name": "Blues festival"
+    },
+    {
+     "name": "Carpa Xarau"
+    },
+    {
+     "name": "Concerts"
+    }
+   ]
+  }
+ ],
+ "total": 55
+}

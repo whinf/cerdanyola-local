@@ -1,4 +1,5 @@
 """Textos y formatos en ca, es y en (el catalán va primero: es una web local)."""
+import re
 
 LANGS = ("ca", "es", "en")
 
@@ -58,6 +59,80 @@ CATEGORIES = {  # categorías de equipamientos de la Generalitat (vienen en cata
     "": ("Otros", "Other"),
 }
 
+AGENDA_CATS = {  # categorías de la agenda (en catalán, como las publica el Ajuntament)
+    "Festes populars": ("Fiestas populares", "Local festivals"), "Música": ("Música", "Music"),
+    "Teatre i dansa": ("Teatro y danza", "Theatre and dance"), "Cinema": ("Cine", "Cinema"),
+    "Hostalaria": ("Gastronomía", "Food and drink"), "Esports": ("Deportes", "Sport"),
+    "Infància": ("Infancia", "Children"), "Exposicions": ("Exposiciones", "Exhibitions"),
+    "Conferències": ("Conferencias", "Talks"), "Actes literaris": ("Actos literarios", "Literary events"),
+    "Cursos i tallers": ("Cursos y talleres", "Courses and workshops"),
+    "Jornades i seminaris": ("Jornadas y seminarios", "Conferences"), "Altres activitats": ("Otras actividades", "Other"),
+    "Rutes i visites": ("Rutas y visitas", "Walks and tours"), "Festivals": ("Festivales", "Festivals"),
+    "Fires i mercats": ("Ferias y mercados", "Fairs and markets"), "Nadal": ("Navidad", "Christmas"),
+    "Joventut": ("Juventud", "Youth"), "Gent gran": ("Gente mayor", "Older people"),
+}
+
+# grupos de la guía de ocio: icono, ca, es, en (en el orden en que salen en la página)
+LEISURE_GROUPS = {
+    "nature": ("🌳", "Natura, parcs i fonts", "Naturaleza, parques y fuentes", "Nature, parks and springs"),
+    "routes": ("🥾", "Rutes a peu i en bici", "Rutas a pie y en bici", "Walking and cycling routes"),
+    "heritage": ("🏛️", "Patrimoni", "Patrimonio", "Heritage"),
+    "culture": ("🎭", "Cultura i lleure", "Cultura y ocio", "Culture and entertainment"),
+    "eat": ("🍽️", "Restaurants", "Restaurantes", "Restaurants"),
+    "drink": ("☕", "Bars i cafeteries", "Bares y cafeterías", "Bars and cafés"),
+    "night": ("🌙", "Pubs i nit", "Pubs y noche", "Pubs and nightlife"),
+    "sport": ("⚽", "Esport", "Deporte", "Sport"),
+    "community": ("🤝", "Centres cívics i entitats", "Centros cívicos y entidades", "Community centres and associations"),
+}
+
+PLACE_TYPES = {  # valor de OSM -> ca, es, en
+    "park": ("Parc", "Parque", "Park"), "nature_reserve": ("Espai natural", "Espacio natural", "Nature reserve"),
+    "playground": ("Parc infantil", "Parque infantil", "Playground"), "water_park": ("Parc aquàtic", "Parque acuático", "Water park"),
+    "viewpoint": ("Mirador", "Mirador", "Viewpoint"), "picnic_site": ("Àrea de pícnic", "Área de pícnic", "Picnic area"),
+    "spring": ("Font", "Fuente", "Spring"), "peak": ("Turó", "Cima", "Hill"), "cave_entrance": ("Cova", "Cueva", "Cave"),
+    "hiking": ("A peu", "A pie", "On foot"), "foot": ("A peu", "A pie", "On foot"),
+    "bicycle": ("En bici", "En bici", "By bike"), "mtb": ("BTT", "BTT", "Mountain bike"),
+    "castle": ("Castell", "Castillo", "Castle"), "manor": ("Casa senyorial", "Casa señorial", "Manor house"),
+    "ruins": ("Ruïnes", "Ruinas", "Ruins"), "archaeological_site": ("Jaciment arqueològic", "Yacimiento arqueológico", "Archaeological site"),
+    "monument": ("Monument", "Monumento", "Monument"), "memorial": ("Memorial", "Memorial", "Memorial"),
+    "fort": ("Fortificació", "Fortificación", "Fortification"), "tower": ("Torre", "Torre", "Tower"), "farm": ("Masia", "Masía", "Farmhouse"),
+    "museum": ("Museu", "Museo", "Museum"), "gallery": ("Galeria d'art", "Galería de arte", "Art gallery"),
+    "attraction": ("Atracció", "Atracción", "Attraction"), "cinema": ("Cinema", "Cine", "Cinema"),
+    "theatre": ("Teatre", "Teatro", "Theatre"), "arts_centre": ("Centre d'art", "Centro de arte", "Arts centre"),
+    "escape_game": ("Escape room", "Escape room", "Escape room"), "bowling_alley": ("Bitlles", "Bolera", "Bowling"),
+    "community_centre": ("Centre cívic o entitat", "Centro cívico o entidad", "Community centre"),
+    "restaurant": ("Restaurant", "Restaurante", "Restaurant"), "fast_food": ("Menjar ràpid", "Comida rápida", "Fast food"),
+    "bar": ("Bar", "Bar", "Bar"), "cafe": ("Cafeteria", "Cafetería", "Café"), "ice_cream": ("Gelateria", "Heladería", "Ice cream"),
+    "biergarten": ("Terrassa", "Terraza", "Beer garden"), "pub": ("Pub", "Pub", "Pub"),
+    "nightclub": ("Discoteca", "Discoteca", "Nightclub"), "dance": ("Sala de ball", "Sala de baile", "Dance hall"),
+    "sports_centre": ("Centre esportiu", "Centro deportivo", "Sports centre"), "swimming_pool": ("Piscina", "Piscina", "Swimming pool"),
+    "stadium": ("Estadi", "Estadio", "Stadium"), "fitness_centre": ("Gimnàs", "Gimnasio", "Gym"),
+}
+
+CUISINES = {  # cocina de OSM -> ca, es, en
+    "regional": ("cuina tradicional", "cocina tradicional", "traditional"), "catalan": ("catalana", "catalana", "Catalan"),
+    "spanish": ("espanyola", "española", "Spanish"), "mediterranean": ("mediterrània", "mediterránea", "Mediterranean"),
+    "tapas": ("tapes", "tapas", "tapas"), "pizza": ("pizza", "pizza", "pizza"), "italian": ("italiana", "italiana", "Italian"),
+    "pasta": ("pasta", "pasta", "pasta"), "burger": ("hamburgueses", "hamburguesas", "burgers"),
+    "kebab": ("kebab", "kebab", "kebab"), "turkish": ("turca", "turca", "Turkish"), "chinese": ("xinesa", "china", "Chinese"),
+    "japanese": ("japonesa", "japonesa", "Japanese"), "sushi": ("sushi", "sushi", "sushi"), "asian": ("asiàtica", "asiática", "Asian"),
+    "international": ("internacional", "internacional", "international"), "sandwich": ("entrepans", "bocadillos", "sandwiches"),
+    "breakfast": ("esmorzars", "desayunos", "breakfast"), "coffee_shop": ("cafè", "café", "coffee"),
+    "grill": ("brasa", "brasa", "grill"), "seafood": ("peix i marisc", "pescado y marisco", "seafood"),
+    "chicken": ("pollastre", "pollo", "chicken"), "mexican": ("mexicana", "mexicana", "Mexican"),
+    "indian": ("índia", "india", "Indian"), "vegetarian": ("vegetariana", "vegetariana", "vegetarian"),
+    "vegan": ("vegana", "vegana", "vegan"), "salad": ("amanides", "ensaladas", "salads"), "churro": ("xurros", "churros", "churros"),
+    "noodle": ("fideus", "fideos", "noodles"), "hot_dog": ("frankfurts", "perritos", "hot dogs"),
+    "bubble_tea": ("bubble tea", "bubble tea", "bubble tea"), "ice_cream": ("gelats", "helados", "ice cream"),
+}
+
+# abreviaturas de opening_hours de OSM
+HOURS = {
+    "ca": {"Mo": "dl", "Tu": "dt", "We": "dc", "Th": "dj", "Fr": "dv", "Sa": "ds", "Su": "dg", "PH": "festius", "off": "tancat", "closed": "tancat"},
+    "es": {"Mo": "lu", "Tu": "ma", "We": "mi", "Th": "ju", "Fr": "vi", "Sa": "sá", "Su": "do", "PH": "festivos", "off": "cerrado", "closed": "cerrado"},
+    "en": {"PH": "holidays", "off": "closed"},
+}
+
 STRINGS = {
     "ca": {
         "lang_name": "Català", "locale": "ca_ES",
@@ -83,13 +158,22 @@ STRINGS = {
         "transport_more": "Estat del servei a Rodalies de Catalunya",
         "agenda_title": "Agenda de Cerdanyola", "agenda_next": "Properes activitats", "agenda_all": "Veure tota l'agenda",
         "agenda_permanent": "Sempre obert", "agenda_empty": "Ara mateix no hi ha activitats publicades.",
-        "agenda_desc": "Agenda d'activitats de Cerdanyola del Vallès i Bellaterra: actes de l'Ajuntament i de l'Agenda cultural de Catalunya.",
+        "agenda_desc": "Agenda d'activitats de Cerdanyola del Vallès i Bellaterra: festes, concerts, teatre i actes de l'Ajuntament, les entitats i els locals, i de l'Agenda cultural de Catalunya.",
         "free": "Gratuït", "src_ajuntament": "Ajuntament", "src_gencat": "Agenda cultural",
+        "src_uab": "UAB", "src_blues": "Festival de Blues", "src_afocer": "AFOCER",
+        "ongoing_title": "Ara en marxa", "festive": "Festa",
+        "add_event": "Organitzes una festa, un concert o una activitat oberta al públic a Cerdanyola? Si el teu local o entitat té un calendari web (per exemple, WordPress amb The Events Calendar), <a href=\"{repo}/issues\">explica-ho a GitHub</a> i l'afegirem a l'agenda.",
+        "slug_leisure": "oci", "leisure_title": "Guia d'oci de Cerdanyola",
+        "leisure_desc": "Què fer a Cerdanyola del Vallès i Bellaterra: festes i concerts, rutes per Collserola, fonts, miradors, patrimoni, museus, restaurants, bars i pubs.",
+        "festive_title": "Properes festes, concerts i nit", "festive_empty": "Ara mateix no hi ha festes ni concerts anunciats.",
+        "plan_title": "Pla per avui", "plan_out": "Avui: {sky}, fins a {tmax}°. Bon dia per sortir; algunes idees:",
+        "plan_in": "Avui es preveu pluja ({mm} mm). Idees a cobert:", "plan_events": "Avui hi ha {n} activitats a l'agenda",
+        "osm_note": "Llocs d'<a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© col·laboradors d'OpenStreetMap, llicència ODbL), en ordre alfabètic i sense enllaços patrocinats. Hi falta un lloc o hi ha una dada malament? Qualsevol persona el pot afegir o corregir gratis a <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> i es veurà aquí l'endemà.",
         "directory_title": "Equipaments públics de Cerdanyola",
         "directory_desc": "Directori d'equipaments públics de Cerdanyola del Vallès: escoles, biblioteques, instal·lacions esportives, serveis socials i més, amb adreça i telèfon.",
         "chargers_title": "Punts de recàrrega de vehicles elèctrics", "map": "Mapa", "phone": "Tel.",
         "quick_title": "Més informació",
-        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments i aire), Ajuntament de Cerdanyola (agenda), Renfe (avisos) i Red Eléctrica (llum). Actualitzat: {t}.",
+        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments i aire), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap (guia d'oci) i Red Eléctrica (llum). Actualitzat: {t}.",
         "about": "Sobre el web", "legal": "Avís legal", "privacy": "Privacitat",
         "skip": "Salta al contingut", "language": "Idioma", "choose": "Tria l'idioma",
         "notfound_title": "Pàgina no trobada", "notfound_text": "Aquesta pàgina no existeix. Torna a l'inici.",
@@ -99,9 +183,10 @@ STRINGS = {
 <h2>Fonts</h2>
 <ul>
 <li>Temps: previsió de MET Norway (Institut Meteorològic de Noruega), llicència CC BY 4.0.</li>
-<li>Agenda: Ajuntament de Cerdanyola del Vallès i Agenda cultural de Catalunya (dades obertes de la Generalitat).</li>
+<li>Agenda: Ajuntament de Cerdanyola del Vallès, Agenda cultural de Catalunya (dades obertes de la Generalitat), agenda de la UAB (llicència CC BY-NC) i calendaris del Festival de Blues de Cerdanyola i d'AFOCER.</li>
 <li>Equipaments, punts de recàrrega i qualitat de l'aire: dades obertes de la Generalitat de Catalunya.</li>
 <li>Avisos de trens: Renfe Rodalies (GTFS-RT), llicència CC BY 4.0.</li>
+<li>Guia d'oci: © col·laboradors d'<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, llicència ODbL.</li>
 <li>Preu de la llum: Red Eléctrica, a través del web germà <a href="{light}">{light}</a>.</li>
 </ul>
 <p>El codi és obert i és a <a href="{repo}">GitHub</a>, on pots avisar d'errors o proposar millores.</p>
@@ -141,13 +226,22 @@ STRINGS = {
         "transport_more": "Estado del servicio en Rodalies de Catalunya",
         "agenda_title": "Agenda de Cerdanyola", "agenda_next": "Próximas actividades", "agenda_all": "Ver toda la agenda",
         "agenda_permanent": "Siempre abierto", "agenda_empty": "Ahora mismo no hay actividades publicadas.",
-        "agenda_desc": "Agenda de actividades de Cerdanyola del Vallès y Bellaterra: actos del Ajuntament y de la Agenda cultural de Catalunya.",
+        "agenda_desc": "Agenda de actividades de Cerdanyola del Vallès y Bellaterra: fiestas, conciertos, teatro y actos del Ajuntament, las entidades y los locales, y de la Agenda cultural de Catalunya.",
         "free": "Gratis", "src_ajuntament": "Ajuntament", "src_gencat": "Agenda cultural",
+        "src_uab": "UAB", "src_blues": "Festival de Blues", "src_afocer": "AFOCER",
+        "ongoing_title": "En curso", "festive": "Fiesta",
+        "add_event": "¿Organizas una fiesta, un concierto o una actividad abierta al público en Cerdanyola? Si tu local o entidad tiene un calendario web (por ejemplo, WordPress con The Events Calendar), <a href=\"{repo}/issues\">cuéntalo en GitHub</a> y lo añadiremos a la agenda.",
+        "slug_leisure": "ocio", "leisure_title": "Guía de ocio de Cerdanyola",
+        "leisure_desc": "Qué hacer en Cerdanyola del Vallès y Bellaterra: fiestas y conciertos, rutas por Collserola, fuentes, miradores, patrimonio, museos, restaurantes, bares y pubs.",
+        "festive_title": "Próximas fiestas, conciertos y noche", "festive_empty": "Ahora mismo no hay fiestas ni conciertos anunciados.",
+        "plan_title": "Plan para hoy", "plan_out": "Hoy: {sky}, hasta {tmax}°. Buen día para salir; algunas ideas:",
+        "plan_in": "Hoy se prevé lluvia ({mm} mm). Ideas a cubierto:", "plan_events": "Hoy hay {n} actividades en la agenda",
+        "osm_note": "Lugares de <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© colaboradores de OpenStreetMap, licencia ODbL), por orden alfabético y sin enlaces patrocinados. ¿Falta un sitio o hay un dato mal? Cualquiera puede añadirlo o corregirlo gratis en <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> y se verá aquí al día siguiente.",
         "directory_title": "Equipamientos públicos de Cerdanyola",
         "directory_desc": "Directorio de equipamientos públicos de Cerdanyola del Vallès: escuelas, bibliotecas, instalaciones deportivas, servicios sociales y más, con dirección y teléfono.",
         "chargers_title": "Puntos de recarga de coches eléctricos", "map": "Mapa", "phone": "Tel.",
         "quick_title": "Más información",
-        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos y aire), Ajuntament de Cerdanyola (agenda), Renfe (avisos) y Red Eléctrica (luz). Actualizado: {t}.",
+        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos y aire), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap (guía de ocio) y Red Eléctrica (luz). Actualizado: {t}.",
         "about": "Sobre la web", "legal": "Aviso legal", "privacy": "Privacidad",
         "skip": "Saltar al contenido", "language": "Idioma", "choose": "Elige idioma",
         "notfound_title": "Página no encontrada", "notfound_text": "Esta página no existe. Vuelve al inicio.",
@@ -157,9 +251,10 @@ STRINGS = {
 <h2>Fuentes</h2>
 <ul>
 <li>Tiempo: previsión de MET Norway (Instituto Meteorológico de Noruega), licencia CC BY 4.0.</li>
-<li>Agenda: Ajuntament de Cerdanyola del Vallès y Agenda cultural de Catalunya (datos abiertos de la Generalitat).</li>
+<li>Agenda: Ajuntament de Cerdanyola del Vallès, Agenda cultural de Catalunya (datos abiertos de la Generalitat), agenda de la UAB (licencia CC BY-NC) y calendarios del Festival de Blues de Cerdanyola y de AFOCER.</li>
 <li>Equipamientos, puntos de recarga y calidad del aire: datos abiertos de la Generalitat de Catalunya.</li>
 <li>Avisos de trenes: Renfe Rodalies (GTFS-RT), licencia CC BY 4.0.</li>
+<li>Guía de ocio: © colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, licencia ODbL.</li>
 <li>Precio de la luz: Red Eléctrica, a través de la web hermana <a href="{light}">{light}</a>.</li>
 </ul>
 <p>El código es abierto y está en <a href="{repo}">GitHub</a>, donde puedes avisar de errores o proponer mejoras.</p>
@@ -199,13 +294,22 @@ STRINGS = {
         "transport_more": "Service status on Rodalies de Catalunya",
         "agenda_title": "What's on in Cerdanyola", "agenda_next": "Upcoming events", "agenda_all": "See all events",
         "agenda_permanent": "Always open", "agenda_empty": "There are no published events right now.",
-        "agenda_desc": "Events in Cerdanyola del Vallès and Bellaterra, from the town council and the Catalan culture agenda.",
+        "agenda_desc": "Events in Cerdanyola del Vallès and Bellaterra: festivals, concerts, theatre and activities by the town council, local associations and venues, and the Catalan culture agenda.",
         "free": "Free", "src_ajuntament": "Town council", "src_gencat": "Culture agenda",
+        "src_uab": "UAB", "src_blues": "Blues Festival", "src_afocer": "AFOCER",
+        "ongoing_title": "On now", "festive": "Party",
+        "add_event": "Organising a party, concert or event open to the public in Cerdanyola? If your venue or association has a web calendar (for example WordPress with The Events Calendar), <a href=\"{repo}/issues\">tell us on GitHub</a> and we'll add it to the agenda.",
+        "slug_leisure": "leisure", "leisure_title": "Leisure guide to Cerdanyola",
+        "leisure_desc": "Things to do in Cerdanyola del Vallès and Bellaterra: festivals and concerts, walks in Collserola, springs, viewpoints, heritage, museums, restaurants, bars and pubs.",
+        "festive_title": "Upcoming festivals, concerts and nights out", "festive_empty": "There are no festivals or concerts announced right now.",
+        "plan_title": "Plan for today", "plan_out": "Today: {sky}, up to {tmax}°. A good day to get out; some ideas:",
+        "plan_in": "Rain is forecast today ({mm} mm). Indoor ideas:", "plan_events": "There are {n} events on today",
+        "osm_note": "Places from <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© OpenStreetMap contributors, ODbL licence), in alphabetical order with no sponsored links. Missing a place or spotted a mistake? Anyone can add or fix it for free on <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> and it will show up here the next day.",
         "directory_title": "Public facilities in Cerdanyola",
         "directory_desc": "Directory of public facilities in Cerdanyola del Vallès: schools, libraries, sports centres, social services and more, with address and phone number.",
         "chargers_title": "Electric vehicle charging points", "map": "Map", "phone": "Tel.",
         "quick_title": "More information",
-        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities and air), Cerdanyola town council (events), Renfe (alerts) and Red Eléctrica (electricity). Updated: {t}.",
+        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities and air), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap (leisure guide) and Red Eléctrica (electricity). Updated: {t}.",
         "about": "About", "legal": "Legal notice", "privacy": "Privacy",
         "skip": "Skip to content", "language": "Language", "choose": "Choose your language",
         "notfound_title": "Page not found", "notfound_text": "This page does not exist. Go back to the home page.",
@@ -215,9 +319,10 @@ STRINGS = {
 <h2>Sources</h2>
 <ul>
 <li>Weather: MET Norway (Norwegian Meteorological Institute) forecast, CC BY 4.0 licence.</li>
-<li>Events: Cerdanyola del Vallès town council and the Catalan culture agenda (Generalitat open data).</li>
+<li>Events: Cerdanyola del Vallès town council, the Catalan culture agenda (Generalitat open data), the UAB events page (CC BY-NC licence) and the calendars of the Cerdanyola Blues Festival and AFOCER.</li>
 <li>Facilities, charging points and air quality: Generalitat de Catalunya open data.</li>
 <li>Train alerts: Renfe Rodalies (GTFS-RT), CC BY 4.0 licence.</li>
+<li>Leisure guide: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL licence.</li>
 <li>Electricity price: Red Eléctrica, via the sister site <a href="{light}">{light}</a>.</li>
 </ul>
 <p>The code is open source and lives on <a href="{repo}">GitHub</a>, where you can report bugs or suggest improvements.</p>
@@ -275,3 +380,33 @@ def category(lang, cat):
         return cat or "Altres"
     es, en = CATEGORIES.get(cat, (cat, cat))
     return es if lang == "es" else en
+
+
+def agenda_cat(lang, cat):
+    if lang == "ca" or not cat:
+        return cat
+    es, en = AGENDA_CATS.get(cat, (cat, cat))
+    return es if lang == "es" else en
+
+
+def _pick(lang, triple):
+    return triple[("ca", "es", "en").index(lang)]
+
+
+def place_type(lang, kind):
+    return _pick(lang, PLACE_TYPES[kind]) if kind in PLACE_TYPES else kind.replace("_", " ")
+
+
+def cuisine(lang, value):
+    return ", ".join(_pick(lang, CUISINES[c]) if c in CUISINES else c.replace("_", " ")
+                     for c in (x.strip() for x in value.split(";")) if c)
+
+
+def group(lang, key):
+    icon, *names = LEISURE_GROUPS[key]
+    return icon, _pick(lang, names)
+
+
+def hours(lang, value):
+    words = HOURS[lang]
+    return re.sub(r"\b(Mo|Tu|We|Th|Fr|Sa|Su|PH|off|closed)\b", lambda m: words.get(m.group(1), m.group(1)), value)

@@ -1,7 +1,8 @@
 """Genera el sitio estático de Cerdanyola a partir de los datos en caché."""
 import json
+import re
 import shutil
-from datetime import date
+from datetime import date, timedelta
 from html import escape as esc
 from pathlib import Path
 from urllib.parse import urlparse
@@ -12,6 +13,19 @@ from i18n import LANGS, t
 
 ROOT = Path(__file__).resolve().parent.parent
 RODALIES = "https://rodalies.gencat.cat/ca/estat_servei/"
+
+# Qué cuenta como fiesta: por categoría o por palabras del título (ca/es/en)
+FESTIVE_CATS = {"Festes populars", "Música", "Festivals", "Hostalaria", "Fires i mercats", "Nadal"}
+FESTIVE_WORDS = re.compile(
+    r"\b(fest[ae]s?|fiestas?|festival\w*|\w*halloween|castanyad\w*|carnaval|carnestoltes|revetlla|verbena|"
+    r"sant joan|concerts?|dj|disco\w*|balls?|baile|cercavila|correfoc|gegants|castellers?|castellera|"
+    r"sardan\w*|fira|jam|karaoke|tribut\w*|xou|show|terror|cap d'any|nochevieja|tardeo|rumba|flamenc\w*|"
+    r"corretapes|vermut|party|música en viu|en directe|en directo)\b", re.I)
+RAINY = ("rain", "sleet", "snow", "thunder", "showers")
+
+
+def festive(e):
+    return e.get("category") in FESTIVE_CATS or bool(FESTIVE_WORDS.search(e["title"]))
 
 
 def fmt_dt(iso):
@@ -66,7 +80,7 @@ class Site:
             f'<a href="{self.href(self.path(lg, kind))}" hreflang="{lg}" lang="{lg}"'
             f'{" aria-current=\"true\"" if lg == lang else ""}>{t(lg, "lang_name")}</a>' for lg in LANGS)
         nav = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, k + "_title" if k != "home" else "home")}</a>'
-                         for k in ("home", "agenda", "directory"))
+                         for k in ("home", "agenda", "leisure", "directory"))
         links = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>'
                            for k in ("about", "legal", "privacy"))
         donate = (f' · <a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">♥</a>'
@@ -193,15 +207,23 @@ class Site:
             when += f' → {i18n.fmt_date(lang, date.fromisoformat(e["end"]), weekday=False)}'
         title = esc(e["title"])
         title = f'<a href="{esc(e["url"])}">{title}</a>' if e.get("url") else title
-        meta = " · ".join(x for x in (esc(e.get("place", "")), t(lang, "free") if e.get("free") else "",
-                                       t(lang, "src_" + e["source"])) if x)
+        if festive(e):
+            title = f'<span role="img" aria-label="{t(lang, "festive")}">🎉</span> {title}'
+        meta = " · ".join(x for x in (esc(i18n.agenda_cat(lang, e.get("category", ""))), esc(e.get("place", "")),
+                                       t(lang, "free") if e.get("free") else "", t(lang, "src_" + e["source"])) if x)
         return f'<li><span class="when">{when}</span><span class="what">{title}</span><small class="muted">{meta}</small></li>'
+
+    def events_split(self):
+        """(próximos, en curso): los actos de varios días que ya han empezado van aparte."""
+        today = self.now.date().isoformat()
+        events = (self.get("agenda") or {}).get("events", [])
+        return [e for e in events if e["start"] >= today], [e for e in events if e["start"] < today]
 
     def agenda_preview(self, lang, n=6):
         ag = self.get("agenda")
         if ag is None:
             return ""
-        events = ag.get("events", [])[:n]
+        events = self.events_split()[0][:n]
         body = (f'<ul class="events">{"".join(self.event_item(lang, e) for e in events)}</ul>'
                 if events else f'<p>{t(lang, "agenda_empty")}</p>')
         return (f'<section><h2>{t(lang, "agenda_next")}</h2>{body}'
@@ -211,6 +233,7 @@ class Site:
     def home(self, lang):
         quick = (f'<section><h2>{t(lang, "quick_title")}</h2><ul class="months">'
                  f'<li><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "leisure"))}">{t(lang, "leisure_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "directory"))}">{t(lang, "directory_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
@@ -222,10 +245,16 @@ class Site:
 
     def agenda_page(self, lang):
         ag = self.get("agenda") or {}
-        events, permanent = ag.get("events", []), ag.get("permanent", [])
+        permanent = ag.get("permanent", [])
+        upcoming, ongoing = self.events_split()
+        events = upcoming + ongoing
         body = [f'<h1>{t(lang, "agenda_title")}</h1><p class="lede">{t(lang, "agenda_desc")}</p>']
-        body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in events)}</ul>'
-                    if events else f'<p>{t(lang, "agenda_empty")}</p>')
+        body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in upcoming)}</ul>'
+                    if upcoming else f'<p>{t(lang, "agenda_empty")}</p>')
+        if ongoing:
+            body.append(f'<h2>{t(lang, "ongoing_title")}</h2>'
+                        f'<ul class="events">{"".join(self.event_item(lang, e) for e in ongoing)}</ul>')
+        body.append(f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
         if permanent:
             items = "".join(f'<li>{f"<a href=\"{esc(p["url"])}\">{esc(p["title"])}</a>" if p.get("url") else esc(p["title"])}'
                             f' <small class="muted">{esc(p.get("place", ""))}</small></li>' for p in permanent)
@@ -268,6 +297,75 @@ class Site:
                         f'<span class="muted">({len(groups[cat])})</span></summary><ul class="dir">{"".join(items)}</ul></details>')
         return self.layout(lang, "directory", f'{t(lang, "directory_title")} · {self.name}',
                            t(lang, "directory_desc"), "".join(body))
+
+    def place_item(self, lang, p):
+        name = esc(p["name"])
+        name = f'<a href="{esc(p["web"])}" rel="noopener">{name}</a>' if p.get("web") else name
+        kind = i18n.place_type(lang, p["type"])
+        if p.get("cuisine"):
+            kind += " · " + i18n.cuisine(lang, p["cuisine"])
+        if re.match(r"(GR|PR|SL)\b|B\d", p.get("ref", "")) and p["ref"] not in p["name"]:  # GR 92, PR-C 35, Bicivia B6
+            kind += " · " + p["ref"]
+        extra = [esc(p.get("address", "")), f'{i18n.fmt_num(lang, float(p["km"]), 1)} km' if p.get("km") else "",
+                 f'🕒 {esc(i18n.hours(lang, p["hours"]))}' if p.get("hours") else ""]
+        if p.get("phone"):
+            extra.append(f'{t(lang, "phone")} <a href="tel:{esc(re.sub(r"[^+0-9]", "", p["phone"]))}">{esc(p["phone"])}</a>')
+        extra.append(f'<a href="https://www.openstreetmap.org/{esc(p["osm"])}">{t(lang, "map")}</a>')
+        return (f'<li><strong>{name}</strong> <small class="muted">{esc(kind)}</small>'
+                f'<br>{" · ".join(x for x in extra if x)}</li>')
+
+    def plan_today(self, lang, places):
+        """Ideas para hoy según el tiempo: al aire libre si no llueve, a cubierto si llueve."""
+        days = (self.get("weather") or {}).get("days") or []
+        today = next((d for d in days if d["date"] == self.now.date().isoformat()), None)
+        if not today:
+            return ""
+        rainy = today["rain_mm"] >= 2 or any(w in (today.get("symbol") or "") for w in RAINY)
+        if rainy:
+            pool = [p for p in places if p["group"] == "culture" and p["type"] != "attraction"]
+            intro = t(lang, "plan_in", mm=i18n.fmt_num(lang, today["rain_mm"], 1))
+        else:
+            pool = [p for p in places if p["type"] in ("spring", "viewpoint", "peak", "picnic_site", "castle", "archaeological_site")
+                    or (p["group"] == "routes" and p.get("km") and float(p["km"]) <= 15)]
+            intro = t(lang, "plan_out", sky=i18n.sky(lang, today["symbol"])[1].lower() or "–", tmax=today["tmax"])
+        if not pool:
+            return ""
+        # cambia cada día, sin azar; separadas un tercio de la lista para mezclar fuentes, miradores, rutas...
+        start, step = self.now.date().toordinal() % len(pool), max(1, len(pool) // 3)
+        picks = list({id(p): p for p in (pool[(start + i * step) % len(pool)] for i in range(3))}.values())
+        todays = [e for e in self.events_split()[0] if e["start"] == self.now.date().isoformat()]
+        more = (f'<p><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "plan_events", n=len(todays))} →</a></p>'
+                if todays else "")
+        return (f'<section><h2>{t(lang, "plan_title")}</h2><p>{intro}</p>'
+                f'<ul class="dir">{"".join(self.place_item(lang, p) for p in picks)}</ul>{more}</section>')
+
+    def leisure_page(self, lang):
+        places = self.get("leisure") or []
+        upcoming, ongoing = self.events_split()
+        limit = (self.now.date() + timedelta(days=45)).isoformat()
+        parties = [e for e in upcoming if festive(e) and e["start"] <= limit][:15]
+        body = [f'<h1>{t(lang, "leisure_title")}</h1><p class="lede">{t(lang, "leisure_desc")}</p>',
+                self.plan_today(lang, places),
+                f'<section><h2>🎉 {t(lang, "festive_title")}</h2>']
+        body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in parties)}</ul>'
+                    if parties else f'<p>{t(lang, "festive_empty")}</p>')
+        body.append(f'<p><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_all")} →</a></p>'
+                    f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p></section>')
+        groups = {}
+        for p in places:
+            groups.setdefault(p["group"], []).append(p)
+        for key in i18n.LEISURE_GROUPS:
+            items = groups.get(key)
+            if not items:
+                continue
+            icon, label = i18n.group(lang, key)
+            body.append(f'<details class="group" id="{key}"{" open" if len(items) <= 40 else ""}><summary>{icon} {esc(label)} '
+                        f'<span class="muted">({len(items)})</span></summary>'
+                        f'<ul class="dir">{"".join(self.place_item(lang, p) for p in items)}</ul></details>')
+        if places:
+            body.append(f'<p class="note">{t(lang, "osm_note")}</p>')
+        return self.layout(lang, "leisure", f'{t(lang, "leisure_title")} · {self.name}', t(lang, "leisure_desc"),
+                           "".join(body))
 
     def text_page(self, lang, kind):
         repo = self.cfg.get("repo_url") or "https://github.com/"
@@ -316,11 +414,11 @@ location.replace("{self.prefix}/ca/");}})();
     def sitemap(self):
         today = self.now.date().isoformat()
         urls = []
-        for kind in ("home", "agenda", "directory", "about", "legal", "privacy"):
+        for kind in ("home", "agenda", "leisure", "directory", "about", "legal", "privacy"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}"/>'
                            for lg in LANGS)
             for lg in LANGS:
-                lastmod = f"<lastmod>{today}</lastmod>" if kind in ("home", "agenda") else ""
+                lastmod = f"<lastmod>{today}</lastmod>" if kind in ("home", "agenda", "leisure") else ""
                 urls.append(f"<url><loc>{self.absolute(self.path(lg, kind))}</loc>{lastmod}{alts}</url>")
         return ('<?xml version="1.0" encoding="utf-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
                 'xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(urls) + "</urlset>\n")
@@ -333,6 +431,7 @@ location.replace("{self.prefix}/ca/");}})();
         for lang in LANGS:
             self.write(self.path(lang, "home"), self.home(lang))
             self.write(self.path(lang, "agenda"), self.agenda_page(lang))
+            self.write(self.path(lang, "leisure"), self.leisure_page(lang))
             self.write(self.path(lang, "directory"), self.directory_page(lang))
             for kind in ("about", "legal", "privacy"):
                 self.write(self.path(lang, kind), self.text_page(lang, kind))

@@ -4,7 +4,8 @@ Web local de Cerdanyola del Vallès y Bellaterra, en catalán, castellano e ingl
 - la previsión del tiempo;
 - las horas más baratas de la luz;
 - los avisos de Rodalies R7 y R8;
-- la agenda (Ajuntament y Agenda cultural de Catalunya);
+- la agenda (Ajuntament y Agenda cultural de Catalunya), con las fiestas, conciertos y actos de entidades y locales marcados con 🎉;
+- una guía de ocio: plan para hoy según el tiempo, próximas fiestas, rutas, fuentes, miradores, patrimonio, restaurantes, bares y pubs;
 - la calidad del aire;
 - un directorio de equipamientos públicos y puntos de recarga.
 
@@ -19,6 +20,7 @@ Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub
 | Equipamientos, recarga, aire | Generalitat (`8gmd-gz7i`, `tb2m-m33b`, `tasf-thgu`) | Llicència oberta Catalunya |
 | Avisos de trenes | Renfe GTFS-RT `alerts.json` | CC BY 4.0 |
 | Luz | web hermana `llum-hores` (`/api/v1/latest.json`) | Red Eléctrica, uso informativo |
+| Guía de ocio | OpenStreetMap vía Overpass API (una consulta al día) | ODbL: `data/leisure.json` y `tests/fixtures/osm.json` son © colaboradores de OpenStreetMap, bajo ODbL |
 
 `certs/sectigo-ov-r36.pem` es el certificado intermedio que `cerdanyola.cat` no envía. La verificación TLS sigue siendo completa.
 

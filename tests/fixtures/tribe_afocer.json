@@ -1,0 +1,169 @@
+{
+ "events": [
+  {
+   "title": "Veredicte 2a biennal de fotografia Carme Aldana",
+   "start_date": "2026-10-24 10:00:00",
+   "end_date": "2026-10-24 12:00:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/veredicte-2a-biennal-de-fotografia-carme-aldana/",
+   "venue": {
+    "venue": "Ateneu de Cerdanyola",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": []
+  },
+  {
+   "title": "Veredicte concurs social color i monocrom d&#8217;octubre",
+   "start_date": "2026-10-24 17:30:00",
+   "end_date": "2026-10-24 19:00:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-doctubre-4/",
+   "venue": {
+    "venue": "Ateneu de Cerdanyola",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": [
+    {
+     "name": "Concursos"
+    },
+    {
+     "name": "Events"
+    }
+   ]
+  },
+  {
+   "title": "Inauguració exposició «La llum de Gallecs» de Miquel Pons al local social",
+   "start_date": "2026-10-24 19:00:00",
+   "end_date": "2026-10-24 20:30:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/inauguracio-exposicio-la-llum-de-gallecs-de-miquel-pons-al-local-social/",
+   "venue": {
+    "venue": "Ateneu de Cerdanyola",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": [
+    {
+     "name": "Events"
+    },
+    {
+     "name": "Exposicions"
+    }
+   ]
+  },
+  {
+   "title": "Xerrada IA per fotografia a càrrec d&#8217;Anyul Rivas",
+   "start_date": "2026-10-29 19:00:00",
+   "end_date": "2026-10-29 20:30:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/xerrada-ia-per-fotografia-a-carrec-danyul-rivas/",
+   "venue": {
+    "venue": "Ateneu de Cerdanyola",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": [
+    {
+     "name": "Activitats"
+    },
+    {
+     "name": "Formació"
+    },
+    {
+     "name": "Xerrades"
+    }
+   ]
+  },
+  {
+   "title": "Exposició a la Biblioteca de Ripollet",
+   "start_date": "2026-11-02 00:00:00",
+   "end_date": "2026-11-30 23:59:59",
+   "all_day": true,
+   "url": "https://afocer.cat/event/exposicio-a-la-biblioteca-de-ripollet-7/",
+   "venue": {
+    "venue": "Biblioteca de Ripollet",
+    "city": "Ripollet"
+   },
+   "categories": [
+    {
+     "name": "Exposicions"
+    }
+   ]
+  },
+  {
+   "title": "Veredicte concurs social digital i tema obligatori de novembre",
+   "start_date": "2026-11-05 19:00:00",
+   "end_date": "2026-11-05 20:30:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/veredicte-concurs-digital-i-tema-obligatori-de-novembre/",
+   "venue": {
+    "venue": "Ateneu de Cerdanyola",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": [
+    {
+     "name": "Concursos"
+    },
+    {
+     "name": "Events"
+    }
+   ]
+  },
+  {
+   "title": "Fotos de vacances",
+   "start_date": "2026-11-12 18:30:00",
+   "end_date": "2026-11-12 21:00:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/fotos-de-vacances/",
+   "venue": {
+    "venue": "Ateneu de Cerdanyola",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": [
+    {
+     "name": "Activitats"
+    }
+   ]
+  },
+  {
+   "title": "Lliurament premis i inauguració exposicions Biennals Ripollet Image i Carme Aldana",
+   "start_date": "2026-11-14 11:30:00",
+   "end_date": "2026-11-14 12:30:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/lliurament-premis-i-inauguracio-exposicions-biennals-ripollet-image-i-carme-aldana/",
+   "venue": {
+    "venue": "Centre cultural de Ripollet",
+    "city": "Ripollet"
+   },
+   "categories": [
+    {
+     "name": "Concursos"
+    },
+    {
+     "name": "Events"
+    },
+    {
+     "name": "Exposicions"
+    }
+   ]
+  },
+  {
+   "title": "Veredicte concurs social color i monocrom de novembre",
+   "start_date": "2026-11-28 17:30:00",
+   "end_date": "2026-11-28 19:00:00",
+   "all_day": false,
+   "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-de-novembre-4/",
+   "venue": {
+    "venue": "Ateneu de Cerdanyola",
+    "city": "Cerdanyola del Vallès"
+   },
+   "categories": [
+    {
+     "name": "Concursos"
+    },
+    {
+     "name": "Events"
+    }
+   ]
+  }
+ ],
+ "total": 9
+}

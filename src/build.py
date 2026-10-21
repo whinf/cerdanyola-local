@@ -30,6 +30,7 @@ SOURCES = [
     ("alerts", sources.fetch_alerts, 0, True),
     ("equipments", sources.fetch_equipments, 20, True),
     ("chargers", sources.fetch_chargers, 20, True),
+    ("leisure", sources.fetch_leisure, 20, True),
     ("light", sources.fetch_light, 0, False),
 ]
 
