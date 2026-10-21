@@ -6,7 +6,7 @@
     "rain_mm": 0.0,
     "symbol": "clearsky_day",
     "tmax": 21,
-    "tmin": 11,
+    "tmin": 13,
     "wind_kmh": 17
    },
    {
@@ -52,11 +52,11 @@
   ],
   "now": {
    "symbol": "clearsky_day",
-   "temp": 11.0,
-   "time": "2026-10-21T09:00:00+02:00",
-   "wind_kmh": 11
+   "temp": 17.1,
+   "time": "2026-10-21T12:00:00+02:00",
+   "wind_kmh": 10
   },
-  "updated": "2026-10-21T07:17:31Z"
+  "updated": "2026-10-21T09:17:39Z"
  },
- "fetched": "2026-10-21T09:32:32+02:00"
+ "fetched": "2026-10-21T12:13:39+02:00"
 }
