@@ -102,46 +102,6 @@
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/teatre-lliure-50-anys-passat-present-i-futur-1345828727816.html?detid=1346003069516"
    },
    {
-    "category": "Cursos i tallers",
-    "end": "2026-10-22",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-22",
-    "time": "10:00",
-    "title": "Taller d'acompanyament al dol migratori",
-    "url": "https://www.cerdanyola.cat/agenda/taller-dacompanyament-al-dol-migratori"
-   },
-   {
-    "category": "",
-    "end": "2026-10-22",
-    "place": "Sala COMTEC (2a planta de la Biblioteca de Comunicació i Hemeroteca General)",
-    "source": "uab",
-    "start": "2026-10-22",
-    "time": "12:00",
-    "title": "L'era de la flexibilitat energètica: autoconsum compartit i emmagatzematge d'energia",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/l-era-de-la-flexibilitat-energetica-autoconsum-compartit-i-emmagatzematge-d-energia-1345828727816.html?detid=1346001174966"
-   },
-   {
-    "category": "",
-    "end": "2026-10-22",
-    "place": "Sala d'Exposicions UAB",
-    "source": "uab",
-    "start": "2026-10-22",
-    "time": "15:30",
-    "title": "Visita a l’exposició \"Ros Ribas instants revelats\". Fotografies dels primers anys del Teatre Lliure.",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/visita-a-l-exposicio-ros-ribas-instants-revelats-fotografies-dels-primers-anys-del-teatre-lliure-1345828727816.html?detid=1346003257244"
-   },
-   {
-    "category": "Actes literaris",
-    "end": "2026-10-22",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-22",
-    "time": "19:00",
-    "title": "Cafè amb lletres amb Irene Pujadas",
-    "url": "https://www.cerdanyola.cat/agenda/cafe-amb-lletres-amb-irene-pujadas"
-   },
-   {
     "category": "Jornades i seminaris",
     "end": "2026-10-23",
     "place": "",
@@ -252,16 +212,6 @@
     "url": "https://www.cerdanyola.cat/agenda/jam-la-placa-24"
    },
    {
-    "category": "Música",
-    "end": "2026-10-25",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-25",
-    "time": "19:00",
-    "title": "Concert de Tardor de l'OCC",
-    "url": "https://www.cerdanyola.cat/agenda/concert-de-tardor-de-locc-3"
-   },
-   {
     "category": "Conferències",
     "end": "2026-10-27",
     "place": "",
@@ -370,16 +320,6 @@
     "time": "18:00",
     "title": "Passatge del terror al CC Banús",
     "url": "https://www.cerdanyola.cat/agenda/passatge-del-terror-al-cc-banus"
-   },
-   {
-    "category": "Música",
-    "end": "2026-10-31",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-31",
-    "time": "19:00",
-    "title": "Concert '2016-2026 Echoes of Pink Floyd'",
-    "url": "https://www.cerdanyola.cat/agenda/concert-2016-2026-echoes-pink-floyd"
    },
    {
     "category": "Altres activitats",
@@ -649,5 +589,5 @@
    }
   ]
  },
- "fetched": "2026-10-22T17:54:04+02:00"
+ "fetched": "2026-10-23T00:22:04+02:00"
 }
