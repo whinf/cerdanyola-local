@@ -2,10 +2,10 @@
  "data": [
   {
    "access": "targeta",
-   "address": "Av. de l'Eix Central",
-   "lat": "41.502895",
-   "lon": "2.104406",
-   "name": "UAB - INGETEAM EdRSR 1",
+   "address": "Av. de Serragalliners",
+   "lat": "41.503567",
+   "lon": "2.108986",
+   "name": "UAB - INGETEAM EdRSR 2 Serragalliners",
    "operator": "Institut Català d'Energia - Ajuntament de Cerdanyola del Vallès",
    "speed": "semiRAPID"
   },
@@ -20,13 +20,13 @@
   },
   {
    "access": "targeta",
-   "address": "Av. de Serragalliners",
-   "lat": "41.503567",
-   "lon": "2.108986",
-   "name": "UAB - INGETEAM EdRSR 2 Serragalliners",
+   "address": "Av. de l'Eix Central",
+   "lat": "41.502895",
+   "lon": "2.104406",
+   "name": "UAB - INGETEAM EdRSR 1",
    "operator": "Institut Català d'Energia - Ajuntament de Cerdanyola del Vallès",
    "speed": "semiRAPID"
   }
  ],
- "fetched": "2026-10-21T17:58:43+02:00"
+ "fetched": "2026-10-22T17:54:04+02:00"
 }
