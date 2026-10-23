@@ -1884,8 +1884,8 @@
    "address": "C.  Campus de Bellaterra, Edifici Estudiants, 1r",
    "cat": "Serveis socials especialitzats",
    "cp": "08290",
-   "lat": "41.4858142",
-   "lon": "2.0967822",
+   "lat": "41.5037176",
+   "lon": "2.0864011",
    "name": "Servei de suport. Associació Pro Disminuïts de la Universitat Autònoma de Barcelona",
    "phone": "935812697",
    "sub": "Serveis de suport als serveis socials especialitzats"
@@ -2241,5 +2241,5 @@
    "sub": ""
   }
  ],
- "fetched": "2026-10-22T17:54:04+02:00"
+ "fetched": "2026-10-23T17:45:53+02:00"
 }

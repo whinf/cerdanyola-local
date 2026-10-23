@@ -43,16 +43,6 @@
    },
    {
     "category": "",
-    "end": "2026-10-30",
-    "place": "Vestíbul de les columnes de la Facultat de Filosofia i Lletres",
-    "source": "uab",
-    "start": "2026-10-08",
-    "time": "",
-    "title": "Inauguració de l'exposició «Memòries des de l'Andana»",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/inauguracio-de-l-exposicio-memories-des-de-l-andana-1345828727816.html?detid=1346000690339"
-   },
-   {
-    "category": "",
     "end": "2027-06-30",
     "place": "",
     "source": "ajuntament",
@@ -94,26 +84,6 @@
    {
     "category": "",
     "end": "2026-10-24",
-    "place": "UAB, Institut del Teatre i Palau Robert",
-    "source": "uab",
-    "start": "2026-10-22",
-    "time": "",
-    "title": "Teatre Lliure, 50 anys: passat, present i futur",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/teatre-lliure-50-anys-passat-present-i-futur-1345828727816.html?detid=1346003069516"
-   },
-   {
-    "category": "",
-    "end": "2026-10-24",
-    "place": "UAB, Institut del Teatre i Palau Robert",
-    "source": "uab",
-    "start": "2026-10-23",
-    "time": "",
-    "title": "Teatre Lliure, 50 anys: passat, present i futur",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/teatre-lliure-50-anys-passat-present-i-futur-1345828727816.html?detid=1346003464266"
-   },
-   {
-    "category": "Jornades i seminaris",
-    "end": "2026-10-23",
     "place": "",
     "source": "ajuntament",
     "start": "2026-10-23",
@@ -252,16 +222,6 @@
     "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-xerrada-mes-enlla-dels-titulars-les-dones-liran-avui"
    },
    {
-    "category": "",
-    "end": "2026-10-28",
-    "place": "Sala Cinema UAB",
-    "source": "uab",
-    "start": "2026-10-28",
-    "time": "11:00",
-    "title": "Projecció del film El pico, d'Eloy de la Iglésia",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-el-pico-d-eloy-de-la-iglesia-1345828727816.html?detid=1346003254239"
-   },
-   {
     "category": "Cursos i tallers",
     "end": "2026-10-28",
     "place": "",
@@ -330,6 +290,16 @@
     "time": "20:00",
     "title": "Teatre 'Loop'",
     "url": "https://www.cerdanyola.cat/agenda/teatre-loop"
+   },
+   {
+    "category": "Festes populars",
+    "end": "2026-10-31",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-30",
+    "time": "20:30",
+    "title": "Festival KM0",
+    "url": "https://www.cerdanyola.cat/agenda/festival-km0-0"
    },
    {
     "category": "Festes populars",
@@ -412,6 +382,16 @@
     "url": "https://www.cerdanyola.cat/agenda/espectacle-de-dansa-flamenca-ti-federico-0"
    },
    {
+    "category": "Exposicions",
+    "end": "2026-11-30",
+    "place": "",
+    "source": "afocer",
+    "start": "2026-11-02",
+    "time": "",
+    "title": "Exposició Aphotoreporter 2025 a la Biblioteca Tecla Sala",
+    "url": "https://afocer.cat/event/exposicio-aphotoreporter-2025-a-la-biblioteca-tecla-sala/"
+   },
+   {
     "category": "Altres activitats",
     "end": "2026-11-02",
     "place": "",
@@ -430,26 +410,6 @@
     "time": "18:30",
     "title": "Tardor Solidària. Xerrada 'La responsabilitat de triar. Alternatives sostenibles al tèxtil global'",
     "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-xerrada-la-responsabilitat-de-triar-alternatives-sostenibles-al-textil"
-   },
-   {
-    "category": "",
-    "end": "2026-11-04",
-    "place": "Sala Cinema de la UAB",
-    "source": "uab",
-    "start": "2026-11-04",
-    "time": "11:00",
-    "title": "Projecció del film ¿Qué he hecho yo para merecer esto?, de Pedro Almodóvar",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-que-he-hecho-yo-para-merecer-esto-de-pedro-almodovar-1345828727816.html?detid=1346003256667"
-   },
-   {
-    "category": "",
-    "end": "2026-11-05",
-    "place": "Sala Cinema UAB",
-    "source": "uab",
-    "start": "2026-11-05",
-    "time": "13:00",
-    "title": "Projecció del film Edipo, de Pier Paolo Pasolini (1967)",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-edipo-de-pier-paolo-pasolini-1967-1345828727816.html?detid=1346000385676"
    },
    {
     "category": "Conferències",
@@ -542,6 +502,16 @@
     "url": "https://www.cerdanyola.cat/agenda/micro-teatre-balneari-la-pau-eterna"
    },
    {
+    "category": "Exposicions",
+    "end": "2026-12-15",
+    "place": "",
+    "source": "afocer",
+    "start": "2026-11-15",
+    "time": "",
+    "title": "Exposició Violència 0 a Can Cuiàs",
+    "url": "https://afocer.cat/event/exposicio-violencia-0-a-can-cuias/"
+   },
+   {
     "category": "Cursos i tallers",
     "end": "2026-11-18",
     "place": "",
@@ -582,16 +552,6 @@
     "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-de-novembre-4/"
    },
    {
-    "category": "",
-    "end": "2026-12-15",
-    "place": "Sala Cinema UAB",
-    "source": "uab",
-    "start": "2026-12-15",
-    "time": "15:00",
-    "title": "Projecció del film Gladiator, de Ridley Scott (2000)",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gladiator-de-ridley-scott-2000-1345828727816.html?detid=1346000387117"
-   },
-   {
     "category": "Altres activitats",
     "end": "2026-12-18",
     "place": "",
@@ -606,10 +566,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
    },
    {
     "category": "Exposicions",
@@ -622,12 +582,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-10-23T12:08:04+02:00"
+ "fetched": "2026-10-23T17:45:53+02:00"
 }
