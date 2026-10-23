@@ -102,6 +102,16 @@
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/teatre-lliure-50-anys-passat-present-i-futur-1345828727816.html?detid=1346003069516"
    },
    {
+    "category": "",
+    "end": "2026-10-24",
+    "place": "UAB, Institut del Teatre i Palau Robert",
+    "source": "uab",
+    "start": "2026-10-23",
+    "time": "",
+    "title": "Teatre Lliure, 50 anys: passat, present i futur",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/teatre-lliure-50-anys-passat-present-i-futur-1345828727816.html?detid=1346003464266"
+   },
+   {
     "category": "Jornades i seminaris",
     "end": "2026-10-23",
     "place": "",
@@ -202,6 +212,16 @@
     "url": "https://www.cerdanyola.cat/agenda/taller-familiar-la-tardor-pintem-la-tardor-al-jardi-de-can-llopis"
    },
    {
+    "category": "Activitats del Servei de Patrimoni",
+    "end": "2026-10-25",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-25",
+    "time": "12:00",
+    "title": "Itinerari modernista pel barri de dalt",
+    "url": "https://www.cerdanyola.cat/agenda/itinerari-modernista-pel-barri-de-dalt"
+   },
+   {
     "category": "Teatre i dansa",
     "end": "2026-10-25",
     "place": "",
@@ -210,6 +230,16 @@
     "time": "12:00",
     "title": "Jam a la plaça",
     "url": "https://www.cerdanyola.cat/agenda/jam-la-placa-24"
+   },
+   {
+    "category": "Música",
+    "end": "2026-10-25",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-25",
+    "time": "19:00",
+    "title": "Concert de Tardor de l'OCC",
+    "url": "https://www.cerdanyola.cat/agenda/concert-de-tardor-de-locc-3"
    },
    {
     "category": "Conferències",
@@ -320,6 +350,16 @@
     "time": "18:00",
     "title": "Passatge del terror al CC Banús",
     "url": "https://www.cerdanyola.cat/agenda/passatge-del-terror-al-cc-banus"
+   },
+   {
+    "category": "Música",
+    "end": "2026-10-31",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-10-31",
+    "time": "19:00",
+    "title": "Concert '2016-2026 Echoes of Pink Floyd'",
+    "url": "https://www.cerdanyola.cat/agenda/concert-2016-2026-echoes-pink-floyd"
    },
    {
     "category": "Altres activitats",
@@ -566,10 +606,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    },
    {
     "category": "Exposicions",
@@ -582,12 +622,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
    }
   ]
  },
- "fetched": "2026-10-23T00:22:04+02:00"
+ "fetched": "2026-10-23T12:08:04+02:00"
 }
