@@ -1,12 +1,13 @@
 {
  "agenda": {
+  "last_error": "https://www.cerdanyola.cat/agenda: <urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)>",
   "last_ok": "2026-10-23T17:45:53+02:00"
  },
  "air": {
-  "last_ok": "2026-10-23T17:45:53+02:00"
+  "last_ok": "2026-10-24T00:14:11+02:00"
  },
  "alerts": {
-  "last_ok": "2026-10-23T17:45:53+02:00"
+  "last_ok": "2026-10-24T00:14:11+02:00"
  },
  "chargers": {
   "last_ok": "2026-10-23T17:45:53+02:00"
@@ -18,9 +19,9 @@
   "last_ok": "2026-10-23T12:08:04+02:00"
  },
  "light": {
-  "last_ok": "2026-10-23T17:45:53+02:00"
+  "last_ok": "2026-10-24T00:14:11+02:00"
  },
  "weather": {
-  "last_ok": "2026-10-23T17:45:53+02:00"
+  "last_ok": "2026-10-24T00:14:11+02:00"
  }
 }
