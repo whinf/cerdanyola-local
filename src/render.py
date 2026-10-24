@@ -103,7 +103,7 @@ class Site:
         nav = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, k + "_title" if k != "home" else "home")}</a>'
                          for k in ("home", "agenda", "leisure", "aids", "jobs", "invest", "directory"))
         links = " · ".join([f'<a href="{self.href(self.path(lang, "emergency"))}">🆘 112</a>'] + [
-            f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>' for k in ("about", "legal", "privacy")])
+            f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>' for k in ("about", "legal", "privacy")] + [f'<a href="https://onestudioman.horaverda.es/{lang}/">{t(lang, "studio")}</a>'])
         donate = (f' · <a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">♥</a>'
                   if self.cfg.get("donate_url") else "")
         updated = max((v.get("fetched") or "" for v in self.data.values()), default="")
