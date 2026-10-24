@@ -92,26 +92,6 @@
     "url": "https://www.cerdanyola.cat/agenda/ii-jornades-darxius-i-recerca-local-la-riba-del-ripoll"
    },
    {
-    "category": "Altres activitats",
-    "end": "2026-10-23",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-23",
-    "time": "17:00",
-    "title": "Donació de plasma",
-    "url": "https://www.cerdanyola.cat/agenda/donacio-de-plasma-2"
-   },
-   {
-    "category": "Teatre i dansa",
-    "end": "2026-10-23",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-23",
-    "time": "20:00",
-    "title": "Teatre 'Disección de la bondad en tres actos'",
-    "url": "https://www.cerdanyola.cat/agenda/teatre-diseccion-de-la-bondad-en-tres-actos"
-   },
-   {
     "category": "",
     "end": "2026-10-24",
     "place": "Ateneu de Cerdanyola",
@@ -566,10 +546,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    },
    {
     "category": "Exposicions",
@@ -582,12 +562,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
    }
   ]
  },
- "fetched": "2026-10-23T17:45:53+02:00"
+ "fetched": "2026-10-24T19:14:48+02:00"
 }
