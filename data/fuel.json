@@ -14,10 +14,10 @@
     "town": "Cerdanyola del Vallès"
    },
    {
-    "address": "Calle Santa Rosa, 49",
+    "address": "Ronda Cerdanyola, S/N",
     "hours": "L-D: 06:00-22:00",
-    "lat": "41.485306",
-    "lon": "2.131139",
+    "lat": "41.489194",
+    "lon": "2.151500",
     "name": "MOEVE",
     "prices": {
      "diesel": 1.989,
@@ -26,10 +26,10 @@
     "town": "Cerdanyola del Vallès"
    },
    {
-    "address": "Ronda Cerdanyola, S/N",
+    "address": "Calle Santa Rosa, 49",
     "hours": "L-D: 06:00-22:00",
-    "lat": "41.489194",
-    "lon": "2.151500",
+    "lat": "41.485306",
+    "lon": "2.131139",
     "name": "MOEVE",
     "prices": {
      "diesel": 1.989,
@@ -565,7 +565,7 @@
     "town": "Sant Cugat del Vallès"
    }
   ],
-  "updated": "25/10/2026 0:01:38"
+  "updated": "25/10/2026 0:55:10"
  },
- "fetched": "2026-10-25T00:01:01+02:00"
+ "fetched": "2026-10-25T00:54:35+02:00"
 }
