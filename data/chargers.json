@@ -11,22 +11,22 @@
   },
   {
    "access": "targeta",
-   "address": "Av. de Serragalliners",
-   "lat": "41.503567",
-   "lon": "2.108986",
-   "name": "UAB - INGETEAM EdRSR 2 Serragalliners",
-   "operator": "Institut Català d'Energia - Ajuntament de Cerdanyola del Vallès",
-   "speed": "semiRAPID"
-  },
-  {
-   "access": "targeta",
    "address": "Carrer Can Pallarès, 2, 08290 Cerdanyola d...",
    "lat": "41.49975",
    "lon": "2.13512",
    "name": "Nuroil - INGETEAM EdRR 1",
    "operator": "Institut Català d'Energia - Ajuntament de Cerdanyola del Vallès",
    "speed": "RAPID i semiRAPID"
+  },
+  {
+   "access": "targeta",
+   "address": "Av. de Serragalliners",
+   "lat": "41.503567",
+   "lon": "2.108986",
+   "name": "UAB - INGETEAM EdRSR 2 Serragalliners",
+   "operator": "Institut Català d'Energia - Ajuntament de Cerdanyola del Vallès",
+   "speed": "semiRAPID"
   }
  ],
- "fetched": "2026-10-23T17:45:53+02:00"
+ "fetched": "2026-10-24T16:35:38+02:00"
 }
