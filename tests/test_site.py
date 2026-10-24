@@ -1,3 +1,4 @@
+import gzip
 import json
 import sys
 import tempfile
@@ -90,6 +91,33 @@ class TestSources(unittest.TestCase):
             self.assertTrue(p["web"] == "" or p["web"].startswith(("http://", "https://")))
         self.assertEqual(i18n.hours("ca", "Mo-Fr 08:00-20:00; Su off"), "dl-dv 08:00-20:00; dg tancat")
         self.assertEqual(i18n.cuisine("es", "regional;pizza"), "cocina tradicional, pizza")
+
+    def test_nightlife(self):
+        self.assertEqual([S._tile_id(0, 0, 0)] + [S._tile_id(1, x, y) for x, y in ((0, 0), (0, 1), (1, 1), (1, 0))],
+                         [0, 1, 2, 3, 4])  # ejemplos de la especificación de PMTiles
+        tile = gzip.decompress((FIX / "overture_14_8288_6113.mvt.gz").read_bytes())
+        features = S.parse_mvt(tile, 14, 8288, 6113)
+        self.assertEqual(len(features), 265)
+        segments = S.boundary()
+        places = S.parse_overture_night(features, segments)
+        self.assertEqual([p["name"] for p in places], ["Sala Acme"])  # «ACME Privée», al lado, es el mismo local
+        acme = places[0]
+        self.assertEqual((acme["type"], acme["address"], acme["phone"], acme["src"]),
+                         ("nightclub", "Carrer de Portugal 33", "+34 686 146 964", ["BrightQuery"]))
+
+        def venue(name, address, status="", confidence=0.9, primary="dance_club", lon=2.137, lat=41.49):
+            return {"@name": name, "operating_status": status, "confidence": confidence, "lon": lon, "lat": lat,
+                    "taxonomy": json.dumps({"primary": primary, "hierarchy": ["arts_and_entertainment", primary]}),
+                    "addresses": json.dumps([{"freeform": address}]),
+                    "sources": json.dumps([{"dataset": "meta", "license": "CDLA-Permissive-2.0"}])}
+        fake = [venue("Nou Nom", "Carrer De Can Mitjans 4", "open"), venue("Nom Antic", "Carrer de Can Mitjans, 4"),
+                venue("Singapur Deluxe", "Carrer Del Bosc Tancat 5", "open"), venue("Tancat", "Carrer Major 1", "permanently_closed"),
+                venue("Coral Polifònica", "Carrer Major 2", primary="music_venue"), venue("Fora", "Carrer Major 3", lon=2.3),
+                venue("Sala Rock", "Carrer Major 4", primary="music_venue")]
+        self.assertEqual([p["name"] for p in S.parse_overture_night(fake, segments)], ["Nou Nom", "Sala Rock"])
+        osm = [p for p in S.parse_leisure(fixture("osm.json")) if p["name"] == "The 1916"]
+        pub = dict(osm[0], name="The 1916 Irish Pub", lat=osm[0]["lat"] + 0.0005, osm="", src=["meta"])
+        self.assertEqual(S.merge_places(osm, [pub, acme]), [acme, osm[0]])
 
     def test_air(self):
         air = S.parse_air(fixture("air.json"))
@@ -187,6 +215,8 @@ class TestSite(unittest.TestCase):
             "equipments": S.parse_equipments(fixture("equip.json")),
             "chargers": S.parse_chargers(fixture("ev.json")),
             "leisure": S.parse_leisure(fixture("osm.json")),
+            "nightlife": S.parse_overture_night(S.parse_mvt(gzip.decompress(
+                (FIX / "overture_14_8288_6113.mvt.gz").read_bytes()), 14, 8288, 6113), S.boundary()),
             "aids": {"calls": {d["codigoBDNS"]: S.parse_bdns_call(d, NOW.date()) for d in fixture("bdns_calls.json")}},
             "cido": S.parse_cido(fixture("cido.json"), NOW.date()),
             "offers": S.parse_offers((FIX / "feina_activa.xml").read_text(encoding="utf-8"), NOW.date()),
@@ -202,6 +232,8 @@ class TestSite(unittest.TestCase):
             self.assertIn("The 1916", leisure)
             self.assertIn("🎉", leisure)
             self.assertIn("OpenStreetMap", leisure)
+            self.assertIn("Sala Acme", leisure)
+            self.assertIn("datos de BrightQuery, licencia", leisure)
             self.assertIn("R7", home)
             self.assertIn("Ajudes que pots demanar ara", home)
             aids = (out / "es/ayudas/index.html").read_text(encoding="utf-8")

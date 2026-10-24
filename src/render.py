@@ -519,7 +519,8 @@ class Site:
                  f'🕒 {esc(i18n.hours(lang, p["hours"]))}' if p.get("hours") else ""]
         if p.get("phone"):
             extra.append(f'{t(lang, "phone")} <a href="tel:{esc(re.sub(r"[^+0-9]", "", p["phone"]))}">{esc(p["phone"])}</a>')
-        extra.append(f'<a href="https://www.openstreetmap.org/{esc(p["osm"])}">{t(lang, "map")}</a>')
+        url = f'https://www.openstreetmap.org/{p["osm"]}' if p.get("osm") else osm(p["lat"], p["lon"])
+        extra.append(f'<a href="{esc(url)}">{t(lang, "map")}</a>')
         return (f'<li><strong>{name}</strong> <small class="muted">{esc(kind)}</small>'
                 f'<br>{" · ".join(x for x in extra if x)}</li>')
 
@@ -549,7 +550,7 @@ class Site:
                 f'<ul class="dir">{"".join(self.place_item(lang, p) for p in picks)}</ul>{more}</section>')
 
     def leisure_page(self, lang):
-        places = self.get("leisure") or []
+        places = sources.merge_places(self.get("leisure") or [], self.get("nightlife") or [])
         upcoming, ongoing = self.events_split()
         limit = (self.now.date() + timedelta(days=45)).isoformat()
         parties = [e for e in upcoming if festive(e) and e["start"] <= limit][:15]
@@ -573,6 +574,9 @@ class Site:
                         f'<ul class="dir">{"".join(self.place_item(lang, p) for p in items)}</ul></details>')
         if places:
             body.append(f'<p class="note">{t(lang, "osm_note")}</p>')
+        extra = sorted({s[0].upper() + s[1:] for p in places for s in p.get("src", [])})
+        if extra:
+            body.append(f'<p class="note">{t(lang, "overture_note", src=esc(", ".join(extra)))}</p>')
         return self.layout(lang, "leisure", f'{t(lang, "leisure_title")} · {self.name}', t(lang, "leisure_desc"),
                            "".join(body))
 

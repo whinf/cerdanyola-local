@@ -3,13 +3,17 @@
 Cada fuente tiene una función `parse_*` pura (probada con datos reales
 guardados en tests/fixtures) y una `fetch_*` que la descarga.
 """
+import bisect
+import gzip
 import html
 import json
 import math
 import os
 import re
 import ssl
+import struct
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -44,19 +48,23 @@ def user_agent():
     return f"cerdanyola-local/1.0 (+https://github.com/{repo})"
 
 
-def get_text(url, tries=3, timeout=40):
+def get_bytes(url, tries=3, timeout=40, headers=None):
     last = None
     for attempt in range(tries):
-        req = urllib.request.Request(url, headers={"User-Agent": user_agent()})
+        req = urllib.request.Request(url, headers={"User-Agent": user_agent(), **(headers or {})})
         try:
             with urllib.request.urlopen(req, timeout=timeout, context=_CTX) as resp:
-                return resp.read().decode("utf-8")
+                return resp.read()
         except (urllib.error.URLError, TimeoutError) as exc:
             last = exc
             if isinstance(exc, urllib.error.HTTPError) and exc.code < 500:
                 break
             time.sleep(3 * (attempt + 1))
     raise FetchError(f"{url}: {last}")
+
+
+def get_text(url, tries=3, timeout=40):
+    return get_bytes(url, tries, timeout).decode("utf-8")
 
 
 def get_json(url):
@@ -378,7 +386,7 @@ OVERPASS = ("https://overpass-api.de/api/interpreter", "https://overpass.private
 LEISURE_QUERY = """[out:json][timeout:90];
 area["boundary"="administrative"]["admin_level"="8"]["name"="Cerdanyola del Vallès"]->.a;
 (
- nwr(area.a)["name"]["amenity"~"^(restaurant|fast_food|bar|cafe|ice_cream|pub|biergarten|nightclub|cinema|theatre|arts_centre|community_centre)$"];
+ nwr(area.a)["name"]["amenity"~"^(restaurant|fast_food|bar|cafe|ice_cream|pub|biergarten|nightclub|music_venue|karaoke_box|hookah_lounge|cinema|theatre|arts_centre|community_centre)$"];
  nwr(area.a)["name"]["tourism"~"^(museum|gallery|viewpoint|picnic_site|attraction)$"];
  nwr(area.a)["name"]["leisure"~"^(park|nature_reserve|playground|water_park|sports_centre|swimming_pool|stadium|fitness_centre|dance|escape_game|bowling_alley)$"];
  nwr(area.a)["name"]["historic"~"^(castle|manor|ruins|archaeological_site|monument|memorial|fort|tower|farm)$"];
@@ -399,7 +407,7 @@ LEISURE_KINDS = [
     ("community", "amenity", ("community_centre",)),
     ("eat", "amenity", ("restaurant", "fast_food")),
     ("drink", "amenity", ("bar", "cafe", "ice_cream", "biergarten")),
-    ("night", "amenity", ("pub", "nightclub")), ("night", "leisure", ("dance",)),
+    ("night", "amenity", ("pub", "nightclub", "music_venue", "karaoke_box", "hookah_lounge")), ("night", "leisure", ("dance",)),
     ("sport", "leisure", ("sports_centre", "swimming_pool", "stadium", "fitness_centre")),
 ]
 # en OSM muchas plazas pequeñas y piscinas de comunidad están marcadas como parque
@@ -450,6 +458,283 @@ def fetch_leisure(now):
             return places
         errors.append(f"{url}: solo {len(places)} lugares")
     raise FetchError(" | ".join(errors))
+
+
+# ---------- más locales nocturnos (Overture Maps: Meta, BrightQuery..., CDLA Permissive 2.0) ----------
+# Overture publica cada mes sus lugares en un PMTiles de 20 GB; con peticiones HTTP por rangos leemos
+# solo las ~25 teselas de Cerdanyola (unos 2 MB). En OpenStreetMap faltan muchos pubs y discotecas.
+OVERTURE = "https://stac.overturemaps.org/"
+BOUNDARY = ROOT / "geo" / "cerdanyola.json"  # término municipal, de OpenStreetMap
+NIGHT_TAXONOMY = {  # categoría de Overture -> tipo de la guía
+    "dance_club": "nightclub", "salsa_club": "nightclub", "nightlife_venue": "night_venue",
+    "karaoke_venue": "karaoke_box", "cocktail_bar": "cocktail_bar", "pub": "pub", "irish_pub": "pub",
+    "hookah_bar": "hookah_lounge", "piano_bar": "piano_bar", "jazz_and_blues_venue": "music_venue",
+    "music_venue": "music_venue",
+}
+# la atribución de la web cubre estas licencias; Foursquare (Apache 2.0) pediría su propio aviso
+OVERTURE_LICENSES = {"CDLA-Permissive-2.0", "CC0-1.0"}
+# «music_venue» también son orquestas, coros y academias: solo salas, cafés concierto...
+_MUSIC_VENUE = re.compile(r"\b(sala|caf[eé]|bar|club|pub|concierto|concert|live|jazz|blues)\b", re.I)
+# fuera los clubs de alterne, que Overture suele catalogar como discotecas
+_NIGHT_SKIP = re.compile(r"alterne|strip|er[oòó]tic|\bsex|swinger|deluxe|premium club|\buasa\b", re.I)
+_GENERIC_WORDS = {"sala", "club", "cafe", "disco", "discoteca", "lounge", "shisha", "cerdanyola", "valles",
+                  "irish", "cocktail", "copes", "copas", "musical", "local", "karaoke", "cerveceria", "sant",
+                  "santa", "night", "scene", "premium"}
+_ADDRESS_WORDS = {"de", "del", "dels", "la", "les", "l", "d", "el", "els", "i", "carrer", "c"}
+
+
+def _varint(b, i):
+    v = shift = 0
+    while True:
+        c = b[i]
+        i += 1
+        v |= (c & 0x7F) << shift
+        shift += 7
+        if c < 0x80:
+            return v, i
+
+
+def _packed(b):
+    out, i = [], 0
+    while i < len(b):
+        v, i = _varint(b, i)
+        out.append(v)
+    return out
+
+
+def _zigzag(v):
+    return (v >> 1) ^ -(v & 1)
+
+
+def _pmtiles_dir(raw):
+    """Directorio PMTiles v3: id de tesela, repeticiones, longitud y desplazamiento de cada entrada."""
+    b = gzip.decompress(raw)
+    n, i = _varint(b, 0)
+    ids, runs, lens, offs = (_packed(b[i:])[k * n:(k + 1) * n] for k in range(4))
+    for k in range(1, n):
+        ids[k] += ids[k - 1]
+    for k in range(n):  # 0 = justo detrás de la anterior
+        offs[k] = offs[k - 1] + lens[k - 1] if k and offs[k] == 0 else offs[k] - 1
+    return list(zip(ids, runs, lens, offs))
+
+
+def _tile_id(z, x, y):
+    """Número de tesela de PMTiles: teselas de los niveles anteriores + posición en la curva de Hilbert."""
+    tid, n = sum(4 ** k for k in range(z)), 1 << z
+    s = n >> 1
+    while s:
+        rx, ry = int(x & s > 0), int(y & s > 0)
+        tid += s * s * ((3 * rx) ^ ry)
+        if not ry:
+            if rx:
+                x, y = n - 1 - x, n - 1 - y
+            x, y = y, x
+        s >>= 1
+    return tid
+
+
+def _tile_xy(lon, lat, z):
+    n = 1 << z
+    return int((lon + 180) / 360 * n), int((1 - math.asinh(math.tan(math.radians(lat))) / math.pi) / 2 * n)
+
+
+class PMTiles:
+    def __init__(self, url):
+        self.url, self.dirs = url, {}
+        h = self.read(0, 127)
+        if h[:7] != b"PMTiles" or h[7] != 3 or h[97] != 2 or h[98] != 2 or h[99] != 1:  # v3, gzip, vectorial
+            raise FetchError(f"{url}: formato PMTiles inesperado")
+        self.root, self.root_len, _, _, self.leaves, _, self.tiles = struct.unpack_from("<7Q", h, 8)
+        self.maxzoom = h[101]
+
+    def read(self, offset, length):
+        return get_bytes(self.url, timeout=60, headers={"Range": f"bytes={offset}-{offset + length - 1}"})
+
+    def tile(self, z, x, y):
+        tid, offset, length = _tile_id(z, x, y), self.root, self.root_len
+        for _ in range(4):  # raíz y, como mucho, tres niveles de directorios hoja
+            if offset not in self.dirs:
+                self.dirs[offset] = _pmtiles_dir(self.read(offset, length))
+            entries = self.dirs[offset]
+            k = bisect.bisect_right(entries, tid, key=lambda e: e[0]) - 1
+            if k < 0:
+                return None
+            start, run, length, offset = entries[k]
+            if run:
+                return gzip.decompress(self.read(self.tiles + offset, length)) if tid < start + run else None
+            offset += self.leaves
+        return None
+
+
+def _pbf(b):
+    """Campos (número, valor) de un mensaje protobuf."""
+    i = 0
+    while i < len(b):
+        key, i = _varint(b, i)
+        wire = key & 7
+        if wire == 0:
+            v, i = _varint(b, i)
+        elif wire == 2:
+            n, i = _varint(b, i)
+            v, i = b[i:i + n], i + n
+        elif wire in (1, 5):
+            n = 8 if wire == 1 else 4
+            v, i = b[i:i + n], i + n
+        else:
+            raise ValueError(f"protobuf: tipo {wire}")
+        yield key >> 3, v
+
+
+def _mvt_value(b):
+    for f, v in _pbf(b):
+        if f == 1:
+            return v.decode("utf-8")
+        if f in (2, 3):
+            return struct.unpack("<f" if f == 2 else "<d", v)[0]
+        if f in (4, 5):
+            return v
+        if f == 6:
+            return _zigzag(v)
+        if f == 7:
+            return bool(v)
+    return None
+
+
+def parse_mvt(tile, z, x, y):
+    """Puntos de una tesela vectorial (Mapbox Vector Tile 2): sus propiedades, más lat y lon."""
+    out, n = [], 1 << z
+    for f, layer in _pbf(tile):
+        if f != 3:
+            continue
+        keys, values, features, extent = [], [], [], 4096
+        for g, v in _pbf(layer):
+            if g == 2:
+                features.append(v)
+            elif g == 3:
+                keys.append(v.decode("utf-8"))
+            elif g == 4:
+                values.append(_mvt_value(v))
+            elif g == 5:
+                extent = v
+        for feat in features:
+            fields = dict(_pbf(feat))
+            tags, geom = _packed(fields.get(2, b"")), _packed(fields.get(4, b""))
+            if fields.get(3) != 1 or len(geom) < 3:  # solo puntos
+                continue
+            props = {keys[tags[k]]: values[tags[k + 1]] for k in range(0, len(tags) - 1, 2)}
+            px, py = _zigzag(geom[1]) / extent, _zigzag(geom[2]) / extent
+            props["lon"] = round((x + px) / n * 360 - 180, 6)
+            props["lat"] = round(math.degrees(math.atan(math.sinh(math.pi * (1 - 2 * (y + py) / n)))), 6)
+            out.append(props)
+    return out
+
+
+def boundary():
+    """Segmentos del límite municipal (de OpenStreetMap; no cambia)."""
+    ways = json.loads(BOUNDARY.read_text(encoding="utf-8"))["ways"]
+    return [(a, b) for w in ways for a, b in zip(w, w[1:])]
+
+
+def _inside(lon, lat, segments):
+    inside = False
+    for (x1, y1), (x2, y2) in segments:
+        if (y1 > lat) != (y2 > lat) and lon < x1 + (lat - y1) * (x2 - x1) / (y2 - y1):
+            inside = not inside
+    return inside
+
+
+def _words(text):
+    plain = unicodedata.normalize("NFKD", (text or "").lower()).encode("ascii", "ignore").decode()
+    return re.findall(r"[a-z0-9]+", plain)
+
+
+def _metres(a, b):
+    return math.hypot((a["lon"] - b["lon"]) * 111320 * math.cos(math.radians(a["lat"])), (a["lat"] - b["lat"]) * 110540)
+
+
+def same_place(a, b):
+    """Mismo local con nombres algo distintos («The 1916» y «The 1916 Irish Pub», «Sala Acme» y «ACME Privée»)."""
+    if a.get("lat") is None or b.get("lat") is None or _metres(a, b) > 200:
+        return False
+    wa, wb = _words(a["name"]), _words(b["name"])
+    distinct = [{w for w in ws if len(w) >= 4 and w not in _GENERIC_WORDS} for ws in (wa, wb)]
+    return bool(distinct[0] & distinct[1]) or " ".join(wa) in " ".join(wb) or " ".join(wb) in " ".join(wa)
+
+
+def _address(text):
+    """«Carrer De La Bona-Sort 24» -> «Carrer de la Bona-Sort 24»."""
+    text = re.sub(r"(?<=\s)(De|Del|Dels|La|Les|El|Els|I)\b(?!')", lambda m: m.group(1).lower(), text.strip())
+    return re.sub(r"(?<=\s)([DL])'", lambda m: m.group(1).lower() + "'", text)
+
+
+def _phone(text):
+    digits = re.sub(r"\D", "", text or "")
+    if len(digits) == 9:
+        digits = "34" + digits
+    return f"+{digits[:2]} {digits[2:5]} {digits[5:8]} {digits[8:]}" if len(digits) == 11 else ""
+
+
+def parse_overture_night(features, segments):
+    found = []
+    for p in features:
+        taxonomy = json.loads(p.get("taxonomy") or "{}")
+        kind = NIGHT_TAXONOMY.get(taxonomy.get("primary"))
+        name = (p.get("@name") or "").strip()
+        address = (json.loads(p.get("addresses") or "[]") or [{}])[0].get("freeform") or ""
+        srcs = json.loads(p.get("sources") or "[]")
+        status, confidence = p.get("operating_status") or "", p.get("confidence") or 0
+        if (not kind or not name or not address.strip() or status.endswith("closed") or confidence < 0.5
+                or "adult_entertainment_venue" in taxonomy.get("hierarchy", []) or _NIGHT_SKIP.search(name)
+                or (kind == "music_venue" and not _MUSIC_VENUE.search(name))
+                or any(s.get("license") not in OVERTURE_LICENSES for s in srcs)
+                or not _inside(p["lon"], p["lat"], segments)):
+            continue
+        webs = json.loads(p.get("websites") or "[]") + json.loads(p.get("socials") or "[]")
+        found.append({"name": name, "group": "night", "type": kind, "cuisine": "", "address": _address(address),
+                      "hours": "", "web": next((w for w in webs if w.startswith(("http://", "https://"))
+                                                and not re.search(r"goo\.gl|google\.", w)), ""),
+                      "phone": _phone((json.loads(p.get("phones") or "[]") or [""])[0]), "km": "", "ref": "",
+                      "lat": p["lat"], "lon": p["lon"], "osm": "", "open": status == "open", "confidence": confidence,
+                      "src": sorted({s["dataset"] for s in srcs if s.get("dataset") and s["dataset"] != "Overture"})})
+    # primero los que el registro mercantil da por abiertos, luego los más fiables
+    found.sort(key=lambda e: (not e["open"], -e["confidence"]))
+    out, addresses = [], set()
+    for e in found:
+        key = " ".join(w for w in _words(e["address"]) if w not in _ADDRESS_WORDS)
+        # en una dirección ya cogida, los que no constan abiertos suelen ser nombres antiguos del mismo local
+        if (key in addresses and not e["open"]) or any(same_place(e, o) for o in out):
+            continue
+        addresses.add(key)
+        out.append(e)
+    for e in out:
+        del e["open"], e["confidence"]
+    return sorted(out, key=lambda e: e["name"].lower())
+
+
+def fetch_nightlife(now):
+    release = get_json(OVERTURE + "catalog.json")["latest"]
+    links = get_json(f"{OVERTURE}{release}/places/catalog.json")["links"]
+    tiles = PMTiles(next(link["href"] for link in links if link.get("rel") == "pmtiles"))
+    segments = boundary()
+    lons, lats = [p[0] for s in segments for p in s], [p[1] for s in segments for p in s]
+    z = tiles.maxzoom
+    (x0, y0), (x1, y1) = _tile_xy(min(lons), max(lats), z), _tile_xy(max(lons), min(lats), z)
+    features = []
+    for x in range(x0, x1 + 1):
+        for y in range(y0, y1 + 1):
+            tile = tiles.tile(z, x, y)
+            if tile:
+                features += parse_mvt(tile, z, x, y)
+    places = parse_overture_night(features, segments)
+    if len(places) < 5:  # un error del servidor, no un cambio real
+        raise FetchError(f"Overture {release}: solo {len(places)} locales")
+    return places
+
+
+def merge_places(osm_places, extra):
+    """La guía con los lugares de otras fuentes que aún no están en OpenStreetMap."""
+    new = [e for e in extra if not any(same_place(e, p) for p in osm_places)]
+    return sorted(osm_places + new, key=lambda e: (e["group"], e["name"].lower()))
 
 
 # ---------- ayudas y subvenciones (BDNS, Ministerio de Hacienda; reutilización libre) ----------

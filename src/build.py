@@ -31,6 +31,7 @@ SOURCES = [
     ("equipments", sources.fetch_equipments, 20, True),
     ("chargers", sources.fetch_chargers, 20, True),
     ("leisure", sources.fetch_leisure, 20, True),
+    ("nightlife", sources.fetch_nightlife, 20, True),
     ("aids", sources.fetch_aids, 0, True),
     ("cido", sources.fetch_cido, 0, True),
     ("offers", sources.fetch_offers, 10, True),  # un XML de 7 MB: dos veces al día basta

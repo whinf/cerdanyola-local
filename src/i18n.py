@@ -80,7 +80,7 @@ LEISURE_GROUPS = {
     "culture": ("🎭", "Cultura i lleure", "Cultura y ocio", "Culture and entertainment"),
     "eat": ("🍽️", "Restaurants", "Restaurantes", "Restaurants"),
     "drink": ("☕", "Bars i cafeteries", "Bares y cafeterías", "Bars and cafés"),
-    "night": ("🌙", "Pubs i nit", "Pubs y noche", "Pubs and nightlife"),
+    "night": ("🌙", "Nit: pubs, discoteques i música", "Noche: pubs, discotecas y música", "Nightlife: pubs, clubs and live music"),
     "sport": ("⚽", "Esport", "Deporte", "Sport"),
     "community": ("🤝", "Centres cívics i entitats", "Centros cívicos y entidades", "Community centres and associations"),
 }
@@ -105,6 +105,9 @@ PLACE_TYPES = {  # valor de OSM -> ca, es, en
     "bar": ("Bar", "Bar", "Bar"), "cafe": ("Cafeteria", "Cafetería", "Café"), "ice_cream": ("Gelateria", "Heladería", "Ice cream"),
     "biergarten": ("Terrassa", "Terraza", "Beer garden"), "pub": ("Pub", "Pub", "Pub"),
     "nightclub": ("Discoteca", "Discoteca", "Nightclub"), "dance": ("Sala de ball", "Sala de baile", "Dance hall"),
+    "music_venue": ("Música en directe", "Música en directo", "Live music"), "karaoke_box": ("Karaoke", "Karaoke", "Karaoke"),
+    "cocktail_bar": ("Bar de copes", "Bar de copas", "Cocktail bar"), "piano_bar": ("Piano bar", "Piano bar", "Piano bar"),
+    "hookah_lounge": ("Bar de xixa", "Bar de shisha", "Shisha lounge"), "night_venue": ("Local nocturn", "Local nocturno", "Night venue"),
     "sports_centre": ("Centre esportiu", "Centro deportivo", "Sports centre"), "swimming_pool": ("Piscina", "Piscina", "Swimming pool"),
     "stadium": ("Estadi", "Estadio", "Stadium"), "fitness_centre": ("Gimnàs", "Gimnasio", "Gym"),
 }
@@ -169,6 +172,7 @@ STRINGS = {
         "plan_title": "Pla per avui", "plan_out": "Avui: {sky}, fins a {tmax}°. Bon dia per sortir; algunes idees:",
         "plan_in": "Avui es preveu pluja ({mm} mm). Idees a cobert:", "plan_events": "Avui hi ha {n} activitats a l'agenda",
         "osm_note": "Llocs d'<a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© col·laboradors d'OpenStreetMap, llicència ODbL), en ordre alfabètic i sense enllaços patrocinats. Hi falta un lloc o hi ha una dada malament? Qualsevol persona el pot afegir o corregir gratis a <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> i es veurà aquí l'endemà.",
+        "overture_note": "Alguns locals nocturns que encara no són a OpenStreetMap vénen d'<a href=\"https://overturemaps.org\">Overture Maps Foundation</a> (dades de {src}, llicència <a href=\"https://cdla.dev/permissive-2-0/\">CDLA Permissive 2.0</a>). Surten de registres d'empreses i de les pàgines dels mateixos locals, i algun pot haver tancat o canviat de nom.",
         "directory_title": "Equipaments públics de Cerdanyola",
         "directory_desc": "Directori d'equipaments públics de Cerdanyola del Vallès: escoles, biblioteques, instal·lacions esportives, serveis socials i més, amb adreça i telèfon, i els preus d'avui de les gasolineres.",
         "chargers_title": "Punts de recàrrega de vehicles elèctrics", "map": "Mapa", "phone": "Tel.",
@@ -233,7 +237,7 @@ STRINGS = {
         "weekend_title": "Aquest cap de setmana", "weekend_empty": "Encara no hi ha activitats anunciades per al cap de setmana.",
         "kids": "Per a infants",
         "ics_link": "📅 Vols l'agenda al mòbil? Afegeix <a href=\"{url}\">aquest calendari</a> al teu (a Google Calendar: «Altres calendaris» → «Des de l'URL») i s'actualitzarà sol.",
-        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments i aire), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap (guia d'oci), BDNS (ajudes), SOC i Diputació de Barcelona (feina), Ministeri per a la Transició Ecològica (carburants) i Red Eléctrica (llum). Actualitzat: {t}.",
+        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments i aire), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap i Overture Maps (guia d'oci), BDNS (ajudes), SOC i Diputació de Barcelona (feina), Ministeri per a la Transició Ecològica (carburants) i Red Eléctrica (llum). Actualitzat: {t}.",
         "about": "Sobre el web", "legal": "Avís legal", "privacy": "Privacitat",
         "skip": "Salta al contingut", "language": "Idioma", "choose": "Tria l'idioma",
         "notfound_title": "Pàgina no trobada", "notfound_text": "Aquesta pàgina no existeix. Torna a l'inici.",
@@ -246,7 +250,7 @@ STRINGS = {
 <li>Agenda: Ajuntament de Cerdanyola del Vallès, Agenda cultural de Catalunya (dades obertes de la Generalitat), agenda de la UAB (llicència CC BY-NC) i calendaris del Festival de Blues de Cerdanyola i d'AFOCER.</li>
 <li>Equipaments, punts de recàrrega i qualitat de l'aire: dades obertes de la Generalitat de Catalunya.</li>
 <li>Avisos de trens: Renfe Rodalies (GTFS-RT), llicència CC BY 4.0.</li>
-<li>Guia d'oci: © col·laboradors d'<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, llicència ODbL.</li>
+<li>Guia d'oci: © col·laboradors d'<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, llicència ODbL; més locals nocturns d'<a href="https://overturemaps.org">Overture Maps Foundation</a> (dades de Meta, BrightQuery i altres proveïdors), llicència <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a>.</li>
 <li>Ajudes i subvencions: Base de Dades Nacional de Subvencions (Ministeri d'Hisenda), de reutilització lliure.</li>
 <li>Feina: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) i CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
 <li>Preus dels carburants: Ministeri per a la Transició Ecològica i el Repte Demogràfic.</li>
@@ -300,6 +304,7 @@ STRINGS = {
         "plan_title": "Plan para hoy", "plan_out": "Hoy: {sky}, hasta {tmax}°. Buen día para salir; algunas ideas:",
         "plan_in": "Hoy se prevé lluvia ({mm} mm). Ideas a cubierto:", "plan_events": "Hoy hay {n} actividades en la agenda",
         "osm_note": "Lugares de <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© colaboradores de OpenStreetMap, licencia ODbL), por orden alfabético y sin enlaces patrocinados. ¿Falta un sitio o hay un dato mal? Cualquiera puede añadirlo o corregirlo gratis en <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> y se verá aquí al día siguiente.",
+        "overture_note": "Algunos locales nocturnos que aún no están en OpenStreetMap vienen de <a href=\"https://overturemaps.org\">Overture Maps Foundation</a> (datos de {src}, licencia <a href=\"https://cdla.dev/permissive-2-0/\">CDLA Permissive 2.0</a>). Salen de registros de empresas y de las páginas de los propios locales, y alguno puede haber cerrado o cambiado de nombre.",
         "directory_title": "Equipamientos públicos de Cerdanyola",
         "directory_desc": "Directorio de equipamientos públicos de Cerdanyola del Vallès: escuelas, bibliotecas, instalaciones deportivas, servicios sociales y más, con dirección y teléfono, y los precios de hoy de las gasolineras.",
         "chargers_title": "Puntos de recarga de coches eléctricos", "map": "Mapa", "phone": "Tel.",
@@ -364,7 +369,7 @@ STRINGS = {
         "weekend_title": "Este fin de semana", "weekend_empty": "Todavía no hay actividades anunciadas para el fin de semana.",
         "kids": "Para niños",
         "ics_link": "📅 ¿Quieres la agenda en el móvil? Añade <a href=\"{url}\">este calendario</a> al tuyo (en Google Calendar: «Otros calendarios» → «Desde URL») y se actualizará solo.",
-        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos y aire), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap (guía de ocio), BDNS (ayudas), SOC y Diputació de Barcelona (empleo), Ministerio para la Transición Ecológica (carburantes) y Red Eléctrica (luz). Actualizado: {t}.",
+        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos y aire), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap y Overture Maps (guía de ocio), BDNS (ayudas), SOC y Diputació de Barcelona (empleo), Ministerio para la Transición Ecológica (carburantes) y Red Eléctrica (luz). Actualizado: {t}.",
         "about": "Sobre la web", "legal": "Aviso legal", "privacy": "Privacidad",
         "skip": "Saltar al contenido", "language": "Idioma", "choose": "Elige idioma",
         "notfound_title": "Página no encontrada", "notfound_text": "Esta página no existe. Vuelve al inicio.",
@@ -377,7 +382,7 @@ STRINGS = {
 <li>Agenda: Ajuntament de Cerdanyola del Vallès, Agenda cultural de Catalunya (datos abiertos de la Generalitat), agenda de la UAB (licencia CC BY-NC) y calendarios del Festival de Blues de Cerdanyola y de AFOCER.</li>
 <li>Equipamientos, puntos de recarga y calidad del aire: datos abiertos de la Generalitat de Catalunya.</li>
 <li>Avisos de trenes: Renfe Rodalies (GTFS-RT), licencia CC BY 4.0.</li>
-<li>Guía de ocio: © colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, licencia ODbL.</li>
+<li>Guía de ocio: © colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, licencia ODbL; más locales nocturnos de <a href="https://overturemaps.org">Overture Maps Foundation</a> (datos de Meta, BrightQuery y otros proveedores), licencia <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a>.</li>
 <li>Ayudas y subvenciones: Base de Datos Nacional de Subvenciones (Ministerio de Hacienda), de reutilización libre.</li>
 <li>Empleo: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) y CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
 <li>Precios de los carburantes: Ministerio para la Transición Ecológica y el Reto Demográfico.</li>
@@ -431,6 +436,7 @@ STRINGS = {
         "plan_title": "Plan for today", "plan_out": "Today: {sky}, up to {tmax}°. A good day to get out; some ideas:",
         "plan_in": "Rain is forecast today ({mm} mm). Indoor ideas:", "plan_events": "There are {n} events on today",
         "osm_note": "Places from <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© OpenStreetMap contributors, ODbL licence), in alphabetical order with no sponsored links. Missing a place or spotted a mistake? Anyone can add or fix it for free on <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> and it will show up here the next day.",
+        "overture_note": "Some night venues that are not yet on OpenStreetMap come from the <a href=\"https://overturemaps.org\">Overture Maps Foundation</a> (data from {src}, <a href=\"https://cdla.dev/permissive-2-0/\">CDLA Permissive 2.0</a> licence). They come from business registers and the venues' own pages, so some may have closed or changed name.",
         "directory_title": "Public facilities in Cerdanyola",
         "directory_desc": "Directory of public facilities in Cerdanyola del Vallès: schools, libraries, sports centres, social services and more, with address and phone number, plus today's petrol prices.",
         "chargers_title": "Electric vehicle charging points", "map": "Map", "phone": "Tel.",
@@ -495,7 +501,7 @@ STRINGS = {
         "weekend_title": "This weekend", "weekend_empty": "No events have been announced for the weekend yet.",
         "kids": "For children",
         "ics_link": "📅 Want the events on your phone? Add <a href=\"{url}\">this calendar</a> to yours (in Google Calendar: “Other calendars” → “From URL”) and it will update itself.",
-        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities and air), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap (leisure guide), BDNS (grants), SOC and Diputació de Barcelona (jobs), Ministry for the Ecological Transition (fuel) and Red Eléctrica (electricity). Updated: {t}.",
+        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities and air), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap and Overture Maps (leisure guide), BDNS (grants), SOC and Diputació de Barcelona (jobs), Ministry for the Ecological Transition (fuel) and Red Eléctrica (electricity). Updated: {t}.",
         "about": "About", "legal": "Legal notice", "privacy": "Privacy",
         "skip": "Skip to content", "language": "Language", "choose": "Choose your language",
         "notfound_title": "Page not found", "notfound_text": "This page does not exist. Go back to the home page.",
@@ -508,7 +514,7 @@ STRINGS = {
 <li>Events: Cerdanyola del Vallès town council, the Catalan culture agenda (Generalitat open data), the UAB events page (CC BY-NC licence) and the calendars of the Cerdanyola Blues Festival and AFOCER.</li>
 <li>Facilities, charging points and air quality: Generalitat de Catalunya open data.</li>
 <li>Train alerts: Renfe Rodalies (GTFS-RT), CC BY 4.0 licence.</li>
-<li>Leisure guide: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL licence.</li>
+<li>Leisure guide: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL licence; more night venues from the <a href="https://overturemaps.org">Overture Maps Foundation</a> (data from Meta, BrightQuery and other providers), <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a> licence.</li>
 <li>Grants: Spain's National Grants Database (BDNS, Ministry of Finance), free to reuse.</li>
 <li>Jobs: Catalan public employment service (Feina Activa, Catalan open licence) and the Diputació de Barcelona's CIDO (CC BY 4.0).</li>
 <li>Fuel prices: Spanish Ministry for the Ecological Transition.</li>

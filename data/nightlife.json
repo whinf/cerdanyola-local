@@ -1,0 +1,405 @@
+{
+ "data": [
+  {
+   "address": "Carrer de les Fontetes, 23",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.490276,
+   "lon": 2.144212,
+   "name": "BAR BLACK and WHITE",
+   "osm": "",
+   "phone": "+34 722 318 157",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "cocktail_bar",
+   "web": "https://www.facebook.com/576518326146051"
+  },
+  {
+   "address": "Carrer de la Bona-Sort 32",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.492008,
+   "lon": 2.137163,
+   "name": "Bar Boca Chica 19",
+   "osm": "",
+   "phone": "+34 671 173 530",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "piano_bar",
+   "web": ""
+  },
+  {
+   "address": "Carrer d'Altimira, 42, Loc 1",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.490353,
+   "lon": 2.140896,
+   "name": "Bar La Candelaria",
+   "osm": "",
+   "phone": "+34 643 998 522",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "cocktail_bar",
+   "web": "https://www.facebook.com/674102892460906"
+  },
+  {
+   "address": "Carretera de Barcelona, 158",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.493776,
+   "lon": 2.147623,
+   "name": "Bar Red Diamond 158",
+   "osm": "",
+   "phone": "+34 632 071 931",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "cocktail_bar",
+   "web": "https://www.facebook.com/771195829419597"
+  },
+  {
+   "address": "Carrer de Portugal, 2A",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.491514,
+   "lon": 2.133037,
+   "name": "Bar Xtre",
+   "osm": "",
+   "phone": "+34 622 551 888",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "pub",
+   "web": "https://www.facebook.com/232977436745816"
+  },
+  {
+   "address": "Carrer de les Flors 28",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.494958,
+   "lon": 2.139861,
+   "name": "Casti’s Shisha Lounge",
+   "osm": "",
+   "phone": "+34 640 766 698",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "hookah_lounge",
+   "web": ""
+  },
+  {
+   "address": "Carrer de Torras i Bages, 1",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.490863,
+   "lon": 2.139764,
+   "name": "Cervecería The Coven",
+   "osm": "",
+   "phone": "+34 670 038 726",
+   "ref": "",
+   "src": [
+    "BrightQuery",
+    "meta"
+   ],
+   "type": "cocktail_bar",
+   "web": "https://www.facebook.com/1737736359676427"
+  },
+  {
+   "address": "Carrer de Torras i Bages 3",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.489971,
+   "lon": 2.140108,
+   "name": "Dark Moon Shisha Lounge",
+   "osm": "",
+   "phone": "+34 698 649 388",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "cocktail_bar",
+   "web": ""
+  },
+  {
+   "address": "Carrer de la Bona-Sort 24",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.492491,
+   "lon": 2.137908,
+   "name": "El Local Bar De Copes",
+   "osm": "",
+   "phone": "+34 617 578 749",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "cocktail_bar",
+   "web": ""
+  },
+  {
+   "address": "Carrer de Can Mitjans, 4",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.502045,
+   "lon": 2.135945,
+   "name": "Gabana Disco Show",
+   "osm": "",
+   "phone": "+34 647 723 775",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "nightclub",
+   "web": "https://www.facebook.com/162283157242708"
+  },
+  {
+   "address": "Carrer del Torrent, 16",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.492547,
+   "lon": 2.138579,
+   "name": "Hades Cerveceria",
+   "osm": "",
+   "phone": "+34 615 060 687",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "pub",
+   "web": "https://www.facebook.com/1442523882669486"
+  },
+  {
+   "address": "Carrer de Torras i Bages, 1",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.490618,
+   "lon": 2.140038,
+   "name": "INOX La Galeria",
+   "osm": "",
+   "phone": "+34 609 720 102",
+   "ref": "",
+   "src": [
+    "BrightQuery",
+    "meta"
+   ],
+   "type": "cocktail_bar",
+   "web": "https://www.facebook.com/271820866195603"
+  },
+  {
+   "address": "Carrer Bosc Tancat, 48",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.486861,
+   "lon": 2.138225,
+   "name": "Jamaica Cerdanyola",
+   "osm": "",
+   "phone": "+34 651 513 781",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "nightclub",
+   "web": ""
+  },
+  {
+   "address": "Plaza Goya 1",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.489545,
+   "lon": 2.147816,
+   "name": "Kai Shisha Lounge",
+   "osm": "",
+   "phone": "+34 679 114 601",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "pub",
+   "web": "http://www.kaishishalounge.com"
+  },
+  {
+   "address": "Carrer de Santa Anna 27",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.495163,
+   "lon": 2.140296,
+   "name": "Karaoke \"la Jarana\"",
+   "osm": "",
+   "phone": "+34 640 886 129",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "karaoke_box",
+   "web": ""
+  },
+  {
+   "address": "Carretera de Barcelona, 190",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.494676,
+   "lon": 2.146368,
+   "name": "La LLUNA CAFE Concierto",
+   "osm": "",
+   "phone": "+34 698 423 271",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "music_venue",
+   "web": "http://WWW.AFUEGOFM.COM/"
+  },
+  {
+   "address": "Carrer de Portugal 33",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.490136,
+   "lon": 2.129111,
+   "name": "Sala Acme",
+   "osm": "",
+   "phone": "+34 686 146 964",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "nightclub",
+   "web": "http://www.salaacme.com/"
+  },
+  {
+   "address": "C/Bosc Tancat 27 Nau 48",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.501643,
+   "lon": 2.133746,
+   "name": "Sala Dresden",
+   "osm": "",
+   "phone": "+34 935 947 388",
+   "ref": "",
+   "src": [
+    "BrightQuery",
+    "meta"
+   ],
+   "type": "music_venue",
+   "web": "https://www.facebook.com/255680121447593"
+  },
+  {
+   "address": "Carrer de Torras i Bages 1b",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.490445,
+   "lon": 2.139941,
+   "name": "Sant Patrick",
+   "osm": "",
+   "phone": "+34 931 775 629",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "night_venue",
+   "web": ""
+  },
+  {
+   "address": "Carrer de Serafí Pitarra, 8",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.506448,
+   "lon": 2.083379,
+   "name": "Teatre 2",
+   "osm": "",
+   "phone": "",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "nightclub",
+   "web": ""
+  },
+  {
+   "address": "Carrer de Can Solà 9",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.476645,
+   "lon": 2.099167,
+   "name": "Teatre Sant Cugat",
+   "osm": "",
+   "phone": "+34 697 914 131",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "nightclub",
+   "web": ""
+  },
+  {
+   "address": "Carrer de l'Església, 9",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.49186,
+   "lon": 2.139212,
+   "name": "The 1916 Irish Pub",
+   "osm": "",
+   "phone": "+34 936 927 884",
+   "ref": "",
+   "src": [
+    "BrightQuery",
+    "meta"
+   ],
+   "type": "pub",
+   "web": "http://www.irlanda.cat/"
+  }
+ ],
+ "fetched": "2026-10-24T20:11:24+02:00"
+}

@@ -23,7 +23,8 @@ Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub
 | Equipamientos, recarga, aire | Generalitat (`8gmd-gz7i`, `tb2m-m33b`, `tasf-thgu`) | Llicència oberta Catalunya |
 | Avisos de trenes | Renfe GTFS-RT `alerts.json` | CC BY 4.0 |
 | Luz | web hermana `llum-hores` (`/api/v1/latest.json`) | Red Eléctrica, uso informativo |
-| Guía de ocio | OpenStreetMap vía Overpass API (una consulta al día) | ODbL: `data/leisure.json` y `tests/fixtures/osm.json` son © colaboradores de OpenStreetMap, bajo ODbL |
+| Guía de ocio | OpenStreetMap vía Overpass API (una consulta al día) | ODbL: `data/leisure.json`, `tests/fixtures/osm.json` y `geo/cerdanyola.json` (término municipal) son © colaboradores de OpenStreetMap, bajo ODbL |
+| Más locales nocturnos | Overture Maps, PMTiles de lugares de la última versión (`stac.overturemaps.org`), leído por rangos HTTP: solo las ~25 teselas de Cerdanyola | CDLA Permissive 2.0 (Meta, BrightQuery...); se descartan los registros con otras licencias. Solo se añaden los que no están ya en OpenStreetMap; `_NIGHT_SKIP` en `sources.py` excluye clubs de alterne |
 | Ayudas | Base de Datos Nacional de Subvenciones (`infosubvenciones.es/bdnstrans/api`) | Reutilización libre (Ministerio de Hacienda); `data/aids.json` guarda las convocatorias abiertas y las ya descartadas para no repetir consultas |
 
 `certs/sectigo-ov-r36.pem` y `certs/letsencrypt-ye1.pem` son los certificados intermedios que `cerdanyola.cat` no envía (en octubre de 2026 pasó de Sectigo a Let's Encrypt). La verificación TLS sigue siendo completa. Si cae una de las webs de la agenda (Ajuntament, UAB o una entidad), la agenda sigue con las demás y conserva los actos de esa web que ya tenía guardados.
