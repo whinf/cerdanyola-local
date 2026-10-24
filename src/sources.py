@@ -28,9 +28,11 @@ AIR_MUNICIPIS = ("Sant Cugat del Vallès", "Montcada i Reixac", "Barberà del Va
 POLLUTANTS = ("NO2", "O3", "PM10", "PM2.5")
 LINES = ("R7", "R8")
 
-# cerdanyola.cat no envía su certificado intermedio; lo añadimos (válido hasta 2036).
+# cerdanyola.cat no envía su certificado intermedio; los añadimos: Sectigo (hasta 2036) y,
+# desde octubre de 2026, Let's Encrypt YE1 con su Root YE firmada por ISRG Root X2 (hasta 2028).
 _CTX = ssl.create_default_context()
-_CTX.load_verify_locations(str(ROOT / "certs" / "sectigo-ov-r36.pem"))
+for _pem in ("sectigo-ov-r36.pem", "letsencrypt-ye1.pem"):
+    _CTX.load_verify_locations(str(ROOT / "certs" / _pem))
 
 
 class FetchError(Exception):
@@ -264,15 +266,27 @@ def fetch_uab(today):
     return [e for cat in UAB_CATS for e in parse_uab(get_text(UAB_AGENDA.format(cat)), today)]
 
 
-def fetch_agenda(now):
+def fetch_ajuntament(today):
+    first = get_text("https://www.cerdanyola.cat/agenda")
+    events = parse_agenda_ajuntament(first, today)
+    for n in range(1, min(last_page(first), 6) + 1):  # unas 10 fechas por página: ~1 mes
+        time.sleep(10)  # el robots.txt de cerdanyola.cat pide Crawl-delay: 10
+        events += parse_agenda_ajuntament(get_text(f"https://www.cerdanyola.cat/agenda?page={n}"), today)
+    if not events:  # una página sin ningún acto es un cambio de la web, no un mes sin agenda
+        raise FetchError("cerdanyola.cat/agenda: no se encuentra ningún acto")
+    return events
+
+
+def fetch_agenda(now, previous=None):
     today = now.date()
     rows = socrata("rhpv-yr4f", where=f"municipi='{AGENDA_MUNICIPI}'", order="data_inici DESC", limit=200)
     gencat, permanent = parse_agenda_gencat(rows, today)
-    first = get_text("https://www.cerdanyola.cat/agenda")
-    ajuntament = parse_agenda_ajuntament(first, today)
-    for n in range(1, min(last_page(first), 6) + 1):  # unas 10 fechas por página: ~1 mes
-        time.sleep(10)  # el robots.txt de cerdanyola.cat pide Crawl-delay: 10
-        ajuntament += parse_agenda_ajuntament(get_text(f"https://www.cerdanyola.cat/agenda?page={n}"), today)
+    try:
+        ajuntament = fetch_ajuntament(today)
+    except FetchError as exc:  # si la web municipal cae, seguimos con sus actos ya guardados
+        print(f"aviso: agenda/ajuntament: {exc}")
+        ajuntament = [e for e in (previous or {}).get("events", [])
+                      if e["source"] == "ajuntament" and e["end"] >= today.isoformat()]
     extra = []
     jobs = [("uab", lambda: fetch_uab(today))] + [(s, lambda s=s: fetch_tribe(s, today)) for s in TRIBE_FEEDS]
     for name, job in jobs:

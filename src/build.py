@@ -37,7 +37,7 @@ SOURCES = [
     ("fuel", sources.fetch_fuel, 0, True),
     ("light", sources.fetch_light, 0, False),
 ]
-INCREMENTAL = {"aids"}  # fuentes que reaprovechan lo que ya tenían guardado
+INCREMENTAL = {"aids", "agenda"}  # fuentes que reaprovechan lo que ya tenían guardado
 
 
 def read(name):
