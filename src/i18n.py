@@ -201,6 +201,35 @@ STRINGS = {
         "src_uab": "UAB", "src_blues": "Festival de Blues", "src_afocer": "AFOCER",
         "ongoing_title": "Ara en marxa", "festive": "Festa",
         "add_event": "Organitzes una festa, un concert o una activitat oberta al públic a Cerdanyola? Si el teu local o entitat té un calendari web (per exemple, WordPress amb The Events Calendar), <a href=\"{repo}/issues\">explica-ho a GitHub</a> i l'afegirem a l'agenda.",
+        "slug_picks": "recomanacions", "picks_title": "Recomanacions de la setmana a Cerdanyola",
+        "picks_desc": "Restaurants, bars i experiències especials de Cerdanyola del Vallès i Bellaterra triats a mà. Cada setmana en surten uns altres.",
+        "picks_home": "✨ Recomanat aquesta setmana", "picks_more": "Més detalls de les recomanacions",
+        "picks_week": "Selecció de la setmana del {d}. Dilluns que ve en canvien.",
+        "picks_food": "🍽️ On menjar", "picks_experience": "✨ Què fer",
+        "picks_note": "Llista feta a mà ({n} llocs) a partir de la reputació pública de cada local, sense cap pagament ni acord comercial. Abans d'anar-hi, comprova horaris i obertura al seu web. Trobes a faltar un lloc o n'ha tancat algun? <a href=\"{repo}/issues\">Digues-nos-ho a GitHub</a>.",
+        "slug_save": "estalvia", "save_title": "Estalvia a Cerdanyola",
+        "save_desc": "Maneres reals d'estalviar a Cerdanyola del Vallès i Bellaterra, actualitzades cada dia: les hores més barates de la llum, la benzinera més barata, activitats gratuïtes, ajudes per a particulars i descomptes oficials.",
+        "save_home": "💰 Estalvia a Cerdanyola", "save_all": "Totes les maneres d'estalviar",
+        "save_home_text": "Llum, carburant, activitats gratuïtes, ajudes i descomptes oficials, en una sola pàgina.",
+        "save_home_fuel": "Avui, omplir {l} L de gasolina a la benzinera més barata de Cerdanyola estalvia <strong>{e} €</strong> respecte a la més cara.",
+        "save_home_free": "Hi ha <strong>{n}</strong> activitats gratuïtes el pròxim mes.",
+        "save_fuel": "La benzinera més barata",
+        "save_fuel_text": "Gasolina 95 avui: la més barata és {c} a <strong>{cp} €/l</strong> i la més cara, {d} a {dp} €/l. En un dipòsit de {l} L hi ha <strong>{e} €</strong> de diferència.",
+        "save_free": "Activitats gratuïtes el pròxim mes",
+        "save_free_empty": "Ara mateix no hi ha cap activitat marcada com a gratuïta a l'agenda. Moltes activitats municipals ho són: mira l'agenda completa.",
+        "save_free_note": "Només hi surten les activitats que la font marca com a gratuïtes o que ho diuen al títol.",
+        "save_aids": "Ajudes que pots demanar com a particular",
+        "save_aids_text": "Ara hi ha {n} ajudes amb termini obert per a particulars i famílies. Aquestes són les més properes:",
+        "save_links": "Descomptes i tarifes socials que val la pena conèixer",
+        "save_links_body": """<ul class="months">
+<li><a href="https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html">Bo social elèctric i tèrmic</a>: descompte a la factura de la llum per a llars amb pocs ingressos, famílies nombroses i alguns pensionistes.</li>
+<li><a href="https://www.aiguesdebarcelona.cat/ca/el-teu-servei-daigua/bonificacions">Tarifa social de l'aigua</a> d'Aigües de Barcelona, que dona servei a Cerdanyola, i bonificacions per a famílies nombroses i monoparentals.</li>
+<li><a href="https://www.atm.cat/titols-i-tarifes">T-Jove, T-Usual i altres títols de transport</a> de l'ATM: per a qui agafa Rodalies, FGC o bus sovint, solen sortir molt més a compte que els bitllets senzills.</li>
+<li><a href="https://bibliotecavirtual.diba.cat/">Biblioteques de la Diputació</a>: llibres, pel·lícules, revistes i cursos gratis amb el carnet.</li>
+<li><a href="https://www.amb.cat/s/web/medi-ambient/residus.html">Deixalleria</a>: fer-la servir amb el carnet d'usuari pot donar descompte a la taxa de residus; pregunta-ho a l'Ajuntament.</li>
+<li><a href="https://subastas.boe.es/">Portal de Subhastes del BOE</a>: subhastes judicials, d'Hisenda i de la Seguretat Social de pisos, vehicles i altres béns; s'hi pot buscar per municipi.</li>
+</ul>""",
+        "save_note": "Informació orientativa: comprova sempre les condicions a la font oficial. Aquest web no cobra comissions ni té acords amb cap comerç. Si saps d'una campanya de descomptes del comerç local o de l'Ajuntament, <a href=\"{repo}/issues\">explica-ho a GitHub</a>.",
         "slug_leisure": "oci", "leisure_title": "Guia d'oci de Cerdanyola",
         "leisure_desc": "Què fer a Cerdanyola del Vallès i Bellaterra: festes i concerts, rutes per Collserola, fonts, miradors, patrimoni, museus, restaurants, bars i pubs.",
         "festive_title": "Properes festes, concerts i nit", "festive_empty": "Ara mateix no hi ha festes ni concerts anunciats.",
@@ -309,6 +338,7 @@ STRINGS = {
 <li>Feina: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) i CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
 <li>Inversions i licitacions: Plataforma de serveis de contractació pública (dades obertes de la Generalitat). Empreses: BORME, de l'Agència Estatal Butlletí Oficial de l'Estat, de reutilització lliure citant-ne la font.</li>
 <li>Preus dels carburants: Ministeri per a la Transició Ecològica i el Repte Demogràfic.</li>
+<li>Recomanacions de restaurants i experiències: llista feta a mà, sense pagaments ni acords comercials; no reproduïm valoracions ni ressenyes de cap plataforma.</li>
 <li>Preu de la llum: Red Eléctrica, a través del web germà <a href="{light}">{light}</a>.</li>
 </ul>
 <p>El codi és obert i és a <a href="{repo}">GitHub</a>, on pots avisar d'errors o proposar millores.</p>
@@ -353,6 +383,35 @@ STRINGS = {
         "src_uab": "UAB", "src_blues": "Festival de Blues", "src_afocer": "AFOCER",
         "ongoing_title": "En curso", "festive": "Fiesta",
         "add_event": "¿Organizas una fiesta, un concierto o una actividad abierta al público en Cerdanyola? Si tu local o entidad tiene un calendario web (por ejemplo, WordPress con The Events Calendar), <a href=\"{repo}/issues\">cuéntalo en GitHub</a> y lo añadiremos a la agenda.",
+        "slug_picks": "recomendaciones", "picks_title": "Recomendaciones de la semana en Cerdanyola",
+        "picks_desc": "Restaurantes, bares y experiencias especiales de Cerdanyola del Vallès y Bellaterra elegidos a mano. Cada semana salen otros.",
+        "picks_home": "✨ Recomendado esta semana", "picks_more": "Más detalles de las recomendaciones",
+        "picks_week": "Selección de la semana del {d}. El lunes que viene cambian.",
+        "picks_food": "🍽️ Dónde comer", "picks_experience": "✨ Qué hacer",
+        "picks_note": "Lista hecha a mano ({n} sitios) a partir de la reputación pública de cada local, sin ningún pago ni acuerdo comercial. Antes de ir, comprueba horarios y apertura en su web. ¿Echas de menos un sitio o ha cerrado alguno? <a href=\"{repo}/issues\">Dínoslo en GitHub</a>.",
+        "slug_save": "ahorra", "save_title": "Ahorra en Cerdanyola",
+        "save_desc": "Formas reales de ahorrar en Cerdanyola del Vallès y Bellaterra, actualizadas cada día: las horas más baratas de la luz, la gasolinera más barata, actividades gratuitas, ayudas para particulares y descuentos oficiales.",
+        "save_home": "💰 Ahorra en Cerdanyola", "save_all": "Todas las formas de ahorrar",
+        "save_home_text": "Luz, carburante, actividades gratuitas, ayudas y descuentos oficiales, en una sola página.",
+        "save_home_fuel": "Hoy, llenar {l} L de gasolina en la gasolinera más barata de Cerdanyola ahorra <strong>{e} €</strong> respecto a la más cara.",
+        "save_home_free": "Hay <strong>{n}</strong> actividades gratuitas en el próximo mes.",
+        "save_fuel": "La gasolinera más barata",
+        "save_fuel_text": "Gasolina 95 hoy: la más barata es {c} a <strong>{cp} €/l</strong> y la más cara, {d} a {dp} €/l. En un depósito de {l} L hay <strong>{e} €</strong> de diferencia.",
+        "save_free": "Actividades gratuitas en el próximo mes",
+        "save_free_empty": "Ahora mismo no hay ninguna actividad marcada como gratuita en la agenda. Muchas actividades municipales lo son: mira la agenda completa.",
+        "save_free_note": "Solo salen las actividades que la fuente marca como gratuitas o que lo dicen en el título.",
+        "save_aids": "Ayudas que puedes pedir como particular",
+        "save_aids_text": "Ahora hay {n} ayudas con plazo abierto para particulares y familias. Estas son las más cercanas:",
+        "save_links": "Descuentos y tarifas sociales que vale la pena conocer",
+        "save_links_body": """<ul class="months">
+<li><a href="https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html">Bono social eléctrico y térmico</a>: descuento en la factura de la luz para hogares con pocos ingresos, familias numerosas y algunos pensionistas.</li>
+<li><a href="https://www.aiguesdebarcelona.cat/ca/el-teu-servei-daigua/bonificacions">Tarifa social del agua</a> de Aigües de Barcelona, que da servicio a Cerdanyola, y bonificaciones para familias numerosas y monoparentales.</li>
+<li><a href="https://www.atm.cat/titols-i-tarifes">T-Jove, T-Usual y otros títulos de transporte</a> de la ATM: si coges Rodalies, FGC o bus a menudo, suelen salir mucho más a cuenta que los billetes sencillos.</li>
+<li><a href="https://bibliotecavirtual.diba.cat/">Bibliotecas de la Diputació</a>: libros, películas, revistas y cursos gratis con el carnet.</li>
+<li><a href="https://www.amb.cat/s/web/medi-ambient/residus.html">Deixalleria (punto limpio)</a>: usarla con el carnet de usuario puede dar descuento en la tasa de residuos; pregúntalo en el Ayuntamiento.</li>
+<li><a href="https://subastas.boe.es/">Portal de Subastas del BOE</a>: subastas judiciales, de Hacienda y de la Seguridad Social de pisos, vehículos y otros bienes; se puede buscar por municipio.</li>
+</ul>""",
+        "save_note": "Información orientativa: comprueba siempre las condiciones en la fuente oficial. Esta web no cobra comisiones ni tiene acuerdos con ningún comercio. Si sabes de una campaña de descuentos del comercio local o del Ayuntamiento, <a href=\"{repo}/issues\">cuéntalo en GitHub</a>.",
         "slug_leisure": "ocio", "leisure_title": "Guía de ocio de Cerdanyola",
         "leisure_desc": "Qué hacer en Cerdanyola del Vallès y Bellaterra: fiestas y conciertos, rutas por Collserola, fuentes, miradores, patrimonio, museos, restaurantes, bares y pubs.",
         "festive_title": "Próximas fiestas, conciertos y noche", "festive_empty": "Ahora mismo no hay fiestas ni conciertos anunciados.",
@@ -461,6 +520,7 @@ STRINGS = {
 <li>Empleo: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) y CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
 <li>Inversiones y licitaciones: Plataforma de serveis de contractació pública (datos abiertos de la Generalitat). Empresas: BORME, de la Agencia Estatal Boletín Oficial del Estado, de reutilización libre citando la fuente.</li>
 <li>Precios de los carburantes: Ministerio para la Transición Ecológica y el Reto Demográfico.</li>
+<li>Recomendaciones de restaurantes y experiencias: lista hecha a mano, sin pagos ni acuerdos comerciales; no reproducimos valoraciones ni reseñas de ninguna plataforma.</li>
 <li>Precio de la luz: Red Eléctrica, a través de la web hermana <a href="{light}">{light}</a>.</li>
 </ul>
 <p>El código es abierto y está en <a href="{repo}">GitHub</a>, donde puedes avisar de errores o proponer mejoras.</p>
@@ -505,6 +565,35 @@ STRINGS = {
         "src_uab": "UAB", "src_blues": "Blues Festival", "src_afocer": "AFOCER",
         "ongoing_title": "On now", "festive": "Party",
         "add_event": "Organising a party, concert or event open to the public in Cerdanyola? If your venue or association has a web calendar (for example WordPress with The Events Calendar), <a href=\"{repo}/issues\">tell us on GitHub</a> and we'll add it to the agenda.",
+        "slug_picks": "recommendations", "picks_title": "This week's picks in Cerdanyola",
+        "picks_desc": "Hand-picked restaurants, bars and special experiences in Cerdanyola del Vallès and Bellaterra. A different selection every week.",
+        "picks_home": "✨ Picks of the week", "picks_more": "More about this week's picks",
+        "picks_week": "Selection for the week of {d}. It changes next Monday.",
+        "picks_food": "🍽️ Where to eat", "picks_experience": "✨ Things to do",
+        "picks_note": "Hand-made list ({n} places) based on each venue's public reputation, with no payments or commercial agreements. Check opening hours on their website before going. Missing a place, or has one closed? <a href=\"{repo}/issues\">Tell us on GitHub</a>.",
+        "slug_save": "save", "save_title": "Save money in Cerdanyola",
+        "save_desc": "Real ways to save money in Cerdanyola del Vallès and Bellaterra, updated daily: the cheapest electricity hours, the cheapest petrol station, free activities, grants for individuals and official discounts.",
+        "save_home": "💰 Save money in Cerdanyola", "save_all": "All the ways to save",
+        "save_home_text": "Electricity, fuel, free activities, grants and official discounts, on one page.",
+        "save_home_fuel": "Today, filling {l} L of petrol at the cheapest station in Cerdanyola saves <strong>€{e}</strong> compared with the most expensive one.",
+        "save_home_free": "There are <strong>{n}</strong> free activities in the coming month.",
+        "save_fuel": "The cheapest petrol station",
+        "save_fuel_text": "Unleaded 95 today: the cheapest is {c} at <strong>€{cp}/l</strong> and the most expensive, {d} at €{dp}/l. On a {l} L tank that is a <strong>€{e}</strong> difference.",
+        "save_free": "Free activities in the coming month",
+        "save_free_empty": "No activity in the listings is marked as free right now. Many council events are: see the full listings.",
+        "save_free_note": "Only activities the source marks as free, or that say so in their title, are shown.",
+        "save_aids": "Grants you can apply for as an individual",
+        "save_aids_text": "There are currently {n} grants open to individuals and families. These close soonest:",
+        "save_links": "Discounts and social tariffs worth knowing",
+        "save_links_body": """<ul class="months">
+<li><a href="https://www.miteco.gob.es/es/energia/pobreza-energetica/pe-001.html">Bono social (electricity and heating)</a>: a discount on the electricity bill for low-income households, large families and some pensioners.</li>
+<li><a href="https://www.aiguesdebarcelona.cat/ca/el-teu-servei-daigua/bonificacions">Social water tariff</a> from Aigües de Barcelona, which supplies Cerdanyola, plus discounts for large and single-parent families.</li>
+<li><a href="https://www.atm.cat/titols-i-tarifes">T-Jove, T-Usual and other travel cards</a> from ATM: if you use Rodalies, FGC or buses often, they usually work out much cheaper than single tickets.</li>
+<li><a href="https://bibliotecavirtual.diba.cat/">Diputació libraries</a>: free books, films, magazines and courses with a library card.</li>
+<li><a href="https://www.amb.cat/s/web/medi-ambient/residus.html">Recycling centre (deixalleria)</a>: using it with a user card may reduce your waste tax; ask the town council.</li>
+<li><a href="https://subastas.boe.es/">BOE auction portal</a>: court, tax-office and Social Security auctions of flats, vehicles and other goods; you can search by town.</li>
+</ul>""",
+        "save_note": "For guidance only: always check the conditions with the official source. This website takes no commissions and has no deals with any business. If you know of a discount campaign by local shops or the town council, <a href=\"{repo}/issues\">tell us on GitHub</a>.",
         "slug_leisure": "leisure", "leisure_title": "Leisure guide to Cerdanyola",
         "leisure_desc": "Things to do in Cerdanyola del Vallès and Bellaterra: festivals and concerts, walks in Collserola, springs, viewpoints, heritage, museums, restaurants, bars and pubs.",
         "festive_title": "Upcoming festivals, concerts and nights out", "festive_empty": "There are no festivals or concerts announced right now.",
@@ -613,6 +702,7 @@ STRINGS = {
 <li>Jobs: Catalan public employment service (Feina Activa, Catalan open licence) and the Diputació de Barcelona's CIDO (CC BY 4.0).</li>
 <li>Investment and tenders: the Catalan public procurement platform (Generalitat open data). Companies: the BORME, published by the Agencia Estatal Boletín Oficial del Estado, free to reuse with attribution.</li>
 <li>Fuel prices: Spanish Ministry for the Ecological Transition.</li>
+<li>Restaurant and experience picks: a hand-made list with no payments or commercial agreements; we do not reproduce ratings or reviews from any platform.</li>
 <li>Electricity price: Red Eléctrica, via the sister site <a href="{light}">{light}</a>.</li>
 </ul>
 <p>The code is open source and lives on <a href="{repo}">GitHub</a>, where you can report bugs or suggest improvements.</p>

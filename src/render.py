@@ -6,7 +6,7 @@ import shutil
 from datetime import date, datetime, timedelta
 from html import escape as esc
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 import i18n
 import sources
@@ -15,6 +15,10 @@ from i18n import LANGS, t
 
 ROOT = Path(__file__).resolve().parent.parent
 RODALIES = "https://rodalies.gencat.cat/ca/estat_servei/"
+PICKS = ROOT / "curated" / "picks.json"  # recomendaciones escritas a mano; rotan cada semana
+PICKS_PER_WEEK = {"food": 3, "experience": 2}
+FILL_LITRES = 50  # «llenar el depósito» para comparar gasolineras
+FREE_WORDS = re.compile(r"\b(gratu[iï]t[ae]?s?|gratis|gratuit[oa]s?|entrada (?:lliure|libre)|free entry)\b", re.I)
 
 # Qué cuenta como fiesta: por categoría o por palabras del título (ca/es/en)
 FESTIVE_CATS = {"Festes populars", "Música", "Festivals", "Hostalaria", "Fires i mercats", "Nadal"}
@@ -37,8 +41,27 @@ PHASE_TIER = {"Anunci de licitació": "t0", "Alerta futura": "t1", "Consulta pre
               "Anunci previ": "t1", "Expedient en avaluació": "t1"}  # el resto, gris
 
 
+def week_picks(items, today, n):
+    """n fichas de la semana ISO de today: orden fijo para todo el año y bloques seguidos, sin repetir
+    de una semana a la siguiente mientras haya al menos 2n fichas."""
+    year, week, _ = today.isocalendar()
+    pool = sorted(items, key=lambda p: hashlib.sha1(f'{year}:{p["id"]}'.encode()).hexdigest())
+    if not pool:
+        return []
+    start = week * n % len(pool)
+    return [pool[(start + i) % len(pool)] for i in range(min(n, len(pool)))]
+
+
+def load_picks():
+    return json.loads(PICKS.read_text(encoding="utf-8")) if PICKS.exists() else []
+
+
 def festive(e):
     return e.get("category") in FESTIVE_CATS or bool(FESTIVE_WORDS.search(e["title"]))
+
+
+def is_free(e):
+    return bool(e.get("free")) or bool(FREE_WORDS.search(e["title"]))
 
 
 def for_kids(e):
@@ -61,8 +84,9 @@ def osm(lat, lon):
 
 
 class Site:
-    def __init__(self, cfg, data, out_dir, now):
+    def __init__(self, cfg, data, out_dir, now, picks=None):
         self.cfg = cfg
+        self.picks = load_picks() if picks is None else picks
         self.data = data  # {fuente: {"fetched": iso, "data": ...}}
         self.out = Path(out_dir)
         self.now = now
@@ -101,7 +125,7 @@ class Site:
             f'<a href="{self.href(self.path(lg, kind))}" hreflang="{lg}" lang="{lg}"'
             f'{" aria-current=\"true\"" if lg == lang else ""}>{t(lg, "lang_name")}</a>' for lg in LANGS)
         nav = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, k + "_title" if k != "home" else "home")}</a>'
-                         for k in ("home", "agenda", "leisure", "aids", "jobs", "invest", "directory"))
+                         for k in ("home", "agenda", "leisure", "picks", "save", "aids", "jobs", "invest", "directory"))
         links = " · ".join([f'<a href="{self.href(self.path(lang, "emergency"))}">🆘 112</a>'] + [
             f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>' for k in ("about", "legal", "privacy")] + [f'<a href="https://onestudioman.horaverda.es/{lang}/">{t(lang, "studio")}</a>'])
         donate = (f' · <a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">♥</a>'
@@ -233,7 +257,7 @@ class Site:
         if for_kids(e):
             title = f'<span role="img" aria-label="{t(lang, "kids")}" title="{t(lang, "kids")}">🧒</span> {title}'
         meta = " · ".join(x for x in (esc(i18n.agenda_cat(lang, e.get("category", ""))), esc(e.get("place", "")),
-                                       t(lang, "free") if e.get("free") else "", t(lang, "src_" + e["source"])) if x)
+                                       t(lang, "free") if is_free(e) else "", t(lang, "src_" + e["source"])) if x)
         return f'<li><span class="when">{when}</span><span class="what">{title}</span><small class="muted">{meta}</small></li>'
 
     def events_split(self):
@@ -565,11 +589,99 @@ class Site:
         return self.layout(lang, "emergency", f'{t(lang, "emergency_title")} · {self.name}', t(lang, "emergency_desc"),
                            f'<h1>{t(lang, "emergency_title")}</h1>{t(lang, "emergency_body", local=local)}')
 
+    def this_week(self):
+        live = [p for p in self.picks if self.now.month in p.get("months", range(1, 13))]  # fiestas: solo en su época
+        return {k: week_picks([p for p in live if p["kind"] == k], self.now.date(), n)
+                for k, n in PICKS_PER_WEEK.items()}
+
+    def pick_item(self, lang, p, full=True):
+        icon = "🍽️" if p["kind"] == "food" else "✨"
+        name = f'<a href="{esc(p["url"])}" rel="noopener">{esc(p["name"])}</a>' if p.get("url") else esc(p["name"])
+        tags = " · ".join(x for x in (esc(p["tags"][lang]), p.get("price", "")) if x)
+        extra = [esc(p["why"][lang])]
+        if full and p.get("address"):
+            q = quote(f'{p["name"]}, {p["address"]}')
+            extra.append(f'{esc(p["address"])} · <a href="https://www.openstreetmap.org/search?query={q}">{t(lang, "map")}</a>')
+        return (f'<li><span class="when">{icon} {tags}</span><span class="what">{name}</span>'
+                f'<small class="muted">{"<br>".join(extra)}</small></li>')
+
+    def picks_preview(self, lang):
+        week = self.this_week()
+        items = week["food"] + week["experience"]
+        if not items:
+            return ""
+        return (f'<section><h2>{t(lang, "picks_home")}</h2>'
+                f'<ul class="events">{"".join(self.pick_item(lang, p, full=False) for p in items)}</ul>'
+                f'<p><a href="{self.href(self.path(lang, "picks"))}">{t(lang, "picks_more")} →</a></p></section>')
+
+    def picks_page(self, lang):
+        week = self.this_week()
+        monday = self.now.date() - timedelta(days=self.now.date().weekday())
+        body = [f'<h1>{t(lang, "picks_title")}</h1><p class="lede">{t(lang, "picks_desc")}</p>',
+                f'<p>{t(lang, "picks_week", d=i18n.fmt_date(lang, monday, weekday=False))}</p>']
+        for k in PICKS_PER_WEEK:
+            if week[k]:
+                body.append(f'<h2>{t(lang, "picks_" + k)}</h2>'
+                            f'<ul class="events">{"".join(self.pick_item(lang, p) for p in week[k])}</ul>')
+        body.append(f'<p class="note">{t(lang, "picks_note", n=len(self.picks), repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+        return self.layout(lang, "picks", f'{t(lang, "picks_title")} · {self.name}', t(lang, "picks_desc"), "".join(body))
+
+    def free_events(self, days=30):
+        limit = (self.now.date() + timedelta(days=days)).isoformat()
+        return [e for e in self.events_split()[0] if e["start"] <= limit and is_free(e)]
+
+    def fuel_saving(self):
+        """(estación más barata, más cara, euros de diferencia en 50 L) de gasolina 95 en Cerdanyola."""
+        here = [s for s in (self.get("fuel") or {}).get("stations", [])
+                if s["town"] == sources.FUEL_TOWNS[931] and "g95" in s["prices"]]
+        if len(here) < 2:
+            return None
+        cheap = min(here, key=lambda s: s["prices"]["g95"])
+        dear = max(here, key=lambda s: s["prices"]["g95"])
+        return cheap, dear, (dear["prices"]["g95"] - cheap["prices"]["g95"]) * FILL_LITRES
+
+    def save_preview(self, lang):
+        saving, free = self.fuel_saving(), self.free_events()
+        parts = []
+        if saving and saving[2] >= 0.5:
+            parts.append(t(lang, "save_home_fuel", e=i18n.fmt_num(lang, saving[2], 2), l=FILL_LITRES))
+        if free:
+            parts.append(t(lang, "save_home_free", n=len(free)))
+        return (f'<section><h2>{t(lang, "save_home")}</h2><p>{" ".join(parts) or t(lang, "save_home_text")}</p>'
+                f'<p><a href="{self.href(self.path(lang, "save"))}">{t(lang, "save_all")} →</a></p></section>')
+
+    def save_page(self, lang):
+        body = [f'<h1>{t(lang, "save_title")}</h1><p class="lede">{t(lang, "save_desc")}</p>', self.light(lang)]
+        saving = self.fuel_saving()
+        if saving:
+            cheap, dear, euros = saving
+            name = lambda s: f'{esc(s["name"])} ({esc(s["address"])})'  # noqa: E731
+            body.append(f'<section><h2>⛽ {t(lang, "save_fuel")}</h2><p>' + t(
+                lang, "save_fuel_text", c=name(cheap), cp=i18n.fmt_num(lang, cheap["prices"]["g95"], 3), d=name(dear),
+                dp=i18n.fmt_num(lang, dear["prices"]["g95"], 3), e=i18n.fmt_num(lang, euros, 2), l=FILL_LITRES) +
+                f'</p><p><a href="{self.href(self.path(lang, "directory"))}#fuel">{t(lang, "fuel_more")} →</a></p></section>')
+        free = self.free_events()
+        body.append(f'<section><h2>🎟️ {t(lang, "save_free")}</h2>')
+        body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in free[:15])}</ul>'
+                    if free else f'<p>{t(lang, "save_free_empty")}</p>')
+        body.append(f'<p class="note">{t(lang, "save_free_note")}</p></section>')
+        mine = [x for x in self.aids_open() if "people" in x[2]["who"] and x[0] in ("open", "approx")]
+        if self.get("aids") is not None:
+            mine.sort(key=lambda x: (LEVELS.index(aid_level(x[2])), x[1]))
+            top = f'<ul class="events">{"".join(self.aid_item(lang, *x) for x in mine[:5])}</ul>' if mine else ""
+            body.append(f'<section><h2>💶 {t(lang, "save_aids")}</h2><p>{t(lang, "save_aids_text", n=len(mine))}</p>{top}'
+                        f'<p><a href="{self.href(self.path(lang, "aids"))}#people">{t(lang, "aids_all")} →</a></p></section>')
+        body.append(f'<section><h2>🔗 {t(lang, "save_links")}</h2>{t(lang, "save_links_body")}</section>')
+        body.append(f'<p class="note">{t(lang, "save_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+        return self.layout(lang, "save", f'{t(lang, "save_title")} · {self.name}', t(lang, "save_desc"), "".join(body))
+
     # ---------- páginas ----------
     def home(self, lang):
         quick = (f'<section><h2>{t(lang, "quick_title")}</h2><ul class="months">'
                  f'<li><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}#weekend">{t(lang, "weekend_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "picks"))}">{t(lang, "picks_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "save"))}">{t(lang, "save_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "aids"))}">{t(lang, "aids_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "invest"))}">{t(lang, "invest_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}">{t(lang, "leisure_title")}</a></li>'
@@ -578,7 +690,7 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
                 f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.light(lang)}{self.transport(lang)}'
-                f'{self.agenda_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
+                f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
                 f'{self.fuel_preview(lang)}'
                 f'{self.air(lang)}{quick}')
         ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": self.name, "inLanguage": lang,
@@ -803,7 +915,7 @@ location.replace("{self.prefix}/ca/");}})();
     def sitemap(self):
         today = self.now.date().isoformat()
         urls = []
-        daily = ("home", "agenda", "leisure", "aids", "jobs", "invest", "directory")
+        daily = ("home", "agenda", "leisure", "picks", "save", "aids", "jobs", "invest", "directory")
         for kind in daily + ("emergency", "about", "legal", "privacy"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}"/>'
                            for lg in LANGS)
@@ -822,6 +934,8 @@ location.replace("{self.prefix}/ca/");}})();
             self.write(self.path(lang, "home"), self.home(lang))
             self.write(self.path(lang, "agenda"), self.agenda_page(lang))
             self.write(self.path(lang, "leisure"), self.leisure_page(lang))
+            self.write(self.path(lang, "picks"), self.picks_page(lang))
+            self.write(self.path(lang, "save"), self.save_page(lang))
             self.write(self.path(lang, "aids"), self.aids_page(lang))
             self.write(self.path(lang, "jobs"), self.jobs_page(lang))
             self.write(self.path(lang, "invest"), self.invest_page(lang))

@@ -10,14 +10,14 @@ import argparse
 import json
 import os
 import sys
-from datetime import timedelta
+from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import sources  # noqa: E402
 import tz  # noqa: E402
-from render import ROOT, Site  # noqa: E402
+from render import ROOT, Site, load_picks  # noqa: E402
 
 DATA = ROOT / "data"
 MAX_SILENCE = timedelta(days=3)
@@ -85,6 +85,9 @@ def check(now):
         last = (health.get(name) or {}).get("last_ok")
         if required and (not last or now - tz.parse_iso(last) > MAX_SILENCE):
             problems.append(f"{name} lleva más de 3 días sin datos: {(health.get(name) or {}).get('last_error')}")
+    stale = [p["name"] for p in load_picks() if now.date() - date.fromisoformat(p["checked"]) > timedelta(days=365)]
+    if stale:  # solo aviso: las recomendaciones se revisan a mano una vez al año
+        print("aviso: recomendaciones sin revisar desde hace más de un año:", ", ".join(stale))
     for p in problems:
         print("ERROR:", p)
     return 1 if problems else 0

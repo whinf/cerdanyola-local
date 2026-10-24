@@ -251,6 +251,28 @@ class Links(HTMLParser):
 
 
 class TestSite(unittest.TestCase):
+    def test_week_picks_rotate(self):
+        items = [{"id": f"p{i}"} for i in range(10)]
+        mon, sun, next_mon = date(2026, 10, 26), date(2026, 11, 1), date(2026, 11, 2)
+        self.assertEqual(render.week_picks(items, mon, 3), render.week_picks(items, sun, 3))
+        this, after = render.week_picks(items, mon, 3), render.week_picks(items, next_mon, 3)
+        self.assertEqual(len(this), 3)
+        self.assertFalse({p["id"] for p in this} & {p["id"] for p in after})
+        self.assertEqual(render.week_picks([], mon, 3), [])
+        self.assertEqual(len(render.week_picks(items[:2], mon, 3)), 2)
+
+    def test_curated_picks(self):
+        picks = render.load_picks()
+        self.assertGreaterEqual(sum(p["kind"] == "food" for p in picks), 2 * render.PICKS_PER_WEEK["food"])
+        self.assertGreaterEqual(sum(p["kind"] == "experience" for p in picks), 2 * render.PICKS_PER_WEEK["experience"])
+        self.assertEqual(len({p["id"] for p in picks}), len(picks))
+        for p in picks:
+            for lang in i18n.LANGS:
+                self.assertTrue(p["why"][lang] and p["tags"][lang], p["id"])
+            self.assertTrue(not p.get("url") or p["url"].startswith(("https://", "http://")), p["id"])
+            self.assertTrue(set(p.get("months", [1])) <= set(range(1, 13)), p["id"])
+            date.fromisoformat(p["checked"])
+
     def test_same_keys(self):
         for lang in i18n.LANGS:
             self.assertEqual(set(i18n.STRINGS[lang]), set(i18n.STRINGS["ca"]), lang)
@@ -318,6 +340,12 @@ class TestSite(unittest.TestCase):
             titles = [e.findtext(atom + "title") for e in feed.iter(atom + "entry")]
             self.assertIn("En licitación · 23.071 € · Subministrament de contenidors higiènics", titles)
             self.assertIn("Empresas nuevas · JX PEOPLE & INVESTMENTS S.L.", titles)
+            self.assertIn("Estalvia a Cerdanyola", home)
+            save = (out / "es/ahorra/index.html").read_text(encoding="utf-8")
+            self.assertIn("La gasolinera más barata", save)
+            self.assertIn("subastas.boe.es", save)
+            self.assertIn("Recomanat aquesta setmana", home)
+            self.assertIn("<h2>🍽️ Where to eat</h2>", (out / "en/recommendations/index.html").read_text(encoding="utf-8"))
             sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
             self.assertIn('href="tel:112"', sos)
             self.assertIn("Policia Local", sos)
