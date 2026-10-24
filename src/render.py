@@ -1,13 +1,15 @@
 """Genera el sitio estático de Cerdanyola a partir de los datos en caché."""
+import hashlib
 import json
 import re
 import shutil
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from html import escape as esc
 from pathlib import Path
 from urllib.parse import urlparse
 
 import i18n
+import sources
 import tz
 from i18n import LANGS, t
 
@@ -22,10 +24,22 @@ FESTIVE_WORDS = re.compile(
     r"sardan\w*|fira|jam|karaoke|tribut\w*|xou|show|terror|cap d'any|nochevieja|tardeo|rumba|flamenc\w*|"
     r"corretapes|vermut|party|música en viu|en directe|en directo)\b", re.I)
 RAINY = ("rain", "sleet", "snow", "thunder", "showers")
+KIDS_WORDS = re.compile(r"\b(infantil\w*|famíli\w*|familiar\w*|nens|niños|kids|contacontes|cuentacuentos)\b", re.I)
+AUDIENCES = ("people", "business", "entities")
+LEVELS = ("LOCAL", "AUTONOMICA", "ESTADO")
+BDNS_CALL = "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/{}"
 
 
 def festive(e):
     return e.get("category") in FESTIVE_CATS or bool(FESTIVE_WORDS.search(e["title"]))
+
+
+def for_kids(e):
+    return e.get("category") == "Infància" or bool(KIDS_WORDS.search(e["title"]))
+
+
+def aid_level(a):
+    return a["level"] if a.get("level") in LEVELS else "AUTONOMICA"
 
 
 def fmt_dt(iso):
@@ -80,9 +94,9 @@ class Site:
             f'<a href="{self.href(self.path(lg, kind))}" hreflang="{lg}" lang="{lg}"'
             f'{" aria-current=\"true\"" if lg == lang else ""}>{t(lg, "lang_name")}</a>' for lg in LANGS)
         nav = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, k + "_title" if k != "home" else "home")}</a>'
-                         for k in ("home", "agenda", "leisure", "directory"))
-        links = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>'
-                           for k in ("about", "legal", "privacy"))
+                         for k in ("home", "agenda", "leisure", "aids", "jobs", "directory"))
+        links = " · ".join([f'<a href="{self.href(self.path(lang, "emergency"))}">🆘 112</a>'] + [
+            f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>' for k in ("about", "legal", "privacy")])
         donate = (f' · <a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">♥</a>'
                   if self.cfg.get("donate_url") else "")
         updated = max((v.get("fetched") or "" for v in self.data.values()), default="")
@@ -209,6 +223,8 @@ class Site:
         title = f'<a href="{esc(e["url"])}">{title}</a>' if e.get("url") else title
         if festive(e):
             title = f'<span role="img" aria-label="{t(lang, "festive")}">🎉</span> {title}'
+        if for_kids(e):
+            title = f'<span role="img" aria-label="{t(lang, "kids")}" title="{t(lang, "kids")}">🧒</span> {title}'
         meta = " · ".join(x for x in (esc(i18n.agenda_cat(lang, e.get("category", ""))), esc(e.get("place", "")),
                                        t(lang, "free") if e.get("free") else "", t(lang, "src_" + e["source"])) if x)
         return f'<li><span class="when">{when}</span><span class="what">{title}</span><small class="muted">{meta}</small></li>'
@@ -229,16 +245,208 @@ class Site:
         return (f'<section><h2>{t(lang, "agenda_next")}</h2>{body}'
                 f'<p><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_all")} →</a></p></section>')
 
+    def weekend(self, lang):
+        """Actos que empiezan entre el viernes y el domingo (este, si ya estamos en fin de semana)."""
+        today = self.now.date()
+        fri = today if today.weekday() >= 4 else today + timedelta(days=4 - today.weekday())
+        sun = fri + timedelta(days=6 - fri.weekday())
+        events = [e for e in self.events_split()[0] if fri.isoformat() <= e["start"] <= sun.isoformat()]
+        body = (f'<ul class="events">{"".join(self.event_item(lang, e) for e in events)}</ul>'
+                if events else f'<p>{t(lang, "weekend_empty")}</p>')
+        return f'<section id="weekend"><h2>{t(lang, "weekend_title")}</h2>{body}</section>'
+
+    def aids_open(self):
+        """[(estado, fecha, ayuda)] que aún se pueden pedir: primero las de plazo conocido, por fecha de cierre."""
+        today, out = self.now.date(), []
+        for a in ((self.get("aids") or {}).get("calls") or {}).values():
+            st = sources.aid_state(a, today)
+            if st:
+                out.append((*st, a))
+        rank = {"open": 0, "approx": 0, "soon": 1, "check": 2}
+        return sorted(out, key=lambda x: (rank[x[0]], x[1] or date.max, x[2]["title"]))
+
+    def aid_item(self, lang, state, day, a):
+        today = self.now.date()
+        title = a["title_ca"] if lang == "ca" and a.get("title_ca") else a["title"]
+        if len(title) > 220:
+            title = title[:217].rsplit(" ", 1)[0] + "…"
+        d = i18n.fmt_deadline(lang, day, today) if day else ""
+        if state in ("open", "approx", "soon"):
+            when = t(lang, {"open": "aids_until", "approx": "aids_approx", "soon": "aids_opens"}[state], d=d)
+        else:
+            when = t(lang, "aids_check", t=esc(a["term"])) if a.get("term") else t(lang, "aids_check_none")
+        if state in ("open", "approx") and (day - today).days <= 7:
+            when = f'<strong title="{t(lang, "aids_soon")}">⏳ {when}</strong>'
+        meta = [esc(i18n.organ_name(a["organ"]))]
+        if a.get("budget"):
+            meta.append(t(lang, "aids_budget", b=i18n.fmt_money(lang, a["budget"])))
+        return (f'<li><span class="when">{when}</span><span class="what"><a href="{BDNS_CALL.format(esc(a["id"]))}">'
+                f'{esc(title)}</a></span><small class="muted">{" · ".join(meta)}</small></li>')
+
+    def aids_preview(self, lang):
+        if self.get("aids") is None:
+            return ""
+        items = self.aids_open()
+        n = {w: sum(w in x[2]["who"] for x in items) for w in AUDIENCES}
+        mine = sorted((x for x in items if "people" in x[2]["who"] and x[0] in ("open", "approx")),
+                      key=lambda x: (LEVELS.index(aid_level(x[2])), x[1]))[:3]
+        top = f'<ul class="events">{"".join(self.aid_item(lang, *x) for x in mine)}</ul>' if mine else ""
+        return (f'<section><h2>💶 {t(lang, "aids_home_title")}</h2>'
+                f'<p>{t(lang, "aids_home_text", p=n["people"], b=n["business"], e=n["entities"])}</p>{top}'
+                f'<p><a href="{self.href(self.path(lang, "aids"))}">{t(lang, "aids_all")} →</a></p></section>')
+
+    def aids_page(self, lang):
+        items = self.aids_open()
+        jump = " · ".join(f'<a href="#{w}">{t(lang, "aids_" + w)}</a> ({sum(w in x[2]["who"] for x in items)})'
+                          for w in AUDIENCES)
+        body = [f'<h1>{t(lang, "aids_title")}</h1><p class="lede">{t(lang, "aids_desc")}</p><p>{jump}</p>']
+        for who in AUDIENCES:
+            mine = [x for x in items if who in x[2]["who"]]
+            body.append(f'<h2 id="{who}">{t(lang, "aids_" + who)}</h2>')
+            if not mine:
+                body.append(f'<p>{t(lang, "aids_empty")}</p>')
+            for lvl in LEVELS:
+                group = [x for x in mine if aid_level(x[2]) == lvl]
+                if group:
+                    body.append(f'<details class="group"{" open" if lvl == "LOCAL" or len(group) <= 12 else ""}>'
+                                f'<summary>{t(lang, "aids_lvl_" + lvl)} <span class="muted">({len(group)})</span></summary>'
+                                f'<ul class="events">{"".join(self.aid_item(lang, *x) for x in group)}</ul></details>')
+        body.append(f'<p class="note">{t(lang, "aids_note")}</p>')
+        return self.layout(lang, "aids", f'{t(lang, "aids_title")} · {self.name}', t(lang, "aids_desc"), "".join(body))
+
+    def public_jobs(self):
+        today = self.now.date().isoformat()
+        return [j for j in self.get("cido") or [] if not j["end"] or j["end"] >= today]
+
+    def job_item(self, lang, j):
+        meta = [esc(j["company"]), esc(j["contract"]), esc(j["hours"])]
+        if j.get("salary"):
+            meta.append("–".join(i18n.fmt_money(lang, x) for x in sorted(set(j["salary"]))))
+        when = t(lang, "jobs_posted", d=i18n.fmt_deadline(lang, date.fromisoformat(j["date"]), self.now.date()))
+        return (f'<li><span class="when">{when}</span><span class="what"><a href="{esc(j["url"])}">{esc(j["title"])}</a>'
+                f'</span><small class="muted">{" · ".join(x for x in meta if x)}</small></li>')
+
+    def public_job_item(self, lang, j):
+        today = self.now.date()
+        when = t(lang, "aids_until", d=i18n.fmt_deadline(lang, date.fromisoformat(j["end"]), today)) if j["end"] else ""
+        if j["end"] and (date.fromisoformat(j["end"]) - today).days <= 3:
+            when = f'<strong>⏳ {when}</strong>'
+        size = t(lang, "jobs_pool") if j["pool"] else t(lang, "jobs_place") if j["places"] == 1 else (
+            t(lang, "jobs_places", n=j["places"]) if j["places"] else "")
+        meta = [esc(j["org"]), esc(j["kind"]), esc(j["group"]), size]
+        return (f'<li><span class="when">{when}</span><span class="what"><a href="{esc(j["url"])}">{esc(j["title"])}</a>'
+                f'</span><small class="muted">{" · ".join(x for x in meta if x)}</small></li>')
+
+    def jobs_page(self, lang):
+        offers, public = self.get("offers") or [], self.public_jobs()
+        body = [f'<h1>{t(lang, "jobs_title")}</h1><p class="lede">{t(lang, "jobs_desc")}</p>'
+                f'<p><a href="#offers">{t(lang, "jobs_offers")}</a> ({len(offers)}) · '
+                f'<a href="#public">{t(lang, "jobs_public")}</a> ({len(public)})</p>',
+                f'<h2 id="offers">{t(lang, "jobs_offers")}</h2>']
+        towns = {}
+        for j in offers:
+            towns.setdefault(j["town"], []).append(j)
+        for town, items in towns.items():
+            body.append(f'<details class="group"{" open" if town == sources.NEAR_TOWNS[0] else ""}>'
+                        f'<summary>{esc(i18n.organ_name(town))} <span class="muted">({len(items)})</span></summary>'
+                        f'<ul class="events">{"".join(self.job_item(lang, j) for j in items)}</ul></details>')
+        if not offers:
+            body.append(f'<p>{t(lang, "jobs_empty")}</p>')
+        body.append(f'<h2 id="public">{t(lang, "jobs_public")}</h2>')
+        near = [j for j in public if j["km"] is not None and j["km"] <= 4.5]
+        for key, items in (("jobs_near", near), ("jobs_far", [j for j in public if j not in near])):
+            if items:
+                body.append(f'<details class="group"{" open" if key == "jobs_near" or len(items) <= 12 else ""}>'
+                            f'<summary>{t(lang, key)} <span class="muted">({len(items)})</span></summary>'
+                            f'<ul class="events">{"".join(self.public_job_item(lang, j) for j in items)}</ul></details>')
+        if not public:
+            body.append(f'<p>{t(lang, "jobs_empty")}</p>')
+        body.append(f'<p class="note">{t(lang, "jobs_note")}</p>')
+        return self.layout(lang, "jobs", f'{t(lang, "jobs_title")} · {self.name}', t(lang, "jobs_desc"), "".join(body))
+
+    def jobs_preview(self, lang):
+        if self.get("offers") is None and self.get("cido") is None:
+            return ""
+        text = t(lang, "jobs_home_text", o=len(self.get("offers") or []), p=len(self.public_jobs()))
+        return (f'<section><h2>{t(lang, "jobs_home")}</h2><p>{text}</p>'
+                f'<p><a href="{self.href(self.path(lang, "jobs"))}">{t(lang, "jobs_all")} →</a></p></section>')
+
+    def fuel_rows(self, lang, stations, fuel_best):
+        rows = []
+        for s in stations:
+            cells = []
+            for k in ("g95", "diesel"):
+                p = s["prices"].get(k)
+                txt = i18n.fmt_num(lang, p, 3) if p else "–"
+                cells.append(f'<td class="num">{"<strong>" + txt + "</strong>" if p and p == fuel_best[k] else txt}</td>')
+            where = esc(s["address"]) + ("" if s["town"] == sources.FUEL_TOWNS[931] else f', {esc(s["town"])}')
+            link = f' · <a href="{osm(s["lat"], s["lon"])}">{t(lang, "map")}</a>' if s.get("lat") else ""
+            rows.append(f'<tr><td><strong>{esc(s["name"])}</strong><br><small class="muted">{where} · '
+                        f'{esc(s["hours"])}{link}</small></td>{"".join(cells)}</tr>')
+        return "".join(rows)
+
+    def fuel(self, lang):
+        f = self.get("fuel")
+        if not f or not f.get("stations"):
+            return ""
+        by_g95 = sorted(f["stations"], key=lambda s: (s["prices"].get("g95", 99), s["prices"].get("diesel", 99)))
+        here = [s for s in by_g95 if s["town"] == sources.FUEL_TOWNS[931]]
+        near = [s for s in by_g95 if s["town"] != sources.FUEL_TOWNS[931]][:5]
+        head = (f'<thead><tr><th>{t(lang, "fuel_station")}</th><th class="num">{t(lang, "fuel_g95")}</th>'
+                f'<th class="num">{t(lang, "fuel_diesel")}</th></tr></thead>')
+        best = {k: min((s["prices"][k] for s in here if k in s["prices"]), default=None) for k in ("g95", "diesel")}
+        out = [f'<h2 id="fuel">⛽ {t(lang, "fuel_title")}</h2>']
+        for key, items, mark in (("fuel_town", here, best), ("fuel_near", near, {})):
+            if items:
+                out.append(f'<h3>{t(lang, key)}</h3><div class="scroll-x"><table class="recent">{head}<tbody>'
+                           f'{self.fuel_rows(lang, items, {"g95": mark.get("g95"), "diesel": mark.get("diesel")})}'
+                           f'</tbody></table></div>')
+        out.append(f'<p class="note">{t(lang, "fuel_note", t=esc(f.get("updated", "")))}</p>')
+        return "".join(out)
+
+    def fuel_preview(self, lang):
+        here = [s for s in (self.get("fuel") or {}).get("stations", []) if s["town"] == sources.FUEL_TOWNS[931]]
+        best = {}
+        for k in ("g95", "diesel"):
+            cands = [s for s in here if k in s["prices"]]
+            if cands:
+                best[k] = min(cands, key=lambda s: s["prices"][k])
+        if len(best) < 2:
+            return ""
+        name = lambda s: f'{esc(s["name"])} ({esc(s["address"])})'  # noqa: E731
+        text = t(lang, "fuel_home_text", g=i18n.fmt_num(lang, best["g95"]["prices"]["g95"], 3), gs=name(best["g95"]),
+                 d=i18n.fmt_num(lang, best["diesel"]["prices"]["diesel"], 3), ds=name(best["diesel"]))
+        return (f'<section><h2>{t(lang, "fuel_home")}</h2><p>{text}</p>'
+                f'<p><a href="{self.href(self.path(lang, "directory"))}#fuel">{t(lang, "fuel_more")} →</a></p></section>')
+
+    def emergency_page(self, lang):
+        items = []
+        for e in self.get("equipments") or []:
+            if e["cat"] != "Emergències. Seguretat":
+                continue
+            phone = re.sub(r"[^+0-9]", "", e.get("phone", ""))
+            extra = [esc(e["address"]) if e.get("address") else "",
+                     f'{t(lang, "phone")} <a href="tel:{phone}">{esc(e["phone"])}</a>' if phone else "",
+                     f'<a href="{osm(e["lat"], e["lon"])}">{t(lang, "map")}</a>' if e.get("lat") else ""]
+            items.append(f'<li><strong>{esc(e["name"])}</strong><br>{" · ".join(x for x in extra if x)}</li>')
+        local = f'<h2>{t(lang, "emergency_local")}</h2><ul class="dir">{"".join(items)}</ul>' if items else ""
+        return self.layout(lang, "emergency", f'{t(lang, "emergency_title")} · {self.name}', t(lang, "emergency_desc"),
+                           f'<h1>{t(lang, "emergency_title")}</h1>{t(lang, "emergency_body", local=local)}')
+
     # ---------- páginas ----------
     def home(self, lang):
         quick = (f'<section><h2>{t(lang, "quick_title")}</h2><ul class="months">'
                  f'<li><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "leisure"))}#weekend">{t(lang, "weekend_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "aids"))}">{t(lang, "aids_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}">{t(lang, "leisure_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "directory"))}">{t(lang, "directory_title")}</a></li>'
-                 f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li></ul></section>')
+                 f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
                 f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.light(lang)}{self.transport(lang)}'
-                f'{self.agenda_preview(lang)}{self.air(lang)}{quick}')
+                f'{self.agenda_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.fuel_preview(lang)}'
+                f'{self.air(lang)}{quick}')
         ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": self.name, "inLanguage": lang,
                "url": self.absolute(self.path(lang, "home")), "description": t(lang, "home_desc")}]
         return self.layout(lang, "home", f'{t(lang, "home_title")} · {self.name}', t(lang, "home_desc"), body, ld)
@@ -254,7 +462,8 @@ class Site:
         if ongoing:
             body.append(f'<h2>{t(lang, "ongoing_title")}</h2>'
                         f'<ul class="events">{"".join(self.event_item(lang, e) for e in ongoing)}</ul>')
-        body.append(f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+        body.append(f'<p>{t(lang, "ics_link", url=self.absolute("/agenda.ics"))}</p>'
+                    f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
         if permanent:
             items = "".join(f'<li>{f"<a href=\"{esc(p["url"])}\">{esc(p["title"])}</a>" if p.get("url") else esc(p["title"])}'
                             f' <small class="muted">{esc(p.get("place", ""))}</small></li>' for p in permanent)
@@ -272,7 +481,7 @@ class Site:
                            "".join(body), ld)
 
     def directory_page(self, lang):
-        body = [f'<h1>{t(lang, "directory_title")}</h1><p class="lede">{t(lang, "directory_desc")}</p>']
+        body = [f'<h1>{t(lang, "directory_title")}</h1><p class="lede">{t(lang, "directory_desc")}</p>', self.fuel(lang)]
         chargers = self.get("chargers") or []
         if chargers:
             items = "".join(
@@ -345,7 +554,7 @@ class Site:
         limit = (self.now.date() + timedelta(days=45)).isoformat()
         parties = [e for e in upcoming if festive(e) and e["start"] <= limit][:15]
         body = [f'<h1>{t(lang, "leisure_title")}</h1><p class="lede">{t(lang, "leisure_desc")}</p>',
-                self.plan_today(lang, places),
+                self.plan_today(lang, places), self.weekend(lang),
                 f'<section><h2>🎉 {t(lang, "festive_title")}</h2>']
         body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in parties)}</ul>'
                     if parties else f'<p>{t(lang, "festive_empty")}</p>')
@@ -411,14 +620,56 @@ location.replace("{self.prefix}/ca/");}})();
                        f'<a href="{self.href(self.path(lg, "home"))}">{t(lg, "notfound_text")}</a></p>' for lg in LANGS)
         return self.layout("ca", "home", t("ca", "notfound_title"), "", body, noindex=True)
 
+    def ics(self):
+        """Agenda en iCalendar para suscribirse desde el móvil o Google Calendar (sin los actos de semanas)."""
+        def text(s):
+            return re.sub(r"([\\,;])", r"\\\1", s).replace("\n", "\\n")
+
+        def fold(line):  # RFC 5545: líneas de 75 octetos como máximo
+            out, raw = [], line.encode("utf-8")
+            while len(raw) > 75:
+                cut = 75 if not out else 74
+                while raw[cut] & 0xC0 == 0x80:  # no partir un carácter UTF-8
+                    cut -= 1
+                out.append(raw[:cut].decode("utf-8"))
+                raw = raw[cut:]
+            out.append(raw.decode("utf-8"))
+            return "\r\n ".join(out)
+
+        stamp = self.now.astimezone(tz.UTC).strftime("%Y%m%dT%H%M%SZ")
+        lines = ["BEGIN:VCALENDAR", "VERSION:2.0", f"PRODID:-//{self.name}//agenda//CA", "CALSCALE:GREGORIAN",
+                 "METHOD:PUBLISH", f"X-WR-CALNAME:{text(t('ca', 'agenda_title'))}", "X-WR-TIMEZONE:Europe/Madrid",
+                 "REFRESH-INTERVAL;VALUE=DURATION:PT12H"]
+        for e in self.events_split()[0]:
+            start, end = date.fromisoformat(e["start"]), date.fromisoformat(e.get("end") or e["start"])
+            if (end - start).days > 3:
+                continue
+            uid = hashlib.sha1(f'{e["title"]}|{e["start"]}|{e["source"]}'.encode()).hexdigest()[:20]
+            lines += ["BEGIN:VEVENT", f"UID:{uid}@{urlparse(self.base_url).hostname}", f"DTSTAMP:{stamp}"]
+            if re.fullmatch(r"\d\d:\d\d", e.get("time", "")):
+                local = datetime.fromisoformat(f'{e["start"]}T{e["time"]}')
+                utc = local.replace(tzinfo=tz.offset_at(local.replace(tzinfo=tz.CET))).astimezone(tz.UTC)
+                lines.append(f'DTSTART:{utc.strftime("%Y%m%dT%H%M%SZ")}')
+            else:
+                lines += [f'DTSTART;VALUE=DATE:{start.strftime("%Y%m%d")}',
+                          f'DTEND;VALUE=DATE:{(end + timedelta(days=1)).strftime("%Y%m%d")}']
+            lines.append(f'SUMMARY:{text(e["title"])}')
+            if e.get("place"):
+                lines.append(f'LOCATION:{text(e["place"] + ", Cerdanyola del Vallès")}')
+            if e.get("url"):
+                lines.append(f'URL:{e["url"]}')
+            lines.append("END:VEVENT")
+        lines.append("END:VCALENDAR")
+        return "".join(fold(x) + "\r\n" for x in lines)
+
     def sitemap(self):
         today = self.now.date().isoformat()
         urls = []
-        for kind in ("home", "agenda", "leisure", "directory", "about", "legal", "privacy"):
+        for kind in ("home", "agenda", "leisure", "aids", "jobs", "directory", "emergency", "about", "legal", "privacy"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}"/>'
                            for lg in LANGS)
             for lg in LANGS:
-                lastmod = f"<lastmod>{today}</lastmod>" if kind in ("home", "agenda", "leisure") else ""
+                lastmod = f"<lastmod>{today}</lastmod>" if kind in ("home", "agenda", "leisure", "aids", "jobs", "directory") else ""
                 urls.append(f"<url><loc>{self.absolute(self.path(lg, kind))}</loc>{lastmod}{alts}</url>")
         return ('<?xml version="1.0" encoding="utf-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
                 'xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(urls) + "</urlset>\n")
@@ -432,12 +683,16 @@ location.replace("{self.prefix}/ca/");}})();
             self.write(self.path(lang, "home"), self.home(lang))
             self.write(self.path(lang, "agenda"), self.agenda_page(lang))
             self.write(self.path(lang, "leisure"), self.leisure_page(lang))
+            self.write(self.path(lang, "aids"), self.aids_page(lang))
+            self.write(self.path(lang, "jobs"), self.jobs_page(lang))
+            self.write(self.path(lang, "emergency"), self.emergency_page(lang))
             self.write(self.path(lang, "directory"), self.directory_page(lang))
             for kind in ("about", "legal", "privacy"):
                 self.write(self.path(lang, kind), self.text_page(lang, kind))
         self.write("/", self.root_page())
         self.write("/404.html", self.not_found())
         self.write("/sitemap.xml", self.sitemap())
+        (self.out / "agenda.ics").write_bytes(self.ics().encode("utf-8"))
         self.write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {self.absolute('/sitemap.xml')}\n")
         self.write("/.nojekyll", "")
         return self.out

@@ -170,10 +170,70 @@ STRINGS = {
         "plan_in": "Avui es preveu pluja ({mm} mm). Idees a cobert:", "plan_events": "Avui hi ha {n} activitats a l'agenda",
         "osm_note": "Llocs d'<a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© col·laboradors d'OpenStreetMap, llicència ODbL), en ordre alfabètic i sense enllaços patrocinats. Hi falta un lloc o hi ha una dada malament? Qualsevol persona el pot afegir o corregir gratis a <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> i es veurà aquí l'endemà.",
         "directory_title": "Equipaments públics de Cerdanyola",
-        "directory_desc": "Directori d'equipaments públics de Cerdanyola del Vallès: escoles, biblioteques, instal·lacions esportives, serveis socials i més, amb adreça i telèfon.",
+        "directory_desc": "Directori d'equipaments públics de Cerdanyola del Vallès: escoles, biblioteques, instal·lacions esportives, serveis socials i més, amb adreça i telèfon, i els preus d'avui de les gasolineres.",
         "chargers_title": "Punts de recàrrega de vehicles elèctrics", "map": "Mapa", "phone": "Tel.",
         "quick_title": "Més informació",
-        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments i aire), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap (guia d'oci) i Red Eléctrica (llum). Actualitzat: {t}.",
+        "slug_jobs": "feina",
+        "jobs_title": "Feina a Cerdanyola i rodalia",
+        "jobs_desc": "Ofertes de feina a Cerdanyola del Vallès i als municipis veïns, i oposicions i borses de treball públiques obertes al Vallès Occidental i a la UAB, actualitzades cada dia.",
+        "jobs_offers": "Ofertes de feina",
+        "jobs_public": "Oposicions i borses de treball públiques",
+        "jobs_near": "A Cerdanyola i al campus de la UAB",
+        "jobs_far": "Resta del Vallès Occidental",
+        "jobs_pool": "Borsa de treball",
+        "jobs_places": "{n} places",
+        "jobs_place": "1 plaça",
+        "jobs_posted": "Publicada el {d}",
+        "jobs_empty": "Ara mateix no n'hi ha cap.",
+        "jobs_note": "Ofertes del Servei Públic d'Ocupació de Catalunya (<a href='https://feinaactiva.gencat.cat/'>Feina Activa</a>) i convocatòries públiques del <a href='https://cido.diba.cat/'>CIDO</a> de la Diputació de Barcelona (CC BY 4.0). Només es mostren les ofertes publicades els darrers 60 dies: algunes ja poden estar cobertes. <a href='https://www.cerdanyolactiva.cat/'>Cerdanyola Activa</a> també té una borsa de treball i orientació laboral gratuïta.",
+        "jobs_home": "💼 Feina a prop",
+        "jobs_home_text": "{o} ofertes de feina a Cerdanyola i rodalia i {p} oposicions i borses públiques obertes.",
+        "jobs_all": "Veure les ofertes",
+        "fuel_title": "Gasolineres: preus d'avui",
+        "fuel_station": "Gasolinera",
+        "fuel_g95": "Gasolina 95",
+        "fuel_diesel": "Gasoil",
+        "fuel_town": "A Cerdanyola",
+        "fuel_near": "Les més barates dels municipis veïns",
+        "fuel_home": "⛽ Carburant més barat avui a Cerdanyola",
+        "fuel_home_text": "Gasolina 95: <strong>{g} €/l</strong> a {gs}. Gasoil: <strong>{d} €/l</strong> a {ds}.",
+        "fuel_more": "Veure totes les gasolineres",
+        "fuel_note": "Preus en €/litre. Origen de les dades: Ministeri per a la Transició Ecològica i el Repte Demogràfic. Última actualització: {t}.",
+        "slug_emergency": "emergencies", "emergency_title": "Emergències a Cerdanyola: telèfons i consells",
+        "emergency_desc": "Telèfons d'emergència i d'ajuda, Policia Local, Mossos i Bombers de Cerdanyola del Vallès, i com preparar-se per a una apagada, una onada de calor o una inundació.",
+        "emergency_body": """
+<p class="lede">Guarda aquesta pàgina. Si hi ha perill per a una persona, truca al <a href="tel:112"><strong>112</strong></a>.</p>
+<h2>Telèfons</h2>
+<ul class="dir">
+<li><a href="tel:112"><strong>112</strong></a> — Emergències: ambulància, bombers i policia. Gratuït i 24 hores.</li>
+<li><a href="tel:061"><strong>061</strong></a> — <a href="https://sem.gencat.cat/ca/061-salut-respon/">Salut Respon</a>: consultes de salut que no són una emergència.</li>
+<li><a href="tel:024"><strong>024</strong></a> — <a href="https://www.sanidad.gob.es/linea024/home.htm">Atenció a la conducta suïcida</a>. Gratuït i 24 hores.</li>
+<li><a href="tel:900900120"><strong>900 900 120</strong></a> — <a href="https://igualtat.gencat.cat/ca/ambits-dactuacio/violencies-masclistes/linia-datencio-contra-la-violencia-masclista-900-900-120-/">Violència masclista</a>. Gratuït, confidencial i 24 hores.</li>
+<li><a href="tel:017"><strong>017</strong></a> — <a href="https://www.incibe.es/linea-de-ayuda-en-ciberseguridad">Ajuda en ciberseguretat</a> (INCIBE): estafes, suplantacions i comptes robats.</li>
+<li><a href="tel:012"><strong>012</strong></a> — <a href="https://web.gencat.cat/ca/contacte/012/">Atenció ciutadana de la Generalitat</a>: informació i tràmits.</li>
+</ul>
+{local}
+<h2>Prepara't</h2>
+<p>Protecció Civil recomana tenir a casa un <a href="https://interior.gencat.cat/ca/actualitat/campanyes/equip-demergencia/">equip d'emergència</a>: aigua, menjar que no es faci malbé, llanterna, ràdio amb piles, bateria per al mòbil, farmaciola i medicaments, còpia dels documents i una mica de diners en efectiu.</p>
+<p>Què fer en una onada de calor, una inundació, un incendi o una apagada: <a href="https://interior.gencat.cat/ca/arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencia/">consells d'autoprotecció de Protecció Civil</a>.</p>
+<p class="note">Telèfons comprovats a les webs oficials. Els de la Policia Local, els Mossos i els Bombers surten de les dades obertes de la Generalitat i s'actualitzen sols.</p>
+""",
+        "emergency_local": "A Cerdanyola",
+        "slug_aids": "ajudes", "aids_title": "Ajudes i subvencions obertes a Cerdanyola",
+        "aids_desc": "Ajudes, beques i subvencions que pots demanar ara si vius a Cerdanyola del Vallès: de l'Ajuntament, la comarca, l'AMB, la Generalitat i l'Estat, amb el termini de cada una.",
+        "aids_people": "Per a persones i famílies", "aids_business": "Per a autònoms i empreses", "aids_entities": "Per a entitats i associacions",
+        "aids_lvl_LOCAL": "Cerdanyola, comarca i àrea metropolitana", "aids_lvl_AUTONOMICA": "Generalitat de Catalunya", "aids_lvl_ESTADO": "Estat",
+        "aids_until": "Fins al {d}", "aids_approx": "Fins al {d} (aprox.)", "aids_opens": "Obre el {d}",
+        "aids_check": "Termini: {t}", "aids_check_none": "Termini: consulta la convocatòria", "aids_budget": "Pressupost: {b}",
+        "aids_soon": "Acaba aviat", "aids_empty": "Ara mateix no hi ha cap convocatòria oberta en aquest apartat.",
+        "aids_home_title": "Ajudes que pots demanar ara",
+        "aids_home_text": "{p} per a persones i famílies, {b} per a autònoms i empreses i {e} per a entitats. Les que tanquen abans:",
+        "aids_all": "Veure totes les ajudes obertes",
+        "aids_note": "Dades de la <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/index\">Base de Dades Nacional de Subvencions</a> (Ministeri d'Hisenda), actualitzades cada dia. Quan el termini es compta des de la publicació oficial, la data és aproximada. Abans de demanar res, llegeix les bases a la convocatòria oficial: és l'única que val. Hi ha ajudes municipals, com les bonificacions d'impostos, que no hi surten: consulta-les a l'Ajuntament. Vols que t'avisin? La BDNS envia <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/alertas\">alertes gratuïtes per correu</a>.",
+        "weekend_title": "Aquest cap de setmana", "weekend_empty": "Encara no hi ha activitats anunciades per al cap de setmana.",
+        "kids": "Per a infants",
+        "ics_link": "📅 Vols l'agenda al mòbil? Afegeix <a href=\"{url}\">aquest calendari</a> al teu (a Google Calendar: «Altres calendaris» → «Des de l'URL») i s'actualitzarà sol.",
+        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments i aire), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap (guia d'oci), BDNS (ajudes), SOC i Diputació de Barcelona (feina), Ministeri per a la Transició Ecològica (carburants) i Red Eléctrica (llum). Actualitzat: {t}.",
         "about": "Sobre el web", "legal": "Avís legal", "privacy": "Privacitat",
         "skip": "Salta al contingut", "language": "Idioma", "choose": "Tria l'idioma",
         "notfound_title": "Pàgina no trobada", "notfound_text": "Aquesta pàgina no existeix. Torna a l'inici.",
@@ -187,6 +247,9 @@ STRINGS = {
 <li>Equipaments, punts de recàrrega i qualitat de l'aire: dades obertes de la Generalitat de Catalunya.</li>
 <li>Avisos de trens: Renfe Rodalies (GTFS-RT), llicència CC BY 4.0.</li>
 <li>Guia d'oci: © col·laboradors d'<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, llicència ODbL.</li>
+<li>Ajudes i subvencions: Base de Dades Nacional de Subvencions (Ministeri d'Hisenda), de reutilització lliure.</li>
+<li>Feina: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) i CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
+<li>Preus dels carburants: Ministeri per a la Transició Ecològica i el Repte Demogràfic.</li>
 <li>Preu de la llum: Red Eléctrica, a través del web germà <a href="{light}">{light}</a>.</li>
 </ul>
 <p>El codi és obert i és a <a href="{repo}">GitHub</a>, on pots avisar d'errors o proposar millores.</p>
@@ -238,10 +301,70 @@ STRINGS = {
         "plan_in": "Hoy se prevé lluvia ({mm} mm). Ideas a cubierto:", "plan_events": "Hoy hay {n} actividades en la agenda",
         "osm_note": "Lugares de <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© colaboradores de OpenStreetMap, licencia ODbL), por orden alfabético y sin enlaces patrocinados. ¿Falta un sitio o hay un dato mal? Cualquiera puede añadirlo o corregirlo gratis en <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> y se verá aquí al día siguiente.",
         "directory_title": "Equipamientos públicos de Cerdanyola",
-        "directory_desc": "Directorio de equipamientos públicos de Cerdanyola del Vallès: escuelas, bibliotecas, instalaciones deportivas, servicios sociales y más, con dirección y teléfono.",
+        "directory_desc": "Directorio de equipamientos públicos de Cerdanyola del Vallès: escuelas, bibliotecas, instalaciones deportivas, servicios sociales y más, con dirección y teléfono, y los precios de hoy de las gasolineras.",
         "chargers_title": "Puntos de recarga de coches eléctricos", "map": "Mapa", "phone": "Tel.",
         "quick_title": "Más información",
-        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos y aire), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap (guía de ocio) y Red Eléctrica (luz). Actualizado: {t}.",
+        "slug_jobs": "empleo",
+        "jobs_title": "Empleo en Cerdanyola y alrededores",
+        "jobs_desc": "Ofertas de trabajo en Cerdanyola del Vallès y los municipios vecinos, y oposiciones y bolsas de trabajo públicas abiertas en el Vallès Occidental y la UAB, actualizadas cada día.",
+        "jobs_offers": "Ofertas de trabajo",
+        "jobs_public": "Oposiciones y bolsas de trabajo públicas",
+        "jobs_near": "En Cerdanyola y el campus de la UAB",
+        "jobs_far": "Resto del Vallès Occidental",
+        "jobs_pool": "Bolsa de trabajo",
+        "jobs_places": "{n} plazas",
+        "jobs_place": "1 plaza",
+        "jobs_posted": "Publicada el {d}",
+        "jobs_empty": "Ahora mismo no hay ninguna.",
+        "jobs_note": "Ofertas del Servei Públic d'Ocupació de Catalunya (<a href='https://feinaactiva.gencat.cat/'>Feina Activa</a>) y convocatorias públicas del <a href='https://cido.diba.cat/'>CIDO</a> de la Diputació de Barcelona (CC BY 4.0). Solo se muestran las ofertas publicadas en los últimos 60 días: algunas pueden estar ya cubiertas. <a href='https://www.cerdanyolactiva.cat/'>Cerdanyola Activa</a> también tiene una bolsa de trabajo y orientación laboral gratuita.",
+        "jobs_home": "💼 Empleo cerca",
+        "jobs_home_text": "{o} ofertas de trabajo en Cerdanyola y alrededores y {p} oposiciones y bolsas públicas abiertas.",
+        "jobs_all": "Ver las ofertas",
+        "fuel_title": "Gasolineras: precios de hoy",
+        "fuel_station": "Gasolinera",
+        "fuel_g95": "Gasolina 95",
+        "fuel_diesel": "Gasóleo",
+        "fuel_town": "En Cerdanyola",
+        "fuel_near": "Las más baratas de los municipios vecinos",
+        "fuel_home": "⛽ Carburante más barato hoy en Cerdanyola",
+        "fuel_home_text": "Gasolina 95: <strong>{g} €/l</strong> en {gs}. Gasóleo: <strong>{d} €/l</strong> en {ds}.",
+        "fuel_more": "Ver todas las gasolineras",
+        "fuel_note": "Precios en €/litro. Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico. Última actualización: {t}.",
+        "slug_emergency": "emergencias", "emergency_title": "Emergencias en Cerdanyola: teléfonos y consejos",
+        "emergency_desc": "Teléfonos de emergencia y de ayuda, Policia Local, Mossos y Bomberos de Cerdanyola del Vallès, y cómo prepararse para un apagón, una ola de calor o una inundación.",
+        "emergency_body": """
+<p class="lede">Guarda esta página. Si hay peligro para una persona, llama al <a href="tel:112"><strong>112</strong></a>.</p>
+<h2>Teléfonos</h2>
+<ul class="dir">
+<li><a href="tel:112"><strong>112</strong></a> — Emergencias: ambulancia, bomberos y policía. Gratuito y 24 horas.</li>
+<li><a href="tel:061"><strong>061</strong></a> — <a href="https://sem.gencat.cat/ca/061-salut-respon/">Salut Respon</a>: consultas de salud que no son una emergencia.</li>
+<li><a href="tel:024"><strong>024</strong></a> — <a href="https://www.sanidad.gob.es/linea024/home.htm">Atención a la conducta suicida</a>. Gratuito y 24 horas.</li>
+<li><a href="tel:900900120"><strong>900 900 120</strong></a> — <a href="https://igualtat.gencat.cat/ca/ambits-dactuacio/violencies-masclistes/linia-datencio-contra-la-violencia-masclista-900-900-120-/">Violencia machista</a>. Gratuito, confidencial y 24 horas.</li>
+<li><a href="tel:017"><strong>017</strong></a> — <a href="https://www.incibe.es/linea-de-ayuda-en-ciberseguridad">Ayuda en ciberseguridad</a> (INCIBE): estafas, suplantaciones y cuentas robadas.</li>
+<li><a href="tel:012"><strong>012</strong></a> — <a href="https://web.gencat.cat/ca/contacte/012/">Atención ciudadana de la Generalitat</a>: información y trámites.</li>
+</ul>
+{local}
+<h2>Prepárate</h2>
+<p>Protección Civil recomienda tener en casa un <a href="https://interior.gencat.cat/ca/actualitat/campanyes/equip-demergencia/">equipo de emergencia</a>: agua, comida que no se estropee, linterna, radio a pilas, batería para el móvil, botiquín y medicamentos, copia de los documentos y algo de dinero en efectivo.</p>
+<p>Qué hacer en una ola de calor, una inundación, un incendio o un apagón: <a href="https://interior.gencat.cat/es/arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencia/">consejos de autoprotección de Protección Civil</a>.</p>
+<p class="note">Teléfonos comprobados en las webs oficiales. Los de la Policia Local, los Mossos y los Bomberos salen de los datos abiertos de la Generalitat y se actualizan solos.</p>
+""",
+        "emergency_local": "En Cerdanyola",
+        "slug_aids": "ayudas", "aids_title": "Ayudas y subvenciones abiertas en Cerdanyola",
+        "aids_desc": "Ayudas, becas y subvenciones que puedes pedir ahora si vives en Cerdanyola del Vallès: del Ajuntament, la comarca, el AMB, la Generalitat y el Estado, con el plazo de cada una.",
+        "aids_people": "Para personas y familias", "aids_business": "Para autónomos y empresas", "aids_entities": "Para entidades y asociaciones",
+        "aids_lvl_LOCAL": "Cerdanyola, comarca y área metropolitana", "aids_lvl_AUTONOMICA": "Generalitat de Catalunya", "aids_lvl_ESTADO": "Estado",
+        "aids_until": "Hasta el {d}", "aids_approx": "Hasta el {d} (aprox.)", "aids_opens": "Abre el {d}",
+        "aids_check": "Plazo: {t}", "aids_check_none": "Plazo: consulta la convocatoria", "aids_budget": "Presupuesto: {b}",
+        "aids_soon": "Acaba pronto", "aids_empty": "Ahora mismo no hay ninguna convocatoria abierta en este apartado.",
+        "aids_home_title": "Ayudas que puedes pedir ahora",
+        "aids_home_text": "{p} para personas y familias, {b} para autónomos y empresas y {e} para entidades. Las que cierran antes:",
+        "aids_all": "Ver todas las ayudas abiertas",
+        "aids_note": "Datos de la <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/index\">Base de Datos Nacional de Subvenciones</a> (Ministerio de Hacienda), actualizados cada día. Cuando el plazo se cuenta desde la publicación oficial, la fecha es aproximada. Antes de pedir nada, lee las bases en la convocatoria oficial: es la única que vale. Hay ayudas municipales, como las bonificaciones de impuestos, que no aparecen aquí: consúltalas en el Ajuntament. ¿Quieres que te avisen? La BDNS envía <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/alertas\">alertas gratuitas por correo</a>.",
+        "weekend_title": "Este fin de semana", "weekend_empty": "Todavía no hay actividades anunciadas para el fin de semana.",
+        "kids": "Para niños",
+        "ics_link": "📅 ¿Quieres la agenda en el móvil? Añade <a href=\"{url}\">este calendario</a> al tuyo (en Google Calendar: «Otros calendarios» → «Desde URL») y se actualizará solo.",
+        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos y aire), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap (guía de ocio), BDNS (ayudas), SOC y Diputació de Barcelona (empleo), Ministerio para la Transición Ecológica (carburantes) y Red Eléctrica (luz). Actualizado: {t}.",
         "about": "Sobre la web", "legal": "Aviso legal", "privacy": "Privacidad",
         "skip": "Saltar al contenido", "language": "Idioma", "choose": "Elige idioma",
         "notfound_title": "Página no encontrada", "notfound_text": "Esta página no existe. Vuelve al inicio.",
@@ -255,6 +378,9 @@ STRINGS = {
 <li>Equipamientos, puntos de recarga y calidad del aire: datos abiertos de la Generalitat de Catalunya.</li>
 <li>Avisos de trenes: Renfe Rodalies (GTFS-RT), licencia CC BY 4.0.</li>
 <li>Guía de ocio: © colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, licencia ODbL.</li>
+<li>Ayudas y subvenciones: Base de Datos Nacional de Subvenciones (Ministerio de Hacienda), de reutilización libre.</li>
+<li>Empleo: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) y CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
+<li>Precios de los carburantes: Ministerio para la Transición Ecológica y el Reto Demográfico.</li>
 <li>Precio de la luz: Red Eléctrica, a través de la web hermana <a href="{light}">{light}</a>.</li>
 </ul>
 <p>El código es abierto y está en <a href="{repo}">GitHub</a>, donde puedes avisar de errores o proponer mejoras.</p>
@@ -306,10 +432,70 @@ STRINGS = {
         "plan_in": "Rain is forecast today ({mm} mm). Indoor ideas:", "plan_events": "There are {n} events on today",
         "osm_note": "Places from <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> (© OpenStreetMap contributors, ODbL licence), in alphabetical order with no sponsored links. Missing a place or spotted a mistake? Anyone can add or fix it for free on <a href=\"https://www.openstreetmap.org/#map=15/41.4913/2.1408\">OpenStreetMap</a> and it will show up here the next day.",
         "directory_title": "Public facilities in Cerdanyola",
-        "directory_desc": "Directory of public facilities in Cerdanyola del Vallès: schools, libraries, sports centres, social services and more, with address and phone number.",
+        "directory_desc": "Directory of public facilities in Cerdanyola del Vallès: schools, libraries, sports centres, social services and more, with address and phone number, plus today's petrol prices.",
         "chargers_title": "Electric vehicle charging points", "map": "Map", "phone": "Tel.",
         "quick_title": "More information",
-        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities and air), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap (leisure guide) and Red Eléctrica (electricity). Updated: {t}.",
+        "slug_jobs": "jobs",
+        "jobs_title": "Jobs in and around Cerdanyola",
+        "jobs_desc": "Job offers in Cerdanyola del Vallès and neighbouring towns, plus open public-sector posts and job pools in the Vallès Occidental and at the UAB, updated daily.",
+        "jobs_offers": "Job offers",
+        "jobs_public": "Public-sector posts and job pools",
+        "jobs_near": "In Cerdanyola and on the UAB campus",
+        "jobs_far": "Rest of the Vallès Occidental",
+        "jobs_pool": "Job pool",
+        "jobs_places": "{n} posts",
+        "jobs_place": "1 post",
+        "jobs_posted": "Posted {d}",
+        "jobs_empty": "There are none right now.",
+        "jobs_note": "Offers from the Catalan public employment service (<a href='https://feinaactiva.gencat.cat/'>Feina Activa</a>) and public calls from the Diputació de Barcelona's <a href='https://cido.diba.cat/'>CIDO</a> (CC BY 4.0). Offers are in Catalan or Spanish, as published. Only offers posted in the last 60 days are shown: some may already be filled. <a href='https://www.cerdanyolactiva.cat/'>Cerdanyola Activa</a> also runs a job board and free career guidance.",
+        "jobs_home": "💼 Jobs nearby",
+        "jobs_home_text": "{o} job offers in and around Cerdanyola and {p} open public-sector posts and job pools.",
+        "jobs_all": "See the offers",
+        "fuel_title": "Petrol stations: today's prices",
+        "fuel_station": "Station",
+        "fuel_g95": "Petrol 95",
+        "fuel_diesel": "Diesel",
+        "fuel_town": "In Cerdanyola",
+        "fuel_near": "Cheapest in neighbouring towns",
+        "fuel_home": "⛽ Cheapest fuel in Cerdanyola today",
+        "fuel_home_text": "Petrol 95: <strong>€{g}/l</strong> at {gs}. Diesel: <strong>€{d}/l</strong> at {ds}.",
+        "fuel_more": "See all petrol stations",
+        "fuel_note": "Prices in €/litre. Data source: Spanish Ministry for the Ecological Transition. Last updated: {t}.",
+        "slug_emergency": "emergencies", "emergency_title": "Emergencies in Cerdanyola: phone numbers and advice",
+        "emergency_desc": "Emergency and help lines, local police, Mossos and fire brigade in Cerdanyola del Vallès, and how to prepare for a power cut, a heatwave or a flood.",
+        "emergency_body": """
+<p class="lede">Save this page. If someone is in danger, call <a href="tel:112"><strong>112</strong></a>.</p>
+<h2>Phone numbers</h2>
+<ul class="dir">
+<li><a href="tel:112"><strong>112</strong></a> — Emergencies: ambulance, fire brigade and police. Free, 24 hours, in English too.</li>
+<li><a href="tel:061"><strong>061</strong></a> — <a href="https://sem.gencat.cat/ca/061-salut-respon/">Salut Respon</a>: health questions that are not an emergency.</li>
+<li><a href="tel:024"><strong>024</strong></a> — <a href="https://www.sanidad.gob.es/linea024/home.htm">Suicide prevention line</a>. Free, 24 hours.</li>
+<li><a href="tel:900900120"><strong>900 900 120</strong></a> — <a href="https://igualtat.gencat.cat/ca/ambits-dactuacio/violencies-masclistes/linia-datencio-contra-la-violencia-masclista-900-900-120-/">Gender-based violence</a>. Free, confidential, 24 hours.</li>
+<li><a href="tel:017"><strong>017</strong></a> — <a href="https://www.incibe.es/linea-de-ayuda-en-ciberseguridad">Cybersecurity help line</a> (INCIBE): scams, impersonation and hacked accounts.</li>
+<li><a href="tel:012"><strong>012</strong></a> — <a href="https://web.gencat.cat/ca/contacte/012/">Catalan government information line</a>.</li>
+</ul>
+{local}
+<h2>Be prepared</h2>
+<p>Civil Protection recommends keeping an <a href="https://interior.gencat.cat/ca/actualitat/campanyes/equip-demergencia/">emergency kit</a> at home: water, food that keeps, a torch, a battery radio, a power bank, a first-aid kit and medicines, copies of your documents and some cash.</p>
+<p>What to do in a heatwave, flood, fire or power cut: <a href="https://interior.gencat.cat/ca/arees_dactuacio/proteccio_civil/consells_autoproteccio_emergencia/">Civil Protection self-protection advice</a> (in Catalan).</p>
+<p class="note">Numbers checked on the official websites. The local police, Mossos and fire station details come from Catalan government open data and update automatically.</p>
+""",
+        "emergency_local": "In Cerdanyola",
+        "slug_aids": "grants", "aids_title": "Open grants and benefits for Cerdanyola residents",
+        "aids_desc": "Grants, scholarships and benefits you can apply for now if you live in Cerdanyola del Vallès: from the town council, the county, the metropolitan area, the Catalan government and the Spanish state, with each deadline.",
+        "aids_people": "For individuals and families", "aids_business": "For self-employed and businesses", "aids_entities": "For non-profits and associations",
+        "aids_lvl_LOCAL": "Cerdanyola, county and metropolitan area", "aids_lvl_AUTONOMICA": "Catalan government", "aids_lvl_ESTADO": "Spanish state",
+        "aids_until": "Until {d}", "aids_approx": "Until about {d}", "aids_opens": "Opens {d}",
+        "aids_check": "Deadline: {t}", "aids_check_none": "Deadline: see the official call", "aids_budget": "Budget: {b}",
+        "aids_soon": "Closing soon", "aids_empty": "There are no open calls in this section right now.",
+        "aids_home_title": "Grants you can apply for now",
+        "aids_home_text": "{p} for individuals and families, {b} for self-employed and businesses and {e} for non-profits. Closing soonest:",
+        "aids_all": "See all open grants",
+        "aids_note": "Data from Spain's <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/index\">National Grants Database</a> (BDNS, Ministry of Finance), updated daily. Titles are in Spanish or Catalan, as published. When the deadline counts from the official publication, the date is approximate. Before applying, read the rules in the official call: it is the only one that counts. Some local benefits, such as tax rebates, are not listed: ask the town council. Want alerts? The BDNS sends <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/alertas\">free email alerts</a>.",
+        "weekend_title": "This weekend", "weekend_empty": "No events have been announced for the weekend yet.",
+        "kids": "For children",
+        "ics_link": "📅 Want the events on your phone? Add <a href=\"{url}\">this calendar</a> to yours (in Google Calendar: “Other calendars” → “From URL”) and it will update itself.",
+        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities and air), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap (leisure guide), BDNS (grants), SOC and Diputació de Barcelona (jobs), Ministry for the Ecological Transition (fuel) and Red Eléctrica (electricity). Updated: {t}.",
         "about": "About", "legal": "Legal notice", "privacy": "Privacy",
         "skip": "Skip to content", "language": "Language", "choose": "Choose your language",
         "notfound_title": "Page not found", "notfound_text": "This page does not exist. Go back to the home page.",
@@ -323,6 +509,9 @@ STRINGS = {
 <li>Facilities, charging points and air quality: Generalitat de Catalunya open data.</li>
 <li>Train alerts: Renfe Rodalies (GTFS-RT), CC BY 4.0 licence.</li>
 <li>Leisure guide: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL licence.</li>
+<li>Grants: Spain's National Grants Database (BDNS, Ministry of Finance), free to reuse.</li>
+<li>Jobs: Catalan public employment service (Feina Activa, Catalan open licence) and the Diputació de Barcelona's CIDO (CC BY 4.0).</li>
+<li>Fuel prices: Spanish Ministry for the Ecological Transition.</li>
 <li>Electricity price: Red Eléctrica, via the sister site <a href="{light}">{light}</a>.</li>
 </ul>
 <p>The code is open source and lives on <a href="{repo}">GitHub</a>, where you can report bugs or suggest improvements.</p>
@@ -410,3 +599,30 @@ def group(lang, key):
 def hours(lang, value):
     words = HOURS[lang]
     return re.sub(r"\b(Mo|Tu|We|Th|Fr|Sa|Su|PH|off|closed)\b", lambda m: words.get(m.group(1), m.group(1)), value)
+
+
+def fmt_money(lang, x):
+    s = f"{round(x):,}"
+    return f"€{s}" if lang == "en" else s.replace(",", ".") + " €"
+
+
+def fmt_deadline(lang, d, today):
+    s = fmt_date(lang, d, weekday=False)
+    if d.year == today.year:
+        return s
+    return f"{s} {d.year}" if lang == "en" else f"{s} de {d.year}"
+
+
+_SMALL_WORDS = {"de", "del", "dels", "la", "las", "los", "el", "els", "les", "i", "y", "d", "l", "a", "al", "en", "per", "para"}
+
+
+def organ_name(name):
+    """«AGÈNCIA DE GESTIÓ D'AJUTS (AGAUR)» -> «Agència de Gestió d'Ajuts (AGAUR)»: siglas entre paréntesis intactas."""
+    out = []
+    for i, part in enumerate(re.split(r"(\([^)]*\))", name or "")):
+        if part.startswith("("):
+            out.append(part)
+            continue
+        words = re.split(r"(\w+)", part.lower())
+        out.append("".join(w if w in _SMALL_WORDS and (i or j > 1) else w.capitalize() for j, w in enumerate(words)))
+    return "".join(out).strip()

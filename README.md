@@ -6,8 +6,11 @@ Web local de Cerdanyola del Vallès y Bellaterra, en catalán, castellano e ingl
 - los avisos de Rodalies R7 y R8;
 - la agenda (Ajuntament y Agenda cultural de Catalunya), con las fiestas, conciertos y actos de entidades y locales marcados con 🎉;
 - una guía de ocio: plan para hoy según el tiempo, próximas fiestas, rutas, fuentes, miradores, patrimonio, restaurantes, bares y pubs;
+- las ayudas, becas y subvenciones que se pueden pedir ahora (Ajuntament, comarca, AMB, Generalitat y Estado), con su plazo;
 - la calidad del aire;
-- un directorio de equipamientos públicos y puntos de recarga.
+- un directorio de equipamientos públicos y puntos de recarga;
+- una página de emergencias con los teléfonos útiles;
+- `agenda.ics`, la agenda como calendario para suscribirse desde el móvil.
 
 Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub Pages. Funciona sin dependencias y sin cookies.
 
@@ -21,6 +24,7 @@ Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub
 | Avisos de trenes | Renfe GTFS-RT `alerts.json` | CC BY 4.0 |
 | Luz | web hermana `llum-hores` (`/api/v1/latest.json`) | Red Eléctrica, uso informativo |
 | Guía de ocio | OpenStreetMap vía Overpass API (una consulta al día) | ODbL: `data/leisure.json` y `tests/fixtures/osm.json` son © colaboradores de OpenStreetMap, bajo ODbL |
+| Ayudas | Base de Datos Nacional de Subvenciones (`infosubvenciones.es/bdnstrans/api`) | Reutilización libre (Ministerio de Hacienda); `data/aids.json` guarda las convocatorias abiertas y las ya descartadas para no repetir consultas |
 
 `certs/sectigo-ov-r36.pem` es el certificado intermedio que `cerdanyola.cat` no envía. La verificación TLS sigue siendo completa.
 

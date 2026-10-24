@@ -1,0 +1,1913 @@
+{
+ "data": [
+  {
+   "company": "Empresa de manteniment",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-23",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2200
+   ],
+   "title": "Supervisor/a de servicios de limpieza – gestión de equipos",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327522"
+  },
+  {
+   "company": "ANAYET MUNDUS SL",
+   "contract": "Contracte laboral temporal (1 mesos)",
+   "date": "2026-10-21",
+   "hours": "Jornada parcial (11 hores - jornada setmanal)",
+   "salary": [
+    417,
+    417
+   ],
+   "title": "Personal de limpieza cedanyola del valles con coche",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327290"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-20",
+   "hours": "Jornada parcial (36 hores - jornada setmanal)",
+   "salary": [
+    1150,
+    1150
+   ],
+   "title": "Administratiu/iva (ref. 30614)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630614"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-20",
+   "hours": "Jornada completa",
+   "salary": [
+    1500,
+    1500
+   ],
+   "title": "Tècnic/a manteniment d'edificis (ref. 30685)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630685"
+  },
+  {
+   "company": "EMPRESA DE SERVICIOS",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-19",
+   "hours": "Jornada completa",
+   "salary": [
+    1300,
+    1500
+   ],
+   "title": "Auxiliar de servicios cerdanyola del valles(h/m)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327075"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-16",
+   "hours": "Jornada completa",
+   "salary": [
+    2138,
+    2139
+   ],
+   "title": "Muntadors/es de bastides (ref:30427)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630427"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-16",
+   "hours": "Jornada completa",
+   "salary": [
+    1221,
+    1221
+   ],
+   "title": "Empleat/da de la llar (ref:30368)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630368"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-16",
+   "hours": "Jornada completa",
+   "salary": [
+    1428,
+    1429
+   ],
+   "title": "Recepcionista (ref:30341)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630341"
+  },
+  {
+   "company": "Empresa de neteja",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-15",
+   "hours": "Jornada completa",
+   "salary": [
+    1467,
+    1467
+   ],
+   "title": "Conductor/a c+cap",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326860"
+  },
+  {
+   "company": "Empresa del sector sociosanitari",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-14",
+   "hours": "Jornada parcial (34 hores - jornada setmanal)",
+   "salary": [
+    1200,
+    1496
+   ],
+   "title": "Cocinero/a",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326813"
+  },
+  {
+   "company": "Empresa Sector Empresarial",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada indiferent",
+   "salary": [],
+   "title": "Tècnic/a d'administració",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326669"
+  },
+  {
+   "company": "Mimmng Mantenimiento Sl.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-08",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Ingeniero/a eléctrico/a junior – automatización industrial",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326477"
+  },
+  {
+   "company": "LA PANERA DEL PA SLU",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-07",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Dependent/a cafeteria cerdanyola del valles",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326428"
+  },
+  {
+   "company": "Empresa de finances i comptabilitat",
+   "contract": "Contracte mercantil (només ofertes)",
+   "date": "2026-10-01",
+   "hours": "Jornada parcial (8 hores - jornada setmanal)",
+   "salary": [
+    1221,
+    1500
+   ],
+   "title": "Consultor/a operacions i finances",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325987"
+  },
+  {
+   "company": "Radan Desinfecciones Técnicas SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-30",
+   "hours": "Jornada completa",
+   "salary": [
+    1480,
+    1480
+   ],
+   "title": "Auxiliar administratiu/iva",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325845"
+  },
+  {
+   "company": "Applus+ Laboratories",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-30",
+   "hours": "Jornada completa",
+   "salary": [
+    1630,
+    1830
+   ],
+   "title": "Técnico/a junior de calidad",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325909"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-30",
+   "hours": "Jornada parcial (25 hores - jornada setmanal)",
+   "salary": [
+    852,
+    852
+   ],
+   "title": "Administratiu/iva (ref. 28910)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628910"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-25",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Magatzem i aprovisionament de materials 26.120",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325608"
+  },
+  {
+   "company": "First Hunting RRHH",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-22",
+   "hours": "Jornada indiferent",
+   "salary": [],
+   "title": "Firmware engineer(m/f)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325292"
+  },
+  {
+   "company": "David Fdez. Ttes. S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-22",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Mecánico/a",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325261"
+  },
+  {
+   "company": "David Fdez. Ttes. S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-22",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Chóferes(h/m)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325281"
+  },
+  {
+   "company": "David Fdez. Ttes. S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-22",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Mozos/zas de almacén",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325282"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-21",
+   "hours": "Jornada completa",
+   "salary": [
+    2243,
+    2243
+   ],
+   "title": "Mecànic/a de camions (ref:28014)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628014"
+  },
+  {
+   "company": "OFICINA DE TREBALL DEL SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-21",
+   "hours": "Jornada completa",
+   "salary": [
+    2243,
+    2243
+   ],
+   "title": "Tècnics/ques en gestió d'estocs i/o magatzem (ref:28024)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628024"
+  },
+  {
+   "company": "RED COORDINADORA MULTISERVICIOS CMS SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada parcial (7 hores - jornada setmanal)",
+   "salary": [
+    266,
+    266
+   ],
+   "title": "Limpiador/a cerdanyola",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325052"
+  },
+  {
+   "company": "Cerdanyola Promocions, S.L.U.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Gruista grua municipal cerdanyola del vallès",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325010"
+  },
+  {
+   "company": "Radan Desinfecciones Técnicas SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [
+    1480,
+    1480
+   ],
+   "title": "Auxiliar administratiu/iva",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325023"
+  },
+  {
+   "company": "Nascor Formación SLU",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-18",
+   "hours": "Jornada parcial (6 hores - fix i periòdic de caràcter discontinu)",
+   "salary": [],
+   "title": "Docent estiraments i higiene postural",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325066"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [
+    1978,
+    1978
+   ],
+   "title": "Mosso/a de magatzem (ref:27887)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627887"
+  },
+  {
+   "company": "Mimmng Mantenimiento Sl.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-17",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Técnico/a de montaje audiovisual – pantallas led y eventos",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324995"
+  },
+  {
+   "company": "AUTOCARES DEL NORESTE",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-15",
+   "hours": "Jornada parcial (3 hores - fix i periòdic de caràcter discontinu)",
+   "salary": [
+    350,
+    700
+   ],
+   "title": "Conductores/as de autocar - vallés occidental",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324763"
+  },
+  {
+   "company": "Residencia La Olivera",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-10",
+   "hours": "Jornada parcial (10 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Educador/ra social",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324491"
+  },
+  {
+   "company": "RHEA Human Solutions SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-09",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2300
+   ],
+   "title": "Electromecánico/a industrial",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324432"
+  },
+  {
+   "company": "UTE 90Fundació Mercé Fontanilles-Fundació Resilis",
+   "contract": "Contracte laboral temporal (1 mesos)",
+   "date": "2026-09-08",
+   "hours": "Jornada completa",
+   "salary": [
+    1500,
+    1800
+   ],
+   "title": "Integrador/a social",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324292"
+  },
+  {
+   "company": "Radan Desinfecciones Técnicas SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-08-27",
+   "hours": "Jornada completa",
+   "salary": [
+    1600,
+    1700
+   ],
+   "title": "Personal tècnic control de plagues",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323368"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    2146,
+    2147
+   ],
+   "title": "Conductor/a de camió-ploma",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630148"
+  },
+  {
+   "company": "Administració d'empreses",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-21",
+   "hours": "Jornada parcial matí (30 hores - jornada setmanal)",
+   "salary": [
+    1500,
+    1650
+   ],
+   "title": "Administratiu/iva comptable",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327233"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-09",
+   "hours": "Jornada completa",
+   "salary": [
+    1250,
+    1250
+   ],
+   "title": "Cuidador/a persones depenents en institucions",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202629956"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-05",
+   "hours": "Jornada completa",
+   "salary": [
+    1765,
+    1765
+   ],
+   "title": "Tècnic/a en electricitat",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202629183"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-25",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Electromecánico/a",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325499"
+  },
+  {
+   "company": "OFICINA DE TREBALL DEL SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-25",
+   "hours": "Jornada completa",
+   "salary": [
+    1869,
+    1869
+   ],
+   "title": "Operari/a de taller",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628495"
+  },
+  {
+   "company": "TOBALINA CONSULTING GROUP",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-23",
+   "hours": "Jornada completa",
+   "salary": [
+    2600,
+    2900
+   ],
+   "title": "Responsable de manteniment",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325417"
+  },
+  {
+   "company": "Empresa de l'administració",
+   "contract": "Contracte laboral temporal (1 mesos)",
+   "date": "2026-09-08",
+   "hours": "Jornada parcial (19 hores - jornada setmanal)",
+   "salary": [
+    920,
+    920
+   ],
+   "title": "Auxiliar administratiu/iva institut-escola els pinetons de ripollet (substitució mitja jornada)",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324236"
+  },
+  {
+   "company": "Administració d'empreses",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-08-26",
+   "hours": "Jornada parcial matí (30 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Administratiu/iva comptable",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323317"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (12 mesos)",
+   "date": "2026-10-23",
+   "hours": "Jornada completa",
+   "salary": [
+    2966,
+    2966
+   ],
+   "title": "Arquitecte/a tècnic/a",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630875"
+  },
+  {
+   "company": "Centre de formació",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    2300,
+    2600
+   ],
+   "title": "Formador/a socorrisme",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327388"
+  },
+  {
+   "company": "Consultoria de Recursos Humans",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    2300,
+    3000
+   ],
+   "title": "137. #6388# tècnics/es de manteniment mecànic industrial",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327453"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-21",
+   "hours": "Jornada parcial (20 hores - jornada setmanal)",
+   "salary": [
+    616,
+    617
+   ],
+   "title": "Monitor/a d'educació i temps lliure",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630250"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-21",
+   "hours": "Jornada completa",
+   "salary": [
+    2143,
+    2143
+   ],
+   "title": "Tècnic/tècnica en estudis de mercat i opinió pública (màrqueting)",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630494"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-21",
+   "hours": "Jornada completa",
+   "salary": [
+    1240,
+    1240
+   ],
+   "title": "Instal·lador/a de tendals",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630378"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (12 mesos)",
+   "date": "2026-10-21",
+   "hours": "Jornada completa",
+   "salary": [
+    2063,
+    2063
+   ],
+   "title": "Instal·lador/a de dispositius elèctrics i/o electrònics de vehicles",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630589"
+  },
+  {
+   "company": "INSTALACIONES",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-19",
+   "hours": "Jornada completa",
+   "salary": [
+    2300,
+    2300
+   ],
+   "title": "Instal·ladors/es",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327088"
+  },
+  {
+   "company": "Empresa de telecomunicacions",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-19",
+   "hours": "Jornada completa",
+   "salary": [
+    2300,
+    2400
+   ],
+   "title": "Electricista(h/d)",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327099"
+  },
+  {
+   "company": "Mimmng Mantenimiento Sl.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-19",
+   "hours": "Jornada parcial (32 hores - jornada setmanal)",
+   "salary": [
+    2200,
+    2500
+   ],
+   "title": "Técnico/a responsable de mantenimiento electromecánico – 32 h semanales – montcada i reixac",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327098"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [
+    2071,
+    2071
+   ],
+   "title": "Tècnics/tecniques en manteniment d'equips electromecànics",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630091"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [
+    2071,
+    2071
+   ],
+   "title": "Tècnics en manteniment electrònic",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630084"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [
+    2071,
+    2071
+   ],
+   "title": "Tecnics/tecniques en manteniment mecànic",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630082"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [
+    2200,
+    2200
+   ],
+   "title": "Conductor/a de camió formigonera mòbil",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630124"
+  },
+  {
+   "company": "FUNDACIO ENGRUNES",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-08",
+   "hours": "Jornada completa",
+   "salary": [
+    2811,
+    2811
+   ],
+   "title": "Arquitecte\\a tècnic\\a",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326470"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-08",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    2500
+   ],
+   "title": "Encarregat/da d'obra pública",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202629660"
+  },
+  {
+   "company": "FUNDACIÓ TRINIJOVE",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-01",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2200
+   ],
+   "title": "Tècnic\\a orientador\\a laboral - programa mais",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325992"
+  },
+  {
+   "company": "FUNDACIÓ TRINIJOVE",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-01",
+   "hours": "Jornada parcial matí (20 hores - jornada setmanal)",
+   "salary": [
+    1000,
+    1098
+   ],
+   "title": "Tècnic/a de prospecció laboral - programa mais",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325993"
+  },
+  {
+   "company": "RESIDENCIAL VIELLA, S.A.",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-01",
+   "hours": "Jornada intensiva",
+   "salary": [
+    1800,
+    2000
+   ],
+   "title": "Cap de cuina -montcada",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326029"
+  },
+  {
+   "company": "SOSMATIC, S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-25",
+   "hours": "Jornada completa",
+   "salary": [
+    1600,
+    1700
+   ],
+   "title": "Técnico/a informático/a con inglés, presencial",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325624"
+  },
+  {
+   "company": "OFICINA DE TREBALL DEL SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-25",
+   "hours": "Jornada completa",
+   "salary": [
+    1642,
+    1785
+   ],
+   "title": "Electromecànic/a",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628486"
+  },
+  {
+   "company": "FUNDACIO ENGRUNES",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-22",
+   "hours": "Jornada completa",
+   "salary": [
+    2342,
+    2342
+   ],
+   "title": "Encargados/as de obras de rehabilitacion",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325346"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-21",
+   "hours": "Jornada completa",
+   "salary": [
+    1228,
+    1228
+   ],
+   "title": "Operador/a de planta de tractament de residus",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627909"
+  },
+  {
+   "company": "Servicio Setgrup",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [
+    1500,
+    1500
+   ],
+   "title": "Teleoperadores/as",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325016"
+  },
+  {
+   "company": "PIMEC micro, petita i mitjana empresa de catalunya",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2166
+   ],
+   "title": "Administratiu/iva servei tècnic",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325043"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [
+    1700,
+    1700
+   ],
+   "title": "Auxiliar administratiu/iva amb discapacitat",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627783"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-17",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2000
+   ],
+   "title": "Retolista - soldador/a",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627755"
+  },
+  {
+   "company": "Delivery ASAP S.L",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-15",
+   "hours": "Jornada completa",
+   "salary": [
+    1425,
+    1600
+   ],
+   "title": "Repartidores/as de paquetería",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324776"
+  },
+  {
+   "company": "CELYMAR SERVICIOS DE OUTSOURCING,S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-10",
+   "hours": "Jornada parcial (15 hores - jornada setmanal)",
+   "salary": [
+    550,
+    570
+   ],
+   "title": "Limpiador/ra industrial experiencia manejo de fregadora de arrastre",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324497"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-08",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Fresador/ra 26.107",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324313"
+  },
+  {
+   "company": "Estudi 6 Gestió Socioeducativa",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-08",
+   "hours": "Jornada parcial tarda (2 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Tallerista per impartir taller de \"dinàmiques del riure\" a un casal cívic de montcada i reixac",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324349"
+  },
+  {
+   "company": "Estudi 6 Gestió Socioeducativa",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-08",
+   "hours": "Jornada parcial tarda (1 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Tallerista per impartir taller de \"benestar amb remeis naturals\" a un casal cívic de montcada i reixac",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324353"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-03",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Mecànic/a 26.072",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323921"
+  },
+  {
+   "company": "Talleres Calfor S.L.",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-09-02",
+   "hours": "Jornada completa",
+   "salary": [
+    2063,
+    2407
+   ],
+   "title": "Soldador/a amb electrode",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323871"
+  },
+  {
+   "company": "ENGRUNES, E.I., S.L.U.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-01",
+   "hours": "Jornada intensiva",
+   "salary": [
+    2108,
+    2520
+   ],
+   "title": "Conductor/a de 1a.",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323660"
+  },
+  {
+   "company": "Empresa forestal",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-08-31",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2400
+   ],
+   "title": "Maquinistes d'excavadora giratòria i pala carregadora(h/d)",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323554"
+  },
+  {
+   "company": "ENGRUNES, Empresa d'Inserció, S.L.U.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-08-26",
+   "hours": "Jornada completa",
+   "salary": [
+    2811
+   ],
+   "title": "Arquitecte\\a tècnic\\a",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323259"
+  },
+  {
+   "company": "ACTUA SCCL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada parcial (35 hores - jornada setmanal)",
+   "salary": [
+    2000,
+    2050
+   ],
+   "title": "Psicòleg/psicòloga",
+   "town": "BADIA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327373"
+  },
+  {
+   "company": "EDUVIC SCCL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-20",
+   "hours": "Jornada parcial (35 hores - jornada setmanal)",
+   "salary": [
+    1921,
+    1921
+   ],
+   "title": "Psicòlogo/psicòloga atenció dones (vallès occidental)",
+   "town": "BADIA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327224"
+  },
+  {
+   "company": "Nascor Formación SLU",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-18",
+   "hours": "Jornada parcial matí (2 hores - fix i periòdic de caràcter discontinu)",
+   "salary": [],
+   "title": "Docent mòbil i tablet",
+   "town": "BADIA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325056"
+  },
+  {
+   "company": "Estudi 6 Gestió Socioeducativa",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-08",
+   "hours": "Jornada parcial tarda (1 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Tallerista per impartir taller de \"tonifica't\" a un casal cívic de badia del vallès",
+   "town": "BADIA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324346"
+  },
+  {
+   "company": "Nascor Formación SLU",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-01",
+   "hours": "Jornada parcial tarda (1 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Tallerista de memòria",
+   "town": "BADIA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323662"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-23",
+   "hours": "Jornada completa",
+   "salary": [
+    2150,
+    2150
+   ],
+   "title": "Tècnics/ques en servei postvenda (ref.30878)",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630878"
+  },
+  {
+   "company": "GROWING UP HR SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    2100,
+    3000
+   ],
+   "title": "114. #6321# mecanicos/as planta industrial",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327421"
+  },
+  {
+   "company": "Consultoría de Recursos Humans",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    1700,
+    2400
+   ],
+   "title": "157. #6458# tècnic/a de garantia de qualitat",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327445"
+  },
+  {
+   "company": "GROWING UP HR SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    1700,
+    2500
+   ],
+   "title": "110. #6326# coordinadores/as planta productiva",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327436"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    1978,
+    1978
+   ],
+   "title": "Operari/ària polivalent 26.139",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327459"
+  },
+  {
+   "company": "LA PANERA DEL PA SLU",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-20",
+   "hours": "Jornada parcial (20 hores - jornada setmanal)",
+   "salary": [
+    500,
+    700
+   ],
+   "title": "Dependiente/a fin de semana barberà del valles",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327188"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-20",
+   "hours": "Jornada completa",
+   "salary": [
+    1830,
+    1830
+   ],
+   "title": "Mosso/a de magatzem-repartidor/a",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630634"
+  },
+  {
+   "company": "360RECURSOS HUMANOS ETT SL",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-10-09",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2300
+   ],
+   "title": "Pintor/a de sector automoció barberà del vallès",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326551"
+  },
+  {
+   "company": "asert",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-06",
+   "hours": "Jornada completa",
+   "salary": [
+    1600,
+    1800
+   ],
+   "title": "Conductor/a minibus carnet d",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326336"
+  },
+  {
+   "company": "ONACARE GLOBAL S.L",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-02",
+   "hours": "Jornada completa",
+   "salary": [
+    1979,
+    2309
+   ],
+   "title": "Infermer/a a jornada completa estable a onacare barberà del vallés.",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326114"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (8 mesos)",
+   "date": "2026-10-02",
+   "hours": "Jornada completa",
+   "salary": [
+    1233,
+    1233
+   ],
+   "title": "Dependent/a de comerç (ref.29100)",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202629100"
+  },
+  {
+   "company": "TOYS CENTRE SL",
+   "contract": "Contracte laboral temporal (2 mesos)",
+   "date": "2026-09-28",
+   "hours": "Jornada parcial (20 hores - jornada setmanal)",
+   "salary": [
+    757,
+    757
+   ],
+   "title": "Ajudant de botiga jogueteria - barbera del valles ( baricentro)",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325683"
+  },
+  {
+   "company": "Empresa de logística",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-28",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Conductores/as de tráiler",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325707"
+  },
+  {
+   "company": "Empresa del sector metal·lúrgic",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-22",
+   "hours": "Jornada intensiva",
+   "salary": [
+    2333,
+    2666
+   ],
+   "title": "Administrativo/a contable",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325298"
+  },
+  {
+   "company": "Com a casa menjadors escolars S.L",
+   "contract": "Contracte laboral indiferent",
+   "date": "2026-09-22",
+   "hours": "Jornada parcial (3 hores - jornada diaria)",
+   "salary": [],
+   "title": "Monitor/monitora de menjador (barberà)",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325306"
+  },
+  {
+   "company": "Empresa del sector del comerç",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-22",
+   "hours": "Jornada intensiva",
+   "salary": [],
+   "title": "Mozo/a de almacen",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325363"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-21",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Electromecánico/ca",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325177"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Operari/a polivalent 26.071",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325117"
+  },
+  {
+   "company": "GROWING UP HR SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    3300
+   ],
+   "title": "104. advocat/da laboralista - vallès occidental",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327384"
+  },
+  {
+   "company": "GROWING UP HR SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    1400,
+    1800
+   ],
+   "title": "14. administratiu/va de finques i lloguers -sant cugat",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327394"
+  },
+  {
+   "company": "Consultoria de Recursos Humans",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-22",
+   "hours": "Jornada completa",
+   "salary": [
+    1700,
+    2300
+   ],
+   "title": "15. tècnic/a de manteniment multiservei - sant cugat",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327403"
+  },
+  {
+   "company": "Empresa sector sanitari",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-21",
+   "hours": "Jornada completa",
+   "salary": [
+    1500,
+    1700
+   ],
+   "title": "Infermer/a residència",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327316"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-20",
+   "hours": "Jornada completa",
+   "salary": [
+    2143,
+    2143
+   ],
+   "title": "Empleats/ades administratius/ives amb tasques d'atenció al públic no classificats en altres epígrafs_30611",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630611"
+  },
+  {
+   "company": "Centre de Formació",
+   "contract": "Contracte laboral temporal (8 mesos)",
+   "date": "2026-10-19",
+   "hours": "Jornada intensiva",
+   "salary": [
+    1221,
+    1265
+   ],
+   "title": "Personal de neteja",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327081"
+  },
+  {
+   "company": "Empresa de telecomunicacions",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-19",
+   "hours": "Jornada parcial (16 hores - jornada setmanal)",
+   "salary": [
+    488,
+    488
+   ],
+   "title": "Telefonista d'atenció al client – caps de setmana",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327139"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (12 mesos)",
+   "date": "2026-10-19",
+   "hours": "Jornada completa",
+   "salary": [
+    1631,
+    1631
+   ],
+   "title": "Conductor/a de furgoneta, fins a 3,5 tones_30395",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630395"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-19",
+   "hours": "Jornada completa",
+   "salary": [
+    1928,
+    1928
+   ],
+   "title": "Conductor/a de furgoneta, fins a 3,5 tones_30457",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630457"
+  },
+  {
+   "company": "EULEN.SA",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-10-16",
+   "hours": "Jornada parcial (20 hores - jornada setmanal)",
+   "salary": [
+    712,
+    712
+   ],
+   "title": "Promotor/a punto de venta - campaña de navidad - sant cugat v.",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326936"
+  },
+  {
+   "company": "Empresa de Recursos Humans",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-16",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    2500
+   ],
+   "title": "Cap de sala",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327021"
+  },
+  {
+   "company": "Empresa de Recursos Humans",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-16",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2500
+   ],
+   "title": "Responsable d'obrador",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327023"
+  },
+  {
+   "company": "TOYS CENTRE SL",
+   "contract": "Contracte laboral temporal (2 mesos)",
+   "date": "2026-10-16",
+   "hours": "Jornada parcial (20 hores - jornada setmanal)",
+   "salary": [
+    757,
+    757
+   ],
+   "title": "Ajudants/antes de botiga joguines ( campanya nadal) - sant cugat (cc comercial)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327038"
+  },
+  {
+   "company": "Acadèmia de Sant Cugat",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-15",
+   "hours": "Jornada parcial tarda (15 hores - jornada setmanal)",
+   "salary": [
+    850,
+    950
+   ],
+   "title": "Professor/a de matemàtiques i física d'eso i batxillerat/ pau",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326861"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-15",
+   "hours": "Jornada completa",
+   "salary": [
+    1979,
+    1979
+   ],
+   "title": "26.125 polidor/a de peces",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326885"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-15",
+   "hours": "Jornada completa",
+   "salary": [
+    1829,
+    1829
+   ],
+   "title": "Infermer/a_30226",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630226"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-15",
+   "hours": "Jornada parcial matí (25 hores - jornada setmanal)",
+   "salary": [
+    1100,
+    1100
+   ],
+   "title": "Educador/a social_30273",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630273"
+  },
+  {
+   "company": "SANED",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Cap de cuina (sant cugat del vallès)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326666"
+  },
+  {
+   "company": "COOPERATIVA DOBLE VIA SCCL",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-13",
+   "hours": "Jornada parcial matí (1 hores - jornada diaria)",
+   "salary": [
+    150,
+    160
+   ],
+   "title": "Monitors/monitores (sant cugat i barberà del vallès)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326682"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [
+    1261,
+    1261
+   ],
+   "title": "Administratiu/va_30013",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630013"
+  },
+  {
+   "company": "OFICINA DE TREBALL DEL SOC",
+   "contract": "Contracte laboral temporal (8 mesos)",
+   "date": "2026-10-13",
+   "hours": "Jornada parcial (25 hores - jornada setmanal)",
+   "salary": [
+    1061,
+    1061
+   ],
+   "title": "Fisioterapeuta_30106",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630106"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [
+    1979,
+    1979
+   ],
+   "title": "Polidor/a de peces de metall_30110",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630110"
+  },
+  {
+   "company": "OFICINA DE TREBALL DEL SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-13",
+   "hours": "Jornada completa",
+   "salary": [
+    1456,
+    1456
+   ],
+   "title": "Terapeuta ocupacional_30113",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630113"
+  },
+  {
+   "company": "Empresa pública",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-09",
+   "hours": "Jornada completa",
+   "salary": [
+    1250,
+    1300
+   ],
+   "title": "Personal gerocultor per a residència de gent gran torn tarda (codi: 7685)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326630"
+  },
+  {
+   "company": "Universitat Internacional de Catalunya",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-09",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Técnico/a de mantenimiento (turno de tardes)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326637"
+  },
+  {
+   "company": "BARNAPORTERS,S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-06",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Auxiliars de serveis (sant cugat del valles)(h/d)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326280"
+  },
+  {
+   "company": "Gi Group Spain",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-06",
+   "hours": "Jornada completa",
+   "salary": [
+    1600,
+    1600
+   ],
+   "title": "Camareros/as restaurant",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326315"
+  },
+  {
+   "company": "Gi Group Spain",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-06",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Jefe/fa de cocina restaurant",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326340"
+  },
+  {
+   "company": "COOPERATIVA DOBLE VIA SCCL",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-10-05",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2000
+   ],
+   "title": "Tècnic/a de relacions laborals",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326175"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-05",
+   "hours": "Jornada parcial (30 hores - jornada setmanal)",
+   "salary": [
+    1155,
+    1155
+   ],
+   "title": "Netejador/a de comunitats_29219",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202629219"
+  },
+  {
+   "company": "Animua, S.A.",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-10-02",
+   "hours": "Jornada completa",
+   "salary": [
+    1800,
+    2000
+   ],
+   "title": "Cocinero/a – restaurante hotel el sant cugat",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326067"
+  },
+  {
+   "company": "AJUNTAMENT DE RUBI",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-02",
+   "hours": "Jornada parcial (20 hores - jornada setmanal)",
+   "salary": [
+    650,
+    660
+   ],
+   "title": "Tècnic/a d'administració i gestió de visites (codi: 7668)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326144"
+  },
+  {
+   "company": "OrientaPro",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-01",
+   "hours": "Jornada parcial (5 hores - jornada diaria)",
+   "salary": [
+    2500,
+    2992
+   ],
+   "title": "Tècnic/a multimedia",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325953"
+  },
+  {
+   "company": "OrientaPro",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-01",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    3000
+   ],
+   "title": "Cap de projecte e-learning (h/d)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325969"
+  },
+  {
+   "company": "SANED",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-30",
+   "hours": "Jornada completa",
+   "salary": [
+    1708,
+    2200
+   ],
+   "title": "Cuiner/a zona vallès",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325870"
+  },
+  {
+   "company": "Animua, S.A.",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-30",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Operario/a de mantenimiento hotel - sant cugat",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
+  },
+  {
+   "company": "Empresa de l'administració",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-25",
+   "hours": "Jornada completa",
+   "salary": [
+    1300,
+    1330
+   ],
+   "title": "Personal gerocultor/a per a residència de gent gran (codi: 7521)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325551"
+  },
+  {
+   "company": "AJUNTAMENT DE RUBI",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada completa",
+   "salary": [
+    1466,
+    1466
+   ],
+   "title": "Personal per a manteniment de finca",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325102"
+  },
+  {
+   "company": "First Hunting RRHH",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-16",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Técnico/a soporte electrónico – junior",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324859"
+  },
+  {
+   "company": "RAM Sant Cugat 2016, SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-16",
+   "hours": "Jornada completa",
+   "salary": [
+    1667,
+    1734
+   ],
+   "title": "Cocinero/a",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
+  },
+  {
+   "company": "OFICINA DE TREBALL DEL SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-10",
+   "hours": "Jornada parcial (5 hores - jornada setmanal)",
+   "salary": [
+    170,
+    170
+   ],
+   "title": "Monitor/a de menjador_27014",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627014"
+  },
+  {
+   "company": "Nascor Formación SLU",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-09",
+   "hours": "Jornada parcial tarda (2 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Monitor/monitora de txi kung",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324370"
+  },
+  {
+   "company": "Mitie",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-09-09",
+   "hours": "Jornada completa",
+   "salary": [
+    1221,
+    1300
+   ],
+   "title": "Auxiliar control de accesos – sant cugat",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324368"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-09",
+   "hours": "Jornada completa",
+   "salary": [],
+   "title": "Tècnic/a instal·lador/a persianes",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324429"
+  },
+  {
+   "company": "AJUNTAMENT DE RUBI",
+   "contract": "Contracte laboral temporal (12 mesos)",
+   "date": "2026-09-08",
+   "hours": "Jornada completa",
+   "salary": [
+    2215,
+    2360
+   ],
+   "title": "Enginyer/enginyera - tècnic/a medi ambient (codi: 7475)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324340"
+  },
+  {
+   "company": "AEDEA Contact center",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-08",
+   "hours": "Jornada intensiva",
+   "salary": [
+    1200,
+    1400
+   ],
+   "title": "Agent d'atenció al client (tarda)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324254"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (9 mesos)",
+   "date": "2026-09-08",
+   "hours": "Jornada parcial (12 hores - jornada setmanal)",
+   "salary": [
+    420
+   ],
+   "title": "Personal per menjador escolar_26669",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202626669"
+  },
+  {
+   "company": "SANED",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-07",
+   "hours": "Jornada parcial (10 hores - jornada setmanal)",
+   "salary": [
+    412,
+    412
+   ],
+   "title": "Monitors/monitores espai migdia per sant cugat",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324154"
+  },
+  {
+   "company": "BG MOBILE 2.0, S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-03",
+   "hours": "Jornada completa",
+   "salary": [
+    1800,
+    1900
+   ],
+   "title": "Assessors/es telecomunicacions i solucions digitals pymes",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323986"
+  },
+  {
+   "company": "FUNDACION RANDSTAD",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-09-03",
+   "hours": "Jornada parcial (30 hores - jornada setmanal)",
+   "salary": [],
+   "title": "Becario/a rrhh con certificado discapacidad",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323943"
+  },
+  {
+   "company": "Empresa de transports",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-08-28",
+   "hours": "Jornada completa",
+   "salary": [
+    1700,
+    1950
+   ],
+   "title": "Chóferes camión rígido barcelona",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323518"
+  }
+ ],
+ "fetched": "2026-10-24T19:02:41+02:00"
+}

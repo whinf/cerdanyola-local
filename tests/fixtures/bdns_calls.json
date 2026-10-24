@@ -1,0 +1,506 @@
+[
+ {
+  "id": 1135408,
+  "organo": {
+   "nivel1": "AUTONOMICA",
+   "nivel2": "CATALUÑA",
+   "nivel3": "AGÈNCIA CATALANA DE LA JOVENTUT"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933847",
+  "fechaRecepcion": "2026-10-06",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 3600,
+  "mrr": false,
+  "descripcion": "Beca que tiene por objetivo abrir un espacio de experimentacion curatorial de personas y colectivos jóvenes, así como favorecer su profesionalizacion.",
+  "descripcionLeng": "Beca que té per objectiu obrir un espai per a l'experimentació curatorial de persones i collectius joves, així com afavorir la seva professionalització.",
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+    "codigo": "S"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES51 - CATALUÑA"
+   }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "RESOLUCIÓN DSO/3763/2021, de 20 de diciembre, por la que se aprueban las bases reguladoras de la beca Art Jove Curadoria",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=916811",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-09",
+  "fechaFinSolicitud": "2026-11-09",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1137748,
+  "organo": {
+   "nivel1": "AUTONOMICA",
+   "nivel2": "CATALUÑA",
+   "nivel3": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "936187",
+  "fechaRecepcion": "2026-10-19",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 230000,
+  "mrr": false,
+  "descripcion": "Ayudas para promover la formación y la acreditación de terceras lenguas para los estudiantes matriculados en estudios de grado en una universidad catalana el curso 2025-2026 (Parla 3)",
+  "descripcionLeng": "Ajuts per promoure la formacuó i l'acreditació de terceres llengües per als estudiants matriculats en estudis de grau en una universitat catallana el curs 2025-2026 (Parla 3)",
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+    "codigo": "85.3"
+   },
+   {
+    "descripcion": "Educación terciaria",
+    "codigo": "85.4"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES51 - CATALUÑA"
+   }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Bases reguladoras de las ayudas para promover la formación y la acreditación de terceras lenguas para los estudiantes matriculados en estudios de grado en una universidad catalana el curso 2025-2026 (Parla 3)",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1053780",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-24",
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "1 Mesos",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1134704,
+  "organo": {
+   "nivel1": "ESTADO",
+   "nivel2": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
+   "nivel3": "SUBSECRETARÍA DE TRABAJO Y ECONOMÍA SOCIAL"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "933143",
+  "fechaRecepcion": "2026-10-02",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 1850,
+  "mrr": false,
+  "descripcion": "Convocatoria para el ejercicio 2026 del premio a tesis doctorales de especial relevancia en materia laboral.",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "Actividades relacionadas con el empleo",
+    "codigo": "78"
+   },
+   {
+    "descripcion": "Otras actividades profesionales, científicas y técnicas",
+    "codigo": "74"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES - ESPAÑA "
+   }
+  ],
+  "descripcionFinalidad": "Fomento del Empleo",
+  "descripcionBasesReguladoras": "Orden TES/268/2025, de 11 de marzo, por la que se aprueban las bases reguladoras para la concesión de premios a tesis doctorales de especial relevancia en materia laboral.",
+  "urlBasesReguladoras": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-5590 ",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "INDICADO EN LA CONVOCATORIA Y SU EXTRACTO",
+  "textFin": "INDICADO EN LA CONVOCATORIA Y SU EXTRACTO",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1136130,
+  "organo": {
+   "nivel1": "AUTONOMICA",
+   "nivel2": "CATALUÑA",
+   "nivel3": "CONSORCI D'EDUCACIÓ DE BARCELONA"
+  },
+  "sedeElectronica": "edubcn.cat",
+  "codigoBDNS": "934569",
+  "fechaRecepcion": "2026-10-09",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concesión directa - instrumental",
+  "presupuestoTotal": 279865.95,
+  "mrr": false,
+  "descripcion": "RESOLUCIÓN BECAS FP DUAL CURSO 2026-2027",
+  "descripcionLeng": "RESOLUCIÓ BEQUES FP DUAL CURS 2026-2027",
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+    "codigo": "85.3"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES511 - Barcelona"
+   }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Plan estratégico de subvenciones",
+  "urlBasesReguladoras": "https://economia.gencat.cat/ca/ambits-actuacio/ajuts-subvencions/plans-estrategics/",
+  "sePublicaDiarioOficial": false,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Sense termini de presentació de sol·licitud",
+  "textFin": "Sense termini de presentació de sol·licitud",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1107663,
+  "organo": {
+   "nivel1": "LOCAL",
+   "nivel2": "CERDANYOLA DEL VALLÈS",
+   "nivel3": "AYUNTAMIENTO DE CERDANYOLA DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "906102",
+  "fechaRecepcion": "2026-05-16",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concesión directa - instrumental",
+  "presupuestoTotal": 28624.08,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA SUBVENCIONES GRUPOS POLÍTICOS 2026-PSC-CP",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "ACTIVIDADES ARTÍSTICAS, DEPORTIVAS Y DE ENTRETENIMIENTO",
+    "codigo": "S"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES511 - Barcelona"
+   }
+  ],
+  "descripcionFinalidad": "Otras actuaciones de carácter económico",
+  "descripcionBasesReguladoras": "SUBVENCIONES GRUPOS POLÍTICOS",
+  "urlBasesReguladoras": "https://www.cerdanyola.cat/sites/default/files/fitxers/bases_execucio_pressupot_2025.pdf",
+  "sePublicaDiarioOficial": false,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1123267,
+  "organo": {
+   "nivel1": "AUTONOMICA",
+   "nivel2": "CATALUÑA",
+   "nivel3": "CONSORCIO DE LA VIVIENDA DE BARCELONA"
+  },
+  "sedeElectronica": "https://habitatge.barcelona/ca   i   http://www.bcn.cat/consorcihabitatge/ca/home.html",
+  "codigoBDNS": "921706",
+  "fechaRecepcion": "2026-07-27",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 6000000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA PARA LA CONCESIÓN DE SUBVENCIONES A LA REHABILITACIÓN Y MEJORA DE LAS VIVIENDAS EN LA CIUDAD DE BARCELONA",
+  "descripcionLeng": "CONVOCATÒRIA PER A LA CONCESSIÓ DE SUBVENCIONS A LA REHABILITACIÓ I MILLORA DELS HABITATGES A LA CIUTAT DE BARCELONA",
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   },
+   {
+    "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "Actividades relacionadas con el empleo",
+    "codigo": "78"
+   },
+   {
+    "descripcion": "Conservación, restauración y otras actividades de apoyo al patrimonio cultural",
+    "codigo": "91.3"
+   },
+   {
+    "descripcion": "Construcción de edificios",
+    "codigo": "41.0"
+   },
+   {
+    "descripcion": "Otras actividades de construcción especializada",
+    "codigo": "43.9"
+   },
+   {
+    "descripcion": "Servicios técnicos de arquitectura e ingeniería; ensayos y análisis técnicos",
+    "codigo": "71"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES511 - Barcelona"
+   }
+  ],
+  "descripcionFinalidad": "Acceso a la vivienda y fomento de la edificación",
+  "descripcionBasesReguladoras": "Bases reguladoras de ayudas a la rehabilitación de viviendas específicas para la ciudad de Barcelona",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=900131",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-10-22",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1124344,
+  "organo": {
+   "nivel1": "ESTADO",
+   "nivel2": "MINISTERIO DE INDUSTRIA Y TURISMO",
+   "nivel3": "DIRECCIÓN GENERAL DE PROGRAMAS INDUSTRIALES"
+  },
+  "sedeElectronica": "https://www.mintur.gob.es/portalayudas/Paginas/convocatorias-ayudas.aspx",
+  "codigoBDNS": "922783",
+  "fechaRecepcion": "2026-07-30",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concesión directa - canónica",
+  "presupuestoTotal": 350000000,
+  "mrr": false,
+  "descripcion": "Orden por la que se efectúa la convocatoria correspondiente al año 2026 de la Línea 1 del Programa Auto+",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "Fabricación de vehículos de motor, remolques y semirremolques",
+    "codigo": "29"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES - ESPAÑA "
+   }
+  ],
+  "descripcionFinalidad": "Industria y Energía",
+  "descripcionBasesReguladoras": "Real Decreto 609/2026, de 22 de julio, por el que se regula la concesión directa de ayudas a la compra de vehículos eléctricos y electrificados (Programa Auto+).",
+  "urlBasesReguladoras": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16010",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "4 de agosto de 2026, a las 10:00",
+  "textFin": "31 de diciembre de 2026 a las 14:00",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1138529,
+  "organo": {
+   "nivel1": "AUTONOMICA",
+   "nivel2": "CATALUÑA",
+   "nivel3": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)"
+  },
+  "sedeElectronica": "Portal de tràmits",
+  "codigoBDNS": "936968",
+  "fechaRecepcion": "2026-10-21",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concurrencia competitiva - canónica",
+  "presupuestoTotal": 2750000,
+  "mrr": false,
+  "descripcion": "Convocatoria de ayudas a la movilidad internacional del estudiantado con reconocimiento académico y a la movilidad del estudiantado en el marco del Programa de Mejora e Innovación en la Formación de docentes de las universidades catalanas (MOBINT - MIF)",
+  "descripcionLeng": "Convocatòria d'ajuts a la mobilitat internacional de l’estudiantat amb reconeixement acadèmic i a la mobilitat de l’estudiantat en el marc del Programa de millora i innovació en la formació de mestres de les universitats catalanes (MOBINT-MIF)",
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "Educación secundaria y educación postsecundaria no terciaria",
+    "codigo": "85.3"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES51 - CATALUÑA"
+   }
+  ],
+  "descripcionFinalidad": "Educación",
+  "descripcionBasesReguladoras": "Baes reguladoras de ayudas a la movilidad internacional del estudiantado con reconocimiento académico y del estudiantado en el marco del Programa de Mejora e Innovación en la Formación de docentes de las universidades catalanas (MOBINT - MI",
+  "urlBasesReguladoras": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1057147",
+  "sePublicaDiarioOficial": true,
+  "abierto": false,
+  "fechaInicioSolicitud": null,
+  "fechaFinSolicitud": null,
+  "textInicio": "Des de l’endemà de la publicació en el diari oficial de la convocatòria inicial",
+  "textFin": "1 Mesos",
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ },
+ {
+  "id": 1112491,
+  "organo": {
+   "nivel1": "LOCAL",
+   "nivel2": "CERDANYOLA DEL VALLÈS",
+   "nivel3": "AYUNTAMIENTO DE CERDANYOLA DEL VALLÈS"
+  },
+  "sedeElectronica": null,
+  "codigoBDNS": "910930",
+  "fechaRecepcion": "2026-06-05",
+  "instrumentos": [
+   {
+    "descripcion": "SUBVENCIÓN Y ENTREGA DINERARIA SIN CONTRAPRESTACIÓN "
+   }
+  ],
+  "tipoConvocatoria": "Concesión directa - instrumental",
+  "presupuestoTotal": 65000,
+  "mrr": false,
+  "descripcion": "CONVOCATORIA (CASALES, DERIVACIONES...)` AYUDAS A LA INFANCIA Y LA JUVENTUD AÑO 2026",
+  "descripcionLeng": null,
+  "tiposBeneficiarios": [
+   {
+    "descripcion": "GRAN EMPRESA"
+   },
+   {
+    "descripcion": "PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   },
+   {
+    "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+   },
+   {
+    "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+   }
+  ],
+  "sectores": [
+   {
+    "descripcion": "Otras actividades de servicios sociales sin alojamiento",
+    "codigo": "88.9"
+   }
+  ],
+  "regiones": [
+   {
+    "descripcion": "ES511 - Barcelona"
+   }
+  ],
+  "descripcionFinalidad": "Servicios Sociales y Promoción Social",
+  "descripcionBasesReguladoras": "BASES GENERALES AYUDAS SOCIALES DIRECTAS",
+  "urlBasesReguladoras": "https://bop.diba.cat/anunci/936440/desestimacio-d-al-legacions-i-aprovacio-definitiva-de-l-ordenanca-reguladora-de-les-bases-generals-d-atorgament-d-ajuts-socials-ajuntament-de-cerdanyola-del-valles",
+  "sePublicaDiarioOficial": false,
+  "abierto": false,
+  "fechaInicioSolicitud": "2026-01-01",
+  "fechaFinSolicitud": "2026-12-31",
+  "textInicio": null,
+  "textFin": null,
+  "ayudaEstado": null,
+  "urlAyudaEstado": null,
+  "fondos": [],
+  "reglamento": null,
+  "objetivos": [],
+  "sectoresProductos": []
+ }
+]

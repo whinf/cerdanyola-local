@@ -3,6 +3,7 @@ import sys
 import tempfile
 import unittest
 from datetime import date
+from unittest import mock
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -87,6 +88,56 @@ class TestSources(unittest.TestCase):
         self.assertEqual(len(alerts), 3)
         self.assertTrue(all(set(a["lines"]) <= {"R7", "R8"} for a in alerts))
 
+    def test_aids(self):
+        today = NOW.date()
+        calls = {a["id"]: a for a in (S.parse_bdns_call(d, today) for d in fixture("bdns_calls.json"))}
+        states = {n: (S.aid_state(a, today) or (None,))[0] for n, a in calls.items() if S.bdns_relevant(a)}
+        self.assertEqual(states, {"933847": "open", "936187": "soon", "933143": "check", "922783": "open",
+                                  "936968": "approx", "910930": "open"})
+        self.assertFalse(S.bdns_relevant(calls["906102"]))  # grupo municipal
+        self.assertFalse(S.bdns_relevant(calls["921706"]))  # Consorci de l'Habitatge de la ciudad de Barcelona
+        self.assertIsNone(S.aid_state(calls["934569"], today))  # «Sense termini de presentació»
+        self.assertEqual(S.aid_state(calls["922783"], today), ("open", date(2026, 12, 31)))  # fecha en el texto
+        self.assertEqual(calls["933847"]["who"], ["people"])
+        start = date(2026, 10, 1)
+        self.assertEqual(S.end_from_text("15 Dies Hàbils", start), (date(2026, 10, 22), True))
+        self.assertEqual(S.end_from_text("Diez (10) días hábiles", start), (date(2026, 10, 15), True))
+        self.assertEqual(S.end_from_text("fins al 15 d’octubre", start), (date(2026, 10, 15), False))
+        self.assertEqual(S.end_from_text("Indicado en la convocatoria", start), (None, False))
+        self.assertEqual(i18n.organ_name("AGÈNCIA DE GESTIÓ D'AJUTS (AGAUR)"), "Agència de Gestió d'Ajuts (AGAUR)")
+        self.assertEqual(i18n.fmt_money("ca", 2750000), "2.750.000 €")
+
+    def test_fetch_aids_reuses_cache(self):
+        details = {d["codigoBDNS"]: d for d in fixture("bdns_calls.json")}
+        asked = []
+
+        def fake(url):
+            if "busqueda" in url:
+                return {"content": [{"numeroConvocatoria": n} for n in details], "last": True}
+            asked.append(url.rsplit("=", 1)[1])
+            return details[asked[-1]]
+
+        with mock.patch.object(S, "get_json", fake), mock.patch.object(S.time, "sleep"):
+            first = S.fetch_aids(NOW)
+            self.assertEqual(set(first["calls"]), {"933847", "936187", "933143", "922783", "936968", "910930"})
+            self.assertEqual(first["closed"], ["906102", "921706", "934569"])
+            asked.clear()
+            again = S.fetch_aids(NOW, first)
+        self.assertEqual(asked, [])  # nada nuevo ni caducado: ninguna consulta de detalle
+        self.assertEqual(again, first)
+
+    def test_jobs_and_fuel(self):
+        public = S.parse_cido(fixture("cido.json"), NOW.date())
+        town = [j for j in public if j["org"] == "Ajuntament de Cerdanyola del Vallès"]
+        self.assertEqual(len(town), 3)
+        self.assertTrue(all(j["km"] < 1 and j["url"].startswith("https://cido.diba.cat/") for j in town))
+        offers = S.parse_offers((FIX / "feina_activa.xml").read_text(encoding="utf-8"), NOW.date())
+        self.assertEqual([j["town"] for j in offers], ["CERDANYOLA DEL VALLÈS"] * 4 + ["RIPOLLET"] * 2)  # sin Calella ni las viejas
+        self.assertEqual(offers[0]["date"], max(j["date"] for j in offers[:4]))
+        fuel = S.parse_fuel(fixture("fuel_931.json"), "Cerdanyola del Vallès")
+        self.assertEqual(len(fuel), 10)
+        self.assertTrue(all(1 < s["prices"]["g95"] < 3 for s in fuel))
+
     def test_directory(self):
         eq = S.parse_equipments(fixture("equip.json"))
         self.assertEqual(len(eq), 224)
@@ -122,6 +173,10 @@ class TestSite(unittest.TestCase):
             "equipments": S.parse_equipments(fixture("equip.json")),
             "chargers": S.parse_chargers(fixture("ev.json")),
             "leisure": S.parse_leisure(fixture("osm.json")),
+            "aids": {"calls": {d["codigoBDNS"]: S.parse_bdns_call(d, NOW.date()) for d in fixture("bdns_calls.json")}},
+            "cido": S.parse_cido(fixture("cido.json"), NOW.date()),
+            "offers": S.parse_offers((FIX / "feina_activa.xml").read_text(encoding="utf-8"), NOW.date()),
+            "fuel": {"updated": "20/10/2026 18:00:00", "stations": S.parse_fuel(fixture("fuel_931.json"), "Cerdanyola del Vallès")},
         }
         cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local"}
         with tempfile.TemporaryDirectory() as tmp:
@@ -134,6 +189,25 @@ class TestSite(unittest.TestCase):
             self.assertIn("🎉", leisure)
             self.assertIn("OpenStreetMap", leisure)
             self.assertIn("R7", home)
+            self.assertIn("Ajudes que pots demanar ara", home)
+            aids = (out / "es/ayudas/index.html").read_text(encoding="utf-8")
+            self.assertIn("ayudas a la infancia", aids.lower())
+            self.assertIn("convocatorias/933847", aids)
+            self.assertNotIn("grupos politicos", aids.lower())
+            self.assertIn('id="weekend"', leisure)
+            ics = (out / "agenda.ics").read_bytes().decode("utf-8")
+            self.assertTrue(ics.startswith("BEGIN:VCALENDAR\r\n") and ics.endswith("END:VCALENDAR\r\n"))
+            self.assertIn("SUMMARY:Castahalloween a Canaletes", ics)
+            self.assertIn("DTSTART:20261031T163000Z", ics)  # 17:30 en Madrid, ya en horario de invierno (UTC+1)
+            self.assertTrue(all(len(x.encode()) <= 75 for x in ics.split("\r\n")))
+            jobs = (out / "ca/feina/index.html").read_text(encoding="utf-8")
+            self.assertIn("cido.diba.cat/oposicions/", jobs)
+            self.assertIn("feinaactiva.gencat.cat/search/offers/detail/", jobs)
+            self.assertIn("Carburant més barat avui", home)
+            self.assertIn('id="fuel"', (out / "es/equipamientos/index.html").read_text(encoding="utf-8"))
+            sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
+            self.assertIn('href="tel:112"', sos)
+            self.assertIn("Policia Local", sos)
             broken = []
             for page in out.rglob("*.html"):
                 p = Links()

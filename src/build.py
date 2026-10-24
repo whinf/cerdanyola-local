@@ -31,8 +31,13 @@ SOURCES = [
     ("equipments", sources.fetch_equipments, 20, True),
     ("chargers", sources.fetch_chargers, 20, True),
     ("leisure", sources.fetch_leisure, 20, True),
+    ("aids", sources.fetch_aids, 0, True),
+    ("cido", sources.fetch_cido, 0, True),
+    ("offers", sources.fetch_offers, 10, True),  # un XML de 7 MB: dos veces al día basta
+    ("fuel", sources.fetch_fuel, 0, True),
     ("light", sources.fetch_light, 0, False),
 ]
+INCREMENTAL = {"aids"}  # fuentes que reaprovechan lo que ya tenían guardado
 
 
 def read(name):
@@ -56,7 +61,7 @@ def update(now):
             health.setdefault(name, {"last_ok": cached["fetched"]})  # caché reciente sin registro previo
             continue
         try:
-            data = fetch(now)
+            data = fetch(now, (cached or {}).get("data")) if name in INCREMENTAL else fetch(now)
         except Exception as exc:  # una fuente caída no debe tumbar la web
             print(f"aviso: {name}: {exc}")
             health.setdefault(name, {})["last_error"] = str(exc)[:300]

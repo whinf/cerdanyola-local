@@ -5,6 +5,7 @@ guardados en tests/fixtures) y una `fetch_*` que la descarga.
 """
 import html
 import json
+import math
 import os
 import re
 import ssl
@@ -12,6 +13,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -434,6 +436,237 @@ def fetch_leisure(now):
             return places
         errors.append(f"{url}: solo {len(places)} lugares")
     raise FetchError(" | ".join(errors))
+
+
+# ---------- ayudas y subvenciones (BDNS, Ministerio de Hacienda; reutilización libre) ----------
+BDNS = "https://www.infosubvenciones.es/bdnstrans/api/"
+BDNS_QUERIES = (  # qué convocatorias pueden pedir los vecinos de Cerdanyola
+    "organos=2047,4967",  # Ajuntament de Cerdanyola, Mancomunitat Cerdanyola-Ripollet-Montcada
+    "organos=2859,1672,6226,720",  # Consell Comarcal del Vallès Occidental, AMB, Consorci Habitatge AMB, Diputació
+    "tipoAdministracion=A&regiones=49,50&tiposBeneficiario=1,2,3",  # Generalitat: personas, entidades, pymes
+    "tipoAdministracion=C&regiones=1&tiposBeneficiario=1,3",  # Estado, en toda España: personas y pymes
+)
+WHO = {"PERSONAS FÍSICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA": "people",
+       "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA": "business", "GRAN EMPRESA": "business",
+       "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA": "entities"}
+# convocatorias que nadie más puede pedir: grupos municipales, convenios con una entidad concreta, ayuntamientos...
+_AID_SKIP = re.compile(r"grupos? pol[ií]tic|grups? (pol[ií]tic|municipal)|caja fija|caixa fixa|^conveni|^sub\. directa|"
+                       r"convocatoria instrumental|por la que se concede|per la qual es concedeix|cooperaci[oó]n? local|"
+                       r"\b(ajuntaments|ayuntamientos|ens locals|entes locales|municipis|municipios)\b", re.I)
+# organismos de la ciudad de Barcelona y universidades cuyas becas son para su propio alumnado (salvo la UAB)
+_ORGAN_SKIP = re.compile(r"CONSORCI D'EDUCACIÓ DE BARCELONA|CONSORCI DE L'HABITATGE DE BARCELONA|"
+                         r"CONSORCIO DE (LA VIVIENDA|EDUCACIÓN) DE BARCELONA|"
+                         r"^(FUNDACIÓ )?UNIVERSI(?!.*AUT[OÒ]NOMA DE BARCELONA)", re.I)
+_NO_TERM = re.compile(r"^\s*(sin plazo|sense termini)", re.I)
+NUMBER_WORDS = {"un": 1, "una": 1, "uno": 1, "dos": 2, "tres": 3, "cinco": 5, "cinc": 5, "diez": 10, "deu": 10,
+                "quince": 15, "quinze": 15, "veinte": 20, "vint": 20, "treinta": 30, "trenta": 30}
+_SPAN = re.compile(r"\b(\d+|" + "|".join(NUMBER_WORDS) + r")\s*(?:\(\d+\)\s*)?(d[ií]as?|dies|mes(?:os|es)?)\b"
+                   r"\s*(h[aàá]bils|h[áa]biles)?", re.I)
+_DMY = re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b")
+_D_MONTH = re.compile(r"\b(\d{1,2}) d(?:e |['’])(\w+)(?: de (\d{4}))?", re.I)
+MONTHS_ES = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
+             "septiembre", "octubre", "noviembre", "diciembre")
+CHECK_DAYS = 30  # una convocatoria sin plazo legible se muestra este tiempo desde que se registra
+
+
+def end_from_text(text, start):
+    """Fecha de cierre a partir del texto libre del plazo: (fecha, ¿aproximada?) o (None, False)."""
+    m = _DMY.search(text)
+    if m:
+        try:
+            return date(int(m.group(3)), int(m.group(2)), int(m.group(1))), False
+        except ValueError:
+            pass
+    for m in _D_MONTH.finditer(text):
+        word = m.group(2).lower()
+        month = next((i + 1 for i, name in enumerate(MONTHS_ES) if name == word), None) or (
+            month_ca(word) if len(word) > 3 else None)
+        if month:
+            try:
+                return date(int(m.group(3) or start.year), month, int(m.group(1))), False
+            except ValueError:
+                pass
+    m = _SPAN.search(text)
+    if m:
+        n = int(m.group(1)) if m.group(1).isdigit() else NUMBER_WORDS[m.group(1).lower()]
+        days = n * 30 if m.group(2).lower().startswith("mes") else -(-n * 7 // 5) if m.group(3) else n
+        return start + timedelta(days=days), True
+    return None, False
+
+
+def aid_state(a, today):
+    """('open'|'soon'|'approx'|'check', fecha) según el plazo de solicitud, o None si ya no se puede pedir."""
+    start = date.fromisoformat(a["start"]) if a.get("start") else None
+    end = date.fromisoformat(a["end"]) if a.get("end") else None
+    if _NO_TERM.match(a.get("term") or ""):
+        return None
+    approx = False
+    if not end:
+        # sin fecha de inicio, el plazo suele empezar al publicarse el extracto, unos días después de registrarse
+        base = start or date.fromisoformat(a["received"]) + timedelta(days=7)
+        end, approx = end_from_text(a.get("term") or "", base)
+    if start and start > today:
+        return ("soon", start) if not end or end >= start else None
+    if end:
+        return (("approx" if approx else "open"), end) if end >= today else None
+    received = date.fromisoformat(a["received"])
+    return ("check", None) if (today - received).days <= CHECK_DAYS else None
+
+
+def _title(s):
+    s = re.sub(r"\s+", " ", s or "").strip()
+    return s[0] + s[1:].lower() if s.isupper() else s
+
+
+def parse_bdns_call(d, today):
+    org = d.get("organo") or {}
+    who = sorted({WHO[b["descripcion"]] for b in d.get("tiposBeneficiarios") or [] if b.get("descripcion") in WHO})
+    lang = d.get("descripcionLeng") or ""
+    return {"id": d["codigoBDNS"], "title": _title(d.get("descripcion")),
+            "title_ca": _title(lang) if lang and org.get("nivel1") != "ESTADO"
+            and lang.strip().lower() != (d.get("descripcion") or "").strip().lower() else "",
+            "level": org.get("nivel1", ""), "region": org.get("nivel2", ""), "organ": org.get("nivel3", ""),
+            "who": who, "start": d.get("fechaInicioSolicitud") or "", "end": d.get("fechaFinSolicitud") or "",
+            "term": (d.get("textFin") or "").strip()[:160], "received": d.get("fechaRecepcion") or today.isoformat(),
+            "budget": d.get("presupuestoTotal"), "purpose": d.get("descripcionFinalidad") or "",
+            "checked": today.isoformat()}
+
+
+def bdns_relevant(a):
+    return bool(a["who"]) and not _AID_SKIP.search(a["title"]) and not _AID_SKIP.search(a["title_ca"]) \
+        and not _ORGAN_SKIP.search(a["organ"])
+
+
+def fetch_aids(now, previous=None, max_details=300):
+    """Convocatorias con plazo abierto (o a punto de abrir). Guarda las ya vistas para no repetir consultas."""
+    today = now.date()
+    prev = previous or {}
+    calls, closed = dict(prev.get("calls", {})), set(prev.get("closed", []))
+    since, until = (today - timedelta(days=365)).strftime("%d/%m/%Y"), today.strftime("%d/%m/%Y")
+    found = []
+    for q in BDNS_QUERIES:
+        for page in range(15):
+            res = get_json(f"{BDNS}convocatorias/busqueda?vpd=GE&pageSize=200&page={page}&order=fechaRecepcion"
+                           f"&direccion=desc&fechaDesde={since}&fechaHasta={until}&{q}")
+            found += [c["numeroConvocatoria"] for c in res.get("content", [])]
+            if res.get("last", True):
+                break
+    if not found:
+        return None
+    pending = [n for n in dict.fromkeys(found) if n not in closed and n not in calls]
+    stale = [n for n, a in calls.items() if (today - date.fromisoformat(a["checked"])).days >= 7]
+    for n in (pending + stale)[:max_details]:  # lo nuevo primero; lo pendiente sigue en la próxima ejecución
+        time.sleep(0.3)
+        try:
+            a = parse_bdns_call(get_json(f"{BDNS}convocatorias?vpd=GE&numConv={n}"), today)
+        except FetchError as exc:
+            print(f"aviso: ayudas/{n}: {exc}")
+            continue
+        if bdns_relevant(a) and aid_state(a, today):
+            calls[n] = a
+        else:
+            calls.pop(n, None)
+            closed.add(n)
+    for n in [n for n, a in calls.items() if not aid_state(a, today) or not bdns_relevant(a)]:
+        del calls[n]
+        closed.add(n)
+    window = set(found)
+    return {"calls": calls, "closed": sorted(closed & window, key=int)}
+
+
+# ---------- empleo ----------
+# Oposiciones y bolsas de trabajo públicas: CIDO de la Diputació de Barcelona (CC BY 4.0)
+CIDO = ("https://api.diba.cat/dadesobertes/cido/v1/oposicions?filter[idEstat]=3"
+        "&filter[institucio.comarca]=Vall%C3%A8s%20Occidental&page[limit]=500&sort=-maxDataPublicacioDocument")
+
+
+def km_from_town(lat, lon):
+    return math.hypot((lat - LAT) * 111.2, (lon - LON) * 111.2 * math.cos(math.radians(LAT)))
+
+
+def parse_cido(doc, today):
+    out = []
+    for r in doc.get("data", []):
+        a = r.get("attributes", {})
+        end = a.get("dataFinalitzacio") or ""
+        if end and end < today.isoformat():
+            continue
+        lat, lon = a.get("latitud"), a.get("longitud")
+        out.append({"title": _title(a.get("titol")), "org": (a.get("institucioDesenvolupat") or "").strip(),
+                    "end": end, "places": a.get("numPlaces") or 0, "pool": bool(a.get("borsaTreball")),
+                    "kind": a.get("tipusPersonal") or "", "group": (a.get("grupTitulacio") or "").split(" - ")[0],
+                    "km": round(km_from_town(lat, lon), 1) if lat and lon else None,
+                    "url": a.get("urlCido") or a.get("accesTramit") or ""})
+    return sorted(out, key=lambda j: (j["end"] or "9999", j["org"], j["title"]))
+
+
+def fetch_cido(now):
+    return parse_cido(get_json(CIDO), now.date())
+
+
+# Ofertas de empleo del SOC (Feina Activa, Llicència oberta Catalunya): todas en un XML; filtramos por municipio
+FEINA_ACTIVA = "https://feinaactiva.gencat.cat/api/offers/offers-xml"
+NEAR_TOWNS = ("CERDANYOLA DEL VALLÈS", "BELLATERRA", "RIPOLLET", "MONTCADA I REIXAC", "BADIA DEL VALLÈS",
+              "BARBERÀ DEL VALLÈS", "SANT CUGAT DEL VALLÈS")
+OFFER_DAYS = 60  # las ofertas más antiguas suelen estar ya cubiertas aunque sigan publicadas
+
+
+def parse_offers(xml_text, today):
+    out = []
+    for ad in ET.fromstring(xml_text).iter("ad"):
+        get = lambda k: (ad.findtext(k) or "").strip()  # noqa: E731
+        city = get("city").upper()
+        if city not in NEAR_TOWNS or get("status") not in ("", "PUBLISHED"):
+            continue
+        try:
+            day = date(*map(int, reversed(get("date").split("/"))))
+        except (TypeError, ValueError):
+            continue
+        if (today - day).days > OFFER_DAYS:
+            continue
+        lo, hi = get("salaryMin"), get("salaryMax")
+        out.append({"title": _title(get("title")), "company": get("company"), "town": city, "date": day.isoformat(),
+                    "contract": get("contract"), "hours": get("workingHours"),
+                    "salary": [int(float(x)) for x in (lo, hi) if re.fullmatch(r"\d+(\.\d+)?", x)],
+                    "url": get("url")})
+    out.sort(key=lambda j: j["date"], reverse=True)  # las más nuevas primero, Cerdanyola antes que los vecinos
+    return sorted(out, key=lambda j: NEAR_TOWNS.index(j["town"]))
+
+
+def fetch_offers(now):
+    offers = parse_offers(get_text(FEINA_ACTIVA, timeout=120), now.date())
+    return offers or None  # un XML sin ninguna oferta cercana es un fallo de la fuente, no la realidad
+
+
+# ---------- carburantes (Ministerio para la Transición Ecológica; reutilización libre citando la fuente) ----------
+FUEL_API = ("https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/"
+            "EstacionesTerrestres/FiltroMunicipio/{}")
+FUEL_TOWNS = {931: "Cerdanyola del Vallès", 1046: "Ripollet", 994: "Montcada i Reixac", 876: "Badia del Vallès",
+              880: "Barberà del Vallès", 1067: "Sant Cugat del Vallès"}
+FUELS = {"g95": "Precio Gasolina 95 E5", "diesel": "Precio Gasoleo A"}
+
+
+def parse_fuel(doc, town):
+    out = []
+    for e in doc.get("ListaEESSPrecio", []):
+        if e.get("Tipo Venta") != "P":  # «R»: venta restringida a socios
+            continue
+        prices = {k: float(e[v].replace(",", ".")) for k, v in FUELS.items() if e.get(v)}
+        if prices:
+            out.append({"name": (e.get("Rótulo") or "").strip(), "address": i18n.organ_name(e.get("Dirección") or ""),
+                        "hours": e.get("Horario") or "", "town": town, "prices": prices,
+                        "lat": (e.get("Latitud") or "").replace(",", "."),
+                        "lon": (e.get("Longitud (WGS84)") or "").replace(",", ".")})
+    return out
+
+
+def fetch_fuel(now):
+    stations, stamp = [], ""
+    for code, town in FUEL_TOWNS.items():
+        doc = json.loads(get_text(FUEL_API.format(code)))
+        stamp = stamp or doc.get("Fecha", "")
+        stations += parse_fuel(doc, town)
+    return {"updated": stamp, "stations": stations} if stations else None
 
 
 # ---------- horas baratas de la luz (web hermana llum-hores) ----------
