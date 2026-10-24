@@ -134,18 +134,6 @@
     "town": "Ripollet"
    },
    {
-    "address": "Calle Tarragona, 15-19 Esq.Calle Balmes, 15",
-    "hours": "L-D: 06:00-22:00",
-    "lat": "41.494972",
-    "lon": "2.155556",
-    "name": "GALP",
-    "prices": {
-     "diesel": 1.909,
-     "g95": 1.769
-    },
-    "town": "Ripollet"
-   },
-   {
     "address": "Carretera N-150 Barcelona-Sabadell Km. 286",
     "hours": "L-D: 06:00-22:00",
     "lat": "41.501389",
@@ -166,6 +154,18 @@
     "prices": {
      "diesel": 1.689,
      "g95": 1.497
+    },
+    "town": "Ripollet"
+   },
+   {
+    "address": "Calle Tarragona, 15-19 Esq.Calle Balmes, 15",
+    "hours": "L-D: 06:00-22:00",
+    "lat": "41.494972",
+    "lon": "2.155556",
+    "name": "GALP",
+    "prices": {
+     "diesel": 1.909,
+     "g95": 1.769
     },
     "town": "Ripollet"
    },
@@ -565,7 +565,7 @@
     "town": "Sant Cugat del Vallès"
    }
   ],
-  "updated": "24/10/2026 20:58:00"
+  "updated": "24/10/2026 23:38:57"
  },
- "fetched": "2026-10-24T20:57:26+02:00"
+ "fetched": "2026-10-24T23:38:23+02:00"
 }
