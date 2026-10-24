@@ -263,7 +263,10 @@ def parse_uab(page, today):
 
 
 def fetch_uab(today):
-    return [e for cat in UAB_CATS for e in parse_uab(get_text(UAB_AGENDA.format(cat)), today)]
+    pages = [get_text(UAB_AGENDA.format(cat)) for cat in UAB_CATS]
+    if not any('class="capcalera-dia"' in p for p in pages):  # «En manteniment» también responde 200
+        raise FetchError("agenda UAB sin días: ¿web en mantenimiento?")
+    return [e for p in pages for e in parse_uab(p, today)]
 
 
 def fetch_ajuntament(today):
@@ -281,20 +284,17 @@ def fetch_agenda(now, previous=None):
     today = now.date()
     rows = socrata("rhpv-yr4f", where=f"municipi='{AGENDA_MUNICIPI}'", order="data_inici DESC", limit=200)
     gencat, permanent = parse_agenda_gencat(rows, today)
-    try:
-        ajuntament = fetch_ajuntament(today)
-    except FetchError as exc:  # si la web municipal cae, seguimos con sus actos ya guardados
-        print(f"aviso: agenda/ajuntament: {exc}")
-        ajuntament = [e for e in (previous or {}).get("events", [])
-                      if e["source"] == "ajuntament" and e["end"] >= today.isoformat()]
     extra = []
-    jobs = [("uab", lambda: fetch_uab(today))] + [(s, lambda s=s: fetch_tribe(s, today)) for s in TRIBE_FEEDS]
+    jobs = [("ajuntament", lambda: fetch_ajuntament(today)), ("uab", lambda: fetch_uab(today))] + [
+        (s, lambda s=s: fetch_tribe(s, today)) for s in TRIBE_FEEDS]
     for name, job in jobs:
         try:
             extra += job()
-        except Exception as exc:  # fuentes secundarias: si una falla, la agenda sigue con las demás
+        except Exception as exc:  # si una web cae, la agenda sigue con las demás y con sus actos ya guardados
             print(f"aviso: agenda/{name}: {exc}")
-    return {"events": merge_events(gencat, ajuntament, extra), "permanent": permanent}
+            extra += [e for e in (previous or {}).get("events", [])
+                      if e["source"] == name and e["end"] >= today.isoformat()]
+    return {"events": merge_events(gencat, extra), "permanent": permanent}
 
 
 # ---------- calidad del aire (XVPCA, Generalitat) ----------

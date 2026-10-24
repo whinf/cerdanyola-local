@@ -53,12 +53,16 @@ class TestSources(unittest.TestCase):
     def test_agenda_survives_town_site_down(self):
         city = S.parse_agenda_ajuntament(fixture("ajunt_agenda.html"), NOW.date())
         down = mock.Mock(side_effect=S.FetchError("cerdanyola.cat: 404"))
+        uab = S.parse_uab(fixture("uab_agenda.html"), NOW.date())
+        maintenance = "<html><h1>En manteniment</h1></html>"
         with mock.patch.object(S, "socrata", return_value=fixture("agenda.json")), \
-                mock.patch.object(S, "fetch_ajuntament", down), \
-                mock.patch.object(S, "fetch_uab", return_value=[]), mock.patch.object(S, "fetch_tribe", return_value=[]):
-            ag = S.fetch_agenda(NOW, {"events": city})
-        self.assertIn("Castahalloween a Canaletes", [e["title"] for e in ag["events"]])
-        self.assertIn("Simposi sobre Montserrat Torrent", [e["title"] for e in ag["events"]])
+                mock.patch.object(S, "fetch_ajuntament", down), mock.patch.object(S, "get_text", return_value=maintenance), \
+                mock.patch.object(S, "fetch_tribe", return_value=[]):
+            ag = S.fetch_agenda(NOW, {"events": city + uab})
+        titles = [e["title"] for e in ag["events"]]
+        self.assertIn("Castahalloween a Canaletes", titles)  # del Ajuntament, guardado
+        self.assertIn(uab[1]["title"], titles)  # de la UAB, guardado: su web responde 200 con un aviso
+        self.assertIn("Simposi sobre Montserrat Torrent", titles)  # de la Generalitat, nuevo
 
     def test_uab_and_entities(self):
         uab = S.parse_uab(fixture("uab_agenda.html"), NOW.date())

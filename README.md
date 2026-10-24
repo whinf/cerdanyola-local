@@ -26,7 +26,7 @@ Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub
 | Guía de ocio | OpenStreetMap vía Overpass API (una consulta al día) | ODbL: `data/leisure.json` y `tests/fixtures/osm.json` son © colaboradores de OpenStreetMap, bajo ODbL |
 | Ayudas | Base de Datos Nacional de Subvenciones (`infosubvenciones.es/bdnstrans/api`) | Reutilización libre (Ministerio de Hacienda); `data/aids.json` guarda las convocatorias abiertas y las ya descartadas para no repetir consultas |
 
-`certs/sectigo-ov-r36.pem` y `certs/letsencrypt-ye1.pem` son los certificados intermedios que `cerdanyola.cat` no envía (en octubre de 2026 pasó de Sectigo a Let's Encrypt). La verificación TLS sigue siendo completa. Si la web municipal cae, la agenda sigue con las demás fuentes y conserva los actos del Ajuntament ya guardados.
+`certs/sectigo-ov-r36.pem` y `certs/letsencrypt-ye1.pem` son los certificados intermedios que `cerdanyola.cat` no envía (en octubre de 2026 pasó de Sectigo a Let's Encrypt). La verificación TLS sigue siendo completa. Si cae una de las webs de la agenda (Ajuntament, UAB o una entidad), la agenda sigue con las demás y conserva los actos de esa web que ya tenía guardados.
 
 ## Comandos locales (Python 3.12 o superior)
 
