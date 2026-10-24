@@ -136,6 +136,41 @@ HOURS = {
     "en": {"PH": "holidays", "off": "closed"},
 }
 
+CONTRACT_PHASES = {  # fase de la Plataforma de contractació pública -> ca, es, en
+    "Alerta futura": ("Previst", "Previsto", "Planned"),
+    "Consulta preliminar del mercat": ("Consulta al mercat", "Consulta al mercado", "Market consultation"),
+    "Anunci previ": ("Anunci previ", "Anuncio previo", "Prior notice"),
+    "Anunci de licitació": ("En licitació", "En licitación", "Open for bids"),
+    "closed_bids": ("Ofertes tancades", "Ofertas cerradas", "Bidding closed"),
+    "Expedient en avaluació": ("En avaluació", "En evaluación", "Under evaluation"),
+    "Adjudicació": ("Adjudicat", "Adjudicado", "Awarded"),
+    "Formalització": ("Contracte signat", "Contrato firmado", "Contract signed"),
+    "Execució": ("En execució", "En ejecución", "Under way"),
+    "Anul·lació": ("Anul·lat", "Anulado", "Cancelled"),
+}
+
+CONTRACT_TYPES = {  # tipo de contrato (viene en catalán) -> es, en
+    "Obres": ("Obras", "Works"), "Serveis": ("Servicios", "Services"), "Subministraments": ("Suministros", "Supplies"),
+    "Concessió de serveis": ("Concesión de servicios", "Service concession"),
+    "Concessió d'obres": ("Concesión de obras", "Works concession"),
+    "Administratiu especial": ("Administrativo especial", "Special administrative contract"),
+    "Privat d'Administració Pública": ("Privado de la Administración", "Private contract"),
+    "Contracte de serveis especials (annex IV)": ("Servicios especiales", "Special services"),
+    "Concessió de serveis especials (annex IV)": ("Concesión de servicios especiales", "Special service concession"),
+    "Altra legislació sectorial": ("Otra legislación sectorial", "Other"),
+    "Col·laboració Públic-Privat": ("Colaboración público-privada", "Public-private partnership"),
+}
+
+# actos del BORME, en el orden en que salen en la página: ca, es, en
+COMPANY_KINDS = {
+    "capital": ("Ampliacions de capital", "Ampliaciones de capital", "Capital increases"),
+    "new": ("Empreses noves", "Empresas nuevas", "New companies"),
+    "moved_in": ("Arriben a Cerdanyola", "Llegan a Cerdanyola", "Moved to Cerdanyola"),
+    "moved_out": ("Se'n van de Cerdanyola", "Se van de Cerdanyola", "Left Cerdanyola"),
+    "capital_down": ("Reduccions de capital", "Reducciones de capital", "Capital reductions"),
+    "closed": ("Dissolucions i tancaments", "Disoluciones y cierres", "Wound up or closed"),
+}
+
 STRINGS = {
     "ca": {
         "lang_name": "Català", "locale": "ca_ES",
@@ -237,7 +272,25 @@ STRINGS = {
         "weekend_title": "Aquest cap de setmana", "weekend_empty": "Encara no hi ha activitats anunciades per al cap de setmana.",
         "kids": "Per a infants",
         "ics_link": "📅 Vols l'agenda al mòbil? Afegeix <a href=\"{url}\">aquest calendari</a> al teu (a Google Calendar: «Altres calendaris» → «Des de l'URL») i s'actualitzarà sol.",
-        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments i aire), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap i Overture Maps (guia d'oci), BDNS (ajudes), SOC i Diputació de Barcelona (feina), Ministeri per a la Transició Ecològica (carburants) i Red Eléctrica (llum). Actualitzat: {t}.",
+        "slug_invest": "inversions", "invest_title": "Inversions i empreses a Cerdanyola",
+        "invest_desc": "Grans inversions públiques a Cerdanyola del Vallès i Bellaterra, licitacions obertes per a empreses i autònoms, contractes anunciats, i empreses noves, trasllats i ampliacions de capital del Registre Mercantil.",
+        "invest_big": "🏗️ Grans inversions públiques",
+        "invest_big_text": "Contractes públics d'1 milió d'euros o més a Cerdanyola i al campus de la UAB amb novetats l'últim any, del més gran al més petit.",
+        "invest_open": "📣 Licitacions obertes",
+        "invest_open_text": "Contractes públics a Cerdanyola que ara accepten ofertes d'empreses i autònoms, per data de tancament.",
+        "invest_soon": "🔭 Properament",
+        "invest_soon_text": "Contractes que l'administració ha anunciat que traurà a licitació.",
+        "invest_companies": "🏢 Empreses: altes, trasllats i capital",
+        "invest_companies_text": "Els darrers {d} dies, al Registre Mercantil: {n} empreses noves amb domicili a Cerdanyola o Bellaterra (capital inicial total: {c}), {m} trasllats a Cerdanyola i {u} ampliacions de capital.",
+        "invest_empty": "Ara mateix no n'hi ha cap.",
+        "invest_until": "ofertes fins al {d}", "invest_lots": "{n} lots", "invest_winners": "Adjudicat a: {w}",
+        "invest_capital": "Capital: {c}", "invest_capital_change": "{c} (capital resultant: {t})",
+        "invest_feed": "🔔 Vols que t'avisin? Afegeix <a href=\"{url}\">aquest canal</a> a un lector de notícies (Feedly, Inoreader, Thunderbird...) i rebràs cada licitació, gran inversió o moviment d'empreses nou.",
+        "invest_note": "Contractes: <a href=\"https://contractaciopublica.cat/\">Plataforma de serveis de contractació pública</a> (dades obertes de la Generalitat). Hi publiquen l'Ajuntament, la Generalitat, l'AMB, la UAB i els centres de recerca del campus; les inversions de l'Estat (sincrotró ALBA, Adif...) no hi surten. Imports sense IVA: el pressupost de licitació o, si ja s'ha adjudicat, l'import adjudicat. Empreses: <a href=\"https://www.boe.es/diario_borme/\">BORME</a> (Agència Estatal Butlletí Oficial de l'Estat), llegit fins al {t}; només hi surten empreses, sense dades de persones. Els trasllats, els canvis de capital i els tancaments només es detecten d'empreses que s'han constituït o traslladat a Cerdanyola des del {since}. Aquesta pàgina és informativa: no és cap recomanació ni assessorament d'inversió.",
+        "invest_home": "🏗️ Inversions i empreses",
+        "invest_home_text": "{o} licitacions públiques obertes, {b} grans inversions (d'1 milió d'euros o més) amb novetats l'últim any i {n} empreses noves o arribades a Cerdanyola els darrers {d} dies. Les darreres grans inversions:",
+        "invest_all": "Veure inversions, licitacions i empreses",
+        "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments, aire i contractes públics), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap i Overture Maps (guia d'oci), BDNS (ajudes), SOC i Diputació de Barcelona (feina), BORME (empreses), Ministeri per a la Transició Ecològica (carburants) i Red Eléctrica (llum). Actualitzat: {t}.",
         "about": "Sobre el web", "legal": "Avís legal", "privacy": "Privacitat",
         "skip": "Salta al contingut", "language": "Idioma", "choose": "Tria l'idioma",
         "notfound_title": "Pàgina no trobada", "notfound_text": "Aquesta pàgina no existeix. Torna a l'inici.",
@@ -253,6 +306,7 @@ STRINGS = {
 <li>Guia d'oci: © col·laboradors d'<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, llicència ODbL; més locals nocturns d'<a href="https://overturemaps.org">Overture Maps Foundation</a> (dades de Meta, BrightQuery i altres proveïdors), llicència <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a>.</li>
 <li>Ajudes i subvencions: Base de Dades Nacional de Subvencions (Ministeri d'Hisenda), de reutilització lliure.</li>
 <li>Feina: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) i CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
+<li>Inversions i licitacions: Plataforma de serveis de contractació pública (dades obertes de la Generalitat). Empreses: BORME, de l'Agència Estatal Butlletí Oficial de l'Estat, de reutilització lliure citant-ne la font.</li>
 <li>Preus dels carburants: Ministeri per a la Transició Ecològica i el Repte Demogràfic.</li>
 <li>Preu de la llum: Red Eléctrica, a través del web germà <a href="{light}">{light}</a>.</li>
 </ul>
@@ -369,7 +423,25 @@ STRINGS = {
         "weekend_title": "Este fin de semana", "weekend_empty": "Todavía no hay actividades anunciadas para el fin de semana.",
         "kids": "Para niños",
         "ics_link": "📅 ¿Quieres la agenda en el móvil? Añade <a href=\"{url}\">este calendario</a> al tuyo (en Google Calendar: «Otros calendarios» → «Desde URL») y se actualizará solo.",
-        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos y aire), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap y Overture Maps (guía de ocio), BDNS (ayudas), SOC y Diputació de Barcelona (empleo), Ministerio para la Transición Ecológica (carburantes) y Red Eléctrica (luz). Actualizado: {t}.",
+        "slug_invest": "inversiones", "invest_title": "Inversiones y empresas en Cerdanyola",
+        "invest_desc": "Grandes inversiones públicas en Cerdanyola del Vallès y Bellaterra, licitaciones abiertas para empresas y autónomos, contratos anunciados, y empresas nuevas, traslados y ampliaciones de capital del Registro Mercantil.",
+        "invest_big": "🏗️ Grandes inversiones públicas",
+        "invest_big_text": "Contratos públicos de 1 millón de euros o más en Cerdanyola y el campus de la UAB con novedades en el último año, de mayor a menor.",
+        "invest_open": "📣 Licitaciones abiertas",
+        "invest_open_text": "Contratos públicos en Cerdanyola que ahora aceptan ofertas de empresas y autónomos, por fecha de cierre.",
+        "invest_soon": "🔭 Próximamente",
+        "invest_soon_text": "Contratos que la administración ha anunciado que sacará a licitación.",
+        "invest_companies": "🏢 Empresas: altas, traslados y capital",
+        "invest_companies_text": "En los últimos {d} días, en el Registro Mercantil: {n} empresas nuevas con domicilio en Cerdanyola o Bellaterra (capital inicial total: {c}), {m} traslados a Cerdanyola y {u} ampliaciones de capital.",
+        "invest_empty": "Ahora mismo no hay ninguno.",
+        "invest_until": "ofertas hasta el {d}", "invest_lots": "{n} lotes", "invest_winners": "Adjudicado a: {w}",
+        "invest_capital": "Capital: {c}", "invest_capital_change": "{c} (capital resultante: {t})",
+        "invest_feed": "🔔 ¿Quieres que te avisen? Añade <a href=\"{url}\">este canal</a> a un lector de noticias (Feedly, Inoreader, Thunderbird...) y recibirás cada nueva licitación, gran inversión o movimiento de empresas.",
+        "invest_note": "Contratos: <a href=\"https://contractaciopublica.cat/\">Plataforma de serveis de contractació pública</a> (datos abiertos de la Generalitat). Publican en ella el Ajuntament, la Generalitat, el AMB, la UAB y los centros de investigación del campus; las inversiones del Estado (sincrotrón ALBA, Adif...) no aparecen. Importes sin IVA: el presupuesto de licitación o, si ya se ha adjudicado, el importe adjudicado. Empresas: <a href=\"https://www.boe.es/diario_borme/\">BORME</a> (Agencia Estatal Boletín Oficial del Estado), leído hasta el {t}; solo aparecen empresas, sin datos de personas. Los traslados, los cambios de capital y los cierres solo se detectan en empresas que se han constituido o trasladado a Cerdanyola desde el {since}. Esta página es informativa: no es ninguna recomendación ni asesoramiento de inversión.",
+        "invest_home": "🏗️ Inversiones y empresas",
+        "invest_home_text": "{o} licitaciones públicas abiertas, {b} grandes inversiones (de 1 millón de euros o más) con novedades en el último año y {n} empresas nuevas o llegadas a Cerdanyola en los últimos {d} días. Las últimas grandes inversiones:",
+        "invest_all": "Ver inversiones, licitaciones y empresas",
+        "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos, aire y contratos públicos), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap y Overture Maps (guía de ocio), BDNS (ayudas), SOC y Diputació de Barcelona (empleo), BORME (empresas), Ministerio para la Transición Ecológica (carburantes) y Red Eléctrica (luz). Actualizado: {t}.",
         "about": "Sobre la web", "legal": "Aviso legal", "privacy": "Privacidad",
         "skip": "Saltar al contenido", "language": "Idioma", "choose": "Elige idioma",
         "notfound_title": "Página no encontrada", "notfound_text": "Esta página no existe. Vuelve al inicio.",
@@ -385,6 +457,7 @@ STRINGS = {
 <li>Guía de ocio: © colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, licencia ODbL; más locales nocturnos de <a href="https://overturemaps.org">Overture Maps Foundation</a> (datos de Meta, BrightQuery y otros proveedores), licencia <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a>.</li>
 <li>Ayudas y subvenciones: Base de Datos Nacional de Subvenciones (Ministerio de Hacienda), de reutilización libre.</li>
 <li>Empleo: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) y CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
+<li>Inversiones y licitaciones: Plataforma de serveis de contractació pública (datos abiertos de la Generalitat). Empresas: BORME, de la Agencia Estatal Boletín Oficial del Estado, de reutilización libre citando la fuente.</li>
 <li>Precios de los carburantes: Ministerio para la Transición Ecológica y el Reto Demográfico.</li>
 <li>Precio de la luz: Red Eléctrica, a través de la web hermana <a href="{light}">{light}</a>.</li>
 </ul>
@@ -501,7 +574,25 @@ STRINGS = {
         "weekend_title": "This weekend", "weekend_empty": "No events have been announced for the weekend yet.",
         "kids": "For children",
         "ics_link": "📅 Want the events on your phone? Add <a href=\"{url}\">this calendar</a> to yours (in Google Calendar: “Other calendars” → “From URL”) and it will update itself.",
-        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities and air), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap and Overture Maps (leisure guide), BDNS (grants), SOC and Diputació de Barcelona (jobs), Ministry for the Ecological Transition (fuel) and Red Eléctrica (electricity). Updated: {t}.",
+        "slug_invest": "investment", "invest_title": "Investment and business in Cerdanyola",
+        "invest_desc": "Major public investment in Cerdanyola del Vallès and Bellaterra, open public tenders for businesses and the self-employed, announced contracts, and new companies, relocations and capital increases from the Companies Register.",
+        "invest_big": "🏗️ Major public investment",
+        "invest_big_text": "Public contracts worth €1 million or more in Cerdanyola and on the UAB campus with news in the last year, largest first.",
+        "invest_open": "📣 Open tenders",
+        "invest_open_text": "Public contracts in Cerdanyola now accepting bids from businesses and the self-employed, by closing date.",
+        "invest_soon": "🔭 Coming up",
+        "invest_soon_text": "Contracts that public bodies have announced they will put out to tender.",
+        "invest_companies": "🏢 Companies: new, relocations and capital",
+        "invest_companies_text": "In the last {d} days, in the Companies Register: {n} new companies based in Cerdanyola or Bellaterra (total initial capital: {c}), {m} relocations to Cerdanyola and {u} capital increases.",
+        "invest_empty": "There are none right now.",
+        "invest_until": "bids until {d}", "invest_lots": "{n} lots", "invest_winners": "Awarded to: {w}",
+        "invest_capital": "Capital: {c}", "invest_capital_change": "{c} (new total: {t})",
+        "invest_feed": "🔔 Want alerts? Add <a href=\"{url}\">this feed</a> to a news reader (Feedly, Inoreader, Thunderbird...) and you'll get every new tender, major investment or company move.",
+        "invest_note": "Contracts: the Catalan <a href=\"https://contractaciopublica.cat/\">public procurement platform</a> (Generalitat open data), where the town council, the Catalan government, the metropolitan area (AMB), the UAB and the campus research centres publish; Spanish state investment (ALBA synchrotron, Adif...) is not included. Titles are in Catalan or Spanish, as published. Amounts exclude VAT: the tender budget or, once awarded, the awarded amount. Companies: the <a href=\"https://www.boe.es/diario_borme/\">BORME</a> (Spain's official Companies Register gazette, Agencia Estatal Boletín Oficial del Estado), read up to {t}; only companies are shown, never personal data. Relocations, capital changes and closures are only detected for companies set up in or moved to Cerdanyola since {since}. This page is for information only: it is not investment advice or a recommendation.",
+        "invest_home": "🏗️ Investment and business",
+        "invest_home_text": "{o} open public tenders, {b} major investments (€1 million or more) with news in the last year and {n} new or newly arrived companies in Cerdanyola in the last {d} days. Latest major investments:",
+        "invest_all": "See investment, tenders and companies",
+        "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities, air and public contracts), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap and Overture Maps (leisure guide), BDNS (grants), SOC and Diputació de Barcelona (jobs), BORME (companies), Ministry for the Ecological Transition (fuel) and Red Eléctrica (electricity). Updated: {t}.",
         "about": "About", "legal": "Legal notice", "privacy": "Privacy",
         "skip": "Skip to content", "language": "Language", "choose": "Choose your language",
         "notfound_title": "Page not found", "notfound_text": "This page does not exist. Go back to the home page.",
@@ -517,6 +608,7 @@ STRINGS = {
 <li>Leisure guide: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL licence; more night venues from the <a href="https://overturemaps.org">Overture Maps Foundation</a> (data from Meta, BrightQuery and other providers), <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a> licence.</li>
 <li>Grants: Spain's National Grants Database (BDNS, Ministry of Finance), free to reuse.</li>
 <li>Jobs: Catalan public employment service (Feina Activa, Catalan open licence) and the Diputació de Barcelona's CIDO (CC BY 4.0).</li>
+<li>Investment and tenders: the Catalan public procurement platform (Generalitat open data). Companies: the BORME, published by the Agencia Estatal Boletín Oficial del Estado, free to reuse with attribution.</li>
 <li>Fuel prices: Spanish Ministry for the Ecological Transition.</li>
 <li>Electricity price: Red Eléctrica, via the sister site <a href="{light}">{light}</a>.</li>
 </ul>
@@ -610,6 +702,29 @@ def hours(lang, value):
 def fmt_money(lang, x):
     s = f"{round(x):,}"
     return f"€{s}" if lang == "en" else s.replace(",", ".") + " €"
+
+
+def fmt_big(lang, x):
+    """2.750.000 -> «2,8 M€» («€2.8m» en inglés); por debajo del millón, el importe entero."""
+    if x < 1_000_000:
+        return fmt_money(lang, x)
+    n = fmt_num(lang, x / 1_000_000, 1)
+    return f"€{n}m" if lang == "en" else f"{n} M€"
+
+
+def phase(lang, key):
+    return _pick(lang, CONTRACT_PHASES[key]) if key in CONTRACT_PHASES else key
+
+
+def contract_type(lang, kind):
+    if lang == "ca" or kind not in CONTRACT_TYPES:
+        return kind
+    es, en = CONTRACT_TYPES[kind]
+    return es if lang == "es" else en
+
+
+def company_kind(lang, kind):
+    return _pick(lang, COMPANY_KINDS[kind])
 
 
 def fmt_deadline(lang, d, today):

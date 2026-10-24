@@ -36,9 +36,11 @@ SOURCES = [
     ("cido", sources.fetch_cido, 0, True),
     ("offers", sources.fetch_offers, 10, True),  # un XML de 7 MB: dos veces al día basta
     ("fuel", sources.fetch_fuel, 0, True),
+    ("contracts", sources.fetch_contracts, 10, True),  # la Generalitat actualiza los contratos una vez al día
+    ("companies", sources.fetch_companies, 0, True),
     ("light", sources.fetch_light, 0, False),
 ]
-INCREMENTAL = {"aids", "agenda"}  # fuentes que reaprovechan lo que ya tenían guardado
+INCREMENTAL = {"aids", "agenda", "companies"}  # fuentes que reaprovechan lo que ya tenían guardado
 
 
 def read(name):

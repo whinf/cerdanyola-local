@@ -968,6 +968,194 @@ def fetch_fuel(now):
     return {"updated": stamp, "stations": stations} if stations else None
 
 
+# ---------- inversiones y licitaciones públicas (Plataforma de serveis de contractació pública, Llicència oberta Catalunya) ----------
+# Publican aquí el Ajuntament, la Generalitat, el AMB, la UAB y los centros de investigación del campus;
+# las obras del Estado (sincrotrón ALBA, Adif...) van a la plataforma estatal y no salen.
+CONTRACTS_PLACE = ("(starts_with(codi_ine10,'08266') OR nom_organ like '%Cerdanyola del Vall%' OR nom_organ like '%Bellaterra%'"
+                   " OR lloc_execucio like '%Cerdanyola del Vall%' OR lloc_execucio like '%Bellaterra%')")
+CONTRACT_DATES = ("data_publicacio_futura", "data_publicacio_consulta", "data_publicacio_previ", "data_publicacio_anunci",
+                  "data_publicacio_avaluacio", "data_publicacio_adjudicacio", "data_publicacio_formalitzacio",
+                  "data_publicacio_anul")
+CONTRACT_DAYS = 400
+AWARDED = ("Adjudicació", "Formalització", "Execució")
+_CONTRACT_CODE = re.compile(r"^\s*(?:(?:contr|consu)\s*[-‐]?\s*)?\d+/\d{4}\s*[-–:]*\s*", re.I)
+_CIF = re.compile(r"^[ABCDEFGHJNPQRSUVW]\d{7}[0-9A-J]$")
+# las personas físicas llegan con el NIF tapado; también algunas empresas, que se reconocen por la forma jurídica
+_LEGAL_FORM = re.compile(r"\b(S\.?L\.?U?|S\.?A\.?U?|SCCL|SLP|SLL|S\.?R\.?L|UTE|GmbH|AG|KG|Inc|LLC|Ltd|Limited|B\.?V|"
+                         r"Co|Corp|Fundaci[oó]n?|Associaci[oó]|Asociaci[oó]n|Cooperativa)\b", re.I)
+
+
+def _float(x):
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return None
+
+
+def companies_only(ids, names):
+    """Adjudicatarios que son empresas o entidades: los nombres de particulares no se publican en la web."""
+    out = []
+    for ident, name in zip((ids or "").split("||"), (names or "").split("||")):
+        name = re.sub(r"\s+", " ", name).strip()
+        if name and (_CIF.match(ident.strip()) or _LEGAL_FORM.search(name)):
+            out.append(name)
+    return out
+
+
+def parse_contracts(rows):
+    """Un elemento por expediente (los lotes van juntos), con la fase de su publicación más reciente."""
+    groups = {}
+    for r in rows:
+        groups.setdefault((r.get("codi_organ") or r.get("nom_organ"), r.get("codi_expedient") or r.get("id_intern")), []).append(r)
+    out = []
+    for (organ, exp), rs in groups.items():
+        live = [r for r in rs if r.get("fase_publicacio") != "Anul·lació"] or rs
+        last = max(live, key=lambda r: max(r.get(k) or "" for k in CONTRACT_DATES))
+        dates = sorted({(r.get(k) or "")[:10] for r in live for k in CONTRACT_DATES} - {""})
+        lots = {r.get("numero_lot") or "": r for r in rs}
+        # suma de los lotes: de un expediente de toda Cataluña solo cuentan los lotes que se hacen aquí
+        budget = (sum(_float(r.get("pressupost_licitacio_sense")) or 0 for r in lots.values())
+                  or _float(last.get("pressupost_licitacio_sense_1")) or _float(last.get("valor_estimat_contracte")) or 0)
+        awarded = sum(_float(r.get("import_adjudicacio_sense")) or 0 for r in live if r.get("fase_publicacio") in AWARDED)
+        phase = last.get("fase_publicacio") or ""
+        title = _title(_CONTRACT_CODE.sub("", last.get("denominacio") or last.get("objecte_contracte") or ""))
+        if not title or not dates:
+            continue
+        out.append({"id": f"{organ}/{exp}", "title": title[:240], "organ": (last.get("nom_organ") or "").strip(),
+                    "type": last.get("tipus_contracte") or "", "phase": phase,
+                    "amount": round(awarded if phase in AWARDED and awarded else budget, 2),
+                    "deadline": max((r.get("termini_presentacio_ofertes") or "")[:16] for r in live),
+                    "date": dates[-1], "url": (last.get("enllac_publicacio") or {}).get("url", ""),
+                    "lots": len([k for k in lots if k]),
+                    "winners": list(dict.fromkeys(w for r in live for w in companies_only(
+                        r.get("identificacio_adjudicatari"), r.get("denominacio_adjudicatari"))))})
+    return sorted(out, key=lambda c: (c["date"], c["id"]), reverse=True)
+
+
+def fetch_contracts(now):
+    since = (now.date() - timedelta(days=CONTRACT_DAYS)).isoformat()
+    recent = " OR ".join(f"{k} >= '{since}'" for k in CONTRACT_DATES)
+    rows = socrata("ybgg-dgi6", limit=5000, where=(
+        f"{CONTRACTS_PLACE} AND ({recent} OR termini_presentacio_ofertes >= '{now.date().isoformat()}')"
+        " AND fase_publicacio != 'Publicació agregada de contractes'"))  # los contratos menores, por trimestres
+    return parse_contracts(rows) or None
+
+
+# ---------- empresas: altas, traslados y capital (BORME, Agencia Estatal BOE; reutilización libre citando la fuente) ----------
+# Sección A del BORME de Barcelona, un día cada vez. Solo se guardan empresas: ni administradores ni direcciones.
+BORME = "https://www.boe.es/datosabiertos/api/borme/sumario/{}"
+BORME_PROVINCE = "BARCELONA"
+BORME_DAYS = 365  # la primera vez se lee un año: así se conocen las empresas que ya tienen domicilio aquí
+BORME_KEEP = 120  # días de actos guardados
+BORME_MAX_DAYS = 40  # días leídos por ejecución: el año inicial se completa en unas pocas
+_BORME_ENTRY = re.compile(r'<h5 class="articulo">\s*(\d+)\s*-\s*(.*?)</h5>\s*<p class="parrafo">(.*?)</p>', re.S)
+_HERE = re.compile(r"^(CERDANYOLA|BELLATERRA)\b")  # «SANT JULIA DE CERDANYOLA» es otro municipio
+_TOWN = re.compile(r"\(([^()]+)\)\.(?:\s|$)")  # el municipio cierra el domicilio: «CL MAJOR 5 (CERDANYOLA DEL VALLES).»
+_SHEET = re.compile(r"\bH (B \d+)")  # hoja registral: identifica a la empresa en el Registro de Barcelona
+
+
+def _euros(text, label, start=0):
+    m = re.compile(re.escape(label) + r"\s*([\d.]+,\d+) Euros").search(text, start)
+    return float(m.group(1).replace(".", "").replace(",", ".")) if m else None
+
+
+def _town_after(text, marker):
+    i = text.find(marker)
+    m = _TOWN.search(text, i) if i >= 0 else None
+    return m.group(1).strip().upper() if m else ""
+
+
+def _activity(text):
+    m = re.search(r"Objeto social:\s*(.*?)\s*Domicilio:", text, re.S)
+    if not m:
+        return ""
+    main = re.search(r"ACTIVIDAD PRINCIPAL:\s*\d+\s*/\s*([^.]+)", m.group(1))
+    s = (main.group(1) if main else m.group(1)).strip().rstrip(".")
+    return _title(s if len(s) <= 120 else s[:117].rsplit(" ", 1)[0] + "…")
+
+
+def parse_borme(page, day, url, known):
+    """Actos de empresas de Cerdanyola en una página del BORME. Actualiza `known` (hoja registral -> nombre):
+    los traslados, ampliaciones y cierres solo se reconocen de empresas que ya se sabe que están aquí."""
+    out = []
+    for num, name, text in _BORME_ENTRY.findall(page):
+        name = re.sub(r"(?<!\.[A-Z])\.$", "", html.unescape(name).strip())  # «X SL.» -> «X SL», pero «X S.L.» queda
+        text = html.unescape(re.sub(r"<[^>]+>", "", text))
+        sheet = _SHEET.search(text)
+        if not sheet:
+            continue
+        sheet = sheet.group(1)
+        base = {"date": day, "name": name, "url": url}
+
+        def add(kind, **kw):
+            out.append({"id": f"{day}-{num}-{kind}", "kind": kind, **base, **kw})
+        if "Constitución." in text and _HERE.match(_town_after(text, "Domicilio:")):
+            add("new", capital=_euros(text, "Capital:"), activity=_activity(text))
+            known[sheet] = name
+        moved = _town_after(text, "Cambio de domicilio social.")
+        if moved and _HERE.match(moved) and sheet not in known:
+            add("moved_in")
+            known[sheet] = name
+        elif moved and not _HERE.match(moved) and sheet in known:
+            add("moved_out", town=moved)
+            del known[sheet]
+        if sheet not in known:
+            continue
+        i = text.find("Ampliación de capital.")
+        if i >= 0:
+            add("capital", capital=_euros(text, "Capital:", i), total=_euros(text, "Resultante Suscrito:", i))
+        i = text.find("Reducción de capital.")
+        if i >= 0:
+            add("capital_down", capital=_euros(text, "Importe reducción:", i), total=_euros(text, "Resultante Suscrito:", i))
+        if "Extinción." in text or "Disolución." in text:
+            add("closed")
+            if "Extinción." in text:
+                del known[sheet]
+    return out
+
+
+def _as_list(x):
+    return x if isinstance(x, list) else [x] if x else []
+
+
+def borme_pages(day):
+    """[(url, html)] de la sección A de Barcelona de un día; None si ese día no hubo BORME."""
+    try:
+        doc = json.loads(get_bytes(BORME.format(day.strftime("%Y%m%d")), headers={"Accept": "application/json"}))
+    except FetchError as exc:
+        if "404" in str(exc):  # fines de semana y festivos
+            return None
+        raise
+    urls = [it["url_html"] for d in _as_list(doc["data"]["sumario"]["diario"]) for s in _as_list(d.get("seccion"))
+            if s.get("codigo") == "A" for it in _as_list(s.get("item")) if it.get("titulo") == BORME_PROVINCE]
+    return [(u, get_text(u)) for u in urls]
+
+
+def fetch_companies(now, previous=None):
+    today, prev = now.date(), previous or {}
+    known, events = dict(prev.get("known", {})), list(prev.get("events", []))
+    last = date.fromisoformat(prev["last"]) if prev.get("last") else today - timedelta(days=BORME_DAYS)
+    done = 0
+    while done < BORME_MAX_DAYS and last < today:
+        day = last + timedelta(days=1)
+        try:
+            pages = borme_pages(day)
+        except FetchError:
+            if done:
+                break  # lo leído hasta aquí se guarda; el resto, en la próxima ejecución
+            raise
+        if pages is None and day == today:
+            break  # el de hoy aún no ha salido: se vuelve a mirar en la próxima ejecución
+        for url, page in pages or []:
+            events += parse_borme(page, day.isoformat(), url, known)
+        last, done = day, done + 1
+        time.sleep(1)
+    keep = (today - timedelta(days=BORME_KEEP)).isoformat()
+    events = sorted({e["id"]: e for e in events if e["date"] >= keep}.values(), key=lambda e: e["id"], reverse=True)
+    return {"since": prev.get("since") or (today - timedelta(days=BORME_DAYS - 1)).isoformat(), "last": last.isoformat(),
+            "known": dict(sorted(known.items())), "events": events}
+
+
 # ---------- horas baratas de la luz (web hermana llum-hores) ----------
 def light_url():
     if os.environ.get("LIGHT_API_URL"):

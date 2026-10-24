@@ -122,6 +122,7 @@ details.table summary { cursor: pointer; color: var(--accent); font-weight: 600;
 .tier.t0 { background: var(--tint-good); color: var(--good-ink); }
 .tier.t1 { background: var(--tint-mid); color: var(--ink2); }
 .tier.t2 { background: var(--tint-bad); color: var(--bad-ink); }
+.tier.t3 { background: var(--grid); color: var(--ink2); }
 
 .pending { background: var(--surface); border: 1px dashed var(--axis); border-radius: 10px; padding: 12px 14px; color: var(--ink2); }
 .tip { background: var(--tint-good); border-radius: 10px; padding: 12px 14px; margin: 1.5rem 0; }

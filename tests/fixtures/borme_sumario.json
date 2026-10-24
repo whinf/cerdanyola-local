@@ -1,0 +1,61 @@
+{
+ "status": {
+  "code": "200",
+  "text": "ok"
+ },
+ "data": {
+  "sumario": {
+   "metadatos": {
+    "publicacion": "BORME",
+    "fecha_publicacion": "20261023"
+   },
+   "diario": [
+    {
+     "numero": "205",
+     "sumario_diario": {
+      "identificador": "BORME-S-2026-205",
+      "url_pdf": {
+       "szBytes": "225157",
+       "szKBytes": "220",
+       "texto": "https://www.boe.es/borme/dias/2026/10/23/pdfs/BORME-S-2026-205.pdf"
+      }
+     },
+     "seccion": [
+      {
+       "codigo": "A",
+       "nombre": "SECCIÓN PRIMERA. Empresarios. Actos inscritos",
+       "item": [
+        {
+         "identificador": "BORME-A-2026-205-03",
+         "titulo": "ALICANTE/ALACANT",
+         "url_pdf": {
+          "szBytes": "298089",
+          "szKBytes": "291",
+          "pagina_inicial": "49701",
+          "pagina_final": "49708",
+          "texto": "https://www.boe.es/borme/dias/2026/10/23/pdfs/BORME-A-2026-205-03.pdf"
+         },
+         "url_html": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-205-03",
+         "url_xml": "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-205-03"
+        },
+        {
+         "identificador": "BORME-A-2026-205-08",
+         "titulo": "BARCELONA",
+         "url_pdf": {
+          "szBytes": "682971",
+          "szKBytes": "667",
+          "pagina_inicial": "49714",
+          "pagina_final": "49744",
+          "texto": "https://www.boe.es/borme/dias/2026/10/23/pdfs/BORME-A-2026-205-08.pdf"
+         },
+         "url_html": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-205-08",
+         "url_xml": "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-205-08"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

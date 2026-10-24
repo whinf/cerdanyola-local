@@ -3,6 +3,7 @@ import json
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from datetime import date
 from unittest import mock
 from html.parser import HTMLParser
@@ -180,6 +181,56 @@ class TestSources(unittest.TestCase):
         self.assertEqual(len(fuel), 10)
         self.assertTrue(all(1 < s["prices"]["g95"] < 3 for s in fuel))
 
+    def test_contracts(self):
+        cs = S.parse_contracts(fixture("contracts.json"))
+        by = lambda words: next(c for c in cs if c["title"].startswith(words))  # noqa: E731
+        clean = by("Serveis de neteja dels edificis")  # «CONTR-59/2025 Serveis...»: sin el código del expediente
+        self.assertEqual((clean["lots"], clean["phase"], round(clean["amount"])), (4, "Formalització", 11805133))
+        self.assertEqual(clean["winners"], ["Multiserveis NDAVANT S.L", "ACCIONA FACILITY SERVICES, SA"])
+        self.assertEqual(by("La prestació del servei de les unitats")["amount"], 884192.4)  # solo el lote de Cerdanyola
+        self.assertEqual(by("Contracte del servei de gestió")["winners"], [])  # un particular: su nombre no sale
+        self.assertEqual(len(by("Acord Marc per al subministrament")["winners"]), 5)  # «A||B||C» en cada lote
+        self.assertEqual(by("Subministrament de contenidors higiènics")["deadline"], "2026-10-28T14:00")
+        self.assertEqual(S.companies_only("*** 3757 **||B12345678", "Pascual López||Obres Vallès SL"), ["Obres Vallès SL"])
+        self.assertEqual(i18n.fmt_big("ca", 49950920.77), "50,0 M€")
+        self.assertEqual(i18n.fmt_big("en", 1050000), "€1.1m")
+
+    def test_borme(self):
+        page = (FIX / "borme_bcn.html").read_text(encoding="utf-8")
+        known = {"B 542552": "BINDI BOOKS S.L.", "B 284195": "TIMOSA SL", "B 635310": "ARKE RNM S.L."}
+        events = {e["name"]: e for e in S.parse_borme(page, "2026-10-23", "https://www.boe.es/b", known)}
+        self.assertEqual({n: e["kind"] for n, e in events.items()}, {
+            "JX PEOPLE & INVESTMENTS S.L.": "new", "SIMAFRO TRADING S.L.": "new", "MZA BARCINO MEAT S.L.": "moved_in",
+            "BINDI BOOKS S.L.": "capital", "TIMOSA SL": "capital_down", "ARKE RNM S.L.": "closed"})  # nada de Sant Cugat
+        self.assertEqual((events["BINDI BOOKS S.L."]["capital"], events["BINDI BOOKS S.L."]["total"]), (25000.0, 65000.0))
+        self.assertEqual(events["JX PEOPLE & INVESTMENTS S.L."]["activity"], "Actividades de sociedades holding")
+        self.assertNotIn("LLAURADO", json.dumps(list(events.values())))  # ni administradores ni direcciones
+        self.assertEqual(set(known), {"B 542552", "B 284195", "B 665157", "B 665177", "B 550397"})  # ARKE, extinguida
+
+    def test_fetch_companies(self):
+        sumario = json.dumps(fixture("borme_sumario.json")).encode()
+        page = (FIX / "borme_bcn.html").read_text(encoding="utf-8")
+        asked = []
+
+        def fake(url, **kw):
+            asked.append(url[-8:])
+            if url.endswith(("20261024", "20261025")):  # sábado, y el domingo de hoy
+                raise S.FetchError(f"{url}: HTTP Error 404: Not Found")
+            return sumario
+        sunday = tz.to_madrid(tz.parse_iso("2026-10-25T09:00:00+01:00"))
+        prev = {"since": "2025-10-26", "last": "2026-10-22", "known": {}, "events": []}
+        with mock.patch.object(S, "get_bytes", fake), mock.patch.object(S, "get_text", return_value=page), \
+                mock.patch.object(S.time, "sleep"):
+            first = S.fetch_companies(sunday, prev)
+            self.assertEqual(asked, ["20261023", "20261024", "20261025"])
+            self.assertEqual((first["last"], len(first["events"]), len(first["known"])), ("2026-10-24", 3, 3))
+            asked.clear()
+            self.assertEqual(S.fetch_companies(sunday, first), first)
+            self.assertEqual(asked, ["20261025"])
+        down = mock.Mock(side_effect=S.FetchError("boe.es: HTTP Error 503"))
+        with mock.patch.object(S, "get_bytes", down), self.assertRaises(S.FetchError):
+            S.fetch_companies(sunday, prev)
+
     def test_directory(self):
         eq = S.parse_equipments(fixture("equip.json"))
         self.assertEqual(len(eq), 224)
@@ -221,6 +272,9 @@ class TestSite(unittest.TestCase):
             "cido": S.parse_cido(fixture("cido.json"), NOW.date()),
             "offers": S.parse_offers((FIX / "feina_activa.xml").read_text(encoding="utf-8"), NOW.date()),
             "fuel": {"updated": "20/10/2026 18:00:00", "stations": S.parse_fuel(fixture("fuel_931.json"), "Cerdanyola del Vallès")},
+            "contracts": S.parse_contracts(fixture("contracts.json")),
+            "companies": {"since": "2025-10-21", "last": "2026-10-19", "known": {}, "events": S.parse_borme(
+                (FIX / "borme_bcn.html").read_text(encoding="utf-8"), "2026-10-19", "https://www.boe.es/b", {})},
         }
         cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local"}
         with tempfile.TemporaryDirectory() as tmp:
@@ -251,6 +305,19 @@ class TestSite(unittest.TestCase):
             self.assertIn("feinaactiva.gencat.cat/search/offers/detail/", jobs)
             self.assertIn("Carburant més barat avui", home)
             self.assertIn('id="fuel"', (out / "es/equipamientos/index.html").read_text(encoding="utf-8"))
+            self.assertIn("Inversions i empreses", home)
+            invest = (out / "ca/inversions/index.html").read_text(encoding="utf-8")
+            for text in ("Passeig dels Gorgs", "50,0 M€", "ofertes fins al 28 d'octubre", "Anunci previ",
+                         "JX PEOPLE &amp; INVESTMENTS S.L.", "feed.xml", "no és cap recomanació"):
+                self.assertIn(text, invest)
+            self.assertNotIn("Pascual", invest)
+            self.assertNotIn("Servei de telefonia", invest)  # anul·lat
+            self.assertIn("€74.4m", (out / "en/investment/index.html").read_text(encoding="utf-8"))
+            atom = "{http://www.w3.org/2005/Atom}"
+            feed = ET.parse(out / "es/inversiones/feed.xml").getroot()
+            titles = [e.findtext(atom + "title") for e in feed.iter(atom + "entry")]
+            self.assertIn("En licitación · 23.071 € · Subministrament de contenidors higiènics", titles)
+            self.assertIn("Empresas nuevas · JX PEOPLE & INVESTMENTS S.L.", titles)
             sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
             self.assertIn('href="tel:112"', sos)
             self.assertIn("Policia Local", sos)

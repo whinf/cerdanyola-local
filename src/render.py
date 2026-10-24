@@ -28,6 +28,13 @@ KIDS_WORDS = re.compile(r"\b(infantil\w*|famíli\w*|familiar\w*|nens|niños|kids
 AUDIENCES = ("people", "business", "entities")
 LEVELS = ("LOCAL", "AUTONOMICA", "ESTADO")
 BDNS_CALL = "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/{}"
+BIG = 1_000_000  # «gran inversión»: contratos de 1 M€ o más, sin IVA
+INVEST_DAYS = 365  # grandes inversiones y anuncios con novedades en este tiempo
+COMPANY_DAYS = 90
+FEED_DAYS = 60
+SOON_PHASES = ("Alerta futura", "Consulta preliminar del mercat", "Anunci previ")
+PHASE_TIER = {"Anunci de licitació": "t0", "Alerta futura": "t1", "Consulta preliminar del mercat": "t1",
+              "Anunci previ": "t1", "Expedient en avaluació": "t1"}  # el resto, gris
 
 
 def festive(e):
@@ -84,7 +91,7 @@ class Site:
         target.write_text(text, encoding="utf-8")
 
     # ---------- plantilla ----------
-    def layout(self, lang, kind, title, desc, body, jsonld=None, noindex=False):
+    def layout(self, lang, kind, title, desc, body, jsonld=None, noindex=False, head=""):
         alts = "".join(f'<link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}">'
                        for lg in LANGS)
         x_default = self.absolute("/") if kind == "home" else self.absolute(self.path("ca", kind))
@@ -94,7 +101,7 @@ class Site:
             f'<a href="{self.href(self.path(lg, kind))}" hreflang="{lg}" lang="{lg}"'
             f'{" aria-current=\"true\"" if lg == lang else ""}>{t(lg, "lang_name")}</a>' for lg in LANGS)
         nav = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, k + "_title" if k != "home" else "home")}</a>'
-                         for k in ("home", "agenda", "leisure", "aids", "jobs", "directory"))
+                         for k in ("home", "agenda", "leisure", "aids", "jobs", "invest", "directory"))
         links = " · ".join([f'<a href="{self.href(self.path(lang, "emergency"))}">🆘 112</a>'] + [
             f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>' for k in ("about", "legal", "privacy")])
         donate = (f' · <a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">♥</a>'
@@ -119,7 +126,7 @@ class Site:
 <meta name="theme-color" content="#0b6b3a">
 <link rel="icon" href="{self.href('/static/favicon.svg')}" type="image/svg+xml">
 <link rel="stylesheet" href="{self.href('/static/style.css')}">
-{ld}
+{head}{ld}
 </head>
 <body>
 <a class="skip" href="#main">{t(lang, "skip")}</a>
@@ -419,6 +426,131 @@ class Site:
         return (f'<section><h2>{t(lang, "fuel_home")}</h2><p>{text}</p>'
                 f'<p><a href="{self.href(self.path(lang, "directory"))}#fuel">{t(lang, "fuel_more")} →</a></p></section>')
 
+    def contracts(self):
+        """(grandes inversiones, licitaciones abiertas, anunciadas): lo anulado no sale."""
+        now = self.now.strftime("%Y-%m-%dT%H:%M")
+        since = (self.now.date() - timedelta(days=INVEST_DAYS)).isoformat()
+        live = [c for c in self.get("contracts") or [] if c["phase"] != "Anul·lació"]
+        big = sorted((c for c in live if c["amount"] >= BIG and c["date"] >= since), key=lambda c: -c["amount"])
+        bids = sorted((c for c in live if c["phase"] == "Anunci de licitació" and c["deadline"] >= now),
+                      key=lambda c: c["deadline"])
+        soon = [c for c in live if c["phase"] in SOON_PHASES and c["date"] >= since]
+        return big, bids, soon
+
+    def phase_key(self, c):
+        closed = c["phase"] == "Anunci de licitació" and c["deadline"] < self.now.strftime("%Y-%m-%dT%H:%M")
+        return "closed_bids" if closed else c["phase"]
+
+    def contract_item(self, lang, c):
+        today, key = self.now.date(), self.phase_key(c)
+        when = [f'<strong>{i18n.fmt_big(lang, c["amount"])}</strong>' if c["amount"] else ""]
+        if key == "Anunci de licitació" and c["deadline"]:
+            d = date.fromisoformat(c["deadline"][:10])
+            until = t(lang, "invest_until", d=i18n.fmt_deadline(lang, d, today))
+            when.append(f"⏳ {until}" if (d - today).days <= 3 else until)
+        else:
+            when.append(i18n.fmt_deadline(lang, date.fromisoformat(c["date"]), today))
+        badge = f'<span class="tier {PHASE_TIER.get(key, "t3")}">{esc(i18n.phase(lang, key))}</span>'
+        meta = [esc(c["organ"]), esc(i18n.contract_type(lang, c["type"])),
+                t(lang, "invest_lots", n=c["lots"]) if c["lots"] > 1 else ""]
+        if c["winners"]:
+            more = f' +{len(c["winners"]) - 3}' if len(c["winners"]) > 3 else ""
+            meta.append(t(lang, "invest_winners", w=esc(", ".join(c["winners"][:3]) + more)))
+        title = f'<a href="{esc(c["url"])}">{esc(c["title"])}</a>' if c.get("url") else esc(c["title"])
+        return (f'<li><span class="when">{badge} {" · ".join(x for x in when if x)}</span><span class="what">{title}</span>'
+                f'<small class="muted">{" · ".join(x for x in meta if x)}</small></li>')
+
+    def company_events(self):
+        since = (self.now.date() - timedelta(days=COMPANY_DAYS)).isoformat()
+        return [e for e in (self.get("companies") or {}).get("events", []) if e["date"] >= since]
+
+    def company_meta(self, lang, e):
+        """Datos de un acto del BORME, en texto: capital, actividad o municipio de destino."""
+        meta = []
+        if e.get("capital"):
+            sign = {"capital": "+", "capital_down": "−"}.get(e["kind"], "")
+            c = sign + i18n.fmt_money(lang, e["capital"])
+            meta.append(t(lang, "invest_capital_change", c=c, t=i18n.fmt_money(lang, e["total"])) if e.get("total")
+                        else t(lang, "invest_capital", c=c))
+        meta += [e.get("activity") or "", "→ " + i18n.organ_name(e["town"]) if e.get("town") else ""]
+        return [x for x in meta if x]
+
+    def company_item(self, lang, e):
+        meta = [esc(x) for x in self.company_meta(lang, e)] + [f'<a href="{esc(e["url"])}">BORME</a>']
+        return (f'<li><span class="when">{i18n.fmt_date(lang, date.fromisoformat(e["date"]))}</span>'
+                f'<span class="what">{esc(e["name"])}</span><small class="muted">{" · ".join(meta)}</small></li>')
+
+    def invest_page(self, lang):
+        big, bids, soon = self.contracts()
+        sections = (("big", "invest_big", big), ("open", "invest_open", bids), ("soon", "invest_soon", soon))
+        comp, events = self.get("companies"), self.company_events()
+        jump = [f'<a href="#{k}">{t(lang, key)}</a> ({len(items)})' for k, key, items in sections]
+        if comp is not None:
+            jump.append(f'<a href="#companies">{t(lang, "invest_companies")}</a> ({len(events)})')
+        body = [f'<h1>{t(lang, "invest_title")}</h1><p class="lede">{t(lang, "invest_desc")}</p><p>{" · ".join(jump)}</p>']
+        for k, key, items in sections:
+            body.append(f'<h2 id="{k}">{t(lang, key)}</h2><p>{t(lang, key + "_text")}</p>')
+            body.append(f'<ul class="events">{"".join(self.contract_item(lang, c) for c in items)}</ul>'
+                        if items else f'<p>{t(lang, "invest_empty")}</p>')
+        if comp is not None:
+            kinds = {k: [e for e in events if e["kind"] == k] for k in i18n.COMPANY_KINDS}
+            body.append(f'<h2 id="companies">{t(lang, "invest_companies")}</h2><p>' + t(
+                lang, "invest_companies_text", d=COMPANY_DAYS, n=len(kinds["new"]), m=len(kinds["moved_in"]),
+                u=len(kinds["capital"]), c=i18n.fmt_money(lang, sum(e.get("capital") or 0 for e in kinds["new"]))) + "</p>")
+            for k, items in kinds.items():
+                if items:
+                    body.append(f'<details class="group"{" open" if k == "capital" or len(items) <= 12 else ""}>'
+                                f'<summary>{esc(i18n.company_kind(lang, k))} <span class="muted">({len(items)})</span></summary>'
+                                f'<ul class="events">{"".join(self.company_item(lang, e) for e in items)}</ul></details>')
+        feed = self.href(self.path(lang, "invest") + "feed.xml")
+        body.append(f'<p class="tip">{t(lang, "invest_feed", url=feed)}</p>')
+        day = lambda iso: i18n.fmt_deadline(lang, date.fromisoformat(iso), self.now.date()) if iso else "–"  # noqa: E731
+        body.append(f'<p class="note">{t(lang, "invest_note", t=day((comp or {}).get("last")), since=day((comp or {}).get("since")))}</p>')
+        head = f'<link rel="alternate" type="application/atom+xml" title="{esc(t(lang, "invest_title"))}" href="{feed}">\n'
+        return self.layout(lang, "invest", f'{t(lang, "invest_title")} · {self.name}', t(lang, "invest_desc"),
+                           "".join(body), head=head)
+
+    def invest_preview(self, lang):
+        if self.get("contracts") is None and self.get("companies") is None:
+            return ""
+        big, bids, _ = self.contracts()
+        arrived = [e for e in self.company_events() if e["kind"] in ("new", "moved_in")]
+        latest = sorted(big, key=lambda c: c["date"], reverse=True)[:3]
+        text = t(lang, "invest_home_text", o=len(bids), b=len(big), n=len(arrived), d=COMPANY_DAYS)
+        top = f'<ul class="events">{"".join(self.contract_item(lang, c) for c in latest)}</ul>' if latest else ""
+        return (f'<section><h2>{t(lang, "invest_home")}</h2><p>{text}</p>{top}'
+                f'<p><a href="{self.href(self.path(lang, "invest"))}">{t(lang, "invest_all")} →</a></p></section>')
+
+    def feed(self, lang):
+        """Canal Atom con las novedades de la página de inversiones: un cambio de fase cuenta como novedad."""
+        big, bids, soon = self.contracts()
+        since = (self.now.date() - timedelta(days=FEED_DAYS)).isoformat()
+        entries = []
+        for c in {c["id"]: c for c in big + bids + soon}.values():
+            if c["date"] >= since:
+                key = self.phase_key(c)
+                title = " · ".join(x for x in (i18n.phase(lang, key), i18n.fmt_big(lang, c["amount"]) if c["amount"] else "",
+                                               c["title"]) if x)
+                summary = " · ".join(x for x in (c["organ"], i18n.contract_type(lang, c["type"])) if x)
+                entries.append((c["date"], f'{c["id"]}|{key}', title, c["url"], summary))
+        for e in self.company_events():
+            if e["date"] >= since:
+                entries.append((e["date"], e["id"], f'{i18n.company_kind(lang, e["kind"])} · {e["name"]}', e["url"],
+                                " · ".join(self.company_meta(lang, e))))
+        page = self.absolute(self.path(lang, "invest"))
+        host = urlparse(self.base_url).hostname
+        items = "".join(
+            f'<entry><title>{esc(title)}</title><link href="{esc(url or page)}"/>'
+            f'<id>tag:{host},2026:{hashlib.sha1(key.encode()).hexdigest()[:20]}</id>'
+            f'<updated>{day}T12:00:00Z</updated><summary>{esc(summary)}</summary></entry>\n'
+            for day, key, title, url, summary in sorted(entries, reverse=True)[:80])
+        return ('<?xml version="1.0" encoding="utf-8"?>\n'
+                f'<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{lang}">\n'
+                f'<title>{esc(t(lang, "invest_title"))}</title><subtitle>{esc(t(lang, "invest_desc"))}</subtitle>\n'
+                f'<link rel="alternate" href="{page}"/><link rel="self" href="{page}feed.xml"/>\n'
+                f'<id>{page}</id><updated>{self.now.astimezone(tz.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")}</updated>'
+                f'<author><name>{esc(self.name)}</name></author>\n{items}</feed>\n')
+
     def emergency_page(self, lang):
         items = []
         for e in self.get("equipments") or []:
@@ -439,13 +571,15 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}#weekend">{t(lang, "weekend_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "aids"))}">{t(lang, "aids_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "invest"))}">{t(lang, "invest_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}">{t(lang, "leisure_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "directory"))}">{t(lang, "directory_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
                 f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.light(lang)}{self.transport(lang)}'
-                f'{self.agenda_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.fuel_preview(lang)}'
+                f'{self.agenda_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
+                f'{self.fuel_preview(lang)}'
                 f'{self.air(lang)}{quick}')
         ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": self.name, "inLanguage": lang,
                "url": self.absolute(self.path(lang, "home")), "description": t(lang, "home_desc")}]
@@ -669,11 +803,12 @@ location.replace("{self.prefix}/ca/");}})();
     def sitemap(self):
         today = self.now.date().isoformat()
         urls = []
-        for kind in ("home", "agenda", "leisure", "aids", "jobs", "directory", "emergency", "about", "legal", "privacy"):
+        daily = ("home", "agenda", "leisure", "aids", "jobs", "invest", "directory")
+        for kind in daily + ("emergency", "about", "legal", "privacy"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}"/>'
                            for lg in LANGS)
             for lg in LANGS:
-                lastmod = f"<lastmod>{today}</lastmod>" if kind in ("home", "agenda", "leisure", "aids", "jobs", "directory") else ""
+                lastmod = f"<lastmod>{today}</lastmod>" if kind in daily else ""
                 urls.append(f"<url><loc>{self.absolute(self.path(lg, kind))}</loc>{lastmod}{alts}</url>")
         return ('<?xml version="1.0" encoding="utf-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
                 'xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(urls) + "</urlset>\n")
@@ -689,6 +824,8 @@ location.replace("{self.prefix}/ca/");}})();
             self.write(self.path(lang, "leisure"), self.leisure_page(lang))
             self.write(self.path(lang, "aids"), self.aids_page(lang))
             self.write(self.path(lang, "jobs"), self.jobs_page(lang))
+            self.write(self.path(lang, "invest"), self.invest_page(lang))
+            self.write(self.path(lang, "invest") + "feed.xml", self.feed(lang))
             self.write(self.path(lang, "emergency"), self.emergency_page(lang))
             self.write(self.path(lang, "directory"), self.directory_page(lang))
             for kind in ("about", "legal", "privacy"):
