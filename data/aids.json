@@ -2181,25 +2181,6 @@
      "people"
     ]
    },
-   "933961": {
-    "budget": 2300000,
-    "checked": "2026-10-24",
-    "end": "",
-    "id": "933961",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
-    "purpose": "Agricultura, Pesca y Alimentación",
-    "received": "2026-10-07",
-    "region": "CATALUÑA",
-    "start": "2026-10-10",
-    "term": "10 Dies Hàbils",
-    "title": "Ayudas de minimis para compensar las pérdidas de productividad en los sectores apícola y cunícola.",
-    "title_ca": "Ajuts de minimis per compensar les pèrdues de productivitat en els sectors apícola i cunícola",
-    "who": [
-     "business",
-     "people"
-    ]
-   },
    "933968": {
     "budget": 1000000,
     "checked": "2026-10-24",
@@ -2620,9 +2601,6 @@
    }
   },
   "closed": [
-   "864343",
-   "864383",
-   "864544",
    "864611",
    "865084",
    "865098",
@@ -4575,6 +4553,7 @@
    "933533",
    "933792",
    "933951",
+   "933961",
    "933988",
    "934125",
    "934386",
@@ -4629,5 +4608,5 @@
    "937657"
   ]
  },
- "fetched": "2026-10-24T23:38:23+02:00"
+ "fetched": "2026-10-25T00:01:01+02:00"
 }

@@ -82,26 +82,6 @@
     "url": "https://www.cerdanyola.cat/agenda/exposicio-miquel-sanchez-gonzalez-cerdanyola-historia-terra-i-paraula"
    },
    {
-    "category": "",
-    "end": "2026-10-24",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-23",
-    "time": "16:00",
-    "title": "II Jornades d’Arxius i Recerca Local a la Riba del Ripoll",
-    "url": "https://www.cerdanyola.cat/agenda/ii-jornades-darxius-i-recerca-local-la-riba-del-ripoll"
-   },
-   {
-    "category": "",
-    "end": "2026-10-24",
-    "place": "Ateneu de Cerdanyola",
-    "source": "afocer",
-    "start": "2026-10-24",
-    "time": "10:00",
-    "title": "Veredicte 2a biennal de fotografia Carme Aldana",
-    "url": "https://afocer.cat/event/veredicte-2a-biennal-de-fotografia-carme-aldana/"
-   },
-   {
     "category": "Hostalaria",
     "end": "2026-10-25",
     "place": "",
@@ -110,36 +90,6 @@
     "time": "11:30",
     "title": "Corretapes 2026",
     "url": "https://www.cerdanyola.cat/agenda/corretapes-2026"
-   },
-   {
-    "category": "",
-    "end": "2026-10-24",
-    "place": "Ateneu de Cerdanyola",
-    "source": "afocer",
-    "start": "2026-10-24",
-    "time": "17:30",
-    "title": "Veredicte concurs social color i monocrom d’octubre",
-    "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-doctubre-4/"
-   },
-   {
-    "category": "Exposicions",
-    "end": "2026-10-24",
-    "place": "Ateneu de Cerdanyola",
-    "source": "afocer",
-    "start": "2026-10-24",
-    "time": "19:00",
-    "title": "Inauguració exposició «La llum de Gallecs» de Miquel Pons al local social",
-    "url": "https://afocer.cat/event/inauguracio-exposicio-la-llum-de-gallecs-de-miquel-pons-al-local-social/"
-   },
-   {
-    "category": "Música",
-    "end": "2026-10-24",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-24",
-    "time": "21:00",
-    "title": "XXXVII Jornadas Culturales Flamencas de Cerdanyola",
-    "url": "https://www.cerdanyola.cat/agenda/xxxvii-jornadas-culturales-flamencas-de-cerdanyola-2"
    },
    {
     "category": "Infància",
@@ -569,5 +519,5 @@
    }
   ]
  },
- "fetched": "2026-10-24T23:38:23+02:00"
+ "fetched": "2026-10-25T00:01:01+02:00"
 }

@@ -1,17 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-10-24",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Ajuntament de Barberà del Vallès - Fundació Barberà Promoció",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça de Borsa de treball de places d'Administratiu",
-   "url": "https://cido.diba.cat/oposicions/22338010"
-  },
-  {
    "end": "2026-10-25",
    "group": "A",
    "kind": "Laboral",
@@ -1563,5 +1552,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-10-24T23:38:23+02:00"
+ "fetched": "2026-10-25T00:01:01+02:00"
 }
