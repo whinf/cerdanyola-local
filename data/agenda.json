@@ -43,6 +43,16 @@
    },
    {
     "category": "",
+    "end": "2026-10-30",
+    "place": "Vestíbul de les columnes de la Facultat de Filosofia i Lletres",
+    "source": "uab",
+    "start": "2026-10-08",
+    "time": "",
+    "title": "Inauguració de l'exposició «Memòries des de l'Andana»",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/inauguracio-de-l-exposicio-memories-des-de-l-andana-1345828727816.html?detid=1346000690339"
+   },
+   {
+    "category": "",
     "end": "2027-06-30",
     "place": "",
     "source": "ajuntament",
@@ -150,6 +160,16 @@
     "time": "18:00",
     "title": "Tardor Solidària. Xerrada 'Més enllà dels titulars: Les dones a l'Iran avui'",
     "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-xerrada-mes-enlla-dels-titulars-les-dones-liran-avui"
+   },
+   {
+    "category": "",
+    "end": "2026-10-28",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-10-28",
+    "time": "11:00",
+    "title": "Projecció del film El pico, d'Eloy de la Iglésia",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-el-pico-d-eloy-de-la-iglesia-1345828727816.html?detid=1346003254239"
    },
    {
     "category": "Cursos i tallers",
@@ -342,6 +362,26 @@
     "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-xerrada-la-responsabilitat-de-triar-alternatives-sostenibles-al-textil"
    },
    {
+    "category": "",
+    "end": "2026-11-04",
+    "place": "Sala Cinema de la UAB",
+    "source": "uab",
+    "start": "2026-11-04",
+    "time": "11:00",
+    "title": "Projecció del film ¿Qué he hecho yo para merecer esto?, de Pedro Almodóvar",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-que-he-hecho-yo-para-merecer-esto-de-pedro-almodovar-1345828727816.html?detid=1346003256667"
+   },
+   {
+    "category": "",
+    "end": "2026-11-05",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-11-05",
+    "time": "13:00",
+    "title": "Projecció del film Edipo, de Pier Paolo Pasolini (1967)",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-edipo-de-pier-paolo-pasolini-1967-1345828727816.html?detid=1346000385676"
+   },
+   {
     "category": "Conferències",
     "end": "2026-11-05",
     "place": "",
@@ -482,6 +522,16 @@
     "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-de-novembre-4/"
    },
    {
+    "category": "",
+    "end": "2026-12-15",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-12-15",
+    "time": "15:00",
+    "title": "Projecció del film Gladiator, de Ridley Scott (2000)",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gladiator-de-ridley-scott-2000-1345828727816.html?detid=1346000387117"
+   },
+   {
     "category": "Altres activitats",
     "end": "2026-12-18",
     "place": "",
@@ -519,5 +569,5 @@
    }
   ]
  },
- "fetched": "2026-10-25T15:57:50+01:00"
+ "fetched": "2026-10-25T19:25:33+01:00"
 }
