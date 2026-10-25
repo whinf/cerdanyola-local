@@ -5291,51 +5291,6 @@
    ]
   },
   {
-   "amount": 32450.0,
-   "date": "2025-09-19",
-   "deadline": "2025-09-18T14:00",
-   "id": "5443212/IEEC/192/2025",
-   "lots": 0,
-   "organ": "Institut d'Estudis Espacials de Catalunya",
-   "phase": "Formalització",
-   "title": "Contracte menor de subministrament d’un (1) criòstat amb l'objectiu de calibrar els detectors de llum visible (VIS) en el marc del Projecte ARRAKHIS PID2022-138896NB-C52 finançat per MCIN/AEI/10.13039/501100011033/FEDER, UE",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/5a03af04-93e0-48e4-912d-837d663da05f/300564977",
-   "winners": [
-    "IDRESA Services, S.L."
-   ]
-  },
-  {
-   "amount": 51955.2,
-   "date": "2025-09-19",
-   "deadline": "",
-   "id": "23584847/019/2024",
-   "lots": 0,
-   "organ": "Consorci Urbanístic del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Adjudicació",
-   "title": "Serveis de direcció d’obra, direcció ambiental i coordinació de seguretat i salut de les obres del Projecte A3: Plaça A del Parc de l’Alba",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/58dba284-6076-4066-bee3-3a195eacd015/300564511",
-   "winners": [
-    "ESTUDI CUYAS 38, SL"
-   ]
-  },
-  {
-   "amount": 17000.0,
-   "date": "2025-09-19",
-   "deadline": "2025-09-08T13:00",
-   "id": "11061850/CONTR-78/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Execució",
-   "title": "Servei de jardineria per als espais interiors i exteriors del Servei d’Activitat Física de la Universitat Autònoma de Barcelona",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/269ab6b9-046d-4c78-8003-03c01559747f/300708671",
-   "winners": [
-    "SIRVENT PAISATGISME I SERVEIS SL"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5362,5 +5317,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-10-24T20:34:47+02:00"
+ "fetched": "2026-10-25T10:50:57+01:00"
 }
