@@ -92,64 +92,14 @@
     "url": "https://www.cerdanyola.cat/agenda/exposicio-miquel-sanchez-gonzalez-cerdanyola-historia-terra-i-paraula"
    },
    {
-    "category": "Hostalaria",
-    "end": "2026-10-25",
+    "category": "",
+    "end": "2026-10-26",
     "place": "",
     "source": "ajuntament",
-    "start": "2026-10-24",
-    "time": "11:30",
-    "title": "Corretapes 2026",
-    "url": "https://www.cerdanyola.cat/agenda/corretapes-2026"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-10-25",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-25",
-    "time": "11:30",
-    "title": "Jugatecambiental. Art rupestre",
-    "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-art-rupestre"
-   },
-   {
-    "category": "Cursos i tallers",
-    "end": "2026-10-25",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-25",
-    "time": "11:30",
-    "title": "Taller familiar per la tardor 'Pintem la tardor al jardí de Can Llopis'",
-    "url": "https://www.cerdanyola.cat/agenda/taller-familiar-la-tardor-pintem-la-tardor-al-jardi-de-can-llopis"
-   },
-   {
-    "category": "Activitats del Servei de Patrimoni",
-    "end": "2026-10-25",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-25",
-    "time": "12:00",
-    "title": "Itinerari modernista pel barri de dalt",
-    "url": "https://www.cerdanyola.cat/agenda/itinerari-modernista-pel-barri-de-dalt"
-   },
-   {
-    "category": "Teatre i dansa",
-    "end": "2026-10-25",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-25",
-    "time": "12:00",
-    "title": "Jam a la plaça",
-    "url": "https://www.cerdanyola.cat/agenda/jam-la-placa-24"
-   },
-   {
-    "category": "Música",
-    "end": "2026-10-25",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-10-25",
-    "time": "19:00",
-    "title": "Concert de Tardor de l'OCC",
-    "url": "https://www.cerdanyola.cat/agenda/concert-de-tardor-de-locc-3"
+    "start": "2026-10-26",
+    "time": "12:10",
+    "title": "prova",
+    "url": "https://www.cerdanyola.cat/agenda/prova"
    },
    {
     "category": "Conferències",
@@ -546,10 +496,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
    },
    {
     "category": "Exposicions",
@@ -562,12 +512,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-10-25T22:49:39+01:00"
+ "fetched": "2026-10-26T12:10:35+01:00"
 }

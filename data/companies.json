@@ -2,6 +2,33 @@
  "data": {
   "events": [
    {
+    "activity": "El ejercicio en comun de la actividad profesional propia de la odontologia y/o estomatologia. a la actividad…",
+    "capital": 3000.0,
+    "date": "2026-10-26",
+    "id": "2026-10-26-476699-new",
+    "kind": "new",
+    "name": "CLINICA DENTAL SMALIUM S.L.P.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-206-08"
+   },
+   {
+    "activity": "La compra, venta, fabricacion, importacion, exportacion, explotacion, promocion, distribucion y comercializacion de…",
+    "capital": 3000.0,
+    "date": "2026-10-26",
+    "id": "2026-10-26-476519-new",
+    "kind": "new",
+    "name": "SERVIAR 2026 CONSTRUCCIONES S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-206-08"
+   },
+   {
+    "activity": "Comercio al por mayor de metales y minerales metalicos",
+    "capital": 3000.0,
+    "date": "2026-10-26",
+    "id": "2026-10-26-476400-new",
+    "kind": "new",
+    "name": "AURUM CROWN GOLD S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-206-08"
+   },
+   {
     "date": "2026-10-23",
     "id": "2026-10-23-473372-moved_in",
     "kind": "moved_in",
@@ -643,13 +670,16 @@
    "B 665008": "RED HEART JUC S.L.",
    "B 665157": "JX PEOPLE & INVESTMENTS S.L.",
    "B 665177": "SIMAFRO TRADING S.L.",
+   "B 665182": "AURUM CROWN GOLD S.L.",
+   "B 665236": "SERVIAR 2026 CONSTRUCCIONES S.L.",
+   "B 665254": "CLINICA DENTAL SMALIUM S.L.P.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-10-24",
+  "last": "2026-10-26",
   "since": "2025-10-25"
  },
- "fetched": "2026-10-25T22:49:39+01:00"
+ "fetched": "2026-10-26T12:10:35+01:00"
 }

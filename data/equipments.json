@@ -1584,8 +1584,8 @@
    "address": "Ctr.de Cerdanyola a Sant Cugat, Km 0",
    "cat": "Serveis socials especialitzats",
    "cp": "08290",
-   "lat": "41.482509",
-   "lon": "2.131431",
+   "lat": "41.4900778",
+   "lon": "2.138664",
    "name": "Equus, Centre Català d'Equinoteràpia i Escola d'Equitació",
    "phone": "",
    "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
@@ -1714,8 +1714,8 @@
    "address": "Av. Europa, núm. 3 -5 Esc.1 1r-1a",
    "cat": "Serveis socials especialitzats",
    "cp": "08290",
-   "lat": "41.4903868",
-   "lon": "2.1326508",
+   "lat": "41.4930814",
+   "lon": "2.1301809",
    "name": "Cerdanyola I",
    "phone": "934428829",
    "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
@@ -1734,8 +1734,8 @@
    "address": "C.  Adam i Eva, 4",
    "cat": "Serveis socials especialitzats",
    "cp": "08290",
-   "lat": "41.4932306",
-   "lon": "2.1465753",
+   "lat": "41.4952714",
+   "lon": "2.1438412",
    "name": "Club Social Cerdanyola del Vallés",
    "phone": "935809927",
    "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
@@ -2241,5 +2241,5 @@
    "sub": ""
   }
  ],
- "fetched": "2026-10-25T15:57:50+01:00"
+ "fetched": "2026-10-26T12:10:35+01:00"
 }

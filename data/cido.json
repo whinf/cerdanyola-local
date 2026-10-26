@@ -1,17 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-10-25",
-   "group": "A",
-   "kind": "Laboral",
-   "km": 10.2,
-   "org": "Consorci Sanitari de Terrassa",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Coordinador d'obres",
-   "url": "https://cido.diba.cat/oposicions/22275950"
-  },
-  {
    "end": "2026-10-26",
    "group": "C1",
    "kind": "Laboral",
@@ -827,6 +816,17 @@
   },
   {
    "end": "2026-11-02",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Oficial administratiu",
+   "url": "https://cido.diba.cat/oposicions/22382419"
+  },
+  {
+   "end": "2026-11-02",
    "group": "A1",
    "kind": "Laboral temporal",
    "km": 2.8,
@@ -879,6 +879,17 @@
    "pool": false,
    "title": "1 plaça de Systems and Infrastructure Administrator (IT)",
    "url": "https://cido.diba.cat/oposicions/22292456"
+  },
+  {
+   "end": "2026-11-06",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.1,
+   "org": "Institut de Física d'Altes Energies (IFAE)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Postdoctoral Researcher position in Theory Group",
+   "url": "https://cido.diba.cat/oposicions/22372025"
   },
   {
    "end": "2026-11-06",
@@ -1110,6 +1121,17 @@
    "pool": false,
    "title": "1 plaça de Tècnic de laboratori",
    "url": "https://cido.diba.cat/oposicions/22367292"
+  },
+  {
+   "end": "2026-11-22",
+   "group": "A1",
+   "kind": "Laboral",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Especialista en Psiquiatria per a la Unitat d'Hospitalització d'Aguts",
+   "url": "https://cido.diba.cat/oposicions/22382270"
   },
   {
    "end": "2026-11-23",
@@ -1552,5 +1574,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-10-25T22:49:39+01:00"
+ "fetched": "2026-10-26T12:10:35+01:00"
 }
