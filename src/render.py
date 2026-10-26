@@ -339,7 +339,7 @@ class Site:
             for lvl in LEVELS:
                 group = [x for x in mine if aid_level(x[2]) == lvl]
                 if group:
-                    body.append(f'<details class="group"{" open" if lvl == "LOCAL" or len(group) <= 12 else ""}>'
+                    body.append(f'<details class="group">'
                                 f'<summary>{t(lang, "aids_lvl_" + lvl)} <span class="muted">({len(group)})</span></summary>'
                                 f'<ul class="events">{"".join(self.aid_item(lang, *x) for x in group)}</ul></details>')
         body.append(f'<p class="note">{t(lang, "aids_note")}</p>')
@@ -378,7 +378,7 @@ class Site:
         for j in offers:
             towns.setdefault(j["town"], []).append(j)
         for town, items in towns.items():
-            body.append(f'<details class="group"{" open" if town == sources.NEAR_TOWNS[0] else ""}>'
+            body.append(f'<details class="group">'
                         f'<summary>{esc(i18n.organ_name(town))} <span class="muted">({len(items)})</span></summary>'
                         f'<ul class="events">{"".join(self.job_item(lang, j) for j in items)}</ul></details>')
         if not offers:
@@ -387,7 +387,7 @@ class Site:
         near = [j for j in public if j["km"] is not None and j["km"] <= 4.5]
         for key, items in (("jobs_near", near), ("jobs_far", [j for j in public if j not in near])):
             if items:
-                body.append(f'<details class="group"{" open" if key == "jobs_near" or len(items) <= 12 else ""}>'
+                body.append(f'<details class="group">'
                             f'<summary>{t(lang, key)} <span class="muted">({len(items)})</span></summary>'
                             f'<ul class="events">{"".join(self.public_job_item(lang, j) for j in items)}</ul></details>')
         if not public:
@@ -523,7 +523,7 @@ class Site:
                 u=len(kinds["capital"]), c=i18n.fmt_money(lang, sum(e.get("capital") or 0 for e in kinds["new"]))) + "</p>")
             for k, items in kinds.items():
                 if items:
-                    body.append(f'<details class="group"{" open" if k == "capital" or len(items) <= 12 else ""}>'
+                    body.append(f'<details class="group">'
                                 f'<summary>{esc(i18n.company_kind(lang, k))} <span class="muted">({len(items)})</span></summary>'
                                 f'<ul class="events">{"".join(self.company_item(lang, e) for e in items)}</ul></details>')
         feed = self.href(self.path(lang, "invest") + "feed.xml")
@@ -815,7 +815,7 @@ class Site:
             if not items:
                 continue
             icon, label = i18n.group(lang, key)
-            body.append(f'<details class="group" id="{key}"{" open" if len(items) <= 40 else ""}><summary>{icon} {esc(label)} '
+            body.append(f'<details class="group" id="{key}"><summary>{icon} {esc(label)} '
                         f'<span class="muted">({len(items)})</span></summary>'
                         f'<ul class="dir">{"".join(self.place_item(lang, p) for p in items)}</ul></details>')
         if places:
