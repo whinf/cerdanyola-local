@@ -322,6 +322,7 @@ STRINGS = {
         "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments, aire i contractes públics), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap i Overture Maps (guia d'oci), BDNS (ajudes), SOC i Diputació de Barcelona (feina), BORME (empreses), Ministeri per a la Transició Ecològica (carburants) i Red Eléctrica (llum). Actualitzat: {t}.",
         "about": "Sobre el web", "legal": "Avís legal", "privacy": "Privacitat",
         "studio": "Sobre nosaltres",
+        "donate": "Dona suport al projecte",
         "skip": "Salta al contingut", "language": "Idioma", "choose": "Tria l'idioma",
         "notfound_title": "Pàgina no trobada", "notfound_text": "Aquesta pàgina no existeix. Torna a l'inici.",
         "about_body": """
@@ -504,6 +505,7 @@ STRINGS = {
         "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos, aire y contratos públicos), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap y Overture Maps (guía de ocio), BDNS (ayudas), SOC y Diputació de Barcelona (empleo), BORME (empresas), Ministerio para la Transición Ecológica (carburantes) y Red Eléctrica (luz). Actualizado: {t}.",
         "about": "Sobre la web", "legal": "Aviso legal", "privacy": "Privacidad",
         "studio": "Sobre nosotros",
+        "donate": "Apoya el proyecto",
         "skip": "Saltar al contenido", "language": "Idioma", "choose": "Elige idioma",
         "notfound_title": "Página no encontrada", "notfound_text": "Esta página no existe. Vuelve al inicio.",
         "about_body": """
@@ -686,6 +688,7 @@ STRINGS = {
         "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities, air and public contracts), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap and Overture Maps (leisure guide), BDNS (grants), SOC and Diputació de Barcelona (jobs), BORME (companies), Ministry for the Ecological Transition (fuel) and Red Eléctrica (electricity). Updated: {t}.",
         "about": "About", "legal": "Legal notice", "privacy": "Privacy",
         "studio": "About us",
+        "donate": "Support the project",
         "skip": "Skip to content", "language": "Language", "choose": "Choose your language",
         "notfound_title": "Page not found", "notfound_text": "This page does not exist. Go back to the home page.",
         "about_body": """

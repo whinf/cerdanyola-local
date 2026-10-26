@@ -128,7 +128,8 @@ class Site:
                          for k in ("home", "agenda", "leisure", "picks", "save", "aids", "jobs", "invest", "directory"))
         links = " · ".join([f'<a href="{self.href(self.path(lang, "emergency"))}">🆘 112</a>'] + [
             f'<a href="{self.href(self.path(lang, k))}">{t(lang, k)}</a>' for k in ("about", "legal", "privacy")] + [f'<a href="https://onestudioman.horaverda.es/{lang}/">{t(lang, "studio")}</a>'])
-        donate = (f' · <a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">♥</a>'
+        donate = (f'<p class="support"><a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">'
+                  f'<span aria-hidden="true">♥</span> {t(lang, "donate")}</a></p>'
                   if self.cfg.get("donate_url") else "")
         updated = max((v.get("fetched") or "" for v in self.data.values()), default="")
         return f"""<!doctype html>
@@ -164,7 +165,8 @@ class Site:
 </main>
 <footer class="foot"><div class="wrap">
 <p>{t(lang, "source_line", t=fmt_dt(updated))}</p>
-<p>{links}{donate}</p>
+<p>{links}</p>
+{donate}
 </div></footer>
 </body>
 </html>
