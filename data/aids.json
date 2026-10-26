@@ -1528,24 +1528,6 @@
      "business"
     ]
    },
-   "918684": {
-    "budget": 7500000,
-    "checked": "2026-10-24",
-    "end": "2026-10-26",
-    "id": "918684",
-    "level": "ESTADO",
-    "organ": "AGENCIA ESTATAL DE INVESTIGACIÓN",
-    "purpose": "Investigación, desarrollo e innovación",
-    "received": "2026-07-10",
-    "region": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
-    "start": "2026-09-30",
-    "term": "A las 14:00 (hora peninsular española) del día",
-    "title": "Resolución de 22 de septiembre de 2026 de la Presidencia de la Agencia Estatal de Investigación, por la que se aprueba la convocatoria 2026 de las ayudas del Programa de Doctorados Industriales (ayudas sujetas a RGEC).",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
    "920036": {
     "budget": 5000000,
     "checked": "2026-10-24",
@@ -1870,24 +1852,6 @@
     "start": "2026-09-25",
     "term": "",
     "title": "Resolución de 24 de septiembre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la participación en SIRHA Lyon, Francia del 21 de enero de 2027 al 25 de enero de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
-   "931703": {
-    "budget": 40000,
-    "checked": "2026-10-24",
-    "end": "2026-10-26",
-    "id": "931703",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-09-25",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-09-25",
-    "term": "",
-    "title": "Resolución de 24 de septiembre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la participación en Feria_Asociación MILANO UNICA I Milán del 2 de febrero de 2027 al 4 de febrero de 2027",
     "title_ca": "",
     "who": [
      "business"
@@ -4215,6 +4179,7 @@
    "918352",
    "918355",
    "918678",
+   "918684",
    "918695",
    "918819",
    "918851",
@@ -4494,6 +4459,7 @@
    "931654",
    "931674",
    "931701",
+   "931703",
    "931754",
    "931761",
    "931763",
@@ -4609,5 +4575,5 @@
    "937905"
   ]
  },
- "fetched": "2026-10-26T21:43:13+01:00"
+ "fetched": "2026-10-27T00:09:21+01:00"
 }

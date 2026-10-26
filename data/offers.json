@@ -394,19 +394,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324292"
   },
   {
-   "company": "Radan Desinfecciones Técnicas SL",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-08-27",
-   "hours": "Jornada completa",
-   "salary": [
-    1600,
-    1700
-   ],
-   "title": "Personal tècnic control de plagues",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323368"
-  },
-  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral temporal (3 mesos)",
    "date": "2026-10-22",
@@ -519,6 +506,19 @@
    "title": "Electromecánico/a industrial – 32h",
    "town": "MONTCADA I REIXAC",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327606"
+  },
+  {
+   "company": "Estudi 6 Gestió Socioeducativa",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-26",
+   "hours": "Jornada parcial tarda (2 hores - jornada setmanal)",
+   "salary": [
+    100,
+    500
+   ],
+   "title": "Tallerista per impartir taller de \"risoteràpia\" a un casal cívic de barcelona (montcada i reixac)",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327631"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -1239,6 +1239,58 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325117"
   },
   {
+   "company": "SANED",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-26",
+   "hours": "Jornada completa",
+   "salary": [
+    1708,
+    2200
+   ],
+   "title": "Cuiner/a col·lectivitat per a escola vallès (jornada complerta, fixe discontinu).",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327627"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-26",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    2500
+   ],
+   "title": "Enginyer/a devops_31001",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631001"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-26",
+   "hours": "Jornada completa",
+   "salary": [
+    1803,
+    1803
+   ],
+   "title": "Cuiner/a_30981",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630981"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-10-26",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    2500
+   ],
+   "title": "Analista i dissenyador/a de software_30974",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630974"
+  },
+  {
    "company": "GROWING UP HR SL",
    "contract": "Contracte laboral indefinit",
    "date": "2026-10-22",
@@ -1861,5 +1913,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92323518"
   }
  ],
- "fetched": "2026-10-26T12:10:35+01:00"
+ "fetched": "2026-10-27T00:09:21+01:00"
 }
