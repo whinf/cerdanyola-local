@@ -476,7 +476,7 @@ OVERTURE_LICENSES = {"CDLA-Permissive-2.0", "CC0-1.0"}
 # «music_venue» también son orquestas, coros y academias: solo salas, cafés concierto...
 _MUSIC_VENUE = re.compile(r"\b(sala|caf[eé]|bar|club|pub|concierto|concert|live|jazz|blues)\b", re.I)
 # fuera los clubs de alterne, que Overture suele catalogar como discotecas
-_NIGHT_SKIP = re.compile(r"alterne|strip|er[oòó]tic|\bsex|swinger|deluxe|premium club|\buasa\b", re.I)
+_NIGHT_SKIP = re.compile(r"alterne|strip|er[oòó]tic|\bsex|swinger", re.I)
 _GENERIC_WORDS = {"sala", "club", "cafe", "disco", "discoteca", "lounge", "shisha", "cerdanyola", "valles",
                   "irish", "cocktail", "copes", "copas", "musical", "local", "karaoke", "cerveceria", "sant",
                   "santa", "night", "scene", "premium"}
