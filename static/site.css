@@ -1,0 +1,46 @@
+/* site.css — reglas propias de Cerdanyola Avui. Se concatena tras base.css. */
+@layer site {
+  /* Tiempo ahora */
+  .hero { display: flex; align-items: center; gap: var(--s-3); padding: var(--s-3) var(--s-4); margin: 0 0 var(--s-4); }
+  .hero .k { font-weight: 600; color: var(--accent); text-transform: uppercase; font-size: .78rem; letter-spacing: .06em; }
+  .hero .v { font-size: var(--fs-4); font-weight: 700; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .hero .sky { display: block; color: var(--ink-2); font-size: var(--fs-s); margin-block-start: .2rem; }
+  .wx { inline-size: 2rem; block-size: 2rem; vertical-align: middle; }
+  .wx-big { inline-size: 3.6rem; block-size: 3.6rem; flex: none; }
+  .weather td, .weather th { padding: .4rem .35rem; }
+  .weather td.num { white-space: nowrap; }
+  .weather td.sky { white-space: nowrap; }
+  .weather .skytxt { color: var(--ink-2); }
+  @media (max-width: 36rem) {
+    .weather { font-size: .82rem; }
+    .weather .skytxt { display: none; }
+  }
+
+  /* Luz */
+  .light { background: var(--tint-good); border-radius: var(--r-m); padding: 2px var(--s-4) var(--s-2); margin-block-start: var(--s-6); }
+  .light h2 { margin-block-start: var(--s-4); }
+
+  /* Listas de actos, ayudas, ofertas, contratos... */
+  .events, .alerts, .dir { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s-2); }
+  .events li { display: grid; gap: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-s); padding: .6rem .85rem; box-shadow: var(--shadow-1); }
+  .events .when { color: var(--ink-2); font-size: var(--fs-s); font-weight: 600; font-variant-numeric: tabular-nums; display: flex; flex-wrap: wrap; align-items: center; gap: .3em .45em; }
+  .events .what { font-weight: 600; }
+  .events .badge { color: var(--accent); }
+  .events .when .i { color: var(--accent); }
+  .alerts li { background: var(--tint-mid); border-radius: var(--r-s); padding: .6rem .85rem; }
+  .alerts .line { display: inline-block; background: #e2231a; color: #fff; font-weight: 700; border-radius: 4px; padding: 0 6px; margin-inline-end: 4px; font-size: .85rem; }
+  .aq.a0, .aq.a1 { background: var(--tint-good); color: var(--good-ink); }
+  .aq.a2 { background: var(--tint-mid); color: var(--mid-ink); }
+  .aq.a3, .aq.a4, .aq.a5 { background: var(--tint-bad); color: var(--bad-ink); }
+  .aq { font-size: .72rem; padding: 0 .5em; }
+  details.group { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-m); padding: .25rem var(--s-4); margin-block: var(--s-2); box-shadow: var(--shadow-1); }
+  details.group summary { color: var(--ink); }
+  details.group summary .i { color: var(--accent); }
+  details.group[open] > summary { border-block-end: 1px solid var(--border); margin-block-end: var(--s-2); }
+  .dir li { border-block-start: 1px solid var(--border); padding: .55rem 0 .35rem; font-size: var(--fs-s); }
+  .dir li:first-child { border-block-start: 0; }
+  .months { padding-inline-start: 1.2rem; }
+  .months li { margin-block: 4px; }
+  .prose { max-inline-size: 68ch; }
+  @media (max-width: 36rem) { .events li { padding: .55rem .7rem; } }
+}

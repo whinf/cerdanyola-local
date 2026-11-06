@@ -32,7 +32,7 @@ class TestSources(unittest.TestCase):
         self.assertEqual(w["now"]["temp"], 18.0)
         self.assertEqual(w["days"][0]["date"], "2026-10-20")
         self.assertEqual(len(w["days"]), 6)
-        self.assertEqual(i18n.sky("ca", w["days"][2]["symbol"]), ("☁️", "Ennuvolat"))
+        self.assertEqual(i18n.sky("ca", w["days"][2]["symbol"]), ("cloudy", "Ennuvolat"))
 
     def test_agenda(self):
         gencat, permanent = S.parse_agenda_gencat(fixture("agenda.json"), NOW.date())
@@ -306,7 +306,9 @@ class TestSite(unittest.TestCase):
             self.assertIn("Guia d'oci", home)
             leisure = (out / "es/ocio/index.html").read_text(encoding="utf-8")
             self.assertIn("The 1916", leisure)
-            self.assertIn("🎉", leisure)
+            self.assertIn('href="#i-party-popper"', leisure)  # icono de fiesta
+            self.assertIn('aria-current="page"', leisure)  # chip de sección activo
+            self.assertIn('class="sections"', leisure)
             self.assertIn("OpenStreetMap", leisure)
             self.assertIn("Sala Acme", leisure)
             self.assertIn("datos de BrightQuery, licencia", leisure)
@@ -345,7 +347,11 @@ class TestSite(unittest.TestCase):
             self.assertIn("La gasolinera más barata", save)
             self.assertIn("subastas.boe.es", save)
             self.assertIn("Recomanat aquesta setmana", home)
-            self.assertIn("<h2>🍽️ Where to eat</h2>", (out / "en/recommendations/index.html").read_text(encoding="utf-8"))
+            picks_en = (out / "en/recommendations/index.html").read_text(encoding="utf-8")
+            self.assertIn("Where to eat</h2>", picks_en)
+            self.assertIn('href="#i-utensils"', picks_en)
+            self.assertTrue((out / "static/style.css").exists())
+            self.assertFalse((out / "static/base.css").exists())
             sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
             self.assertIn('href="tel:112"', sos)
             self.assertIn("Policia Local", sos)

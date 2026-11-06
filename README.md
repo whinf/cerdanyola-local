@@ -4,7 +4,7 @@ Web local de Cerdanyola del Vallès y Bellaterra, en catalán, castellano e ingl
 - la previsión del tiempo;
 - las horas más baratas de la luz;
 - los avisos de Rodalies R7 y R8;
-- la agenda (Ajuntament y Agenda cultural de Catalunya), con las fiestas, conciertos y actos de entidades y locales marcados con 🎉;
+- la agenda (Ajuntament y Agenda cultural de Catalunya), con las fiestas, conciertos y actos de entidades y locales marcados con el icono de fiesta;
 - una guía de ocio: plan para hoy según el tiempo, próximas fiestas, rutas, fuentes, miradores, patrimonio, restaurantes, bares y pubs;
 - las ayudas, becas y subvenciones que se pueden pedir ahora (Ajuntament, comarca, AMB, Generalitat y Estado), con su plazo;
 - inversiones y empresas: grandes contratos públicos (1 M€ o más), licitaciones abiertas, contratos anunciados y altas, traslados y cambios de capital de empresas de Cerdanyola según el BORME, con un canal Atom por idioma (`/ca/inversions/feed.xml`...) para recibir avisos. Es información, no consejo de inversión;
@@ -54,3 +54,8 @@ python -m http.server 8001 -d _site
 - En Windows, si falla el certificado de MET Norway, ejecuta con `SSL_CERT_FILE` apuntando al `ca-bundle.crt` de Git.
 
 `data/*.json` guarda la última versión buena de cada fuente. Si una fuente cae, la web sigue mostrando lo último que tenía, y el workflow solo falla (y te avisa por email) si lleva 3 días sin responder.
+
+## Diseño
+- El marco común (`static/base.css`, `static/ui.js`, `static/fonts/`, `src/icons.py`) se sincroniza desde `llum-hores` con `python ..\tools\sync_base.py`; no se edita aquí. Las reglas propias están en `static/site.css`; el generador sirve un solo `static/style.css`.
+- Iconos meteorológicos: `static/wx/*.svg`, de [MET Norway weathericons](https://github.com/metno/weathericons) (MIT). Resto de iconos: Lucide (ISC) vía `src/icons.py`.
+- PNG (iconos PWA, `apple-touch-icon`, `og.png`): `py tools/make_assets.py` (Pillow, solo en local).

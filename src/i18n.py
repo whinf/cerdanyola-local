@@ -17,22 +17,22 @@ WEEKDAYS = {
     "en": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
 }
 
-# Tiempo: palabra clave del código de MET Norway -> (icono, es, ca, en)
+# Tiempo: palabra clave del código de MET Norway -> (es, ca, en); el icono es static/wx/<clave>.svg
 SKY = [
-    ("thunder", "⛈️", "Tormenta", "Tempesta", "Thunderstorm"),
-    ("snow", "🌨️", "Nieve", "Neu", "Snow"),
-    ("sleet", "🌨️", "Aguanieve", "Aiguaneu", "Sleet"),
-    ("heavyrain", "🌧️", "Lluvia fuerte", "Pluja forta", "Heavy rain"),
-    ("showers", "🌦️", "Chubascos", "Ruixats", "Showers"),
-    ("lightrain", "🌦️", "Lluvia débil", "Pluja feble", "Light rain"),
-    ("rain", "🌧️", "Lluvia", "Pluja", "Rain"),
-    ("fog", "🌫️", "Niebla", "Boira", "Fog"),
-    ("partlycloudy", "⛅", "Parcialmente nublado", "Parcialment ennuvolat", "Partly cloudy"),
-    ("cloudy", "☁️", "Nublado", "Ennuvolat", "Cloudy"),
-    ("fair", "🌤️", "Poco nuboso", "Poc ennuvolat", "Mostly clear"),
-    ("clearsky", "☀️", "Despejado", "Serè", "Clear sky"),
+    ("thunder", "Tormenta", "Tempesta", "Thunderstorm"),
+    ("snow", "Nieve", "Neu", "Snow"),
+    ("sleet", "Aguanieve", "Aiguaneu", "Sleet"),
+    ("heavyrain", "Lluvia fuerte", "Pluja forta", "Heavy rain"),
+    ("showers", "Chubascos", "Ruixats", "Showers"),
+    ("lightrain", "Lluvia débil", "Pluja feble", "Light rain"),
+    ("rain", "Lluvia", "Pluja", "Rain"),
+    ("fog", "Niebla", "Boira", "Fog"),
+    ("partlycloudy", "Parcialmente nublado", "Parcialment ennuvolat", "Partly cloudy"),
+    ("cloudy", "Nublado", "Ennuvolat", "Cloudy"),
+    ("fair", "Poco nuboso", "Poc ennuvolat", "Mostly clear"),
+    ("clearsky", "Despejado", "Serè", "Clear sky"),
 ]
-SKY_COL = {"es": 2, "ca": 3, "en": 4}
+SKY_COL = {"es": 1, "ca": 2, "en": 3}
 
 # Índice europeo de calidad del aire (EEA): límites superiores de cada categoría.
 AQ_BANDS = {"NO2": (40, 90, 120, 230, 340), "O3": (50, 100, 130, 240, 380),
@@ -72,17 +72,17 @@ AGENDA_CATS = {  # categorías de la agenda (en catalán, como las publica el Aj
     "Joventut": ("Juventud", "Youth"), "Gent gran": ("Gente mayor", "Older people"),
 }
 
-# grupos de la guía de ocio: icono, ca, es, en (en el orden en que salen en la página)
+# grupos de la guía de ocio: icono (Lucide), ca, es, en (en el orden en que salen en la página)
 LEISURE_GROUPS = {
-    "nature": ("🌳", "Natura, parcs i fonts", "Naturaleza, parques y fuentes", "Nature, parks and springs"),
-    "routes": ("🥾", "Rutes a peu i en bici", "Rutas a pie y en bici", "Walking and cycling routes"),
-    "heritage": ("🏛️", "Patrimoni", "Patrimonio", "Heritage"),
-    "culture": ("🎭", "Cultura i lleure", "Cultura y ocio", "Culture and entertainment"),
-    "eat": ("🍽️", "Restaurants", "Restaurantes", "Restaurants"),
-    "drink": ("☕", "Bars i cafeteries", "Bares y cafeterías", "Bars and cafés"),
-    "night": ("🌙", "Nit: pubs, discoteques i música", "Noche: pubs, discotecas y música", "Nightlife: pubs, clubs and live music"),
-    "sport": ("⚽", "Esport", "Deporte", "Sport"),
-    "community": ("🤝", "Centres cívics i entitats", "Centros cívicos y entidades", "Community centres and associations"),
+    "nature": ("trees", "Natura, parcs i fonts", "Naturaleza, parques y fuentes", "Nature, parks and springs"),
+    "routes": ("footprints", "Rutes a peu i en bici", "Rutas a pie y en bici", "Walking and cycling routes"),
+    "heritage": ("landmark", "Patrimoni", "Patrimonio", "Heritage"),
+    "culture": ("drama", "Cultura i lleure", "Cultura y ocio", "Culture and entertainment"),
+    "eat": ("utensils", "Restaurants", "Restaurantes", "Restaurants"),
+    "drink": ("coffee", "Bars i cafeteries", "Bares y cafeterías", "Bars and cafés"),
+    "night": ("moon", "Nit: pubs, discoteques i música", "Noche: pubs, discotecas y música", "Nightlife: pubs, clubs and live music"),
+    "sport": ("trophy", "Esport", "Deporte", "Sport"),
+    "community": ("handshake", "Centres cívics i entitats", "Centros cívicos y entidades", "Community centres and associations"),
 }
 
 PLACE_TYPES = {  # valor de OSM -> ca, es, en
@@ -203,13 +203,13 @@ STRINGS = {
         "add_event": "Organitzes una festa, un concert o una activitat oberta al públic a Cerdanyola? Si el teu local o entitat té un calendari web (per exemple, WordPress amb The Events Calendar), <a href=\"{repo}/issues\">explica-ho a GitHub</a> i l'afegirem a l'agenda.",
         "slug_picks": "recomanacions", "picks_title": "Recomanacions de la setmana a Cerdanyola",
         "picks_desc": "Restaurants, bars i experiències especials de Cerdanyola del Vallès i Bellaterra triats a mà. Cada setmana en surten uns altres.",
-        "picks_home": "✨ Recomanat aquesta setmana", "picks_more": "Més detalls de les recomanacions",
+        "picks_home": "Recomanat aquesta setmana", "picks_more": "Més detalls de les recomanacions",
         "picks_week": "Selecció de la setmana del {d}. Dilluns que ve en canvien.",
-        "picks_food": "🍽️ On menjar", "picks_experience": "✨ Què fer",
+        "picks_food": "On menjar", "picks_experience": "Què fer",
         "picks_note": "Llista feta a mà ({n} llocs) a partir de la reputació pública de cada local, sense cap pagament ni acord comercial. Abans d'anar-hi, comprova horaris i obertura al seu web. Trobes a faltar un lloc o n'ha tancat algun? <a href=\"{repo}/issues\">Digues-nos-ho a GitHub</a>.",
         "slug_save": "estalvia", "save_title": "Estalvia a Cerdanyola",
         "save_desc": "Maneres reals d'estalviar a Cerdanyola del Vallès i Bellaterra, actualitzades cada dia: les hores més barates de la llum, la benzinera més barata, activitats gratuïtes, ajudes per a particulars i descomptes oficials.",
-        "save_home": "💰 Estalvia a Cerdanyola", "save_all": "Totes les maneres d'estalviar",
+        "save_home": "Estalvia a Cerdanyola", "save_all": "Totes les maneres d'estalviar",
         "save_home_text": "Llum, carburant, activitats gratuïtes, ajudes i descomptes oficials, en una sola pàgina.",
         "save_home_fuel": "Avui, omplir {l} L de gasolina a la benzinera més barata de Cerdanyola estalvia <strong>{e} €</strong> respecte a la més cara.",
         "save_home_free": "Hi ha <strong>{n}</strong> activitats gratuïtes el pròxim mes.",
@@ -254,7 +254,7 @@ STRINGS = {
         "jobs_posted": "Publicada el {d}",
         "jobs_empty": "Ara mateix no n'hi ha cap.",
         "jobs_note": "Ofertes del Servei Públic d'Ocupació de Catalunya (<a href='https://feinaactiva.gencat.cat/'>Feina Activa</a>) i convocatòries públiques del <a href='https://cido.diba.cat/'>CIDO</a> de la Diputació de Barcelona (CC BY 4.0). Només es mostren les ofertes publicades els darrers 60 dies: algunes ja poden estar cobertes. <a href='https://www.cerdanyolactiva.cat/'>Cerdanyola Activa</a> també té una borsa de treball i orientació laboral gratuïta.",
-        "jobs_home": "💼 Feina a prop",
+        "jobs_home": "Feina a prop",
         "jobs_home_text": "{o} ofertes de feina a Cerdanyola i rodalia i {p} oposicions i borses públiques obertes.",
         "jobs_all": "Veure les ofertes",
         "fuel_title": "Gasolineres: preus d'avui",
@@ -263,7 +263,7 @@ STRINGS = {
         "fuel_diesel": "Gasoil",
         "fuel_town": "A Cerdanyola",
         "fuel_near": "Les més barates dels municipis veïns",
-        "fuel_home": "⛽ Carburant més barat avui a Cerdanyola",
+        "fuel_home": "Carburant més barat avui a Cerdanyola",
         "fuel_home_text": "Gasolina 95: <strong>{g} €/l</strong> a {gs}. Gasoil: <strong>{d} €/l</strong> a {ds}.",
         "fuel_more": "Veure totes les gasolineres",
         "fuel_note": "Preus en €/litre. Origen de les dades: Ministeri per a la Transició Ecològica i el Repte Demogràfic. Última actualització: {t}.",
@@ -300,23 +300,23 @@ STRINGS = {
         "aids_note": "Dades de la <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/index\">Base de Dades Nacional de Subvencions</a> (Ministeri d'Hisenda), actualitzades cada dia. Quan el termini es compta des de la publicació oficial, la data és aproximada. Abans de demanar res, llegeix les bases a la convocatòria oficial: és l'única que val. Hi ha ajudes municipals, com les bonificacions d'impostos, que no hi surten: consulta-les a l'Ajuntament. Vols que t'avisin? La BDNS envia <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/alertas\">alertes gratuïtes per correu</a>.",
         "weekend_title": "Aquest cap de setmana", "weekend_empty": "Encara no hi ha activitats anunciades per al cap de setmana.",
         "kids": "Per a infants",
-        "ics_link": "📅 Vols l'agenda al mòbil? Afegeix <a href=\"{url}\">aquest calendari</a> al teu (a Google Calendar: «Altres calendaris» → «Des de l'URL») i s'actualitzarà sol.",
+        "ics_link": "Vols l'agenda al mòbil? Afegeix <a href=\"{url}\">aquest calendari</a> al teu (a Google Calendar: «Altres calendaris» → «Des de l'URL») i s'actualitzarà sol.",
         "slug_invest": "inversions", "invest_title": "Inversions i empreses a Cerdanyola",
         "invest_desc": "Grans inversions públiques a Cerdanyola del Vallès i Bellaterra, licitacions obertes per a empreses i autònoms, contractes anunciats, i empreses noves, trasllats i ampliacions de capital del Registre Mercantil.",
-        "invest_big": "🏗️ Grans inversions públiques",
+        "invest_big": "Grans inversions públiques",
         "invest_big_text": "Contractes públics d'1 milió d'euros o més a Cerdanyola i al campus de la UAB amb novetats l'últim any, del més gran al més petit.",
-        "invest_open": "📣 Licitacions obertes",
+        "invest_open": "Licitacions obertes",
         "invest_open_text": "Contractes públics a Cerdanyola que ara accepten ofertes d'empreses i autònoms, per data de tancament.",
-        "invest_soon": "🔭 Properament",
+        "invest_soon": "Properament",
         "invest_soon_text": "Contractes que l'administració ha anunciat que traurà a licitació.",
-        "invest_companies": "🏢 Empreses: altes, trasllats i capital",
+        "invest_companies": "Empreses: altes, trasllats i capital",
         "invest_companies_text": "Els darrers {d} dies, al Registre Mercantil: {n} empreses noves amb domicili a Cerdanyola o Bellaterra (capital inicial total: {c}), {m} trasllats a Cerdanyola i {u} ampliacions de capital.",
         "invest_empty": "Ara mateix no n'hi ha cap.",
         "invest_until": "ofertes fins al {d}", "invest_lots": "{n} lots", "invest_winners": "Adjudicat a: {w}",
         "invest_capital": "Capital: {c}", "invest_capital_change": "{c} (capital resultant: {t})",
-        "invest_feed": "🔔 Vols que t'avisin? Afegeix <a href=\"{url}\">aquest canal</a> a un lector de notícies (Feedly, Inoreader, Thunderbird...) i rebràs cada licitació, gran inversió o moviment d'empreses nou.",
+        "invest_feed": "Vols que t'avisin? Afegeix <a href=\"{url}\">aquest canal</a> a un lector de notícies (Feedly, Inoreader, Thunderbird...) i rebràs cada licitació, gran inversió o moviment d'empreses nou.",
         "invest_note": "Contractes: <a href=\"https://contractaciopublica.cat/\">Plataforma de serveis de contractació pública</a> (dades obertes de la Generalitat). Hi publiquen l'Ajuntament, la Generalitat, l'AMB, la UAB i els centres de recerca del campus; les inversions de l'Estat (sincrotró ALBA, Adif...) no hi surten. Imports sense IVA: el pressupost de licitació o, si ja s'ha adjudicat, l'import adjudicat. Empreses: <a href=\"https://www.boe.es/diario_borme/\">BORME</a> (Agència Estatal Butlletí Oficial de l'Estat), llegit fins al {t}; només hi surten empreses, sense dades de persones. Els trasllats, els canvis de capital i els tancaments només es detecten d'empreses que s'han constituït o traslladat a Cerdanyola des del {since}. Aquesta pàgina és informativa: no és cap recomanació ni assessorament d'inversió.",
-        "invest_home": "🏗️ Inversions i empreses",
+        "invest_home": "Inversions i empreses",
         "invest_home_text": "{o} licitacions públiques obertes, {b} grans inversions (d'1 milió d'euros o més) amb novetats l'últim any i {n} empreses noves o arribades a Cerdanyola els darrers {d} dies. Les darreres grans inversions:",
         "invest_all": "Veure inversions, licitacions i empreses",
         "source_line": "Fonts: MET Norway (temps), Generalitat de Catalunya (agenda, equipaments, aire i contractes públics), Ajuntament de Cerdanyola, UAB i entitats locals (agenda), Renfe (avisos), OpenStreetMap i Overture Maps (guia d'oci), BDNS (ajudes), SOC i Diputació de Barcelona (feina), BORME (empreses), Ministeri per a la Transició Ecològica (carburants) i Red Eléctrica (llum). Actualitzat: {t}.",
@@ -324,6 +324,10 @@ STRINGS = {
         "studio": "Sobre nosaltres",
         "donate": "Dona suport al projecte",
         "skip": "Salta al contingut", "language": "Idioma", "choose": "Tria l'idioma",
+        "sections": "Seccions", "nav_home": "Inici", "nav_agenda": "Agenda", "nav_leisure": "Oci",
+        "nav_picks": "Recomanacions", "nav_save": "Estalvia", "nav_aids": "Ajudes", "nav_jobs": "Feina",
+        "nav_invest": "Inversions", "nav_directory": "Equipaments", "nav_emergency": "112",
+        "theme_auto": "Tema: automàtic", "theme_light": "Tema: clar", "theme_dark": "Tema: fosc",
         "notfound_title": "Pàgina no trobada", "notfound_text": "Aquesta pàgina no existeix. Torna a l'inici.",
         "about_body": """
 <p>{site} reuneix en una sola pàgina dades obertes útils per a la gent de Cerdanyola del Vallès i Bellaterra: el temps, l'agenda, les hores més barates de la llum, la qualitat de l'aire i els avisos de Rodalies.</p>
@@ -351,6 +355,7 @@ STRINGS = {
 """,
         "privacy_body": """
 <p>Aquest web no fa servir galetes, no té analítica ni publicitat i no recull dades personals.</p>
+<p>Si tries el tema clar o fosc, la preferència es desa només al teu navegador (localStorage) i no s'envia enlloc.</p>
 <p>Està allotjat a GitHub Pages. Com qualsevol servidor web, GitHub registra l'adreça IP de les visites per motius de seguretat. Més informació a la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaració de privacitat de GitHub</a>.</p>
 """,
         "owner_missing": "Projecte personal sense ànim de lucre. Contacte: a través del <a href=\"{repo}\">repositori a GitHub</a>.",
@@ -386,13 +391,13 @@ STRINGS = {
         "add_event": "¿Organizas una fiesta, un concierto o una actividad abierta al público en Cerdanyola? Si tu local o entidad tiene un calendario web (por ejemplo, WordPress con The Events Calendar), <a href=\"{repo}/issues\">cuéntalo en GitHub</a> y lo añadiremos a la agenda.",
         "slug_picks": "recomendaciones", "picks_title": "Recomendaciones de la semana en Cerdanyola",
         "picks_desc": "Restaurantes, bares y experiencias especiales de Cerdanyola del Vallès y Bellaterra elegidos a mano. Cada semana salen otros.",
-        "picks_home": "✨ Recomendado esta semana", "picks_more": "Más detalles de las recomendaciones",
+        "picks_home": "Recomendado esta semana", "picks_more": "Más detalles de las recomendaciones",
         "picks_week": "Selección de la semana del {d}. El lunes que viene cambian.",
-        "picks_food": "🍽️ Dónde comer", "picks_experience": "✨ Qué hacer",
+        "picks_food": "Dónde comer", "picks_experience": "Qué hacer",
         "picks_note": "Lista hecha a mano ({n} sitios) a partir de la reputación pública de cada local, sin ningún pago ni acuerdo comercial. Antes de ir, comprueba horarios y apertura en su web. ¿Echas de menos un sitio o ha cerrado alguno? <a href=\"{repo}/issues\">Dínoslo en GitHub</a>.",
         "slug_save": "ahorra", "save_title": "Ahorra en Cerdanyola",
         "save_desc": "Formas reales de ahorrar en Cerdanyola del Vallès y Bellaterra, actualizadas cada día: las horas más baratas de la luz, la gasolinera más barata, actividades gratuitas, ayudas para particulares y descuentos oficiales.",
-        "save_home": "💰 Ahorra en Cerdanyola", "save_all": "Todas las formas de ahorrar",
+        "save_home": "Ahorra en Cerdanyola", "save_all": "Todas las formas de ahorrar",
         "save_home_text": "Luz, carburante, actividades gratuitas, ayudas y descuentos oficiales, en una sola página.",
         "save_home_fuel": "Hoy, llenar {l} L de gasolina en la gasolinera más barata de Cerdanyola ahorra <strong>{e} €</strong> respecto a la más cara.",
         "save_home_free": "Hay <strong>{n}</strong> actividades gratuitas en el próximo mes.",
@@ -437,7 +442,7 @@ STRINGS = {
         "jobs_posted": "Publicada el {d}",
         "jobs_empty": "Ahora mismo no hay ninguna.",
         "jobs_note": "Ofertas del Servei Públic d'Ocupació de Catalunya (<a href='https://feinaactiva.gencat.cat/'>Feina Activa</a>) y convocatorias públicas del <a href='https://cido.diba.cat/'>CIDO</a> de la Diputació de Barcelona (CC BY 4.0). Solo se muestran las ofertas publicadas en los últimos 60 días: algunas pueden estar ya cubiertas. <a href='https://www.cerdanyolactiva.cat/'>Cerdanyola Activa</a> también tiene una bolsa de trabajo y orientación laboral gratuita.",
-        "jobs_home": "💼 Empleo cerca",
+        "jobs_home": "Empleo cerca",
         "jobs_home_text": "{o} ofertas de trabajo en Cerdanyola y alrededores y {p} oposiciones y bolsas públicas abiertas.",
         "jobs_all": "Ver las ofertas",
         "fuel_title": "Gasolineras: precios de hoy",
@@ -446,7 +451,7 @@ STRINGS = {
         "fuel_diesel": "Gasóleo",
         "fuel_town": "En Cerdanyola",
         "fuel_near": "Las más baratas de los municipios vecinos",
-        "fuel_home": "⛽ Carburante más barato hoy en Cerdanyola",
+        "fuel_home": "Carburante más barato hoy en Cerdanyola",
         "fuel_home_text": "Gasolina 95: <strong>{g} €/l</strong> en {gs}. Gasóleo: <strong>{d} €/l</strong> en {ds}.",
         "fuel_more": "Ver todas las gasolineras",
         "fuel_note": "Precios en €/litro. Origen de los datos: Ministerio para la Transición Ecológica y el Reto Demográfico. Última actualización: {t}.",
@@ -483,23 +488,23 @@ STRINGS = {
         "aids_note": "Datos de la <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/index\">Base de Datos Nacional de Subvenciones</a> (Ministerio de Hacienda), actualizados cada día. Cuando el plazo se cuenta desde la publicación oficial, la fecha es aproximada. Antes de pedir nada, lee las bases en la convocatoria oficial: es la única que vale. Hay ayudas municipales, como las bonificaciones de impuestos, que no aparecen aquí: consúltalas en el Ajuntament. ¿Quieres que te avisen? La BDNS envía <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/alertas\">alertas gratuitas por correo</a>.",
         "weekend_title": "Este fin de semana", "weekend_empty": "Todavía no hay actividades anunciadas para el fin de semana.",
         "kids": "Para niños",
-        "ics_link": "📅 ¿Quieres la agenda en el móvil? Añade <a href=\"{url}\">este calendario</a> al tuyo (en Google Calendar: «Otros calendarios» → «Desde URL») y se actualizará solo.",
+        "ics_link": "¿Quieres la agenda en el móvil? Añade <a href=\"{url}\">este calendario</a> al tuyo (en Google Calendar: «Otros calendarios» → «Desde URL») y se actualizará solo.",
         "slug_invest": "inversiones", "invest_title": "Inversiones y empresas en Cerdanyola",
         "invest_desc": "Grandes inversiones públicas en Cerdanyola del Vallès y Bellaterra, licitaciones abiertas para empresas y autónomos, contratos anunciados, y empresas nuevas, traslados y ampliaciones de capital del Registro Mercantil.",
-        "invest_big": "🏗️ Grandes inversiones públicas",
+        "invest_big": "Grandes inversiones públicas",
         "invest_big_text": "Contratos públicos de 1 millón de euros o más en Cerdanyola y el campus de la UAB con novedades en el último año, de mayor a menor.",
-        "invest_open": "📣 Licitaciones abiertas",
+        "invest_open": "Licitaciones abiertas",
         "invest_open_text": "Contratos públicos en Cerdanyola que ahora aceptan ofertas de empresas y autónomos, por fecha de cierre.",
-        "invest_soon": "🔭 Próximamente",
+        "invest_soon": "Próximamente",
         "invest_soon_text": "Contratos que la administración ha anunciado que sacará a licitación.",
-        "invest_companies": "🏢 Empresas: altas, traslados y capital",
+        "invest_companies": "Empresas: altas, traslados y capital",
         "invest_companies_text": "En los últimos {d} días, en el Registro Mercantil: {n} empresas nuevas con domicilio en Cerdanyola o Bellaterra (capital inicial total: {c}), {m} traslados a Cerdanyola y {u} ampliaciones de capital.",
         "invest_empty": "Ahora mismo no hay ninguno.",
         "invest_until": "ofertas hasta el {d}", "invest_lots": "{n} lotes", "invest_winners": "Adjudicado a: {w}",
         "invest_capital": "Capital: {c}", "invest_capital_change": "{c} (capital resultante: {t})",
-        "invest_feed": "🔔 ¿Quieres que te avisen? Añade <a href=\"{url}\">este canal</a> a un lector de noticias (Feedly, Inoreader, Thunderbird...) y recibirás cada nueva licitación, gran inversión o movimiento de empresas.",
+        "invest_feed": "¿Quieres que te avisen? Añade <a href=\"{url}\">este canal</a> a un lector de noticias (Feedly, Inoreader, Thunderbird...) y recibirás cada nueva licitación, gran inversión o movimiento de empresas.",
         "invest_note": "Contratos: <a href=\"https://contractaciopublica.cat/\">Plataforma de serveis de contractació pública</a> (datos abiertos de la Generalitat). Publican en ella el Ajuntament, la Generalitat, el AMB, la UAB y los centros de investigación del campus; las inversiones del Estado (sincrotrón ALBA, Adif...) no aparecen. Importes sin IVA: el presupuesto de licitación o, si ya se ha adjudicado, el importe adjudicado. Empresas: <a href=\"https://www.boe.es/diario_borme/\">BORME</a> (Agencia Estatal Boletín Oficial del Estado), leído hasta el {t}; solo aparecen empresas, sin datos de personas. Los traslados, los cambios de capital y los cierres solo se detectan en empresas que se han constituido o trasladado a Cerdanyola desde el {since}. Esta página es informativa: no es ninguna recomendación ni asesoramiento de inversión.",
-        "invest_home": "🏗️ Inversiones y empresas",
+        "invest_home": "Inversiones y empresas",
         "invest_home_text": "{o} licitaciones públicas abiertas, {b} grandes inversiones (de 1 millón de euros o más) con novedades en el último año y {n} empresas nuevas o llegadas a Cerdanyola en los últimos {d} días. Las últimas grandes inversiones:",
         "invest_all": "Ver inversiones, licitaciones y empresas",
         "source_line": "Fuentes: MET Norway (tiempo), Generalitat de Catalunya (agenda, equipamientos, aire y contratos públicos), Ajuntament de Cerdanyola, UAB y entidades locales (agenda), Renfe (avisos), OpenStreetMap y Overture Maps (guía de ocio), BDNS (ayudas), SOC y Diputació de Barcelona (empleo), BORME (empresas), Ministerio para la Transición Ecológica (carburantes) y Red Eléctrica (luz). Actualizado: {t}.",
@@ -507,6 +512,10 @@ STRINGS = {
         "studio": "Sobre nosotros",
         "donate": "Apoya el proyecto",
         "skip": "Saltar al contenido", "language": "Idioma", "choose": "Elige idioma",
+        "sections": "Secciones", "nav_home": "Inicio", "nav_agenda": "Agenda", "nav_leisure": "Ocio",
+        "nav_picks": "Recomendaciones", "nav_save": "Ahorra", "nav_aids": "Ayudas", "nav_jobs": "Empleo",
+        "nav_invest": "Inversiones", "nav_directory": "Equipamientos", "nav_emergency": "112",
+        "theme_auto": "Tema: automático", "theme_light": "Tema: claro", "theme_dark": "Tema: oscuro",
         "notfound_title": "Página no encontrada", "notfound_text": "Esta página no existe. Vuelve al inicio.",
         "about_body": """
 <p>{site} reúne en una sola página datos abiertos útiles para la gente de Cerdanyola del Vallès y Bellaterra: el tiempo, la agenda, las horas más baratas de la luz, la calidad del aire y los avisos de Rodalies.</p>
@@ -534,6 +543,7 @@ STRINGS = {
 """,
         "privacy_body": """
 <p>Esta web no usa cookies, no tiene analítica ni publicidad y no recoge datos personales.</p>
+<p>Si eliges el tema claro u oscuro, la preferencia se guarda solo en tu navegador (localStorage) y no se envía a ningún sitio.</p>
 <p>Está alojada en GitHub Pages. Como cualquier servidor web, GitHub registra la dirección IP de las visitas por motivos de seguridad. Más información en la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.</p>
 """,
         "owner_missing": "Proyecto personal sin ánimo de lucro. Contacto: a través del <a href=\"{repo}\">repositorio en GitHub</a>.",
@@ -569,13 +579,13 @@ STRINGS = {
         "add_event": "Organising a party, concert or event open to the public in Cerdanyola? If your venue or association has a web calendar (for example WordPress with The Events Calendar), <a href=\"{repo}/issues\">tell us on GitHub</a> and we'll add it to the agenda.",
         "slug_picks": "recommendations", "picks_title": "This week's picks in Cerdanyola",
         "picks_desc": "Hand-picked restaurants, bars and special experiences in Cerdanyola del Vallès and Bellaterra. A different selection every week.",
-        "picks_home": "✨ Picks of the week", "picks_more": "More about this week's picks",
+        "picks_home": "Picks of the week", "picks_more": "More about this week's picks",
         "picks_week": "Selection for the week of {d}. It changes next Monday.",
-        "picks_food": "🍽️ Where to eat", "picks_experience": "✨ Things to do",
+        "picks_food": "Where to eat", "picks_experience": "Things to do",
         "picks_note": "Hand-made list ({n} places) based on each venue's public reputation, with no payments or commercial agreements. Check opening hours on their website before going. Missing a place, or has one closed? <a href=\"{repo}/issues\">Tell us on GitHub</a>.",
         "slug_save": "save", "save_title": "Save money in Cerdanyola",
         "save_desc": "Real ways to save money in Cerdanyola del Vallès and Bellaterra, updated daily: the cheapest electricity hours, the cheapest petrol station, free activities, grants for individuals and official discounts.",
-        "save_home": "💰 Save money in Cerdanyola", "save_all": "All the ways to save",
+        "save_home": "Save money in Cerdanyola", "save_all": "All the ways to save",
         "save_home_text": "Electricity, fuel, free activities, grants and official discounts, on one page.",
         "save_home_fuel": "Today, filling {l} L of petrol at the cheapest station in Cerdanyola saves <strong>€{e}</strong> compared with the most expensive one.",
         "save_home_free": "There are <strong>{n}</strong> free activities in the coming month.",
@@ -620,7 +630,7 @@ STRINGS = {
         "jobs_posted": "Posted {d}",
         "jobs_empty": "There are none right now.",
         "jobs_note": "Offers from the Catalan public employment service (<a href='https://feinaactiva.gencat.cat/'>Feina Activa</a>) and public calls from the Diputació de Barcelona's <a href='https://cido.diba.cat/'>CIDO</a> (CC BY 4.0). Offers are in Catalan or Spanish, as published. Only offers posted in the last 60 days are shown: some may already be filled. <a href='https://www.cerdanyolactiva.cat/'>Cerdanyola Activa</a> also runs a job board and free career guidance.",
-        "jobs_home": "💼 Jobs nearby",
+        "jobs_home": "Jobs nearby",
         "jobs_home_text": "{o} job offers in and around Cerdanyola and {p} open public-sector posts and job pools.",
         "jobs_all": "See the offers",
         "fuel_title": "Petrol stations: today's prices",
@@ -629,7 +639,7 @@ STRINGS = {
         "fuel_diesel": "Diesel",
         "fuel_town": "In Cerdanyola",
         "fuel_near": "Cheapest in neighbouring towns",
-        "fuel_home": "⛽ Cheapest fuel in Cerdanyola today",
+        "fuel_home": "Cheapest fuel in Cerdanyola today",
         "fuel_home_text": "Petrol 95: <strong>€{g}/l</strong> at {gs}. Diesel: <strong>€{d}/l</strong> at {ds}.",
         "fuel_more": "See all petrol stations",
         "fuel_note": "Prices in €/litre. Data source: Spanish Ministry for the Ecological Transition. Last updated: {t}.",
@@ -666,23 +676,23 @@ STRINGS = {
         "aids_note": "Data from Spain's <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/index\">National Grants Database</a> (BDNS, Ministry of Finance), updated daily. Titles are in Spanish or Catalan, as published. When the deadline counts from the official publication, the date is approximate. Before applying, read the rules in the official call: it is the only one that counts. Some local benefits, such as tax rebates, are not listed: ask the town council. Want alerts? The BDNS sends <a href=\"https://www.infosubvenciones.es/bdnstrans/GE/es/alertas\">free email alerts</a>.",
         "weekend_title": "This weekend", "weekend_empty": "No events have been announced for the weekend yet.",
         "kids": "For children",
-        "ics_link": "📅 Want the events on your phone? Add <a href=\"{url}\">this calendar</a> to yours (in Google Calendar: “Other calendars” → “From URL”) and it will update itself.",
+        "ics_link": "Want the events on your phone? Add <a href=\"{url}\">this calendar</a> to yours (in Google Calendar: “Other calendars” → “From URL”) and it will update itself.",
         "slug_invest": "investment", "invest_title": "Investment and business in Cerdanyola",
         "invest_desc": "Major public investment in Cerdanyola del Vallès and Bellaterra, open public tenders for businesses and the self-employed, announced contracts, and new companies, relocations and capital increases from the Companies Register.",
-        "invest_big": "🏗️ Major public investment",
+        "invest_big": "Major public investment",
         "invest_big_text": "Public contracts worth €1 million or more in Cerdanyola and on the UAB campus with news in the last year, largest first.",
-        "invest_open": "📣 Open tenders",
+        "invest_open": "Open tenders",
         "invest_open_text": "Public contracts in Cerdanyola now accepting bids from businesses and the self-employed, by closing date.",
-        "invest_soon": "🔭 Coming up",
+        "invest_soon": "Coming up",
         "invest_soon_text": "Contracts that public bodies have announced they will put out to tender.",
-        "invest_companies": "🏢 Companies: new, relocations and capital",
+        "invest_companies": "Companies: new, relocations and capital",
         "invest_companies_text": "In the last {d} days, in the Companies Register: {n} new companies based in Cerdanyola or Bellaterra (total initial capital: {c}), {m} relocations to Cerdanyola and {u} capital increases.",
         "invest_empty": "There are none right now.",
         "invest_until": "bids until {d}", "invest_lots": "{n} lots", "invest_winners": "Awarded to: {w}",
         "invest_capital": "Capital: {c}", "invest_capital_change": "{c} (new total: {t})",
-        "invest_feed": "🔔 Want alerts? Add <a href=\"{url}\">this feed</a> to a news reader (Feedly, Inoreader, Thunderbird...) and you'll get every new tender, major investment or company move.",
+        "invest_feed": "Want alerts? Add <a href=\"{url}\">this feed</a> to a news reader (Feedly, Inoreader, Thunderbird...) and you'll get every new tender, major investment or company move.",
         "invest_note": "Contracts: the Catalan <a href=\"https://contractaciopublica.cat/\">public procurement platform</a> (Generalitat open data), where the town council, the Catalan government, the metropolitan area (AMB), the UAB and the campus research centres publish; Spanish state investment (ALBA synchrotron, Adif...) is not included. Titles are in Catalan or Spanish, as published. Amounts exclude VAT: the tender budget or, once awarded, the awarded amount. Companies: the <a href=\"https://www.boe.es/diario_borme/\">BORME</a> (Spain's official Companies Register gazette, Agencia Estatal Boletín Oficial del Estado), read up to {t}; only companies are shown, never personal data. Relocations, capital changes and closures are only detected for companies set up in or moved to Cerdanyola since {since}. This page is for information only: it is not investment advice or a recommendation.",
-        "invest_home": "🏗️ Investment and business",
+        "invest_home": "Investment and business",
         "invest_home_text": "{o} open public tenders, {b} major investments (€1 million or more) with news in the last year and {n} new or newly arrived companies in Cerdanyola in the last {d} days. Latest major investments:",
         "invest_all": "See investment, tenders and companies",
         "source_line": "Sources: MET Norway (weather), Generalitat de Catalunya (events, facilities, air and public contracts), Cerdanyola town council, UAB and local associations (events), Renfe (alerts), OpenStreetMap and Overture Maps (leisure guide), BDNS (grants), SOC and Diputació de Barcelona (jobs), BORME (companies), Ministry for the Ecological Transition (fuel) and Red Eléctrica (electricity). Updated: {t}.",
@@ -690,6 +700,10 @@ STRINGS = {
         "studio": "About us",
         "donate": "Support the project",
         "skip": "Skip to content", "language": "Language", "choose": "Choose your language",
+        "sections": "Sections", "nav_home": "Home", "nav_agenda": "What's on", "nav_leisure": "Leisure",
+        "nav_picks": "Picks", "nav_save": "Save", "nav_aids": "Grants", "nav_jobs": "Jobs",
+        "nav_invest": "Investment", "nav_directory": "Facilities", "nav_emergency": "112",
+        "theme_auto": "Theme: auto", "theme_light": "Theme: light", "theme_dark": "Theme: dark",
         "notfound_title": "Page not found", "notfound_text": "This page does not exist. Go back to the home page.",
         "about_body": """
 <p>{site} brings together useful open data for people in Cerdanyola del Vallès and Bellaterra on a single page: weather, events, the cheapest electricity hours, air quality and Rodalies train alerts.</p>
@@ -717,6 +731,7 @@ STRINGS = {
 """,
         "privacy_body": """
 <p>This website uses no cookies, has no analytics or advertising, and collects no personal data.</p>
+<p>If you pick the light or dark theme, the preference is stored only in your browser (localStorage) and never sent anywhere.</p>
 <p>It is hosted on GitHub Pages. Like any web server, GitHub logs visitors' IP addresses for security reasons. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
 """,
         "owner_missing": "Personal non-profit project. Contact: through the <a href=\"{repo}\">GitHub repository</a>.",
@@ -745,9 +760,9 @@ def fmt_date(lang, d, weekday=True):
 
 
 def sky(lang, code):
-    for key, icon, *names in SKY:
+    for key, *names in SKY:
         if code and key in code.split("_")[0]:
-            return icon, names[SKY_COL[lang] - 2]
+            return key, names[SKY_COL[lang] - 1]
     return "", ""
 
 
