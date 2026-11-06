@@ -112,7 +112,7 @@ class TestSources(unittest.TestCase):
                     "addresses": json.dumps([{"freeform": address}]),
                     "sources": json.dumps([{"dataset": "meta", "license": "CDLA-Permissive-2.0"}])}
         fake = [venue("Nou Nom", "Carrer De Can Mitjans 4", "open"), venue("Nom Antic", "Carrer de Can Mitjans, 4"),
-                venue("Singapur Deluxe", "Carrer Del Bosc Tancat 5", "open"), venue("Tancat", "Carrer Major 1", "permanently_closed"),
+                venue("Night Swinger", "Carrer Del Bosc Tancat 5", "open"), venue("Tancat", "Carrer Major 1", "permanently_closed"),
                 venue("Coral Polifònica", "Carrer Major 2", primary="music_venue"), venue("Fora", "Carrer Major 3", lon=2.3),
                 venue("Sala Rock", "Carrer Major 4", primary="music_venue")]
         self.assertEqual([p["name"] for p in S.parse_overture_night(fake, segments)], ["Nou Nom", "Sala Rock"])
