@@ -1,6 +1,58 @@
 {
  "data": [
   {
+   "amount": 80712.0,
+   "date": "2026-11-05",
+   "deadline": "2026-11-23T23:59",
+   "id": "29827823/251/2026",
+   "lots": 3,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Anunci de licitació",
+   "title": "Contractació de serveis de seqüenciació massiva (ngs) per al centre de recerca en agrigenòmica csic-irta-uab-ub (crag)",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/155fc004-bc97-4a14-a001-9df6e87959de/300929534",
+   "winners": []
+  },
+  {
+   "amount": 49950920.77,
+   "date": "2026-11-05",
+   "deadline": "2026-07-24T14:00",
+   "id": "23584847/CUCDCV-2027-1",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Obres del Projecte d'Urbanització E1: Passeig dels Gorgs",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e76e93c-aec0-4465-bfcf-2000c6f9f5b6/300930091",
+   "winners": []
+  },
+  {
+   "amount": 289587.57,
+   "date": "2026-11-05",
+   "deadline": "2026-11-24T13:00",
+   "id": "11061850/CONTR-38/2026",
+   "lots": 2,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Obres de reforma interior del mòdul GL-600: transformació de l’antic espai del gimnàs escolar en aula polivalent. Facultat de Ciències de l’Educació",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/20029923-f0c8-446f-aa7e-51ce9a020fda/300926694",
+   "winners": []
+  },
+  {
+   "amount": 46000.0,
+   "date": "2026-11-05",
+   "deadline": "2026-11-23T13:00",
+   "id": "11061850/CONSU-1/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Concessió de serveis per a l’organització, gestió i explotació de les Jornades Ocupacionals Veterinàries (JOVs) de la Facultat de Veterinària de la Universitat Autònoma de Barcelona",
+   "type": "Concessió de serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a9d2c294-ffde-4623-8a8c-32af27837b6a/300929942",
+   "winners": []
+  },
+  {
    "amount": 84117.0,
    "date": "2026-11-04",
    "deadline": "2026-10-27T23:59",
@@ -141,8 +193,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300849150",
    "winners": [
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
-    "LLEAL TULSÀ UTE"
+    "LLEAL TULSÀ UTE",
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
    ]
   },
   {
@@ -170,8 +222,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "ASSOCIACIO PLASTICFREEWARE",
-    "FUNBRAIN, SL"
+    "FUNBRAIN, SL",
+    "ASSOCIACIO PLASTICFREEWARE"
    ]
   },
   {
@@ -1756,19 +1808,6 @@
    "winners": [
     "STAR COOPERATION ESPAÑA, SL"
    ]
-  },
-  {
-   "amount": 49950920.77,
-   "date": "2026-08-07",
-   "deadline": "2026-07-24T14:00",
-   "id": "23584847/CUCDCV-2027-1",
-   "lots": 0,
-   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Obres del Projecte d'Urbanització E1: Passeig dels Gorgs",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e76e93c-aec0-4465-bfcf-2000c6f9f5b6/300858112",
-   "winners": []
   },
   {
    "amount": 39614.17,
@@ -5440,5 +5479,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-06T09:55:15+01:00"
+ "fetched": "2026-11-06T21:55:43+01:00"
 }

@@ -2844,6 +2844,42 @@
     "who": [
      "business"
     ]
+   },
+   "940450": {
+    "budget": 13200,
+    "checked": "2026-11-06",
+    "end": "",
+    "id": "940450",
+    "level": "LOCAL",
+    "organ": "AYUNTAMIENTO DE CERDANYOLA DEL VALLÈS",
+    "purpose": "Otras actuaciones de carácter económico",
+    "received": "2026-11-06",
+    "region": "CERDANYOLA DEL VALLÈS",
+    "start": "",
+    "term": "Diez días hábiles desde la publicación de la convocatoria en el BOP de Barcelona",
+    "title": "Convocatoria de subvenciones para promocionar, dinamizar y facilitar las actuaciones de las asociaciones de vecinos y vecinas mediante la confinanciación de actividades de interés vecinal, sociocultural y comunitario.",
+    "title_ca": "",
+    "who": [
+     "entities"
+    ]
+   },
+   "940568": {
+    "budget": 9900000,
+    "checked": "2026-11-06",
+    "end": "",
+    "id": "940568",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'EMPRESA I TREBALL  ",
+    "purpose": "Fomento del Empleo",
+    "received": "2026-11-06",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "10 Dies Hàbils",
+    "title": "Subvenciones del Programa Ocell de Foc",
+    "title_ca": "Subvencions del Programa Ocell de Foc",
+    "who": [
+     "entities"
+    ]
    }
   },
   "closed": [
@@ -4824,8 +4860,17 @@
    "940150",
    "940151",
    "940152",
-   "940153"
+   "940153",
+   "940525",
+   "940551",
+   "940552",
+   "940554",
+   "940558",
+   "940563",
+   "940565",
+   "940566",
+   "940567"
   ]
  },
- "fetched": "2026-11-06T09:55:15+01:00"
+ "fetched": "2026-11-06T21:55:43+01:00"
 }

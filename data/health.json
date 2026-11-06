@@ -1,48 +1,47 @@
 {
  "agenda": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "aids": {
-  "last_error": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias/busqueda?vpd=GE&pageSize=200&page=0&order=fechaRecepcion&direccion=desc&fechaDesde=06/11/2025&fechaHasta=06/11/2026&organos=2859,1672,6226,720: The read operation timed out",
-  "last_ok": "2026-11-06T09:55:15+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "air": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "alerts": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "chargers": {
   "last_ok": "2026-11-06T09:55:15+01:00"
  },
  "cido": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "companies": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "contracts": {
-  "last_ok": "2026-11-06T09:55:15+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "equipments": {
   "last_ok": "2026-11-06T09:55:15+01:00"
  },
  "fuel": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "leisure": {
   "last_ok": "2026-11-06T09:55:15+01:00"
  },
  "light": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "nightlife": {
   "last_ok": "2026-11-06T09:55:15+01:00"
  },
  "offers": {
-  "last_ok": "2026-11-06T09:55:15+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  },
  "weather": {
-  "last_ok": "2026-11-06T13:58:55+01:00"
+  "last_ok": "2026-11-06T21:55:43+01:00"
  }
 }

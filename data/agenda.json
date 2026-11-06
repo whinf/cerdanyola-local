@@ -62,7 +62,7 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
-    "category": "Activitats del Servei de Patrimoni",
+    "category": "",
     "end": "2026-11-08",
     "place": "",
     "source": "ajuntament",
@@ -70,6 +70,16 @@
     "time": "16:30",
     "title": "Vine al Museu de Ca n'Oliver per Sant Martí!",
     "url": "https://www.cerdanyola.cat/agenda/vine-al-museu-de-ca-noliver-sant-marti-0"
+   },
+   {
+    "category": "",
+    "end": "2026-11-15",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-06",
+    "time": "17:00",
+    "title": "Festa de Tardor de Sant Martí 2026",
+    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-2026"
    },
    {
     "category": "Infància",
@@ -82,8 +92,8 @@
     "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-9"
    },
    {
-    "category": "Altres activitats",
-    "end": "2026-11-06",
+    "category": "",
+    "end": "2026-11-11",
     "place": "",
     "source": "ajuntament",
     "start": "2026-11-06",
@@ -670,5 +680,5 @@
    }
   ]
  },
- "fetched": "2026-11-06T13:58:55+01:00"
+ "fetched": "2026-11-06T21:55:43+01:00"
 }

@@ -1,6 +1,32 @@
 {
  "data": [
   {
+   "company": "Hihired Recruitment SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-06",
+   "hours": "Jornada completa",
+   "salary": [
+    2080,
+    2500
+   ],
+   "title": "Qa(quality assurance) manual",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328444"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-06",
+   "hours": "Jornada completa",
+   "salary": [
+    2142,
+    2142
+   ],
+   "title": "Muntador/a de forns - paleta (ref. 31637)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631637"
+  },
+  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral temporal (6 mesos)",
    "date": "2026-11-06",
@@ -188,19 +214,6 @@
    "date": "2026-10-16",
    "hours": "Jornada completa",
    "salary": [
-    1221,
-    1221
-   ],
-   "title": "Empleat/da de la llar (ref:30368)",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630368"
-  },
-  {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-10-16",
-   "hours": "Jornada completa",
-   "salary": [
     1428,
     1429
    ],
@@ -304,19 +317,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325909"
   },
   {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-30",
-   "hours": "Jornada parcial (25 hores - jornada setmanal)",
-   "salary": [
-    852,
-    852
-   ],
-   "title": "Administratiu/iva (ref. 28910)",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628910"
-  },
-  {
    "company": "CENTRE METAL.LÚRGIC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-09-25",
@@ -352,9 +352,9 @@
    "date": "2026-09-22",
    "hours": "Jornada completa",
    "salary": [],
-   "title": "Mozos/zas de almacén",
+   "title": "Chóferes(h/m)",
    "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325282"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325281"
   },
   {
    "company": "David Fdez. Ttes. S.L.",
@@ -362,9 +362,9 @@
    "date": "2026-09-22",
    "hours": "Jornada completa",
    "salary": [],
-   "title": "Chóferes(h/m)",
+   "title": "Mozos/zas de almacén",
    "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325281"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325282"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -378,6 +378,19 @@
    "title": "Mecànic/a de camions (ref:28014)",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628014"
+  },
+  {
+   "company": "RED COORDINADORA MULTISERVICIOS CMS SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada parcial (7 hores - jornada setmanal)",
+   "salary": [
+    266,
+    266
+   ],
+   "title": "Limpiador/a cerdanyola",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325052"
   },
   {
    "company": "Cerdanyola Promocions, S.L.U.",
@@ -401,19 +414,6 @@
    "title": "Auxiliar administratiu/iva",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325023"
-  },
-  {
-   "company": "RED COORDINADORA MULTISERVICIOS CMS SL",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-18",
-   "hours": "Jornada parcial (7 hores - jornada setmanal)",
-   "salary": [
-    266,
-    266
-   ],
-   "title": "Limpiador/a cerdanyola",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325052"
   },
   {
    "company": "Nascor Formación SLU",
@@ -563,19 +563,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631273"
   },
   {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral temporal (3 mesos)",
-   "date": "2026-10-22",
-   "hours": "Jornada completa",
-   "salary": [
-    2146,
-    2147
-   ],
-   "title": "Conductor/a de camió-ploma",
-   "town": "RIPOLLET",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630148"
-  },
-  {
    "company": "Administració d'empreses",
    "contract": "Contracte laboral indefinit",
    "date": "2026-10-21",
@@ -649,6 +636,19 @@
    "title": "Auxiliar administratiu/iva institut-escola els pinetons de ripollet (substitució mitja jornada)",
    "town": "RIPOLLET",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324236"
+  },
+  {
+   "company": "GROWING UP HR SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-06",
+   "hours": "Jornada completa",
+   "salary": [
+    1626,
+    1700
+   ],
+   "title": "64. mozo/moza de almacen turno noche",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328455"
   },
   {
    "company": "Empresa de manteniment",
@@ -877,12 +877,12 @@
    "date": "2026-10-13",
    "hours": "Jornada completa",
    "salary": [
-    2200,
-    2200
+    2071,
+    2071
    ],
-   "title": "Conductor/a de camió formigonera mòbil",
+   "title": "Tecnics/tecniques en manteniment mecànic",
    "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630124"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630082"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -890,12 +890,12 @@
    "date": "2026-10-13",
    "hours": "Jornada completa",
    "salary": [
-    2071,
-    2071
+    2200,
+    2200
    ],
-   "title": "Tecnics/tecniques en manteniment mecànic",
+   "title": "Conductor/a de camió formigonera mòbil",
    "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630082"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630124"
   },
   {
    "company": "FUNDACIO ENGRUNES",
@@ -1061,7 +1061,7 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324353"
   },
   {
-   "company": "EULEN.SA",
+   "company": "",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-04",
    "hours": "Jornada parcial (18 hores - jornada setmanal)",
@@ -1352,6 +1352,19 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328353"
   },
   {
+   "company": "EMPRESA PÚBLICA",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-06",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2000
+   ],
+   "title": "Psicòleg/psicòloga per centre ocupacional (codi: 7788)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328458"
+  },
+  {
    "company": "HABEMUS CONSULTING",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-05",
@@ -1477,7 +1490,7 @@
     1400,
     1400
    ],
-   "title": "Empleat/ada administratiu/iva amb tasques d'atenció al públic no classificats en altres epígrafs_31270",
+   "title": "Empleat/ada administratiu/iva amb tasques d'atenció al públic",
    "town": "SANT CUGAT DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631270"
   },
@@ -1958,5 +1971,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324154"
   }
  ],
- "fetched": "2026-11-06T09:55:15+01:00"
+ "fetched": "2026-11-06T21:55:43+01:00"
 }
