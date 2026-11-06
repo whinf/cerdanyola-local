@@ -2,6 +2,31 @@
  "data": {
   "events": [
    {
+    "date": "2026-11-04",
+    "id": "2026-11-04-491470-moved_in",
+    "kind": "moved_in",
+    "name": "PMP IMPACTO INGENIERIA SL",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-212-08"
+   },
+   {
+    "activity": "Actividades de sociedades holding",
+    "capital": 3000.0,
+    "date": "2026-10-27",
+    "id": "2026-10-27-478630-new",
+    "kind": "new",
+    "name": "YONG XIN 2026 S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-207-08"
+   },
+   {
+    "activity": "Restaurantes",
+    "capital": 3000.0,
+    "date": "2026-10-27",
+    "id": "2026-10-27-478626-new",
+    "kind": "new",
+    "name": "AL MUNDO REAL 2026 S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-207-08"
+   },
+   {
     "activity": "El ejercicio en comun de la actividad profesional propia de la odontologia y/o estomatologia. a la actividad…",
     "capital": 3000.0,
     "date": "2026-10-26",
@@ -473,33 +498,6 @@
     "kind": "new",
     "name": "CADOSEN S.L.",
     "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-130-08"
-   },
-   {
-    "activity": "Evaluacion de riesgos y daños",
-    "capital": 2000.0,
-    "date": "2026-07-08",
-    "id": "2026-07-08-320732-new",
-    "kind": "new",
-    "name": "CRITERIO PERICIAL S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-129-08"
-   },
-   {
-    "activity": "Actividades de servicios de intermediacion para el comercio al por menor no especializado",
-    "capital": 21000.0,
-    "date": "2026-07-08",
-    "id": "2026-07-08-320722-new",
-    "kind": "new",
-    "name": "LACRUX STUDIO S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-129-08"
-   },
-   {
-    "activity": "Explotacion, gestion, administracion y direccion de establecimientos dedicados a la hosteleria y restauracion, tales…",
-    "capital": 3000.0,
-    "date": "2026-07-02",
-    "id": "2026-07-02-312149-new",
-    "kind": "new",
-    "name": "PECATTO BURGER S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-125-08"
    }
   ],
   "known": {
@@ -509,6 +507,7 @@
    "B 28938": "MOLINO 2100 SL",
    "B 294545": "MEDINVEST BARCLIF SL",
    "B 316961": "NEURAL LABS SL",
+   "B 356135": "PMP IMPACTO INGENIERIA SL",
    "B 421659": "ASCIL PROYECTOS SL",
    "B 430667": "LA TASCA DE CA L'ENRIC SL",
    "B 449167": "DESIGN GLASSCUBE SL",
@@ -673,13 +672,15 @@
    "B 665182": "AURUM CROWN GOLD S.L.",
    "B 665236": "SERVIAR 2026 CONSTRUCCIONES S.L.",
    "B 665254": "CLINICA DENTAL SMALIUM S.L.P.",
+   "B 665293": "AL MUNDO REAL 2026 S.L.",
+   "B 665306": "YONG XIN 2026 S.L.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-10-26",
+  "last": "2026-11-06",
   "since": "2025-10-25"
  },
- "fetched": "2026-10-27T00:09:21+01:00"
+ "fetched": "2026-11-06T09:55:15+01:00"
 }

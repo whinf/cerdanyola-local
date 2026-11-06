@@ -3247,7 +3247,7 @@
    "hours": "",
    "km": "19.6",
    "lat": 41.4189559,
-   "lon": 2.138068,
+   "lon": 2.1380626,
    "name": "PR-C 171 Barcelona (Parc de Cervantes) - Barcelona (Trinitat Nova)",
    "osm": "relation/4100440",
    "phone": "",
@@ -3397,7 +3397,7 @@
    "hours": "",
    "km": "74",
    "lat": 41.5567729,
-   "lon": 2.0840388,
+   "lon": 2.0840416,
    "name": "Sender del Vallès Natural",
    "osm": "relation/3330576",
    "phone": "",
@@ -3616,5 +3616,5 @@
    "web": ""
   }
  ],
- "fetched": "2026-10-26T12:10:35+01:00"
+ "fetched": "2026-11-06T09:55:15+01:00"
 }

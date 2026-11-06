@@ -273,6 +273,25 @@
    "web": ""
   },
   {
+   "address": "Carrer Bosc Tancat, 1",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.500675,
+   "lon": 2.135494,
+   "name": "Koko Premium Club",
+   "osm": "",
+   "phone": "+34 631 177 903",
+   "ref": "",
+   "src": [
+    "BrightQuery",
+    "meta"
+   ],
+   "type": "nightclub",
+   "web": "https://www.facebook.com/405901316252856"
+  },
+  {
    "address": "Carretera de Barcelona, 190",
    "cuisine": "",
    "group": "night",
@@ -346,6 +365,24 @@
    "web": ""
   },
   {
+   "address": "Carrer del Bosc Tancat 5",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.500442,
+   "lon": 2.135489,
+   "name": "Singapur Deluxe",
+   "osm": "",
+   "phone": "+34 693 964 299",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "nightclub",
+   "web": ""
+  },
+  {
    "address": "Carrer de Serafí Pitarra, 8",
    "cuisine": "",
    "group": "night",
@@ -399,7 +436,25 @@
    ],
    "type": "pub",
    "web": "http://www.irlanda.cat/"
+  },
+  {
+   "address": "Carrer Bosc Tancat 5",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.500442,
+   "lon": 2.135489,
+   "name": "Uasa Club",
+   "osm": "",
+   "phone": "",
+   "ref": "",
+   "src": [
+    "BrightQuery"
+   ],
+   "type": "night_venue",
+   "web": ""
   }
  ],
- "fetched": "2026-10-26T12:10:35+01:00"
+ "fetched": "2026-11-06T09:55:15+01:00"
 }

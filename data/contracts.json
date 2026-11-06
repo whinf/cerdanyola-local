@@ -1,6 +1,570 @@
 {
  "data": [
   {
+   "amount": 84117.0,
+   "date": "2026-11-04",
+   "deadline": "2026-10-27T23:59",
+   "id": "29827823/239/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Formalització",
+   "title": "Subministrament, instal·lació i configuració d’un servidor supermicro o equivalent amb gpu per al centre de recerca en agrigenòmica csic-irta-uab-ub (crag).",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a5c65c06-1fd9-4ab6-af85-c2e555b27e06/300924695",
+   "winners": [
+    "MAIN MEMORY, S.A"
+   ]
+  },
+  {
+   "amount": 3400.0,
+   "date": "2026-11-04",
+   "deadline": "",
+   "id": "23584847/CUCDCV-2026-17  (exp. 029/2026)",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Serveis de Coordinació de seguretat i salut de les obres d’emergència per reparar els desperfectes ocasionats per la pluja en l’àmbit de Can Costa a l’espai funcional de la Riera de Sant Cugat",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d4d0234e-6e71-4e3b-b84c-2ea98f974069/300928680",
+   "winners": [
+    "CLAUDA ARQUITECTURA I TECNICA, S.L.P"
+   ]
+  },
+  {
+   "amount": 9653.5,
+   "date": "2026-11-04",
+   "deadline": "",
+   "id": "23584847/CUCDCV-2026-16",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Direcció d'obra reparacions emergència riera Sant Cugat",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f3b649bf-ea9c-43f8-aca5-cae7e8e9217e/300928634",
+   "winners": [
+    "NATURALEA CONSERVACIÓ, SL"
+   ]
+  },
+  {
+   "amount": 204064.06,
+   "date": "2026-11-04",
+   "deadline": "",
+   "id": "23584847/CUCDCV-2026-15",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Obres d’emergència per reparar els desperfectes ocasionats per la pluja en l’àmbit de Can Costa",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c04aa76f-f564-42d6-a2e2-ead073cbed7c/300925851",
+   "winners": [
+    "TALIO TRATAMIENTO ACONDICIONAMIENTO DE LADERAS Y OBRAS S.A."
+   ]
+  },
+  {
+   "amount": 23000.25,
+   "date": "2026-11-04",
+   "deadline": "2026-07-03T14:00",
+   "id": "16138154/154/2026/0026",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anul·lació",
+   "title": "Suport tècnic especialitzat teatre ateneu",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/87a481af-cae9-4a00-8edf-7f65c880e6cf/300928355",
+   "winners": []
+  },
+  {
+   "amount": 144628.1,
+   "date": "2026-11-04",
+   "deadline": "2026-01-30T14:00",
+   "id": "16138154/154/2025/0046",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Servei de redacció del projecte obres d’urbanització nou Parc de la Flor de Maig",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a431fbcc-1781-4fd0-82ee-0a971a2cb6a3/300928469",
+   "winners": []
+  },
+  {
+   "amount": 33299.33,
+   "date": "2026-11-04",
+   "deadline": "2026-07-28T14:00",
+   "id": "16138154/153/2026/0017",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Posada en marxa il·luminació façana Ajuntament",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/1db691cf-65a5-4746-b6dc-5c56cbd7721f/300928700",
+   "winners": [
+    "LED DREAM, SL"
+   ]
+  },
+  {
+   "amount": 74718.72,
+   "date": "2026-11-04",
+   "deadline": "2025-12-04T14:00",
+   "id": "16138154/153/2025/0023",
+   "lots": 6,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Subministrament de nou vehicles per diferents serveis municipals, mitjançant sis lots",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d17362d0-fdf6-425b-8761-4fb4a9b44075/300928718",
+   "winners": [
+    "D. L. STARBAIX, SL"
+   ]
+  },
+  {
+   "amount": 299129.71,
+   "date": "2026-11-04",
+   "deadline": "2026-09-18T14:00",
+   "id": "11778989/1/2026",
+   "lots": 0,
+   "organ": "Vila Universitària, SL",
+   "phase": "Expedient en avaluació",
+   "title": "Contracte de serveis de jardineria dels espais de la Vila Universitària",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/84fbcfd3-dea7-4d15-8983-cf95bccde0c5/300928851",
+   "winners": []
+  },
+  {
+   "amount": 85632.0,
+   "date": "2026-11-04",
+   "deadline": "2026-03-26T14:00",
+   "id": "11712474/1/2026",
+   "lots": 2,
+   "organ": "Fundació Universitat Autònoma de Barcelona MP",
+   "phase": "Adjudicació",
+   "title": "Contracte de serveis de gestoria laboral de la Fundació Universitat Autònoma de Barcelona MP i la resta d'entitats de la Corporació UAB",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300849150",
+   "winners": [
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
+    "LLEAL TULSÀ UTE"
+   ]
+  },
+  {
+   "amount": 88000.0,
+   "date": "2026-11-03",
+   "deadline": "2026-10-22T12:00",
+   "id": "208043/IFAE-2026/19",
+   "lots": 0,
+   "organ": "Consorci Institut de Física d'Altes Energies",
+   "phase": "Expedient en avaluació",
+   "title": "Suministro de un horno de plasma para el institut de física d’altes energies (ifae).",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/415002bd-da16-4f7f-a294-e25e152f7185/300926119",
+   "winners": []
+  },
+  {
+   "amount": 32358.0,
+   "date": "2026-11-03",
+   "deadline": "2026-05-21T14:00",
+   "id": "16138154/154/2026/0015",
+   "lots": 3,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Formalització",
+   "title": "Activitats educació ambiental",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
+   "winners": [
+    "ASSOCIACIO PLASTICFREEWARE",
+    "FUNBRAIN, SL"
+   ]
+  },
+  {
+   "amount": 65402.04,
+   "date": "2026-11-03",
+   "deadline": "2026-04-30T14:00",
+   "id": "16138154/154/2026/0007",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Manteniment Corredor Verd",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f73cd9f5-0e64-4307-80df-4368366dfc4f/300927319",
+   "winners": [
+    "FUNDACIÓ LAFACT FACTORIA SOCIAL DE TERRASSA"
+   ]
+  },
+  {
+   "amount": 75000.0,
+   "date": "2026-11-02",
+   "deadline": "2026-11-20T23:59",
+   "id": "29827823/242/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Anunci de licitació",
+   "title": "Subministrament d’actualizació de la maquinaria de tres cambres climàtiques de creixement de plantes del centre de recerca en agrigenòmica csic-irta-uab-ub (crag)",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d9ba9c3c-fdb2-4ee7-9fdd-23f924f14efb/300925533",
+   "winners": []
+  },
+  {
+   "amount": 21251.05,
+   "date": "2026-11-02",
+   "deadline": "2026-09-18T14:00",
+   "id": "28027859/905477/26",
+   "lots": 0,
+   "organ": "Àrea Metropolitana de Barcelona",
+   "phase": "Expedient en avaluació",
+   "title": "Servei consistent en la direcció de les obres del projecte de descontaminació del passeig de la Riera i urbanització. Fase 1: Millora del clavegueram i asfaltat a Cerdanyola del Vallès.",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bbd58b75-28af-4c4c-90f0-68ebe97e2837/300925527",
+   "winners": []
+  },
+  {
+   "amount": 60000.0,
+   "date": "2026-11-02",
+   "deadline": "2026-11-17T12:00",
+   "id": "208043/IFAE-2026/17",
+   "lots": 0,
+   "organ": "Consorci Institut de Física d'Altes Energies",
+   "phase": "Anunci de licitació",
+   "title": "Subministrament de 5 servidors de gestió de tiering de dades del port d’informació científica (pic) de l’institut de física d’altes energies (ifae)",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/19ef0d9d-83c9-4fb2-b6ea-69aa3197143e/300925548",
+   "winners": []
+  },
+  {
+   "amount": 46914.56,
+   "date": "2026-10-30",
+   "deadline": "2026-11-20T14:00",
+   "id": "23584847/CUCDCV-2027-3",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Anunci de licitació",
+   "title": "Consultoria per a la gestió del Gestor de Mobilitat del PDU",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/48da3862-8a75-4649-b141-408c41c0ef19/300924506",
+   "winners": []
+  },
+  {
+   "amount": 39500.0,
+   "date": "2026-10-30",
+   "deadline": "2026-09-01T10:00",
+   "id": "208087/CEP2026-003 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Formalització",
+   "title": "Contractació específica del SERVEI DE DESENVOLUPAMENT D’UN APLICATIU WEB PER A LA GESTIÓ I SOL·LICITUD DE LES COMPRES DE L’INSTITUT CATALÀ DE NANOCIÈNCIA I NANOTECNOLOGIA (ICN2), que engloba les categories 2, 3 i 4 de l’SDA E2343 del CSUC",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e8aafc35-d84a-4a0c-a8f6-69fa37ec57c8/300924193",
+   "winners": [
+    "Seidor Opentrends, S.L."
+   ]
+  },
+  {
+   "amount": 15000.0,
+   "date": "2026-10-30",
+   "deadline": "2026-11-16T11:00",
+   "id": "208087/2026-22 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Servei de gestió de residus perillosos i no perillosos generats a l'institut català de nanociència i nanotecnologia (icn2)",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/0a2e616b-7bdc-460c-8efc-ee7c9482224c/300925072",
+   "winners": []
+  },
+  {
+   "amount": 453264.98,
+   "date": "2026-10-30",
+   "deadline": "2025-10-09T14:00",
+   "id": "16138154/154/2025/0015",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Servei d'Informació i Atenció a les Dones i persones LGTBI",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3c58e112-5b30-4eba-af89-83f758810523/300924335",
+   "winners": []
+  },
+  {
+   "amount": 199887.01,
+   "date": "2026-10-30",
+   "deadline": "2026-11-26T13:00",
+   "id": "11061850/CONTR-49/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Obres de construcció d'un ascensor de comunicació de totes les plantes de la Torre i l'Espina B2 Parell de la Facultat de Dret de la Universitat Autònom de Barcelona",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d627ab10-94cb-42f5-af33-2650ef1a0bfc/300924542",
+   "winners": []
+  },
+  {
+   "amount": 126098.59,
+   "date": "2026-10-30",
+   "deadline": "2026-11-30T13:00",
+   "id": "11061850/CONTR-44/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Obres de substitució de la Planta Refredadora, per una Bomba de Calor, a l’edifici L (Biblioteca d’Humanitats).",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/0e00420a-d97a-444c-b98f-eca2e1e5b4da/300924389",
+   "winners": []
+  },
+  {
+   "amount": 103769.1,
+   "date": "2026-10-30",
+   "deadline": "2026-07-20T13:00",
+   "id": "11061850/CONTR-26/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Expedient en avaluació",
+   "title": "Obres de substitució de la coberta de fibrociment per xapa aïllada a la granja nº3 del Servei de Granges al campus de Bellaterra de la Universitat Autònoma de Barcelona",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ffb0fa64-506c-4ee1-910d-187cdef7c432/300924671",
+   "winners": []
+  },
+  {
+   "amount": 884192.4,
+   "date": "2026-10-29",
+   "deadline": "2026-06-15T20:00",
+   "id": "202184/ED-2026-128",
+   "lots": 1,
+   "organ": "Departament d'Educació i Formació Professional",
+   "phase": "Expedient en avaluació",
+   "title": "La prestació del servei de les unitats d'escolarització compartida (UEC) per als cursos escolars 2026-2027 i 2027-2028",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/95b088a0-c1df-40ae-b33e-3f1478fe9859/300846504",
+   "winners": []
+  },
+  {
+   "amount": 45383.42,
+   "date": "2026-10-29",
+   "deadline": "2026-01-29T14:00",
+   "id": "16138154/154/2025/0034",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Servei redacció de projecte bàsic i executiu de reforma de l’edifici de la piscina i gimnàs de Can Xarau",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f43ad863-8d61-44e9-90c1-6dd0530ddf87/300923499",
+   "winners": []
+  },
+  {
+   "amount": 1761683.36,
+   "date": "2026-10-29",
+   "deadline": "2026-07-20T14:00",
+   "id": "16138154/151/2026/0004",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Remodelació parc Can Xarau.",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a92c26ae-5538-4b0a-ba0d-6505a937583e/300923419",
+   "winners": []
+  },
+  {
+   "amount": 80900.0,
+   "date": "2026-10-29",
+   "deadline": "2026-07-07T13:00",
+   "id": "11061850/CONTR-25/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Formalització",
+   "title": "Obres de Reforma i Adaptació de la Deixalleria Espai Circulab al Campus de la UAB de la Universitat Autònoma de Barcelona. Fase II",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2797bf07-e29c-4d5b-8467-66fcac476383/300923253",
+   "winners": [
+    "HEUROP S.L"
+   ]
+  },
+  {
+   "amount": 172750.49,
+   "date": "2026-10-28",
+   "deadline": "2026-09-14T12:00",
+   "id": "29827823/234/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Adjudicació",
+   "title": "Servei de Neteja Integral Expedient 234/2026",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c5f1bc95-9145-41bc-a751-040f3975e96c/300921513",
+   "winners": [
+    "CLANSER, S.A"
+   ]
+  },
+  {
+   "amount": 216000.0,
+   "date": "2026-10-28",
+   "deadline": "2026-09-14T12:00",
+   "id": "208087/2026-15 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Adjudicació",
+   "title": "Servicio de atención centralizada al personal técnico del departamento de itpara el institut català de nanociencia y nanotecnología (icn2)",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2ed41de6-3ee0-43ec-bd70-5091b2a150a7/300921810",
+   "winners": [
+    "LOGICALIS SPAIN, S.L.U."
+   ]
+  },
+  {
+   "amount": 20644.0,
+   "date": "2026-10-28",
+   "deadline": "2026-09-11T12:00",
+   "id": "208087/2026-10 ICN2",
+   "lots": 2,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Adjudicació",
+   "title": "Servei de manteniment preventiu dels armaris d’inflamables, armaris de corrosius, vitrines de gasos i cabines de bioseguretat, dividit en 2 lots, per a l’institut català de nanociència i nanotecnologia (icn2)",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bc3543fb-579f-400a-8a8f-bd39084a8a86/300921408",
+   "winners": [
+    "LABORTECH WALDNER SL"
+   ]
+  },
+  {
+   "amount": 16426.62,
+   "date": "2026-10-28",
+   "deadline": "2026-06-19T12:00",
+   "id": "208087/2026-07 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Formalització",
+   "title": "Servei d’ús i manteniment del programari a3 innuva de gestió de la nòmina per a l'institut català de nanociència i nanotecnologia (icn2), exp. 2026-07 icn2",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3944e7ef-6057-4535-8b1b-16def10c146b/300922467",
+   "winners": [
+    "WOLTERS KLUWER TAX AND ACCOUNTING ESPAÑA SL"
+   ]
+  },
+  {
+   "amount": 10000.0,
+   "date": "2026-10-28",
+   "deadline": "2026-06-10T12:00",
+   "id": "208087/2026-06 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Formalització",
+   "title": "Servei d’assessorament jurídic laboral per a l’institut català de nanociència i nanotecnologia (icn2)",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c114aaf5-64ab-4892-bdc7-b37f2a1163a2/300922448",
+   "winners": [
+    "Bufet Vallbé, SLP"
+   ]
+  },
+  {
+   "amount": 20000.0,
+   "date": "2026-10-27",
+   "deadline": "2026-09-18T12:00",
+   "id": "208043/IFAE-2026/07",
+   "lots": 0,
+   "organ": "Consorci Institut de Física d'Altes Energies",
+   "phase": "Expedient en avaluació",
+   "title": "Contractació d’una plataforma per la gestió integral de la prevenció de riscos laborals a l'institut de física d'altes energies (ifae).",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/25b8886e-b045-4f62-a6a0-487959d60e44/300921014",
+   "winners": []
+  },
+  {
+   "amount": 35536.16,
+   "date": "2026-10-27",
+   "deadline": "2026-09-29T14:00",
+   "id": "16138154/153/2026/0026",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Subministrament material audiovisual",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/fa186bb0-5a07-4035-b0b9-79d3e8c87e47/300920016",
+   "winners": [
+    "R-MEDIA EVOLUTION TWF-C, SL"
+   ]
+  },
+  {
+   "amount": 107100.0,
+   "date": "2026-10-27",
+   "deadline": "2026-09-22T14:00",
+   "id": "16138154/153/2026/0024",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Subministrament d’un domo geodèsic",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/05624700-ecc2-4a1d-bed7-4775d9ac5a75/300920093",
+   "winners": []
+  },
+  {
+   "amount": 40991.36,
+   "date": "2026-10-27",
+   "deadline": "2026-06-11T14:00",
+   "id": "16138154/153/2026/0001",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Subministrament Trenet de Nadal",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/fca870b1-e247-42b5-9b02-69a462282a4f/300920207",
+   "winners": []
+  },
+  {
+   "amount": 24300.0,
+   "date": "2026-10-27",
+   "deadline": "2026-05-20T14:00",
+   "id": "11712474/4/2026",
+   "lots": 0,
+   "organ": "Fundació Universitat Autònoma de Barcelona MP",
+   "phase": "Adjudicació",
+   "title": "Contracte de serveis d’assessorament i assistència en matèria fiscal i comptable",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f197b3e8-01f6-44bc-bcd0-56bef542bb51/300918565",
+   "winners": [
+    "BERTRAN RIBERA ASESORES, SLP"
+   ]
+  },
+  {
+   "amount": 0,
+   "date": "2026-10-26",
+   "deadline": "",
+   "id": "16138154/154/2026/0042",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Formalització",
+   "title": "Recollida residus",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b159259-79cf-4e87-b8cc-0a92d2b92117/300919331",
+   "winners": [
+    "JOSE ANTONIO ROMERO POLO, SAU"
+   ]
+  },
+  {
+   "amount": 66731.64,
+   "date": "2026-10-26",
+   "deadline": "2022-01-26T14:00",
+   "id": "16138154/154/2021/041",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Formalització",
+   "title": "Servei redacció projecte tècnic i direcció facultativa obres restauració elements valor patrimonial Masia de Ca n'Altimira",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/93196b04-9088-e9a4-0b8d-25eddc3b81f1/100610471",
+   "winners": [
+    "FEU I GODOY ARQUITECTES, SLP"
+   ]
+  },
+  {
+   "amount": 41228.71,
+   "date": "2026-10-26",
+   "deadline": "2022-01-26T14:00",
+   "id": "16138154/154/2021/040",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Formalització",
+   "title": "Servei redacció projecte tècnic i direcció facultativa obres de millora entorn Masia Ca n'Altimira",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f16d1586-a66b-f7ef-3bb1-6343b9ab206b/100608517",
+   "winners": [
+    "FEU I GODOY ARQUITECTES"
+   ]
+  },
+  {
    "amount": 8038.11,
    "date": "2026-10-23",
    "deadline": "2026-11-06T23:59",
@@ -25,21 +589,6 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/ec53b521-1396-4208-95a7-797ec54524cc/300917223",
    "winners": []
-  },
-  {
-   "amount": 80900.0,
-   "date": "2026-10-23",
-   "deadline": "2026-07-07T13:00",
-   "id": "11061850/CONTR-25/2026",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Adjudicació",
-   "title": "Obres de Reforma i Adaptació de la Deixalleria Espai Circulab al Campus de la UAB de la Universitat Autònoma de Barcelona. Fase II",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2797bf07-e29c-4d5b-8467-66fcac476383/300917338",
-   "winners": [
-    "HEUROP S.L"
-   ]
   },
   {
    "amount": 6700.0,
@@ -372,19 +921,6 @@
    ]
   },
   {
-   "amount": 185000.0,
-   "date": "2026-10-15",
-   "deadline": "2026-09-14T12:00",
-   "id": "29827823/234/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de Neteja Integral Expedient 234/2026",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c5f1bc95-9145-41bc-a751-040f3975e96c/300909680",
-   "winners": []
-  },
-  {
    "amount": 389005.07,
    "date": "2026-10-15",
    "deadline": "2026-07-14T14:00",
@@ -411,32 +947,6 @@
    "winners": [
     "SISTEMAS AVANZADOS DE TECNOLOGÍA, S.A. (SATEC)"
    ]
-  },
-  {
-   "amount": 240000.0,
-   "date": "2026-10-14",
-   "deadline": "2026-09-14T12:00",
-   "id": "208087/2026-15 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Expedient en avaluació",
-   "title": "Servicio de atención centralizada al personal técnico del departamento de itpara el institut català de nanociencia y nanotecnología (icn2)",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2ed41de6-3ee0-43ec-bd70-5091b2a150a7/300908711",
-   "winners": []
-  },
-  {
-   "amount": 32000.0,
-   "date": "2026-10-14",
-   "deadline": "2026-09-11T12:00",
-   "id": "208087/2026-10 ICN2",
-   "lots": 2,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de manteniment preventiu dels armaris d’inflamables, armaris de corrosius, vitrines de gasos i cabines de bioseguretat, dividit en 2 lots, per a l’institut català de nanociència i nanotecnologia (icn2)",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bc3543fb-579f-400a-8a8f-bd39084a8a86/300889070",
-   "winners": []
   },
   {
    "amount": 234528.16,
@@ -510,21 +1020,6 @@
    "winners": []
   },
   {
-   "amount": 0,
-   "date": "2026-10-09",
-   "deadline": "",
-   "id": "16138154/154/2026/0042",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Adjudicació",
-   "title": "Recollida residus",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b159259-79cf-4e87-b8cc-0a92d2b92117/300905317",
-   "winners": [
-    "JOSE ANTONIO ROMERO POLO, SAU"
-   ]
-  },
-  {
    "amount": 214049.59,
    "date": "2026-10-09",
    "deadline": "2026-11-06T13:00",
@@ -549,22 +1044,6 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/e1e5cb32-6b4f-465f-8d40-acdc6b560162/300903901",
    "winners": []
-  },
-  {
-   "amount": 32358.0,
-   "date": "2026-10-08",
-   "deadline": "2026-05-21T14:00",
-   "id": "16138154/154/2026/0015",
-   "lots": 3,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Adjudicació",
-   "title": "Activitats educació ambiental",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300904350",
-   "winners": [
-    "FUNBRAIN, SL",
-    "ASSOCIACIO PLASTICFREEWARE"
-   ]
   },
   {
    "amount": 23071.2,
@@ -595,19 +1074,6 @@
    ]
   },
   {
-   "amount": 88000.0,
-   "date": "2026-10-07",
-   "deadline": "2026-10-22T12:00",
-   "id": "208043/IFAE-2026/19",
-   "lots": 0,
-   "organ": "Consorci Institut de Física d'Altes Energies",
-   "phase": "Anunci de licitació",
-   "title": "Suministro de un horno de plasma para el institut de física d’altes energies (ifae).",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/415002bd-da16-4f7f-a294-e25e152f7185/300901813",
-   "winners": []
-  },
-  {
    "amount": 40962.8,
    "date": "2026-10-05",
    "deadline": "2026-09-22T14:00",
@@ -618,19 +1084,6 @@
    "title": "Subministrament de material d’oficina",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/4a888a51-0a36-4086-9d17-66c7a8d36b27/300899553",
-   "winners": []
-  },
-  {
-   "amount": 107100.0,
-   "date": "2026-10-05",
-   "deadline": "2026-09-22T14:00",
-   "id": "16138154/153/2026/0024",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Subministrament d’un domo geodèsic",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/05624700-ecc2-4a1d-bed7-4775d9ac5a75/300899652",
    "winners": []
   },
   {
@@ -733,19 +1186,6 @@
    ]
   },
   {
-   "amount": 299129.71,
-   "date": "2026-10-01",
-   "deadline": "2026-09-18T14:00",
-   "id": "11778989/1/2026",
-   "lots": 0,
-   "organ": "Vila Universitària, SL",
-   "phase": "Expedient en avaluació",
-   "title": "Contracte de serveis de jardineria dels espais de la Vila Universitària",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/84fbcfd3-dea7-4d15-8983-cf95bccde0c5/300896230",
-   "winners": []
-  },
-  {
    "amount": 564297.71,
    "date": "2026-09-30",
    "deadline": "2026-09-10T14:00",
@@ -788,19 +1228,6 @@
    "winners": []
   },
   {
-   "amount": 27000.0,
-   "date": "2026-09-30",
-   "deadline": "2026-05-20T14:00",
-   "id": "11712474/4/2026",
-   "lots": 0,
-   "organ": "Fundació Universitat Autònoma de Barcelona MP",
-   "phase": "Expedient en avaluació",
-   "title": "Contracte de serveis d’assessorament i assistència en matèria fiscal i comptable",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f197b3e8-01f6-44bc-bcd0-56bef542bb51/300895943",
-   "winners": []
-  },
-  {
    "amount": 17679.55,
    "date": "2026-09-29",
    "deadline": "2026-06-12T10:30",
@@ -814,19 +1241,6 @@
    "winners": [
     "AFESA MEDIO AMBIENTE, SA"
    ]
-  },
-  {
-   "amount": 21251.05,
-   "date": "2026-09-28",
-   "deadline": "2026-09-18T14:00",
-   "id": "28027859/905477/26",
-   "lots": 0,
-   "organ": "Àrea Metropolitana de Barcelona",
-   "phase": "Expedient en avaluació",
-   "title": "Servei consistent en la direcció de les obres del projecte de descontaminació del passeig de la Riera i urbanització. Fase 1: Millora del clavegueram i asfaltat a Cerdanyola del Vallès.",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bbd58b75-28af-4c4c-90f0-68ebe97e2837/300893117",
-   "winners": []
   },
   {
    "amount": 65200.0,
@@ -870,19 +1284,6 @@
    "winners": [
     "VESTA REHABILITACION, SL"
    ]
-  },
-  {
-   "amount": 65402.04,
-   "date": "2026-09-21",
-   "deadline": "2026-04-30T14:00",
-   "id": "16138154/154/2026/0007",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Manteniment Corredor Verd",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f73cd9f5-0e64-4307-80df-4368366dfc4f/300887659",
-   "winners": []
   },
   {
    "amount": 7197.36,
@@ -976,34 +1377,6 @@
    ]
   },
   {
-   "amount": 10000.0,
-   "date": "2026-09-15",
-   "deadline": "2026-06-10T12:00",
-   "id": "208087/2026-06 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Adjudicació",
-   "title": "Servei d’assessorament jurídic laboral per a l’institut català de nanociència i nanotecnologia (icn2)",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c114aaf5-64ab-4892-bdc7-b37f2a1163a2/300882994",
-   "winners": [
-    "Bufet Vallbé, SLP"
-   ]
-  },
-  {
-   "amount": 47251.0,
-   "date": "2026-09-15",
-   "deadline": "2026-09-29T14:00",
-   "id": "16138154/153/2026/0026",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Anunci de licitació",
-   "title": "Subministrament material audiovisual",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/fa186bb0-5a07-4035-b0b9-79d3e8c87e47/300882762",
-   "winners": []
-  },
-  {
    "amount": 4500.0,
    "date": "2026-09-14",
    "deadline": "2026-09-30T12:00",
@@ -1073,19 +1446,6 @@
    "winners": [
     "UTE PROJECTS - DOPEC"
    ]
-  },
-  {
-   "amount": 41000.0,
-   "date": "2026-09-07",
-   "deadline": "2026-07-28T14:00",
-   "id": "16138154/153/2026/0017",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Anunci de licitació",
-   "title": "Posada en marxa il·luminació façana Ajuntament",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/1db691cf-65a5-4746-b6dc-5c56cbd7721f/300875886",
-   "winners": []
   },
   {
    "amount": 298000.0,
@@ -1163,19 +1523,6 @@
    ]
   },
   {
-   "amount": 20000.0,
-   "date": "2026-09-03",
-   "deadline": "2026-09-18T12:00",
-   "id": "208043/IFAE-2026/07",
-   "lots": 0,
-   "organ": "Consorci Institut de Física d'Altes Energies",
-   "phase": "Anunci de licitació",
-   "title": "Contractació d’una plataforma per la gestió integral de la prevenció de riscos laborals a l'institut de física d'altes energies (ifae).",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/25b8886e-b045-4f62-a6a0-487959d60e44/300873096",
-   "winners": []
-  },
-  {
    "amount": 184915.3,
    "date": "2026-09-03",
    "deadline": "2026-05-22T12:00",
@@ -1217,37 +1564,6 @@
    "type": "Obres",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/6c1b905a-da18-4d87-ad4b-d52073111eab/300872223",
    "winners": []
-  },
-  {
-   "amount": 16426.62,
-   "date": "2026-09-01",
-   "deadline": "2026-06-19T12:00",
-   "id": "208087/2026-07 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Adjudicació",
-   "title": "Servei d’ús i manteniment del programari a3 innuva de gestió de la nòmina per a l'institut català de nanociència i nanotecnologia (icn2), exp. 2026-07 icn2",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3944e7ef-6057-4535-8b1b-16def10c146b/300871916",
-   "winners": [
-    "WOLTERS KLUWER TAX AND ACCOUNTING ESPAÑA SL"
-   ]
-  },
-  {
-   "amount": 85632.0,
-   "date": "2026-09-01",
-   "deadline": "2026-03-26T14:00",
-   "id": "11712474/1/2026",
-   "lots": 2,
-   "organ": "Fundació Universitat Autònoma de Barcelona MP",
-   "phase": "Adjudicació",
-   "title": "Contracte de serveis de gestoria laboral de la Fundació Universitat Autònoma de Barcelona MP i la resta d'entitats de la Corporació UAB",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300849150",
-   "winners": [
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
-    "LLEAL TULSÀ UTE"
-   ]
   },
   {
    "amount": 715392.0,
@@ -1442,19 +1758,6 @@
    ]
   },
   {
-   "amount": 456032.64,
-   "date": "2026-08-10",
-   "deadline": "2025-12-04T14:00",
-   "id": "16138154/153/2025/0023",
-   "lots": 6,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Subministrament de nou vehicles per diferents serveis municipals, mitjançant sis lots",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d17362d0-fdf6-425b-8761-4fb4a9b44075/300670670",
-   "winners": []
-  },
-  {
    "amount": 49950920.77,
    "date": "2026-08-07",
    "deadline": "2026-07-24T14:00",
@@ -1524,19 +1827,6 @@
    ]
   },
   {
-   "amount": 884192.4,
-   "date": "2026-07-31",
-   "deadline": "2026-06-15T20:00",
-   "id": "202184/ED-2026-128",
-   "lots": 1,
-   "organ": "Departament d'Educació i Formació Professional",
-   "phase": "Expedient en avaluació",
-   "title": "La prestació del servei de les unitats d'escolarització compartida (UEC) per als cursos escolars 2026-2027 i 2027-2028",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/95b088a0-c1df-40ae-b33e-3f1478fe9859/300846504",
-   "winners": []
-  },
-  {
    "amount": 312904.1,
    "date": "2026-07-31",
    "deadline": "",
@@ -1593,19 +1883,6 @@
    "winners": [
     "EYOWN TECHNOLOGIES S.L."
    ]
-  },
-  {
-   "amount": 1761683.36,
-   "date": "2026-07-27",
-   "deadline": "2026-07-20T14:00",
-   "id": "16138154/151/2026/0004",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Remodelació parc Can Xarau.",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a92c26ae-5538-4b0a-ba0d-6505a937583e/300845790",
-   "winners": []
   },
   {
    "amount": 23000.0,
@@ -2062,19 +2339,6 @@
    ]
   },
   {
-   "amount": 103769.1,
-   "date": "2026-06-26",
-   "deadline": "2026-07-20T13:00",
-   "id": "11061850/CONTR-26/2026",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Anunci de licitació",
-   "title": "Obres de substitució de la coberta de fibrociment per xapa aïllada a la granja nº3 del Servei de Granges al campus de Bellaterra de la Universitat Autònoma de Barcelona",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ffb0fa64-506c-4ee1-910d-187cdef7c432/300814923",
-   "winners": []
-  },
-  {
    "amount": 30370.0,
    "date": "2026-06-25",
    "deadline": "2026-03-23T14:00",
@@ -2169,19 +2433,6 @@
    ]
   },
   {
-   "amount": 144628.1,
-   "date": "2026-06-19",
-   "deadline": "2026-01-30T14:00",
-   "id": "16138154/154/2025/0046",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de redacció del projecte obres d’urbanització nou Parc de la Flor de Maig",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a431fbcc-1781-4fd0-82ee-0a971a2cb6a3/300683566",
-   "winners": []
-  },
-  {
    "amount": 41146.32,
    "date": "2026-06-19",
    "deadline": "2026-01-29T14:00",
@@ -2255,19 +2506,6 @@
    ]
   },
   {
-   "amount": 23000.25,
-   "date": "2026-06-18",
-   "deadline": "2026-07-03T14:00",
-   "id": "16138154/154/2026/0026",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Anunci de licitació",
-   "title": "Suport tècnic especialitzat teatre ateneu",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/87a481af-cae9-4a00-8edf-7f65c880e6cf/300808432",
-   "winners": []
-  },
-  {
    "amount": 49621.46,
    "date": "2026-06-17",
    "deadline": "2025-09-19T14:00",
@@ -2281,19 +2519,6 @@
    "winners": [
     "HERA HOLLDING HABITAT ECOLOGIA Y RESTAURACION AMBIENTAL, SL"
    ]
-  },
-  {
-   "amount": 40991.36,
-   "date": "2026-06-17",
-   "deadline": "2026-06-11T14:00",
-   "id": "16138154/153/2026/0001",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Subministrament Trenet de Nadal",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/fca870b1-e247-42b5-9b02-69a462282a4f/300807468",
-   "winners": []
   },
   {
    "amount": 133133.3,
@@ -2911,19 +3136,6 @@
    "winners": [
     "SISTEMAS AVANZADOS DE TECNOLOGÍA, S.A."
    ]
-  },
-  {
-   "amount": 453264.98,
-   "date": "2026-05-06",
-   "deadline": "2025-10-09T14:00",
-   "id": "16138154/154/2025/0015",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Servei d'Informació i Atenció a les Dones i persones LGTBI",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3c58e112-5b30-4eba-af89-83f758810523/300767753",
-   "winners": []
   },
   {
    "amount": 14921.85,
@@ -3854,19 +4066,6 @@
    "winners": [
     "MARFINA BUS SAU"
    ]
-  },
-  {
-   "amount": 45383.42,
-   "date": "2026-02-02",
-   "deadline": "2026-01-29T14:00",
-   "id": "16138154/154/2025/0034",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Servei redacció de projecte bàsic i executiu de reforma de l’edifici de la piscina i gimnàs de Can Xarau",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f43ad863-8d61-44e9-90c1-6dd0530ddf87/300682124",
-   "winners": []
   },
   {
    "amount": 1241746.69,
@@ -5215,82 +5414,6 @@
    ]
   },
   {
-   "amount": 12490.17,
-   "date": "2025-10-01",
-   "deadline": "2025-06-10T13:00",
-   "id": "11061850/CONTR-56/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Formalització",
-   "title": "Servei d’assegurança d’accidents i de despeses mèdiques per als usuaris del Servei d’Activitat Física",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/14b4d5fe-6da9-43f7-9e73-054c4a30d086/300573777",
-   "winners": [
-    "MAPFRE VIDA S.A."
-   ]
-  },
-  {
-   "amount": 20500.0,
-   "date": "2025-09-30",
-   "deadline": "2025-07-08T13:00",
-   "id": "11061850/CONTR-70/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Execució",
-   "title": "Subministrament d’una plataforma en modalitat SaaS per a la gestió de les impressores de la Universitat Autònoma de Barcelona",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/dd2c50c4-2ba8-48ab-b2b2-70f7f5f46fc4/300767853",
-   "winners": [
-    "SoftwareOne"
-   ]
-  },
-  {
-   "amount": 129672.07,
-   "date": "2025-09-26",
-   "deadline": "2025-07-16T14:00",
-   "id": "16138154/154/2025/0020",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Execució",
-   "title": "Serveis vinculats a la contractació artística del Festival Internacional Blues de Cerdanyola",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/b9f47496-9976-48b4-89f4-7b1f252f4895/300756902",
-   "winners": [
-    "NO SONORES, SL"
-   ]
-  },
-  {
-   "amount": 58489.0,
-   "date": "2025-09-26",
-   "deadline": "2025-05-30T14:00",
-   "id": "16138154/153/2024/0033",
-   "lots": 2,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Formalització",
-   "title": "Subministrament material informàtic",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e7a7c004-95a8-481f-b456-916eef49e2df/300570780",
-   "winners": [
-    "PISTA CERO, SL",
-    "MUNDI PC IBERICA INFORMATICA, SL"
-   ]
-  },
-  {
-   "amount": 42356.0,
-   "date": "2025-09-23",
-   "deadline": "2025-07-04T16:00",
-   "id": "29827823/217-2025",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Formalització",
-   "title": "Servei de manteniment preventiu de l’equipament de microscopia elyra 7 / lsm 980 / axio observer 7, del centre de recerca en agrigenòmica csic irta uab ub crag al parc científic de la uab a bellaterra.",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/29c28858-12c9-4063-98a7-6bb3810e7b22/300568226",
-   "winners": [
-    "CARL ZEISS IBERIA,S.L"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5317,5 +5440,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-10-27T00:09:21+01:00"
+ "fetched": "2026-11-06T09:55:15+01:00"
 }
