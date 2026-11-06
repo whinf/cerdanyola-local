@@ -14,18 +14,9 @@
     "R8"
    ],
    "text": {
-    "es": "Circulació amb demores que poden superar els 30 minuts de mitjana a causa d'una incidència tècnica d'un tren."
-   }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "Circulació amb demores de 25 minuts de mitjana a causa d'una incidència tècnica d'un tren."
+    "es": "Circulació amb demores que poden superar els 30 minuts de mitjana a causa d'una incidència operativa."
    }
   }
  ],
- "fetched": "2026-11-06T09:55:15+01:00"
+ "fetched": "2026-11-06T13:58:55+01:00"
 }

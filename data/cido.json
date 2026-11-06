@@ -574,6 +574,17 @@
   },
   {
    "end": "2026-11-26",
+   "group": "A2",
+   "kind": "Laboral",
+   "km": 6.0,
+   "org": "Ajuntament de Santa Perpètua de Mogoda",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça d'Educador social",
+   "url": "https://cido.diba.cat/oposicions/22402164"
+  },
+  {
+   "end": "2026-11-26",
    "group": "Agrupacions professionals",
    "kind": "Laboral temporal",
    "km": 8.6,
@@ -681,6 +692,149 @@
    "pool": false,
    "title": "2 places de Postdoctoral Positions in Simulation-Based Inference for Cosmology",
    "url": "https://cido.diba.cat/oposicions/22358180"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador distingit R4 per a l'àrea de coneixement: Geografia Humana (AID00005)",
+   "url": "https://cido.diba.cat/oposicions/22452101"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor agregat per a l'àrea de coneixement: Fonaments de l'Anàlisi Econòmica (AAG00772)",
+   "url": "https://cido.diba.cat/oposicions/22452003"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Comunicació Audiovisual i Publicitat (ALE00830)",
+   "url": "https://cido.diba.cat/oposicions/22451539"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Dret Civil (ALE00820)",
+   "url": "https://cido.diba.cat/oposicions/22451766"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Dret Internacional Privat (ALE00822)",
+   "url": "https://cido.diba.cat/oposicions/22451534"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Economia Aplicada (ALE00883)",
+   "url": "https://cido.diba.cat/oposicions/22451771"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Economia financera i comptabilitat (ALE00728)",
+   "url": "https://cido.diba.cat/oposicions/22451586"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Estudis d'Àsia Oriental (ALE00854)",
+   "url": "https://cido.diba.cat/oposicions/22451491"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Física Atòmica, Molecular i Nuclear (ALE00870)",
+   "url": "https://cido.diba.cat/oposicions/22451761"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Física de la Matèria Condensada (ALE00884)",
+   "url": "https://cido.diba.cat/oposicions/22451756"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Zoologia (ALE00813)",
+   "url": "https://cido.diba.cat/oposicions/22451739"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor lector per a l'àrea de coneixement: Òptica (ALE00888)",
+   "url": "https://cido.diba.cat/oposicions/22451751"
+  },
+  {
+   "end": "2026-12-04",
+   "group": "C1",
+   "kind": "Laboral",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic de codificació",
+   "url": "https://cido.diba.cat/oposicions/22450185"
   },
   {
    "end": "2026-12-05",
@@ -1090,5 +1244,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-06T09:55:15+01:00"
+ "fetched": "2026-11-06T13:58:55+01:00"
 }
