@@ -489,15 +489,6 @@
     "kind": "new",
     "name": "MITA & MM S.L.",
     "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-136-08"
-   },
-   {
-    "activity": "La compraventa, arrendamiento no financiero y explotacion de toda clase de bienes inmuebles, tales como solares,…",
-    "capital": 3000.0,
-    "date": "2026-07-09",
-    "id": "2026-07-09-322814-new",
-    "kind": "new",
-    "name": "CADOSEN S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-130-08"
    }
   ],
   "known": {
@@ -682,5 +673,5 @@
   "last": "2026-11-06",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-06T21:55:43+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }

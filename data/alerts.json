@@ -2,21 +2,20 @@
  "data": [
   {
    "lines": [
+    "R8"
+   ],
+   "text": {
+    "es": "A causa d'una incidència a la infraestructura a l'estació de Castellbisbal, els trens circulen fora del seu horari habitual i poden registrar demores superiors a 20 minuts."
+   }
+  },
+  {
+   "lines": [
     "R7"
    ],
    "text": {
     "es": "Servei ferroviari entre Montcada Bifurcació i Cerdanyola Universitat. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4."
    }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "Circulació amb demores que poden superar els 30 minuts de mitjana a causa d'una incidència operativa."
-   }
   }
  ],
- "fetched": "2026-11-06T21:55:43+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }

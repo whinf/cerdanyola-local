@@ -82,16 +82,6 @@
     "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-2026"
    },
    {
-    "category": "Infància",
-    "end": "2026-11-06",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-06",
-    "time": "17:30",
-    "title": "Hora del conte",
-    "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-9"
-   },
-   {
     "category": "",
     "end": "2026-11-11",
     "place": "",
@@ -100,26 +90,6 @@
     "time": "18:00",
     "title": "Fira d'atraccions al Parc Xarau",
     "url": "https://www.cerdanyola.cat/agenda/fira-datraccions-al-parc-xarau-0"
-   },
-   {
-    "category": "Actes literaris",
-    "end": "2026-11-06",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-06",
-    "time": "18:30",
-    "title": "Presentació del llibre 'Nkelidé (De dónde vengo)'",
-    "url": "https://www.cerdanyola.cat/agenda/presentacio-del-llibre-nkelide-de-donde-vengo"
-   },
-   {
-    "category": "Festes populars",
-    "end": "2026-11-06",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-06",
-    "time": "19:00",
-    "title": "Festa de Tardor de Sant Martí - 6 de novembre",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-6-de-novembre-1"
    },
    {
     "category": "Festes populars",
@@ -132,7 +102,7 @@
     "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-7-de-novembre-1"
    },
    {
-    "category": "Festes populars",
+    "category": "",
     "end": "2026-11-07",
     "place": "",
     "source": "ajuntament",
@@ -657,14 +627,6 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -677,8 +639,16 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-06T21:55:43+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }

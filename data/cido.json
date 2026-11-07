@@ -1,39 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-06",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.1,
-   "org": "Institut de Física d'Altes Energies (IFAE)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Postdoctoral Researcher position in Theory Group",
-   "url": "https://cido.diba.cat/oposicions/22372025"
-  },
-  {
-   "end": "2026-11-06",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 9.8,
-   "org": "Sabadell Gent Gran, Centre de Serveis, SA",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Metge",
-   "url": "https://cido.diba.cat/oposicions/22371209"
-  },
-  {
-   "end": "2026-11-06",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Investigador postdoctoral amb destinació a l'Institut de Govern i Polítiques Públiques",
-   "url": "https://cido.diba.cat/oposicions/22428863"
-  },
-  {
    "end": "2026-11-07",
    "group": "A2",
    "kind": "Laboral temporal",
@@ -1244,5 +1211,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-06T21:55:43+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }

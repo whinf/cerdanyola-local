@@ -871,6 +871,166 @@
    "sub": "Borses joves d'habitatge"
   },
   {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Oficina de Fiscalia",
+   "phone": "935527657",
+   "sub": "Fiscalies"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Atenció al Ciutadà",
+   "phone": "935516720",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "IMLCFC de Cerdanyola del Vallès",
+   "phone": "607072111",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Jutjat de Guàrdia",
+   "phone": "935527653",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Oficina General del Registre Civil",
+   "phone": "935516730",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 1",
+   "phone": "935527675",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 2",
+   "phone": "935527681",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 3",
+   "phone": "935527687",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 4",
+   "phone": "935527693",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 5",
+   "phone": "935527699",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 6",
+   "phone": "935527605",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 7 (VIDO)",
+   "phone": "935527611",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Secció Civil i d'Instrucció del Tribunal d'Instància de Cerdanyola del Vallès. Plaça núm. 8",
+   "phone": "935545285",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Servei Comú General de Cerdanyola del Vallès",
+   "phone": "935527621",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Servei Comú d'Execució de Cerdanyola del Vallès",
+   "phone": "935527678",
+   "sub": "Jutjats i tribunals"
+  },
+  {
+   "address": "Passeig Horta 19",
+   "cat": "Justícia",
+   "cp": "08290",
+   "lat": "41.4840629",
+   "lon": "2.1445549",
+   "name": "Servei Comú de Tramitació de Cerdanyola del Vallès",
+   "phone": "935 527 686",
+   "sub": "Jutjats i tribunals"
+  },
+  {
    "address": "Passeig d'Horta, 19",
    "cat": "Justícia",
    "cp": "08290",
@@ -1301,6 +1461,446 @@
    "sub": "Parcs científics i tecnològics"
   },
   {
+   "address": "Pça.Francesc Layret, s/n",
+   "cat": "Serveis socials bàsics",
+   "cp": "08290",
+   "lat": "41.489494",
+   "lon": "2.187649",
+   "name": "Servei Social d'Atenció Primària - Ajuntament Cerdanyola del Vallès",
+   "phone": "936921200",
+   "sub": "Servei bàsic d'atenció social"
+  },
+  {
+   "address": "C.  Campus UAB Edif. H (Apartament H010 Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08913",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament H010",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. H (Apartament H011 Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08913",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament H011",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. H  Bellaterra (Apartament H110)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08913",
+   "lat": "41.3915887",
+   "lon": "2.0055214",
+   "name": "Apartament H110",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. K, bxs. 2a (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K002",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. K, bxs. 3a (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K003",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB edif. K, bxs 11ª (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K011",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Campus UAB Edif. K, 1r 10a (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "08193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Apartament K110",
+   "phone": "660202713",
+   "sub": "Servei d'acolliment residencial d'urgència"
+  },
+  {
+   "address": "C.  Mare de Deu del Pilar, 37 bis",
+   "cat": "Serveis socials bàsics",
+   "cp": "08290",
+   "lat": "41.48857358",
+   "lon": "2.13493623",
+   "name": "SAD ADECUA",
+   "phone": "935940192",
+   "sub": "Servei d'ajuda a domicili"
+  },
+  {
+   "address": "C.  Edifici A. Campus UAB (Bellaterra)",
+   "cat": "Serveis socials bàsics",
+   "cp": "09193",
+   "lat": "41.5015523",
+   "lon": "2.1096005",
+   "name": "Servei de suport Fundació autònoma solidària",
+   "phone": "935812485",
+   "sub": "Servei de suport als serveis socials bàsics"
+  },
+  {
+   "address": "Ctr.Flor de Maig, s/n km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Centre Sant Medir",
+   "phone": "932120429",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Av. Joan Fàbregas, 32 (Bellaterra)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08193",
+   "lat": "41.50331933",
+   "lon": "2.08710813",
+   "name": "Centre ocupacional els Xiprers",
+   "phone": "937260759",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.de Cerdanyola a Sant Cugat, Km 0",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.482509",
+   "lon": "2.131431",
+   "name": "Equus, Centre Català d'Equinoteràpia i Escola d'Equitació",
+   "phone": "",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, s/n (Km. 2,5)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Institució Montserrat Montero",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,6",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "LLar-Residència Collserola",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, s/n, Km. 2'5",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "La Casona",
+   "phone": "936922500",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de maig, km. 2,8 - Ap. Correus 140",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Llar residència El Bosc",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Llar-residència La Piscina",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Llar-residència el Xalet",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,6",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Residència Canigó",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "C.  Torre Bones Hores, 24",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4931996",
+   "lon": "2.1375367",
+   "name": "Residència per a Persones amb Discapacitat Intel·lectual Joan XXIII",
+   "phone": "936922681",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 3'5",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Residència per a Persones amb Disminució Psíquica Profunda i Greus Trastorns de Conducta Joan Bofill",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Servei d'Autonomia a la pròpia llar Fundació Catalònia",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "C.  Tarragona, 6",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.50694818",
+   "lon": "2.12235493",
+   "name": "Servei de teràpia ocupacional Montflorit Barcanova",
+   "phone": "936928811",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Ctr.Flor de Maig, Km 2,8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
+   "name": "Servei de tutela Fundació Privada Sant Jordi de Catalònia (Disc. Psíquics)",
+   "phone": "935805227",
+   "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
+  },
+  {
+   "address": "Av. Europa, núm. 3 -5 Esc.1 1r-1a",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4903868",
+   "lon": "2.1326508",
+   "name": "Cerdanyola I",
+   "phone": "934428829",
+   "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
+  },
+  {
+   "address": "C.  Santa Anna, 10, 4rt 5ª",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49404222",
+   "lon": "2.14228503",
+   "name": "Cerdanyola II",
+   "phone": "934428829",
+   "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
+  },
+  {
+   "address": "C.  Adam i Eva, 4",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4932306",
+   "lon": "2.1465753",
+   "name": "Club Social Cerdanyola del Vallés",
+   "phone": "935809927",
+   "sub": "Serveis adreçats a persones amb problemàtica social derivada de malaltia mental"
+  },
+  {
+   "address": "Av. de Lesseps, 4",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48454618",
+   "lon": "2.14476785",
+   "name": "Centre de Dia per a Gent Gran Cerdanyola",
+   "phone": "935940145",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Camí antic St. Cugat, 103 (Bellaterra)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08193",
+   "lat": "41.4996262",
+   "lon": "2.07994345",
+   "name": "Centre de dia CIM Bellaterra",
+   "phone": "930001401",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Rda.Cerdanyola, 50 (cantonada Isabel II, 12)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4867432",
+   "lon": "2.1541209",
+   "name": "Centre de dia El Meu Avi",
+   "phone": "935920126",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Mare de Deu del Pilar, 37 bis",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48857358",
+   "lon": "2.13493623",
+   "name": "Centro de Dia ADECUA",
+   "phone": "935940192",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Pge.Àngel Guimerà, 8",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4855703",
+   "lon": "2.1347618",
+   "name": "Cerdanyola Residència d'Avis",
+   "phone": "935864617",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Camí antic St. Cugat a Sabadell, 103 (Bellaterra)",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08193",
+   "lat": "41.4996262",
+   "lon": "2.07994345",
+   "name": "Residència CIM Bellaterra",
+   "phone": "930001401",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Rda.Cerdanyola, 50",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4867432",
+   "lon": "2.1541209",
+   "name": "Residència El Meu Avi",
+   "phone": "935920126",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Rbl.de Montserrat, 2",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4935998",
+   "lon": "2.1435283",
+   "name": "Residència Seniors Ceritània",
+   "phone": "",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Sebastià Garriga, 17",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49095502",
+   "lon": "2.13062941",
+   "name": "Residència geriàtrica l'Olivera",
+   "phone": "935920665",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Av. de Lesseps, 4",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48454618",
+   "lon": "2.14476785",
+   "name": "Residència per a Gent Gran Cerdanyola",
+   "phone": "935940145",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "C.  Sebastià Garriga, 17",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49095502",
+   "lon": "2.13062941",
+   "name": "Servei d'acolliment diürn l'Olivera",
+   "phone": "936929560",
+   "sub": "Serveis adreçats a persones grans amb dependència o risc social"
+  },
+  {
+   "address": "Av. Verge de Montserrat, 1",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.63168303",
+   "lon": "2.29626018",
+   "name": "Centre de desenvolupament infantil i atenció precoç de Cerdanyola i Ripollet",
+   "phone": "935920985",
+   "sub": "Serveis comuns adreçats a persones amb discapacitat"
+  },
+  {
+   "address": "C.  de les Vinyes, 11 C",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.48769086",
+   "lon": "2.13807235",
+   "name": "Servei d'atenció i informació a les dones del Safareig",
+   "phone": "935806151",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
+   "address": "Pge.Ajuntament, 26-28",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4907165",
+   "lon": "2.1394686",
+   "name": "Servei de Suport de la Iglesia Evangélica Bautista de Cerdanyola del Vallès",
+   "phone": "936924211",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
+   "address": "C.  Campus de Bellaterra, Edifici Estudiants, 1r",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.4858142",
+   "lon": "2.0967822",
+   "name": "Servei de suport. Associació Pro Disminuïts de la Universitat Autònoma de Barcelona",
+   "phone": "935812697",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
+   "address": "Pge.de l'Ajuntament, 9, 1er 4ª",
+   "cat": "Serveis socials especialitzats",
+   "cp": "08290",
+   "lat": "41.49057659",
+   "lon": "2.1396376",
+   "name": "Servei de suport. Coordinadora de centres de profunds de Catalunya",
+   "phone": "935809663",
+   "sub": "Serveis de suport als serveis socials especialitzats"
+  },
+  {
    "address": "Avinguda Lesseps, 4",
    "cat": "Societat. Ciutadania. Famílies",
    "cp": "08290",
@@ -1309,6 +1909,16 @@
    "name": "Casal de Gent Gran Cerdanyola",
    "phone": "93 594 01 45",
    "sub": "Equipaments cívics"
+  },
+  {
+   "address": "Belles Arts",
+   "cat": "Societat. Ciutadania. Famílies",
+   "cp": "08290",
+   "lat": "41.48765388",
+   "lon": "2.13776421",
+   "name": "Servei d'informació i atenció a les dones (SIAD) de Cerdanyola del Vallès",
+   "phone": "935921647",
+   "sub": "Oficines d'informació a les dones"
   },
   {
    "address": "Carrer de les Escoles, 5",
@@ -1631,5 +2241,5 @@
    "sub": ""
   }
  ],
- "fetched": "2026-11-06T09:55:15+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }

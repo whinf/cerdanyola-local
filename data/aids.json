@@ -1564,60 +1564,6 @@
      "business"
     ]
    },
-   "931767": {
-    "budget": 47000,
-    "checked": "2026-11-06",
-    "end": "2026-11-06",
-    "id": "931767",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-09-25",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-09-29",
-    "term": "",
-    "title": "Resolución de 24 de septiembre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la participación en Feria_Asociación Midest - Global Industrie Lyon del 15 de marzo de 2027 al 18 de marzo de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
-   "932387": {
-    "budget": 200000,
-    "checked": "2026-11-06",
-    "end": "2026-11-06",
-    "id": "932387",
-    "level": "AUTONOMICA",
-    "organ": "AGENCIA DE LA VIVIENDA DE CATALUÑA",
-    "purpose": "Acceso a la vivienda y fomento de la edificación",
-    "received": "2026-09-29",
-    "region": "CATALUÑA",
-    "start": "2026-10-06",
-    "term": "",
-    "title": "Convocatoria para la concesión, en régimen de concurrencia competitiva, de las subvenciones para la financiación de proyectos y actuaciones de entidades y asociaciones vecinales de los barrios de viviendas administradas o gestionadas por la Agencia de la",
-    "title_ca": "Convocatòria per a la concessió, en règim de concurrència competitiva, de les subvencions per al finançament de projectes i actuacions d’entitats i associacions veïnals dels barris d’habitatges administrats o gestionats per l’Agència de l’Habitatge de Cat",
-    "who": [
-     "entities"
-    ]
-   },
-   "933357": {
-    "budget": 1000000,
-    "checked": "2026-11-06",
-    "end": "",
-    "id": "933357",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
-    "purpose": "Agricultura, Pesca y Alimentación",
-    "received": "2026-10-05",
-    "region": "CATALUÑA",
-    "start": "2026-10-09",
-    "term": "20 Dies Hàbils",
-    "title": "Ayudas de minimis a la pérdida ocasionada por el comiso de los despojos derivada de las bases reguladoras que deben regir las ayudas a las explotaciones ganaderas de vacuno de Cataluña afectadas por la dermatosis nodular contagiosa",
-    "title_ca": "Ajuts de minimis a la pèrdua ocasionada pel comís de les despulles derivada de les bases reguladores que han de regir els ajuts a les explotacions ramaderes de boví de Catalunya afectades per la dermatosi nodular contagiosa",
-    "who": [
-     "business"
-    ]
-   },
    "933490": {
     "budget": 21000,
     "checked": "2026-11-06",
@@ -2883,17 +2829,6 @@
    }
   },
   "closed": [
-   "867089",
-   "867122",
-   "867125",
-   "867130",
-   "867131",
-   "867134",
-   "867136",
-   "867139",
-   "867142",
-   "867252",
-   "867294",
    "867362",
    "867367",
    "867457",
@@ -4699,6 +4634,7 @@
    "931754",
    "931761",
    "931763",
+   "931767",
    "931771",
    "931794",
    "931801",
@@ -4715,6 +4651,7 @@
    "932176",
    "932311",
    "932314",
+   "932387",
    "932453",
    "932456",
    "932458",
@@ -4758,6 +4695,7 @@
    "933237",
    "933243",
    "933329",
+   "933357",
    "933533",
    "933792",
    "933951",
@@ -4872,5 +4810,5 @@
    "940567"
   ]
  },
- "fetched": "2026-11-06T21:55:43+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }

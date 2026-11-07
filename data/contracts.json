@@ -1,6 +1,65 @@
 {
  "data": [
   {
+   "amount": 6900.0,
+   "date": "2026-11-06",
+   "deadline": "2026-09-18T12:00",
+   "id": "208043/IFAE-2026/07",
+   "lots": 0,
+   "organ": "Consorci Institut de Física d'Altes Energies",
+   "phase": "Adjudicació",
+   "title": "Contractació d’una plataforma per la gestió integral de la prevenció de riscos laborals a l'institut de física d'altes energies (ifae).",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/25b8886e-b045-4f62-a6a0-487959d60e44/300931211",
+   "winners": [
+    "TALENTIS ORGANIZACION Y PROCESOS, S.L.U."
+   ]
+  },
+  {
+   "amount": 2961478.5,
+   "date": "2026-11-06",
+   "deadline": "2026-12-11T13:00",
+   "id": "203633/PE+OP. CGB-25345",
+   "lots": 0,
+   "organ": "Infraestructures de la Generalitat de Catalunya, SAU",
+   "phase": "Anunci de licitació",
+   "title": "Contracte per a la redacció del projecte bàsic, el projecte executiu, i la posterior execució de les obres d'ampliació i redistribució de la Comissaria ABP de Cerdanyola del Vallès, Regió Policial Metropolitana Nord. Clau: CGB-25345",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f35be03a-ae04-40c1-947b-cd56b4534c58/300931689",
+   "winners": []
+  },
+  {
+   "amount": 696193.01,
+   "date": "2026-11-06",
+   "deadline": "2026-09-25T14:00",
+   "id": "16138154/153/2026/0006.",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Formalització",
+   "title": "Enllumenat de Nadal",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3e0b2ebc-f0c5-4374-98b5-41a4d22cde8c/300931683",
+   "winners": [
+    "INGENIERIA CONTROL Y TRANSFERENCIA DE TECNOLOGIA, SA"
+   ]
+  },
+  {
+   "amount": 85632.0,
+   "date": "2026-11-06",
+   "deadline": "2026-03-26T14:00",
+   "id": "11712474/1/2026",
+   "lots": 2,
+   "organ": "Fundació Universitat Autònoma de Barcelona MP",
+   "phase": "Formalització",
+   "title": "Contracte de serveis de gestoria laboral de la Fundació Universitat Autònoma de Barcelona MP i la resta d'entitats de la Corporació UAB",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
+   "winners": [
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
+   ]
+  },
+  {
    "amount": 80712.0,
    "date": "2026-11-05",
    "deadline": "2026-11-23T23:59",
@@ -180,22 +239,6 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/84fbcfd3-dea7-4d15-8983-cf95bccde0c5/300928851",
    "winners": []
-  },
-  {
-   "amount": 85632.0,
-   "date": "2026-11-04",
-   "deadline": "2026-03-26T14:00",
-   "id": "11712474/1/2026",
-   "lots": 2,
-   "organ": "Fundació Universitat Autònoma de Barcelona MP",
-   "phase": "Adjudicació",
-   "title": "Contracte de serveis de gestoria laboral de la Fundació Universitat Autònoma de Barcelona MP i la resta d'entitats de la Corporació UAB",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300849150",
-   "winners": [
-    "LLEAL TULSÀ UTE",
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
-   ]
   },
   {
    "amount": 88000.0,
@@ -501,19 +544,6 @@
    "winners": [
     "Bufet Vallbé, SLP"
    ]
-  },
-  {
-   "amount": 20000.0,
-   "date": "2026-10-27",
-   "deadline": "2026-09-18T12:00",
-   "id": "208043/IFAE-2026/07",
-   "lots": 0,
-   "organ": "Consorci Institut de Física d'Altes Energies",
-   "phase": "Expedient en avaluació",
-   "title": "Contractació d’una plataforma per la gestió integral de la prevenció de riscos laborals a l'institut de física d'altes energies (ifae).",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/25b8886e-b045-4f62-a6a0-487959d60e44/300921014",
-   "winners": []
   },
   {
    "amount": 35536.16,
@@ -1012,21 +1042,6 @@
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/d91a52cf-ea8d-4998-b039-061fd7e43a24/300908025",
    "winners": []
-  },
-  {
-   "amount": 696193.01,
-   "date": "2026-10-14",
-   "deadline": "2026-09-25T14:00",
-   "id": "16138154/153/2026/0006.",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Adjudicació",
-   "title": "Enllumenat de Nadal",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3e0b2ebc-f0c5-4374-98b5-41a4d22cde8c/300907577",
-   "winners": [
-    "INGENIERIA CONTROL Y TRANSFERENCIA DE TECNOLOGIA, SA"
-   ]
   },
   {
    "amount": 11485.74,
@@ -5479,5 +5494,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-06T21:55:43+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }

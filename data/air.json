@@ -2,64 +2,64 @@
  "data": {
   "Barberà del Vallès": {
    "NO2": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "hour": 4,
-    "value": 22.0
+    "value": 19.0
    }
   },
   "Montcada i Reixac": {
    "NO2": {
-    "date": "2026-11-04",
-    "hour": 17,
-    "value": 42.0
+    "date": "2026-11-06",
+    "hour": 4,
+    "value": 18.0
    },
    "O3": {
-    "date": "2026-11-04",
-    "hour": 17,
-    "value": 39.0
+    "date": "2026-11-05",
+    "hour": 14,
+    "value": 32.0
    },
    "PM10": {
-    "date": "2026-11-04",
-    "hour": 17,
-    "value": 96.0
+    "date": "2026-11-06",
+    "hour": 4,
+    "value": 81.0
    }
   },
   "Montcada i Reixac (Can Sant Joan)": {
    "PM10": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "hour": 3,
-    "value": 29.0
+    "value": 23.0
    }
   },
   "Sabadell": {
    "NO2": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "hour": 4,
-    "value": 11.0
+    "value": 13.0
    },
    "PM10": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "hour": 4,
-    "value": 12.0
+    "value": 10.0
    },
    "PM2.5": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "hour": 4,
-    "value": 7.0
+    "value": 6.0
    }
   },
   "Sant Cugat del Vallès": {
    "NO2": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "hour": 4,
-    "value": 16.0
+    "value": 13.0
    },
    "O3": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "hour": 4,
-    "value": 4.0
+    "value": 7.0
    }
   }
  },
- "fetched": "2026-11-06T21:55:43+01:00"
+ "fetched": "2026-11-07T12:46:00+01:00"
 }
