@@ -4,5 +4,6 @@
  "repo_url": "https://github.com/whinf/cerdanyola-local",
  "light_api_url": "https://horaverda.es/api/v1/latest.json",
  "donate_url": "https://ko-fi.com/onestudioman",
+ "studio_url": "https://onestudioman.horaverda.es",
  "owner": {"name": "", "nif": "", "email": ""}
 }

@@ -11,6 +11,10 @@
     btn.hidden = false; set(get());
     btn.addEventListener("click", function () { set(order[(order.indexOf(get()) + 1) % 3]); });
   }
-  var cur = document.querySelector(".sections [aria-current]");
-  if (cur && cur.scrollIntoView) { cur.scrollIntoView({ block: "nearest", inline: "center" }); window.scrollTo(0, 0); }
+  // Centra el chip activo en su fila sin mover la página (así no se pierde el #ancla de la URL).
+  var cur = document.querySelector(".sections [aria-current]"), ul = cur && cur.closest("ul");
+  if (ul) {
+    var a = cur.getBoundingClientRect(), u = ul.getBoundingClientRect();
+    ul.scrollLeft += a.left - u.left - (u.width - a.width) / 2;
+  }
 })();

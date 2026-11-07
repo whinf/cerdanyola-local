@@ -34,9 +34,9 @@ SOURCES = [
     ("nightlife", sources.fetch_nightlife, 20, True),
     ("aids", sources.fetch_aids, 0, True),
     ("cido", sources.fetch_cido, 0, True),
-    ("offers", sources.fetch_offers, 10, True),  # un XML de 7 MB: dos veces al día basta
+    ("offers", sources.fetch_offers, 8, True),  # un XML de 7 MB: dos veces al día basta
     ("fuel", sources.fetch_fuel, 0, True),
-    ("contracts", sources.fetch_contracts, 10, True),  # la Generalitat actualiza los contratos una vez al día
+    ("contracts", sources.fetch_contracts, 8, True),  # la Generalitat actualiza los contratos una vez al día
     ("companies", sources.fetch_companies, 0, True),
     ("light", sources.fetch_light, 0, False),
 ]
@@ -71,6 +71,7 @@ def update(now):
             continue
         if data is None:
             print(f"aviso: {name}: sin datos")
+            health.setdefault(name, {})["last_error"] = "sin datos"
             continue
         write(name, {"fetched": now.isoformat(timespec="seconds"), "data": data})
         health[name] = {"last_ok": now.isoformat(timespec="seconds")}

@@ -147,6 +147,8 @@ class TestSources(unittest.TestCase):
         self.assertEqual(S.end_from_text("Diez (10) días hábiles", start), (date(2026, 10, 15), True))
         self.assertEqual(S.end_from_text("fins al 15 d’octubre", start), (date(2026, 10, 15), False))
         self.assertEqual(S.end_from_text("Indicado en la convocatoria", start), (None, False))
+        self.assertEqual(S.end_from_text("del 01/10/2026 al 31/10/2026", start), (date(2026, 10, 31), False))
+        self.assertEqual(S.end_from_text("fins al 15 de gener", date(2026, 12, 1)), (date(2027, 1, 15), False))
         self.assertEqual(i18n.organ_name("AGÈNCIA DE GESTIÓ D'AJUTS (AGAUR)"), "Agència de Gestió d'Ajuts (AGAUR)")
         self.assertEqual(i18n.fmt_money("ca", 2750000), "2.750.000 €")
 
@@ -272,6 +274,21 @@ class TestSite(unittest.TestCase):
             self.assertTrue(not p.get("url") or p["url"].startswith(("https://", "http://")), p["id"])
             self.assertTrue(set(p.get("months", [1])) <= set(range(1, 13)), p["id"])
             date.fromisoformat(p["checked"])
+
+    def test_events_split_and_weekend(self):
+        cfg = {"site_name": "x", "site_url": "https://example.github.io/cerdanyola-local"}
+        events = [{"title": "Acabat", "start": "2026-10-10", "end": "2026-10-12", "source": "uab"},
+                  {"title": "En marxa", "start": "2026-10-18", "end": "2026-10-25", "source": "uab"},
+                  {"title": "Dissabte", "start": "2026-10-24", "end": "2026-10-24", "source": "uab"},
+                  {"title": "<script>x</script>", "start": "2026-10-21", "url": "javascript:alert(1)", "source": "uab"}]
+        site = Site(cfg, {"agenda": {"fetched": NOW.isoformat(), "data": {"events": events}}}, "unused", NOW)
+        upcoming, ongoing = site.events_split()
+        self.assertEqual([e["title"] for e in ongoing], ["En marxa"])  # el acabado no sale
+        self.assertEqual(sorted(e["title"] for e in site.weekend_events()), ["Dissabte", "En marxa"])
+        item = site.event_item("ca", next(e for e in upcoming if e.get("url")))
+        self.assertNotIn("javascript:", item)
+        self.assertIn("&lt;script&gt;", item)
+        self.assertIn("\\u003c", render.jsonld_text({"name": "</script>"}))
 
     def test_same_keys(self):
         for lang in i18n.LANGS:

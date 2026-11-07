@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["src/**", "static/**", "data/**", "curated/**", "config.json", ".github/workflows/build.yml"]
+    paths: ["src/**", "static/**", "tests/**", "data/**", "curated/**", "geo/**", "certs/**", "config.json", ".github/workflows/build.yml"]
 
 permissions:
   contents: write
@@ -21,7 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 30  # Overpass, Feina Activa y la BDNS pueden tardar; con 15 se perdía la pasada entera
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

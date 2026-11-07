@@ -6,6 +6,7 @@ guardados en tests/fixtures) y una `fetch_*` que la descarga.
 import bisect
 import gzip
 import html
+import http.client
 import json
 import math
 import os
@@ -55,16 +56,20 @@ def get_bytes(url, tries=3, timeout=40, headers=None):
         try:
             with urllib.request.urlopen(req, timeout=timeout, context=_CTX) as resp:
                 return resp.read()
-        except (urllib.error.URLError, TimeoutError) as exc:
+        except (urllib.error.URLError, OSError, http.client.HTTPException) as exc:  # conexión, SSL, lectura a medias
             last = exc
             if isinstance(exc, urllib.error.HTTPError) and exc.code < 500:
                 break
-            time.sleep(3 * (attempt + 1))
+            if attempt + 1 < tries:
+                time.sleep(3 * (attempt + 1))
     raise FetchError(f"{url}: {last}")
 
 
 def get_text(url, tries=3, timeout=40):
-    return get_bytes(url, tries, timeout).decode("utf-8")
+    try:
+        return get_bytes(url, tries, timeout).decode("utf-8")
+    except UnicodeDecodeError as exc:
+        raise FetchError(f"{url}: {exc}") from exc
 
 
 def get_json(url):
@@ -133,7 +138,7 @@ def gencat_category(r):
 def parse_agenda_gencat(rows, today):
     events, permanent = [], []
     for r in rows:
-        links = [u.strip() for u in (r.get("enlla_os") or "").split(",") if u.strip()]
+        links = [re.sub(r"[?&]page=undefined$", "", u.strip()) for u in (r.get("enlla_os") or "").split(",") if u.strip()]
         item = {"title": (r.get("denominaci") or "").strip(), "place": (r.get("espai") or "").strip(),
                 "url": next((u for u in links if "agenda.cultura.gencat.cat" in u), links[0] if links else ""),
                 "free": r.get("gratuita") == "Sí", "category": gencat_category(r), "source": "gencat"}
@@ -169,7 +174,10 @@ def parse_agenda_ajuntament(page, today):
         if end < today.isoformat():
             continue
         tag = _TAG.search(block)
-        out.append({"title": html.unescape(re.sub(r"<[^>]+>", "", link.group(2))).strip(), "start": start,
+        title = html.unescape(re.sub(r"<[^>]+>", "", link.group(2))).strip()
+        if not title:
+            continue
+        out.append({"title": title, "start": start,
                     "end": end, "time": "" if hhmm == "00:00" else hhmm, "place": "",
                     "category": html.unescape(tag.group(1)).strip() if tag else "",
                     "url": "https://www.cerdanyola.cat" + link.group(1), "source": "ajuntament"})
@@ -251,14 +259,17 @@ def parse_uab(page, today):
                 continue
             rng = re.search(r'class="data">([^<]+)<', item)
             end_m = _UAB_END.search(rng.group(1)) if rng else None
-            if end_m and month_ca(end_m.group(2)):
-                end = date(int(end_m.group(3)), month_ca(end_m.group(2)), int(end_m.group(1)))
-                start = date(end.year - (m > end.month), m, d)
-            else:  # la cabecera del día no lleva año: el próximo que encaje
-                start = date(today.year, m, d)
-                if start < today - timedelta(days=180):
-                    start = date(today.year + 1, m, d)
-                end = start
+            try:
+                if end_m and month_ca(end_m.group(2)):
+                    end = date(int(end_m.group(3)), month_ca(end_m.group(2)), int(end_m.group(1)))
+                    start = date(end.year - (m > end.month), m, d)
+                else:  # la cabecera del día no lleva año: el próximo que encaje
+                    start = date(today.year, m, d)
+                    if start < today - timedelta(days=180):
+                        start = date(today.year + 1, m, d)
+                    end = start
+            except ValueError:  # fecha imposible (p. ej. 29 de febrero en un año no bisiesto)
+                continue
             if end < today:
                 continue
             hour = re.search(r'class="hora">.*?(\d\d:\d\d)', item, re.S)
@@ -289,20 +300,26 @@ def fetch_ajuntament(today):
 
 
 def fetch_agenda(now, previous=None):
-    today = now.date()
-    rows = socrata("rhpv-yr4f", where=f"municipi='{AGENDA_MUNICIPI}'", order="data_inici DESC", limit=200)
-    gencat, permanent = parse_agenda_gencat(rows, today)
-    extra = []
-    jobs = [("ajuntament", lambda: fetch_ajuntament(today)), ("uab", lambda: fetch_uab(today))] + [
+    today, prev = now.date(), previous or {}
+    events, permanent = [], []
+
+    def gencat():
+        rows = socrata("rhpv-yr4f", where=f"municipi='{AGENDA_MUNICIPI}'", order="data_inici DESC", limit=200)
+        found, perm = parse_agenda_gencat(rows, today)
+        permanent.extend(perm)
+        return found
+
+    jobs = [("gencat", gencat), ("ajuntament", lambda: fetch_ajuntament(today)), ("uab", lambda: fetch_uab(today))] + [
         (s, lambda s=s: fetch_tribe(s, today)) for s in TRIBE_FEEDS]
     for name, job in jobs:
         try:
-            extra += job()
+            events += job()
         except Exception as exc:  # si una web cae, la agenda sigue con las demás y con sus actos ya guardados
             print(f"aviso: agenda/{name}: {exc}")
-            extra += [e for e in (previous or {}).get("events", [])
-                      if e["source"] == name and e["end"] >= today.isoformat()]
-    return {"events": merge_events(gencat, extra), "permanent": permanent}
+            events += [e for e in prev.get("events", []) if e["source"] == name and e["end"] >= today.isoformat()]
+            if name == "gencat":
+                permanent.extend(prev.get("permanent", []))
+    return {"events": merge_events(events), "permanent": permanent}
 
 
 # ---------- calidad del aire (XVPCA, Generalitat) ----------
@@ -361,7 +378,8 @@ def parse_equipments(rows):
         out.append({"name": (r.get("nom") or "").strip(), "cat": cat[0].strip(),
                     "sub": cat[1].strip() if len(cat) > 1 else "",
                     "address": (r.get("via") or "").strip(),
-                    "cp": (r.get("cpostal") or "").zfill(5), "phone": (r.get("telefon1") or "").strip(),
+                    "cp": (r.get("cpostal") or "").strip().zfill(5) if r.get("cpostal") else "",
+                    "phone": (r.get("telefon1") or "").strip(),
                     "lat": r.get("latitud"), "lon": r.get("longitud")})
     return sorted(out, key=lambda e: (e["cat"] or "~", e["sub"], e["name"]))
 
@@ -510,7 +528,8 @@ def _pmtiles_dir(raw):
     """Directorio PMTiles v3: id de tesela, repeticiones, longitud y desplazamiento de cada entrada."""
     b = gzip.decompress(raw)
     n, i = _varint(b, 0)
-    ids, runs, lens, offs = (_packed(b[i:])[k * n:(k + 1) * n] for k in range(4))
+    values = _packed(b[i:])
+    ids, runs, lens, offs = (values[k * n:(k + 1) * n] for k in range(4))
     for k in range(1, n):
         ids[k] += ids[k - 1]
     for k in range(n):  # 0 = justo detrás de la anterior
@@ -770,19 +789,22 @@ CHECK_DAYS = 30  # una convocatoria sin plazo legible se muestra este tiempo des
 
 def end_from_text(text, start):
     """Fecha de cierre a partir del texto libre del plazo: (fecha, ¿aproximada?) o (None, False)."""
-    m = _DMY.search(text)
-    if m:
+    # «del 01/10/2026 al 31/10/2026»: la fecha de cierre es la última que aparece
+    for m in reversed(list(_DMY.finditer(text))):
         try:
             return date(int(m.group(3)), int(m.group(2)), int(m.group(1))), False
         except ValueError:
             pass
-    for m in _D_MONTH.finditer(text):
+    for m in reversed(list(_D_MONTH.finditer(text))):
         word = m.group(2).lower()
         month = next((i + 1 for i, name in enumerate(MONTHS_ES) if name == word), None) or (
             month_ca(word) if len(word) > 3 else None)
         if month:
             try:
-                return date(int(m.group(3) or start.year), month, int(m.group(1))), False
+                end = date(int(m.group(3) or start.year), month, int(m.group(1)))
+                if not m.group(3) and end < start:  # «15 de enero» en una convocatoria de diciembre
+                    end = end.replace(year=end.year + 1)
+                return end, False
             except ValueError:
                 pass
     m = _SPAN.search(text)
@@ -981,8 +1003,10 @@ AWARDED = ("Adjudicació", "Formalització", "Execució")
 _CONTRACT_CODE = re.compile(r"^\s*(?:(?:contr|consu)\s*[-‐]?\s*)?\d+/\d{4}\s*[-–:]*\s*", re.I)
 _CIF = re.compile(r"^[ABCDEFGHJNPQRSUVW]\d{7}[0-9A-J]$")
 # las personas físicas llegan con el NIF tapado; también algunas empresas, que se reconocen por la forma jurídica
-_LEGAL_FORM = re.compile(r"\b(S\.?L\.?U?|S\.?A\.?U?|SCCL|SLP|SLL|S\.?R\.?L|UTE|GmbH|AG|KG|Inc|LLC|Ltd|Limited|B\.?V|"
-                         r"Co|Corp|Fundaci[oó]n?|Associaci[oó]|Asociaci[oó]n|Cooperativa)\b", re.I)
+# Sensible a mayúsculas: con re.I, un apellido como «Sa» o «Co» pasaría por empresa
+_LEGAL_FORM = re.compile(r"\b(S\.?L\.?U?|S\.?A\.?U?|SCCL|SLP|SLL|S\.?R\.?L|UTE|GmbH|AG|KG|Inc|LLC|Ltd|Limited|B\.?V|Corp|"
+                         r"[Ff]undaci[oó]n?|FUNDACI[OÓ]N?|[Aa]ssociaci[oó]|ASSOCIACI[OÓ]|[Aa]sociaci[oó]n|ASOCIACI[OÓ]N|"
+                         r"[Cc]ooperativa|COOPERATIVA)\b")
 
 
 def _float(x):
@@ -1012,7 +1036,7 @@ def parse_contracts(rows):
         live = [r for r in rs if r.get("fase_publicacio") != "Anul·lació"] or rs
         last = max(live, key=lambda r: max(r.get(k) or "" for k in CONTRACT_DATES))
         dates = sorted({(r.get(k) or "")[:10] for r in live for k in CONTRACT_DATES} - {""})
-        lots = {r.get("numero_lot") or "": r for r in rs}
+        lots = {r.get("numero_lot") or "": r for r in live}
         # suma de los lotes: de un expediente de toda Cataluña solo cuentan los lotes que se hacen aquí
         budget = (sum(_float(r.get("pressupost_licitacio_sense")) or 0 for r in lots.values())
                   or _float(last.get("pressupost_licitacio_sense_1")) or _float(last.get("valor_estimat_contracte")) or 0)
@@ -1123,7 +1147,7 @@ def borme_pages(day):
     try:
         doc = json.loads(get_bytes(BORME.format(day.strftime("%Y%m%d")), headers={"Accept": "application/json"}))
     except FetchError as exc:
-        if "404" in str(exc):  # fines de semana y festivos
+        if "HTTP Error 404" in str(exc):  # fines de semana y festivos (la fecha de la URL también puede contener «404»)
             return None
         raise
     urls = [it["url_html"] for d in _as_list(doc["data"]["sumario"]["diario"]) for s in _as_list(d.get("seccion"))
