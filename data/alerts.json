@@ -2,10 +2,10 @@
  "data": [
   {
    "lines": [
-    "R8"
+    "R7"
    ],
    "text": {
-    "es": "A causa d'una incidència a la infraestructura a l'estació de Castellbisbal, els trens circulen fora del seu horari habitual i poden registrar demores superiors a 20 minuts."
+    "es": "A causa d'una incidència operativa, la circulació de trens de la línia R7 queda interrompuda. Es recomana utilitzar els trens de la línia R4 fins a Cerdanyola del Vallès i consultar els serveis alternatius a: mou-te.gencat.cat/itinerary"
    }
   },
   {
@@ -17,5 +17,5 @@
    }
   }
  ],
- "fetched": "2026-11-07T12:46:00+01:00"
+ "fetched": "2026-11-07T15:13:54+01:00"
 }

@@ -102,7 +102,7 @@
     "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-7-de-novembre-1"
    },
    {
-    "category": "",
+    "category": "Festes populars",
     "end": "2026-11-07",
     "place": "",
     "source": "ajuntament",
@@ -627,10 +627,18 @@
    {
     "category": "Exposicions",
     "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    },
    {
     "category": "Exposicions",
@@ -638,17 +646,9 @@
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=undefined"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    }
   ]
  },
- "fetched": "2026-11-07T12:46:00+01:00"
+ "fetched": "2026-11-07T15:13:54+01:00"
 }
