@@ -122,7 +122,7 @@
     "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-cientifics-un-dia-microplastics"
    },
    {
-    "category": "",
+    "category": "Activitats del Servei de Patrimoni",
     "end": "2026-11-08",
     "place": "",
     "source": "ajuntament",
@@ -132,7 +132,7 @@
     "url": "https://www.cerdanyola.cat/agenda/cerdanyola-terra-dibers-festa-tardor-sant-marti"
    },
    {
-    "category": "",
+    "category": "Festes populars",
     "end": "2026-11-08",
     "place": "",
     "source": "ajuntament",
@@ -591,6 +591,86 @@
     "time": "17:30",
     "title": "Veredicte del concurs social color i monocrom de gener",
     "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-gener/"
+   },
+   {
+    "category": "",
+    "end": "2027-02-27",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-02-27",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom de febrer",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-febrer/"
+   },
+   {
+    "category": "",
+    "end": "2027-04-03",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-04-03",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom de març",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-marc/"
+   },
+   {
+    "category": "",
+    "end": "2027-04-24",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-04-24",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom d’abril",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-dabril/"
+   },
+   {
+    "category": "",
+    "end": "2027-05-29",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-05-29",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom de maig",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-maig/"
+   },
+   {
+    "category": "",
+    "end": "2027-07-03",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-07-03",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom de juny",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-juny/"
+   },
+   {
+    "category": "",
+    "end": "2027-10-02",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-10-02",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom de setembre",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-setembre/"
+   },
+   {
+    "category": "",
+    "end": "2027-10-30",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-10-30",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom d’octubre",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-doctubre/"
+   },
+   {
+    "category": "",
+    "end": "2027-11-27",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-11-27",
+    "time": "17:30",
+    "title": "Veredicte del concurs social color i monocrom de novembre",
+    "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-novembre/"
    }
   ],
   "permanent": [
@@ -620,5 +700,5 @@
    }
   ]
  },
- "fetched": "2026-11-08T12:57:37+01:00"
+ "fetched": "2026-11-08T20:43:26+01:00"
 }

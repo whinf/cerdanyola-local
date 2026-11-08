@@ -2,6 +2,14 @@
  "data": [
   {
    "lines": [
+    "R7"
+   ],
+   "text": {
+    "es": "A causa duna incidència operativa, la circulació de trens de la línia R7 queda interrompuda. Es recomana utilitzar els trens de la línia R4 fins a Cerdanyola del Vallès i consultar els serveis alternatius a: https://mou-te.gencat.cat/itinerary"
+   }
+  },
+  {
+   "lines": [
     "R7",
     "R8"
    ],
@@ -11,7 +19,6 @@
   },
   {
    "lines": [
-    "R7",
     "R8"
    ],
    "text": {
@@ -35,5 +42,5 @@
    }
   }
  ],
- "fetched": "2026-11-08T12:57:37+01:00"
+ "fetched": "2026-11-08T20:43:26+01:00"
 }
