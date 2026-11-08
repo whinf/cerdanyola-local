@@ -827,9 +827,7 @@
    "title": "Subministrament d’una llicència digital del sistema KSANA EARS per al projecte DIGINEQ del departament de Sociologia",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/6d097d05-d71d-45b0-b2ca-cb9357875331/300913478",
-   "winners": [
-    "KSANA HEALTH, INC."
-   ]
+   "winners": []
   },
   {
    "amount": 48300.0,
@@ -5438,36 +5436,6 @@
    ]
   },
   {
-   "amount": 279405.06,
-   "date": "2025-10-03",
-   "deadline": "2025-06-02T12:00",
-   "id": "208087/2025-06 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Formalització",
-   "title": "Servicio de limpieza y desinfección de los locales y dependencias de la fundació institut català de nanociència i nanotecnologia",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e352896c-7d6f-4233-bfcc-86e475283025/300577393",
-   "winners": [
-    "LUNET"
-   ]
-  },
-  {
-   "amount": 68644.8,
-   "date": "2025-10-03",
-   "deadline": "2025-05-30T14:00",
-   "id": "208087/2025-01 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Execució",
-   "title": "Servicio de portería y recepción de la fundació institut català de nanociencia y nanotecnología (icn2)",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/57f5928e-0ece-4030-8f28-beb6bb222e1c/300750129",
-   "winners": [
-    "Integración Social de Minusvalidos SL"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5494,5 +5462,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-07T12:46:00+01:00"
+ "fetched": "2026-11-08T12:57:37+01:00"
 }

@@ -485,19 +485,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324432"
   },
   {
-   "company": "UTE 90Fundació Mercé Fontanilles-Fundació Resilis",
-   "contract": "Contracte laboral temporal (1 mesos)",
-   "date": "2026-09-08",
-   "hours": "Jornada completa",
-   "salary": [
-    1500,
-    1800
-   ],
-   "title": "Integrador/a social",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324292"
-  },
-  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-02",
@@ -623,19 +610,6 @@
    "title": "Responsable de manteniment",
    "town": "RIPOLLET",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325417"
-  },
-  {
-   "company": "Empresa de l'administració",
-   "contract": "Contracte laboral temporal (1 mesos)",
-   "date": "2026-09-08",
-   "hours": "Jornada parcial (19 hores - jornada setmanal)",
-   "salary": [
-    920,
-    920
-   ],
-   "title": "Auxiliar administratiu/iva institut-escola els pinetons de ripollet (substitució mitja jornada)",
-   "town": "RIPOLLET",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324236"
   },
   {
    "company": "GROWING UP HR SL",
@@ -1041,26 +1015,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324497"
   },
   {
-   "company": "Estudi 6 Gestió Socioeducativa",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-08",
-   "hours": "Jornada parcial tarda (2 hores - jornada setmanal)",
-   "salary": [],
-   "title": "Tallerista per impartir taller de \"dinàmiques del riure\" a un casal cívic de montcada i reixac",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324349"
-  },
-  {
-   "company": "Estudi 6 Gestió Socioeducativa",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-08",
-   "hours": "Jornada parcial tarda (1 hores - jornada setmanal)",
-   "salary": [],
-   "title": "Tallerista per impartir taller de \"benestar amb remeis naturals\" a un casal cívic de montcada i reixac",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324353"
-  },
-  {
    "company": "",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-04",
@@ -1082,16 +1036,6 @@
    "title": "Docent mòbil i tablet",
    "town": "BADIA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325056"
-  },
-  {
-   "company": "Estudi 6 Gestió Socioeducativa",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-08",
-   "hours": "Jornada parcial tarda (1 hores - jornada setmanal)",
-   "salary": [],
-   "title": "Tallerista per impartir taller de \"tonifica't\" a un casal cívic de badia del vallès",
-   "town": "BADIA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324346"
   },
   {
    "company": "SERNET SERVEIS",
@@ -1943,20 +1887,7 @@
    "title": "Auxiliar control de accesos – sant cugat",
    "town": "SANT CUGAT DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324368"
-  },
-  {
-   "company": "AEDEA Contact center",
-   "contract": "Contracte laboral temporal (6 mesos)",
-   "date": "2026-09-08",
-   "hours": "Jornada intensiva",
-   "salary": [
-    1200,
-    1400
-   ],
-   "title": "Agent d'atenció al client (tarda)",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324254"
   }
  ],
- "fetched": "2026-11-07T12:46:00+01:00"
+ "fetched": "2026-11-08T12:57:37+01:00"
 }

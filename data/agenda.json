@@ -63,16 +63,6 @@
    },
    {
     "category": "",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-06",
-    "time": "16:30",
-    "title": "Vine al Museu de Ca n'Oliver per Sant Martí!",
-    "url": "https://www.cerdanyola.cat/agenda/vine-al-museu-de-ca-noliver-sant-marti-0"
-   },
-   {
-    "category": "",
     "end": "2026-11-15",
     "place": "",
     "source": "ajuntament",
@@ -90,26 +80,6 @@
     "time": "18:00",
     "title": "Fira d'atraccions al Parc Xarau",
     "url": "https://www.cerdanyola.cat/agenda/fira-datraccions-al-parc-xarau-0"
-   },
-   {
-    "category": "Festes populars",
-    "end": "2026-11-07",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-07",
-    "time": "09:00",
-    "title": "Festa de Tardor de Sant Martí - 7 de novembre",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-7-de-novembre-1"
-   },
-   {
-    "category": "Festes populars",
-    "end": "2026-11-07",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-07",
-    "time": "12:00",
-    "title": "4a Mostra de Cervesa Artesana de Cerdanyola del Vallès",
-    "url": "https://www.cerdanyola.cat/agenda/4a-mostra-de-cervesa-artesana-de-cerdanyola-del-valles"
    },
    {
     "category": "Festes populars",
@@ -152,7 +122,7 @@
     "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-cientifics-un-dia-microplastics"
    },
    {
-    "category": "Activitats del Servei de Patrimoni",
+    "category": "",
     "end": "2026-11-08",
     "place": "",
     "source": "ajuntament",
@@ -162,7 +132,7 @@
     "url": "https://www.cerdanyola.cat/agenda/cerdanyola-terra-dibers-festa-tardor-sant-marti"
    },
    {
-    "category": "Festes populars",
+    "category": "",
     "end": "2026-11-08",
     "place": "",
     "source": "ajuntament",
@@ -650,5 +620,5 @@
    }
   ]
  },
- "fetched": "2026-11-07T20:27:11+01:00"
+ "fetched": "2026-11-08T12:57:37+01:00"
 }

@@ -1,17 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-07",
-   "group": "A2",
-   "kind": "Laboral temporal",
-   "km": 7.9,
-   "org": "Ajuntament de Palau-solità i Plegamans",
-   "places": 0,
-   "pool": true,
-   "title": "Borsa de treball de places de Tècnic Mitjà de d'Educació",
-   "url": "https://cido.diba.cat/oposicions/22372274"
-  },
-  {
    "end": "2026-11-08",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -1211,5 +1200,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-07T20:27:11+01:00"
+ "fetched": "2026-11-08T12:57:37+01:00"
 }
