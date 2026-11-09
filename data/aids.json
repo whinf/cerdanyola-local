@@ -1618,24 +1618,6 @@
      "business"
     ]
    },
-   "933847": {
-    "budget": 3600,
-    "checked": "2026-11-06",
-    "end": "2026-11-09",
-    "id": "933847",
-    "level": "AUTONOMICA",
-    "organ": "AGÈNCIA CATALANA DE LA JOVENTUT",
-    "purpose": "Educación",
-    "received": "2026-10-06",
-    "region": "CATALUÑA",
-    "start": "2026-10-09",
-    "term": "",
-    "title": "Beca que tiene por objetivo abrir un espacio de experimentacion curatorial de personas y colectivos jóvenes, así como favorecer su profesionalizacion.",
-    "title_ca": "Beca que té per objectiu obrir un espai per a l'experimentació curatorial de persones i collectius joves, així com afavorir la seva professionalització.",
-    "who": [
-     "people"
-    ]
-   },
    "933968": {
     "budget": 1000000,
     "checked": "2026-11-06",
@@ -1668,24 +1650,6 @@
     "term": "20 Dies Hàbils",
     "title": "Ayudas a la pérdida de ingresos derivada de las bases reguladoras que deben regir las ayudas a las explotaciones ganaderas de vacuno de Cataluña afectadas por la dermatosis nodular contagiosa",
     "title_ca": "Ajuts a la pèrdua d'ingressos derivada de les bases reguladores que han de regir els ajuts a les explotacions ramaderes de boví de Catalunya afectades per la dermatosi nodular contagiosa",
-    "who": [
-     "business"
-    ]
-   },
-   "934532": {
-    "budget": 250000,
-    "checked": "2026-11-06",
-    "end": "",
-    "id": "934532",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'IGUALTAT I FEMINISME",
-    "purpose": "Servicios Sociales y Promoción Social",
-    "received": "2026-10-09",
-    "region": "CATALUÑA",
-    "start": "2026-10-20",
-    "term": "20 Dies Naturals",
-    "title": "Subvenciones elaboración de planes d'igualtdad en empresas y entidades de menos de cincuenta personas cofinanciadas por el Fondo Social Europeo Plus de Catalunya 2021-2027 (PCAT+)",
-    "title_ca": "Subvencions elaboració de plans d'igualtat a empreses i entitats de menys de cinquanta persones treballadores de Catalunya, cofinanades pel Fons Social Europeu Plus de Catalunya 2021-2027 (PCAT+)",
     "who": [
      "business"
     ]
@@ -2826,17 +2790,154 @@
     "who": [
      "entities"
     ]
+   },
+   "940640": {
+    "budget": 669016,
+    "checked": "2026-11-10",
+    "end": "2026-12-17",
+    "id": "940640",
+    "level": "AUTONOMICA",
+    "organ": "AGÈNCIA DE RESIDUS DE CATALUNYA",
+    "purpose": "Otras actuaciones de carácter económico",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "2026-11-17",
+    "term": "",
+    "title": "Subvenciones destinadas a la limpieza, la retirada, el transporte y el tratamiento de los residuos deamianto a causa de episodios meteorológicos excepcionales ocatastróficos informados por el Servicio Meteorológico de Cataluña (Meteocat)",
+    "title_ca": "Subvencions destinades a la neteja, la retirada, el transport i el tractament dels residus d'amiant(fibrociment) a causa d'episodis meteorològics excepcionals o catastròfics informatspel Servei Meteorològic de Catalunya (Meteocat)",
+    "who": [
+     "business",
+     "entities"
+    ]
+   },
+   "940656": {
+    "budget": 5000000,
+    "checked": "2026-11-10",
+    "end": "2026-12-16",
+    "id": "940656",
+    "level": "AUTONOMICA",
+    "organ": "CONSORCI DE COMERÇ, ARTESANIA I MODA DE CATALUNYA",
+    "purpose": "Comercio, Turismo y Pymes",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "2026-11-16",
+    "term": "22 de julio de 2021",
+    "title": "RESOLUCIÓNpor la que se aprueba la convocatoria derivada de las bases reguladoras que deben regir la concesión de subvenciones para el episodio meteorológico de octubre de 2026",
+    "title_ca": "RESOLUCIÓ per la qual s'aprova la convocatòria derivada de les bases reguladores que han de regir la concessió de subvencions per als aigüats d'octubre 2026",
+    "who": [
+     "business"
+    ]
+   },
+   "940852": {
+    "budget": 2080000,
+    "checked": "2026-11-10",
+    "end": "",
+    "id": "940852",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'IGUALTAT I FEMINISME",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "20 Dies Naturals",
+    "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia A",
+    "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia A.",
+    "who": [
+     "entities"
+    ]
+   },
+   "940859": {
+    "budget": 1240000,
+    "checked": "2026-11-10",
+    "end": "",
+    "id": "940859",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'IGUALTAT I FEMINISME",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "20 Dies Naturals",
+    "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia C",
+    "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia C",
+    "who": [
+     "entities"
+    ]
+   },
+   "940869": {
+    "budget": 9810000,
+    "checked": "2026-11-10",
+    "end": "",
+    "id": "940869",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'IGUALTAT I FEMINISME",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "20 Dies Naturals",
+    "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia B",
+    "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia B",
+    "who": [
+     "entities"
+    ]
+   },
+   "940875": {
+    "budget": 2137097.74,
+    "checked": "2026-11-10",
+    "end": "",
+    "id": "940875",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'IGUALTAT I FEMINISME",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "20 Dies Naturals",
+    "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia D",
+    "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia D",
+    "who": [
+     "entities"
+    ]
+   },
+   "940881": {
+    "budget": 3600000,
+    "checked": "2026-11-10",
+    "end": "",
+    "id": "940881",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'IGUALTAT I FEMINISME",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "20 Dies Naturals",
+    "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia E",
+    "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia E",
+    "who": [
+     "entities"
+    ]
+   },
+   "940893": {
+    "budget": 3740000,
+    "checked": "2026-11-10",
+    "end": "2026-12-17",
+    "id": "940893",
+    "level": "AUTONOMICA",
+    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
+    "purpose": "Cultura",
+    "received": "2026-11-09",
+    "region": "CATALUÑA",
+    "start": "2026-11-17",
+    "term": "",
+    "title": "Convocatoria de subvenciones en especie para la adquisición de novedades editoriales en catalán o en occitano destinadas a las bibliotecas del Sistema de Lectura Pública de Cataluña",
+    "title_ca": "Convocatòria de subvencions en espècie per a l'adquisició de novetats editorials en català o en occità destinades a les biblioteques del Sistema de Lectura Pública de Catalunya",
+    "who": [
+     "entities"
+    ]
    }
   },
   "closed": [
-   "867592",
-   "867593",
-   "867594",
-   "867595",
-   "867596",
-   "867597",
-   "867598",
-   "867599",
    "867613",
    "867616",
    "867636",
@@ -4694,6 +4795,7 @@
    "933357",
    "933533",
    "933792",
+   "933847",
    "933951",
    "933961",
    "933988",
@@ -4717,6 +4819,7 @@
    "934506",
    "934512",
    "934522",
+   "934532",
    "934569",
    "934695",
    "934703",
@@ -4803,8 +4906,12 @@
    "940563",
    "940565",
    "940566",
-   "940567"
+   "940567",
+   "940645",
+   "940650",
+   "940653",
+   "940897"
   ]
  },
- "fetched": "2026-11-09T14:56:55+01:00"
+ "fetched": "2026-11-10T00:47:49+01:00"
 }

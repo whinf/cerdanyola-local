@@ -1,61 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-09",
-   "group": "Agrupacions professionals",
-   "kind": "Laboral",
-   "km": 13.6,
-   "org": "Ajuntament de Terrassa - Terrassa Cicle de l'Aigua, EPEL",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Encarregat de xarxa",
-   "url": "https://cido.diba.cat/oposicions/22244020"
-  },
-  {
-   "end": "2026-11-09",
-   "group": "A1",
-   "kind": "Laboral",
-   "km": 13.6,
-   "org": "Ajuntament de Terrassa - Terrassa Cicle de l'Aigua, EPEL",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça de Tècnic de distribució",
-   "url": "https://cido.diba.cat/oposicions/22307522"
-  },
-  {
-   "end": "2026-11-09",
-   "group": "A2",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Infermer especialista en Geriatria",
-   "url": "https://cido.diba.cat/oposicions/22350691"
-  },
-  {
-   "end": "2026-11-09",
-   "group": "C2",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Cuiner",
-   "url": "https://cido.diba.cat/oposicions/22329279"
-  },
-  {
-   "end": "2026-11-09",
-   "group": "A2",
-   "kind": "Laboral temporal",
-   "km": 9.8,
-   "org": "Sabadell Gent Gran, Centre de Serveis, SA",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Infermer",
-   "url": "https://cido.diba.cat/oposicions/22350734"
-  },
-  {
    "end": "2026-11-10",
    "group": "A1",
    "kind": "Funcionari",
@@ -1277,5 +1222,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-09T14:56:55+01:00"
+ "fetched": "2026-11-10T00:47:49+01:00"
 }

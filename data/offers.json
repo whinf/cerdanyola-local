@@ -475,16 +475,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324763"
   },
   {
-   "company": "Residencia La Olivera",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-10",
-   "hours": "Jornada parcial (10 hores - jornada setmanal)",
-   "salary": [],
-   "title": "Educador/ra social",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324491"
-  },
-  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-02",
@@ -755,19 +745,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327388"
   },
   {
-   "company": "Consultoria de Recursos Humans",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-10-22",
-   "hours": "Jornada completa",
-   "salary": [
-    2300,
-    3000
-   ],
-   "title": "137. #6388# tècnics/es de manteniment mecànic industrial",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327453"
-  },
-  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-10-21",
@@ -1000,19 +977,6 @@
    "title": "Repartidores/as de paquetería",
    "town": "MONTCADA I REIXAC",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324776"
-  },
-  {
-   "company": "CELYMAR SERVICIOS DE OUTSOURCING,S.L.",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-10",
-   "hours": "Jornada parcial (15 hores - jornada setmanal)",
-   "salary": [
-    550,
-    570
-   ],
-   "title": "Limpiador/ra industrial experiencia manejo de fregadora de arrastre",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324497"
   },
   {
    "company": "",
@@ -1853,5 +1817,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
   }
  ],
- "fetched": "2026-11-09T14:56:55+01:00"
+ "fetched": "2026-11-10T00:47:49+01:00"
 }

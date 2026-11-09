@@ -3,16 +3,6 @@
   "events": [
    {
     "category": "",
-    "end": "2026-11-09",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-09-07",
-    "time": "19:30",
-    "title": "Exposició 'Llibres Lliures' de Marutxi Beaumont",
-    "url": "https://www.cerdanyola.cat/agenda/exposicio-llibres-lliures-de-marutxi-beaumont"
-   },
-   {
-    "category": "",
     "end": "2026-12-20",
     "place": "",
     "source": "ajuntament",
@@ -80,26 +70,6 @@
     "time": "18:00",
     "title": "Fira d'atraccions al Parc Xarau",
     "url": "https://www.cerdanyola.cat/agenda/fira-datraccions-al-parc-xarau-0"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-11-09",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-09",
-    "time": "17:30",
-    "title": "Hora del conte menuts",
-    "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-menuts-43"
-   },
-   {
-    "category": "Actes literaris",
-    "end": "2026-11-09",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-09",
-    "time": "19:30",
-    "title": "Nit de cinema històric de Cerdanyola i presentació del llibre Salillas.net",
-    "url": "https://www.cerdanyola.cat/agenda/nit-de-cinema-historic-de-cerdanyola-i-presentacio-del-llibre-salillasnet"
    },
    {
     "category": "Festes populars",
@@ -640,5 +610,5 @@
    }
   ]
  },
- "fetched": "2026-11-09T14:56:55+01:00"
+ "fetched": "2026-11-10T00:47:49+01:00"
 }
