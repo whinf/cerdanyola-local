@@ -1,6 +1,19 @@
 {
  "data": [
   {
+   "company": "TRANSMUNT S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-09",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    3500
+   ],
+   "title": "Conductor/a adr cisterna",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328538"
+  },
+  {
    "company": "Hihired Recruitment SL",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-06",
@@ -470,19 +483,6 @@
    "title": "Educador/ra social",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324491"
-  },
-  {
-   "company": "RHEA Human Solutions SL",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-09",
-   "hours": "Jornada completa",
-   "salary": [
-    2000,
-    2300
-   ],
-   "title": "Electromecánico/a industrial",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324432"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -1283,6 +1283,19 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325117"
   },
   {
+   "company": "ramcon empresa de servicios, sa",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-09",
+   "hours": "Jornada parcial (22 hores - jornada mensual)",
+   "salary": [
+    741,
+    1318
+   ],
+   "title": "Oerari/ària de neteja",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328478"
+  },
+  {
    "company": "EMPRESA SECTOR TIC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-06",
@@ -1483,19 +1496,6 @@
    "date": "2026-10-26",
    "hours": "Jornada completa",
    "salary": [
-    2500,
-    2500
-   ],
-   "title": "Enginyer/a devops_31001",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631001"
-  },
-  {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-10-26",
-   "hours": "Jornada completa",
-   "salary": [
     1803,
     1803
    ],
@@ -1567,19 +1567,6 @@
    "title": "Infermer/a residència",
    "town": "SANT CUGAT DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327316"
-  },
-  {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-10-20",
-   "hours": "Jornada completa",
-   "salary": [
-    2143,
-    2143
-   ],
-   "title": "Empleats/ades administratius/ives amb tasques d'atenció al públic no classificats en altres epígrafs_30611",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630611"
   },
   {
    "company": "Centre de Formació",
@@ -1864,30 +1851,7 @@
    "title": "Cocinero/a",
    "town": "SANT CUGAT DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
-  },
-  {
-   "company": "Nascor Formación SLU",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-09",
-   "hours": "Jornada parcial tarda (2 hores - jornada setmanal)",
-   "salary": [],
-   "title": "Monitor/monitora de txi kung",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324370"
-  },
-  {
-   "company": "Mitie",
-   "contract": "Contracte laboral temporal (3 mesos)",
-   "date": "2026-09-09",
-   "hours": "Jornada completa",
-   "salary": [
-    1221,
-    1300
-   ],
-   "title": "Auxiliar control de accesos – sant cugat",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324368"
   }
  ],
- "fetched": "2026-11-08T12:57:37+01:00"
+ "fetched": "2026-11-09T14:56:55+01:00"
 }

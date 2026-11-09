@@ -1,17 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-08",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Metge especialista pel Servei d'Atenció Intermèdia",
-   "url": "https://cido.diba.cat/oposicions/22396143"
-  },
-  {
    "end": "2026-11-09",
    "group": "Agrupacions professionals",
    "kind": "Laboral",
@@ -217,6 +206,17 @@
    "org": "Universitat Autònoma de Barcelona (UAB)",
    "places": 1,
    "pool": false,
+   "title": "1 plaça d'Investigador predoctoral amb destinació al Departament d'Història Moderna i Contemporània",
+   "url": "https://cido.diba.cat/oposicions/22462079"
+  },
+  {
+   "end": "2026-11-13",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
    "title": "1 plaça de Personal investigador predoctoral en formació (PIF) per al curs 2026-2027 a l'àrea de coneixement d'Enginyeria Química (B26P0025)",
    "url": "https://cido.diba.cat/oposicions/22413243"
   },
@@ -230,6 +230,28 @@
    "pool": false,
    "title": "1 plaça de Personal investigador predoctoral en formació (PIF) per al curs 2026-2027 a l'àrea de coneixement de Genètica (B26P0007)",
    "url": "https://cido.diba.cat/oposicions/22413248"
+  },
+  {
+   "end": "2026-11-13",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació al Centre de Recerca i Estudis pel Desenvolupament Organitzatiu",
+   "url": "https://cido.diba.cat/oposicions/22462000"
+  },
+  {
+   "end": "2026-11-13",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació al Departament de Farmacologia, de Terapèutica i de Toxicologia",
+   "url": "https://cido.diba.cat/oposicions/22461946"
   },
   {
    "end": "2026-11-14",
@@ -285,6 +307,39 @@
    "pool": false,
    "title": "1 plaça d'Operador de sistemes",
    "url": "https://cido.diba.cat/oposicions/22126241"
+  },
+  {
+   "end": "2026-11-16",
+   "group": "A",
+   "kind": "Laboral temporal",
+   "km": 5.3,
+   "org": "Generalitat de Catalunya - Centre d'Alt Rendiment Esportiu (CAR)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Nutricionista al Departament de Fisiologia i Nutrició (Sant Cugat del Vallès)",
+   "url": "https://cido.diba.cat/oposicions/22459383"
+  },
+  {
+   "end": "2026-11-16",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 5.3,
+   "org": "Generalitat de Catalunya - Centre d'Alt Rendiment Esportiu (CAR)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Psicòleg al Departament de Psicologia (Sant Cugat del Vallès)",
+   "url": "https://cido.diba.cat/oposicions/22459415"
+  },
+  {
+   "end": "2026-11-16",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 5.3,
+   "org": "Generalitat de Catalunya - Centre d'Alt Rendiment Esportiu (CAR)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic superior al Departament d'Atenció a l'Esportista (Sant Cugat del Vallès)",
+   "url": "https://cido.diba.cat/oposicions/22459372"
   },
   {
    "end": "2026-11-17",
@@ -406,6 +461,17 @@
    "pool": false,
    "title": "1 plaça de Cap de Projecte del COICC (Project Manager)",
    "url": "https://cido.diba.cat/oposicions/22350797"
+  },
+  {
+   "end": "2026-11-20",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en Aparell Digestiu",
+   "url": "https://cido.diba.cat/oposicions/22461884"
   },
   {
    "end": "2026-11-21",
@@ -804,6 +870,17 @@
    "url": "https://cido.diba.cat/oposicions/22444561"
   },
   {
+   "end": "2026-12-07",
+   "group": "Agrupacions professionals",
+   "kind": "Laboral",
+   "km": 15.1,
+   "org": "Ajuntament de Matadepera",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça de Conserge d'escola",
+   "url": "https://cido.diba.cat/oposicions/17601481"
+  },
+  {
    "end": "2026-12-13",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -1200,5 +1277,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-08T20:43:26+01:00"
+ "fetched": "2026-11-09T14:56:55+01:00"
 }

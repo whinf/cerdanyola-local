@@ -2,10 +2,19 @@
  "data": [
   {
    "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "Avui els trens circulen fora del seu horari habitual. Recomanem buscar serveis alternatius de transport i planificar els trajectes. Afectacions al servei per les jornades de vaga dels dies 10, 11 i 12 de novembre. Consulteu els serveis mínims i els horaris previstos: rodalies.gencat.cat"
+   }
+  },
+  {
+   "lines": [
     "R7"
    ],
    "text": {
-    "es": "A causa duna incidència operativa, la circulació de trens de la línia R7 queda interrompuda. Es recomana utilitzar els trens de la línia R4 fins a Cerdanyola del Vallès i consultar els serveis alternatius a: https://mou-te.gencat.cat/itinerary"
+    "es": "A causa d'una incidència operativa, la circulació de trens queda interrompuda. Es recomana utilitzar els trens de la línia R4 fins a Cerdanyola del Vallès. S'estableix un servei alternatiu per carretera entre Cerdanyola del Vallès i Cerdanyola Universitat."
    }
   },
   {
@@ -14,23 +23,7 @@
     "R8"
    ],
    "text": {
-    "es": "A causa d'una incidència operativa, els trens circulen fora del seu horari habitual i poden veure incrementat el seu temps de recorregut."
-   }
-  },
-  {
-   "lines": [
-    "R8"
-   ],
-   "text": {
-    "es": "Amb motiu de les jornades de vaga convocades per als dies 10, 11 i 12 de novembre, el servei de Rodalies de Catalunya es prestarà d'acord amb els serveis mínims establerts. Més informació a les estacions i a rodalies.gencat.cat."
-   }
-  },
-  {
-   "lines": [
-    "R8"
-   ],
-   "text": {
-    "es": "A causa d'una incidència a la infraestructura a l'estació de Rubí, els trens poden circular fora del seu horari habitual, amb demores que poden superar els 20 minuts."
+    "es": "Amb motiu de les jornades de vaga convocades per als dies 10, 11 i 12 de novembre, el servei de Rodalies de Catalunya es prestarà d'acord amb els serveis mínims establerts. Més informació a les estacions i a rodalies.gencat.cat"
    }
   },
   {
@@ -42,5 +35,5 @@
    }
   }
  ],
- "fetched": "2026-11-08T20:43:26+01:00"
+ "fetched": "2026-11-09T14:56:55+01:00"
 }

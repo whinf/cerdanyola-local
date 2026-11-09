@@ -82,76 +82,6 @@
     "url": "https://www.cerdanyola.cat/agenda/fira-datraccions-al-parc-xarau-0"
    },
    {
-    "category": "Festes populars",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-08",
-    "time": "09:00",
-    "title": "Festa de Tardor de Sant Martí - 8 de novembre",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-8-de-novembre-1"
-   },
-   {
-    "category": "Esports",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-08",
-    "time": "09:00",
-    "title": "Marxerola 2026. Caminada popular i Marxa Nòrdica per Collserola",
-    "url": "https://www.cerdanyola.cat/agenda/marxerola-2026-caminada-popular-i-marxa-nordica-collserola"
-   },
-   {
-    "category": "Festes populars",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-08",
-    "time": "11:00",
-    "title": "Activitats familiars per la Festa de Sant Martí",
-    "url": "https://www.cerdanyola.cat/agenda/activitats-familiars-la-festa-de-sant-marti-0"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-08",
-    "time": "11:30",
-    "title": "Jugatecambiental. Científics per un dia. Microplàstics",
-    "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-cientifics-un-dia-microplastics"
-   },
-   {
-    "category": "Activitats del Servei de Patrimoni",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-08",
-    "time": "12:00",
-    "title": "Cerdanyola, terra d'ibers. Festa Tardor Sant Martí",
-    "url": "https://www.cerdanyola.cat/agenda/cerdanyola-terra-dibers-festa-tardor-sant-marti"
-   },
-   {
-    "category": "Festes populars",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-08",
-    "time": "12:00",
-    "title": "Concurs de Paelles de Sant Martí",
-    "url": "https://www.cerdanyola.cat/agenda/concurs-de-paelles-de-sant-marti-2"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-08",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-08",
-    "time": "17:00",
-    "title": "Dia Internacional de les Persones Grans",
-    "url": "https://www.cerdanyola.cat/agenda/dia-internacional-de-les-persones-grans-0"
-   },
-   {
     "category": "Infància",
     "end": "2026-11-09",
     "place": "",
@@ -320,6 +250,16 @@
     "time": "",
     "title": "Exposició Violència 0 a Can Cuiàs",
     "url": "https://afocer.cat/event/exposicio-violencia-0-a-can-cuias/"
+   },
+   {
+    "category": "Infància",
+    "end": "2026-11-15",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-15",
+    "time": "11:30",
+    "title": "Jugatecambiental. Bosses tote amb residus",
+    "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-bosses-tote-amb-residus"
    },
    {
     "category": "Exposicions",
@@ -700,5 +640,5 @@
    }
   ]
  },
- "fetched": "2026-11-08T20:43:26+01:00"
+ "fetched": "2026-11-09T14:56:55+01:00"
 }
