@@ -2935,6 +2935,60 @@
     "who": [
      "entities"
     ]
+   },
+   "941145": {
+    "budget": 14400000,
+    "checked": "2026-11-10",
+    "end": "2028-12-31",
+    "id": "941145",
+    "level": "ESTADO",
+    "organ": "INSTITUTO DE CRÉDITO OFICIAL",
+    "purpose": "Otras actuaciones de carácter económico",
+    "received": "2026-11-10",
+    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
+    "start": "2026-10-23",
+    "term": "31/12/2028",
+    "title": "ESPAÑA CRECE-ICO CRECIMIENTO Y EXPANSIÓN (MRR) (exenciones por categorías)",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
+   },
+   "941154": {
+    "budget": 600000,
+    "checked": "2026-11-10",
+    "end": "2028-12-31",
+    "id": "941154",
+    "level": "ESTADO",
+    "organ": "INSTITUTO DE CRÉDITO OFICIAL",
+    "purpose": "Otras actuaciones de carácter económico",
+    "received": "2026-11-10",
+    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
+    "start": "2026-10-23",
+    "term": "31/12/2028",
+    "title": "ESPAÑA CRECE-ICO AGRI CRECIMIENTO Y EXPANSIÓN (MRR) (exenciones por categorías agrícola)",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
+   },
+   "941239": {
+    "budget": 150000000,
+    "checked": "2026-11-10",
+    "end": "2026-12-23",
+    "id": "941239",
+    "level": "ESTADO",
+    "organ": "CENTRO PARA EL DESARROLLO TECNOLÓGICO Y LA INNOVACIÓN E.P.E",
+    "purpose": "Investigación, desarrollo e innovación",
+    "received": "2026-11-10",
+    "region": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
+    "start": "2026-11-17",
+    "term": "",
+    "title": "Resolución de 6 de noviembre de 2026 de la Presidencia del CDTI E.P.E. por la que se aprueba la convocatoria para el año 2026 del procedimiento de concesión de ayudas destinadas a proyectos INNTERCONECTA-STEP, cofinanciada por FEDER",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
    }
   },
   "closed": [
@@ -4913,5 +4967,5 @@
    "940897"
   ]
  },
- "fetched": "2026-11-10T14:30:16+01:00"
+ "fetched": "2026-11-10T22:19:01+01:00"
 }

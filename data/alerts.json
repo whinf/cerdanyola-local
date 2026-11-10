@@ -25,16 +25,7 @@
    "text": {
     "es": "Servei ferroviari entre Montcada Bifurcació i Cerdanyola Universitat. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4."
    }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "A causa d'una incidència a la infraestructura per un intent de robatori de cable entre El Clot i Badalona, els trens circulen amb demores de 30 minuts de mitjana."
-   }
   }
  ],
- "fetched": "2026-11-10T14:30:16+01:00"
+ "fetched": "2026-11-10T22:19:01+01:00"
 }

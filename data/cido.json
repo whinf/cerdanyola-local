@@ -521,6 +521,17 @@
    "end": "2026-11-24",
    "group": "A1",
    "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en Radiologia Vascular Intervencionista",
+   "url": "https://cido.diba.cat/oposicions/22470166"
+  },
+  {
+   "end": "2026-11-24",
+   "group": "A1",
+   "kind": "Laboral temporal",
    "km": 2.8,
    "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
    "places": 1,
@@ -1266,5 +1277,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-10T14:30:16+01:00"
+ "fetched": "2026-11-10T22:19:01+01:00"
 }
