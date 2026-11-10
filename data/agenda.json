@@ -262,6 +262,26 @@
     "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-en-angles-13"
    },
    {
+    "category": "",
+    "end": "2026-11-17",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-11-17",
+    "time": "13:00",
+    "title": "Projecció del film \"Jean Valjean\" d'Éric Besnard",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-jean-valjean-d-eric-besnard-1345828727816.html?detid=1346005234205"
+   },
+   {
+    "category": "",
+    "end": "2026-11-17",
+    "place": "Sala Teatre UAB",
+    "source": "uab",
+    "start": "2026-11-17",
+    "time": "15:00",
+    "title": "Ode Marítima, teatre en portuguès",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/ode-maritima-teatre-en-portugues-1345828727816.html?detid=1346005234467"
+   },
+   {
     "category": "Conferències",
     "end": "2026-11-17",
     "place": "",
@@ -270,6 +290,16 @@
     "time": "19:00",
     "title": "Conferència 'Conflictes armats al món'",
     "url": "https://www.cerdanyola.cat/agenda/conferencia-conflictes-armats-al-mon"
+   },
+   {
+    "category": "",
+    "end": "2026-11-18",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-11-18",
+    "time": "11:00",
+    "title": "Projecció del film \"Gary Cooper ques estás en los cielos\", de Pilar Miró",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gary-cooper-ques-estas-en-los-cielos-de-pilar-miro-1345828727816.html?detid=1346005235501"
    },
    {
     "category": "Cursos i tallers",
@@ -300,6 +330,16 @@
     "time": "19:30",
     "title": "Inauguració de l'exposició 'La màgia de la imperfecció'",
     "url": "https://www.cerdanyola.cat/agenda/inauguracio-de-lexposicio-la-magia-de-la-imperfeccio"
+   },
+   {
+    "category": "",
+    "end": "2026-11-19",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-11-19",
+    "time": "12:00",
+    "title": "Projecció del documental \"Espai Minvant\" i Cinefòrum",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-documental-espai-minvant-i-cineforum-1345828727816.html?detid=1346005236178"
    },
    {
     "category": "Actes literaris",
@@ -373,6 +413,16 @@
    },
    {
     "category": "",
+    "end": "2026-11-26",
+    "place": "Sala Teatre UAB",
+    "source": "uab",
+    "start": "2026-11-26",
+    "time": "17:00",
+    "title": "Concert homenatge a Narcisa Freixas \"de Sabadell a París\"",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/concert-homenatge-a-narcisa-freixas-de-sabadell-a-paris-1345828727816.html?detid=1346005239500"
+   },
+   {
+    "category": "",
     "end": "2026-11-28",
     "place": "Ateneu de Cerdanyola",
     "source": "afocer",
@@ -391,6 +441,16 @@
     "time": "20 h",
     "title": "Federico García",
     "url": ""
+   },
+   {
+    "category": "",
+    "end": "2026-11-30",
+    "place": "Modalitat híbrida: Sala de Graus de la Facultat de Ciències Polítiques i de Sociologia de la UAB i en línia.",
+    "source": "uab",
+    "start": "2026-11-30",
+    "time": "10:00",
+    "title": "Sessió informativa Erasmus+ 2027: projectes de cooperació i accions Jean Monnet",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/sessio-informativa-erasmus-2027-projectes-de-cooperacio-i-accions-jean-monnet-1345828727816.html?detid=1346005178059"
    },
    {
     "category": "Altres activitats",
@@ -610,5 +670,5 @@
    }
   ]
  },
- "fetched": "2026-11-10T00:47:49+01:00"
+ "fetched": "2026-11-10T14:30:16+01:00"
 }

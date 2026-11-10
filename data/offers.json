@@ -1,6 +1,45 @@
 {
  "data": [
   {
+   "company": "EMPRESA DE MANTENIMENT",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-10",
+   "hours": "Jornada completa",
+   "salary": [
+    2300,
+    2700
+   ],
+   "title": "OFICIALES/OFICIALAS DE 1.ª DE MANTENIMIENTO INDUSTRIAL | CERDANYOLA DEL VALLÈS",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328569"
+  },
+  {
+   "company": "EMPRESA DE MANTENIMENT",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-10",
+   "hours": "Jornada completa",
+   "salary": [
+    1400,
+    1500
+   ],
+   "title": "Operarios/as de limpieza general – brigada móvil | zona vallès",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328587"
+  },
+  {
+   "company": "Casal Gent Gran",
+   "contract": "Contracte laboral temporal (1 mesos)",
+   "date": "2026-11-10",
+   "hours": "Jornada parcial (35 hores - jornada setmanal)",
+   "salary": [
+    1378,
+    1379
+   ],
+   "title": "Conserge - cerdanyola",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328603"
+  },
+  {
    "company": "TRANSMUNT S.L.",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-09",
@@ -77,32 +116,6 @@
    "title": "Supervisor/a de servicios de limpieza | gestión de equipos y personal",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328095"
-  },
-  {
-   "company": "Empresa de manteniment",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-11-03",
-   "hours": "Jornada completa",
-   "salary": [
-    2300,
-    2700
-   ],
-   "title": "OFICIALES/LAS DE 1.ª DE MANTENIMIENTO INDUSTRIAL | CERDANYOLA DEL VALLÈS",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328098"
-  },
-  {
-   "company": "Mimmng Mantenimiento Sl.",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-11-02",
-   "hours": "Jornada completa",
-   "salary": [
-    1400,
-    1500
-   ],
-   "title": "Operarios/as de limpieza general – brigada móvil | zona vallès",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328006"
   },
   {
    "company": "Empresa de manteniment i reparació",
@@ -604,6 +617,45 @@
   {
    "company": "GROWING UP HR SL",
    "contract": "Contracte laboral indefinit",
+   "date": "2026-11-10",
+   "hours": "Jornada completa",
+   "salary": [
+    2300,
+    2600
+   ],
+   "title": "137.#6561 tècnic/a de manteniment mecànic industrial",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328551"
+  },
+  {
+   "company": "Empresa de mantenimiento y reparación",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-10",
+   "hours": "Jornada completa",
+   "salary": [
+    2300,
+    2500
+   ],
+   "title": "Electromecánico/a industrial – 32h",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328556"
+  },
+  {
+   "company": "HABEMUS CONSULTING",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-10",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2300
+   ],
+   "title": "Customer service bilingüe fr/es",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328601"
+  },
+  {
+   "company": "GROWING UP HR SL",
+   "contract": "Contracte laboral indefinit",
    "date": "2026-11-06",
    "hours": "Jornada completa",
    "salary": [
@@ -613,19 +665,6 @@
    "title": "64. mozo/moza de almacen turno noche",
    "town": "MONTCADA I REIXAC",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328455"
-  },
-  {
-   "company": "Empresa de manteniment",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-11-03",
-   "hours": "Jornada completa",
-   "salary": [
-    2300,
-    2500
-   ],
-   "title": "Electromecánico/a industrial – 32h",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328093"
   },
   {
    "company": "Klousner",
@@ -1247,6 +1286,32 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325117"
   },
   {
+   "company": "Gi Group Spain",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-10",
+   "hours": "Jornada completa",
+   "salary": [
+    2250,
+    2250
+   ],
+   "title": "Jefe/a de cocina - sant cugat del valles",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328643"
+  },
+  {
+   "company": "Empresa de telecomunicacions",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-10",
+   "hours": "Jornada parcial (16 hores - jornada setmanal)",
+   "salary": [
+    488,
+    488
+   ],
+   "title": "Telefonista d'atenció al client – caps de setmana",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328641"
+  },
+  {
    "company": "ramcon empresa de servicios, sa",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-09",
@@ -1398,7 +1463,7 @@
     1577,
     1577
    ],
-   "title": "Cambrer/a en general_31316",
+   "title": "Cambrer/a _31316",
    "town": "SANT CUGAT DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631316"
   },
@@ -1817,5 +1882,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
   }
  ],
- "fetched": "2026-11-10T00:47:49+01:00"
+ "fetched": "2026-11-10T14:30:16+01:00"
 }

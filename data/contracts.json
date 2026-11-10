@@ -1,6 +1,32 @@
 {
  "data": [
   {
+   "amount": 8038.11,
+   "date": "2026-11-09",
+   "deadline": "2026-11-06T23:59",
+   "id": "29827823/248/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Expedient en avaluació",
+   "title": "Subministrament de llicències de software microsoft office 365 pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/56dc9cf1-3bfe-48e7-93a3-273252bc10d8/300932934",
+   "winners": []
+  },
+  {
+   "amount": 900.0,
+   "date": "2026-11-09",
+   "deadline": "2026-11-06T23:59",
+   "id": "29827823/246/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Expedient en avaluació",
+   "title": "Servei de manteniment d’ultracongeladors per al departament de genètica animal del centre de recerca en agrigenòmica csic irta uab ub crag.",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ec53b521-1396-4208-95a7-797ec54524cc/300932999",
+   "winners": []
+  },
+  {
    "amount": 6900.0,
    "date": "2026-11-06",
    "deadline": "2026-09-18T12:00",
@@ -645,32 +671,6 @@
    "winners": [
     "FEU I GODOY ARQUITECTES"
    ]
-  },
-  {
-   "amount": 8038.11,
-   "date": "2026-10-23",
-   "deadline": "2026-11-06T23:59",
-   "id": "29827823/248/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Anunci de licitació",
-   "title": "Subministrament de llicències de software microsoft office 365 pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/56dc9cf1-3bfe-48e7-93a3-273252bc10d8/300917083",
-   "winners": []
-  },
-  {
-   "amount": 900.0,
-   "date": "2026-10-23",
-   "deadline": "2026-11-06T23:59",
-   "id": "29827823/246/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Anunci de licitació",
-   "title": "Servei de manteniment d’ultracongeladors per al departament de genètica animal del centre de recerca en agrigenòmica csic irta uab ub crag.",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ec53b521-1396-4208-95a7-797ec54524cc/300917223",
-   "winners": []
   },
   {
    "amount": 6700.0,
@@ -5462,5 +5462,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-10T00:47:49+01:00"
+ "fetched": "2026-11-10T14:30:16+01:00"
 }

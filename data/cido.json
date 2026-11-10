@@ -496,6 +496,39 @@
    "url": "https://cido.diba.cat/oposicions/22327317"
   },
   {
+   "end": "2026-11-24",
+   "group": "C1",
+   "kind": "Funcionari",
+   "km": 15.1,
+   "org": "Ajuntament de Matadepera",
+   "places": 2,
+   "pool": false,
+   "title": "2 places d'Agent de la Policia Local",
+   "url": "https://cido.diba.cat/oposicions/22469557"
+  },
+  {
+   "end": "2026-11-24",
+   "group": "A1",
+   "kind": "Funcionari interí",
+   "km": 13.5,
+   "org": "Ajuntament de Terrassa",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça d'Etòleg per al Centre d'Adopcions d'Animals Domèstics (CAAD) a l'Àrea de Transició Ecològica",
+   "url": "https://cido.diba.cat/oposicions/22469619"
+  },
+  {
+   "end": "2026-11-24",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Postdoctoral Researcher - NanoBiosensors and Bioanalytical Applications",
+   "url": "https://cido.diba.cat/oposicions/22468503"
+  },
+  {
    "end": "2026-11-25",
    "group": "A2",
    "kind": "Funcionari",
@@ -824,6 +857,17 @@
    "pool": true,
    "title": "1 plaça de Conserge d'escola",
    "url": "https://cido.diba.cat/oposicions/17601481"
+  },
+  {
+   "end": "2026-12-09",
+   "group": "A1",
+   "kind": "Funcionari",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor titular d'universitat per a l'Àrea de coneixement: Anatomia i Embriologia Humana (ATU01201)",
+   "url": "https://cido.diba.cat/oposicions/22469984"
   },
   {
    "end": "2026-12-13",
@@ -1222,5 +1266,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-10T00:47:49+01:00"
+ "fetched": "2026-11-10T14:30:16+01:00"
 }

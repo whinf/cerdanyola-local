@@ -6,6 +6,15 @@
     "R8"
    ],
    "text": {
+    "es": "Degut a l'incompliment dels serveis mínims establerts per a la jornada de vaga d'avui, els trens no estan prestant el servei programat.&#8203; Recomanem l'ús de mitjans de transport alternatiu:&#8203; Consulta els serveis a mou-te.gencat.cat&#8203;. Disculpin les molèsties"
+   }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
     "es": "Amb motiu de les jornades de vaga convocades per als dies 10, 11 i 12 de novembre, el servei de Rodalies de Catalunya es prestarà d'acord amb els serveis mínims establerts. Més informació a les estacions i a rodalies.gencat.cat"
    }
   },
@@ -16,7 +25,16 @@
    "text": {
     "es": "Servei ferroviari entre Montcada Bifurcació i Cerdanyola Universitat. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4."
    }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "A causa d'una incidència a la infraestructura per un intent de robatori de cable entre El Clot i Badalona, els trens circulen amb demores de 30 minuts de mitjana."
+   }
   }
  ],
- "fetched": "2026-11-10T00:47:49+01:00"
+ "fetched": "2026-11-10T14:30:16+01:00"
 }

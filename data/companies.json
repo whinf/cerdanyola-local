@@ -2,6 +2,24 @@
  "data": {
   "events": [
    {
+    "capital": 12000.0,
+    "date": "2026-11-10",
+    "id": "2026-11-10-499985-capital",
+    "kind": "capital",
+    "name": "VIGIAI SYSTEMS S.L.",
+    "total": 32000.0,
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-215-08"
+   },
+   {
+    "activity": "Construccion y edificacion: la construccion, edificacion, ejecucion y mantenimiento de toda clase de obras publicas…",
+    "capital": 3000.0,
+    "date": "2026-11-10",
+    "id": "2026-11-10-499835-new",
+    "kind": "new",
+    "name": "VARGAS CONSTRUCCIONES 1084 S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-215-08"
+   },
+   {
     "date": "2026-11-04",
     "id": "2026-11-04-491470-moved_in",
     "kind": "moved_in",
@@ -665,13 +683,14 @@
    "B 665254": "CLINICA DENTAL SMALIUM S.L.P.",
    "B 665293": "AL MUNDO REAL 2026 S.L.",
    "B 665306": "YONG XIN 2026 S.L.",
+   "B 666021": "VARGAS CONSTRUCCIONES 1084 S.L.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-09",
+  "last": "2026-11-10",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-10T00:47:49+01:00"
+ "fetched": "2026-11-10T14:30:16+01:00"
 }
