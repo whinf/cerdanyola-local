@@ -1836,24 +1836,6 @@
      "business"
     ]
    },
-   "937399": {
-    "budget": 1371250.13,
-    "checked": "2026-11-06",
-    "end": "",
-    "id": "937399",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'EMPRESA I TREBALL  ",
-    "purpose": "Fomento del Empleo",
-    "received": "2026-10-23",
-    "region": "CATALUÑA",
-    "start": "2026-10-27",
-    "term": "10 Dies Hàbils",
-    "title": "Subvenciones, en regimen de concurrencia competitiva, para la realización de actividades en el ámbito de la prevención de riesgos laborales conforme a la Ley 31/1995, de 8 de noviembre, de prevención de riesgos laborales, para el año 2026.",
-    "title_ca": "Subvencions, en règim de concurrència competitiva, per a la realització d'activitats en l'àmbit de la prevenció de riscos laborals d'acord amb la Llei 31/1995, de 8 de novembre, de prevenció de riscos laborals, per a l'any 2026.",
-    "who": [
-     "entities"
-    ]
-   },
    "937455": {
     "budget": 697200,
     "checked": "2026-11-06",
@@ -2992,15 +2974,6 @@
    }
   },
   "closed": [
-   "867613",
-   "867616",
-   "867636",
-   "867677",
-   "867686",
-   "867695",
-   "867766",
-   "867774",
-   "867828",
    "868065",
    "868140",
    "868144",
@@ -4908,6 +4881,7 @@
    "937166",
    "937168",
    "937238",
+   "937399",
    "937486",
    "937490",
    "937528",
@@ -4967,5 +4941,5 @@
    "940897"
   ]
  },
- "fetched": "2026-11-10T22:19:01+01:00"
+ "fetched": "2026-11-11T13:45:04+01:00"
 }

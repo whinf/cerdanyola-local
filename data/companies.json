@@ -2,6 +2,15 @@
  "data": {
   "events": [
    {
+    "capital": 17148.48,
+    "date": "2026-11-11",
+    "id": "2026-11-11-502562-capital",
+    "kind": "capital",
+    "name": "ONALABS INVESTMENT S.L.",
+    "total": 745023.38,
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-216-08"
+   },
+   {
     "capital": 12000.0,
     "date": "2026-11-10",
     "id": "2026-11-10-499985-capital",
@@ -689,8 +698,8 @@
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-10",
+  "last": "2026-11-11",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-10T22:19:01+01:00"
+ "fetched": "2026-11-11T13:45:04+01:00"
 }

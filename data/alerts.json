@@ -6,16 +6,7 @@
     "R8"
    ],
    "text": {
-    "es": "Degut a l'incompliment dels serveis mínims establerts per a la jornada de vaga d'avui, els trens no estan prestant el servei programat.&#8203; Recomanem l'ús de mitjans de transport alternatiu:&#8203; Consulta els serveis a mou-te.gencat.cat&#8203;. Disculpin les molèsties"
-   }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "Amb motiu de les jornades de vaga convocades per als dies 10, 11 i 12 de novembre, el servei de Rodalies de Catalunya es prestarà d'acord amb els serveis mínims establerts. Més informació a les estacions i a rodalies.gencat.cat"
+    "es": "Amb motiu de la jornada de vaga general d'avui, el servei de Rodalies de Catalunya es prestarà d'acord amb els serveis mínims establerts. Més informació a les estacions i a rodalies.gencat.cat"
    }
   },
   {
@@ -25,7 +16,25 @@
    "text": {
     "es": "Servei ferroviari entre Montcada Bifurcació i Cerdanyola Universitat. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4."
    }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "Per obres d'Adif a l'entorn de Castelldefels, del 12 de novembre al 14 de desembre es modifica temporalment el servei de la línia R2. Els trens Granollers Centre - Castelldefels iniciaran i finalitzaran el seu recorregut a Gavà."
+   }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "A causa de manifestacions a l'entorn de Fabra i Puig, s'estan produint demores en el servei alternatiu per carretera de la línia."
+   }
   }
  ],
- "fetched": "2026-11-10T22:19:01+01:00"
+ "fetched": "2026-11-11T13:45:04+01:00"
 }

@@ -1,6 +1,19 @@
 {
  "data": [
   {
+   "company": "CALAF GRUP",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    3000
+   ],
+   "title": "Gruista – obra de construcción",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328725"
+  },
+  {
    "company": "EMPRESA DE MANTENIMENT",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-10",
@@ -617,15 +630,28 @@
   {
    "company": "GROWING UP HR SL",
    "contract": "Contracte laboral indefinit",
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "hours": "Jornada completa",
    "salary": [
     2300,
     2600
    ],
-   "title": "137.#6561 tècnic/a de manteniment mecànic industrial",
+   "title": "186.#6561 tècnic/a de manteniment mecànic industrial",
    "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328551"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328702"
+  },
+  {
+   "company": "Empresa forestal",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada completa",
+   "salary": [
+    2000,
+    2400
+   ],
+   "title": "Maquinistes d'excavadora giratòria i pala carregadora(h/d)",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328704"
   },
   {
    "company": "Empresa de mantenimiento y reparación",
@@ -719,19 +745,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327774"
   },
   {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral temporal (12 mesos)",
-   "date": "2026-10-28",
-   "hours": "Jornada completa",
-   "salary": [
-    2279,
-    2279
-   ],
-   "title": "Tecnics/tecniques comptables",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631144"
-  },
-  {
    "company": "Empresa de montaje e instalaciones",
    "contract": "Contracte laboral temporal (5 mesos)",
    "date": "2026-10-27",
@@ -756,19 +769,6 @@
    "title": "Tallerista per impartir taller de \"risoteràpia\" a un casal cívic de barcelona (montcada i reixac)",
    "town": "MONTCADA I REIXAC",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327631"
-  },
-  {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral temporal (12 mesos)",
-   "date": "2026-10-23",
-   "hours": "Jornada completa",
-   "salary": [
-    2966,
-    2966
-   ],
-   "title": "Arquitecte/a tècnic/a",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630875"
   },
   {
    "company": "Centre de formació",
@@ -1041,6 +1041,19 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325056"
   },
   {
+   "company": "SENESANT 2000, S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada parcial matí (4 hores - jornada diaria)",
+   "salary": [
+    750,
+    800
+   ],
+   "title": "Limpiador/a",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328717"
+  },
+  {
    "company": "SERNET SERVEIS",
    "contract": "Contracte laboral temporal (1 mesos)",
    "date": "2026-11-05",
@@ -1286,6 +1299,45 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325117"
   },
   {
+   "company": "AEDEA Contact center",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada completa",
+   "salary": [
+    1300,
+    1400
+   ],
+   "title": "Agente de atención al cliente (con euskera)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328661"
+  },
+  {
+   "company": "AEDEA Contact center",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada parcial (35 hores - jornada setmanal)",
+   "salary": [
+    1300,
+    1400
+   ],
+   "title": "Agente de atención al cliente (con gallego)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328662"
+  },
+  {
+   "company": "FIC5SHOP SLU",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada completa",
+   "salary": [
+    1200,
+    1300
+   ],
+   "title": "Dependent/a sant cugat del vallès",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328705"
+  },
+  {
    "company": "Gi Group Spain",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-10",
@@ -1453,19 +1505,6 @@
    "title": "Conductors/es de furgoneta, fins a 3,5 tones_31382",
    "town": "SANT CUGAT DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631382"
-  },
-  {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-11-02",
-   "hours": "Jornada completa",
-   "salary": [
-    1577,
-    1577
-   ],
-   "title": "Cambrer/a _31316",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631316"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -1882,5 +1921,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
   }
  ],
- "fetched": "2026-11-10T14:30:16+01:00"
+ "fetched": "2026-11-11T13:45:04+01:00"
 }

@@ -1,6 +1,75 @@
 {
  "data": [
   {
+   "amount": 12437.0,
+   "date": "2026-11-10",
+   "deadline": "2026-11-09T23:59",
+   "id": "29827823/250/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Anul·lació",
+   "title": "Subministrament material informatic al centre de recerca en agrigenòmica csic irta-uab-ub crag",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/6618be3f-899e-4cd5-b55f-be2b9ceb2ba1/300935053",
+   "winners": []
+  },
+  {
+   "amount": 8680.0,
+   "date": "2026-11-10",
+   "deadline": "",
+   "id": "16138154/154/2026/0045",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Contracte basat en l'acord marc de l'ACM de serveis de redacció de projectes i direcció d'obra",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/78ca24fd-3d15-47ef-a17c-3133f0aa5455/300934618",
+   "winners": [
+    "ENGIVERT 41, SL"
+   ]
+  },
+  {
+   "amount": 37572.5,
+   "date": "2026-11-10",
+   "deadline": "2026-02-12T14:00",
+   "id": "16138154/153/2025/0033",
+   "lots": 2,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Subministrament mobiliari urbà, dos lots.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a3023fc0-85b3-4c98-a2a8-8b30c9bf15f3/300934347",
+   "winners": [
+    "TOT CARRER, SL"
+   ]
+  },
+  {
+   "amount": 299129.71,
+   "date": "2026-11-10",
+   "deadline": "2026-09-18T14:00",
+   "id": "11778989/1/2026",
+   "lots": 0,
+   "organ": "Vila Universitària, SL",
+   "phase": "Expedient en avaluació",
+   "title": "Contracte de serveis de jardineria dels espais de la Vila Universitària",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/84fbcfd3-dea7-4d15-8983-cf95bccde0c5/300934218",
+   "winners": []
+  },
+  {
+   "amount": 199887.01,
+   "date": "2026-11-10",
+   "deadline": "2026-11-26T13:00",
+   "id": "11061850/CONTR-49/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Obres de construcció d'un ascensor de comunicació de totes les plantes de la Torre i l'Espina B2 Parell de la Facultat de Dret de la Universitat Autònom de Barcelona",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d627ab10-94cb-42f5-af33-2650ef1a0bfc/300934087",
+   "winners": []
+  },
+  {
    "amount": 8038.11,
    "date": "2026-11-09",
    "deadline": "2026-11-06T23:59",
@@ -81,8 +150,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
    ]
   },
   {
@@ -254,19 +323,6 @@
    ]
   },
   {
-   "amount": 299129.71,
-   "date": "2026-11-04",
-   "deadline": "2026-09-18T14:00",
-   "id": "11778989/1/2026",
-   "lots": 0,
-   "organ": "Vila Universitària, SL",
-   "phase": "Expedient en avaluació",
-   "title": "Contracte de serveis de jardineria dels espais de la Vila Universitària",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/84fbcfd3-dea7-4d15-8983-cf95bccde0c5/300928851",
-   "winners": []
-  },
-  {
    "amount": 88000.0,
    "date": "2026-11-03",
    "deadline": "2026-10-22T12:00",
@@ -291,8 +347,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "ASSOCIACIO PLASTICFREEWARE",
-    "FUNBRAIN, SL"
+    "FUNBRAIN, SL",
+    "ASSOCIACIO PLASTICFREEWARE"
    ]
   },
   {
@@ -401,19 +457,6 @@
    "title": "Servei d'Informació i Atenció a les Dones i persones LGTBI",
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/3c58e112-5b30-4eba-af89-83f758810523/300924335",
-   "winners": []
-  },
-  {
-   "amount": 199887.01,
-   "date": "2026-10-30",
-   "deadline": "2026-11-26T13:00",
-   "id": "11061850/CONTR-49/2026",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Anunci de licitació",
-   "title": "Obres de construcció d'un ascensor de comunicació de totes les plantes de la Torre i l'Espina B2 Parell de la Facultat de Dret de la Universitat Autònom de Barcelona",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d627ab10-94cb-42f5-af33-2650ef1a0bfc/300924542",
    "winners": []
   },
   {
@@ -2571,19 +2614,6 @@
    "winners": [
     "HERA HOLLDING HABITAT ECOLOGIA Y RESTAURACION AMBIENTAL, SL"
    ]
-  },
-  {
-   "amount": 133133.3,
-   "date": "2026-06-16",
-   "deadline": "2026-02-12T14:00",
-   "id": "16138154/153/2025/0033",
-   "lots": 2,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Subministrament mobiliari urbà, dos lots.",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a3023fc0-85b3-4c98-a2a8-8b30c9bf15f3/300696584",
-   "winners": []
   },
   {
    "amount": 69470.0,
@@ -5421,21 +5451,6 @@
    ]
   },
   {
-   "amount": 16406.94,
-   "date": "2025-10-06",
-   "deadline": "",
-   "id": "29827823/M11-2025",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Adjudicació",
-   "title": "Contracte menor de un servei de genotipat, per a maduixa i per a gerd, de caràcter exclusiu per raons tècniques de fins a 950 mostres de Rubus ideaus i Fragaria x ananassa utilitzant la tecnologia OpenArrayTM",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/124f30dc-820f-4fcc-8677-eacc75bb545b/300579334",
-   "winners": [
-    "Universitat Autònoma de Barcelona"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5462,5 +5477,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-10T14:30:16+01:00"
+ "fetched": "2026-11-11T13:45:04+01:00"
 }

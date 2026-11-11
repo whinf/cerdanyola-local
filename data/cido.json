@@ -1,83 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-10",
-   "group": "A1",
-   "kind": "Funcionari",
-   "km": 0.0,
-   "org": "Ajuntament de Cerdanyola del Vallès",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Coordinador d'àmbit ciutat del coneixement",
-   "url": "https://cido.diba.cat/oposicions/22333740"
-  },
-  {
-   "end": "2026-11-10",
-   "group": "A1",
-   "kind": "Funcionari",
-   "km": 0.0,
-   "org": "Ajuntament de Cerdanyola del Vallès",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Coordinador d'àmbit de ciutat sostenible",
-   "url": "https://cido.diba.cat/oposicions/22333734"
-  },
-  {
-   "end": "2026-11-10",
-   "group": "A1",
-   "kind": "Funcionari",
-   "km": 0.0,
-   "org": "Ajuntament de Cerdanyola del Vallès",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Coordinador d'àmbit de recursos",
-   "url": "https://cido.diba.cat/oposicions/22333737"
-  },
-  {
-   "end": "2026-11-10",
-   "group": "A1",
-   "kind": "Funcionari",
-   "km": 0.0,
-   "org": "Ajuntament de Cerdanyola del Vallès",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Coordinador d'àmbit de societat",
-   "url": "https://cido.diba.cat/oposicions/22333731"
-  },
-  {
-   "end": "2026-11-10",
-   "group": "A",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic de gestió de suport al desenvolupament de serveis científics i a la transparència del coneixement",
-   "url": "https://cido.diba.cat/oposicions/22387444"
-  },
-  {
-   "end": "2026-11-10",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació a l'Institut de Ciència i Tecnologia Ambientals",
-   "url": "https://cido.diba.cat/oposicions/22432833"
-  },
-  {
-   "end": "2026-11-10",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació al Departament de Ciència Animal i dels Aliments",
-   "url": "https://cido.diba.cat/oposicions/22432843"
-  },
-  {
    "end": "2026-11-11",
    "group": "A2",
    "kind": "Interí o temporal",
@@ -285,6 +208,17 @@
    "pool": false,
    "title": "1 plaça de Tècnic superior al Departament d'Atenció a l'Esportista (Sant Cugat del Vallès)",
    "url": "https://cido.diba.cat/oposicions/22459372"
+  },
+  {
+   "end": "2026-11-16",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista de Suport a la Recerca amb destinació al Departament de Prehistòria",
+   "url": "https://cido.diba.cat/oposicions/22473820"
   },
   {
    "end": "2026-11-17",
@@ -692,6 +626,17 @@
    "pool": false,
    "title": "1 plaça de Tècnic Avançat 3D",
    "url": "https://cido.diba.cat/oposicions/22434268"
+  },
+  {
+   "end": "2026-12-01",
+   "group": "A1",
+   "kind": "Funcionari",
+   "km": 7.9,
+   "org": "Ajuntament de Palau-solità i Plegamans",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Responsable de Serveis Jurídics de Territori",
+   "url": "https://cido.diba.cat/oposicions/22024541"
   },
   {
    "end": "2026-12-01",
@@ -1277,5 +1222,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-10T22:19:01+01:00"
+ "fetched": "2026-11-11T13:45:04+01:00"
 }

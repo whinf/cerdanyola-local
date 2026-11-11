@@ -73,26 +73,6 @@
    },
    {
     "category": "Festes populars",
-    "end": "2026-11-10",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-10",
-    "time": "17:30",
-    "title": "Festa de Tardor de Sant Martí - 10 de novembre",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-10-de-novembre-2"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-10",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-10",
-    "time": "18:30",
-    "title": "Grup de conversa en anglès",
-    "url": "https://www.cerdanyola.cat/agenda/grup-de-conversa-en-angles-6"
-   },
-   {
-    "category": "Festes populars",
     "end": "2026-11-11",
     "place": "",
     "source": "ajuntament",
@@ -554,6 +534,16 @@
    },
    {
     "category": "",
+    "end": "2027-01-14",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-01-14",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat de gener",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-de-gener-4/"
+   },
+   {
+    "category": "",
     "end": "2027-01-30",
     "place": "Ateneu de Cerdanyola",
     "source": "afocer",
@@ -561,6 +551,16 @@
     "time": "17:30",
     "title": "Veredicte del concurs social color i monocrom de gener",
     "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-gener/"
+   },
+   {
+    "category": "",
+    "end": "2027-02-11",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-02-11",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat de febrer",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-de-febrer-3/"
    },
    {
     "category": "",
@@ -574,6 +574,16 @@
    },
    {
     "category": "",
+    "end": "2027-03-11",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-03-11",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat de març",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-de-marc-3/"
+   },
+   {
+    "category": "",
     "end": "2027-04-03",
     "place": "Ateneu de Cerdanyola",
     "source": "afocer",
@@ -581,6 +591,16 @@
     "time": "17:30",
     "title": "Veredicte del concurs social color i monocrom de març",
     "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-marc/"
+   },
+   {
+    "category": "",
+    "end": "2027-04-08",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-04-08",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat d’abril",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-dabril-3/"
    },
    {
     "category": "",
@@ -594,6 +614,16 @@
    },
    {
     "category": "",
+    "end": "2027-05-06",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-05-06",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat de maig",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-de-maig-3/"
+   },
+   {
+    "category": "",
     "end": "2027-05-29",
     "place": "Ateneu de Cerdanyola",
     "source": "afocer",
@@ -601,6 +631,16 @@
     "time": "17:30",
     "title": "Veredicte del concurs social color i monocrom de maig",
     "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-de-maig/"
+   },
+   {
+    "category": "",
+    "end": "2027-06-03",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-06-03",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat de juny",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-de-juny-3/"
    },
    {
     "category": "",
@@ -614,6 +654,16 @@
    },
    {
     "category": "",
+    "end": "2027-09-09",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-09-09",
+    "time": "08:00",
+    "title": "Veredicte concurs social digital i tema obligat de setembre",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-de-setembre-3/"
+   },
+   {
+    "category": "",
     "end": "2027-10-02",
     "place": "Ateneu de Cerdanyola",
     "source": "afocer",
@@ -624,6 +674,16 @@
    },
    {
     "category": "",
+    "end": "2027-10-07",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-10-07",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat d’octubre",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-doctubre-3/"
+   },
+   {
+    "category": "",
     "end": "2027-10-30",
     "place": "Ateneu de Cerdanyola",
     "source": "afocer",
@@ -631,6 +691,16 @@
     "time": "17:30",
     "title": "Veredicte del concurs social color i monocrom d’octubre",
     "url": "https://afocer.cat/event/veredicte-del-concurs-social-color-i-monocrom-doctubre/"
+   },
+   {
+    "category": "",
+    "end": "2027-11-04",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2027-11-04",
+    "time": "19:00",
+    "title": "Veredicte concurs social digital i tema obligat de novembre",
+    "url": "https://afocer.cat/event/veredicte-concurs-social-digital-i-tema-obligat-de-novembre-3/"
    },
    {
     "category": "",
@@ -647,14 +717,6 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -667,8 +729,16 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-10T22:19:01+01:00"
+ "fetched": "2026-11-11T13:45:04+01:00"
 }
