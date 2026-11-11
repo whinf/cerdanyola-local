@@ -2971,6 +2971,24 @@
     "who": [
      "business"
     ]
+   },
+   "941551": {
+    "budget": 1750000,
+    "checked": "2026-11-11",
+    "end": "",
+    "id": "941551",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
+    "purpose": "Otras actuaciones de carácter económico",
+    "received": "2026-11-11",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "01 Mesos",
+    "title": "Ayudas GFS 2026 Intervención 6881.4 Actuaciones silvícolas ambientales y viales forestales PEPAC.",
+    "title_ca": "Ajuts GFS 2026 Intervenció 6881.4 Actuacions silvícoles ambientals i vials forestals PEPAC.",
+    "who": [
+     "business"
+    ]
    }
   },
   "closed": [
@@ -4938,8 +4956,19 @@
    "940645",
    "940650",
    "940653",
-   "940897"
+   "940897",
+   "941319",
+   "941322",
+   "941326",
+   "941354",
+   "941503",
+   "941505",
+   "941507",
+   "941508",
+   "941561",
+   "941562",
+   "941563"
   ]
  },
- "fetched": "2026-11-11T13:45:04+01:00"
+ "fetched": "2026-11-11T22:59:29+01:00"
 }

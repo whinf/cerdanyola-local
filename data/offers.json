@@ -1338,6 +1338,32 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328705"
   },
   {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada completa",
+   "salary": [
+    1928,
+    1928
+   ],
+   "title": "Comercial_32082",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632082"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-11",
+   "hours": "Jornada completa",
+   "salary": [
+    1857,
+    1857
+   ],
+   "title": "Mantenidor/a d'edificis_32044",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632044"
+  },
+  {
    "company": "Gi Group Spain",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-10",
@@ -1921,5 +1947,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
   }
  ],
- "fetched": "2026-11-11T13:45:04+01:00"
+ "fetched": "2026-11-11T22:59:29+01:00"
 }

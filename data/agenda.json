@@ -62,16 +62,6 @@
     "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-2026"
    },
    {
-    "category": "",
-    "end": "2026-11-11",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-06",
-    "time": "18:00",
-    "title": "Fira d'atraccions al Parc Xarau",
-    "url": "https://www.cerdanyola.cat/agenda/fira-datraccions-al-parc-xarau-0"
-   },
-   {
     "category": "Festes populars",
     "end": "2026-11-11",
     "place": "",
@@ -278,6 +268,16 @@
     "source": "uab",
     "start": "2026-11-18",
     "time": "11:00",
+    "title": "Projecció del film \"Gary Cooper que estàs en los cielos\" de Pilar MIró",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gary-cooper-que-estas-en-los-cielos-de-pilar-miro-1345828727816.html?detid=1346005326605"
+   },
+   {
+    "category": "",
+    "end": "2026-11-18",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-11-18",
+    "time": "11:00",
     "title": "Projecció del film \"Gary Cooper ques estás en los cielos\", de Pilar Miró",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gary-cooper-ques-estas-en-los-cielos-de-pilar-miro-1345828727816.html?detid=1346005235501"
    },
@@ -330,6 +330,16 @@
     "time": "19:00",
     "title": "Cafè amb lletres amb Núria Perpinyà",
     "url": "https://www.cerdanyola.cat/agenda/cafe-amb-lletres-amb-nuria-perpinya"
+   },
+   {
+    "category": "",
+    "end": "2026-11-21",
+    "place": "El divendres 20 de novembre, de 16 a 20 h, a la Facultat d'Economia, i el dissabte 21 de novembre, a l'Institut d'Estudis Catalans",
+    "source": "uab",
+    "start": "2026-11-20",
+    "time": "",
+    "title": "Idees per revitalitzar l'ús social del català des de l'escola",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/idees-per-revitalitzar-l-us-social-del-catala-des-de-l-escola-1345828727816.html?detid=1346005304258"
    },
    {
     "category": "Altres activitats",
@@ -740,5 +750,5 @@
    }
   ]
  },
- "fetched": "2026-11-11T13:45:04+01:00"
+ "fetched": "2026-11-11T22:59:29+01:00"
 }
