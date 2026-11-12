@@ -2,14 +2,14 @@
  "data": {
   "stations": [
    {
-    "address": "Calle San Ramon, 259",
+    "address": "Avenida Can Fatjó dels Aurons, Sn",
     "hours": "L-D: 24H",
-    "lat": "41.488167",
-    "lon": "2.129222",
-    "name": "ESCLATOIL",
+    "lat": "41.489167",
+    "lon": "2.084000",
+    "name": "PETROPRIX",
     "prices": {
-     "diesel": 1.699,
-     "g95": 1.469
+     "diesel": 1.719,
+     "g95": 1.449
     },
     "town": "Cerdanyola del Vallès"
    },
@@ -22,6 +22,42 @@
     "prices": {
      "diesel": 1.919,
      "g95": 1.759
+    },
+    "town": "Cerdanyola del Vallès"
+   },
+   {
+    "address": "Calle San Ramon, 259",
+    "hours": "L-D: 24H",
+    "lat": "41.488167",
+    "lon": "2.129222",
+    "name": "ESCLATOIL",
+    "prices": {
+     "diesel": 1.699,
+     "g95": 1.469
+    },
+    "town": "Cerdanyola del Vallès"
+   },
+   {
+    "address": "Ronda Cerdanyola, S/N",
+    "hours": "L-D: 06:00-22:00",
+    "lat": "41.489194",
+    "lon": "2.151500",
+    "name": "MOEVE",
+    "prices": {
+     "diesel": 1.929,
+     "g95": 1.73
+    },
+    "town": "Cerdanyola del Vallès"
+   },
+   {
+    "address": "Calle Santa Rosa, 49",
+    "hours": "L-D: 06:00-22:00",
+    "lat": "41.485306",
+    "lon": "2.131139",
+    "name": "MOEVE",
+    "prices": {
+     "diesel": 1.939,
+     "g95": 1.72
     },
     "town": "Cerdanyola del Vallès"
    },
@@ -74,42 +110,6 @@
     "town": "Cerdanyola del Vallès"
    },
    {
-    "address": "Ronda Cerdanyola, S/N",
-    "hours": "L-D: 06:00-22:00",
-    "lat": "41.489194",
-    "lon": "2.151500",
-    "name": "MOEVE",
-    "prices": {
-     "diesel": 1.939,
-     "g95": 1.72
-    },
-    "town": "Cerdanyola del Vallès"
-   },
-   {
-    "address": "Calle Santa Rosa, 49",
-    "hours": "L-D: 06:00-22:00",
-    "lat": "41.485306",
-    "lon": "2.131139",
-    "name": "MOEVE",
-    "prices": {
-     "diesel": 1.919,
-     "g95": 1.72
-    },
-    "town": "Cerdanyola del Vallès"
-   },
-   {
-    "address": "Avenida Can Fatjó dels Aurons, Sn",
-    "hours": "L-D: 24H",
-    "lat": "41.489167",
-    "lon": "2.084000",
-    "name": "PETROPRIX",
-    "prices": {
-     "diesel": 1.719,
-     "g95": 1.449
-    },
-    "town": "Cerdanyola del Vallès"
-   },
-   {
     "address": "Calle Santa Ana, 115",
     "hours": "L-D: 24H",
     "lat": "41.500472",
@@ -158,6 +158,18 @@
     "town": "Ripollet"
    },
    {
+    "address": "Calle Pablo Picasso, 11",
+    "hours": "L-D: 24H",
+    "lat": "41.498722",
+    "lon": "2.141750",
+    "name": "PETROPRIX",
+    "prices": {
+     "diesel": 1.699,
+     "g95": 1.449
+    },
+    "town": "Ripollet"
+   },
+   {
     "address": "Carretera N-150 Barcelona-Sabadell Km. 286",
     "hours": "L-D: 06:00-22:00",
     "lat": "41.501389",
@@ -194,18 +206,6 @@
     "town": "Ripollet"
    },
    {
-    "address": "Calle Pablo Picasso, 11",
-    "hours": "L-D: 24H",
-    "lat": "41.498722",
-    "lon": "2.141750",
-    "name": "PETROPRIX",
-    "prices": {
-     "diesel": 1.699,
-     "g95": 1.449
-    },
-    "town": "Ripollet"
-   },
-   {
     "address": "Calle Industria, S/N",
     "hours": "L-D: 06:00-23:00",
     "lat": "41.494028",
@@ -218,13 +218,14 @@
     "town": "Ripollet"
    },
    {
-    "address": "Calle Torrent de Can Payàs, 17",
-    "hours": "L-D: 07:00-21:00",
-    "lat": "41.498028",
-    "lon": "2.189944",
-    "name": "COUSO",
+    "address": "Avenida la Ferreria, S/N",
+    "hours": "L-D: 24H",
+    "lat": "41.486028",
+    "lon": "2.166639",
+    "name": "GM OIL",
     "prices": {
-     "diesel": 1.713
+     "diesel": 1.689,
+     "g95": 1.379
     },
     "town": "Montcada i Reixac"
    },
@@ -253,42 +254,6 @@
     "town": "Montcada i Reixac"
    },
    {
-    "address": "Calle Can Milans, 1",
-    "hours": "L-D: 24H",
-    "lat": "41.507556",
-    "lon": "2.187806",
-    "name": "PETROLOWCOST",
-    "prices": {
-     "diesel": 1.729,
-     "g95": 1.509
-    },
-    "town": "Montcada i Reixac"
-   },
-   {
-    "address": "Autovia a-17 Km. 5,2",
-    "hours": "L-D: 07:00-23:00",
-    "lat": "41.496611",
-    "lon": "2.190639",
-    "name": "REPSOL",
-    "prices": {
-     "diesel": 1.969,
-     "g95": 1.759
-    },
-    "town": "Montcada i Reixac"
-   },
-   {
-    "address": "Avenida la Ferreria, S/N",
-    "hours": "L-D: 24H",
-    "lat": "41.486028",
-    "lon": "2.166639",
-    "name": "GM OIL",
-    "prices": {
-     "diesel": 1.689,
-     "g95": 1.379
-    },
-    "town": "Montcada i Reixac"
-   },
-   {
     "address": "Carretera Sant Adria  Roca Km. 7",
     "hours": "L-D: 05:00-23:00",
     "lat": "41.480417",
@@ -297,6 +262,18 @@
     "prices": {
      "diesel": 1.969,
      "g95": 1.759
+    },
+    "town": "Montcada i Reixac"
+   },
+   {
+    "address": "Poligono Industrial Hermes, 4",
+    "hours": "L-V: 06:00-21:00; S: 07:00-15:00",
+    "lat": "41.482083",
+    "lon": "2.162944",
+    "name": "CEPSA",
+    "prices": {
+     "diesel": 1.929,
+     "g95": 1.72
     },
     "town": "Montcada i Reixac"
    },
@@ -313,14 +290,49 @@
     "town": "Montcada i Reixac"
    },
    {
-    "address": "Poligono Industrial Hermes, 4",
-    "hours": "L-V: 06:00-21:00; S: 07:00-15:00",
-    "lat": "41.482083",
-    "lon": "2.162944",
-    "name": "CEPSA",
+    "address": "Calle Torrent de Can Payàs, 17",
+    "hours": "L-D: 07:00-21:00",
+    "lat": "41.498028",
+    "lon": "2.189944",
+    "name": "COUSO",
     "prices": {
-     "diesel": 1.929,
-     "g95": 1.72
+     "diesel": 1.713
+    },
+    "town": "Montcada i Reixac"
+   },
+   {
+    "address": "Autovia a-17 Km. 5,2",
+    "hours": "L-D: 07:00-23:00",
+    "lat": "41.496611",
+    "lon": "2.190639",
+    "name": "REPSOL",
+    "prices": {
+     "diesel": 1.969,
+     "g95": 1.759
+    },
+    "town": "Montcada i Reixac"
+   },
+   {
+    "address": "Calle Can Milans, 1",
+    "hours": "L-D: 24H",
+    "lat": "41.507556",
+    "lon": "2.187806",
+    "name": "PETROLOWCOST",
+    "prices": {
+     "diesel": 1.729,
+     "g95": 1.509
+    },
+    "town": "Montcada i Reixac"
+   },
+   {
+    "address": "Autopista C- 33 Km. 82,5",
+    "hours": "L-D: 24H",
+    "lat": "41.495222",
+    "lon": "2.191417",
+    "name": "REPSOL",
+    "prices": {
+     "diesel": 1.969,
+     "g95": 1.759
     },
     "town": "Montcada i Reixac"
    },
@@ -345,18 +357,6 @@
     "prices": {
      "diesel": 1.899,
      "g95": 1.719
-    },
-    "town": "Montcada i Reixac"
-   },
-   {
-    "address": "Autopista C- 33 Km. 82,5",
-    "hours": "L-D: 24H",
-    "lat": "41.495222",
-    "lon": "2.191417",
-    "name": "REPSOL",
-    "prices": {
-     "diesel": 1.969,
-     "g95": 1.759
     },
     "town": "Montcada i Reixac"
    },
@@ -397,6 +397,30 @@
     "town": "Barberà del Vallès"
    },
    {
+    "address": "Carrer Arquimedes, 19",
+    "hours": "L-D: 24H",
+    "lat": "41.511750",
+    "lon": "2.134389",
+    "name": "PETROLOWCOST",
+    "prices": {
+     "diesel": 1.739,
+     "g95": 1.529
+    },
+    "town": "Barberà del Vallès"
+   },
+   {
+    "address": "Cl Ronda Santa Maria ,202-210 (Esq.",
+    "hours": "L-D: 06:00-22:00",
+    "lat": "41.521139",
+    "lon": "2.129750",
+    "name": "REPSOL",
+    "prices": {
+     "diesel": 1.939,
+     "g95": 1.739
+    },
+    "town": "Barberà del Vallès"
+   },
+   {
     "address": "Ronda Industria, 38",
     "hours": "L-D: 24H",
     "lat": "41.515806",
@@ -429,30 +453,6 @@
     "prices": {
      "diesel": 1.929,
      "g95": 1.729
-    },
-    "town": "Barberà del Vallès"
-   },
-   {
-    "address": "Carrer Arquimedes, 19",
-    "hours": "L-D: 24H",
-    "lat": "41.511750",
-    "lon": "2.134389",
-    "name": "PETROLOWCOST",
-    "prices": {
-     "diesel": 1.739,
-     "g95": 1.529
-    },
-    "town": "Barberà del Vallès"
-   },
-   {
-    "address": "Cl Ronda Santa Maria ,202-210 (Esq.",
-    "hours": "L-D: 06:00-22:00",
-    "lat": "41.521139",
-    "lon": "2.129750",
-    "name": "REPSOL",
-    "prices": {
-     "diesel": 1.939,
-     "g95": 1.739
     },
     "town": "Barberà del Vallès"
    },
@@ -529,18 +529,6 @@
     "town": "Sant Cugat del Vallès"
    },
    {
-    "address": "Autovia E-9 Km. 6,5",
-    "hours": "L-D: 24H",
-    "lat": "41.433500",
-    "lon": "2.078250",
-    "name": "REPSOL",
-    "prices": {
-     "diesel": 1.949,
-     "g95": 1.765
-    },
-    "town": "Sant Cugat del Vallès"
-   },
-   {
     "address": "Cr C-1413, 7,7 (C-1413 km 7,75)",
     "hours": "L-D: 06:00-22:00",
     "lat": "41.464389",
@@ -563,9 +551,21 @@
      "g95": 1.759
     },
     "town": "Sant Cugat del Vallès"
+   },
+   {
+    "address": "Autovia E-9 Km. 6,5",
+    "hours": "L-D: 24H",
+    "lat": "41.433500",
+    "lon": "2.078250",
+    "name": "REPSOL",
+    "prices": {
+     "diesel": 1.949,
+     "g95": 1.765
+    },
+    "town": "Sant Cugat del Vallès"
    }
   ],
-  "updated": "12/11/2026 14:51:43"
+  "updated": "12/11/2026 22:53:55"
  },
- "fetched": "2026-11-12T14:48:42+01:00"
+ "fetched": "2026-11-12T22:51:02+01:00"
 }

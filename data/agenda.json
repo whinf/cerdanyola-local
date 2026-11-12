@@ -354,7 +354,7 @@
    {
     "category": "",
     "end": "2026-11-21",
-    "place": "Facultat d'Economia UAB (Sala d'actes). Institut d'Estudis Catalans (Sala Prat de la Riba).",
+    "place": "Sala d'actes de la Facultat d'Economia i Empresa",
     "source": "uab",
     "start": "2026-11-20",
     "time": "",
@@ -564,6 +564,16 @@
    },
    {
     "category": "",
+    "end": "2026-12-19",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-12-19",
+    "time": "10:30",
+    "title": "Veredicte 42è concurs Pere Viltró",
+    "url": "https://afocer.cat/event/veredicte-42e-concurs-pere-viltro/"
+   },
+   {
+    "category": "",
     "end": "2027-01-14",
     "place": "Ateneu de Cerdanyola",
     "source": "afocer",
@@ -747,6 +757,14 @@
    {
     "category": "Exposicions",
     "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -759,16 +777,8 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-12T14:48:42+01:00"
+ "fetched": "2026-11-12T22:51:02+01:00"
 }

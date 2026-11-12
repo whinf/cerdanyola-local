@@ -2971,6 +2971,60 @@
     "who": [
      "business"
     ]
+   },
+   "941599": {
+    "budget": 400000,
+    "checked": "2026-11-12",
+    "end": "2026-12-17",
+    "id": "941599",
+    "level": "AUTONOMICA",
+    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
+    "purpose": "Cultura",
+    "received": "2026-11-12",
+    "region": "CATALUÑA",
+    "start": "2026-11-19",
+    "term": "",
+    "title": "Convocatoria de subvenciones para la adquisición de fondos bibliográficos o documentales destinados a bibliotecas del Sistema de Lectura Pública de Cataluña en ferias o mercados especializados",
+    "title_ca": "Convocatòria de subvencions per a l'adquisició de fons bibliogràfics o documentals destinats a biblioteques del Sistema de Lectura Pública de Catalunya en fires o mercats especialitzats",
+    "who": [
+     "entities"
+    ]
+   },
+   "941791": {
+    "budget": 30000,
+    "checked": "2026-11-12",
+    "end": "",
+    "id": "941791",
+    "level": "ESTADO",
+    "organ": "INSTITUTO NACIONAL DE ESTADÍSTICA",
+    "purpose": "Investigación, desarrollo e innovación",
+    "received": "2026-11-12",
+    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
+    "start": "",
+    "term": "El plazo de presentación de las candidaturas será de tres meses.",
+    "title": "Premio Nacional de Estadística 2026",
+    "title_ca": "",
+    "who": [
+     "people"
+    ]
+   },
+   "941797": {
+    "budget": 150000,
+    "checked": "2026-11-12",
+    "end": "2026-11-26",
+    "id": "941797",
+    "level": "ESTADO",
+    "organ": "SECRETARÍA DE ESTADO DE TELECOMUNICACIONES E INFRAESTRUCTURAS DIGITALES",
+    "purpose": "Investigación, desarrollo e innovación",
+    "received": "2026-11-12",
+    "region": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
+    "start": "2026-11-13",
+    "term": "",
+    "title": "Real Decreto 987/2026, de 11 de noviembre, por el que se regula la concesión directa de una subvención a la Asociación Española de Normalización (UNE) destinada a impulsar la actividad de normalización y estandarización, secretaría y acción internacional",
+    "title_ca": "",
+    "who": [
+     "people"
+    ]
    }
   },
   "closed": [
@@ -4952,5 +5006,5 @@
    "941563"
   ]
  },
- "fetched": "2026-11-12T14:48:42+01:00"
+ "fetched": "2026-11-12T22:51:02+01:00"
 }
