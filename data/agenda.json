@@ -62,16 +62,6 @@
     "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-2026"
    },
    {
-    "category": "Festes populars",
-    "end": "2026-11-11",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-11",
-    "time": "11:00",
-    "title": "Festa de Tardor de Sant Martí - 11 de novembre",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-11-de-novembre-2"
-   },
-   {
     "category": "",
     "end": "2026-11-12",
     "place": "Ateneu de Cerdanyola",
@@ -192,6 +182,16 @@
     "url": "https://afocer.cat/event/exposicio-violencia-0-a-can-cuias/"
    },
    {
+    "category": "Festes populars",
+    "end": "2026-11-15",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-15",
+    "time": "09:00",
+    "title": "Festa de Tardor de Sant Martí - 15 de novembre",
+    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-15-de-novembre"
+   },
+   {
     "category": "Infància",
     "end": "2026-11-15",
     "place": "",
@@ -302,6 +302,16 @@
     "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-taller-intergeneracional-fils-de-futur-la-familia-del-canvi"
    },
    {
+    "category": "Altres activitats",
+    "end": "2026-11-18",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-18",
+    "time": "19:00",
+    "title": "Inauguració Empíric. Festival de Literatura i Ciència de Cerdanyola",
+    "url": "https://www.cerdanyola.cat/agenda/inauguracio-empiric-festival-de-literatura-i-ciencia-de-cerdanyola"
+   },
+   {
     "category": "Exposicions",
     "end": "2026-11-18",
     "place": "",
@@ -318,7 +328,7 @@
     "source": "uab",
     "start": "2026-11-19",
     "time": "12:00",
-    "title": "Projecció del documental \"Espai Minvant\" i Cinefòrum",
+    "title": "Projecció del documental 'Espai Minvant' i cinefòrum",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-documental-espai-minvant-i-cineforum-1345828727816.html?detid=1346005236178"
    },
    {
@@ -332,9 +342,19 @@
     "url": "https://www.cerdanyola.cat/agenda/cafe-amb-lletres-amb-nuria-perpinya"
    },
    {
+    "category": "Cinema",
+    "end": "2026-11-19",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-19",
+    "time": "20:30",
+    "title": "Cinema: Omaha",
+    "url": "https://www.cerdanyola.cat/agenda/cinema-omaha"
+   },
+   {
     "category": "",
     "end": "2026-11-21",
-    "place": "El divendres 20 de novembre, de 16 a 20 h, a la Facultat d'Economia, i el dissabte 21 de novembre, a l'Institut d'Estudis Catalans",
+    "place": "Facultat d'Economia UAB (Sala d'actes). Institut d'Estudis Catalans (Sala Prat de la Riba).",
     "source": "uab",
     "start": "2026-11-20",
     "time": "",
@@ -750,5 +770,5 @@
    }
   ]
  },
- "fetched": "2026-11-11T22:59:29+01:00"
+ "fetched": "2026-11-12T14:48:42+01:00"
 }

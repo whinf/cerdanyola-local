@@ -6,7 +6,7 @@
     "R8"
    ],
    "text": {
-    "es": "Degut als problemes de mobilitat a les carreteres per la vaga general, el personal de conducció no pot arribar a les estacions i no s&#146;estan complint els serveis mínims programats. Recomanem buscar mitjans alternatius de transport: https://mou-te.gencat.cat/itinerary."
+    "es": "Amb motiu de les pluges i les afectacions operatives derivades de la vaga d'ahir, es poden produir retards al servei de Rodalies de Catalunya. S'ha establert un servei de reforç per carretera a diferents punts de la xarxa. Recomanem planificar els desplaçaments i consultar l'estat del servei a rodalies.gencat.cat."
    }
   },
   {
@@ -25,16 +25,7 @@
    "text": {
     "es": "Per obres d'Adif a l'entorn de Castelldefels, del 12 de novembre al 14 de desembre es modifica temporalment el servei de la línia R2. Els trens Granollers Centre - Castelldefels iniciaran i finalitzaran el seu recorregut a Gavà."
    }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "A causa de manifestacions a l'entorn de Fabra i Puig, s'estan produint demores en el servei alternatiu per carretera de la línia."
-   }
   }
  ],
- "fetched": "2026-11-11T22:59:29+01:00"
+ "fetched": "2026-11-12T14:48:42+01:00"
 }

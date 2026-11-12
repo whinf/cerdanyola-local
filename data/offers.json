@@ -1,6 +1,32 @@
 {
  "data": [
   {
+   "company": "Tenstalent",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-12",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    3333
+   ],
+   "title": "Comercial externo/a – suministro industrial y ferretería | de lu a vi de 8am a 6pm (horario adaptable para que puedas conciliar)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328776"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral temporal (3 mesos)",
+   "date": "2026-11-12",
+   "hours": "Jornada parcial (4 hores - jornada diaria)",
+   "salary": [
+    1000,
+    1000
+   ],
+   "title": "Administratiu/va comptable (ref: 32086)",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632086"
+  },
+  {
    "company": "CALAF GRUP",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-11",
@@ -499,6 +525,32 @@
    "title": "Conductores/as de autocar - vallés occidental",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324763"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-12",
+   "hours": "Jornada completa",
+   "salary": [
+    1650,
+    1650
+   ],
+   "title": "Conserge",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632056"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-12",
+   "hours": "Jornada completa",
+   "salary": [
+    1229,
+    1229
+   ],
+   "title": "Operari/ària de repàs i rebobinatge d'etiquetes",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632143"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -1041,6 +1093,19 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325056"
   },
   {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-11-12",
+   "hours": "Jornada completa",
+   "salary": [
+    1828,
+    1828
+   ],
+   "title": "26.143 mecànic/a",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328762"
+  },
+  {
    "company": "SENESANT 2000, S.L.",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-11",
@@ -1297,6 +1362,19 @@
    "title": "Operari/a polivalent 26.071",
    "town": "BARBERÀ DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325117"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-12",
+   "hours": "Jornada completa",
+   "salary": [
+    1857,
+    1857
+   ],
+   "title": "Tramitador/a sinistres internacionals_32033",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632033"
   },
   {
    "company": "AEDEA Contact center",
@@ -1803,32 +1881,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326682"
   },
   {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-10-13",
-   "hours": "Jornada completa",
-   "salary": [
-    1364,
-    1364
-   ],
-   "title": "Administratiu/iva_30013",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630013"
-  },
-  {
-   "company": "OFICINA DE TREBALL DEL SOC",
-   "contract": "Contracte laboral temporal (8 mesos)",
-   "date": "2026-10-13",
-   "hours": "Jornada parcial (25 hores - jornada setmanal)",
-   "salary": [
-    1061,
-    1061
-   ],
-   "title": "Fisioterapeuta_30106",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630106"
-  },
-  {
    "company": "OFICINA DE TREBALL DEL SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-10-13",
@@ -1947,5 +1999,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
   }
  ],
- "fetched": "2026-11-11T22:59:29+01:00"
+ "fetched": "2026-11-12T14:48:42+01:00"
 }

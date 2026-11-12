@@ -1,6 +1,62 @@
 {
  "data": [
   {
+   "amount": 19950.0,
+   "date": "2026-11-11",
+   "deadline": "2026-11-05T14:00",
+   "id": "5443212/IEEC/246/2026",
+   "lots": 0,
+   "organ": "Institut d'Estudis Espacials de Catalunya",
+   "phase": "Adjudicació",
+   "title": "Contracte menor de subministrament d’un convertidor de radiofreqüència de doble canal, coherent en fase, per a la banda de 6 a 26 GHz, destinat a l’acondicionament de senyals de ràdio-freqüència de satèl·lits LEO a la banda Ku/Ka mitjançant",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bceec60a-fcdb-41ac-ad35-eb2113b80599/300935440",
+   "winners": [
+    "MeasureIT Systems SL"
+   ]
+  },
+  {
+   "amount": 50580.0,
+   "date": "2026-11-11",
+   "deadline": "2026-06-29T12:00",
+   "id": "208043/IFAE-2026/16",
+   "lots": 0,
+   "organ": "Consorci Institut de Física d'Altes Energies",
+   "phase": "Formalització",
+   "title": "Servicio de ingeniería mecánica especializada en criogenia para integración del subsistema coldbox / cryoshield en el et-pathfinder por parte del institut de física d’altes energies (ifae).",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/585b47ee-e136-4726-8a6d-304e42fa1cfd/300935803",
+   "winners": [
+    "IDRESA Services, S.L."
+   ]
+  },
+  {
+   "amount": 34000.0,
+   "date": "2026-11-11",
+   "deadline": "2026-11-27T13:00",
+   "id": "11061850/CONTR-57/2026.",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Servei d’assegurances per a la cobertura de la responsabilitat de les autoritats i el personal al servei de la Universitat Autònoma de Barcelona",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f475b2e2-f3ee-4d85-ae53-8b715091ba3e/300935813",
+   "winners": []
+  },
+  {
+   "amount": 289587.57,
+   "date": "2026-11-11",
+   "deadline": "2026-11-26T13:00",
+   "id": "11061850/CONTR-38/2026",
+   "lots": 2,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Obres de reforma interior del mòdul GL-600: transformació de l’antic espai del gimnàs escolar en aula polivalent. Facultat de Ciències de l’Educació",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/20029923-f0c8-446f-aa7e-51ce9a020fda/300926694",
+   "winners": []
+  },
+  {
    "amount": 12437.0,
    "date": "2026-11-10",
    "deadline": "2026-11-09T23:59",
@@ -150,8 +206,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
    ]
   },
   {
@@ -178,19 +234,6 @@
    "title": "Obres del Projecte d'Urbanització E1: Passeig dels Gorgs",
    "type": "Obres",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e76e93c-aec0-4465-bfcf-2000c6f9f5b6/300930091",
-   "winners": []
-  },
-  {
-   "amount": 289587.57,
-   "date": "2026-11-05",
-   "deadline": "2026-11-24T13:00",
-   "id": "11061850/CONTR-38/2026",
-   "lots": 2,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Anunci de licitació",
-   "title": "Obres de reforma interior del mòdul GL-600: transformació de l’antic espai del gimnàs escolar en aula polivalent. Facultat de Ciències de l’Educació",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/20029923-f0c8-446f-aa7e-51ce9a020fda/300926694",
    "winners": []
   },
   {
@@ -347,8 +390,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "FUNBRAIN, SL",
-    "ASSOCIACIO PLASTICFREEWARE"
+    "ASSOCIACIO PLASTICFREEWARE",
+    "FUNBRAIN, SL"
    ]
   },
   {
@@ -2007,21 +2050,6 @@
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/a022c1cf-89cd-43a4-a674-a9708c27ad70/300842041",
    "winners": [
     "LOGICALIS SPAIN, S.L.U."
-   ]
-  },
-  {
-   "amount": 50580.0,
-   "date": "2026-07-22",
-   "deadline": "2026-06-29T12:00",
-   "id": "208043/IFAE-2026/16",
-   "lots": 0,
-   "organ": "Consorci Institut de Física d'Altes Energies",
-   "phase": "Adjudicació",
-   "title": "Servicio de ingeniería mecánica especializada en criogenia para integración del subsistema coldbox / cryoshield en el et-pathfinder por parte del institut de física d’altes energies (ifae).",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/585b47ee-e136-4726-8a6d-304e42fa1cfd/300841265",
-   "winners": [
-    "IDRESA Services, S.L."
    ]
   },
   {
@@ -5477,5 +5505,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-11T22:59:29+01:00"
+ "fetched": "2026-11-12T14:48:42+01:00"
 }

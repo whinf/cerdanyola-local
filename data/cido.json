@@ -1,28 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-11",
-   "group": "A2",
-   "kind": "Interí o temporal",
-   "km": 9.8,
-   "org": "Consell Comarcal del Vallès Occidental",
-   "places": 0,
-   "pool": true,
-   "title": "Borsa de treball de places de Tècnic de l'Observatori Comarcal",
-   "url": "https://cido.diba.cat/oposicions/22368154"
-  },
-  {
-   "end": "2026-11-11",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.0,
-   "org": "Ministerio de Ciencia, Innovación y Universidades - Consejo Superior de Investigaciones Científicas (CSIC) - Institut de Ciència de Materials de Barcelona (ICMAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Predoctoral positiona in Unravelling the Nucleation and Growth of High-Temperature Superconductors through Correlated, Time-Resolved In-Situ X-ray Diffraction and Absorption Spectroscopy at ALBA synchrotron",
-   "url": "https://cido.diba.cat/oposicions/22397909"
-  },
-  {
    "end": "2026-11-12",
    "group": "A",
    "kind": "Laboral temporal",
@@ -175,6 +153,17 @@
    "pool": false,
    "title": "1 plaça d'Operador de sistemes",
    "url": "https://cido.diba.cat/oposicions/22126241"
+  },
+  {
+   "end": "2026-11-16",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 5.6,
+   "org": "Fundació Institut Català de Paleontologia Miquel Crusafont (ICP Miquel Crusafont)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Mànager de Laboratori (Projecte Start Up Funds)",
+   "url": "https://cido.diba.cat/oposicions/22484651"
   },
   {
    "end": "2026-11-16",
@@ -540,6 +529,28 @@
    "url": "https://cido.diba.cat/oposicions/22144148"
   },
   {
+   "end": "2026-11-26",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Research Assistant - NanoElectrocatalysis and Sustainable Chemistry",
+   "url": "https://cido.diba.cat/oposicions/22485071"
+  },
+  {
+   "end": "2026-11-26",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Research support technician - Nanoestructures",
+   "url": "https://cido.diba.cat/oposicions/22485049"
+  },
+  {
    "end": "2026-11-27",
    "group": "A2",
    "kind": "Laboral temporal",
@@ -560,6 +571,17 @@
    "pool": false,
    "title": "5 places d'Infermer d'Atenció Intermèdia Extrahospitalària",
    "url": "https://cido.diba.cat/oposicions/22405337"
+  },
+  {
+   "end": "2026-11-29",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Neuropsicòleg",
+   "url": "https://cido.diba.cat/oposicions/22484533"
   },
   {
    "end": "2026-11-29",
@@ -648,6 +670,28 @@
    "pool": false,
    "title": "2 places de Postdoctoral Positions in Simulation-Based Inference for Cosmology",
    "url": "https://cido.diba.cat/oposicions/22358180"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "A2",
+   "kind": "Interí o temporal",
+   "km": 9.1,
+   "org": "Ajuntament de Rubí",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places de Tècnic mitjà de serveis econòmics",
+   "url": "https://cido.diba.cat/oposicions/22483874"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "A2",
+   "kind": "Interí o temporal",
+   "km": 6.0,
+   "org": "Ajuntament de Santa Perpètua de Mogoda",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places d'Enginyer tècnic",
+   "url": "https://cido.diba.cat/oposicions/22484011"
   },
   {
    "end": "2026-12-03",
@@ -1222,5 +1266,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-11T22:59:29+01:00"
+ "fetched": "2026-11-12T14:48:42+01:00"
 }

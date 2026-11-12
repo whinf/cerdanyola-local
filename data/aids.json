@@ -1618,24 +1618,6 @@
      "business"
     ]
    },
-   "933968": {
-    "budget": 1000000,
-    "checked": "2026-11-06",
-    "end": "",
-    "id": "933968",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
-    "purpose": "Agricultura, Pesca y Alimentación",
-    "received": "2026-10-07",
-    "region": "CATALUÑA",
-    "start": "2026-10-14",
-    "term": "20 Dies Hàbils",
-    "title": "Ayudas de minimis a los otros costes soportados por las medidas oficiales ante la dermatosis nodular contagiosa.",
-    "title_ca": "Ajuts de minimis als altres costos suportats per les mesures oficials davant la dermatosi nodular contagiosa",
-    "who": [
-     "business"
-    ]
-   },
    "934471": {
     "budget": 3500000,
     "checked": "2026-11-06",
@@ -2992,7 +2974,6 @@
    }
   },
   "closed": [
-   "868065",
    "868140",
    "868144",
    "868227",
@@ -4843,6 +4824,7 @@
    "933847",
    "933951",
    "933961",
+   "933968",
    "933988",
    "934125",
    "934128",
@@ -4970,5 +4952,5 @@
    "941563"
   ]
  },
- "fetched": "2026-11-11T22:59:29+01:00"
+ "fetched": "2026-11-12T14:48:42+01:00"
 }
