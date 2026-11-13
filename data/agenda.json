@@ -82,7 +82,7 @@
     "url": "https://www.cerdanyola.cat/agenda/vine-al-museu-de-ca-noliver-sant-marti-1"
    },
    {
-    "category": "",
+    "category": "Conferències",
     "end": "2026-11-13",
     "place": "",
     "source": "ajuntament",
@@ -102,7 +102,7 @@
     "url": "https://www.cerdanyola.cat/agenda/taula-amb-el-miquel"
    },
    {
-    "category": "",
+    "category": "Altres activitats",
     "end": "2026-11-13",
     "place": "",
     "source": "ajuntament",
@@ -817,14 +817,6 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -837,8 +829,16 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-13T19:23:03+01:00"
+ "fetched": "2026-11-13T22:26:40+01:00"
 }
