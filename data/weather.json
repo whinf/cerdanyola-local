@@ -4,26 +4,26 @@
    {
     "date": "2026-11-13",
     "rain_mm": 0.0,
-    "symbol": "fair_day",
-    "tmax": 20,
-    "tmin": 12,
-    "wind_kmh": 10
+    "symbol": "clearsky_night",
+    "tmax": 15,
+    "tmin": 13,
+    "wind_kmh": 9
    },
    {
     "date": "2026-11-14",
-    "rain_mm": 0.3,
-    "symbol": "lightrainshowers_day",
+    "rain_mm": 1.1,
+    "symbol": "rainshowers_day",
     "tmax": 19,
     "tmin": 10,
     "wind_kmh": 13
    },
    {
     "date": "2026-11-15",
-    "rain_mm": 0.1,
-    "symbol": "partlycloudy_day",
+    "rain_mm": 0.0,
+    "symbol": "cloudy",
     "tmax": 18,
-    "tmin": 9,
-    "wind_kmh": 19
+    "tmin": 10,
+    "wind_kmh": 17
    },
    {
     "date": "2026-11-16",
@@ -51,12 +51,12 @@
    }
   ],
   "now": {
-   "symbol": "fair_day",
-   "temp": 19.7,
-   "time": "2026-11-13T14:00:00+01:00",
-   "wind_kmh": 6
+   "symbol": "clearsky_night",
+   "temp": 14.6,
+   "time": "2026-11-13T18:00:00+01:00",
+   "wind_kmh": 9
   },
-  "updated": "2026-11-13T11:21:19Z"
+  "updated": "2026-11-13T17:19:54Z"
  },
- "fetched": "2026-11-13T14:09:58+01:00"
+ "fetched": "2026-11-13T18:46:03+01:00"
 }

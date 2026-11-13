@@ -3007,6 +3007,188 @@
     "who": [
      "people"
     ]
+   },
+   "941902": {
+    "budget": 2349930,
+    "checked": "2026-11-13",
+    "end": "2027-01-28",
+    "id": "941902",
+    "level": "LOCAL",
+    "organ": "DIPUTACIÓN PROVINCIAL DE BARCELONA",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-13",
+    "region": "DIPUTACIÓN PROV. DE BARCELONA",
+    "start": "2026-11-23",
+    "term": "",
+    "title": "Convocatoria y bases específicas para la concesión de subvenciones en régimen de concurrencia competitiva del área de sostenibilidad social, ciclo de vida y comunidad de la diputación de barcelona a favor de entidades sin ánimo de lucro, para el año 2027",
+    "title_ca": "Convocatòria i bases específiques per a la concessió de subvencions en règim de concurrència competitiva de l’àrea de sostenibilitat social, cicle de vida i comunitat de la diputació de barcelona a favor d’entitats sense finalitat de lucre, any 2027",
+    "who": [
+     "entities"
+    ]
+   },
+   "941903": {
+    "budget": 900000,
+    "checked": "2026-11-13",
+    "end": "2026-12-21",
+    "id": "941903",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
+    "purpose": "Agricultura, Pesca y Alimentación",
+    "received": "2026-11-13",
+    "region": "CATALUÑA",
+    "start": "2026-11-30",
+    "term": "",
+    "title": "Ayudas para destinades a subvencionar la compra de productos fitosanitarios a basa de saponines en la lluita contra el Caracol manzana en el Delta del Ebro",
+    "title_ca": "Ajuts destinats a subvencionar la compra de productes fitosanitaris a base de saponines en la lluita contra el cargol poma en el delta de l'Ebre",
+    "who": [
+     "business"
+    ]
+   },
+   "941905": {
+    "budget": 50000,
+    "checked": "2026-11-13",
+    "end": "2026-12-03",
+    "id": "941905",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'EDUCACIÓ I FORMACIÓ PROFESSIONAL",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-13",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "",
+    "title": "Actividades 2025 federaciones y confederaciones de AFA",
+    "title_ca": "Activitats 2025 federacions i confederacions d'AFA",
+    "who": [
+     "entities"
+    ]
+   },
+   "941955": {
+    "budget": 1000000,
+    "checked": "2026-11-13",
+    "end": "2027-04-16",
+    "id": "941955",
+    "level": "ESTADO",
+    "organ": "INSTITUTO DE LA CINEMATOGRAFÍA Y DE LAS ARTES AUDIOVISUALES",
+    "purpose": "Cultura",
+    "received": "2026-11-13",
+    "region": "MINISTERIO DE CULTURA",
+    "start": "2027-03-29",
+    "term": "",
+    "title": "Resolución de 12 de noviembre de 2026 de la Dirección General del Instituto de la Cinematografía y de las Artes Audiovisuales, por la que se convocan para el año 2027 ayudas a la producción de cortometrajes realizados.",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
+   },
+   "942053": {
+    "budget": 600000,
+    "checked": "2026-11-13",
+    "end": "2026-12-15",
+    "id": "942053",
+    "level": "AUTONOMICA",
+    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
+    "purpose": "Cultura",
+    "received": "2026-11-13",
+    "region": "CATALUÑA",
+    "start": "2026-11-20",
+    "term": "",
+    "title": "Convocatoria de subvenciones para programas de incubación de proyectos en el ámbito de la creatividad digital",
+    "title_ca": "Convocatòria de subvencions per a programes d'incubació de projectes en l'àmbit de la creativitat digital",
+    "who": [
+     "business",
+     "entities"
+    ]
+   },
+   "942057": {
+    "budget": 300000,
+    "checked": "2026-11-13",
+    "end": "2026-12-15",
+    "id": "942057",
+    "level": "AUTONOMICA",
+    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
+    "purpose": "Cultura",
+    "received": "2026-11-13",
+    "region": "CATALUÑA",
+    "start": "2026-11-20",
+    "term": "",
+    "title": "Convocatoria de subvenciones para proyectos de entidades que articulen el sector de la cultura digital",
+    "title_ca": "Convocatòria de subvencions per a projectes d'entitats que articulin el sector de la cultura digital",
+    "who": [
+     "entities"
+    ]
+   },
+   "942058": {
+    "budget": 2000000,
+    "checked": "2026-11-13",
+    "end": "2026-12-15",
+    "id": "942058",
+    "level": "AUTONOMICA",
+    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
+    "purpose": "Cultura",
+    "received": "2026-11-13",
+    "region": "CATALUÑA",
+    "start": "2026-11-20",
+    "term": "",
+    "title": "Convocatoria de subvenciones para proyectos culturales que usen tecnología inmersiva",
+    "title_ca": "Convocatòria de subvencions per a projectes culturals que facin servir tecnologia immersiva",
+    "who": [
+     "business",
+     "entities"
+    ]
+   },
+   "942060": {
+    "budget": 7222222.22,
+    "checked": "2026-11-13",
+    "end": "",
+    "id": "942060",
+    "level": "AUTONOMICA",
+    "organ": "AGÈNCIA CATALANA DE COOPERACIÓ AL DESENVOLUPAMENT",
+    "purpose": "Cooperación internacional para el desarrollo y cultural",
+    "received": "2026-11-13",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "20 Dies Hàbils",
+    "title": "Convocatoria de subvenciones para actuaciones de innovación digital, tecnológica y social (Innova Global), (2027-28).",
+    "title_ca": "Convocatòria de subvencions per actuacions de innovació digital, tecnològica i social (Innova Global), (2027-28).",
+    "who": [
+     "entities"
+    ]
+   },
+   "942067": {
+    "budget": 85000,
+    "checked": "2026-11-13",
+    "end": "",
+    "id": "942067",
+    "level": "LOCAL",
+    "organ": "ÀREA METROPOLITANA DE BARCELONA",
+    "purpose": "Cooperación internacional para el desarrollo y cultural",
+    "received": "2026-11-13",
+    "region": "AREA METROPOLITANA DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvención a favor de FUNDAECO para la ejecución del proyecto 'Barranco de Bolsillo: infraestructura verde para la recreación y la regeneración de cuencas metropolitanas' (Exp. 2026/900559)",
+    "title_ca": "Subvenció a favor de FUNDAECO per a l’execució del projecte \"Barranco de Bolsillo: infraestructura verde para la recreación y la regeneración de cuencas metropolitanas\" (Exp. 2026/900559)",
+    "who": [
+     "entities"
+    ]
+   },
+   "942085": {
+    "budget": 35000,
+    "checked": "2026-11-13",
+    "end": "",
+    "id": "942085",
+    "level": "LOCAL",
+    "organ": "ÀREA METROPOLITANA DE BARCELONA",
+    "purpose": "Cooperación internacional para el desarrollo y cultural",
+    "received": "2026-11-13",
+    "region": "AREA METROPOLITANA DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvención a favor de FNP para la ejecución del proyecto “Gobernanza Metropolitana en Brasil: Actualización Normativa, Cooperación Internacional y Movilidad Urbana Sostenible” (Exp. 2026/900560)",
+    "title_ca": "Subvenció a favor de FNP per a l’execució del projecte “Governança Metropolitana al Brasil: Actualització Normativa, Cooperació Internacional i Mobilitat Urbana Sostenible” (Exp. 2026/900560)",
+    "who": [
+     "entities"
+    ]
    }
   },
   "closed": [
@@ -4982,8 +5164,9 @@
    "941508",
    "941561",
    "941562",
-   "941563"
+   "941563",
+   "941997"
   ]
  },
- "fetched": "2026-11-13T14:09:58+01:00"
+ "fetched": "2026-11-13T18:46:03+01:00"
 }
