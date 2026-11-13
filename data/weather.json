@@ -5,7 +5,7 @@
     "date": "2026-11-13",
     "rain_mm": 0.0,
     "symbol": "clearsky_night",
-    "tmax": 15,
+    "tmax": 14,
     "tmin": 13,
     "wind_kmh": 9
    },
@@ -52,11 +52,11 @@
   ],
   "now": {
    "symbol": "clearsky_night",
-   "temp": 14.6,
-   "time": "2026-11-13T18:00:00+01:00",
-   "wind_kmh": 9
+   "temp": 13.9,
+   "time": "2026-11-13T19:00:00+01:00",
+   "wind_kmh": 8
   },
-  "updated": "2026-11-13T17:19:54Z"
+  "updated": "2026-11-13T17:19:55Z"
  },
- "fetched": "2026-11-13T18:59:16+01:00"
+ "fetched": "2026-11-13T19:23:03+01:00"
 }
