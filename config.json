@@ -5,7 +5,7 @@
  "light_api_url": "https://horaverda.es/api/v1/latest.json",
  "donate_url": "https://ko-fi.com/onestudioman",
  "studio_url": "https://onestudioman.horaverda.es",
- "owner": {"name": "", "nif": "", "email": ""},
+ "owner": {"name": "", "nif": "", "email": "onestudioman.contact@gmail.com"},
  "board_api_url": "https://cerdanyola-board.chatcerdanyola.workers.dev",
  "turnstile_site_key": "0x4AAAAAAF_zDwIonphDfQvJ"
 }

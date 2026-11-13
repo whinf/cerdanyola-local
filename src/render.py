@@ -957,11 +957,13 @@ class Site:
     def text_page(self, lang, kind):
         repo = self.cfg.get("repo_url") or "https://github.com/"
         owner = self.cfg.get("owner") or {}
+        parts = []
         if owner.get("name"):
-            owner_html = esc(owner["name"]) + (f" · NIF {esc(owner['nif'])}" if owner.get("nif") else "") + (
-                f' · <a href="mailto:{esc(owner["email"])}">{esc(owner["email"])}</a>' if owner.get("email") else "")
-        else:
-            owner_html = t(lang, "owner_missing", repo=repo)
+            parts.append(esc(owner["name"]) + (f" · NIF {esc(owner['nif'])}" if owner.get("nif") else ""))
+        if owner.get("email"):
+            parts.append(f'<a href="mailto:{esc(owner["email"])}">{esc(owner["email"])}</a>')
+        # Sin nombre, al menos el correo de contacto (responsable del tauler); sin nada, remite a GitHub.
+        owner_html = " · ".join(parts) if parts else t(lang, "owner_missing", repo=repo)
         api = urlparse(self.cfg.get("light_api_url") or "")
         light = (self.get("light") or {}).get("site") or (f"{api.scheme}://{api.netloc}/" if api.netloc else repo)
         body = t(lang, f"{kind}_body", site=esc(self.name), repo=repo, owner=owner_html, light=esc(light),
