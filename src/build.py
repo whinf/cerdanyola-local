@@ -39,6 +39,7 @@ SOURCES = [
     ("contracts", sources.fetch_contracts, 8, True),  # la Generalitat actualiza los contratos una vez al día
     ("companies", sources.fetch_companies, 0, True),
     ("light", sources.fetch_light, 0, False),
+    ("board", sources.fetch_board, 0, False),  # anuncios de los vecinos; no se guarda en git
 ]
 INCREMENTAL = {"aids", "agenda", "companies"}  # fuentes que reaprovechan lo que ya tenían guardado
 
@@ -103,6 +104,8 @@ def load_config(site_url=None):
         cfg["repo_url"] = f"https://github.com/{repo}"
     if cfg.get("light_api_url") and not os.environ.get("LIGHT_API_URL"):
         os.environ["LIGHT_API_URL"] = cfg["light_api_url"]
+    if cfg.get("board_api_url") and not os.environ.get("BOARD_API_URL"):
+        os.environ["BOARD_API_URL"] = cfg["board_api_url"]
     return cfg
 
 

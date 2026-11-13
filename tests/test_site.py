@@ -386,5 +386,56 @@ class TestSite(unittest.TestCase):
             self.assertEqual(broken, [])
 
 
+class TestBoard(unittest.TestCase):
+    POST = {"id": "abc123def456", "cat": "deal", "lang": "es", "title": "Bici <script>alert(1)</script>",
+            "body": "Bici de paseo, poco uso.\nRecogida en el centro.", "name": "Marta", "contact": "Telegram @marta",
+            "price": "40 €", "created": 1761000000, "expires": 1764888000, "email": "secreto@example.com"}
+
+    def test_parse_board(self):
+        parsed = S.parse_board({"posts": [self.POST, {"id": "x"}, "basura"]})
+        self.assertEqual(len(parsed["posts"]), 1)
+        self.assertNotIn("email", parsed["posts"][0])  # nunca llega a la web estática
+        self.assertEqual(parsed["posts"][0]["price"], "40 €")
+        with self.assertRaises(S.FetchError):
+            S.parse_board({"error": "x"})
+
+    def build(self, cfg, data=None):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Site(cfg, data or {}, tmp, NOW).build()
+            return {lg: (out / lg / i18n.t(lg, "slug_board") / "index.html").read_text(encoding="utf-8") for lg in i18n.LANGS}
+
+    def test_board_page_without_worker(self):
+        pages = self.build({"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local"})
+        self.assertIn("encara no està en marxa", pages["ca"])
+        self.assertNotIn("board.js", pages["ca"])
+        self.assertNotIn("challenges.cloudflare.com", pages["ca"])
+        self.assertIn('aria-current="page"', pages["en"])
+        self.assertIn("Community board", pages["en"])
+
+    def test_board_page_with_worker(self):
+        cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local",
+               "board_api_url": "https://board.example.workers.dev/", "turnstile_site_key": "1x00000000000000000000AA"}
+        data = {"board": {"fetched": NOW.isoformat(), "data": {"posts": [self.POST]}}}
+        page = self.build(cfg, data)["es"]
+        self.assertIn('data-api="https://board.example.workers.dev"', page)
+        self.assertIn("static/board.js", page)
+        self.assertIn("challenges.cloudflare.com/turnstile", page)
+        self.assertIn("Bici &lt;script&gt;alert(1)&lt;/script&gt;", page)  # título escapado
+        self.assertNotIn("<script>alert", page)
+        self.assertNotIn("secreto@example.com", page)
+        self.assertIn('id="p-abc123def456"', page)
+        self.assertIn("Recogida en el centro.", page)
+        self.assertIn('href="#i-tag"', page)
+        self.assertIn("publicado el 21 de octubre", page)  # 1761000000 = 21/10/2025 00:40 en Madrid
+        self.assertIn("<\\/", page)  # el JSON de textos escapa «</»
+
+    def test_board_home_count(self):
+        cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local", "board_api_url": "https://b.example"}
+        data = {"board": {"fetched": NOW.isoformat(), "data": {"posts": [self.POST]}}}
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Site(cfg, data, tmp, NOW).build()
+            self.assertIn("1 anuncis actius", (out / "ca/index.html").read_text(encoding="utf-8"))
+
+
 if __name__ == "__main__":
     unittest.main()

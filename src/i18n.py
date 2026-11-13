@@ -352,12 +352,75 @@ STRINGS = {
 <p>{site} és un projecte gratuït i informatiu, sense relació amb l'Ajuntament de Cerdanyola del Vallès ni amb cap altra administració.</p>
 <h2>Titular</h2><p>{owner}</p>
 <h2>Responsabilitat</h2><p>La informació prové de fonts públiques citades a cada apartat i s'ofereix tal com és, sense garantia. Consulta sempre la font oficial abans de prendre decisions.</p>
+<h2>Continguts dels usuaris</h2><p>Els anuncis del <a href="{board}">tauler veïnal</a> els publiquen els mateixos veïns i no es revisen abans de publicar-se. {site} no participa en cap tracte ni garanteix el que s'hi anuncia. Si veus un anunci il·lícit o ofensiu, fes servir el botó «Denuncia» o escriu al titular: es retirarà tan aviat com se'n tingui coneixement (article 16 de la LSSI).</p>
 """,
         "privacy_body": """
-<p>Aquest web no fa servir galetes, no té analítica ni publicitat i no recull dades personals.</p>
+<p>Aquest web no fa servir galetes i no té analítica ni publicitat. L'única part que tracta dades personals és el <a href="{board}">tauler veïnal</a>, explicat més avall.</p>
 <p>Si tries el tema clar o fosc, la preferència es desa només al teu navegador (localStorage) i no s'envia enlloc.</p>
 <p>Està allotjat a GitHub Pages. Com qualsevol servidor web, GitHub registra l'adreça IP de les visites per motius de seguretat. Més informació a la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaració de privacitat de GitHub</a>.</p>
+<h2>Tauler veïnal</h2>
+<p>Responsable del tractament: {owner}</p>
+<p>Quan publiques un anunci es guarden el text, el nom o àlies, el contacte que vulguis mostrar i el teu correu electrònic. El correu no es publica mai: només serveix per confirmar l'anunci, enviar-te les respostes dels veïns i avisar-te abans que caduqui. Quan respons a un anunci, el teu missatge i el teu correu s'envien a l'autor i no es guarden. Base jurídica: el teu consentiment (article 6.1.a del RGPD).</p>
+<p>Per evitar abusos es guarda un resum (hash amb sal) de l'adreça IP, del qual no es pot recuperar l'adreça. Els anuncis caduquen als 45 dies i s'esborren del tot set dies després; pots esborrar-los abans amb l'enllaç del correu de confirmació o escrivint al responsable. També pots demanar accés, rectificació o supressió per correu, i reclamar davant l'<a href="https://www.aepd.es">Agència Espanyola de Protecció de Dades</a>.</p>
+<p>Les dades es guarden als servidors de Cloudflare i els correus s'envien amb Gmail (Google). A la pàgina del tauler s'executa <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Turnstile</a> per distingir persones de robots; no fa servir galetes de seguiment.</p>
 """,
+        "slug_board": "tauler",
+        "nav_board": "Tauler",
+        "board_title": "Tauler veïnal de Cerdanyola",
+        "board_desc": "Tauler d'anuncis entre veïns de Cerdanyola del Vallès i Bellaterra: demana ajuda, regala el que ja no fas servir i troba gangues de comerços i particulars.",
+        "board_intro": "Un espai perquè els veïns s'ajudin: demana un cop de mà o suport per a un projecte, regala el que ja no necessites o publica gangues i segona mà. Sense registre: només un nom i un correu, que no es mostra mai.",
+        "board_cat_help": "Ajuda'm",
+        "board_cat_give": "Ho regalo",
+        "board_cat_deal": "Gangues",
+        "board_cat_all": "Tot",
+        "board_cat_help_desc": "Demana un cop de mà amb una tasca o suport per a un projecte.",
+        "board_cat_give_desc": "Regala el que ja no fas servir.",
+        "board_cat_deal_desc": "Segona mà i ofertes de comerços locals i particulars.",
+        "board_new": "Publica un anunci",
+        "board_empty": "Encara no hi ha cap anunci aquí. Sigues el primer!",
+        "board_loading": "Carregant els anuncis…",
+        "board_nojs": "Per publicar, respondre o denunciar cal JavaScript.",
+        "board_static_note": "Llista actualitzada quatre vegades al dia; amb JavaScript es mostra al moment.",
+        "board_offline": "El tauler encara no està en marxa. Torna-hi aviat.",
+        "board_reply": "Respon",
+        "board_report": "Denuncia",
+        "board_rules": "<ul><li>Només per a veïns de Cerdanyola i Bellaterra: particulars i comerços locals.</li><li>Els anuncis caduquen als 45 dies; es poden renovar o esborrar des del correu de confirmació.</li><li>No publiquis dades de tercers ni dades bancàries. No enviïs mai diners per avançat: el web no fa d'intermediari ni garanteix res.</li><li>Els anuncis denunciats per diversos veïns s'amaguen automàticament.</li></ul>",
+        "board_privacy": "El correu només serveix per confirmar l'anunci i rebre'n les respostes; no es publica mai. Més detalls a la <a href=\"{privacy}\">política de privacitat</a>.",
+        "board_f_cat": "Categoria",
+        "board_f_title": "Títol",
+        "board_f_body": "Text",
+        "board_f_name": "Nom o àlies",
+        "board_f_email": "Correu electrònic (no es mostra)",
+        "board_f_contact": "Telèfon, WhatsApp o Telegram (opcional; es mostrarà)",
+        "board_f_price": "Preu (opcional)",
+        "board_f_consent": "Accepto les normes i que es publiqui l'anunci amb el nom i el contacte que he indicat.",
+        "board_f_message": "Missatge",
+        "board_f_reply_email": "El teu correu (perquè et puguin respondre)",
+        "board_f_reason": "Motiu (opcional)",
+        "board_submit": "Envia",
+        "board_cancel": "Cancel·la",
+        "board_sent": "T'hem enviat un correu. Fes clic a l'enllaç per publicar l'anunci (mira també la carpeta de correu brossa).",
+        "board_reply_sent": "Missatge enviat. Si l'autor et respon, ho rebràs al teu correu.",
+        "board_report_sent": "Gràcies per l'avís. Ho revisarem.",
+        "board_err_rate": "Has fet massa enviaments avui. Torna-ho a provar demà.",
+        "board_err_filtered": "El text conté paraules o dades no permeses (insults, dades bancàries…). Revisa'l.",
+        "board_err_turnstile": "No hem pogut comprovar que no ets un robot. Torna-ho a provar.",
+        "board_err_full": "El tauler és ple. Torna-ho a provar d'aquí a uns dies.",
+        "board_err_mail_quota": "Avui ja no podem enviar més correus. Torna-ho a provar demà.",
+        "board_err_invalid": "Revisa els camps: falta alguna dada o és massa llarga.",
+        "board_err_notfound": "Aquest anunci ja no existeix.",
+        "board_err_network": "No s'ha pogut connectar amb el tauler. Torna-ho a provar.",
+        "board_err_generic": "S'ha produït un error. Torna-ho a provar més tard.",
+        "board_expires": "caduca el {d}",
+        "board_posted": "publicat el {d}",
+        "board_contact_show": "Mostra el contacte",
+        "board_reply_title": "Respon a l'anunci",
+        "board_report_title": "Denuncia l'anunci",
+        "board_report_hint": "Denuncia només anuncis amb estafes, insults, dades de tercers o que no tinguin res a veure amb Cerdanyola.",
+        "board_home": "Tauler veïnal",
+        "board_home_text": "Demana ajuda, regala el que ja no fas servir o troba gangues entre veïns.",
+        "board_home_n": "{n} anuncis actius.",
+        "board_all": "Veure el tauler",
         "owner_missing": "Projecte personal sense ànim de lucre. Contacte: a través del <a href=\"{repo}\">repositori a GitHub</a>.",
     },
     "es": {
@@ -540,12 +603,75 @@ STRINGS = {
 <p>{site} es un proyecto gratuito e informativo, sin relación con el Ajuntament de Cerdanyola del Vallès ni con ninguna otra administración.</p>
 <h2>Titular</h2><p>{owner}</p>
 <h2>Responsabilidad</h2><p>La información procede de fuentes públicas citadas en cada apartado y se ofrece tal cual, sin garantía. Consulta siempre la fuente oficial antes de tomar decisiones.</p>
+<h2>Contenidos de los usuarios</h2><p>Los anuncios del <a href="{board}">tablón vecinal</a> los publican los propios vecinos y no se revisan antes de publicarse. {site} no participa en ningún trato ni garantiza lo que se anuncia. Si ves un anuncio ilícito u ofensivo, usa el botón «Denunciar» o escribe al titular: se retirará en cuanto se tenga conocimiento (artículo 16 de la LSSI).</p>
 """,
         "privacy_body": """
-<p>Esta web no usa cookies, no tiene analítica ni publicidad y no recoge datos personales.</p>
+<p>Esta web no usa cookies y no tiene analítica ni publicidad. La única parte que trata datos personales es el <a href="{board}">tablón vecinal</a>, explicado más abajo.</p>
 <p>Si eliges el tema claro u oscuro, la preferencia se guarda solo en tu navegador (localStorage) y no se envía a ningún sitio.</p>
 <p>Está alojada en GitHub Pages. Como cualquier servidor web, GitHub registra la dirección IP de las visitas por motivos de seguridad. Más información en la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.</p>
+<h2>Tablón vecinal</h2>
+<p>Responsable del tratamiento: {owner}</p>
+<p>Cuando publicas un anuncio se guardan el texto, el nombre o alias, el contacto que quieras mostrar y tu correo electrónico. El correo nunca se publica: solo sirve para confirmar el anuncio, enviarte las respuestas de los vecinos y avisarte antes de que caduque. Cuando respondes a un anuncio, tu mensaje y tu correo se envían al autor y no se guardan. Base jurídica: tu consentimiento (artículo 6.1.a del RGPD).</p>
+<p>Para evitar abusos se guarda un resumen (hash con sal) de la dirección IP, del que no se puede recuperar la dirección. Los anuncios caducan a los 45 días y se borran del todo siete días después; puedes borrarlos antes con el enlace del correo de confirmación o escribiendo al responsable. También puedes pedir acceso, rectificación o supresión por correo, y reclamar ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+<p>Los datos se guardan en los servidores de Cloudflare y los correos se envían con Gmail (Google). En la página del tablón se ejecuta <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Turnstile</a> para distinguir personas de robots; no usa cookies de seguimiento.</p>
 """,
+        "slug_board": "tablon",
+        "nav_board": "Tablón",
+        "board_title": "Tablón vecinal de Cerdanyola",
+        "board_desc": "Tablón de anuncios entre vecinos de Cerdanyola del Vallès y Bellaterra: pide ayuda, regala lo que ya no uses y encuentra chollos de comercios y particulares.",
+        "board_intro": "Un espacio para que los vecinos se ayuden: pide una mano o apoyo para un proyecto, regala lo que ya no necesites o publica chollos y segunda mano. Sin registro: solo un nombre y un correo, que nunca se muestra.",
+        "board_cat_help": "Ayúdame",
+        "board_cat_give": "Lo regalo",
+        "board_cat_deal": "Chollos",
+        "board_cat_all": "Todo",
+        "board_cat_help_desc": "Pide una mano con una tarea o apoyo para un proyecto.",
+        "board_cat_give_desc": "Regala lo que ya no uses.",
+        "board_cat_deal_desc": "Segunda mano y ofertas de comercios locales y particulares.",
+        "board_new": "Publicar un anuncio",
+        "board_empty": "Aún no hay ningún anuncio aquí. ¡Sé el primero!",
+        "board_loading": "Cargando los anuncios…",
+        "board_nojs": "Para publicar, responder o denunciar hace falta JavaScript.",
+        "board_static_note": "Lista actualizada cuatro veces al día; con JavaScript se muestra al momento.",
+        "board_offline": "El tablón todavía no está en marcha. Vuelve pronto.",
+        "board_reply": "Responder",
+        "board_report": "Denunciar",
+        "board_rules": "<ul><li>Solo para vecinos de Cerdanyola y Bellaterra: particulares y comercios locales.</li><li>Los anuncios caducan a los 45 días; se pueden renovar o borrar desde el correo de confirmación.</li><li>No publiques datos de terceros ni datos bancarios. No envíes nunca dinero por adelantado: la web no hace de intermediaria ni garantiza nada.</li><li>Los anuncios denunciados por varios vecinos se ocultan automáticamente.</li></ul>",
+        "board_privacy": "El correo solo sirve para confirmar el anuncio y recibir las respuestas; nunca se publica. Más detalles en la <a href=\"{privacy}\">política de privacidad</a>.",
+        "board_f_cat": "Categoría",
+        "board_f_title": "Título",
+        "board_f_body": "Texto",
+        "board_f_name": "Nombre o alias",
+        "board_f_email": "Correo electrónico (no se muestra)",
+        "board_f_contact": "Teléfono, WhatsApp o Telegram (opcional; se mostrará)",
+        "board_f_price": "Precio (opcional)",
+        "board_f_consent": "Acepto las normas y que se publique el anuncio con el nombre y el contacto que he indicado.",
+        "board_f_message": "Mensaje",
+        "board_f_reply_email": "Tu correo (para que puedan responderte)",
+        "board_f_reason": "Motivo (opcional)",
+        "board_submit": "Enviar",
+        "board_cancel": "Cancelar",
+        "board_sent": "Te hemos enviado un correo. Haz clic en el enlace para publicar el anuncio (mira también la carpeta de spam).",
+        "board_reply_sent": "Mensaje enviado. Si el autor te responde, lo recibirás en tu correo.",
+        "board_report_sent": "Gracias por el aviso. Lo revisaremos.",
+        "board_err_rate": "Has hecho demasiados envíos hoy. Vuelve a intentarlo mañana.",
+        "board_err_filtered": "El texto contiene palabras o datos no permitidos (insultos, datos bancarios…). Revísalo.",
+        "board_err_turnstile": "No hemos podido comprobar que no eres un robot. Vuelve a intentarlo.",
+        "board_err_full": "El tablón está lleno. Vuelve a intentarlo dentro de unos días.",
+        "board_err_mail_quota": "Hoy ya no podemos enviar más correos. Vuelve a intentarlo mañana.",
+        "board_err_invalid": "Revisa los campos: falta algún dato o es demasiado largo.",
+        "board_err_notfound": "Este anuncio ya no existe.",
+        "board_err_network": "No se ha podido conectar con el tablón. Vuelve a intentarlo.",
+        "board_err_generic": "Se ha producido un error. Vuelve a intentarlo más tarde.",
+        "board_expires": "caduca el {d}",
+        "board_posted": "publicado el {d}",
+        "board_contact_show": "Mostrar el contacto",
+        "board_reply_title": "Responder al anuncio",
+        "board_report_title": "Denunciar el anuncio",
+        "board_report_hint": "Denuncia solo anuncios con estafas, insultos, datos de terceros o que no tengan nada que ver con Cerdanyola.",
+        "board_home": "Tablón vecinal",
+        "board_home_text": "Pide ayuda, regala lo que ya no uses o encuentra chollos entre vecinos.",
+        "board_home_n": "{n} anuncios activos.",
+        "board_all": "Ver el tablón",
         "owner_missing": "Proyecto personal sin ánimo de lucro. Contacto: a través del <a href=\"{repo}\">repositorio en GitHub</a>.",
     },
     "en": {
@@ -728,12 +854,75 @@ STRINGS = {
 <p>{site} is a free, informational project with no connection to Cerdanyola del Vallès town council or any other public body.</p>
 <h2>Owner</h2><p>{owner}</p>
 <h2>Liability</h2><p>The information comes from the public sources cited in each section and is provided as is, without warranty. Always check the official source before making decisions.</p>
+<h2>User content</h2><p>Notices on the <a href="{board}">community board</a> are posted by neighbours themselves and are not reviewed before publication. {site} takes no part in any deal and guarantees nothing that is advertised. If you see an unlawful or offensive notice, use the "Report" button or write to the owner: it will be removed as soon as we become aware of it (article 16 of Spain's LSSI).</p>
 """,
         "privacy_body": """
-<p>This website uses no cookies, has no analytics or advertising, and collects no personal data.</p>
+<p>This website uses no cookies and has no analytics or advertising. The only part that processes personal data is the <a href="{board}">community board</a>, explained below.</p>
 <p>If you pick the light or dark theme, the preference is stored only in your browser (localStorage) and never sent anywhere.</p>
 <p>It is hosted on GitHub Pages. Like any web server, GitHub logs visitors' IP addresses for security reasons. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
+<h2>Community board</h2>
+<p>Data controller: {owner}</p>
+<p>When you post a notice we store its text, your name or alias, the contact you choose to show and your email address. The email is never published: it is only used to confirm the notice, forward replies from neighbours and warn you before it expires. When you reply to a notice, your message and email are sent to the author and not stored. Legal basis: your consent (article 6.1.a GDPR).</p>
+<p>To prevent abuse we store a salted hash of your IP address, from which the address cannot be recovered. Notices expire after 45 days and are fully deleted seven days later; you can delete them earlier with the link in the confirmation email or by writing to the controller. You can also request access, rectification or erasure by email, and lodge a complaint with the <a href="https://www.aepd.es">Spanish Data Protection Agency</a>.</p>
+<p>Data is stored on Cloudflare servers and emails are sent with Gmail (Google). The board page runs <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Turnstile</a> to tell people from robots; it uses no tracking cookies.</p>
 """,
+        "slug_board": "board",
+        "nav_board": "Board",
+        "board_title": "Cerdanyola community board",
+        "board_desc": "Notice board for neighbours in Cerdanyola del Vallès and Bellaterra: ask for help, give away what you no longer use and find bargains from local shops and individuals.",
+        "board_intro": "A place for neighbours to help each other: ask for a hand or support for a project, give away what you no longer need, or post bargains and second-hand items. No sign-up: just a name and an email address, which is never shown.",
+        "board_cat_help": "Help me",
+        "board_cat_give": "Giving away",
+        "board_cat_deal": "Bargains",
+        "board_cat_all": "All",
+        "board_cat_help_desc": "Ask for a hand with a task or support for a project.",
+        "board_cat_give_desc": "Give away what you no longer use.",
+        "board_cat_deal_desc": "Second-hand items and offers from local shops and individuals.",
+        "board_new": "Post a notice",
+        "board_empty": "No notices here yet. Be the first!",
+        "board_loading": "Loading notices…",
+        "board_nojs": "JavaScript is needed to post, reply or report.",
+        "board_static_note": "List updated four times a day; with JavaScript it shows live.",
+        "board_offline": "The board is not running yet. Come back soon.",
+        "board_reply": "Reply",
+        "board_report": "Report",
+        "board_rules": "<ul><li>Only for neighbours in Cerdanyola and Bellaterra: individuals and local shops.</li><li>Notices expire after 45 days; renew or delete them from the confirmation email.</li><li>Do not post other people's data or bank details. Never send money in advance: this site is not an intermediary and guarantees nothing.</li><li>Notices reported by several neighbours are hidden automatically.</li></ul>",
+        "board_privacy": "Your email is only used to confirm the notice and receive replies; it is never published. See the <a href=\"{privacy}\">privacy policy</a>.",
+        "board_f_cat": "Category",
+        "board_f_title": "Title",
+        "board_f_body": "Text",
+        "board_f_name": "Name or alias",
+        "board_f_email": "Email (not shown)",
+        "board_f_contact": "Phone, WhatsApp or Telegram (optional; will be shown)",
+        "board_f_price": "Price (optional)",
+        "board_f_consent": "I accept the rules and agree to publish the notice with the name and contact I have given.",
+        "board_f_message": "Message",
+        "board_f_reply_email": "Your email (so they can answer you)",
+        "board_f_reason": "Reason (optional)",
+        "board_submit": "Send",
+        "board_cancel": "Cancel",
+        "board_sent": "We have sent you an email. Click the link to publish the notice (check your spam folder too).",
+        "board_reply_sent": "Message sent. If the author replies, you will get it by email.",
+        "board_report_sent": "Thanks for letting us know. We will review it.",
+        "board_err_rate": "Too many submissions today. Try again tomorrow.",
+        "board_err_filtered": "The text contains words or data that are not allowed (insults, bank details…). Please revise it.",
+        "board_err_turnstile": "We could not verify that you are not a robot. Please try again.",
+        "board_err_full": "The board is full. Try again in a few days.",
+        "board_err_mail_quota": "We cannot send more emails today. Try again tomorrow.",
+        "board_err_invalid": "Check the fields: something is missing or too long.",
+        "board_err_notfound": "This notice no longer exists.",
+        "board_err_network": "Could not reach the board. Please try again.",
+        "board_err_generic": "Something went wrong. Please try again later.",
+        "board_expires": "expires {d}",
+        "board_posted": "posted {d}",
+        "board_contact_show": "Show contact",
+        "board_reply_title": "Reply to the notice",
+        "board_report_title": "Report the notice",
+        "board_report_hint": "Report only notices with scams, insults, other people's data or nothing to do with Cerdanyola.",
+        "board_home": "Community board",
+        "board_home_text": "Ask for help, give away what you no longer use or find bargains among neighbours.",
+        "board_home_n": "{n} active notices.",
+        "board_all": "See the board",
         "owner_missing": "Personal non-profit project. Contact: through the <a href=\"{repo}\">GitHub repository</a>.",
     },
 }

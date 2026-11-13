@@ -31,6 +31,9 @@ jobs:
       - name: Tests
         run: python3 -m unittest discover tests
 
+      - name: Tests del worker del tauler
+        run: node --test worker/test
+
       - id: pages
         uses: actions/configure-pages@v5
 

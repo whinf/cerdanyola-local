@@ -24,6 +24,8 @@ RODALIES = "https://rodalies.gencat.cat/ca/estat_servei/"
 PICKS = ROOT / "curated" / "picks.json"  # recomendaciones escritas a mano; rotan cada semana
 PICKS_PER_WEEK = {"food": 3, "experience": 2}
 FILL_LITRES = 50  # «llenar el depósito» para comparar gasolineras
+BOARD_CATS = ("help", "give", "deal")  # tauler veïnal: ajuda, regal, ganga
+BOARD_ICONS = {"help": "handshake", "give": "gift", "deal": "tag"}
 FREE_WORDS = re.compile(r"\b(gratu[iï]t[ae]?s?|gratis|gratuit[oa]s?|entrada (?:lliure|libre)|free entry)\b", re.I)
 
 # Qué cuenta como fiesta: por categoría o por palabras del título (ca/es/en)
@@ -160,7 +162,7 @@ class Site:
             f'<span class="lg-short" aria-hidden="true">{lg}</span></a>' for lg in LANGS)
         nav = "".join(f'<li><a href="{self.href(self.path(lang, k))}"{" aria-current=\"page\"" if k == kind else ""}>'
                       f'{t(lang, "nav_" + k)}</a></li>'
-                      for k in ("home", "agenda", "leisure", "picks", "save", "aids", "jobs", "invest", "directory", "emergency"))
+                      for k in ("home", "agenda", "leisure", "picks", "board", "save", "aids", "jobs", "invest", "directory", "emergency"))
         theme = (f'<span class="theme-slot"><button class="theme" type="button" hidden data-theme-toggle '
                  f'data-auto="{esc(t(lang, "theme_auto"))}" data-light="{esc(t(lang, "theme_light"))}" '
                  f'data-dark="{esc(t(lang, "theme_dark"))}" aria-label="{esc(t(lang, "theme_auto"))}">'
@@ -740,12 +742,74 @@ class Site:
         body.append(f'<p class="note">{t(lang, "save_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
         return self.layout(lang, "save", f'{t(lang, "save_title")} · {self.name}', t(lang, "save_desc"), "".join(body))
 
+    # ---------- tauler veïnal ----------
+    def board_posts(self):
+        """Anuncios vivos de la última lectura del worker (data/board.json), ya ordenados por el worker."""
+        posts = (self.get("board") or {}).get("posts") or []
+        return [p for p in posts if p.get("cat") in BOARD_ICONS and p.get("title") and p.get("body")]
+
+    def board_item(self, lang, p):
+        cat = p["cat"]
+        created = datetime.fromtimestamp(int(p.get("created") or 0), tz=tz.UTC)
+        posted = t(lang, "board_posted", d=i18n.fmt_date(lang, tz.to_madrid(created).date(), weekday=False))
+        price = f' <span class="tier t0">{esc(str(p["price"]))}</span>' if p.get("price") else ""
+        flag = f' <span class="tier t3" lang="{esc(p["lang"])}">{esc(p["lang"])}</span>' if p.get("lang") in LANGS and p["lang"] != lang else ""
+        contact = (f'<p class="contact"><b>{t(lang, "board_contact_show")}:</b> {esc(str(p["contact"]))}</p>'
+                   if p.get("contact") else "")
+        text = "<br>".join(esc(line) for line in str(p["body"]).splitlines() if line.strip())
+        return (f'<li id="p-{esc(str(p.get("id") or ""))}" class="post" data-cat="{cat}">'
+                f'<span class="when">{self.i(BOARD_ICONS[cat])}{t(lang, "board_cat_" + cat)}{price}{flag}</span>'
+                f'<span class="what">{esc(str(p["title"]))}</span><p class="body">{text}</p>{contact}'
+                f'<small class="muted">{esc(str(p.get("name") or ""))} · {posted}</small></li>')
+
+    def board_preview(self, lang):
+        n = len(self.board_posts())
+        count = f" {t(lang, 'board_home_n', n=n)}" if n else ""
+        return (f'<section><h2>{self.i("megaphone")}{t(lang, "board_home")}</h2><p>{t(lang, "board_home_text")}{count}</p>'
+                f'<p><a href="{self.href(self.path(lang, "board"))}">{t(lang, "board_all")} →</a></p></section>')
+
+    def board_page(self, lang):
+        api = (self.cfg.get("board_api_url") or "").rstrip("/")
+        sitekey = self.cfg.get("turnstile_site_key") or ""
+        posts = self.board_posts()
+        filters = [f'<button type="button" data-cat="" aria-pressed="true">{t(lang, "board_cat_all")}</button>'] + [
+            f'<button type="button" data-cat="{c}" aria-pressed="false">{self.i(BOARD_ICONS[c])}{t(lang, "board_cat_" + c)}</button>'
+            for c in BOARD_CATS]
+        cats = "".join(f'<li>{self.i(BOARD_ICONS[c])}<b>{t(lang, "board_cat_" + c)}</b>: {t(lang, "board_cat_" + c + "_desc")}</li>'
+                       for c in BOARD_CATS)
+        if posts:
+            listing = f'<ul class="events board-list">{"".join(self.board_item(lang, p) for p in posts)}</ul>'
+        else:
+            listing = f'<ul class="events board-list" hidden></ul><p class="board-empty">{t(lang, "board_empty")}</p>'
+        status = t(lang, "board_static_note") if api else t(lang, "board_offline")
+        strings = {k[6:]: v for k, v in i18n.STRINGS[lang].items() if k.startswith("board_")}
+        strings["cats"] = list(BOARD_CATS)
+        i18n_json = json.dumps(strings, ensure_ascii=False).replace("</", "<\\/")
+        body = [f'<h1>{t(lang, "board_title")}</h1><p class="lede">{t(lang, "board_desc")}</p>',
+                f'<p>{t(lang, "board_intro")}</p><ul class="board-cats">{cats}</ul>',
+                f'<aside class="tip">{self.i("info")}<div>{t(lang, "board_rules")}</div></aside>',
+                f'<div class="board-head"><nav class="board-filters" aria-label="{esc(t(lang, "board_f_cat"))}">{"".join(filters)}</nav>',
+                f'<button type="button" class="donate board-new" data-board-new hidden>{self.i("megaphone")} {t(lang, "board_new")}</button></div>',
+                f'<div id="board" data-api="{esc(api)}" data-lang="{lang}" data-sitekey="{esc(sitekey)}">',
+                f'<p class="note" data-board-status>{status}</p>{listing}</div>',
+                f'<noscript><p class="note">{t(lang, "board_nojs")}</p></noscript>',
+                f'<p class="note">{t(lang, "board_privacy", privacy=self.href(self.path(lang, "privacy")))}</p>',
+                f'<script type="application/json" id="board-i18n">{i18n_json}</script>']
+        head = ""
+        if api:
+            head = f'<script src="{self.href("/static/board.js")}" defer></script>'
+            if sitekey:
+                head += '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>'
+        return self.layout(lang, "board", f'{t(lang, "board_title")} · {self.name}', t(lang, "board_desc"),
+                           "".join(body), head=head)
+
     # ---------- páginas ----------
     def home(self, lang):
         quick = (f'<section><h2>{self.i("link")}{t(lang, "quick_title")}</h2><ul class="months">'
                  f'<li><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}#weekend">{t(lang, "weekend_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "picks"))}">{t(lang, "picks_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "board"))}">{t(lang, "board_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "save"))}">{t(lang, "save_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "aids"))}">{t(lang, "aids_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "invest"))}">{t(lang, "invest_title")}</a></li>'
@@ -755,7 +819,7 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
                 f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.light(lang)}{self.transport(lang)}'
-                f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
+                f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
                 f'{self.fuel_preview(lang)}'
                 f'{self.air(lang)}{quick}')
         ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": self.name, "inLanguage": lang,
@@ -900,7 +964,8 @@ class Site:
             owner_html = t(lang, "owner_missing", repo=repo)
         api = urlparse(self.cfg.get("light_api_url") or "")
         light = (self.get("light") or {}).get("site") or (f"{api.scheme}://{api.netloc}/" if api.netloc else repo)
-        body = t(lang, f"{kind}_body", site=esc(self.name), repo=repo, owner=owner_html, light=esc(light))
+        body = t(lang, f"{kind}_body", site=esc(self.name), repo=repo, owner=owner_html, light=esc(light),
+                 board=self.href(self.path(lang, "board")))
         return self.layout(lang, kind, f'{t(lang, kind)} · {self.name}', t(lang, "home_desc"),
                            f'<article class="prose"><h1>{t(lang, kind)}</h1>{body}</article>')
 
@@ -983,7 +1048,7 @@ location.replace("{self.prefix}/ca/");}})();
     def sitemap(self):
         today = self.now.date().isoformat()
         urls = []
-        daily = ("home", "agenda", "leisure", "picks", "save", "aids", "jobs", "invest", "directory")
+        daily = ("home", "agenda", "leisure", "picks", "board", "save", "aids", "jobs", "invest", "directory")
         for kind in daily + ("emergency", "about", "legal", "privacy"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}"/>'
                            for lg in LANGS)
@@ -1021,6 +1086,7 @@ location.replace("{self.prefix}/ca/");}})();
             self.write(self.path(lang, "agenda"), self.agenda_page(lang))
             self.write(self.path(lang, "leisure"), self.leisure_page(lang))
             self.write(self.path(lang, "picks"), self.picks_page(lang))
+            self.write(self.path(lang, "board"), self.board_page(lang))
             self.write(self.path(lang, "save"), self.save_page(lang))
             self.write(self.path(lang, "aids"), self.aids_page(lang))
             self.write(self.path(lang, "jobs"), self.jobs_page(lang))

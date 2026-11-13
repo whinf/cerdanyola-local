@@ -1,2 +1,6 @@
 _site/
 __pycache__/
+worker/.dev.vars
+data/board.json
+worker/.wrangler/
+worker/node_modules/

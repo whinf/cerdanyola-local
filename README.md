@@ -15,7 +15,8 @@ Web local de Cerdanyola del Vallès y Bellaterra, en catalán, castellano e ingl
 - la calidad del aire;
 - un directorio de equipamientos públicos y puntos de recarga;
 - una página de emergencias con los teléfonos útiles;
-- `agenda.ics`, la agenda como calendario para suscribirse desde el móvil.
+- `agenda.ics`, la agenda como calendario para suscribirse desde el móvil;
+- un tablón vecinal («Tauler veïnal»): los vecinos piden ayuda, regalan lo que ya no usan o publican chollos y segunda mano, y se responden por email sin que se publique ninguna dirección. Es la única parte con backend: un worker de Cloudflare (`worker/`, gratis) con base de datos D1, Turnstile contra robots y envío de correos por la API de Gmail; moderación automática (filtro, límites, caducidad a 45 días, denuncias) y página de administración. La web estática muestra la lista de la última build (`data/board.json`, no se guarda en git) y `static/board.js` la sustituye por la lista en vivo. Instalación en `worker/README.md`.
 
 Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub Pages. Funciona sin dependencias y sin cookies.
 
@@ -31,6 +32,7 @@ Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub
 | Agenda UAB y entidades | `uab.cat` (HTML) y calendarios WordPress/The Events Calendar (`TRIBE_FEEDS` en `sources.py`) | UAB: CC BY-NC (otra razón para no monetizar). Si una web cae, se conservan sus actos guardados |
 | Empleo | CIDO de la Diputació (`api.diba.cat`) y XML de Feina Activa (SOC) | CC BY 4.0 y Llicència oberta Catalunya |
 | Carburantes | API del Ministerio para la Transición Ecológica (`FiltroMunicipio`) | Reutilización libre citando fuente y fecha |
+| Tablón vecinal | Anuncios de los propios vecinos, vía el worker de Cloudflare (`board_api_url` en `config.json`; `turnstile_site_key` es la clave pública de Turnstile) | Contenido de los usuarios; solo se publican nombre o alias, texto y el contacto que el autor decide mostrar |
 | Recomendaciones | `curated/picks.json`, escrito a mano | Propio; `--check` avisa si una ficha lleva más de un año sin revisar (`checked`) |
 | Guía de ocio | OpenStreetMap vía Overpass API (una consulta al día) | ODbL: `data/leisure.json`, `tests/fixtures/osm.json` y `geo/cerdanyola.json` (término municipal) son © colaboradores de OpenStreetMap, bajo ODbL |
 | Más locales nocturnos | Overture Maps, PMTiles de lugares de la última versión (`stac.overturemaps.org`), leído por rangos HTTP: solo las ~25 teselas de Cerdanyola | CDLA Permissive 2.0 (Meta, BrightQuery...); se descartan los registros con otras licencias. Solo se añaden los que no están ya en OpenStreetMap; `_NIGHT_SKIP` en `sources.py` excluye por nombre los clubs de alterne (y se omite la categoría adult_entertainment de Overture) |

@@ -1202,3 +1202,27 @@ def fetch_light(now, url=None):
     if not url:
         raise FetchError("sin URL de la web de la luz (define LIGHT_API_URL)")
     return parse_light(get_json(url))
+
+
+# ---------- tauler veïnal (worker de Cloudflare; solo los campos públicos) ----------
+BOARD_FIELDS = ("id", "cat", "lang", "title", "body", "name", "contact", "price", "created", "expires")
+
+
+def parse_board(doc):
+    posts = doc.get("posts") if isinstance(doc, dict) else None
+    if not isinstance(posts, list):
+        raise FetchError("respuesta del tauler sin «posts»")
+    out = []
+    for p in posts[:200]:
+        if not isinstance(p, dict) or not p.get("id") or not p.get("title"):
+            continue
+        out.append({k: p.get(k) for k in BOARD_FIELDS if p.get(k) is not None})
+    return {"posts": out}
+
+
+def fetch_board(now, url=None):
+    """Anuncios vivos del tauler para la versión estática (sin JS / SEO). No se guarda en git."""
+    url = url or os.environ.get("BOARD_API_URL")
+    if not url:
+        raise FetchError("sin URL del tauler (board_api_url en config.json)")
+    return parse_board(get_json(url.rstrip("/") + "/posts"))

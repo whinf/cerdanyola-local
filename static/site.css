@@ -43,4 +43,28 @@
   .months li { margin-block: 4px; }
   .prose { max-inline-size: 68ch; }
   @media (max-width: 36rem) { .events li { padding: .55rem .7rem; } }
+
+  /* Tauler veïnal */
+  .board-cats { list-style: none; padding: 0; margin: 0 0 var(--s-4); display: grid; gap: 4px; }
+  .board-cats .i { color: var(--accent); vertical-align: -.15em; margin-inline-end: .35em; }
+  .board-head { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; justify-content: space-between; margin-block: var(--s-4); }
+  .board-filters { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .board-filters button { border: 1px solid var(--border); background: var(--surface); color: var(--ink-2); border-radius: var(--r-pill); padding: .3rem .85rem; cursor: pointer; display: inline-flex; align-items: center; gap: .35em; }
+  .board-filters button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .board-new { border: 0; cursor: pointer; }
+  .post .body { margin: .2rem 0; white-space: pre-line; overflow-wrap: anywhere; }
+  .post .contact, .post .actions { margin: .2rem 0 0; font-size: var(--fs-s); }
+  .linkish { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; }
+  .linkish.muted { color: var(--ink-2); }
+  dialog.board { inline-size: min(34rem, calc(100vw - 2rem)); padding: var(--s-4) var(--s-5); color: var(--ink); }
+  dialog.board::backdrop { background: rgb(0 0 0 / .45); }
+  dialog.board h2 { margin-block-start: 0; }
+  form.board label { display: block; margin-block: var(--s-3); }
+  form.board label > span { display: block; font-size: var(--fs-s); color: var(--ink-2); margin-block-end: 2px; }
+  form.board input:not([type="checkbox"]), form.board textarea, form.board select { inline-size: 100%; box-sizing: border-box; padding: .45rem .6rem; border: 1px solid var(--border); border-radius: var(--r-s); background: var(--surface); color: var(--ink); }
+  form.board label.check { display: flex; gap: .5rem; align-items: flex-start; }
+  form.board label.check span { font-size: inherit; color: inherit; }
+  form.board .msg { color: var(--bad-ink); min-block-size: 1.2em; margin: var(--s-2) 0; }
+  form.board .buttons { display: flex; gap: var(--s-3); align-items: center; margin: 0; }
+  .cf-turnstile { margin-block: var(--s-3); min-block-size: 0; }
 }

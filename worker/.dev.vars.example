@@ -1,0 +1,13 @@
+# Copia este archivo a .dev.vars (no se sube a git) para `npx wrangler dev`.
+# Claves de prueba de Turnstile: siempre pasan.
+TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+# Site key de prueba para el widget del cliente: 1x00000000000000000000AA
+GMAIL_CLIENT_ID=
+GMAIL_CLIENT_SECRET=
+GMAIL_REFRESH_TOKEN=
+GMAIL_FROM=tu-cuenta@gmail.com
+ADMIN_KEY=cambia-esta-clave
+ADMIN_EMAIL=tu-cuenta@gmail.com
+IP_SALT=una-cadena-aleatoria-larga
+# Sin Gmail en local: con MAIL_DRY_RUN=1 el worker imprime los correos en la consola de `wrangler dev`.
+MAIL_DRY_RUN=1
