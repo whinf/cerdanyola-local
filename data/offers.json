@@ -1,6 +1,32 @@
 {
  "data": [
   {
+   "company": "Talher, S.A.",
+   "contract": "Contracte laboral temporal (12 mesos)",
+   "date": "2026-11-13",
+   "hours": "Jornada completa",
+   "salary": [
+    1216,
+    1217
+   ],
+   "title": "Netejador/a. cerdanyola del vallès",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328826"
+  },
+  {
+   "company": "Personal",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-13",
+   "hours": "Jornada parcial matí (17 hores - jornada setmanal)",
+   "salary": [
+    519,
+    600
+   ],
+   "title": "Cuidador/a de persona gran a domicili",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328892"
+  },
+  {
    "company": "Tenstalent",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-12",
@@ -181,19 +207,6 @@
    "title": "Auxiliar administratiu/iva (ref. 31155)",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202631155"
-  },
-  {
-   "company": "Empresa de serveis ambientals",
-   "contract": "Contracte laboral temporal (6 mesos)",
-   "date": "2026-10-28",
-   "hours": "Jornada completa",
-   "salary": [
-    1464,
-    1464
-   ],
-   "title": "Administratiu/iva de coordinació de serveis de recollida",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327781"
   },
   {
    "company": "Empresa de neteja",
@@ -678,6 +691,19 @@
    "title": "Responsable de manteniment",
    "town": "RIPOLLET",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325417"
+  },
+  {
+   "company": "Calaf Rajo y Asociados SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-13",
+   "hours": "Jornada completa",
+   "salary": [
+    1750,
+    1750
+   ],
+   "title": "Gerocultor/a",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328897"
   },
   {
    "company": "GROWING UP HR SL",
@@ -1976,16 +2002,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   },
   {
-   "company": "First Hunting RRHH",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-16",
-   "hours": "Jornada completa",
-   "salary": [],
-   "title": "Técnico/a soporte electrónico – junior",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324859"
-  },
-  {
    "company": "RAM Sant Cugat 2016, SL",
    "contract": "Contracte laboral indefinit",
    "date": "2026-09-16",
@@ -1999,5 +2015,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
   }
  ],
- "fetched": "2026-11-12T22:51:02+01:00"
+ "fetched": "2026-11-13T14:09:58+01:00"
 }

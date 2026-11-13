@@ -1,39 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-12",
-   "group": "A",
-   "kind": "Laboral temporal",
-   "km": 5.3,
-   "org": "Generalitat de Catalunya - Centre d'Alt Rendiment Esportiu (CAR)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tutor (Sant Cugat del Vallès)",
-   "url": "https://cido.diba.cat/oposicions/22426120"
-  },
-  {
-   "end": "2026-11-12",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.1,
-   "org": "Ministerio de Ciencia, Innovación y Universidades - Consejo Superior de Investigaciones Científicas (CSIC) - Institut de Ciències Espacials (ICE)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Software Engineer - Scheduler Development for the Cherenkov Telescope Array Observatory",
-   "url": "https://cido.diba.cat/oposicions/22405188"
-  },
-  {
-   "end": "2026-11-12",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic superior de suport a la recerca amb destinació al Departament de Psicologia Bàsica, Evolutiva i de l'Evolució",
-   "url": "https://cido.diba.cat/oposicions/22449688"
-  },
-  {
    "end": "2026-11-13",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -342,6 +309,17 @@
    "url": "https://cido.diba.cat/oposicions/22461884"
   },
   {
+   "end": "2026-11-20",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Predoctoral researcher for Severo Ochoa Project Effects of climate change and other stressors on solitary bee populations",
+   "url": "https://cido.diba.cat/oposicions/22489697"
+  },
+  {
    "end": "2026-11-21",
    "group": "C1",
    "kind": "Laboral temporal",
@@ -351,6 +329,17 @@
    "pool": false,
    "title": "1 plaça de Tècnic de laboratori",
    "url": "https://cido.diba.cat/oposicions/22367292"
+  },
+  {
+   "end": "2026-11-22",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en Cirurgia Ortopèdica i Traumatologia",
+   "url": "https://cido.diba.cat/oposicions/22489350"
   },
   {
    "end": "2026-11-22",
@@ -498,17 +487,6 @@
   {
    "end": "2026-11-26",
    "group": "A2",
-   "kind": "Funcionari",
-   "km": 9.1,
-   "org": "Ajuntament de Rubí",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça de Tècnic mitjà - Inspector d'activitats",
-   "url": "https://cido.diba.cat/oposicions/22449413"
-  },
-  {
-   "end": "2026-11-26",
-   "group": "A2",
    "kind": "Laboral",
    "km": 6.0,
    "org": "Ajuntament de Santa Perpètua de Mogoda",
@@ -563,6 +541,28 @@
   },
   {
    "end": "2026-11-27",
+   "group": "C2",
+   "kind": "Laboral temporal",
+   "km": 13.1,
+   "org": "Ajuntament de Sentmenat",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça d'Oficial 2a pintor. Pla Local d'Ocupació",
+   "url": "https://cido.diba.cat/oposicions/22489105"
+  },
+  {
+   "end": "2026-11-27",
+   "group": "Agrupacions professionals",
+   "kind": "Laboral temporal",
+   "km": 13.1,
+   "org": "Ajuntament de Sentmenat",
+   "places": 2,
+   "pool": true,
+   "title": "2 places de Peó de neteja viària. Pla Local d'Ocupació",
+   "url": "https://cido.diba.cat/oposicions/22489102"
+  },
+  {
+   "end": "2026-11-27",
    "group": "A2",
    "kind": "Laboral",
    "km": 10.2,
@@ -571,6 +571,17 @@
    "pool": false,
    "title": "5 places d'Infermer d'Atenció Intermèdia Extrahospitalària",
    "url": "https://cido.diba.cat/oposicions/22405337"
+  },
+  {
+   "end": "2026-11-27",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Junior Postdoc - Advanced Electron Nanoscopy (GAeN) Group",
+   "url": "https://cido.diba.cat/oposicions/22491151"
   },
   {
    "end": "2026-11-29",
@@ -670,6 +681,17 @@
    "pool": false,
    "title": "2 places de Postdoctoral Positions in Simulation-Based Inference for Cosmology",
    "url": "https://cido.diba.cat/oposicions/22358180"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "A2",
+   "kind": "Funcionari",
+   "km": 9.1,
+   "org": "Ajuntament de Rubí",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça de Tècnic mitjà - Inspector d'activitats",
+   "url": "https://cido.diba.cat/oposicions/22449413"
   },
   {
    "end": "2026-12-02",
@@ -890,6 +912,17 @@
    "pool": false,
    "title": "1 plaça de Metge especialista en Cardiologia",
    "url": "https://cido.diba.cat/oposicions/22329273"
+  },
+  {
+   "end": "2026-12-31",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.1,
+   "org": "Institut de Física d'Altes Energies (IFAE)",
+   "places": 2,
+   "pool": false,
+   "title": "2 places de Postdoctoral Junior Researcher position in Theory Group",
+   "url": "https://cido.diba.cat/oposicions/22491711"
   },
   {
    "end": "2027-01-31",
@@ -1266,5 +1299,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-12T22:51:02+01:00"
+ "fetched": "2026-11-13T14:09:58+01:00"
 }

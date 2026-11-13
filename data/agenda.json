@@ -63,43 +63,13 @@
    },
    {
     "category": "",
-    "end": "2026-11-12",
-    "place": "Ateneu de Cerdanyola",
-    "source": "afocer",
-    "start": "2026-11-12",
-    "time": "18:30",
-    "title": "Fotos de vacances",
-    "url": "https://afocer.cat/event/fotos-de-vacances/"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-12",
+    "end": "2026-11-13",
     "place": "",
     "source": "ajuntament",
-    "start": "2026-11-12",
-    "time": "18:30",
-    "title": "Tertúlia filosòfica",
-    "url": "https://www.cerdanyola.cat/agenda/tertulia-filosofica-29"
-   },
-   {
-    "category": "Teatre i dansa",
-    "end": "2026-11-12",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-12",
-    "time": "20:00",
-    "title": "Musical 'Los Miserables'. Festa de Tardor de Sant Martí",
-    "url": "https://www.cerdanyola.cat/agenda/musical-los-miserables-festa-de-tardor-de-sant-marti"
-   },
-   {
-    "category": "Cinema",
-    "end": "2026-11-12",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-12",
-    "time": "20:30",
-    "title": "Cinema: La isla de Amrum",
-    "url": "https://www.cerdanyola.cat/agenda/cinema-la-isla-de-amrum"
+    "start": "2026-11-13",
+    "time": "13:00",
+    "title": "Festa de Tardor de Sant Martí - 13 de novembre",
+    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-13-de-novembre-1"
    },
    {
     "category": "Activitats del Servei de Patrimoni",
@@ -112,6 +82,16 @@
     "url": "https://www.cerdanyola.cat/agenda/vine-al-museu-de-ca-noliver-sant-marti-1"
    },
    {
+    "category": "Conferències",
+    "end": "2026-11-13",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-13",
+    "time": "18:00",
+    "title": "25N Xerrada 'Mariana Pineda: La dona que va desafiar un rei'",
+    "url": "https://www.cerdanyola.cat/agenda/25n-xerrada-mariana-pineda-la-dona-que-va-desafiar-un-rei"
+   },
+   {
     "category": "Altres activitats",
     "end": "2026-11-13",
     "place": "",
@@ -120,6 +100,16 @@
     "time": "18:00",
     "title": "Tallers Aula de Cuina del Mercat de Les Fontetes",
     "url": "https://www.cerdanyola.cat/agenda/tallers-aula-de-cuina-del-mercat-de-les-fontetes"
+   },
+   {
+    "category": "Teatre i dansa",
+    "end": "2026-11-13",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-13",
+    "time": "20:30",
+    "title": "Monòleg 'Tinder sorpresa. It's a match'",
+    "url": "https://www.cerdanyola.cat/agenda/monoleg-tinder-sorpresa-its-match"
    },
    {
     "category": "Fires i mercats",
@@ -180,6 +170,16 @@
     "time": "",
     "title": "Exposició Violència 0 a Can Cuiàs",
     "url": "https://afocer.cat/event/exposicio-violencia-0-a-can-cuias/"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-15",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-15",
+    "time": "09:00",
+    "title": "Cerdanyola Street Motor Show i Motofest",
+    "url": "https://www.cerdanyola.cat/agenda/cerdanyola-street-motor-show-i-motofest"
    },
    {
     "category": "Festes populars",
@@ -402,6 +402,16 @@
     "url": "https://www.cerdanyola.cat/agenda/presentacio-del-poemari-la-tumba-del-poeta"
    },
    {
+    "category": "Teatre i dansa",
+    "end": "2026-11-20",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-20",
+    "time": "20:00",
+    "title": "Teatre 'La Ratonera'",
+    "url": "https://www.cerdanyola.cat/agenda/teatre-la-ratonera"
+   },
+   {
     "category": "Esports",
     "end": "2026-11-21",
     "place": "",
@@ -410,6 +420,36 @@
     "time": "17:30",
     "title": "38a edició Milles de Cerdanyola",
     "url": "https://www.cerdanyola.cat/agenda/38a-edicio-milles-de-cerdanyola"
+   },
+   {
+    "category": "Música",
+    "end": "2026-11-21",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-21",
+    "time": "19:00",
+    "title": "Concert de Santa Cecilia de l'AMCV",
+    "url": "https://www.cerdanyola.cat/agenda/concert-de-santa-cecilia-de-lamcv-1"
+   },
+   {
+    "category": "Infància",
+    "end": "2026-11-22",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-22",
+    "time": "11:30",
+    "title": "Jugatecambiental. Escape room: refredem el planeta",
+    "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-escape-room-refredem-el-planeta"
+   },
+   {
+    "category": "Infància",
+    "end": "2026-11-22",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-22",
+    "time": "12:00",
+    "title": "Teatre familiar 'SPUMae'",
+    "url": "https://www.cerdanyola.cat/agenda/teatre-familiar-spumae"
    },
    {
     "category": "Música",
@@ -757,14 +797,6 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -777,8 +809,16 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-12T22:51:02+01:00"
+ "fetched": "2026-11-13T14:09:58+01:00"
 }

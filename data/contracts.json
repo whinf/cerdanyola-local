@@ -1,6 +1,47 @@
 {
  "data": [
   {
+   "amount": 294824.82,
+   "date": "2026-11-12",
+   "deadline": "",
+   "id": "16138154/151/2026/0008",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Contracte basat en l'acord marc d'obres asfaltatge amb destinació a les entitats locals Catalunya. Zona 5",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/190a0ffd-214c-484b-b819-e2560f22f521/300937300",
+   "winners": [
+    "UTE CONSORCI EGARA VALLES OCCIDENTAL, CCDL"
+   ]
+  },
+  {
+   "amount": 25500.0,
+   "date": "2026-11-12",
+   "deadline": "2026-06-15T14:00",
+   "id": "11712474/5/2026",
+   "lots": 0,
+   "organ": "Fundació Universitat Autònoma de Barcelona MP",
+   "phase": "Formalització",
+   "title": "Contracte del servei de gestió, seguiment analític, monitorització i optimització de campanyes publicitàries en cercadors web, mitjans digitals i xarxes socials",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/629a9efb-3a25-4b6d-af74-6e2285cd4f18/300936318",
+   "winners": []
+  },
+  {
+   "amount": 126098.59,
+   "date": "2026-11-12",
+   "deadline": "2026-11-30T13:00",
+   "id": "11061850/CONTR-44/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Obres de substitució de la Planta Refredadora, per una Bomba de Calor, a l’edifici L (Biblioteca d’Humanitats).",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/0e00420a-d97a-444c-b98f-eca2e1e5b4da/300937184",
+   "winners": []
+  },
+  {
    "amount": 19950.0,
    "date": "2026-11-11",
    "deadline": "2026-11-05T14:00",
@@ -500,19 +541,6 @@
    "title": "Servei d'Informació i Atenció a les Dones i persones LGTBI",
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/3c58e112-5b30-4eba-af89-83f758810523/300924335",
-   "winners": []
-  },
-  {
-   "amount": 126098.59,
-   "date": "2026-10-30",
-   "deadline": "2026-11-30T13:00",
-   "id": "11061850/CONTR-44/2026",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Anunci de licitació",
-   "title": "Obres de substitució de la Planta Refredadora, per una Bomba de Calor, a l’edifici L (Biblioteca d’Humanitats).",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/0e00420a-d97a-444c-b98f-eca2e1e5b4da/300924389",
    "winners": []
   },
   {
@@ -1364,19 +1392,6 @@
     "SBS SIMON I BLANCO, SL",
     "IGREMAP, SLP"
    ]
-  },
-  {
-   "amount": 25500.0,
-   "date": "2026-09-30",
-   "deadline": "2026-06-15T14:00",
-   "id": "11712474/5/2026",
-   "lots": 0,
-   "organ": "Fundació Universitat Autònoma de Barcelona MP",
-   "phase": "Adjudicació",
-   "title": "Contracte del servei de gestió, seguiment analític, monitorització i optimització de campanyes publicitàries en cercadors web, mitjans digitals i xarxes socials",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/629a9efb-3a25-4b6d-af74-6e2285cd4f18/300896051",
-   "winners": []
   },
   {
    "amount": 17679.55,
@@ -5449,36 +5464,6 @@
    ]
   },
   {
-   "amount": 90135.56,
-   "date": "2025-10-08",
-   "deadline": "",
-   "id": "23584847/021/2022",
-   "lots": 0,
-   "organ": "Consorci Urbanístic del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Execució",
-   "title": "Direcció Obra, DA i CSS de les Obres del 2on tram Eixos 3B i C",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e56c7b9d-f837-40a1-a302-472a276374f3/300693309",
-   "winners": [
-    "PROJECTS & FACILITIES MANAGEMENT"
-   ]
-  },
-  {
-   "amount": 30425.0,
-   "date": "2025-10-08",
-   "deadline": "2025-07-22T12:36",
-   "id": "11061850/CONTR-86/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Execució",
-   "title": "Servei relacionat amb l’espai necessari per a la instal·lació i la posada a disposició de l’estand de la UAB al Mobile World Congress 2026",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a25cfedb-76c3-46a4-aff5-0dc85aaab8be/300819693",
-   "winners": [
-    "GSMA 4YFN Event Management, S.L."
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5505,5 +5490,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-12T22:51:02+01:00"
+ "fetched": "2026-11-13T14:09:58+01:00"
 }

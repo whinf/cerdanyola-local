@@ -2,11 +2,10 @@
  "data": [
   {
    "lines": [
-    "R7",
-    "R8"
+    "R7"
    ],
    "text": {
-    "es": "Amb motiu de les pluges i les afectacions operatives derivades de la vaga d'ahir, es poden produir retards al servei de Rodalies de Catalunya. S'ha establert un servei de reforç per carretera a diferents punts de la xarxa. Recomanem planificar els desplaçaments i consultar l'estat del servei a rodalies.gencat.cat."
+    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Cerdanyola del Vallès i Cerdanyola Universitat."
    }
   },
   {
@@ -23,9 +22,36 @@
     "R8"
    ],
    "text": {
+    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Maçanet-Massanes i Blanes."
+   }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "A causa d'una incidència operativa i d'una incidència a la infraestructura per robatori de cable a Fabra i Puig, s'ha establert un servei de reforç per carretera entre Manresa i Terrassa Estació del Nord, amb parades intermèdies."
+   }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "A causa d'una incidència operativa, s'ha establert un servei de reforç per carretera entre Sant Vicenç de Calders i Vilanova i la Geltrú, amb parades intermèdies."
+   }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
     "es": "Per obres d'Adif a l'entorn de Castelldefels, del 12 de novembre al 14 de desembre es modifica temporalment el servei de la línia R2. Els trens Granollers Centre - Castelldefels iniciaran i finalitzaran el seu recorregut a Gavà."
    }
   }
  ],
- "fetched": "2026-11-12T22:51:02+01:00"
+ "fetched": "2026-11-13T14:09:58+01:00"
 }
