@@ -69,3 +69,10 @@ python -m http.server 8001 -d _site
 - El marco común (`static/base.css`, `static/ui.js`, `static/fonts/`, `src/icons.py`) se sincroniza desde `llum-hores` con `python ..\tools\sync_base.py`; no se edita aquí. Las reglas propias están en `static/site.css`; el generador sirve un solo `static/style.css`.
 - Iconos meteorológicos: `static/wx/*.svg`, de [MET Norway weathericons](https://github.com/metno/weathericons) (MIT). Resto de iconos: Lucide (ISC) vía `src/icons.py`.
 - PNG (iconos PWA, `apple-touch-icon`, `og.png`): `py tools/make_assets.py` (Pillow, solo en local).
+
+## App instalable (PWA)
+La web se instala como app desde la propia web, sin tiendas: en Android/Chrome/Edge aparece el botón «Instala la app» (portada y pie); en iPhone/iPad, «Compartir → Añadir a pantalla de inicio». Piezas:
+- `static/app.js`: registra el service worker y enseña el botón solo donde se puede instalar.
+- `static/sw.js` → se sirve en `/sw.js` (controla toda la web): páginas red primero y, sin conexión, copia guardada u `offline.html`; `/static/` desde caché con actualización en segundo plano. Cada build estrena caché (`__BUILD__`). Las peticiones al worker del tablón no se tocan.
+- Un manifest por idioma (`static/manifest.{ca,es,en}.webmanifest`, `display: standalone`, accesos directos a agenda, tablón y 112).
+- Para probar en local: `python src/build.py --offline`, servir `_site` y abrir `http://localhost:8001/ca/` (localhost cuenta como contexto seguro; en las herramientas del navegador, Application → Service workers / Manifest).

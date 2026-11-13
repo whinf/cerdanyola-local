@@ -67,4 +67,14 @@
   form.board .msg { color: var(--bad-ink); min-block-size: 1.2em; margin: var(--s-2) 0; }
   form.board .buttons { display: flex; gap: var(--s-3); align-items: center; margin: 0; }
   .cf-turnstile { margin-block: var(--s-3); min-block-size: 0; }
+
+  /* Instalación como app (PWA): oculto hasta que app.js sabe que se puede instalar */
+  .install[hidden] { display: none; }
+  .install button.donate { border: 0; cursor: pointer; }
+  .install details { margin-block: var(--s-2) 0; font-size: var(--fs-s); }
+  .install details p { margin: 0 0 var(--s-2); color: var(--ink-2); }
+  .install[data-mode="prompt"] details { display: none; }
+  .foot .install { margin-block-end: var(--s-3); }
+  .tip.install > div { flex: 1; }
+  .tip.install p + p { margin-block-start: var(--s-2); }
 }

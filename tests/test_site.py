@@ -369,6 +369,22 @@ class TestSite(unittest.TestCase):
             self.assertIn('href="#i-utensils"', picks_en)
             self.assertTrue((out / "static/style.css").exists())
             self.assertFalse((out / "static/base.css").exists())
+            sw = (out / "sw.js").read_text(encoding="utf-8")  # en la raíz, versionado por build
+            self.assertIn('"cerdanyola-20', sw)
+            self.assertNotIn("__BUILD__", sw)
+            self.assertFalse((out / "static/sw.js").exists())
+            mans = {lg: json.loads((out / f"static/manifest.{lg}.webmanifest").read_text(encoding="utf-8")) for lg in i18n.LANGS}
+            self.assertEqual({m["id"] for m in mans.values()}, {"/cerdanyola-local/"})  # una sola app
+            self.assertEqual(mans["es"]["start_url"], "/cerdanyola-local/es/")
+            self.assertEqual(mans["en"]["display"], "standalone")
+            self.assertEqual(mans["ca"]["shortcuts"][2]["url"], "/cerdanyola-local/ca/emergencies/")
+            self.assertIn("/static/manifest.en.webmanifest", picks_en)
+            self.assertIn('data-sw="/cerdanyola-local/sw.js"', picks_en)
+            self.assertIn("data-install", picks_en)
+            self.assertIn('href="#i-smartphone"', home)
+            offline = (out / "offline.html").read_text(encoding="utf-8")
+            self.assertIn("noindex", offline)
+            self.assertIn("Sense connexió", offline)
             sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
             self.assertIn('href="tel:112"', sos)
             self.assertIn("Policia Local", sos)

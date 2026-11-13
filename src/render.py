@@ -176,6 +176,7 @@ class Site:
         donate = (f'<p class="support"><a class="donate" href="{esc(self.cfg["donate_url"])}" rel="noopener">'
                   f'{self.i("heart")} {t(lang, "donate")}</a></p>'
                   if self.cfg.get("donate_url") else "")
+        install = self.install_block(lang)
         updated = max((v.get("fetched") or "" for v in self.data.values()), default="")
         sprite = icons.sprite(self.icons)
         self.icons.clear()
@@ -202,12 +203,13 @@ class Site:
 {THEME_COLOR}
 <link rel="icon" href="{self.href('/static/favicon.svg')}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{self.href('/static/apple-touch-icon.png')}">
-<link rel="manifest" href="{self.href('/static/manifest.webmanifest')}">
+<link rel="manifest" href="{self.href(f'/static/manifest.{lang}.webmanifest')}">
 <link rel="preload" href="{self.href('/static/fonts/inter-latin.var.woff2')}" as="font" type="font/woff2" crossorigin>
 {THEME_SCRIPT}
 <link rel="stylesheet" href="{self.href('/static/style.css')}">
 {head}{ld}
 <script src="{self.href('/static/ui.js')}" defer></script>
+<script src="{self.href('/static/app.js')}" data-sw="{self.href('/sw.js')}" defer></script>
 </head>
 <body>
 {sprite}
@@ -224,11 +226,20 @@ class Site:
 <footer class="foot"><div class="wrap">
 <p>{t(lang, "source_line", t=fmt_dt(updated))}</p>
 <ul class="foot-links">{"".join(links)}</ul>
-{donate}
+{install}{donate}
 </div></footer>
 </body>
 </html>
 """
+
+    def install_block(self, lang, home=False):
+        """Botón «Instala la app» (PWA). Va oculto: app.js lo enseña solo donde el navegador permite instalar."""
+        btn = f'<button type="button" class="donate">{self.i("smartphone")} {t(lang, "install_button")}</button>'
+        help_ = f'<details><summary>{t(lang, "install_ios_q")}</summary><p>{t(lang, "install_ios")}</p></details>'
+        if home:
+            return (f'<aside class="tip install" hidden data-install>{self.i("smartphone")}<div>'
+                    f'<p><strong>{t(lang, "install_title")}</strong> {t(lang, "install_text")}</p><p>{btn}</p>{help_}</div></aside>')
+        return f'<div class="install" hidden data-install><p>{btn}</p>{help_}</div>'
 
     # ---------- bloques ----------
     def weather(self, lang):
@@ -818,7 +829,7 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
-                f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.light(lang)}{self.transport(lang)}'
+                f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.install_block(lang, home=True)}{self.light(lang)}{self.transport(lang)}'
                 f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
                 f'{self.fuel_preview(lang)}'
                 f'{self.air(lang)}{quick}')
@@ -987,6 +998,8 @@ class Site:
 {alts}<link rel="alternate" hreflang="x-default" href="{self.absolute('/')}">
 {THEME_COLOR}
 <link rel="icon" href="{self.href('/static/favicon.svg')}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{self.href('/static/apple-touch-icon.png')}">
+<link rel="manifest" href="{self.href('/static/manifest.webmanifest')}">
 {THEME_SCRIPT}
 <link rel="stylesheet" href="{self.href('/static/style.css')}">
 <script>
@@ -1003,6 +1016,12 @@ location.replace("{self.prefix}/ca/");}})();
         body = "".join(f'<p lang="{lg}"><strong>{t(lg, "notfound_title")}.</strong> '
                        f'<a href="{self.href(self.path(lg, "home"))}">{t(lg, "notfound_text")}</a></p>' for lg in LANGS)
         return self.layout("ca", "home", t("ca", "notfound_title"), "", body, noindex=True)
+
+    def offline_page(self):
+        """Página que sirve el service worker cuando no hay conexión ni copia guardada de la pedida."""
+        body = "".join(f'<p lang="{lg}"><strong>{t(lg, "offline_title")}.</strong> '
+                       f'<a href="{self.href(self.path(lg, "home"))}">{t(lg, "offline_text")}</a></p>' for lg in LANGS)
+        return self.layout("ca", "home", t("ca", "offline_title"), "", body, noindex=True)
 
     def ics(self):
         """Agenda en iCalendar para suscribirse desde el móvil o Google Calendar (sin los actos de semanas)."""
@@ -1068,10 +1087,19 @@ location.replace("{self.prefix}/ca/");}})();
         for f in ("base.css", "site.css"):
             (static / f).unlink()
 
-    def manifest(self):
-        return {"name": self.name, "short_name": self.name, "lang": LANGS[0],
-                "start_url": self.href(self.path(LANGS[0], "home")), "scope": self.href("/"),
-                "display": "minimal-ui", "background_color": "#f9f9f7", "theme_color": "#0b6b3a",
+    def write_sw(self):
+        """El service worker se sirve en la raíz (así controla toda la web); la fecha del build versiona la caché."""
+        src = self.out / "static" / "sw.js"
+        (self.out / "sw.js").write_text(src.read_text("utf-8").replace("__BUILD__", self.now.strftime("%Y%m%d%H%M%S")), "utf-8")
+        src.unlink()
+
+    def manifest(self, lang):
+        """Un manifest por idioma: la app arranca en el idioma desde el que se instaló; `id` común = una sola app."""
+        return {"id": self.href("/"), "name": self.name, "short_name": self.name, "description": t(lang, "home_desc"),
+                "lang": lang, "start_url": self.href(self.path(lang, "home")), "scope": self.href("/"),
+                "display": "standalone", "background_color": "#f9f9f7", "theme_color": "#0b6b3a",
+                "shortcuts": [{"name": t(lang, "nav_" + k), "url": self.href(self.path(lang, k))}
+                              for k in ("agenda", "board", "emergency")],
                 "icons": [{"src": self.href("/static/icon-192.png"), "sizes": "192x192", "type": "image/png"},
                           {"src": self.href("/static/icon-512.png"), "sizes": "512x512", "type": "image/png",
                            "purpose": "any maskable"}]}
@@ -1082,7 +1110,10 @@ location.replace("{self.prefix}/ca/");}})();
         self.out.mkdir(parents=True)
         shutil.copytree(ROOT / "static", self.out / "static")
         self.write_css()
-        self.write("/static/manifest.webmanifest", json.dumps(self.manifest(), ensure_ascii=False))
+        self.write_sw()
+        for lang in LANGS:
+            self.write(f"/static/manifest.{lang}.webmanifest", json.dumps(self.manifest(lang), ensure_ascii=False))
+        self.write("/static/manifest.webmanifest", json.dumps(self.manifest(LANGS[0]), ensure_ascii=False))
         for lang in LANGS:
             self.write(self.path(lang, "home"), self.home(lang))
             self.write(self.path(lang, "agenda"), self.agenda_page(lang))
@@ -1100,6 +1131,7 @@ location.replace("{self.prefix}/ca/");}})();
                 self.write(self.path(lang, kind), self.text_page(lang, kind))
         self.write("/", self.root_page())
         self.write("/404.html", self.not_found())
+        self.write("/offline.html", self.offline_page())
         self.write("/sitemap.xml", self.sitemap())
         (self.out / "agenda.ics").write_bytes(self.ics().encode("utf-8"))
         self.write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {self.absolute('/sitemap.xml')}\n")

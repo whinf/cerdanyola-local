@@ -328,6 +328,10 @@ STRINGS = {
         "nav_picks": "Recomanacions", "nav_save": "Estalvia", "nav_aids": "Ajudes", "nav_jobs": "Feina",
         "nav_invest": "Inversions", "nav_directory": "Equipaments", "nav_emergency": "112",
         "theme_auto": "Tema: automàtic", "theme_light": "Tema: clar", "theme_dark": "Tema: fosc",
+        "install_title": "Porta Cerdanyola Avui al mòbil.", "install_text": "Instal·la-la com una app: icona a la pantalla d'inici, pantalla completa i les últimes dades encara que caigui la connexió. Sense botigues ni comptes.",
+        "install_button": "Instal·la l'app", "install_ios_q": "Tens un iPhone o un iPad?",
+        "install_ios": "Obre aquesta web amb el Safari, toca el botó Compartir (el quadrat amb la fletxa) i tria «Afegeix a la pantalla d'inici».",
+        "offline_title": "Sense connexió", "offline_text": "No s'ha pogut carregar aquesta pàgina. Torna-ho a provar quan tinguis connexió o ves a l'inici.",
         "notfound_title": "Pàgina no trobada", "notfound_text": "Aquesta pàgina no existeix. Torna a l'inici.",
         "about_body": """
 <p>{site} reuneix en una sola pàgina dades obertes útils per a la gent de Cerdanyola del Vallès i Bellaterra: el temps, l'agenda, les hores més barates de la llum, els avisos de Rodalies, la qualitat de l'aire, una guia d'oci, les ajudes obertes, la feina, les inversions públiques i maneres d'estalviar.</p>
@@ -579,6 +583,10 @@ STRINGS = {
         "nav_picks": "Recomendaciones", "nav_save": "Ahorra", "nav_aids": "Ayudas", "nav_jobs": "Empleo",
         "nav_invest": "Inversiones", "nav_directory": "Equipamientos", "nav_emergency": "112",
         "theme_auto": "Tema: automático", "theme_light": "Tema: claro", "theme_dark": "Tema: oscuro",
+        "install_title": "Lleva Cerdanyola Avui en el móvil.", "install_text": "Instálala como una app: icono en la pantalla de inicio, pantalla completa y los últimos datos aunque falle la conexión. Sin tiendas ni cuentas.",
+        "install_button": "Instalar la app", "install_ios_q": "¿Tienes iPhone o iPad?",
+        "install_ios": "Abre esta web con Safari, toca el botón Compartir (el cuadrado con la flecha) y elige «Añadir a pantalla de inicio».",
+        "offline_title": "Sin conexión", "offline_text": "No se ha podido cargar esta página. Vuelve a intentarlo cuando tengas conexión o ve al inicio.",
         "notfound_title": "Página no encontrada", "notfound_text": "Esta página no existe. Vuelve al inicio.",
         "about_body": """
 <p>{site} reúne en una sola página datos abiertos útiles para la gente de Cerdanyola del Vallès y Bellaterra: el tiempo, la agenda, las horas más baratas de la luz, los avisos de Rodalies, la calidad del aire, una guía de ocio, las ayudas abiertas, el empleo, las inversiones públicas y formas de ahorrar.</p>
@@ -830,6 +838,10 @@ STRINGS = {
         "nav_picks": "Picks", "nav_save": "Save", "nav_aids": "Grants", "nav_jobs": "Jobs",
         "nav_invest": "Investment", "nav_directory": "Facilities", "nav_emergency": "112",
         "theme_auto": "Theme: auto", "theme_light": "Theme: light", "theme_dark": "Theme: dark",
+        "install_title": "Take Cerdanyola Avui with you.", "install_text": "Install it as an app: an icon on your home screen, full screen and the latest data even when you are offline. No app store, no account.",
+        "install_button": "Install the app", "install_ios_q": "On an iPhone or iPad?",
+        "install_ios": "Open this site in Safari, tap the Share button (the square with the arrow) and choose “Add to Home Screen”.",
+        "offline_title": "No connection", "offline_text": "This page could not be loaded. Try again when you are back online, or go to the home page.",
         "notfound_title": "Page not found", "notfound_text": "This page does not exist. Go back to the home page.",
         "about_body": """
 <p>{site} brings together useful open data for people in Cerdanyola del Vallès and Bellaterra on a single page: weather, events, the cheapest electricity hours, Rodalies train alerts, air quality, a leisure guide, open grants, jobs, public investment and ways to save money.</p>
