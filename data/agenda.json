@@ -62,16 +62,6 @@
     "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-2026"
    },
    {
-    "category": "Festes populars",
-    "end": "2026-11-13",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-13",
-    "time": "13:00",
-    "title": "Festa de Tardor de Sant Martí - 13 de novembre",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-13-de-novembre-1"
-   },
-   {
     "category": "",
     "end": "2026-11-15",
     "place": "",
@@ -80,16 +70,6 @@
     "time": "16:30",
     "title": "Vine al Museu de Ca n'Oliver per Sant Martí!",
     "url": "https://www.cerdanyola.cat/agenda/vine-al-museu-de-ca-noliver-sant-marti-1"
-   },
-   {
-    "category": "Conferències",
-    "end": "2026-11-13",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-13",
-    "time": "18:00",
-    "title": "25N Xerrada 'Mariana Pineda: La dona que va desafiar un rei'",
-    "url": "https://www.cerdanyola.cat/agenda/25n-xerrada-mariana-pineda-la-dona-que-va-desafiar-un-rei"
    },
    {
     "category": "",
@@ -102,27 +82,7 @@
     "url": "https://www.cerdanyola.cat/agenda/taula-amb-el-miquel"
    },
    {
-    "category": "Altres activitats",
-    "end": "2026-11-13",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-13",
-    "time": "18:00",
-    "title": "Tallers Aula de Cuina del Mercat de Les Fontetes",
-    "url": "https://www.cerdanyola.cat/agenda/tallers-aula-de-cuina-del-mercat-de-les-fontetes"
-   },
-   {
-    "category": "Teatre i dansa",
-    "end": "2026-11-13",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-13",
-    "time": "20:30",
-    "title": "Monòleg 'Tinder sorpresa. It's a match'",
-    "url": "https://www.cerdanyola.cat/agenda/monoleg-tinder-sorpresa-its-match"
-   },
-   {
-    "category": "Fires i mercats",
+    "category": "",
     "end": "2026-11-15",
     "place": "",
     "source": "ajuntament",
@@ -840,5 +800,5 @@
    }
   ]
  },
- "fetched": "2026-11-13T22:26:40+01:00"
+ "fetched": "2026-11-14T13:14:17+01:00"
 }

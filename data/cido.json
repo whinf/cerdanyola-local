@@ -1,72 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-13",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Investigador ordinari amb destinació a l'Institut de Govern i Polítiques Públiques",
-   "url": "https://cido.diba.cat/oposicions/22428889"
-  },
-  {
-   "end": "2026-11-13",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Investigador predoctoral amb destinació al Departament d'Història Moderna i Contemporània",
-   "url": "https://cido.diba.cat/oposicions/22462079"
-  },
-  {
-   "end": "2026-11-13",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Personal investigador predoctoral en formació (PIF) per al curs 2026-2027 a l'àrea de coneixement d'Enginyeria Química (B26P0025)",
-   "url": "https://cido.diba.cat/oposicions/22413243"
-  },
-  {
-   "end": "2026-11-13",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Personal investigador predoctoral en formació (PIF) per al curs 2026-2027 a l'àrea de coneixement de Genètica (B26P0007)",
-   "url": "https://cido.diba.cat/oposicions/22413248"
-  },
-  {
-   "end": "2026-11-13",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació al Centre de Recerca i Estudis pel Desenvolupament Organitzatiu",
-   "url": "https://cido.diba.cat/oposicions/22462000"
-  },
-  {
-   "end": "2026-11-13",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació al Departament de Farmacologia, de Terapèutica i de Toxicologia",
-   "url": "https://cido.diba.cat/oposicions/22461946"
-  },
-  {
    "end": "2026-11-14",
    "group": "C2",
    "kind": "Laboral temporal",
@@ -1299,5 +1233,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-13T22:26:40+01:00"
+ "fetched": "2026-11-14T13:14:17+01:00"
 }

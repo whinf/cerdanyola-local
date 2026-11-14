@@ -1200,24 +1200,6 @@
      "business"
     ]
    },
-   "915537": {
-    "budget": 39600000,
-    "checked": "2026-11-13",
-    "end": "",
-    "id": "915537",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
-    "purpose": "Agricultura, Pesca y Alimentación",
-    "received": "2026-06-25",
-    "region": "CATALUÑA",
-    "start": "2026-07-16",
-    "term": "04 Mesos",
-    "title": "Ayudas correspondientes a los años 2025, 2026 y 2027 destinadas a las comunidades de regantes para la mejora y modernización de las redes de regadíos",
-    "title_ca": "Ajuts corresponents als anys 2027, 2028 i 2029 destinats a les comunitats de regants per a la millora i modernització de les xarxes de regadius",
-    "who": [
-     "entities"
-    ]
-   },
    "916806": {
     "budget": 1046100,
     "checked": "2026-11-13",
@@ -3192,14 +3174,6 @@
    }
   },
   "closed": [
-   "868335",
-   "868386",
-   "868409",
-   "868411",
-   "868414",
-   "868416",
-   "868517",
-   "868543",
    "868697",
    "868717",
    "868722",
@@ -4497,6 +4471,7 @@
    "915501",
    "915512",
    "915528",
+   "915537",
    "915538",
    "915544",
    "915558",
@@ -5168,5 +5143,5 @@
    "941997"
   ]
  },
- "fetched": "2026-11-13T22:26:40+01:00"
+ "fetched": "2026-11-14T13:14:17+01:00"
 }

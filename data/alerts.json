@@ -2,10 +2,19 @@
  "data": [
   {
    "lines": [
-    "R7"
+    "R8"
    ],
    "text": {
-    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Cerdanyola del Vallès i Cerdanyola Universitat."
+    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Granollers Centre i Martorell Central, amb parades intermèdies."
+   }
+  },
+  {
+   "lines": [
+    "R7",
+    "R8"
+   ],
+   "text": {
+    "es": "A causa d'una incidència operativa, els trens circulen fora del seu horari habitual i poden veure incrementat el seu temps de recorregut."
    }
   },
   {
@@ -22,7 +31,7 @@
     "R8"
    ],
    "text": {
-    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Maçanet-Massanes i Blanes."
+    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Maçanet-Massanes - Blanes, i entre Blanes - Mataró."
    }
   },
   {
@@ -31,16 +40,7 @@
     "R8"
    ],
    "text": {
-    "es": "A causa d'una incidència operativa i d'una incidència a la infraestructura per robatori de cable a Fabra i Puig, s'ha establert un servei de reforç per carretera entre Manresa i Terrassa Estació del Nord, amb parades intermèdies."
-   }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "A causa d'una incidència operativa, s'ha establert un servei de reforç per carretera entre Sant Vicenç de Calders i Vilanova i la Geltrú, amb parades intermèdies."
+    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Manresa i Terrassa Estació del Nord, amb parades intermèdies."
    }
   },
   {
@@ -53,5 +53,5 @@
    }
   }
  ],
- "fetched": "2026-11-13T22:26:40+01:00"
+ "fetched": "2026-11-14T13:14:17+01:00"
 }

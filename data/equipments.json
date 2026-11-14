@@ -1624,8 +1624,8 @@
    "address": "Ctr.Flor de maig, km. 2,8 - Ap. Correus 140",
    "cat": "Serveis socials especialitzats",
    "cp": "08290",
-   "lat": "41.4668728",
-   "lon": "2.1215773",
+   "lat": "41.4674952",
+   "lon": "2.1227646",
    "name": "Llar residència El Bosc",
    "phone": "935805227",
    "sub": "Serveis adreçats a persones amb discapacitat intel·lectual"
@@ -2241,5 +2241,5 @@
    "sub": ""
   }
  ],
- "fetched": "2026-11-13T14:09:58+01:00"
+ "fetched": "2026-11-14T13:14:17+01:00"
 }
