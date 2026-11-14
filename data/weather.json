@@ -3,27 +3,27 @@
   "days": [
    {
     "date": "2026-11-14",
-    "rain_mm": 0.3,
-    "symbol": "lightrainshowers_day",
-    "tmax": 19,
-    "tmin": 13,
-    "wind_kmh": 10
+    "rain_mm": 0.0,
+    "symbol": "cloudy",
+    "tmax": 13,
+    "tmin": 11,
+    "wind_kmh": 8
    },
    {
     "date": "2026-11-15",
     "rain_mm": 0.0,
     "symbol": "partlycloudy_day",
     "tmax": 18,
-    "tmin": 10,
-    "wind_kmh": 19
+    "tmin": 11,
+    "wind_kmh": 18
    },
    {
     "date": "2026-11-16",
     "rain_mm": 0.0,
-    "symbol": "partlycloudy_day",
+    "symbol": "cloudy",
     "tmax": 18,
-    "tmin": 10,
-    "wind_kmh": 15
+    "tmin": 12,
+    "wind_kmh": 16
    },
    {
     "date": "2026-11-17",
@@ -31,7 +31,7 @@
     "symbol": "lightrain",
     "tmax": 19,
     "tmin": 12,
-    "wind_kmh": 15
+    "wind_kmh": 21
    },
    {
     "date": "2026-11-18",
@@ -51,12 +51,12 @@
    }
   ],
   "now": {
-   "symbol": "lightrainshowers_day",
-   "temp": 18.2,
-   "time": "2026-11-14T13:00:00+01:00",
+   "symbol": "cloudy",
+   "temp": 12.8,
+   "time": "2026-11-14T20:00:00+01:00",
    "wind_kmh": 6
   },
-  "updated": "2026-11-14T11:23:38Z"
+  "updated": "2026-11-14T19:17:36Z"
  },
- "fetched": "2026-11-14T13:14:17+01:00"
+ "fetched": "2026-11-14T20:57:09+01:00"
 }
