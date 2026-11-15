@@ -1956,13 +1956,13 @@
    "group": "eat",
    "hours": "",
    "km": "",
-   "lat": 41.5019141,
-   "lon": 2.1039412,
-   "name": "Restaurant La Plaça",
-   "osm": "way/151608602",
+   "lat": 41.5020345,
+   "lon": 2.1041206,
+   "name": "Restaurant Plaça Cívica",
+   "osm": "node/14378030080",
    "phone": "",
    "ref": "",
-   "type": "restaurant",
+   "type": "fast_food",
    "web": ""
   },
   {
@@ -3616,5 +3616,5 @@
    "web": ""
   }
  ],
- "fetched": "2026-11-14T13:14:17+01:00"
+ "fetched": "2026-11-15T13:46:33+01:00"
 }

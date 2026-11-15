@@ -507,15 +507,6 @@
     "kind": "new",
     "name": "IBARRO VARONA PATRIMONIAL S.L.",
     "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-137-08"
-   },
-   {
-    "activity": "La confeccion, fabricacion, diseño, patronaje, corte y confeccion a medida de todo tipo de prendas de vestir, ropa…",
-    "capital": 3100.0,
-    "date": "2026-07-17",
-    "id": "2026-07-17-336124-new",
-    "kind": "new",
-    "name": "MITA & MM S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-136-08"
    }
   ],
   "known": {
@@ -698,8 +689,8 @@
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-13",
+  "last": "2026-11-14",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-14T20:57:09+01:00"
+ "fetched": "2026-11-15T13:46:33+01:00"
 }

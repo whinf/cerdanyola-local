@@ -430,9 +430,9 @@
    "date": "2026-09-22",
    "hours": "Jornada completa",
    "salary": [],
-   "title": "Chóferes(h/m)",
+   "title": "Mozos/zas de almacén",
    "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325281"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325282"
   },
   {
    "company": "David Fdez. Ttes. S.L.",
@@ -440,9 +440,9 @@
    "date": "2026-09-22",
    "hours": "Jornada completa",
    "salary": [],
-   "title": "Mozos/zas de almacén",
+   "title": "Chóferes(h/m)",
    "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325282"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325281"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -456,19 +456,6 @@
    "title": "Mecànic/a de camions (ref:28014)",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202628014"
-  },
-  {
-   "company": "RED COORDINADORA MULTISERVICIOS CMS SL",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-18",
-   "hours": "Jornada parcial (7 hores - jornada setmanal)",
-   "salary": [
-    266,
-    266
-   ],
-   "title": "Limpiador/a cerdanyola",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325052"
   },
   {
    "company": "Cerdanyola Promocions, S.L.U.",
@@ -492,6 +479,19 @@
    "title": "Auxiliar administratiu/iva",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325023"
+  },
+  {
+   "company": "RED COORDINADORA MULTISERVICIOS CMS SL",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-09-18",
+   "hours": "Jornada parcial (7 hores - jornada setmanal)",
+   "salary": [
+    266,
+    266
+   ],
+   "title": "Limpiador/a cerdanyola",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325052"
   },
   {
    "company": "Nascor Formación SLU",
@@ -525,19 +525,6 @@
    "title": "Técnico/a de montaje audiovisual – pantallas led y eventos",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324995"
-  },
-  {
-   "company": "AUTOCARES DEL NORESTE",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-15",
-   "hours": "Jornada parcial (3 hores - fix i periòdic de caràcter discontinu)",
-   "salary": [
-    350,
-    700
-   ],
-   "title": "Conductores/as de autocar - vallés occidental",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324763"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -945,12 +932,12 @@
    "date": "2026-10-13",
    "hours": "Jornada completa",
    "salary": [
-    2071,
-    2071
+    2200,
+    2200
    ],
-   "title": "Tecnics/tecniques en manteniment mecànic",
+   "title": "Conductor/a de camió formigonera mòbil",
    "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630082"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630124"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -958,12 +945,12 @@
    "date": "2026-10-13",
    "hours": "Jornada completa",
    "salary": [
-    2200,
-    2200
+    2071,
+    2071
    ],
-   "title": "Conductor/a de camió formigonera mòbil",
+   "title": "Tecnics/tecniques en manteniment mecànic",
    "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630124"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630082"
   },
   {
    "company": "FUNDACIO ENGRUNES",
@@ -1081,19 +1068,6 @@
    "title": "Retolista - soldador/a",
    "town": "MONTCADA I REIXAC",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627755"
-  },
-  {
-   "company": "Delivery ASAP S.L",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-15",
-   "hours": "Jornada completa",
-   "salary": [
-    1425,
-    1600
-   ],
-   "title": "Repartidores/as de paquetería",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324776"
   },
   {
    "company": "",
@@ -2015,5 +1989,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324876"
   }
  ],
- "fetched": "2026-11-14T13:14:17+01:00"
+ "fetched": "2026-11-15T13:46:33+01:00"
 }

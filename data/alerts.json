@@ -2,23 +2,6 @@
  "data": [
   {
    "lines": [
-    "R8"
-   ],
-   "text": {
-    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Granollers Centre i Martorell Central, amb parades intermèdies."
-   }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "A causa d'una incidència operativa, els trens circulen fora del seu horari habitual i poden veure incrementat el seu temps de recorregut."
-   }
-  },
-  {
-   "lines": [
     "R7"
    ],
    "text": {
@@ -31,16 +14,7 @@
     "R8"
    ],
    "text": {
-    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Maçanet-Massanes - Blanes, i entre Blanes - Mataró."
-   }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "es": "A causa d'una incidencia operativa, s'ha establert un servei de reforç per carretera entre Manresa i Terrassa Estació del Nord, amb parades intermèdies."
+    "es": "Els trens circulen fora del seu horari habitual a causa d'una incidència operativa i d'una incidència a la infraestructura per robatori de cable entre El Clot i Badalona. S'ha establert un servei de reforç per carretera entre Maçanet-Massanes - Blanes, i entre Blanes - Mataró."
    }
   },
   {
@@ -53,5 +27,5 @@
    }
   }
  ],
- "fetched": "2026-11-14T20:57:09+01:00"
+ "fetched": "2026-11-15T13:46:33+01:00"
 }

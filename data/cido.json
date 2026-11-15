@@ -1,50 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-14",
-   "group": "C2",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Gerocultor",
-   "url": "https://cido.diba.cat/oposicions/22329270"
-  },
-  {
-   "end": "2026-11-14",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Postdoctoral Researcher - Atomic Manipulation and Spectroscopy",
-   "url": "https://cido.diba.cat/oposicions/22334852"
-  },
-  {
-   "end": "2026-11-14",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Research Support Technician - Inorganic Nanoparticles",
-   "url": "https://cido.diba.cat/oposicions/22426712"
-  },
-  {
-   "end": "2026-11-14",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.1,
-   "org": "Institut de Física d'Altes Energies (IFAE)",
-   "places": 2,
-   "pool": false,
-   "title": "2 places de PhD Student positions in Theoretical Particle Physics",
-   "url": "https://cido.diba.cat/oposicions/22428076"
-  },
-  {
    "end": "2026-11-15",
    "group": "C1",
    "kind": "Laboral",
@@ -1233,5 +1189,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-14T20:57:09+01:00"
+ "fetched": "2026-11-15T13:46:33+01:00"
 }

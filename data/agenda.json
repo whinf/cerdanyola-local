@@ -67,16 +67,6 @@
     "place": "",
     "source": "ajuntament",
     "start": "2026-11-13",
-    "time": "16:30",
-    "title": "Vine al Museu de Ca n'Oliver per Sant Martí!",
-    "url": "https://www.cerdanyola.cat/agenda/vine-al-museu-de-ca-noliver-sant-marti-1"
-   },
-   {
-    "category": "",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-13",
     "time": "18:00",
     "title": "A taula amb el Miquel!",
     "url": "https://www.cerdanyola.cat/agenda/taula-amb-el-miquel"
@@ -90,36 +80,6 @@
     "time": "10:30",
     "title": "Fira d'Art de Tardor 2026",
     "url": "https://www.cerdanyola.cat/agenda/fira-dart-de-tardor-2026"
-   },
-   {
-    "category": "Teatre i dansa",
-    "end": "2026-11-14",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-14",
-    "time": "17:30",
-    "title": "Monòleg 'Parlant amb Franquesa'. Festa de Tardor de Sant Martí",
-    "url": "https://www.cerdanyola.cat/agenda/monoleg-parlant-amb-franquesa-festa-de-tardor-de-sant-marti"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-14",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-14",
-    "time": "18:00",
-    "title": "Espectacle 'Yunez Chaib en directo'",
-    "url": "https://www.cerdanyola.cat/agenda/espectacle-yunez-chaib-en-directo"
-   },
-   {
-    "category": "Teatre i dansa",
-    "end": "2026-11-14",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-14",
-    "time": "19:00",
-    "title": "Micro-teatre 'Balneari La Pau Eterna'",
-    "url": "https://www.cerdanyola.cat/agenda/micro-teatre-balneari-la-pau-eterna"
    },
    {
     "category": "",
@@ -800,5 +760,5 @@
    }
   ]
  },
- "fetched": "2026-11-14T20:57:09+01:00"
+ "fetched": "2026-11-15T13:46:33+01:00"
 }
