@@ -52,46 +52,6 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
-    "category": "",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-06",
-    "time": "17:00",
-    "title": "Festa de Tardor de Sant Martí 2026",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-2026"
-   },
-   {
-    "category": "",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-13",
-    "time": "18:00",
-    "title": "A taula amb el Miquel!",
-    "url": "https://www.cerdanyola.cat/agenda/taula-amb-el-miquel"
-   },
-   {
-    "category": "",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-14",
-    "time": "10:30",
-    "title": "Fira d'Art de Tardor 2026",
-    "url": "https://www.cerdanyola.cat/agenda/fira-dart-de-tardor-2026"
-   },
-   {
-    "category": "",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-14",
-    "time": "20:30",
-    "title": "Correfoc - Festa Tardor Sant Martí 2026",
-    "url": "https://www.cerdanyola.cat/agenda/correfoc-festa-tardor-sant-marti-2026"
-   },
-   {
     "category": "Exposicions",
     "end": "2026-12-15",
     "place": "",
@@ -760,5 +720,5 @@
    }
   ]
  },
- "fetched": "2026-11-15T13:46:33+01:00"
+ "fetched": "2026-11-15T21:24:40+01:00"
 }
