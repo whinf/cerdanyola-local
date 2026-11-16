@@ -52,36 +52,6 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
-    "category": "Exposicions",
-    "end": "2026-12-31",
-    "place": "",
-    "source": "afocer",
-    "start": "2026-11-16",
-    "time": "",
-    "title": "Exposició Phoemàtic de Carme Monclús a la biblioteca del Clot",
-    "url": "https://afocer.cat/event/exposicio-phoematic-de-carme-monclus-a-la-biblioteca-del-clot/"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-16",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-16",
-    "time": "09:30",
-    "title": "Donació de sang i plasma",
-    "url": "https://www.cerdanyola.cat/agenda/donacio-de-sang-i-plasma-37"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-11-16",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-16",
-    "time": "17:30",
-    "title": "Hora del conte en anglès",
-    "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-en-angles-13"
-   },
-   {
     "category": "",
     "end": "2026-11-17",
     "place": "Sala Cinema UAB",
@@ -100,6 +70,16 @@
     "time": "15:00",
     "title": "Ode Marítima, teatre en portuguès",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/ode-maritima-teatre-en-portugues-1345828727816.html?detid=1346005234467"
+   },
+   {
+    "category": "Festes populars",
+    "end": "2026-11-17",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-17",
+    "time": "19:00",
+    "title": "Acte de presentació del Nadal a Cerdanyola",
+    "url": "https://www.cerdanyola.cat/agenda/acte-de-presentacio-del-nadal-cerdanyola-1"
    },
    {
     "category": "Conferències",
@@ -148,8 +128,8 @@
     "source": "ajuntament",
     "start": "2026-11-18",
     "time": "19:00",
-    "title": "Inauguració Empíric. Festival de Literatura i Ciència de Cerdanyola",
-    "url": "https://www.cerdanyola.cat/agenda/inauguracio-empiric-festival-de-literatura-i-ciencia-de-cerdanyola"
+    "title": "Inauguració Empíric. Conversa 'Les altres fecundacions'",
+    "url": "https://www.cerdanyola.cat/agenda/inauguracio-empiric-conversa-les-altres-fecundacions"
    },
    {
     "category": "Exposicions",
@@ -207,19 +187,9 @@
     "place": "",
     "source": "ajuntament",
     "start": "2026-11-20",
-    "time": "09:00",
-    "title": "Oficina mòbil d'Aigües de Barcelona",
-    "url": "https://www.cerdanyola.cat/agenda/oficina-mobil-daigues-de-barcelona-30"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-11-20",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-20",
-    "time": "17:30",
-    "title": "Hora del conte per a nadons",
-    "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-nadons-13"
+    "time": "18:00",
+    "title": "Tallers Aula de Cuina del Mercat de Les Fontetes",
+    "url": "https://www.cerdanyola.cat/agenda/tallers-aula-de-cuina-del-mercat-de-les-fontetes-0"
    },
    {
     "category": "Altres activitats",
@@ -227,9 +197,9 @@
     "place": "",
     "source": "ajuntament",
     "start": "2026-11-20",
-    "time": "18:00",
-    "title": "Tallers Aula de Cuina del Mercat de Les Fontetes",
-    "url": "https://www.cerdanyola.cat/agenda/tallers-aula-de-cuina-del-mercat-de-les-fontetes-0"
+    "time": "18:30",
+    "title": "Empíric Festival. Conversa 'Una societat sense emocions'",
+    "url": "https://www.cerdanyola.cat/agenda/empiric-festival-conversa-una-societat-sense-emocions"
    },
    {
     "category": "Actes literaris",
@@ -252,6 +222,16 @@
     "url": "https://www.cerdanyola.cat/agenda/teatre-la-ratonera"
    },
    {
+    "category": "Infància",
+    "end": "2026-11-21",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-21",
+    "time": "12:00",
+    "title": "Petit Empíric. Espectacle familiar 'Matemàgia'",
+    "url": "https://www.cerdanyola.cat/agenda/petit-empiric-espectacle-familiar-matemagia"
+   },
+   {
     "category": "Esports",
     "end": "2026-11-21",
     "place": "",
@@ -262,6 +242,16 @@
     "url": "https://www.cerdanyola.cat/agenda/38a-edicio-milles-de-cerdanyola"
    },
    {
+    "category": "Altres activitats",
+    "end": "2026-11-21",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-21",
+    "time": "18:00",
+    "title": "Empíric Festival. Conversa i lectures 'Científics protagonistes dels relats'",
+    "url": "https://www.cerdanyola.cat/agenda/empiric-festival-conversa-i-lectures-cientifics-protagonistes-dels-relats"
+   },
+   {
     "category": "Música",
     "end": "2026-11-21",
     "place": "",
@@ -270,6 +260,16 @@
     "time": "19:00",
     "title": "Concert de Santa Cecilia de l'AMCV",
     "url": "https://www.cerdanyola.cat/agenda/concert-de-santa-cecilia-de-lamcv-1"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-21",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-21",
+    "time": "19:30",
+    "title": "Empíric Festival. Recital 'La dualitat dels clostridis'",
+    "url": "https://www.cerdanyola.cat/agenda/empiric-festival-recital-la-dualitat-dels-clostridis"
    },
    {
     "category": "Infància",
@@ -310,6 +310,16 @@
     "time": "17:00",
     "title": "Concert homenatge a Narcisa Freixas \"de Sabadell a París\"",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/concert-homenatge-a-narcisa-freixas-de-sabadell-a-paris-1345828727816.html?detid=1346005239500"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-26",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-26",
+    "time": "19:00",
+    "title": "Empíric Festival. Club de lectura de ciència -ficció",
+    "url": "https://www.cerdanyola.cat/agenda/empiric-festival-club-de-lectura-de-ciencia-ficcio"
    },
    {
     "category": "",
@@ -411,6 +421,16 @@
     "time": "18:00",
     "title": "Tallers Aula de Cuina del Mercat de Les Fontetes",
     "url": "https://www.cerdanyola.cat/agenda/tallers-aula-de-cuina-del-mercat-de-les-fontetes-2"
+   },
+   {
+    "category": "Infància",
+    "end": "2026-12-12",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-12-12",
+    "time": "12:00",
+    "title": "Petit Empíric. Espectacle familiar 'Missió setciències'",
+    "url": "https://www.cerdanyola.cat/agenda/petit-empiric-espectacle-familiar-missio-setciencies"
    },
    {
     "category": "Altres activitats",
@@ -647,6 +667,14 @@
    {
     "category": "Exposicions",
     "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -659,16 +687,8 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-16T14:42:27+01:00"
+ "fetched": "2026-11-17T00:45:29+01:00"
 }

@@ -1,61 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-16",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 5.6,
-   "org": "Fundació Institut Català de Paleontologia Miquel Crusafont (ICP Miquel Crusafont)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Mànager de Laboratori (Projecte Start Up Funds)",
-   "url": "https://cido.diba.cat/oposicions/22484651"
-  },
-  {
-   "end": "2026-11-16",
-   "group": "A",
-   "kind": "Laboral temporal",
-   "km": 5.3,
-   "org": "Generalitat de Catalunya - Centre d'Alt Rendiment Esportiu (CAR)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Nutricionista al Departament de Fisiologia i Nutrició (Sant Cugat del Vallès)",
-   "url": "https://cido.diba.cat/oposicions/22459383"
-  },
-  {
-   "end": "2026-11-16",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 5.3,
-   "org": "Generalitat de Catalunya - Centre d'Alt Rendiment Esportiu (CAR)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Psicòleg al Departament de Psicologia (Sant Cugat del Vallès)",
-   "url": "https://cido.diba.cat/oposicions/22459415"
-  },
-  {
-   "end": "2026-11-16",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 5.3,
-   "org": "Generalitat de Catalunya - Centre d'Alt Rendiment Esportiu (CAR)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic superior al Departament d'Atenció a l'Esportista (Sant Cugat del Vallès)",
-   "url": "https://cido.diba.cat/oposicions/22459372"
-  },
-  {
-   "end": "2026-11-16",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic especialista de Suport a la Recerca amb destinació al Departament de Prehistòria",
-   "url": "https://cido.diba.cat/oposicions/22473820"
-  },
-  {
    "end": "2026-11-17",
    "group": "A2",
    "kind": "Laboral",
@@ -1288,5 +1233,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-16T14:42:27+01:00"
+ "fetched": "2026-11-17T00:45:29+01:00"
 }

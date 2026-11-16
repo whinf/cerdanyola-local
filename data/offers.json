@@ -504,16 +504,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627887"
   },
   {
-   "company": "Mimmng Mantenimiento Sl.",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-17",
-   "hours": "Jornada completa",
-   "salary": [],
-   "title": "Técnico/a de montaje audiovisual – pantallas led y eventos",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92324995"
-  },
-  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-16",
@@ -1094,19 +1084,6 @@
    "title": "Administratiu/iva servei tècnic",
    "town": "MONTCADA I REIXAC",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325043"
-  },
-  {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-17",
-   "hours": "Jornada completa",
-   "salary": [
-    2000,
-    2000
-   ],
-   "title": "Retolista - soldador/a",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202627755"
   },
   {
    "company": "",
@@ -2015,5 +1992,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-16T14:42:27+01:00"
+ "fetched": "2026-11-17T00:45:29+01:00"
 }

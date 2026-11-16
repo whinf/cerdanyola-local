@@ -945,24 +945,6 @@
      "people"
     ]
    },
-   "898293": {
-    "budget": 306253,
-    "checked": "2026-11-13",
-    "end": "2026-11-16",
-    "id": "898293",
-    "level": "AUTONOMICA",
-    "organ": "SERVICIO PÚBLICO DE EMPLEO DE CATALUÑA",
-    "purpose": "Fomento del Empleo",
-    "received": "2026-04-13",
-    "region": "CATALUÑA",
-    "start": "",
-    "term": "",
-    "title": "Resolución EMT/ /2026, de , por la que se abre la convocatoria para el año 2026 en relación con la concesión de subvenciones para movilidades al extranjero para el aprendizaje para las personas participantes en el Programa Erasmus+ ITER Mobility",
-    "title_ca": "Resolució EMT/ /2026, de , per la qual s'obre la convocatòria per a l'any 2026 en relació amb la concessió de subvencions per a mobilitats a l'estranger per a l'aprenentatge per a les persones participants en el Programa Erasmus+ ITER Mobility",
-    "who": [
-     "people"
-    ]
-   },
    "903505": {
     "budget": 2665230291.03,
     "checked": "2026-11-13",
@@ -998,24 +980,6 @@
     "title_ca": "Mesures de suport al retorn dels catalans emigrats i llurs descendents, i de segona modificació de la Llei 18/1996.",
     "who": [
      "people"
-    ]
-   },
-   "904675": {
-    "budget": 3930000,
-    "checked": "2026-11-13",
-    "end": "2026-11-16",
-    "id": "904675",
-    "level": "AUTONOMICA",
-    "organ": "AGÈNCIA PER A LA COMPETITIVITAT DE L'EMPRESA (ACCIÓ)",
-    "purpose": "Industria y Energía",
-    "received": "2026-05-11",
-    "region": "CATALUÑA",
-    "start": "",
-    "term": "hasta las 14:00 horas del dia 17 de junio del 2021",
-    "title": "Subvenciones a cupones a la competitividad empresarial 2026",
-    "title_ca": "Subvencions per a cupons a la competitivitat empresarial 2026",
-    "who": [
-     "business"
     ]
    },
    "910930": {
@@ -1290,24 +1254,6 @@
     "who": [
      "business",
      "entities"
-    ]
-   },
-   "921322": {
-    "budget": 15000,
-    "checked": "2026-11-13",
-    "end": "2026-11-16",
-    "id": "921322",
-    "level": "LOCAL",
-    "organ": "DIPUTACIÓN PROVINCIAL DE BARCELONA",
-    "purpose": "Cultura",
-    "received": "2026-07-23",
-    "region": "DIPUTACIÓN PROV. DE BARCELONA",
-    "start": "",
-    "term": "",
-    "title": "Premio ángel guimerà de literatura dramática correspondiente al año 2027",
-    "title_ca": "Premi àngel guimerà de literatura dramàtica corresponent a l’any 2027",
-    "who": [
-     "people"
     ]
    },
    "921964": {
@@ -1652,24 +1598,6 @@
     "term": "20 Dies Hàbils",
     "title": "Resolución EMT/ / , de de , por la que se abre la convocatoria de subvenciones para el año 2026 en relación con las actuaciones del programa ALMA de Cataluña (SOC-ALMA)",
     "title_ca": "Resolució EMT/ /2026, de d , per la qual s'obre la convocatòria de subvencions per a l'any 2026 en relació amb les actuacions del programa ALMA de Catalunya (SOC ALMA)",
-    "who": [
-     "entities"
-    ]
-   },
-   "936008": {
-    "budget": 3000000,
-    "checked": "2026-11-13",
-    "end": "2026-11-16",
-    "id": "936008",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'EMPRESA I TREBALL  ",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-19",
-    "region": "CATALUÑA",
-    "start": "2026-11-02",
-    "term": "10 días hábiles desde el día siguiente al de la publicación de la Resolución en el DOGC",
-    "title": "Subvenciones por el apoyo a la continuidad empresarial y las segundas oportunidades 2027-2028",
-    "title_ca": "Subvencions pel suport a la continuïtat empresarial i les segones oportunitats 2027-2028",
     "who": [
      "entities"
     ]
@@ -2030,24 +1958,6 @@
     "start": "2026-10-28",
     "term": "",
     "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación TECMA Ciudad De México del 15 de junio de 2027 al 17 de junio de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
-   "938437": {
-    "budget": 50000,
-    "checked": "2026-11-13",
-    "end": "2026-11-16",
-    "id": "938437",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-28",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-28",
-    "term": "",
-    "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación Norshipping Oslo del 8 de junio de 2027 al 11 de junio de 2027",
     "title_ca": "",
     "who": [
      "business"
@@ -2685,7 +2595,7 @@
    },
    "940640": {
     "budget": 669016,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "2026-12-17",
     "id": "940640",
     "level": "AUTONOMICA",
@@ -2704,7 +2614,7 @@
    },
    "940656": {
     "budget": 5000000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "2026-12-16",
     "id": "940656",
     "level": "AUTONOMICA",
@@ -2722,7 +2632,7 @@
    },
    "940852": {
     "budget": 2080000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "",
     "id": "940852",
     "level": "AUTONOMICA",
@@ -2730,7 +2640,7 @@
     "purpose": "Servicios Sociales y Promoción Social",
     "received": "2026-11-09",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-14",
     "term": "20 Dies Naturals",
     "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia A",
     "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia A.",
@@ -2740,7 +2650,7 @@
    },
    "940859": {
     "budget": 1240000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "",
     "id": "940859",
     "level": "AUTONOMICA",
@@ -2748,7 +2658,7 @@
     "purpose": "Servicios Sociales y Promoción Social",
     "received": "2026-11-09",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-14",
     "term": "20 Dies Naturals",
     "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia C",
     "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia C",
@@ -2758,7 +2668,7 @@
    },
    "940869": {
     "budget": 9810000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "",
     "id": "940869",
     "level": "AUTONOMICA",
@@ -2766,7 +2676,7 @@
     "purpose": "Servicios Sociales y Promoción Social",
     "received": "2026-11-09",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-14",
     "term": "20 Dies Naturals",
     "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia B",
     "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia B",
@@ -2776,7 +2686,7 @@
    },
    "940875": {
     "budget": 2137097.74,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "",
     "id": "940875",
     "level": "AUTONOMICA",
@@ -2784,7 +2694,7 @@
     "purpose": "Servicios Sociales y Promoción Social",
     "received": "2026-11-09",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-14",
     "term": "20 Dies Naturals",
     "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia D",
     "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia D",
@@ -2794,7 +2704,7 @@
    },
    "940881": {
     "budget": 3600000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "",
     "id": "940881",
     "level": "AUTONOMICA",
@@ -2802,7 +2712,7 @@
     "purpose": "Servicios Sociales y Promoción Social",
     "received": "2026-11-09",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-14",
     "term": "20 Dies Naturals",
     "title": "Concesión de subvenciones de actividades del àmbito de las politicas del Departamento de Igualtat i Feminisme 27-28 línia E",
     "title_ca": "Concessió de subvencions d'activitats a entitats de l'àmbit de les polítiques del Departament d'Igualtat i Feminisme 27-28 línia E",
@@ -2812,7 +2722,7 @@
    },
    "940893": {
     "budget": 3740000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "2026-12-17",
     "id": "940893",
     "level": "AUTONOMICA",
@@ -2830,7 +2740,7 @@
    },
    "941145": {
     "budget": 14400000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "2028-12-31",
     "id": "941145",
     "level": "ESTADO",
@@ -2848,7 +2758,7 @@
    },
    "941154": {
     "budget": 600000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "2028-12-31",
     "id": "941154",
     "level": "ESTADO",
@@ -2866,7 +2776,7 @@
    },
    "941239": {
     "budget": 150000000,
-    "checked": "2026-11-10",
+    "checked": "2026-11-17",
     "end": "2026-12-23",
     "id": "941239",
     "level": "ESTADO",
@@ -3132,6 +3042,78 @@
     "term": "",
     "title": "Subvención a favor de FNP para la ejecución del proyecto “Gobernanza Metropolitana en Brasil: Actualización Normativa, Cooperación Internacional y Movilidad Urbana Sostenible” (Exp. 2026/900560)",
     "title_ca": "Subvenció a favor de FNP per a l’execució del projecte “Governança Metropolitana al Brasil: Actualització Normativa, Cooperació Internacional i Mobilitat Urbana Sostenible” (Exp. 2026/900560)",
+    "who": [
+     "entities"
+    ]
+   },
+   "942229": {
+    "budget": 106200,
+    "checked": "2026-11-17",
+    "end": "",
+    "id": "942229",
+    "level": "ESTADO",
+    "organ": "DIRECCIÓN GENERAL DE EVALUACIÓN Y COOPERACIÓN TERRITORIAL",
+    "purpose": "Educación",
+    "received": "2026-11-16",
+    "region": "MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES",
+    "start": "",
+    "term": "15 días naturales a partir del primer día hábil siguiente a la publicación en el BOE",
+    "title": "Resolución de la Secretaría de Estado de Educación, de 3 de noviembre de 2026, por la que se convocan plazas de asistencia a eventos de formación dentro del marco de la acción eTwinning para el año 2027.",
+    "title_ca": "",
+    "who": [
+     "people"
+    ]
+   },
+   "942269": {
+    "budget": 19780000,
+    "checked": "2026-11-17",
+    "end": "",
+    "id": "942269",
+    "level": "ESTADO",
+    "organ": "SECRETARÍA GENERAL DE UNIVERSIDADES",
+    "purpose": "Educación",
+    "received": "2026-11-16",
+    "region": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
+    "start": "",
+    "term": "Un mes desde la publicación del extracto de la convocatoria en el BOE.",
+    "title": "Orden de 13 de noviembre de 2026 del Ministerio de Ciencia, Innovación y Universidades por la que se convocan por tramitación anticipada las ayudas del programa de movilidad de estudiantes universitarios «Luisa de Medrano».",
+    "title_ca": "",
+    "who": [
+     "people"
+    ]
+   },
+   "942321": {
+    "budget": 49665,
+    "checked": "2026-11-17",
+    "end": "",
+    "id": "942321",
+    "level": "LOCAL",
+    "organ": "ÀREA METROPOLITANA DE BARCELONA",
+    "purpose": "Cooperación internacional para el desarrollo y cultural",
+    "received": "2026-11-16",
+    "region": "AREA METROPOLITANA DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvención a favor de CIDEU para el proyecto Fortalecimiento de capacidades para la gobernanza supramunicipal con prospectiva territorial en Iberoamérica (Exp. 2026/904606)",
+    "title_ca": "Subvenció a favor de CIDEU per al projecte Fortalecimiento de capacidades para la gobernanza supramunicipal con prospectiva territorial en Iberoamérica (Exp. 2026/904606)",
+    "who": [
+     "entities"
+    ]
+   },
+   "942437": {
+    "budget": 4375000,
+    "checked": "2026-11-17",
+    "end": "2027-10-28",
+    "id": "942437",
+    "level": "AUTONOMICA",
+    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
+    "purpose": "Cultura",
+    "received": "2026-11-16",
+    "region": "CATALUÑA",
+    "start": "2026-11-24",
+    "term": "",
+    "title": "Convocatoria de subvenciones en especie para la contratación de espectáculos profesionales incluidos en el catálogo de espectáculos Programa.cat",
+    "title_ca": "Convocatòria de subvencions en espècie per a la contractació d'espectacles professionals inclosos en el catàleg d'espectacles Programa.cat",
     "who": [
      "entities"
     ]
@@ -3971,6 +3953,7 @@
    "898121",
    "898172",
    "898174",
+   "898293",
    "898326",
    "898334",
    "898347",
@@ -4098,6 +4081,7 @@
    "904601",
    "904656",
    "904668",
+   "904675",
    "904700",
    "904767",
    "904781",
@@ -4690,6 +4674,7 @@
    "921164",
    "921169",
    "921175",
+   "921322",
    "921364",
    "921416",
    "921417",
@@ -4959,7 +4944,6 @@
    "933019",
    "933056",
    "933061",
-   "933143",
    "933219",
    "933221",
    "933237",
@@ -5016,6 +5000,7 @@
    "935685",
    "935686",
    "935713",
+   "936008",
    "936243",
    "936245",
    "936249",
@@ -5038,6 +5023,7 @@
    "937905",
    "938362",
    "938365",
+   "938437",
    "938461",
    "938643",
    "938649",
@@ -5099,8 +5085,25 @@
    "941561",
    "941562",
    "941563",
-   "941997"
+   "941997",
+   "942178",
+   "942184",
+   "942188",
+   "942190",
+   "942191",
+   "942197",
+   "942219",
+   "942220",
+   "942221",
+   "942223",
+   "942232",
+   "942234",
+   "942279",
+   "942283",
+   "942285",
+   "942287",
+   "942289"
   ]
  },
- "fetched": "2026-11-16T14:42:27+01:00"
+ "fetched": "2026-11-17T00:45:29+01:00"
 }
