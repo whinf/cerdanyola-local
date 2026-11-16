@@ -2,12 +2,12 @@
  "data": [
   {
    "access": "targeta",
-   "address": "Av. de l'Eix Central",
-   "lat": "41.502895",
-   "lon": "2.104406",
-   "name": "UAB - INGETEAM EdRSR 1",
+   "address": "Carrer Can Pallarès, 2, 08290 Cerdanyola d...",
+   "lat": "41.49975",
+   "lon": "2.13512",
+   "name": "Nuroil - INGETEAM EdRR 1",
    "operator": "Institut Català d'Energia - Ajuntament de Cerdanyola del Vallès",
-   "speed": "semiRAPID"
+   "speed": "RAPID i semiRAPID"
   },
   {
    "access": "targeta",
@@ -20,13 +20,13 @@
   },
   {
    "access": "targeta",
-   "address": "Carrer Can Pallarès, 2, 08290 Cerdanyola d...",
-   "lat": "41.49975",
-   "lon": "2.13512",
-   "name": "Nuroil - INGETEAM EdRR 1",
+   "address": "Av. de l'Eix Central",
+   "lat": "41.502895",
+   "lon": "2.104406",
+   "name": "UAB - INGETEAM EdRSR 1",
    "operator": "Institut Català d'Energia - Ajuntament de Cerdanyola del Vallès",
-   "speed": "RAPID i semiRAPID"
+   "speed": "semiRAPID"
   }
  ],
- "fetched": "2026-11-15T13:46:33+01:00"
+ "fetched": "2026-11-16T14:42:27+01:00"
 }

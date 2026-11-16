@@ -53,46 +53,6 @@
    },
    {
     "category": "Exposicions",
-    "end": "2026-12-15",
-    "place": "",
-    "source": "afocer",
-    "start": "2026-11-15",
-    "time": "",
-    "title": "Exposició Violència 0 a Can Cuiàs",
-    "url": "https://afocer.cat/event/exposicio-violencia-0-a-can-cuias/"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-15",
-    "time": "09:00",
-    "title": "Cerdanyola Street Motor Show i Motofest",
-    "url": "https://www.cerdanyola.cat/agenda/cerdanyola-street-motor-show-i-motofest"
-   },
-   {
-    "category": "Festes populars",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-15",
-    "time": "09:00",
-    "title": "Festa de Tardor de Sant Martí - 15 de novembre",
-    "url": "https://www.cerdanyola.cat/agenda/festa-de-tardor-de-sant-marti-15-de-novembre"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-11-15",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-15",
-    "time": "11:30",
-    "title": "Jugatecambiental. Bosses tote amb residus",
-    "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-bosses-tote-amb-residus"
-   },
-   {
-    "category": "Exposicions",
     "end": "2026-12-31",
     "place": "",
     "source": "afocer",
@@ -160,16 +120,6 @@
     "time": "11:00",
     "title": "Projecció del film \"Gary Cooper que estàs en los cielos\" de Pilar MIró",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gary-cooper-que-estas-en-los-cielos-de-pilar-miro-1345828727816.html?detid=1346005326605"
-   },
-   {
-    "category": "",
-    "end": "2026-11-18",
-    "place": "Sala Cinema UAB",
-    "source": "uab",
-    "start": "2026-11-18",
-    "time": "11:00",
-    "title": "Projecció del film \"Gary Cooper ques estás en los cielos\", de Pilar Miró",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gary-cooper-ques-estas-en-los-cielos-de-pilar-miro-1345828727816.html?detid=1346005235501"
    },
    {
     "category": "Cursos i tallers",
@@ -697,14 +647,6 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -717,8 +659,16 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-15T21:24:40+01:00"
+ "fetched": "2026-11-16T14:42:27+01:00"
 }

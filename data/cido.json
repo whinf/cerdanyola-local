@@ -1,17 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-15",
-   "group": "C1",
-   "kind": "Laboral",
-   "km": 10.2,
-   "org": "Consorci Sanitari de Terrassa",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Operador de sistemes",
-   "url": "https://cido.diba.cat/oposicions/22126241"
-  },
-  {
    "end": "2026-11-16",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -208,6 +197,28 @@
    "pool": false,
    "title": "1 plaça de Predoctoral researcher for Severo Ochoa Project Effects of climate change and other stressors on solitary bee populations",
    "url": "https://cido.diba.cat/oposicions/22489697"
+  },
+  {
+   "end": "2026-11-20",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació al Departament de Bioquímica i Biologia Molecular",
+   "url": "https://cido.diba.cat/oposicions/22497397"
+  },
+  {
+   "end": "2026-11-20",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic superior de suport a la recerca amb destinació al Servei de Psicologia i de Logopèdia",
+   "url": "https://cido.diba.cat/oposicions/22497406"
   },
   {
    "end": "2026-11-21",
@@ -450,6 +461,28 @@
    "pool": true,
    "title": "2 places de Peó de neteja viària. Pla Local d'Ocupació",
    "url": "https://cido.diba.cat/oposicions/22489102"
+  },
+  {
+   "end": "2026-11-27",
+   "group": "A1",
+   "kind": "Laboral",
+   "km": 13.5,
+   "org": "Ajuntament de Terrassa - Eco-equip, SAM",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic de relacions laborals",
+   "url": "https://cido.diba.cat/oposicions/22498469"
+  },
+  {
+   "end": "2026-11-27",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Facultatiu especialista en Anàlisis Clíniques per al Servei de Laboratoris Clínics",
+   "url": "https://cido.diba.cat/oposicions/22496394"
   },
   {
    "end": "2026-11-27",
@@ -739,6 +772,28 @@
   },
   {
    "end": "2026-12-04",
+   "group": "Agrupacions professionals",
+   "kind": "Funcionari",
+   "km": 6.7,
+   "org": "Ajuntament de Sabadell",
+   "places": 29,
+   "pool": true,
+   "title": "29 places de Subaltern",
+   "url": "https://cido.diba.cat/oposicions/15512614"
+  },
+  {
+   "end": "2026-12-04",
+   "group": "Agrupacions professionals",
+   "kind": "Funcionari",
+   "km": 6.7,
+   "org": "Ajuntament de Sabadell",
+   "places": 3,
+   "pool": true,
+   "title": "3 places d'Operari de grua",
+   "url": "https://cido.diba.cat/oposicions/20937341"
+  },
+  {
+   "end": "2026-12-04",
    "group": "C1",
    "kind": "Laboral",
    "km": 10.2,
@@ -760,6 +815,17 @@
    "url": "https://cido.diba.cat/oposicions/22444561"
   },
   {
+   "end": "2026-12-06",
+   "group": "A2",
+   "kind": "Laboral",
+   "km": 7.9,
+   "org": "Ajuntament de Palau-solità i Plegamans",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Professor d'escola d'adults",
+   "url": "https://cido.diba.cat/oposicions/18041139"
+  },
+  {
    "end": "2026-12-07",
    "group": "Agrupacions professionals",
    "kind": "Laboral",
@@ -769,6 +835,28 @@
    "pool": true,
    "title": "1 plaça de Conserge d'escola",
    "url": "https://cido.diba.cat/oposicions/17601481"
+  },
+  {
+   "end": "2026-12-08",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Cap de la Unitat de Recerca Clínica",
+   "url": "https://cido.diba.cat/oposicions/22496350"
+  },
+  {
+   "end": "2026-12-08",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Responsable de l'oficina de coordinació científica",
+   "url": "https://cido.diba.cat/oposicions/22496150"
   },
   {
    "end": "2026-12-09",
@@ -791,6 +879,17 @@
    "pool": false,
    "title": "1 plaça de Postdoctoral Research position in Observational Cosmology",
    "url": "https://cido.diba.cat/oposicions/22303922"
+  },
+  {
+   "end": "2026-12-14",
+   "group": "A2",
+   "kind": "Funcionari",
+   "km": 13.1,
+   "org": "Ajuntament de Sentmenat",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça d'Enginyer tècnic",
+   "url": "https://cido.diba.cat/oposicions/22452786"
   },
   {
    "end": "2026-12-26",
@@ -1189,5 +1288,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-15T21:24:40+01:00"
+ "fetched": "2026-11-16T14:42:27+01:00"
 }

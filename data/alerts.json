@@ -2,14 +2,6 @@
  "data": [
   {
    "lines": [
-    "R8"
-   ],
-   "text": {
-    "es": "Aquest dilluns 16 de novembre, la línia R8 circularà amb un servei d'autobusos durant tot el dia en tot el seu recorregut."
-   }
-  },
-  {
-   "lines": [
     "R7"
    ],
    "text": {
@@ -22,18 +14,9 @@
     "R8"
    ],
    "text": {
-    "es": "Els trens circulen fora del seu horari habitual a causa d'una incidència operativa. S'ha establert un servei de reforç per carretera entre Maçanet-Massanes - Blanes, i entre Blanes - Mataró."
-   }
-  },
-  {
-   "lines": [
-    "R7",
-    "R8"
-   ],
-   "text": {
     "es": "Per obres d'Adif a l'entorn de Castelldefels, del 12 de novembre al 14 de desembre es modifica temporalment el servei de la línia R2. Els trens Granollers Centre - Castelldefels iniciaran i finalitzaran el seu recorregut a Gavà."
    }
   }
  ],
- "fetched": "2026-11-15T21:24:40+01:00"
+ "fetched": "2026-11-16T14:42:27+01:00"
 }

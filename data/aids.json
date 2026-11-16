@@ -1384,24 +1384,6 @@
      "people"
     ]
    },
-   "924680": {
-    "budget": 2312500,
-    "checked": "2026-11-13",
-    "end": "",
-    "id": "924680",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
-    "purpose": "Agricultura, Pesca y Alimentación",
-    "received": "2026-08-12",
-    "region": "CATALUÑA",
-    "start": "2026-09-16",
-    "term": "02 Mesos",
-    "title": "Ayudas para la promoción de los productos agrícolas y alimentarios en regímenes de calidad de los alimentos, en el marco del Plan estratégico de la PAC 2023-2027.",
-    "title_ca": "Ajuts per a la promoció dels productes agrícoles i alimentaris en règims de qualitat dels aliments, en el marc del Pla estratègic de la PAC 2023-2027.",
-    "who": [
-     "business"
-    ]
-   },
    "928059": {
     "budget": 5000000,
     "checked": "2026-11-13",
@@ -2087,24 +2069,6 @@
     "title_ca": "",
     "who": [
      "business"
-    ]
-   },
-   "938461": {
-    "budget": 7700000,
-    "checked": "2026-11-13",
-    "end": "",
-    "id": "938461",
-    "level": "AUTONOMICA",
-    "organ": "SERVICIO PÚBLICO DE EMPLEO DE CATALUÑA",
-    "purpose": "Fomento del Empleo",
-    "received": "2026-10-28",
-    "region": "CATALUÑA",
-    "start": "2026-11-03",
-    "term": "08 Dies Hàbils",
-    "title": "Resolución EMT/ /2026, de de , por la que se abre la convocatoria de subvenciones para el año 2026 en relación con las actuaciones del programa Soporte al empleo juvenil (SOC-SOPORTE JUVENIL)",
-    "title_ca": "Resolució EMT/ /2026, de de , per la qual s'obre la convocatòria de subvencions per a l'any 2026 en relació amb les actuacions del programa Suport a l'ocupació juvenil (SOC-SUPORT JUVENIL)",
-    "who": [
-     "entities"
     ]
    },
    "938468": {
@@ -4820,6 +4784,7 @@
    "924677",
    "924678",
    "924679",
+   "924680",
    "924968",
    "925199",
    "925200",
@@ -5073,6 +5038,7 @@
    "937905",
    "938362",
    "938365",
+   "938461",
    "938643",
    "938649",
    "938650",
@@ -5136,5 +5102,5 @@
    "941997"
   ]
  },
- "fetched": "2026-11-15T21:24:40+01:00"
+ "fetched": "2026-11-16T14:42:27+01:00"
 }
