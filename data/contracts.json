@@ -1,6 +1,75 @@
 {
  "data": [
   {
+   "amount": 22900.0,
+   "date": "2026-11-16",
+   "deadline": "2026-11-12T14:00",
+   "id": "5443212/IEEC/254/2026",
+   "lots": 0,
+   "organ": "Institut d'Estudis Espacials de Catalunya",
+   "phase": "Adjudicació",
+   "title": "Contracte menor de serveis d’empalmament (splicing) i verificació de cables elèctrics de qualitat espacial per la missió LISA de l’Agència Espacial Europea en el marc del Projecte científic “Spanish contribution to LISA: diagnostics system ",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/8a537dc4-f017-444f-87b1-498a213a0fba/300940035",
+   "winners": [
+    "Prisma Electronics SA"
+   ]
+  },
+  {
+   "amount": 21251.05,
+   "date": "2026-11-16",
+   "deadline": "2026-09-18T14:00",
+   "id": "28027859/905477/26",
+   "lots": 0,
+   "organ": "Àrea Metropolitana de Barcelona",
+   "phase": "Expedient en avaluació",
+   "title": "Servei consistent en la direcció de les obres del projecte de descontaminació del passeig de la Riera i urbanització. Fase 1: Millora del clavegueram i asfaltat a Cerdanyola del Vallès.",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bbd58b75-28af-4c4c-90f0-68ebe97e2837/300939165",
+   "winners": []
+  },
+  {
+   "amount": 340240.0,
+   "date": "2026-11-16",
+   "deadline": "2026-12-15T11:00",
+   "id": "208087/2026-18 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Suministro, instalación y puesta en marcha de un sistema de microscopía de fuerza atómica con carga automatizada, integrado en una caja de guantes y apto para la medida del potencial de superficie, destinado al institut català de nanociènci",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b4055ef-d636-4cdb-8bd8-e6c04a54418d/300937682",
+   "winners": []
+  },
+  {
+   "amount": 87350.0,
+   "date": "2026-11-16",
+   "deadline": "2026-10-22T12:00",
+   "id": "208043/IFAE-2026/19",
+   "lots": 0,
+   "organ": "Consorci Institut de Física d'Altes Energies",
+   "phase": "Adjudicació",
+   "title": "Suministro de un horno de plasma para el institut de física d’altes energies (ifae).",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/415002bd-da16-4f7f-a294-e25e152f7185/300939647",
+   "winners": [
+    "ANAME S.L."
+   ]
+  },
+  {
+   "amount": 73990.8,
+   "date": "2026-11-16",
+   "deadline": "2026-10-20T14:00",
+   "id": "100000101/08031757/2026/01",
+   "lots": 0,
+   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
+   "phase": "Expedient en avaluació",
+   "title": "Servei de neteja de l’Institut Forat del Vent",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f805df22-3a3a-40e8-959b-e41e4ae8a14f/300940076",
+   "winners": []
+  },
+  {
    "amount": 326989.04,
    "date": "2026-11-13",
    "deadline": "",
@@ -277,8 +346,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
    ]
   },
   {
@@ -437,19 +506,6 @@
    ]
   },
   {
-   "amount": 88000.0,
-   "date": "2026-11-03",
-   "deadline": "2026-10-22T12:00",
-   "id": "208043/IFAE-2026/19",
-   "lots": 0,
-   "organ": "Consorci Institut de Física d'Altes Energies",
-   "phase": "Expedient en avaluació",
-   "title": "Suministro de un horno de plasma para el institut de física d’altes energies (ifae).",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/415002bd-da16-4f7f-a294-e25e152f7185/300926119",
-   "winners": []
-  },
-  {
    "amount": 32358.0,
    "date": "2026-11-03",
    "deadline": "2026-05-21T14:00",
@@ -461,8 +517,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "ASSOCIACIO PLASTICFREEWARE",
-    "FUNBRAIN, SL"
+    "FUNBRAIN, SL",
+    "ASSOCIACIO PLASTICFREEWARE"
    ]
   },
   {
@@ -491,19 +547,6 @@
    "title": "Subministrament d’actualizació de la maquinaria de tres cambres climàtiques de creixement de plantes del centre de recerca en agrigenòmica csic-irta-uab-ub (crag)",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/d9ba9c3c-fdb2-4ee7-9fdd-23f924f14efb/300925533",
-   "winners": []
-  },
-  {
-   "amount": 21251.05,
-   "date": "2026-11-02",
-   "deadline": "2026-09-18T14:00",
-   "id": "28027859/905477/26",
-   "lots": 0,
-   "organ": "Àrea Metropolitana de Barcelona",
-   "phase": "Expedient en avaluació",
-   "title": "Servei consistent en la direcció de les obres del projecte de descontaminació del passeig de la Riera i urbanització. Fase 1: Millora del clavegueram i asfaltat a Cerdanyola del Vallès.",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bbd58b75-28af-4c4c-90f0-68ebe97e2837/300925527",
    "winners": []
   },
   {
@@ -1334,19 +1377,6 @@
    "title": "Servei manteniment xarxa i serveis TIC",
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/f1c1533a-9eca-440c-881a-ac0b10ee398e/300898508",
-   "winners": []
-  },
-  {
-   "amount": 73990.8,
-   "date": "2026-10-02",
-   "deadline": "2026-10-20T14:00",
-   "id": "100000101/08031757/2026/01",
-   "lots": 0,
-   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
-   "phase": "Anunci de licitació",
-   "title": "Servei de neteja de l’Institut Forat del Vent",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f805df22-3a3a-40e8-959b-e41e4ae8a14f/300898139",
    "winners": []
   },
   {
@@ -5490,5 +5520,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-17T00:45:29+01:00"
+ "fetched": "2026-11-17T15:29:36+01:00"
 }

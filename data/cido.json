@@ -254,6 +254,17 @@
    "url": "https://cido.diba.cat/oposicions/22327317"
   },
   {
+   "end": "2026-11-23",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador ordinari amb destinació a l'Institut de Ciència i Tecnologia Ambiental",
+   "url": "https://cido.diba.cat/oposicions/22506964"
+  },
+  {
    "end": "2026-11-24",
    "group": "C1",
    "kind": "Funcionari",
@@ -476,6 +487,39 @@
   {
    "end": "2026-11-30",
    "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.9,
+   "org": "Consorci Centre de Recerca Matemàtica (CRM)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Postdoctoral Researcher",
+   "url": "https://cido.diba.cat/oposicions/22504426"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "C2",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Oficial de manteniment",
+   "url": "https://cido.diba.cat/oposicions/22506623"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista sanitari (Neurologia)",
+   "url": "https://cido.diba.cat/oposicions/22506612"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
    "kind": "Laboral",
    "km": 10.2,
    "org": "Consorci Sanitari de Terrassa",
@@ -538,6 +582,17 @@
    "pool": false,
    "title": "1 plaça de Responsable de Serveis Jurídics de Territori",
    "url": "https://cido.diba.cat/oposicions/22024541"
+  },
+  {
+   "end": "2026-12-01",
+   "group": "C2",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places de Personal de Neteja, rober i quiròfan",
+   "url": "https://cido.diba.cat/oposicions/22506556"
   },
   {
    "end": "2026-12-01",
@@ -1229,9 +1284,31 @@
    "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
    "places": 0,
    "pool": true,
+   "title": "Borsa de treball de places d'Auxiliar administratiu",
+   "url": "https://cido.diba.cat/oposicions/22506594"
+  },
+  {
+   "end": "",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places d'Oficial administratiu",
+   "url": "https://cido.diba.cat/oposicions/22506578"
+  },
+  {
+   "end": "",
+   "group": "C2",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 0,
+   "pool": true,
    "title": "Borsa de treball de places de Personal de serveis generals de neteja",
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-17T00:45:29+01:00"
+ "fetched": "2026-11-17T15:29:36+01:00"
 }

@@ -187,6 +187,26 @@
     "place": "",
     "source": "ajuntament",
     "start": "2026-11-20",
+    "time": "09:00",
+    "title": "Oficina mòbil d'Aigües de Barcelona",
+    "url": "https://www.cerdanyola.cat/agenda/oficina-mobil-daigues-de-barcelona-30"
+   },
+   {
+    "category": "Infància",
+    "end": "2026-11-20",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-20",
+    "time": "17:30",
+    "title": "Hora del conte per a nadons",
+    "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-nadons-13"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-20",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-20",
     "time": "18:00",
     "title": "Tallers Aula de Cuina del Mercat de Les Fontetes",
     "url": "https://www.cerdanyola.cat/agenda/tallers-aula-de-cuina-del-mercat-de-les-fontetes-0"
@@ -667,14 +687,6 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -687,8 +699,16 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-17T00:45:29+01:00"
+ "fetched": "2026-11-17T15:29:36+01:00"
 }

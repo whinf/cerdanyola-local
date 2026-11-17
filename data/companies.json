@@ -2,6 +2,38 @@
  "data": {
   "events": [
    {
+    "activity": "Construccion, instalaciones y mantenimiento, en particular la reparacion e instalacion de aparatos elevadores.…",
+    "capital": 3000.0,
+    "date": "2026-11-17",
+    "id": "2026-11-17-515856-new",
+    "kind": "new",
+    "name": "R.A.C.G. ELEVADORES S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-220-08"
+   },
+   {
+    "date": "2026-11-17",
+    "id": "2026-11-17-515662-moved_in",
+    "kind": "moved_in",
+    "name": "SUSHI HAND PORT S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-220-08"
+   },
+   {
+    "date": "2026-11-17",
+    "id": "2026-11-17-515619-moved_in",
+    "kind": "moved_in",
+    "name": "JENSUK S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-220-08"
+   },
+   {
+    "activity": "La investigacion, el desarrollo, el diseño, la ingenieria, la simulacion, la validacion, la fabricacion, la…",
+    "capital": 3870.0,
+    "date": "2026-11-17",
+    "id": "2026-11-17-515570-new",
+    "kind": "new",
+    "name": "SPHERIONYX S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-220-08"
+   },
+   {
     "capital": 17148.48,
     "date": "2026-11-11",
     "id": "2026-11-11-502562-capital",
@@ -537,6 +569,7 @@
    "B 554601": "JARDINERIA BOSCH MEDIAMBIENTAL S.L.",
    "B 565119": "ONALABS INVESTMENT S.L.",
    "B 578161": "AXANIA TRADE S.L.",
+   "B 579860": "JENSUK S.L.",
    "B 589537": "CATALONIAROCK S.L.",
    "B 591572": "NUNJUTSU S.L.",
    "B 599623": "ARACNE TEXTILE SOLUTIONS S.L.",
@@ -658,6 +691,7 @@
    "B 662915": "GRUPO TIZO S.L.",
    "B 662938": "AVID ORO S.L.",
    "B 663097": "OLIVA STRATEGY S.L.",
+   "B 663268": "SUSHI HAND PORT S.L.",
    "B 663307": "EXCAVACIONES Y OBRAS GONZALEZ ACEDO S.L.",
    "B 663426": "AGC NOMAD S.L.",
    "B 663600": "ONARA LIFE S.L.",
@@ -684,13 +718,15 @@
    "B 665293": "AL MUNDO REAL 2026 S.L.",
    "B 665306": "YONG XIN 2026 S.L.",
    "B 666021": "VARGAS CONSTRUCCIONES 1084 S.L.",
+   "B 666439": "SPHERIONYX S.L.",
+   "B 666561": "R.A.C.G. ELEVADORES S.L.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-16",
+  "last": "2026-11-17",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-17T00:45:29+01:00"
+ "fetched": "2026-11-17T15:29:36+01:00"
 }
