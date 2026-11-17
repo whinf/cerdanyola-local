@@ -3117,6 +3117,96 @@
     "who": [
      "entities"
     ]
+   },
+   "942500": {
+    "budget": 80000,
+    "checked": "2026-11-17",
+    "end": "",
+    "id": "942500",
+    "level": "LOCAL",
+    "organ": "ÀREA METROPOLITANA DE BARCELONA",
+    "purpose": "Cultura",
+    "received": "2026-11-17",
+    "region": "AREA METROPOLITANA DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvención a favor de la UPC para la exposición 'La construcción de la Metrópoli. Planes urbanísticos y realidad territorial en la Región urbana de Barcelona 1859-2026' (Exp. 2026/902326)",
+    "title_ca": "Subvenció a favor de la UPC per a l'exposició \"La constracció de la Metròpoli. Plans urbanístic i realitat territorial a la Regió urbana de Barcelona 1859-2026\" (Exp. 2026/902326)",
+    "who": [
+     "entities"
+    ]
+   },
+   "942531": {
+    "budget": 5600000,
+    "checked": "2026-11-17",
+    "end": "2027-03-31",
+    "id": "942531",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
+    "purpose": "Agricultura, Pesca y Alimentación",
+    "received": "2026-11-17",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "",
+    "title": "Ayudas para las inversiones para las instalaciones de transformación y comercialización vitivinícolas 2023-2027",
+    "title_ca": "Ajuts per a les inversions per a les installacions de transformació i i comercialització vitivinícoles 2023-2027",
+    "who": [
+     "business"
+    ]
+   },
+   "942542": {
+    "budget": 30000,
+    "checked": "2026-11-17",
+    "end": "",
+    "id": "942542",
+    "level": "LOCAL",
+    "organ": "ÀREA METROPOLITANA DE BARCELONA",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-17",
+    "region": "AREA METROPOLITANA DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvención a favor de Taula d’Entitats del Tercer Sector Social de Catalunya para la promoción de las entidades sociales metropolitanas así como incidir de manera estructural en ámbitos estratégicos como el derecho a la vivienda y el envejecimiento (Exp.",
+    "title_ca": "Subvenció a favor de Taula d’Entitats del Tercer Sector Social de Catalunya per a la promoció de les entitats socials metropolitanes així com incidir de manera estructural en àmbits estratègics com el dret a l’habitatge i l’envelliment (Exp. 2026/90385)",
+    "who": [
+     "entities"
+    ]
+   },
+   "942560": {
+    "budget": 250000000,
+    "checked": "2026-11-17",
+    "end": "",
+    "id": "942560",
+    "level": "ESTADO",
+    "organ": "SERVICIO PÚBLICO DE EMPLEO ESTATAL",
+    "purpose": "Fomento del Empleo",
+    "received": "2026-11-17",
+    "region": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
+    "start": "",
+    "term": "20 días hábiles",
+    "title": "Convocatoria programas de ambito estatal 2027",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
+   },
+   "942577": {
+    "budget": 44693.34,
+    "checked": "2026-11-17",
+    "end": "",
+    "id": "942577",
+    "level": "LOCAL",
+    "organ": "ÀREA METROPOLITANA DE BARCELONA",
+    "purpose": "Sanidad",
+    "received": "2026-11-17",
+    "region": "AREA METROPOLITANA DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvención a favor del Consejo Comarcal del Baix Llobregat para la financiación de las actividades del Servicio de Control de Mosquitos de la campaña de 2026 (Exp. 2026/903904)",
+    "title_ca": "Subvenció a favor del Consell Comarcal del Baix Llobregat per al finançament de les activitats del Servei de Control de Mosquits de la campanya de 2026 (Exp. 2026/903904)",
+    "who": [
+     "entities"
+    ]
    }
   },
   "closed": [
@@ -5102,8 +5192,28 @@
    "942283",
    "942285",
    "942287",
-   "942289"
+   "942289",
+   "942478",
+   "942515",
+   "942551",
+   "942557",
+   "942599",
+   "942607",
+   "942608",
+   "942611",
+   "942695",
+   "942698",
+   "942708",
+   "942721",
+   "942724",
+   "942782",
+   "942783",
+   "942786",
+   "942788",
+   "942791",
+   "942792",
+   "942798"
   ]
  },
- "fetched": "2026-11-17T15:29:36+01:00"
+ "fetched": "2026-11-17T23:55:00+01:00"
 }
