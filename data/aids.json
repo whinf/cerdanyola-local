@@ -3135,6 +3135,79 @@
     "who": [
      "entities"
     ]
+   },
+   "942856": {
+    "budget": 2520000,
+    "checked": "2026-11-18",
+    "end": "",
+    "id": "942856",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT DE SALUT",
+    "purpose": "Sanidad",
+    "received": "2026-11-18",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "15 Dies Hàbils",
+    "title": "Convocatoria año 2027, para la concesión de subvenciones para la financiacion a entidades privadas sin ànimo de de lucro, para actuacions en el ámbito de la salud de prevención y tratamento de las drogodependencias y adicciones comportamentales",
+    "title_ca": "Convocatòria per a l'any 2027 per a la concessió de subvencions per al finanament a entitats privades sense afany de lucre, per a les actuacions en l'àmbit de la salut de prevenció i tractament de les drogodependències i addiccions comportamentals",
+    "who": [
+     "entities"
+    ]
+   },
+   "942860": {
+    "budget": 1785000,
+    "checked": "2026-11-18",
+    "end": "",
+    "id": "942860",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT DE SALUT",
+    "purpose": "Sanidad",
+    "received": "2026-11-18",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "15 Dies Hàbils",
+    "title": "Convocatoria para el año 2027 para la concesión de subvenciones para la financiacion a entidades privadas sin ànimo de lucro, para las actuacions en el ámbito de la salud para la prevención de la infección por el virus del VIH/Sida",
+    "title_ca": "Convocatòria per a l'any 2027,per a la concessió de subvencions per al finanament a entitats privades sense afany de lucre, per a les actuacions en l'àmbit de la salut per a la prevenció de la infecció per VIH/sida",
+    "who": [
+     "entities"
+    ]
+   },
+   "942880": {
+    "budget": 1000,
+    "checked": "2026-11-18",
+    "end": "",
+    "id": "942880",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
+    "purpose": "Agricultura, Pesca y Alimentación",
+    "received": "2026-11-18",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "15 Dies Hàbils",
+    "title": "Ayudas al control de rendimiento lechero.",
+    "title_ca": "Ajuts al control de rendiment lleter",
+    "who": [
+     "business"
+    ]
+   },
+   "943016": {
+    "budget": 1750000,
+    "checked": "2026-11-18",
+    "end": "2026-12-17",
+    "id": "943016",
+    "level": "AUTONOMICA",
+    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
+    "purpose": "Cultura",
+    "received": "2026-11-18",
+    "region": "CATALUÑA",
+    "start": "2026-11-26",
+    "term": "",
+    "title": "Convocatoria de subvenciones para la organización de acontecimientos de contenido cultural digital en Cataluña",
+    "title_ca": "Convocatòria de subvencions per a l'organització d'esdeveniments de contingut cultural digital a Catalunya",
+    "who": [
+     "business",
+     "people"
+    ]
    }
   },
   "closed": [
@@ -5138,8 +5211,12 @@
    "942788",
    "942791",
    "942792",
-   "942798"
+   "942798",
+   "942848",
+   "942850",
+   "942893",
+   "942999"
   ]
  },
- "fetched": "2026-11-18T15:04:42+01:00"
+ "fetched": "2026-11-18T18:02:12+01:00"
 }
