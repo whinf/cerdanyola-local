@@ -1,39 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-17",
-   "group": "A2",
-   "kind": "Laboral",
-   "km": 6.7,
-   "org": "Ajuntament de Sabadell",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça de Tècnic mitjà professor de patronatge i confecció",
-   "url": "https://cido.diba.cat/oposicions/21170317"
-  },
-  {
-   "end": "2026-11-17",
-   "group": "A1",
-   "kind": "Laboral",
-   "km": 6.7,
-   "org": "Ajuntament de Sabadell",
-   "places": 2,
-   "pool": true,
-   "title": "2 places de Tècnic superior professor de dibuix i tècniques d'expressió gràfica",
-   "url": "https://cido.diba.cat/oposicions/22126950"
-  },
-  {
-   "end": "2026-11-17",
-   "group": "C1",
-   "kind": "Funcionari",
-   "km": 6.8,
-   "org": "Ajuntament de Sant Quirze del Vallès",
-   "places": 2,
-   "pool": false,
-   "title": "2 places d'Agent de la Policia Local",
-   "url": "https://cido.diba.cat/oposicions/22426210"
-  },
-  {
    "end": "2026-11-18",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -309,6 +276,17 @@
    "url": "https://cido.diba.cat/oposicions/22468503"
   },
   {
+   "end": "2026-11-24",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador postdoctoral amb destinació al Departament de Química",
+   "url": "https://cido.diba.cat/oposicions/22516178"
+  },
+  {
    "end": "2026-11-25",
    "group": "A2",
    "kind": "Funcionari",
@@ -428,6 +406,17 @@
    "pool": false,
    "title": "1 plaça de Tècnic de relacions laborals",
    "url": "https://cido.diba.cat/oposicions/22498469"
+  },
+  {
+   "end": "2026-11-27",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.0,
+   "org": "Centre de Visió per Computador (CVC)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Postdoc on Adaptive Agentic AI",
+   "url": "https://cido.diba.cat/oposicions/22513464"
   },
   {
    "end": "2026-11-27",
@@ -585,6 +574,28 @@
   },
   {
    "end": "2026-12-01",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en aparell digestiu",
+   "url": "https://cido.diba.cat/oposicions/22512944"
+  },
+  {
+   "end": "2026-12-01",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en sistema digestiu",
+   "url": "https://cido.diba.cat/oposicions/22512977"
+  },
+  {
+   "end": "2026-12-01",
    "group": "C2",
    "kind": "Laboral temporal",
    "km": 7.8,
@@ -637,6 +648,28 @@
    "pool": true,
    "title": "Borsa de treball de places d'Enginyer tècnic",
    "url": "https://cido.diba.cat/oposicions/22484011"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "A2",
+   "kind": "Laboral temporal",
+   "km": 13.5,
+   "org": "Ajuntament de Terrassa",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça de Fisioterapeuta per a les escoles d'educació especial del servei d'educació",
+   "url": "https://cido.diba.cat/oposicions/22516286"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "C2",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places d'Ajudant de cuina",
+   "url": "https://cido.diba.cat/oposicions/22512782"
   },
   {
    "end": "2026-12-03",
@@ -1310,5 +1343,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-17T23:55:00+01:00"
+ "fetched": "2026-11-18T15:04:42+01:00"
 }

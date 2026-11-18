@@ -2,6 +2,13 @@
  "data": {
   "events": [
    {
+    "date": "2026-11-18",
+    "id": "2026-11-18-518281-closed",
+    "kind": "closed",
+    "name": "TEALDAME S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-221-08"
+   },
+   {
     "activity": "Construccion, instalaciones y mantenimiento, en particular la reparacion e instalacion de aparatos elevadores.…",
     "capital": 3000.0,
     "date": "2026-11-17",
@@ -530,15 +537,6 @@
     "kind": "moved_in",
     "name": "AS THINKCARE S.L.",
     "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-139-08"
-   },
-   {
-    "activity": "Actividades de sociedades holding",
-    "capital": 3125.0,
-    "date": "2026-07-20",
-    "id": "2026-07-20-338005-new",
-    "kind": "new",
-    "name": "IBARRO VARONA PATRIMONIAL S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-137-08"
    }
   ],
   "known": {
@@ -575,7 +573,6 @@
    "B 599623": "ARACNE TEXTILE SOLUTIONS S.L.",
    "B 605525": "ORGANIKALS S.L.",
    "B 605692": "INNOVAFONE NETWORK S.L.",
-   "B 619148": "TEALDAME S.L.",
    "B 634366": "AFORSEC SISTEMAS DE SEGURIDAD S.L.",
    "B 635926": "DECORACIONES GANDARA S.L.",
    "B 638586": "HORMIBARNA S.L.",
@@ -725,8 +722,8 @@
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-17",
+  "last": "2026-11-18",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-17T23:55:00+01:00"
+ "fetched": "2026-11-18T15:04:42+01:00"
 }

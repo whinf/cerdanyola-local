@@ -1200,24 +1200,6 @@
      "people"
     ]
    },
-   "918680": {
-    "budget": 6000000,
-    "checked": "2026-11-13",
-    "end": "2026-11-17",
-    "id": "918680",
-    "level": "ESTADO",
-    "organ": "AGENCIA ESTATAL DE INVESTIGACIÓN",
-    "purpose": "Investigación, desarrollo e innovación",
-    "received": "2026-07-10",
-    "region": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
-    "start": "2026-10-27",
-    "term": "A las 14:00 (hora peninsular española) del día",
-    "title": "Resolución de 30 de septiembre de 2026 de la Presidencia de la Agencia Estatal de Investigación por la que se aprueba la convocatoria 2026 de ayudas a Plataformas Tecnológicas.",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
    "920153": {
     "budget": 115000000,
     "checked": "2026-11-13",
@@ -1474,42 +1456,6 @@
      "business"
     ]
    },
-   "933490": {
-    "budget": 21000,
-    "checked": "2026-11-13",
-    "end": "2026-11-17",
-    "id": "933490",
-    "level": "AUTONOMICA",
-    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
-    "purpose": "Cultura",
-    "received": "2026-10-05",
-    "region": "CATALUÑA",
-    "start": "2026-10-14",
-    "term": "",
-    "title": "Convocatoria de becas para la realización de estancias de formación y perfeccionamiento en el ámbito de la danza de raíz tradicional",
-    "title_ca": "Convocatòria de beques per a la realització d'estades de formació i perfeccionament en l'àmbit de la dansa d'arrel tradicional",
-    "who": [
-     "people"
-    ]
-   },
-   "933503": {
-    "budget": 21000,
-    "checked": "2026-11-13",
-    "end": "2026-11-17",
-    "id": "933503",
-    "level": "AUTONOMICA",
-    "organ": "OFICINA DE SUPORT A LA INICIATIVA CULTURAL",
-    "purpose": "Cultura",
-    "received": "2026-10-05",
-    "region": "CATALUÑA",
-    "start": "2026-10-14",
-    "term": "",
-    "title": "Convocatoria de becas para la realización de estancias de formación y perfeccionamiento en el ámbito de la música de raíz tradicional",
-    "title_ca": "Convocatòria de beques per a la realització d'estades de formació i perfeccionament en l'àmbit de la música d'arrel tradicional",
-    "who": [
-     "people"
-    ]
-   },
    "933756": {
     "budget": 1590813.9,
     "checked": "2026-11-13",
@@ -1582,24 +1528,6 @@
     "title_ca": "",
     "who": [
      "business"
-    ]
-   },
-   "935181": {
-    "budget": 4000000,
-    "checked": "2026-11-13",
-    "end": "",
-    "id": "935181",
-    "level": "AUTONOMICA",
-    "organ": "SERVICIO PÚBLICO DE EMPLEO DE CATALUÑA",
-    "purpose": "Fomento del Empleo",
-    "received": "2026-10-14",
-    "region": "CATALUÑA",
-    "start": "2026-10-20",
-    "term": "20 Dies Hàbils",
-    "title": "Resolución EMT/ / , de de , por la que se abre la convocatoria de subvenciones para el año 2026 en relación con las actuaciones del programa ALMA de Cataluña (SOC-ALMA)",
-    "title_ca": "Resolució EMT/ /2026, de d , per la qual s'obre la convocatòria de subvencions per a l'any 2026 en relació amb les actuacions del programa ALMA de Catalunya (SOC ALMA)",
-    "who": [
-     "entities"
     ]
    },
    "936148": {
@@ -2794,7 +2722,7 @@
    },
    "941551": {
     "budget": 1750000,
-    "checked": "2026-11-11",
+    "checked": "2026-11-18",
     "end": "",
     "id": "941551",
     "level": "AUTONOMICA",
@@ -2802,7 +2730,7 @@
     "purpose": "Otras actuaciones de carácter económico",
     "received": "2026-11-11",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-14",
     "term": "01 Mesos",
     "title": "Ayudas GFS 2026 Intervención 6881.4 Actuaciones silvícolas ambientales y viales forestales PEPAC.",
     "title_ca": "Ajuts GFS 2026 Intervenció 6881.4 Actuacions silvícoles ambientals i vials forestals PEPAC.",
@@ -3210,12 +3138,6 @@
    }
   },
   "closed": [
-   "868998",
-   "869016",
-   "869045",
-   "869128",
-   "869131",
-   "869135",
    "869261",
    "869265",
    "869297",
@@ -4688,6 +4610,7 @@
    "918355",
    "918657",
    "918678",
+   "918680",
    "918684",
    "918695",
    "918819",
@@ -5040,6 +4963,8 @@
    "933243",
    "933329",
    "933357",
+   "933490",
+   "933503",
    "933533",
    "933792",
    "933847",
@@ -5085,6 +5010,7 @@
    "935147",
    "935149",
    "935150",
+   "935181",
    "935249",
    "935541",
    "935685",
@@ -5215,5 +5141,5 @@
    "942798"
   ]
  },
- "fetched": "2026-11-17T23:55:00+01:00"
+ "fetched": "2026-11-18T15:04:42+01:00"
 }

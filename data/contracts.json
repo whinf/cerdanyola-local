@@ -1,6 +1,114 @@
 {
  "data": [
   {
+   "amount": 900.0,
+   "date": "2026-11-17",
+   "deadline": "2026-11-06T23:59",
+   "id": "29827823/246/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Expedient en avaluació",
+   "title": "Servei de manteniment d’ultracongeladors per al departament de genètica animal del centre de recerca en agrigenòmica csic irta uab ub crag.",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ec53b521-1396-4208-95a7-797ec54524cc/300940850",
+   "winners": []
+  },
+  {
+   "amount": 340240.0,
+   "date": "2026-11-17",
+   "deadline": "2026-12-16T11:00",
+   "id": "208087/2026-18 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Suministro, instalación y puesta en marcha de un sistema de microscopía de fuerza atómica con carga automatizada, integrado en una caja de guantes y apto para la medida del potencial de superficie, destinado al institut català de nanociènci",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b4055ef-d636-4cdb-8bd8-e6c04a54418d/300939484",
+   "winners": []
+  },
+  {
+   "amount": 795000.0,
+   "date": "2026-11-17",
+   "deadline": "2026-12-18T14:00",
+   "id": "208087/2026-17 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Suministro, instalación y puesta en marcha de un difractómetro de rayos X de ultra-alto brillo y gran sensibilidad.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e1d560c-2384-42b2-a448-214b50dae4b9/300938850",
+   "winners": []
+  },
+  {
+   "amount": 20644.0,
+   "date": "2026-11-17",
+   "deadline": "2026-09-11T12:00",
+   "id": "208087/2026-10 ICN2",
+   "lots": 2,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Formalització",
+   "title": "Servei de manteniment preventiu dels armaris d’inflamables, armaris de corrosius, vitrines de gasos i cabines de bioseguretat, dividit en 2 lots, per a l’institut català de nanociència i nanotecnologia (icn2)",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bc3543fb-579f-400a-8a8f-bd39084a8a86/300941977",
+   "winners": [
+    "LABORTECH WALDNER SL"
+   ]
+  },
+  {
+   "amount": 21330.0,
+   "date": "2026-11-17",
+   "deadline": "",
+   "id": "16138154/154/2026/0008",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Contracte basat en l'acord marc de serveis de redacció de projectes i direcció d'obra",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f2784303-b86d-4561-8114-72c7ce4d441c/300941085",
+   "winners": [
+    "FEU I GODOY ARQUITECTES SLP"
+   ]
+  },
+  {
+   "amount": 95041.32,
+   "date": "2026-11-17",
+   "deadline": "2024-09-18T14:00",
+   "id": "16138154/154/2024/011",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Assessorament actualització valoració llocs de treball",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/655d175c-eabc-4055-96cd-ee1011500315/300941416",
+   "winners": []
+  },
+  {
+   "amount": 465727.98,
+   "date": "2026-11-17",
+   "deadline": "2026-06-30T14:00",
+   "id": "16138154/151/2026/0005",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Construcció jocs singulars",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ac7be390-69cd-4410-bd4f-a81ac3b9a2db/300940931",
+   "winners": []
+  },
+  {
+   "amount": 73990.8,
+   "date": "2026-11-17",
+   "deadline": "2026-10-20T14:00",
+   "id": "100000101/08031757/2026/01",
+   "lots": 0,
+   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
+   "phase": "Expedient en avaluació",
+   "title": "Servei de neteja de l’Institut Forat del Vent",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f805df22-3a3a-40e8-959b-e41e4ae8a14f/300941275",
+   "winners": []
+  },
+  {
    "amount": 22900.0,
    "date": "2026-11-16",
    "deadline": "2026-11-12T14:00",
@@ -29,19 +137,6 @@
    "winners": []
   },
   {
-   "amount": 340240.0,
-   "date": "2026-11-16",
-   "deadline": "2026-12-15T11:00",
-   "id": "208087/2026-18 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Anunci de licitació",
-   "title": "Suministro, instalación y puesta en marcha de un sistema de microscopía de fuerza atómica con carga automatizada, integrado en una caja de guantes y apto para la medida del potencial de superficie, destinado al institut català de nanociènci",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b4055ef-d636-4cdb-8bd8-e6c04a54418d/300937682",
-   "winners": []
-  },
-  {
    "amount": 87350.0,
    "date": "2026-11-16",
    "deadline": "2026-10-22T12:00",
@@ -55,19 +150,6 @@
    "winners": [
     "ANAME S.L."
    ]
-  },
-  {
-   "amount": 73990.8,
-   "date": "2026-11-16",
-   "deadline": "2026-10-20T14:00",
-   "id": "100000101/08031757/2026/01",
-   "lots": 0,
-   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de neteja de l’Institut Forat del Vent",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f805df22-3a3a-40e8-959b-e41e4ae8a14f/300940076",
-   "winners": []
   },
   {
    "amount": 326989.04,
@@ -276,19 +358,6 @@
    "title": "Subministrament de llicències de software microsoft office 365 pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/56dc9cf1-3bfe-48e7-93a3-273252bc10d8/300932934",
-   "winners": []
-  },
-  {
-   "amount": 900.0,
-   "date": "2026-11-09",
-   "deadline": "2026-11-06T23:59",
-   "id": "29827823/246/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de manteniment d’ultracongeladors per al departament de genètica animal del centre de recerca en agrigenòmica csic irta uab ub crag.",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ec53b521-1396-4208-95a7-797ec54524cc/300932999",
    "winners": []
   },
   {
@@ -711,21 +780,6 @@
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/2ed41de6-3ee0-43ec-bd70-5091b2a150a7/300921810",
    "winners": [
     "LOGICALIS SPAIN, S.L.U."
-   ]
-  },
-  {
-   "amount": 20644.0,
-   "date": "2026-10-28",
-   "deadline": "2026-09-11T12:00",
-   "id": "208087/2026-10 ICN2",
-   "lots": 2,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Adjudicació",
-   "title": "Servei de manteniment preventiu dels armaris d’inflamables, armaris de corrosius, vitrines de gasos i cabines de bioseguretat, dividit en 2 lots, per a l’institut català de nanociència i nanotecnologia (icn2)",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/bc3543fb-579f-400a-8a8f-bd39084a8a86/300921408",
-   "winners": [
-    "LABORTECH WALDNER SL"
    ]
   },
   {
@@ -2433,19 +2487,6 @@
    "title": "Servei manteniment sistema informació energètica (SIE)",
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/a975c33f-3df7-43bc-a816-1cedc63a0872/300819503",
-   "winners": []
-  },
-  {
-   "amount": 465727.98,
-   "date": "2026-07-01",
-   "deadline": "2026-06-30T14:00",
-   "id": "16138154/151/2026/0005",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Construcció jocs singulars",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ac7be390-69cd-4410-bd4f-a81ac3b9a2db/300819460",
    "winners": []
   },
   {
@@ -5464,36 +5505,6 @@
    "winners": []
   },
   {
-   "amount": 49060.53,
-   "date": "2025-10-13",
-   "deadline": "2025-09-29T10:00",
-   "id": "23584847/CUCDCV-2025-20",
-   "lots": 0,
-   "organ": "Consorci Urbanístic del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Formalització",
-   "title": "Ampliació i modificació xarxa de gas del projecte C1-C2",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/85ef2c95-168a-47a5-88fb-e6557b567b8f/300585321",
-   "winners": [
-    "NEDGIA CATALUNYA, S.A."
-   ]
-  },
-  {
-   "amount": 1158570.0,
-   "date": "2025-10-13",
-   "deadline": "2023-01-25T12:00",
-   "id": "23584847/CUCDCV-2023-00001",
-   "lots": 0,
-   "organ": "Consorci Urbanístic del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Execució",
-   "title": "Contracte de serveis per a la redacció del projecte, direcció de les obres, direcció ambiental i coordinació de seguretat i salut del Projecte d'urbanització E1, Passeig dels Gorgs al Parc de l'Alba",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a93e116f-2628-dfad-022a-aa1e2ea8844a/300375142",
-   "winners": [
-    "UTE DOPEC - PROJECTS"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5520,5 +5531,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-17T23:55:00+01:00"
+ "fetched": "2026-11-18T15:04:42+01:00"
 }

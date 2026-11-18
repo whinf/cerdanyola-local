@@ -52,56 +52,6 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
-    "category": "",
-    "end": "2026-11-17",
-    "place": "Sala Cinema UAB",
-    "source": "uab",
-    "start": "2026-11-17",
-    "time": "13:00",
-    "title": "Projecció del film \"Jean Valjean\" d'Éric Besnard",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-jean-valjean-d-eric-besnard-1345828727816.html?detid=1346005234205"
-   },
-   {
-    "category": "",
-    "end": "2026-11-17",
-    "place": "Sala Teatre UAB",
-    "source": "uab",
-    "start": "2026-11-17",
-    "time": "15:00",
-    "title": "Ode Marítima, teatre en portuguès",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/ode-maritima-teatre-en-portugues-1345828727816.html?detid=1346005234467"
-   },
-   {
-    "category": "Festes populars",
-    "end": "2026-11-17",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-17",
-    "time": "19:00",
-    "title": "Acte de presentació del Nadal a Cerdanyola",
-    "url": "https://www.cerdanyola.cat/agenda/acte-de-presentacio-del-nadal-cerdanyola-1"
-   },
-   {
-    "category": "Conferències",
-    "end": "2026-11-17",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-17",
-    "time": "19:00",
-    "title": "Conferència 'Conflictes armats al món'",
-    "url": "https://www.cerdanyola.cat/agenda/conferencia-conflictes-armats-al-mon"
-   },
-   {
-    "category": "",
-    "end": "2026-11-18",
-    "place": "Sala Cinema UAB",
-    "source": "uab",
-    "start": "2026-11-18",
-    "time": "11:00",
-    "title": "Projecció del film \"Gary Cooper que estàs en los cielos\" de Pilar MIró",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-gary-cooper-que-estas-en-los-cielos-de-pilar-miro-1345828727816.html?detid=1346005326605"
-   },
-   {
     "category": "Cursos i tallers",
     "end": "2026-11-18",
     "place": "",
@@ -493,6 +443,17 @@
     "url": "https://www.cerdanyola.cat/agenda/oficina-mobil-daigues-de-barcelona-31"
    },
    {
+    "category": "Teatre i dansa",
+    "end": "2026-12-18",
+    "free": false,
+    "place": "Ateneu de Cerdanyola",
+    "source": "gencat",
+    "start": "2026-12-18",
+    "time": "20 h",
+    "title": "Loop",
+    "url": ""
+   },
+   {
     "category": "",
     "end": "2026-12-19",
     "place": "Ateneu de Cerdanyola",
@@ -687,6 +648,14 @@
    {
     "category": "Exposicions",
     "free": false,
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "source": "gencat",
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+   },
+   {
+    "category": "Exposicions",
+    "free": false,
     "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
     "title": "Col·lecció del Museu d'Art de Cerdanyola",
@@ -699,16 +668,8 @@
     "source": "gencat",
     "title": "Relats compartits. Diàlegs d'art",
     "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
-   },
-   {
-    "category": "Exposicions",
-    "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
-    "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-17T23:55:00+01:00"
+ "fetched": "2026-11-18T15:04:42+01:00"
 }
