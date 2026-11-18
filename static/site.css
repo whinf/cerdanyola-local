@@ -60,9 +60,9 @@
   .board-cats { list-style: none; padding: 0; margin: 0 0 var(--s-4); display: grid; gap: 4px; }
   .board-cats .i { color: var(--accent); vertical-align: -.15em; margin-inline-end: .35em; }
   .board-head { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; justify-content: space-between; margin-block: var(--s-4); }
-  .board-filters { display: flex; flex-wrap: wrap; gap: var(--s-2); }
-  .board-filters button { border: 1px solid var(--border); background: var(--surface); color: var(--ink-2); border-radius: var(--r-pill); padding: .3rem .85rem; cursor: pointer; display: inline-flex; align-items: center; gap: .35em; }
-  .board-filters button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .board-filters, .chips { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .board-filters button, .chips button { border: 1px solid var(--border); background: var(--surface); color: var(--ink-2); border-radius: var(--r-pill); padding: .3rem .85rem; cursor: pointer; display: inline-flex; align-items: center; gap: .35em; }
+  .board-filters button[aria-pressed="true"], .chips button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
   .board-new { border: 0; cursor: pointer; }
   .post .body { margin: .2rem 0; white-space: pre-line; overflow-wrap: anywhere; }
   .post .contact, .post .actions { margin: .2rem 0 0; font-size: var(--fs-s); }
@@ -79,6 +79,19 @@
   form.board .msg { color: var(--bad-ink); min-block-size: 1.2em; margin: var(--s-2) 0; }
   form.board .buttons { display: flex; gap: var(--s-3); align-items: center; margin: 0; }
   .cf-turnstile { margin-block: var(--s-3); min-block-size: 0; }
+
+  /* Filtro de listas (filter.js) */
+  .filter { display: grid; gap: var(--s-2); margin-block: var(--s-4); }
+  .filter input { inline-size: 100%; box-sizing: border-box; padding: .5rem .75rem; border: 1px solid var(--border); border-radius: var(--r-s); background: var(--surface); color: var(--ink); font: inherit; }
+  .filter .note { margin: 0; }
+  .chips button { font: inherit; font-size: var(--fs-s); }
+
+  /* Portada: franja «hoy» y accesos rápidos, en píldoras */
+  .today { margin-block: var(--s-4); }
+  .today ul, .quick { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .today a, .quick a { display: inline-flex; align-items: center; gap: .45em; border: 1px solid var(--border); background: var(--surface); color: var(--ink); border-radius: var(--r-pill); padding: .35rem .9rem; text-decoration: none; font-size: var(--fs-s); font-weight: 600; box-shadow: var(--shadow-1); }
+  .today a:hover, .quick a:hover { border-color: var(--accent); }
+  .today a .i { color: var(--accent); }
 
   /* Instalación como app (PWA): oculto hasta que app.js sabe que se puede instalar */
   .install[hidden] { display: none; }

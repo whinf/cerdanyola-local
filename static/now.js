@@ -28,6 +28,17 @@
         if (!li.hidden) { shown++; }
       });
     });
+    // Franja «hoy» de la portada: previsión del día que es y actos de hoy que aún no han empezado.
+    document.querySelectorAll("[data-wx]").forEach(function (a) {
+      var t = JSON.parse(a.dataset.wx)[today], span = a.querySelector("span");
+      a.parentNode.hidden = !t;
+      if (t && span) { span.textContent = a.dataset.text.replace("{t}", t); }
+    });
+    document.querySelectorAll("[data-today-events]").forEach(function (a) {
+      var starts = JSON.parse(a.dataset.todayEvents)[today] || [], span = a.querySelector("span");
+      var n = starts.filter(function (s) { return !s || new Date(s) > now; }).length;
+      if (span) { span.textContent = a.dataset[n < 2 ? "t" + n : "tn"].replace("{n}", n); }
+    });
     // Frescura: el aviso aparece cuando la fuente supera su margen, aunque no haya habido build.
     document.querySelectorAll("[data-fetched]").forEach(function (p) {
       var warn = p.querySelector(".stale"), age = (now - new Date(p.dataset.fetched)) / 36e5;

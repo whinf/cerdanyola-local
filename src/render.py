@@ -3,6 +3,7 @@ import hashlib
 import json
 import re
 import shutil
+import unicodedata
 from datetime import date, datetime, timedelta
 from html import escape as esc
 from pathlib import Path
@@ -99,6 +100,44 @@ def is_free(e):
 
 def for_kids(e):
     return e.get("category") == "Infància" or bool(KIDS_WORDS.search(e["title"]))
+
+
+# Temas de las ayudas para el filtro: (clave, finalidades de la BDNS, raíces ca+es buscadas a principio de palabra
+# en el título sin acentos). Una ayuda puede caer en varios temas o en ninguno.
+AID_TOPICS = (
+    ("housing", ("Acceso a la vivienda y fomento de la edificación",),
+     "habitatge|vivienda|lloguer|alquiler|rehabilitaci|propietari"),
+    ("study", ("Educación",), "beca|beques|estudi|matricul|universit|formaci|menjador|comedor|escola|escuela"),
+    ("work", ("Fomento del Empleo", "Comercio, Turismo y Pymes"),
+     "ocupaci|empleo|contrataci|contractaci|autonom|emprened|pime|pyme|comerc|prestamo|prestec|financiaci"),
+    ("energy", ("Industria y Energía", "Subvenciones al transporte"),
+     "energ|fotovolt|autoconsum|eficienci|vehicle|vehiculo|renovabl"),
+    ("culture", ("Cultura",), "cultur|esport|deport|music|teatr|audiovisual|llibre|libro|premi"),
+    ("family", ("Servicios Sociales y Promoción Social", "Otras Prestaciones económicas", "Sanidad"),
+     "famil|infan|naixement|nacimiento|gent gran|mayores|dependenc|discapac|renda garantida|renta garantizada|jove"),
+    ("farm", ("Agricultura, Pesca y Alimentación",), "agrar|agricol|ramader|ganader|pesca|pesquer|forest"),
+    ("research", ("Investigación, desarrollo e innovación",), "recerca|investigaci|innovaci"),
+)
+_TOPIC_RE = {k: re.compile(rf"\b(?:{words})") for k, _, words in AID_TOPICS}
+PUBLIC_LEVELS = {"A1": "uni", "A2": "uni", "C1": "c1", "C2": "c2", "Agrupacions professionals": "ap"}  # grupo -> titulación
+
+
+def plain(text):
+    """Minúsculas sin acentos, para buscar palabras."""
+    return unicodedata.normalize("NFKD", (text or "").lower()).encode("ascii", "ignore").decode()
+
+
+def aid_topics(a):
+    text = plain(f'{a.get("title", "")} {a.get("title_ca") or ""}')
+    return [k for k, purposes, _ in AID_TOPICS if a.get("purpose") in purposes or _TOPIC_RE[k].search(text)]
+
+
+def job_tags(j):
+    """Etiquetas de filtro de una oferta del SOC, leídas de sus textos de contrato y jornada."""
+    c, h = plain(j.get("contract")), plain(j.get("hours"))
+    hits = (("indef", "indefinit" in c), ("temp", "temporal" in c), ("full", "completa" in h or "intensiva" in h),
+            ("part", "parcial" in h))
+    return [k for k, hit in hits if hit]
 
 
 def event_start(e):
@@ -296,6 +335,62 @@ class Site:
                 f'{t(lang, "fresh_at", t=fmt_dt(fetched))} <strong class="stale"{"" if stale else " hidden"}>'
                 f'{t(lang, "fresh_stale")}</strong></p>')
 
+    def filter_bar(self, lang, *groups):
+        """Buscador y chips de una lista. Va oculto y filter.js lo enseña: sin JS se ve la lista entera.
+        Cada grupo es una lista de (etiqueta, texto); dentro de un grupo se suman y entre grupos se cruzan."""
+        chips = "".join(
+            f'<button type="button" data-filter-tag="{tag}" data-filter-group="{g}" aria-pressed="false">{label}</button>'
+            for g, group in enumerate(groups) for tag, label in group)
+        q = esc(t(lang, "filter_q"))
+        return (f'<div class="filter" data-filter hidden>'
+                f'<input type="search" data-filter-q placeholder="{q}" aria-label="{q}" autocomplete="off">'
+                f'<div class="chips">{chips}</div><p class="note" data-filter-count '
+                f'data-text="{esc(t(lang, "filter_count"))}" aria-live="polite" hidden></p></div>')
+
+    def filter_empty(self, lang):
+        return f'<p data-filter-empty hidden>{t(lang, "filter_none")}</p>'
+
+    def filter_head(self):
+        return f'<script src="{self.href("/static/filter.js")}" defer></script>\n'
+
+    def suggest(self, lang):
+        """Alternativa a GitHub para proponer cambios: un correo al contacto de la web, si lo hay."""
+        mail = (self.cfg.get("owner") or {}).get("email")
+        if not mail:
+            return ""
+        subject = quote(f'{self.name}: {t(lang, "suggest_subject")}')
+        return " " + t(lang, "suggest_mail", mail=f"mailto:{esc(mail)}?subject={subject}")
+
+    def plural(self, lang, key, n):
+        """Texto según la cantidad: claves `_0`, `_1` y `_n`."""
+        return t(lang, f"{key}_{n if n < 2 else 'n'}", n=n)
+
+    def today_strip(self, lang):
+        """Franja «hoy» de la portada: lo que más se consulta, de un vistazo. Lo que depende de la hora (qué día
+        es, cuántos actos quedan) viaja también en `data-*` para que now.js lo corrija entre dos builds."""
+        today, items = self.now.date(), []
+        days = {d["date"]: f'{d["tmin"]}° / {d["tmax"]}°' for d in (self.get("weather") or {}).get("days") or []}
+        if today.isoformat() in days:
+            items.append(f'<a href="#weather" data-wx="{esc(json.dumps(days))}" data-text="{esc(t(lang, "today_wx"))}">'
+                         f'{self.i("cloud-sun")}<span>{t(lang, "today_wx").replace("{t}", days[today.isoformat()])}</span></a>')
+        alerts = self.get("alerts")
+        if alerts is not None:
+            items.append(f'<a href="#transport">{self.i("train-front")}<span>{self.plural(lang, "today_alerts", len(alerts))}</span></a>')
+        if self.get("agenda") is not None:
+            soon = {}  # día -> inicios («» si el acto no trae hora) de hoy y los dos días siguientes
+            for e in self.events_split()[0]:
+                if e["start"] <= (today + timedelta(days=2)).isoformat():
+                    begin = event_start(e)
+                    soon.setdefault(e["start"], []).append(begin.isoformat(timespec="minutes") if begin else "")
+            left = sum(e["start"] == today.isoformat() for e in self.upcoming())
+            texts = " ".join(f'data-t{k}="{esc(t(lang, f"today_events_{k}"))}"' for k in ("0", "1", "n"))
+            items.append(f'<a href="{self.href(self.path(lang, "agenda"))}" data-today-events="{esc(json.dumps(soon))}" {texts}>'
+                         f'{self.i("calendar")}<span>{self.plural(lang, "today_events", left)}</span></a>')
+        if not items:
+            return ""
+        return (f'<nav class="today" aria-label="{esc(t(lang, "today_label"))}"><ul>'
+                f'{"".join(f"<li>{x}</li>" for x in items)}</ul></nav>')
+
     # ---------- bloques ----------
     def weather(self, lang):
         w = self.get("weather")
@@ -317,7 +412,7 @@ class Site:
             hero = (f'<p class="hero card">{self.wx(icon, text, cls="wx wx-big")}'
                     f'<span><span class="k">{t(lang, "now")}</span> <strong class="v">{round(now["temp"])}°C</strong> '
                     f'<span class="sky">{esc(text)} · {t(lang, "wind")} {now["wind_kmh"]} km/h</span></span></p>')
-        return (f'<section><h2>{self.i("cloud-sun")}{t(lang, "weather_title")}</h2>{hero}<table class="recent weather"><thead><tr>'
+        return (f'<section id="weather"><h2>{self.i("cloud-sun")}{t(lang, "weather_title")}</h2>{hero}<table class="recent weather"><thead><tr>'
                 f'<th>{t(lang, "th_day")}</th><th>{t(lang, "th_sky")}</th><th class="num">{t(lang, "th_min")}</th>'
                 f'<th class="num">{t(lang, "th_max")}</th><th class="num">{t(lang, "th_rain")} (mm)</th>'
                 f'<th class="num">{t(lang, "th_wind")} (km/h)</th></tr></thead><tbody>{"".join(rows)}</tbody></table>'
@@ -376,7 +471,7 @@ class Site:
             f'{esc(a["text"].get(lang) or a["text"].get("ca") or a["text"].get("es") or next(iter(a["text"].values())))}</li>'
             for a in alerts[:6])
         body = f'<ul class="alerts">{items}</ul>' if items else f'<p>{t(lang, "transport_none")}</p>'
-        return (f'<section><h2>{self.i("train-front")}{t(lang, "transport_title")}</h2>{body}'
+        return (f'<section id="transport"><h2>{self.i("train-front")}{t(lang, "transport_title")}</h2>{body}'
                 f'{self.stamp(lang, "alerts")}<p><a href="{RODALIES}">{t(lang, "transport_more")} →</a></p></section>')
 
     def started(self, e):
@@ -389,7 +484,8 @@ class Site:
         d = date.fromisoformat(e["start"])
         when = i18n.fmt_date(lang, d) + (f' · {esc(e["time"])}' if e.get("time") else "")
         begin, on = event_start(e), self.started(e)
-        attrs += f' data-end="{esc(e.get("end") or e["start"])}"'
+        tags = " ".join(k for k, hit in (("free", is_free(e)), ("kids", for_kids(e))) if hit)
+        attrs += f' data-day="{esc(e["start"])}" data-end="{esc(e.get("end") or e["start"])}" data-tags="{tags}"'
         if begin and e.get("end", e["start"]) == e["start"]:
             attrs += f' data-start="{begin.isoformat(timespec="minutes")}"'
             when += f' <span class="tier t3 on"{"" if on else " hidden"}>{t(lang, "started")}</span>'
@@ -468,7 +564,8 @@ class Site:
         meta = [esc(i18n.organ_name(a["organ"]))]
         if a.get("budget"):
             meta.append(t(lang, "aids_budget", b=i18n.fmt_money(lang, a["budget"])))
-        return (f'<li><span class="when">{when}</span><span class="what"><a href="{BDNS_CALL.format(esc(a["id"]))}">'
+        return (f'<li data-tags="{" ".join(aid_topics(a))}"><span class="when">{when}</span>'
+                f'<span class="what"><a href="{BDNS_CALL.format(esc(a["id"]))}">'
                 f'{esc(title)}</a></span><small class="muted">{" · ".join(meta)}</small></li>')
 
     def aids_preview(self, lang):
@@ -487,7 +584,10 @@ class Site:
         items = self.aids_open()
         jump = " · ".join(f'<a href="#{w}">{t(lang, "aids_" + w)}</a> ({sum(w in x[2]["who"] for x in items)})'
                           for w in AUDIENCES)
-        body = [f'<h1>{t(lang, "aids_title")}</h1><p class="lede">{t(lang, "aids_desc")}</p><p>{jump}</p>']
+        seen = {k for x in items for k in aid_topics(x[2])}
+        bar = self.filter_bar(lang, [(k, t(lang, "topic_" + k)) for k, *_ in AID_TOPICS if k in seen])
+        body = [f'<h1>{t(lang, "aids_title")}</h1><p class="lede">{t(lang, "aids_desc")}</p><p>{jump}</p>'
+                f'<div data-filter-scope>{bar}']
         for who in AUDIENCES:
             mine = [x for x in items if who in x[2]["who"]]
             body.append(f'<h2 id="{who}">{t(lang, "aids_" + who)}</h2>')
@@ -497,10 +597,12 @@ class Site:
                 group = [x for x in mine if aid_level(x[2]) == lvl]
                 if group:
                     body.append(f'<details class="group">'
-                                f'<summary>{t(lang, "aids_lvl_" + lvl)} <span class="muted">({len(group)})</span></summary>'
+                                f'<summary>{t(lang, "aids_lvl_" + lvl)} <span class="muted" data-count>({len(group)})</span></summary>'
                                 f'<ul class="events">{"".join(self.aid_item(lang, *x) for x in group)}</ul></details>')
+        body.append(f'{self.filter_empty(lang)}</div>')
         body.append(f'<p class="note">{t(lang, "aids_note")}</p>{self.stamp(lang, "aids")}')
-        return self.layout(lang, "aids", f'{t(lang, "aids_title")} · {self.name}', t(lang, "aids_desc"), "".join(body))
+        return self.layout(lang, "aids", f'{t(lang, "aids_title")} · {self.name}', t(lang, "aids_desc"), "".join(body),
+                           head=self.filter_head())
 
     def public_jobs(self):
         today = self.now.date().isoformat()
@@ -511,7 +613,7 @@ class Site:
         if j.get("salary"):
             meta.append("–".join(i18n.fmt_money(lang, x) for x in sorted(set(j["salary"]))))
         when = t(lang, "jobs_posted", d=i18n.fmt_deadline(lang, date.fromisoformat(j["date"]), self.now.date()))
-        return (f'<li><span class="when">{when}</span><span class="what">{link(j["url"], esc(j["title"]))}'
+        return (f'<li data-tags="{" ".join(job_tags(j))}"><span class="when">{when}</span><span class="what">{link(j["url"], esc(j["title"]))}'
                 f'</span><small class="muted">{" · ".join(x for x in meta if x)}</small></li>')
 
     def public_job_item(self, lang, j):
@@ -522,35 +624,40 @@ class Site:
         size = t(lang, "jobs_pool") if j["pool"] else t(lang, "jobs_place") if j["places"] == 1 else (
             t(lang, "jobs_places", n=j["places"]) if j["places"] else "")
         meta = [esc(j["org"]), esc(j["kind"]), esc(j["group"]), size]
-        return (f'<li><span class="when">{when}</span><span class="what">{link(j["url"], esc(j["title"]))}'
+        return (f'<li data-tags="{PUBLIC_LEVELS.get(j["group"], "")}"><span class="when">{when}</span><span class="what">{link(j["url"], esc(j["title"]))}'
                 f'</span><small class="muted">{" · ".join(x for x in meta if x)}</small></li>')
 
     def jobs_page(self, lang):
         offers, public = self.get("offers") or [], self.public_jobs()
+        chips = lambda *keys: [(k, t(lang, "job_f_" + k)) for k in keys]  # noqa: E731
         body = [f'<h1>{t(lang, "jobs_title")}</h1><p class="lede">{t(lang, "jobs_desc")}</p>'
                 f'<p><a href="#offers">{t(lang, "jobs_offers")}</a> ({len(offers)}) · '
                 f'<a href="#public">{t(lang, "jobs_public")}</a> ({len(public)})</p>',
-                f'<h2 id="offers">{t(lang, "jobs_offers")}</h2>']
+                f'<h2 id="offers">{t(lang, "jobs_offers")}</h2><div data-filter-scope>'
+                f'{self.filter_bar(lang, chips("indef", "temp"), chips("full", "part"))}']
         towns = {}
         for j in offers:
             towns.setdefault(j["town"], []).append(j)
         for town, items in towns.items():
             body.append(f'<details class="group">'
-                        f'<summary>{esc(i18n.organ_name(town))} <span class="muted">({len(items)})</span></summary>'
+                        f'<summary>{esc(i18n.organ_name(town))} <span class="muted" data-count>({len(items)})</span></summary>'
                         f'<ul class="events">{"".join(self.job_item(lang, j) for j in items)}</ul></details>')
         if not offers:
             body.append(f'<p>{t(lang, "jobs_empty")}</p>')
-        body.append(f'<h2 id="public">{t(lang, "jobs_public")}</h2>')
+        body.append(f'{self.filter_empty(lang)}</div><h2 id="public">{t(lang, "jobs_public")}</h2><div data-filter-scope>'
+                    f'{self.filter_bar(lang, chips("uni", "c1", "c2", "ap"))}')
         near = [j for j in public if j["km"] is not None and j["km"] <= 4.5]
         for key, items in (("jobs_near", near), ("jobs_far", [j for j in public if j not in near])):
             if items:
                 body.append(f'<details class="group">'
-                            f'<summary>{t(lang, key)} <span class="muted">({len(items)})</span></summary>'
+                            f'<summary>{t(lang, key)} <span class="muted" data-count>({len(items)})</span></summary>'
                             f'<ul class="events">{"".join(self.public_job_item(lang, j) for j in items)}</ul></details>')
         if not public:
             body.append(f'<p>{t(lang, "jobs_empty")}</p>')
+        body.append(f'{self.filter_empty(lang)}</div>')
         body.append(f'<p class="note">{t(lang, "jobs_note")}</p>{self.stamp(lang, "offers", "cido")}')
-        return self.layout(lang, "jobs", f'{t(lang, "jobs_title")} · {self.name}', t(lang, "jobs_desc"), "".join(body))
+        return self.layout(lang, "jobs", f'{t(lang, "jobs_title")} · {self.name}', t(lang, "jobs_desc"), "".join(body),
+                           head=self.filter_head())
 
     def jobs_preview(self, lang):
         if self.get("offers") is None and self.get("cido") is None:
@@ -782,7 +889,7 @@ class Site:
             if week[k]:
                 body.append(f'<h2>{self.i("utensils" if k == "food" else "sparkles")}{t(lang, "picks_" + k)}</h2>'
                             f'<ul class="events">{"".join(self.pick_item(lang, p) for p in week[k])}</ul>')
-        body.append(f'<p class="note">{t(lang, "picks_note", n=len(self.picks), repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+        body.append(f'<p class="note">{t(lang, "picks_note", n=len(self.picks), repo=esc(self.cfg.get("repo_url") or "https://github.com"))}{self.suggest(lang)}</p>')
         return self.layout(lang, "picks", f'{t(lang, "picks_title")} · {self.name}', t(lang, "picks_desc"), "".join(body))
 
     # ---------- redes ----------
@@ -839,7 +946,7 @@ class Site:
         radar = "".join(f'<li><a href="{esc(u)}" rel="noopener">{esc(label)}</a></li>' for label, u in RADAR)
         body.append(f'<section><h2>{self.i("link")}{t(lang, "social_radar")}</h2><p>{t(lang, "social_radar_text")}</p>'
                     f'<ul class="months">{radar}</ul></section>')
-        body.append(f'<p class="note">{t(lang, "social_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+        body.append(f'<p class="note">{t(lang, "social_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}{self.suggest(lang)}</p>')
         return self.layout(lang, "social", f'{t(lang, "social_title")} · {self.name}', t(lang, "social_desc"), "".join(body))
 
     def free_events(self, days=30):
@@ -888,7 +995,7 @@ class Site:
             body.append(f'<section><h2>{self.i("banknote")}{t(lang, "save_aids")}</h2><p>{t(lang, "save_aids_text", n=len(mine))}</p>{top}'
                         f'<p><a href="{self.href(self.path(lang, "aids"))}#people">{t(lang, "aids_all")} →</a></p></section>')
         body.append(f'<section><h2>{self.i("link")}{t(lang, "save_links")}</h2>{t(lang, "save_links_body")}</section>')
-        body.append(f'<p class="note">{t(lang, "save_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+        body.append(f'<p class="note">{t(lang, "save_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}{self.suggest(lang)}</p>')
         return self.layout(lang, "save", f'{t(lang, "save_title")} · {self.name}', t(lang, "save_desc"), "".join(body))
 
     # ---------- tauler veïnal ----------
@@ -954,7 +1061,7 @@ class Site:
 
     # ---------- páginas ----------
     def home(self, lang):
-        quick = (f'<section><h2>{self.i("link")}{t(lang, "quick_title")}</h2><ul class="months">'
+        quick = (f'<section><h2>{self.i("link")}{t(lang, "quick_title")}</h2><ul class="quick">'
                  f'<li><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}#weekend">{t(lang, "weekend_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "picks"))}">{t(lang, "picks_title")}</a></li>'
@@ -968,10 +1075,11 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
-                f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.install_block(lang, home=True)}{self.light(lang)}{self.transport(lang)}'
+                f'{t(lang, "tagline")}</p>{self.today_strip(lang)}{self.weather(lang)}{self.install_block(lang, home=True)}'
+                f'{quick}{self.light(lang)}{self.transport(lang)}'
                 f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.social_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
                 f'{self.fuel_preview(lang)}'
-                f'{self.air(lang)}{quick}')
+                f'{self.air(lang)}')
         ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": self.name, "inLanguage": lang,
                "url": self.absolute(self.path(lang, "home")), "description": t(lang, "home_desc")}]
         return self.layout(lang, "home", f'{t(lang, "home_title")} · {self.name}', t(lang, "home_desc"), body, ld)
@@ -983,15 +1091,17 @@ class Site:
         events = upcoming + ongoing
         ongoing = [e for e in upcoming if self.started(e)] + ongoing  # los de hoy ya empezados, con su etiqueta
         upcoming = [e for e in upcoming if not self.started(e)]
-        body = [f'<h1>{t(lang, "agenda_title")}</h1><p class="lede">{t(lang, "agenda_desc")}</p>']
+        bar = self.filter_bar(lang, [("today", t(lang, "f_today")), ("weekend", t(lang, "f_weekend"))],
+                              [("free", t(lang, "free")), ("kids", t(lang, "kids"))])
+        body = [f'<h1>{t(lang, "agenda_title")}</h1><p class="lede">{t(lang, "agenda_desc")}</p><div data-filter-scope>{bar}']
         body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in upcoming)}</ul>'
                     if upcoming else f'<p>{t(lang, "agenda_empty")}</p>')
         if ongoing:
             body.append(f'<h2>{self.i("clock")}{t(lang, "ongoing_title")}</h2>'
                         f'<ul class="events">{"".join(self.event_item(lang, e) for e in ongoing)}</ul>')
-        body.append(self.stamp(lang, "agenda"))
+        body.append(f'{self.filter_empty(lang)}</div>{self.stamp(lang, "agenda")}')
         body.append(f'<aside class="tip">{self.i("calendar")}<p>{t(lang, "ics_link", url=self.absolute("/agenda.ics"))}</p></aside>'
-                    f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+                    f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}{self.suggest(lang)}</p>')
         if permanent:
             items = "".join(f'<li>{link(p.get("url"), esc(p["title"]))}'
                             f' <small class="muted">{esc(p.get("place", ""))}</small></li>' for p in permanent)
@@ -1006,7 +1116,7 @@ class Site:
                                         "addressRegion": "Barcelona", "addressCountry": "ES"}},
                **({"url": safe_url(e["url"])} if safe_url(e.get("url")) else {})} for e in events[:30]]
         return self.layout(lang, "agenda", f'{t(lang, "agenda_title")} · {self.name}', t(lang, "agenda_desc"),
-                           "".join(body), ld)
+                           "".join(body), ld, head=self.filter_head())
 
     def directory_page(self, lang):
         body = [f'<h1>{t(lang, "directory_title")}</h1><p class="lede">{t(lang, "directory_desc")}</p>', self.fuel(lang)]
@@ -1088,7 +1198,7 @@ class Site:
         body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in parties)}</ul>'
                     if parties else f'<p>{t(lang, "festive_empty")}</p>')
         body.append(f'<p><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_all")} →</a></p>'
-                    f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p></section>')
+                    f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}{self.suggest(lang)}</p></section>')
         groups = {}
         for p in places:
             groups.setdefault(p["group"], []).append(p)

@@ -346,6 +346,23 @@ class TestSite(unittest.TestCase):
         self.assertNotIn("energía solar", block(3))  # de madrugada no hay sol
         self.assertIn("energía solar", block(13))
 
+    def test_filter_tags(self):
+        self.assertEqual(render.aid_topics({"title": "Ayudas al alquiler para jóvenes", "purpose": "Otras"}), ["housing", "family"])
+        self.assertEqual(render.aid_topics({"title": "Subvencions a l'agricultura", "purpose": "Cultura"}), ["culture"])  # no «cultur» suelto
+        self.assertEqual(render.aid_topics({"title": "Premio X", "title_ca": None, "purpose": "Educación"}), ["study", "culture"])
+        self.assertEqual(render.aid_topics({"title": "Convocatoria genérica"}), [])
+        self.assertEqual(render.job_tags({"contract": "Contracte laboral indefinit", "hours": "Jornada parcial matí (15 hores)"}),
+                         ["indef", "part"])
+        self.assertEqual(render.job_tags({"contract": "Contracte laboral temporal (6 mesos)", "hours": "Jornada completa"}),
+                         ["temp", "full"])
+        cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/x", "owner": {"email": "a@example.com"}}
+        site = Site(cfg, {}, "unused", NOW)
+        self.assertIn('href="mailto:a@example.com?subject=Cerdanyola%20Avui%3A%20sugerencia"', site.suggest("es"))
+        self.assertEqual(Site({"site_name": "x", "site_url": "https://example.github.io/x"}, {}, "unused", NOW).suggest("es"), "")
+        bar = site.filter_bar("ca", [("a", "A")], [("b", "B")])
+        self.assertIn("data-filter hidden", bar)  # sin JS no se ve
+        self.assertIn('data-filter-tag="b" data-filter-group="1"', bar)
+
     def test_same_keys(self):
         for lang in i18n.LANGS:
             self.assertEqual(set(i18n.STRINGS[lang]), set(i18n.STRINGS["ca"]), lang)
@@ -448,6 +465,17 @@ class TestSite(unittest.TestCase):
             self.assertIn('og:image', (out / "index.html").read_text(encoding="utf-8"))
             self.assertIn("Rodalies R4, R7 i R8", home)
             self.assertIn('class="note fresh" data-fetched=', home)
+            self.assertLess(home.index('class="today"'), home.index('id="weather"'))  # franja «hoy» arriba del todo
+            self.assertLess(home.index('class="quick"'), home.index('id="transport"'))
+            self.assertIn("data-today-events=", home)
+            for page in (aids, jobs, (out / "ca/agenda/index.html").read_text(encoding="utf-8")):
+                self.assertIn("/static/filter.js", page)
+                self.assertIn("data-filter-scope", page)
+                self.assertIn("data-filter-empty hidden", page)
+            self.assertIn('data-filter-tag="family"', aids)
+            self.assertIn('data-filter-tag="indef"', jobs)
+            self.assertIn("data-count>(", jobs)
+            self.assertNotIn("/static/filter.js", home)
             sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
             self.assertIn('href="tel:112"', sos)
             self.assertIn("Policia Local", sos)
