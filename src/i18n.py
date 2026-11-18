@@ -356,6 +356,7 @@ STRINGS = {
 <li>Agenda: Ajuntament de Cerdanyola del Vallès, Agenda cultural de Catalunya (dades obertes de la Generalitat), agenda de la UAB (llicència CC BY-NC) i calendaris del Festival de Blues de Cerdanyola i d'AFOCER.</li>
 <li>Equipaments, punts de recàrrega i qualitat de l'aire: dades obertes de la Generalitat de Catalunya.</li>
 <li>Avisos de trens: Renfe Rodalies (GTFS-RT), llicència CC BY 4.0.</li>
+<li>Farmàcies de guàrdia i avisos de trànsit i obres: web de l'Ajuntament de Cerdanyola del Vallès. De les guàrdies només en prenem el nom, l'adreça, el telèfon i el torn de cada farmàcia; dels avisos, el titular, la data i l'enllaç a la notícia original.</li>
 <li>Guia d'oci: © col·laboradors d'<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, llicència ODbL; més locals nocturns d'<a href="https://overturemaps.org">Overture Maps Foundation</a> (dades de Meta, BrightQuery i altres proveïdors), llicència <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a>.</li>
 <li>Ajudes i subvencions: Base de Dades Nacional de Subvencions (Ministeri d'Hisenda), de reutilització lliure.</li>
 <li>Feina: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) i CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
@@ -664,6 +665,7 @@ STRINGS = {
 <li>Agenda: Ajuntament de Cerdanyola del Vallès, Agenda cultural de Catalunya (datos abiertos de la Generalitat), agenda de la UAB (licencia CC BY-NC) y calendarios del Festival de Blues de Cerdanyola y de AFOCER.</li>
 <li>Equipamientos, puntos de recarga y calidad del aire: datos abiertos de la Generalitat de Catalunya.</li>
 <li>Avisos de trenes: Renfe Rodalies (GTFS-RT), licencia CC BY 4.0.</li>
+<li>Farmacias de guardia y avisos de tráfico y obras: web del Ayuntamiento de Cerdanyola del Vallès. De las guardias solo tomamos el nombre, la dirección, el teléfono y el turno de cada farmacia; de los avisos, el titular, la fecha y el enlace a la noticia original.</li>
 <li>Guía de ocio: © colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, licencia ODbL; más locales nocturnos de <a href="https://overturemaps.org">Overture Maps Foundation</a> (datos de Meta, BrightQuery y otros proveedores), licencia <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a>.</li>
 <li>Ayudas y subvenciones: Base de Datos Nacional de Subvenciones (Ministerio de Hacienda), de reutilización libre.</li>
 <li>Empleo: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) y CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
@@ -972,6 +974,7 @@ STRINGS = {
 <li>Events: Cerdanyola del Vallès town council, the Catalan culture agenda (Generalitat open data), the UAB events page (CC BY-NC licence) and the calendars of the Cerdanyola Blues Festival and AFOCER.</li>
 <li>Facilities, charging points and air quality: Generalitat de Catalunya open data.</li>
 <li>Train alerts: Renfe Rodalies (GTFS-RT), CC BY 4.0 licence.</li>
+<li>On-duty pharmacies and traffic and roadworks notices: Cerdanyola del Vallès town council website. From the duty rota we take only each pharmacy's name, address, phone number and shift; from the notices, the headline, the date and the link to the original news item.</li>
 <li>Leisure guide: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ODbL licence; more night venues from the <a href="https://overturemaps.org">Overture Maps Foundation</a> (data from Meta, BrightQuery and other providers), <a href="https://cdla.dev/permissive-2-0/">CDLA Permissive 2.0</a> licence.</li>
 <li>Grants: Spain's National Grants Database (BDNS, Ministry of Finance), free to reuse.</li>
 <li>Jobs: Catalan public employment service (Feina Activa, Catalan open licence) and the Diputació de Barcelona's CIDO (CC BY 4.0).</li>
