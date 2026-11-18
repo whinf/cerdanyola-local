@@ -4,7 +4,9 @@ Cada fuente tiene una función `parse_*` pura (probada con datos reales
 guardados en tests/fixtures) y una `fetch_*` que la descarga.
 """
 import bisect
+import email.utils
 import gzip
+import hashlib
 import html
 import http.client
 import json
@@ -19,6 +21,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zlib
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -289,11 +292,10 @@ def fetch_uab(today):
 
 
 def fetch_ajuntament(today):
-    first = get_text("https://www.cerdanyola.cat/agenda")
+    first = _cat_get("https://www.cerdanyola.cat/agenda")
     events = parse_agenda_ajuntament(first, today)
     for n in range(1, min(last_page(first), 6) + 1):  # unas 10 fechas por página: ~1 mes
-        time.sleep(10)  # el robots.txt de cerdanyola.cat pide Crawl-delay: 10
-        events += parse_agenda_ajuntament(get_text(f"https://www.cerdanyola.cat/agenda?page={n}"), today)
+        events += parse_agenda_ajuntament(_cat_get(f"https://www.cerdanyola.cat/agenda?page={n}"), today)
     if not events:  # una página sin ningún acto es un cambio de la web, no un mes sin agenda
         raise FetchError("cerdanyola.cat/agenda: no se encuentra ningún acto")
     return events
@@ -1294,3 +1296,301 @@ def fetch_board(now, url=None):
     if not url:
         raise FetchError("sin URL del tauler (board_api_url en config.json)")
     return parse_board(get_json(url.rstrip("/") + "/posts"))
+
+
+# ---------- cerdanyola.cat: peticiones espaciadas (su robots.txt pide Crawl-delay: 10) ----------
+CAT_DELAY = 10
+_cat_last = [None]  # instante (time.monotonic) de la última petición a cerdanyola.cat en este proceso
+
+
+def _cat_get(url, binary=False):
+    """GET a cerdanyola.cat dejando pasar CAT_DELAY segundos desde la petición anterior, la haga quien la haga."""
+    if _cat_last[0] is not None:
+        wait = CAT_DELAY - (time.monotonic() - _cat_last[0])
+        if wait > 0:
+            time.sleep(wait)
+    try:
+        return get_bytes(url) if binary else get_text(url)
+    finally:
+        _cat_last[0] = time.monotonic()
+
+
+def _plain(text):
+    return unicodedata.normalize("NFKD", (text or "").lower()).encode("ascii", "ignore").decode()
+
+
+# ---------- avisos del Ayuntamiento (RSS de actualidad: solo titular, fecha y enlace) ----------
+NOTICES_URL = "https://www.cerdanyola.cat/actualitat/rssactualitat"
+NOTICE_DAYS = 7  # un aviso de «este fin de semana» no debe seguir saliendo dos semanas después
+# Palabras (sin acentos) que hacen de un titular un aviso práctico: tráfico, obras, cortes, suministros, alertas.
+_NOTICE_WORDS = re.compile(
+    r"\b(?:transit|talls?|tallat|tallada|tallats|tallades|afectacions?|obres|desviaments?|aigua|subministraments?|"
+    r"autobus(?:os)?|bus(?:os)?|tancaments?|restriccions?|alert[ae]s?|avis(?:os)?|suspes[ao]?|suspensio|ajorna\w*|"
+    r"cancel\W?la\w*|avari[ae]s?|incidenci[ae]s?)\b")
+
+
+def parse_notices(xml_text, today, previous=None):
+    """Titulares del RSS municipal que parecen un aviso, sumados a los ya guardados (el RSS solo trae 10) y sin
+    los de hace más de NOTICE_DAYS. No se guarda el cuerpo de la noticia: se enlaza."""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as exc:
+        raise FetchError(f"RSS de actualitat: {exc}") from exc
+    items = root.findall("./channel/item")
+    if not items:
+        raise FetchError("RSS de actualitat sin noticias")
+    found = {n["url"]: n for n in previous or []}
+    for it in items:
+        title = re.sub(r"\s+", " ", html.unescape(it.findtext("title") or "")).strip()
+        url = (it.findtext("link") or "").strip()
+        if not title or not url.startswith("https://www.cerdanyola.cat/") or not _NOTICE_WORDS.search(_plain(title)):
+            continue
+        try:
+            day = tz.to_madrid(email.utils.parsedate_to_datetime(it.findtext("pubDate") or "")).date()
+        except (TypeError, ValueError):
+            continue
+        found[url] = {"title": title, "url": url, "date": day.isoformat()}
+    limit = (today - timedelta(days=NOTICE_DAYS)).isoformat()
+    return sorted((n for n in found.values() if limit <= n["date"] <= today.isoformat()),
+                  key=lambda n: (n["date"], n["url"]), reverse=True)
+
+
+def fetch_notices(now, previous=None):
+    return parse_notices(_cat_get(NOTICES_URL), now.date(), previous)
+
+
+# ---------- lector mínimo de PDF: texto con fuentes /ToUnicode, sin cifrar ----------
+_PDF_OBJ = re.compile(rb"(\d+) 0 obj(.*?)endobj", re.S)
+_PDF_OPS = re.compile(rb"/(\w+)\s+([-\d.]+)\s+Tf|((?:[-\d.]+\s+){6})Tm|\[([^\]]*)\]\s*TJ|<([0-9A-Fa-f]+)>\s*Tj")
+_PDF_PAIR = re.compile(rb"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>")
+_PDF_RANGE = re.compile(rb"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>")
+
+
+def _pdf_stream(obj):
+    i = obj.find(b"stream")
+    if i < 0:
+        raise FetchError("PDF: objeto sin datos")
+    head, raw = obj[:i], obj[i + 6:]
+    raw = raw[2:] if raw.startswith(b"\r\n") else raw[1:]
+    raw = raw[:raw.rfind(b"endstream")]
+    if b"/FlateDecode" not in head:
+        return raw
+    try:
+        return zlib.decompressobj().decompress(raw)
+    except zlib.error as exc:
+        raise FetchError(f"PDF: {exc}") from exc
+
+
+def _pdf_cmap(text):
+    """Tabla /ToUnicode: código de glifo -> texto."""
+    out = {}
+    for block in re.findall(rb"beginbfchar(.*?)endbfchar", text, re.S):
+        for src, dst in _PDF_PAIR.findall(block):
+            out[int(src, 16)] = bytes.fromhex(dst.decode()).decode("utf-16-be", "replace")
+    for block in re.findall(rb"beginbfrange(.*?)endbfrange", text, re.S):
+        for lo, hi, dst in _PDF_RANGE.findall(block):
+            for code in range(int(lo, 16), int(hi, 16) + 1):
+                out[code] = chr(int(dst, 16) + code - int(lo, 16))
+    return out
+
+
+def pdf_runs(data):
+    """[(x, y, texto)] de cada tramo de texto de un PDF sencillo (el que escribe «Imprimir a PDF»): objetos sin
+    comprimir, fuentes con /ToUnicode y texto en hexadecimal de 2 bytes. Lo que no entiende es un FetchError."""
+    if not data.startswith(b"%PDF") or b"/Encrypt" in data or b"/ObjStm" in data:
+        raise FetchError("PDF cifrado, comprimido o que no es un PDF")
+    objs = {int(n): body for n, body in _PDF_OBJ.findall(data)}
+
+    def ref(pattern, body):
+        m = re.search(pattern, body, re.S)
+        return objs.get(int(m.group(1))) if m else None
+
+    fonts = {}
+    for body in objs.values():
+        m = re.search(rb"/Font\s*<<(.*?)>>", body, re.S)
+        if not m or b"/BaseFont" in body:
+            continue
+        for name, n in re.findall(rb"/(\w+)\s+(\d+) 0 R", m.group(1)):
+            cmap = ref(rb"/ToUnicode\s+(\d+) 0 R", objs.get(int(n), b""))
+            if cmap:
+                fonts[name] = _pdf_cmap(_pdf_stream(cmap))
+    runs = []
+    for page in (b for b in objs.values() if re.search(rb"/Type\s*/Page\b", b)):
+        m = re.search(rb"/Contents\s*(\[[^\]]*\]|\d+ 0 R)", page)
+        content = b"\n".join(_pdf_stream(objs[int(n)]) for n in re.findall(rb"(\d+) 0 R", m.group(1) if m else b"")
+                             if int(n) in objs)
+        font, x, y = None, 0.0, 0.0
+        for op in _PDF_OPS.finditer(content):
+            if op.group(1):
+                font = fonts.get(op.group(1))
+            elif op.group(3):
+                x, y = (float(v) for v in op.group(3).split()[4:6])
+            elif font is not None:
+                hexes = re.findall(rb"<([0-9A-Fa-f]+)>", op.group(4)) if op.group(4) is not None else [op.group(5)]
+                text = "".join(font.get(int(h[i:i + 4], 16), "�") for h in hexes for i in range(0, len(h), 4))
+                if text:
+                    runs.append((x, y, text))
+    if not runs:
+        raise FetchError("PDF sin texto legible")
+    return runs
+
+
+# ---------- farmacias de guardia (cerdanyola.cat: directorio en HTML y calendario mensual en PDF) ----------
+PHARMACY_URL = "https://www.cerdanyola.cat/la-ciutat/guia/farmacies"
+PHARMACY_TOWNS = ("Cerdanyola", "Ripollet")
+_TAGS = re.compile(r"<[^>]+>")
+
+
+def _cell(fragment):
+    return re.sub(r"\s+", " ", html.unescape(_TAGS.sub(" ", fragment)).replace("\xa0", " ")).strip()
+
+
+def _pharmacy_key(name):
+    """«HIDALGO-VALLS», «Farmàcia Hidalgo Valls» -> «hidalgo valls»."""
+    words = re.findall(r"[a-z0-9]+", _plain(re.sub(r"[’'`´]", " ", name or "")))  # «L’AUDITORI» = «L'Auditori»
+    return " ".join(w for w in words if w not in ("farmacia", "farmacies"))
+
+
+def parse_pharmacy_directory(page):
+    """[{id, name, address, town, phone}] de la tabla Farmàcia / Adreça / Telèfon de la guía municipal."""
+    out, seen = [], set()
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S):
+        cells = [_cell(c) for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)]
+        if len(cells) != 3 or not _plain(cells[0]).startswith("farmacia "):
+            continue
+        name, address, phone = cells
+        key = _pharmacy_key(name)
+        digits = re.sub(r"\D", "", phone)
+        if not key or key in seen or not address or len(digits) != 9:
+            continue
+        seen.add(key)
+        town = "Ripollet" if "ripollet" in _plain(address) else "Cerdanyola"
+        address = re.sub(r"\s*\(Ripollet\)\s*$", "", address, flags=re.I)
+        out.append({"id": key.replace(" ", "-"), "name": name, "address": re.sub(r"\s+,", ",", address), "town": town,
+                    "phone": " ".join((digits[:3], digits[3:6], digits[6:]))})
+    if len(out) < 10:  # hoy son 29: con menos de 10 la tabla ha cambiado de forma
+        raise FetchError(f"farmacias: solo {len(out)} en el directorio municipal")
+    return out
+
+
+def pharmacy_pdf_link(page):
+    """URL del calendario de guardias enlazado en la página (el nombre del fichero cambia cada mes)."""
+    for href in re.findall(r'href="([^"]+\.pdf)"', page, re.I):
+        if re.search(r"gu[aà]rdi|farmac", urllib.parse.unquote(href), re.I):
+            return urllib.parse.urljoin(PHARMACY_URL, html.unescape(href))
+    return None
+
+
+def _match_pharmacy(name, town, directory):
+    """Id de la farmacia del directorio que corresponde a un nombre del calendario: mismo nombre (sin acentos ni
+    puntuación) y mismo municipio. None si no está en el directorio (el Ayuntamiento no siempre lo tiene al día);
+    si hay más de una candidata, error."""
+    key = _pharmacy_key(name)
+    same = [p for p in directory if _pharmacy_key(p["name"]) == key]
+    if len(same) != 1 and key:  # «FIOL» por «Fiol Costa»: vale si no hay duda
+        words = set(key.split())
+        same = [p for p in directory if words <= set(_pharmacy_key(p["name"]).split()) and p["town"] == town]
+    if len(same) > 1 or (same and same[0]["town"] != town):
+        raise FetchError(f"farmacias: «{name}» ({town}) casa con varias farmacias del directorio o con otro municipio")
+    return same[0]["id"] if same else None
+
+
+def parse_pharmacy_roster(runs, directory):
+    """(«AAAA-MM», {día: {"all": id} | {"day": id, "night": id}}, extra) del calendario mensual de guardias.
+    `extra` = {id: {name, town, address}} de las farmacias del calendario que no están en el directorio.
+
+    La tabla es DIA | (DIA/NIT) | FARMÀCIA | POBLACIÓ | ADREÇA: cada fila de farmacia se asigna al número de día
+    más cercano en vertical (en los días con dos turnos el número va centrado entre las dos filas). Todo se
+    comprueba y cualquier duda es un FetchError: es preferible no mostrar el turno a mostrar uno equivocado."""
+    lines = {}  # y redondeada -> tramos de esa línea
+    for x, y, text in runs:
+        key = next((k for k in lines if abs(k - y) <= 1.5), y)
+        lines.setdefault(key, []).append((x, text))
+    rows = [(y, sorted(parts)) for y, parts in sorted(lines.items())]
+    full = " ".join("".join(t for _, t in parts) for _, parts in rows)
+    title = re.search(r"GU[AÀ]RDIA.*?\b([A-Za-zçÇ]+)\s+(20\d\d)\b", full, re.S)
+    month = month_ca(title.group(1)) if title else None
+    if not month:
+        raise FetchError("farmacias: el calendario no dice de qué mes es")
+    if not re.search(r"DIA:\s*9 a 21 hores\s*//\s*NIT:\s*21 a 9 hores", full):
+        raise FetchError("farmacias: el calendario ya no dice «DIA: 9 a 21 // NIT: 21 a 9»")
+    year = int(title.group(2))
+    head = next(((y, parts) for y, parts in rows
+                 if {"FARMÀCIA", "POBLACIÓ"} <= {t.strip() for _, t in parts}), None)
+    if not head:
+        raise FetchError("farmacias: no se encuentra la cabecera de la tabla")
+    col = {t.strip(): x for x, t in head[1]}
+    x_name, x_town, x_addr = col["FARMÀCIA"] - 5, col["POBLACIÓ"] - 5, col.get("ADREÇA", 1e9) - 5
+    numbers, shifts = [], []  # (y, día) y (y, turno, nombre, municipio, dirección)
+    for y, parts in rows:
+        if y <= head[0] + 1.5:
+            continue
+        left = "".join(t for x, t in parts if x < x_name).split()
+        name = re.sub(r"\s+", " ", "".join(t for x, t in parts if x_name <= x < x_town)).strip()
+        place = re.sub(r"\s+", " ", "".join(t for x, t in parts if x >= x_town)).strip()
+        if left and left[0].isdigit():
+            numbers.append((y, int(left[0])))
+            left = left[1:]
+        if name:
+            label = {"DIA": "day", "NIT": "night"}.get(left[0] if left else "", "all")
+            town = next((t for t in PHARMACY_TOWNS if _plain(place).startswith(_plain(t))), None)
+            if not town:
+                raise FetchError(f"farmacias: «{name}» sin municipio conocido («{place[:40]}»)")
+            shifts.append((y, label, name, town, place.split(None, 1)[1] if " " in place else ""))
+    if not numbers:
+        raise FetchError("farmacias: no hay días en el calendario")
+    days, extra = {}, {}
+    for y, label, name, town, address in shifts:
+        day = min(numbers, key=lambda n: abs(n[0] - y))
+        if abs(day[0] - y) > 14:
+            raise FetchError(f"farmacias: «{name}» no queda junto a ningún día")
+        slot = days.setdefault(day[1], {})
+        if label in slot:
+            raise FetchError(f"farmacias: día {day[1]} con el turno «{label}» repetido")
+        found = _match_pharmacy(name, town, directory)
+        if not found:  # no está en el directorio: valen el nombre y la dirección que da el propio calendario
+            found = _pharmacy_key(name).replace(" ", "-")
+            if not found or not address or not re.fullmatch(r"[^\W\d_][\w .'’-]{1,29}", name):
+                raise FetchError(f"farmacias: «{name}» no está en el directorio y no se entiende la fila")
+            extra[found] = {"name": f"Farmàcia {name.title()}", "town": town, "address": address}
+        slot[label] = found
+    if len(extra) > 3:  # una o dos faltan a veces en el directorio; muchas es que ha cambiado el formato
+        raise FetchError(f"farmacias: {len(extra)} farmacias del calendario no están en el directorio")
+    last = (date(year + (month == 12), month % 12 + 1, 1) - timedelta(days=1)).day
+    if sorted(days) != list(range(1, last + 1)):
+        raise FetchError(f"farmacias: faltan o sobran días en {year}-{month:02d}: {sorted(days)}")
+    for n, slot in days.items():
+        if set(slot) not in ({"all"}, {"day", "night"}):
+            raise FetchError(f"farmacias: día {n} con turnos {sorted(slot)}")
+    return f"{year}-{month:02d}", {str(n): days[n] for n in sorted(days)}, extra
+
+
+def fetch_pharmacy(now, previous=None):
+    """Directorio y calendarios de guardias (el del mes y, si ya está publicado, el del siguiente). Si el PDF
+    publicado cambia y no se puede leer, el calendario guardado de este mes se retira: la web enseña entonces
+    solo el directorio y el enlace oficial."""
+    prev = previous or {}
+    page = _cat_get(PHARMACY_URL)
+    directory = parse_pharmacy_directory(page)
+    this = now.strftime("%Y-%m")
+    first = now.date().replace(day=1)
+    keep = {(first - timedelta(days=1)).strftime("%Y-%m"), this, (first + timedelta(days=32)).strftime("%Y-%m")}
+    known = {p["id"] for p in directory}
+    rosters = {k: v for k, v in (prev.get("rosters") or {}).items()
+               if k in keep and all(i in known or i in v.get("extra", {}) for slot in v["days"].values() for i in slot.values())}
+    link, digest = pharmacy_pdf_link(page), None
+    try:
+        if not link:
+            raise FetchError("farmacias: la página no enlaza ningún calendario en PDF")
+        pdf = _cat_get(link, binary=True)
+        digest = hashlib.sha1(pdf).hexdigest()
+        if not any(r.get("sha1") == digest for r in rosters.values()):
+            month, days, extra = parse_pharmacy_roster(pdf_runs(pdf), directory)
+            if month not in keep:
+                raise FetchError(f"farmacias: el calendario publicado es de {month}")
+            rosters[month] = {"url": link, "sha1": digest, "days": days, "extra": extra}
+    except FetchError as exc:
+        print(f"aviso: pharmacy: {exc}")
+        if digest and (rosters.get(this) or {}).get("sha1") != digest:  # hay un PDF nuevo que no entendemos
+            rosters.pop(this, None)
+    return {"source": PHARMACY_URL, "directory": directory, "rosters": rosters}

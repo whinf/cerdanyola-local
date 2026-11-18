@@ -22,6 +22,10 @@ THEME_SCRIPT = ('<script>(function(){try{var t=localStorage.getItem("theme");'
 THEME_COLOR = ('<meta name="theme-color" content="#fcfcfb" media="(prefers-color-scheme: light)">\n'
                '<meta name="theme-color" content="#1c1c1a" media="(prefers-color-scheme: dark)">')
 RODALIES = "https://rodalies.gencat.cat/ca/estat_servei/"
+# Icono propio de esta web (Lucide «pill», ISC como el resto), fuera del marco común que comparten las tres webs.
+icons.LUCIDE.setdefault("pill", '<path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" />'
+                                '<path d="m8.5 8.5 7 7" />')
+PHARMACY_TOWNS = {"Cerdanyola": "Cerdanyola del Vallès", "Ripollet": "Ripollet"}
 PICKS = ROOT / "curated" / "picks.json"  # recomendaciones escritas a mano; rotan cada semana
 PICKS_PER_WEEK = {"food": 3, "experience": 2}
 FILL_LITRES = 50  # «llenar el depósito» para comparar gasolineras
@@ -57,8 +61,8 @@ FEED_DAYS = 60
 SOON_PHASES = ("Alerta futura", "Consulta preliminar del mercat", "Anunci previ")
 # Horas sin actualizar a partir de las que un bloque avisa de que el dato puede estar desfasado. El build corre
 # un par de veces al día (unas 16 h entre el de la noche y el del mediodía), así que el mínimo deja pasar uno.
-STALE_HOURS = {"weather": 26, "alerts": 26, "air": 30, "agenda": 36, "fuel": 36, "aids": 48, "cido": 48, "offers": 48,
-               "contracts": 72, "companies": 72, "social": 96}
+STALE_HOURS = {"weather": 26, "alerts": 26, "air": 30, "agenda": 36, "fuel": 36, "pharmacy": 36, "notices": 36,
+               "aids": 48, "cido": 48, "offers": 48, "contracts": 72, "companies": 72, "social": 96}
 STALE_DEFAULT = 120  # equipamientos, recarga y guía de ocio se releen una vez al día y cambian poco
 PHASE_TIER = {"Anunci de licitació": "t0", "Alerta futura": "t1", "Consulta preliminar del mercat": "t1",
               "Anunci previ": "t1", "Expedient en avaluació": "t1"}  # el resto, gris
@@ -138,6 +142,12 @@ def job_tags(j):
     hits = (("indef", "indefinit" in c), ("temp", "temporal" in c), ("full", "completa" in h or "intensiva" in h),
             ("part", "parcial" in h))
     return [k for k, hit in hits if hit]
+
+
+def local_time(day, hour):
+    """Las `hour` en punto del día `day`, en hora de Madrid."""
+    naive = datetime(day.year, day.month, day.day, hour)
+    return naive.replace(tzinfo=tz.offset_at(naive.replace(tzinfo=tz.CET)))
 
 
 def event_start(e):
@@ -241,7 +251,8 @@ class Site:
             f'<meta property="og:url" content="{self.absolute(self.path(lang, kind))}">')
         nav = "".join(f'<li><a href="{self.href(self.path(lang, k))}"{" aria-current=\"page\"" if k == kind and not noindex else ""}>'
                       f'{t(lang, "nav_" + k)}</a></li>'
-                      for k in ("home", "agenda", "leisure", "picks", "social", "board", "save", "aids", "jobs", "invest", "directory", "emergency"))
+                      for k in ("home", "agenda", "leisure", "picks", "social", "board", "save", "aids", "jobs", "invest", "directory",
+                                "pharmacy", "emergency"))
         theme = (f'<span class="theme-slot"><button class="theme" type="button" hidden data-theme-toggle '
                  f'data-auto="{esc(t(lang, "theme_auto"))}" data-light="{esc(t(lang, "theme_light"))}" '
                  f'data-dark="{esc(t(lang, "theme_dark"))}" aria-label="{esc(t(lang, "theme_auto"))}">'
@@ -386,6 +397,16 @@ class Site:
             texts = " ".join(f'data-t{k}="{esc(t(lang, f"today_events_{k}"))}"' for k in ("0", "1", "n"))
             items.append(f'<a href="{self.href(self.path(lang, "agenda"))}" data-today-events="{esc(json.dumps(soon))}" {texts}>'
                          f'{self.i("calendar")}<span>{self.plural(lang, "today_events", left)}</span></a>')
+        if self.get("pharmacy") is not None:
+            shifts = self.pharmacy_shifts(days=1)
+            short = lambda p: p["name"].removeprefix("Farmàcia ")  # noqa: E731
+            data = [{"from": a.isoformat(timespec="minutes"), "to": b.isoformat(timespec="minutes"), "name": short(p)}
+                    for a, b, _, p in shifts]
+            cur = next((p for a, b, _, p in shifts if a <= self.now < b), None)
+            label = t(lang, "pharmacy_chip", n=esc(short(cur))) if cur else t(lang, "pharmacy_chip_none")
+            items.append(f'<a href="{self.href(self.path(lang, "pharmacy"))}" data-shift-chip="{esc(json.dumps(data, ensure_ascii=False))}" '
+                         f'data-text="{esc(t(lang, "pharmacy_chip"))}" data-none="{esc(t(lang, "pharmacy_chip_none"))}">'
+                         f'{self.i("pill")}<span>{label}</span></a>')
         if not items:
             return ""
         return (f'<nav class="today" aria-label="{esc(t(lang, "today_label"))}"><ul>'
@@ -853,7 +874,8 @@ class Site:
             items.append(f'<li><strong>{esc(e["name"])}</strong><br>{" · ".join(x for x in extra if x)}</li>')
         local = f'<h2>{self.i("siren")}{t(lang, "emergency_local")}</h2><ul class="dir">{"".join(items)}</ul>' if items else ""
         return self.layout(lang, "emergency", f'{t(lang, "emergency_title")} · {self.name}', t(lang, "emergency_desc"),
-                           f'<h1>{t(lang, "emergency_title")}</h1>{t(lang, "emergency_body", local=local)}')
+                           f'<h1>{t(lang, "emergency_title")}</h1>{t(lang, "emergency_body", local=local)}'
+                           f'{self.pharmacy_block(lang, n=2)}')
 
     def this_week(self):
         live = [p for p in self.picks if pick_live(p, self.now.date())]  # fiestas: solo en su época
@@ -998,6 +1020,146 @@ class Site:
         body.append(f'<p class="note">{t(lang, "save_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}{self.suggest(lang)}</p>')
         return self.layout(lang, "save", f'{t(lang, "save_title")} · {self.name}', t(lang, "save_desc"), "".join(body))
 
+    # ---------- farmacias de guardia ----------
+    def pharmacies(self):
+        """{id: ficha}: el directorio municipal más las farmacias que solo salen en los calendarios."""
+        ph, out = self.get("pharmacy") or {}, {}
+        for roster in (ph.get("rosters") or {}).values():
+            out.update({k: dict(v, id=k) for k, v in (roster.get("extra") or {}).items()})
+        out.update({p["id"]: p for p in ph.get("directory") or []})
+        return out
+
+    def pharmacy_shifts(self, days=2):
+        """[(desde, hasta, turno, farmacia)] de los turnos que aún no han acabado, hasta dentro de `days` días.
+        El de noche (o el de 24 h) de ayer sigue vivo hasta las 9 de hoy."""
+        rosters, known, out = (self.get("pharmacy") or {}).get("rosters") or {}, self.pharmacies(), []
+        for off in range(-1, days + 1):
+            d = self.now.date() + timedelta(days=off)
+            slot = ((rosters.get(d.strftime("%Y-%m")) or {}).get("days") or {}).get(str(d.day))
+            if not slot:
+                continue
+            nine, night, end = local_time(d, 9), local_time(d, 21), local_time(d + timedelta(days=1), 9)
+            parts = [(nine, end, "all", slot["all"])] if "all" in slot else [
+                (nine, night, "day", slot.get("day")), (night, end, "night", slot.get("night"))]
+            out += [(a, b, kind, known[i]) for a, b, kind, i in parts if b > self.now and i in known]
+        return out
+
+    def pharmacy_contact(self, lang, p):
+        town = PHARMACY_TOWNS.get(p["town"], p["town"])
+        bits = [esc(f'{p["address"]} · {town}')]
+        if p.get("phone"):
+            bits.append(f'{t(lang, "phone")} <a href="tel:{esc(p["phone"].replace(" ", ""))}">{esc(p["phone"])}</a>')
+        q = quote(f'{p["address"]}, {town}')
+        bits.append(f'<a href="https://www.openstreetmap.org/search?query={q}">{t(lang, "map")}</a>')
+        return " · ".join(bits)
+
+    def shift_item(self, lang, a, b, kind, p):
+        """Un turno con su intervalo en `data-from`/`data-to`: now.js marca el que está en curso y esconde los
+        acabados. Sin JS se ven todos con sus horas, que ya dicen cuál toca."""
+        when = t(lang, "pharmacy_shift_" + kind, d=i18n.fmt_date(lang, a.date()))
+        return (f'<li data-from="{a.isoformat(timespec="minutes")}" data-to="{b.isoformat(timespec="minutes")}" data-hide-past>'
+                f'<span class="when"><span class="tier t0 now-tag">{t(lang, "pharmacy_now")}</span> {when}</span>'
+                f'<span class="what">{esc(p["name"])}</span>'
+                f'<small class="muted">{self.pharmacy_contact(lang, p)}</small></li>')
+
+    def pharmacy_block(self, lang, n=3, more=True):
+        """Quién está de guardia ahora y después. Si no hay calendario fiable de hoy, solo el enlace oficial."""
+        ph = self.get("pharmacy")
+        if ph is None:
+            return ""
+        shifts = self.pharmacy_shifts()
+        src = esc(safe_url(ph.get("source")) or sources.PHARMACY_URL)
+        none = f'<p data-shifts-empty{{}}>{t(lang, "pharmacy_none", url=src)}</p>'
+        if shifts and shifts[0][0] <= self.now:
+            body = (f'<ul class="events shifts" data-shifts>{"".join(self.shift_item(lang, *s) for s in shifts[:n])}</ul>'
+                    + none.format(" hidden"))
+        else:
+            body = none.format("")
+        link = (f'<p><a href="{self.href(self.path(lang, "pharmacy"))}">{t(lang, "pharmacy_more")} →</a></p>' if more else "")
+        return (f'<section id="pharmacy"><h2>{self.i("pill")}{t(lang, "pharmacy_home")}</h2>{body}'
+                f'<p class="note">{t(lang, "pharmacy_note", url=src)}</p>{link}</section>')
+
+    def pharmacy_page(self, lang):
+        ph, known, today = self.get("pharmacy") or {}, self.pharmacies(), self.now.date()
+        body = [f'<h1>{t(lang, "pharmacy_title")}</h1><p class="lede">{t(lang, "pharmacy_desc")}</p>',
+                self.pharmacy_block(lang, n=6, more=False)]
+        roster = (ph.get("rosters") or {}).get(today.strftime("%Y-%m"))
+        if roster:
+            name = lambda i: esc(known[i]["name"]) if i in known else "–"  # noqa: E731
+            rows = []
+            for n in sorted(roster["days"], key=int):
+                d, slot = today.replace(day=int(n)), roster["days"][n]
+                a, b = local_time(d, 9), local_time(d + timedelta(days=1), 9)
+                cells = (f'<td colspan="2">{name(slot["all"])} <small class="muted">({t(lang, "pharmacy_all24")})</small></td>'
+                         if "all" in slot else f'<td>{name(slot.get("day"))}</td><td>{name(slot.get("night"))}</td>')
+                rows.append(f'<tr data-from="{a.isoformat(timespec="minutes")}" data-to="{b.isoformat(timespec="minutes")}">'
+                            f'<td>{i18n.fmt_date(lang, d, weekday=True).split(",")[0]} {d.day}</td>{cells}</tr>')
+            pdf = link(roster.get("url"), t(lang, "pharmacy_pdf"))
+            body.append(f'<h2>{self.i("calendar")}{t(lang, "pharmacy_month", m=i18n.MONTHS[lang][today.month - 1], y=today.year)}</h2>'
+                        f'<div class="scroll-x"><table class="recent roster"><thead><tr><th>{t(lang, "th_day")}</th>'
+                        f'<th>{t(lang, "pharmacy_th_day")}</th><th>{t(lang, "pharmacy_th_night")}</th></tr></thead>'
+                        f'<tbody>{"".join(rows)}</tbody></table></div><p class="note">{pdf}</p>')
+        body.append(f'<h2>{self.i("map-pin")}{t(lang, "pharmacy_dir")}</h2>')
+        for town, full in PHARMACY_TOWNS.items():
+            items = "".join(f'<li><strong>{esc(p["name"])}</strong><br>{self.pharmacy_contact(lang, p)}</li>'
+                            for p in sorted(known.values(), key=lambda p: plain(p["name"])) if p["town"] == town)
+            if items:
+                body.append(f'<h3>{esc(full)}</h3><ul class="dir">{items}</ul>')
+        body.append(self.stamp(lang, "pharmacy"))
+        return self.layout(lang, "pharmacy", f'{t(lang, "pharmacy_title")} · {self.name}', t(lang, "pharmacy_desc"),
+                           "".join(body))
+
+    # ---------- avisos del Ayuntamiento y plazos ----------
+    def notices(self, lang, n=5):
+        """Titulares municipales recientes sobre tráfico, obras o cortes: solo título, fecha y enlace."""
+        limit = (self.now.date() - timedelta(days=sources.NOTICE_DAYS)).isoformat()  # caducan aunque la fuente no responda
+        items = [x for x in self.get("notices") or [] if x["date"] >= limit]
+        if not items:
+            return ""
+        lis = "".join(f'<li><span class="when">{i18n.fmt_date(lang, date.fromisoformat(x["date"]))}</span>'
+                      f'<span class="what" lang="ca">{link(x["url"], esc(x["title"]))}</span></li>' for x in items[:n])
+        return (f'<section id="notices"><h2>{self.i("bell")}{t(lang, "notices_title")}</h2><ul class="events">{lis}</ul>'
+                f'<p class="note">{t(lang, "notices_note", d=sources.NOTICE_DAYS)}</p>{self.stamp(lang, "notices")}</section>')
+
+    def deadlines(self, days=14):
+        """[(fecha, tipo, objeto, aproximada)] de lo que cierra en `days` días: ayudas, oposiciones y licitaciones."""
+        today = self.now.date()
+        limit, out = today + timedelta(days=days), []
+        for state, day, a in self.aids_open():
+            if state in ("open", "approx") and day and today <= day <= limit:
+                out.append((day, "aid", a, state == "approx"))
+        for j in self.public_jobs():
+            if j["end"] and date.fromisoformat(j["end"]) <= limit:
+                out.append((date.fromisoformat(j["end"]), "job", j, False))
+        for c in self.contracts()[1]:
+            if c["deadline"] and date.fromisoformat(c["deadline"][:10]) <= limit:
+                out.append((date.fromisoformat(c["deadline"][:10]), "bid", c, False))
+        return sorted(out, key=lambda x: (x[0], x[1], x[2]["title"]))
+
+    def deadlines_block(self, lang, n=8):
+        """Cuántos plazos cierran pronto, por tipo, y la lista de los que más interesan a un vecino: las ayudas
+        a personas y familias. El resto se consulta (y se filtra) en su página."""
+        items, today = self.deadlines(), self.now.date()
+        if not items:
+            return ""
+        count = {k: sum(kind == k for _, kind, *_ in items) for k in ("aid", "job", "bid")}
+        lis = []
+        for day, kind, o, approx in [x for x in items if x[1] == "aid" and "people" in x[2]["who"]][:n]:
+            title = o["title_ca"] if lang == "ca" and o.get("title_ca") else o["title"]
+            if len(title) > 150:
+                title = title[:147].rsplit(" ", 1)[0] + "…"
+            when = t(lang, "aids_approx" if approx else "aids_until", d=i18n.fmt_deadline(lang, day, today))
+            if (day - today).days <= 3:
+                when = f'<strong>{self.i("hourglass")} {when}</strong>'
+            lis.append(f'<li data-end="{day.isoformat()}"><span class="when">{when}</span>'
+                       f'<span class="what">{link(BDNS_CALL.format(o["id"]), esc(title))}</span>'
+                       f'<small class="muted">{esc(i18n.organ_name(o["organ"]))}</small></li>')
+        people = f'<p>{t(lang, "deadlines_people")}</p><ul class="events">{"".join(lis)}</ul>' if lis else ""
+        pages = " · ".join(f'<a href="{self.href(self.path(lang, k))}">{t(lang, "nav_" + k)}</a>' for k in ("aids", "jobs", "invest"))
+        return (f'<section id="deadlines"><h2>{self.i("hourglass")}{t(lang, "deadlines_title")}</h2>'
+                f'<p>{t(lang, "deadlines_text", d=14, a=count["aid"], j=count["job"], b=count["bid"])}</p>{people}'
+                f'<p>{pages}</p></section>')
+
     # ---------- tauler veïnal ----------
     def board_posts(self):
         """Anuncios vivos de la última lectura del worker (data/board.json), ya ordenados por el worker."""
@@ -1073,11 +1235,12 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}">{t(lang, "leisure_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "directory"))}">{t(lang, "directory_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "pharmacy"))}">{t(lang, "pharmacy_home")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
                 f'{t(lang, "tagline")}</p>{self.today_strip(lang)}{self.weather(lang)}{self.install_block(lang, home=True)}'
-                f'{quick}{self.light(lang)}{self.transport(lang)}'
-                f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.social_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
+                f'{quick}{self.pharmacy_block(lang, n=2)}{self.light(lang)}{self.transport(lang)}{self.notices(lang)}'
+                f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.social_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.deadlines_block(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
                 f'{self.fuel_preview(lang)}'
                 f'{self.air(lang)}')
         ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": self.name, "inLanguage": lang,
@@ -1329,7 +1492,8 @@ location.replace("{self.prefix}/ca/");}})();
     def sitemap(self):
         today = self.now.date().isoformat()
         urls = []
-        daily = ("home", "agenda", "leisure", "picks", "social", "board", "save", "aids", "jobs", "invest", "directory")
+        daily = ("home", "agenda", "leisure", "picks", "social", "board", "save", "aids", "jobs", "invest", "directory",
+                 "pharmacy")
         for kind in daily + ("emergency", "about", "legal", "privacy"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}"/>'
                            for lg in LANGS)
@@ -1359,7 +1523,7 @@ location.replace("{self.prefix}/ca/");}})();
                 "lang": lang, "start_url": self.href(self.path(lang, "home")), "scope": self.href("/"),
                 "display": "standalone", "background_color": "#f9f9f7", "theme_color": "#0b6b3a",
                 "shortcuts": [{"name": t(lang, "nav_" + k), "url": self.href(self.path(lang, k))}
-                              for k in ("agenda", "board", "emergency")],
+                              for k in ("agenda", "board", "emergency", "pharmacy")],
                 "icons": [{"src": self.href("/static/icon-192.png"), "sizes": "192x192", "type": "image/png"},
                           {"src": self.href("/static/icon-512.png"), "sizes": "512x512", "type": "image/png",
                            "purpose": "any maskable"}]}
@@ -1387,6 +1551,7 @@ location.replace("{self.prefix}/ca/");}})();
             self.write(self.path(lang, "invest"), self.invest_page(lang))
             self.write(self.path(lang, "invest") + "feed.xml", self.feed(lang))
             self.write(self.path(lang, "emergency"), self.emergency_page(lang))
+            self.write(self.path(lang, "pharmacy"), self.pharmacy_page(lang))
             self.write(self.path(lang, "directory"), self.directory_page(lang))
             for kind in ("about", "legal", "privacy"):
                 self.write(self.path(lang, kind), self.text_page(lang, kind))

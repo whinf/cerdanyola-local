@@ -1,0 +1,326 @@
+{
+ "data": {
+  "directory": [
+   {
+    "address": "Carretera de Barcelona, 167",
+    "id": "la-farigola",
+    "name": "Farmàcia La Farigola",
+    "phone": "647 907 397",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Passeig Cordelles, 64",
+    "id": "rovira",
+    "name": "Farmàcia Rovira",
+    "phone": "935 921 399",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Ronda Cerdanyola, 1",
+    "id": "hidalgo",
+    "name": "Farmàcia Hidalgo",
+    "phone": "936 922 368",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carrer Sant Ramon, 182",
+    "id": "teruel",
+    "name": "Farmàcia Teruel",
+    "phone": "936 920 676",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Avinguda Argentina, 1",
+    "id": "soliva",
+    "name": "Farmàcia Soliva",
+    "phone": "935 948 073",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carrer Santa Rosa, 36",
+    "id": "sanchez",
+    "name": "Farmàcia Sánchez",
+    "phone": "936 923 184",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Avinguda Primavera, 7",
+    "id": "valls",
+    "name": "Farmàcia Valls",
+    "phone": "936 921 130",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carretera Barcelona, 216",
+    "id": "novell",
+    "name": "Farmàcia Novell",
+    "phone": "935 947 195",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carrer Torrent, 14",
+    "id": "c-selva",
+    "name": "Farmàcia C. Selva",
+    "phone": "935 947 430",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carrer Diagonal, 35",
+    "id": "torrents",
+    "name": "Farmàcia Torrents",
+    "phone": "935 803 904",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Avinguda Catalunya, 49B",
+    "id": "alvarez-pereiro",
+    "name": "Farmàcia Álvarez Pereiro",
+    "phone": "935 809 700",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carrer Torras i Bages, 3A local 2",
+    "id": "lluis",
+    "name": "Farmàcia Lluís",
+    "phone": "936 924 708",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Avinguda Canaletes, 11",
+    "id": "hidalgo-valls",
+    "name": "Farmàcia Hidalgo Valls",
+    "phone": "936 925 353",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Avinguda Primavera, 11 (Unicentro)",
+    "id": "alvarez",
+    "name": "Farmàcia Álvarez",
+    "phone": "936 926 721",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Plaça Sant Ramon, 18",
+    "id": "galceran",
+    "name": "Farmàcia Galceran",
+    "phone": "935 808 778",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carrer Pablo Picasso, 1 local 4",
+    "id": "nunna",
+    "name": "Farmàcia Nunna",
+    "phone": "937 687 299",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Plaça Cívica, local P10 Campus UAB",
+    "id": "uab",
+    "name": "Farmàcia UAB",
+    "phone": "936 918 231",
+    "town": "Cerdanyola"
+   },
+   {
+    "address": "Carrer Palau Ausit, 1",
+    "id": "pinetons",
+    "name": "Farmàcia Pinetons",
+    "phone": "936 917 059",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carretera Barcelona, 130",
+    "id": "merinero",
+    "name": "Farmàcia Merinero",
+    "phone": "936 920 021",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Nord, 13",
+    "id": "salgado-subirana",
+    "name": "Farmàcia Salgado Subirana",
+    "phone": "936 920 086",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Calvari, 3-5",
+    "id": "j-selva",
+    "name": "Farmàcia J. Selva",
+    "phone": "935 809 523",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Sant Andreu, 4",
+    "id": "sant-andreu",
+    "name": "Farmàcia Sant Andreu",
+    "phone": "936 922 336",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Lluna, 6",
+    "id": "l-auditori",
+    "name": "Farmàcia L'Auditori",
+    "phone": "936 922 590",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Nostra Senyora del Pilar, 10",
+    "id": "fiol-costa",
+    "name": "Farmàcia Fiol Costa",
+    "phone": "935 865 426",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Rambla Sant Jordi, 89",
+    "id": "rambla",
+    "name": "Farmàcia Rambla",
+    "phone": "936 912 473",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Rambla Sant Jordi, 129 Tda 3",
+    "id": "olivares",
+    "name": "Farmàcia Olivares",
+    "phone": "936 922 270",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Rizal, 1D",
+    "id": "rizal",
+    "name": "Farmàcia Rizal",
+    "phone": "935 863 004",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Sant Josep, 12",
+    "id": "caelles",
+    "name": "Farmàcia Caelles",
+    "phone": "937 683 241",
+    "town": "Ripollet"
+   },
+   {
+    "address": "Carrer Nou, 58",
+    "id": "mercat",
+    "name": "Farmàcia Mercat",
+    "phone": "935 945 430",
+    "town": "Ripollet"
+   }
+  ],
+  "rosters": {
+   "2026-11": {
+    "days": {
+     "1": {
+      "day": "rovira",
+      "night": "nunna"
+     },
+     "10": {
+      "all": "rizal"
+     },
+     "11": {
+      "day": "rovira",
+      "night": "hidalgo-valls"
+     },
+     "12": {
+      "all": "c-selva"
+     },
+     "13": {
+      "all": "l-auditori"
+     },
+     "14": {
+      "day": "rovira",
+      "night": "nunna"
+     },
+     "15": {
+      "day": "rovira",
+      "night": "mercat"
+     },
+     "16": {
+      "all": "lluis"
+     },
+     "17": {
+      "all": "j-selva"
+     },
+     "18": {
+      "all": "sanchez"
+     },
+     "19": {
+      "all": "fiol-costa"
+     },
+     "2": {
+      "all": "la-farigola"
+     },
+     "20": {
+      "all": "origen"
+     },
+     "21": {
+      "day": "rovira",
+      "night": "olivares"
+     },
+     "22": {
+      "day": "rovira",
+      "night": "galceran"
+     },
+     "23": {
+      "all": "rambla"
+     },
+     "24": {
+      "all": "alvarez"
+     },
+     "25": {
+      "all": "pinetons"
+     },
+     "26": {
+      "all": "rovira"
+     },
+     "27": {
+      "all": "merinero"
+     },
+     "28": {
+      "day": "rovira",
+      "night": "nunna"
+     },
+     "29": {
+      "day": "rovira",
+      "night": "la-farigola"
+     },
+     "3": {
+      "all": "sant-andreu"
+     },
+     "30": {
+      "all": "sant-andreu"
+     },
+     "4": {
+      "all": "torrents"
+     },
+     "5": {
+      "all": "salgado-subirana"
+     },
+     "6": {
+      "all": "novell"
+     },
+     "7": {
+      "day": "rovira",
+      "night": "caelles"
+     },
+     "8": {
+      "day": "rovira",
+      "night": "teruel"
+     },
+     "9": {
+      "all": "alvarez"
+     }
+    },
+    "extra": {
+     "origen": {
+      "address": "Avda. Catalunya 17",
+      "name": "Farmàcia Origen",
+      "town": "Cerdanyola"
+     }
+    },
+    "sha1": "578b7a3e6c373406d9de96b20b826cf715a20135",
+    "url": "https://www.cerdanyola.cat/sites/default/files/farmacies_de_guardia_novembre_2026_1.pdf"
+   }
+  },
+  "source": "https://www.cerdanyola.cat/la-ciutat/guia/farmacies"
+ },
+ "fetched": "2026-11-18T20:39:09+01:00"
+}

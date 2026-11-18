@@ -50,9 +50,16 @@
       el.classList.toggle("now", from <= now && now < to);
       if (el.hasAttribute("data-hide-past")) { el.hidden = to <= now; }
     });
-    document.querySelectorAll("[data-now-only]").forEach(function (el) {
-      var box = el.closest("[data-shifts]") || document;
-      el.hidden = !box.querySelector("[data-from].now");
+    // Si el build es tan viejo que ya no queda ningún turno por delante, sale el aviso con el enlace oficial.
+    document.querySelectorAll("[data-shifts]").forEach(function (ul) {
+      var empty = ul.parentNode.querySelector("[data-shifts-empty]");
+      if (empty) { empty.hidden = !!ul.querySelector("li.now"); }
+    });
+    document.querySelectorAll("[data-shift-chip]").forEach(function (a) {
+      var span = a.querySelector("span"), cur = JSON.parse(a.dataset.shiftChip).filter(function (s) {
+        return new Date(s.from) <= now && now < new Date(s.to);
+      })[0];
+      if (span) { span.textContent = cur ? a.dataset.text.replace("{n}", cur.name) : a.dataset.none; }
     });
   }
 

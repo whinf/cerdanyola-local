@@ -80,6 +80,12 @@
   form.board .buttons { display: flex; gap: var(--s-3); align-items: center; margin: 0; }
   .cf-turnstile { margin-block: var(--s-3); min-block-size: 0; }
 
+  /* Farmacias de guardia: now.js pone .now al turno en curso */
+  .shifts .now-tag { display: none; }
+  .shifts li.now .now-tag { display: inline-block; }
+  .shifts li.now { border-color: var(--accent); }
+  .roster tr.now td { background: var(--tint-good); font-weight: 600; }
+
   /* Filtro de listas (filter.js) */
   .filter { display: grid; gap: var(--s-2); margin-block: var(--s-4); }
   .filter input { inline-size: 100%; box-sizing: border-box; padding: .5rem .75rem; border: 1px solid var(--border); border-radius: var(--r-s); background: var(--surface); color: var(--ink); font: inherit; }

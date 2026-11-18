@@ -16,6 +16,9 @@ Web local de Cerdanyola del Vallès y Bellaterra, en catalán, castellano e ingl
 - la calidad del aire;
 - un directorio de equipamientos públicos y puntos de recarga;
 - una página de emergencias con los teléfonos útiles;
+- la farmacia de guardia de Cerdanyola-Ripollet: quién está de turno ahora y después, el calendario del mes y el directorio de farmacias (si el calendario del Ajuntament no se puede leer con seguridad, solo el directorio y el enlace oficial);
+- avisos del Ajuntament sobre tráfico, obras y cortes (titular, fecha y enlace) y los plazos de ayudas, oposiciones y licitaciones que cierran en 14 días;
+- buscador y filtros en las listas largas (empleo, ayudas y agenda), sin servidor: `static/filter.js`;
 - `agenda.ics`, la agenda como calendario para suscribirse desde el móvil;
 - un tablón vecinal («Tauler veïnal»): los vecinos piden ayuda, regalan lo que ya no usan o publican chollos y segunda mano, y se responden por email sin que se publique ninguna dirección. Es la única parte con backend: un worker de Cloudflare (`worker/`, gratis) con base de datos D1, Turnstile contra robots y envío de correos por la API de Gmail; moderación automática (filtro, límites, caducidad a 45 días, denuncias) y página de administración. La web estática muestra la lista de la última build (`data/board.json`, no se guarda en git) y `static/board.js` la sustituye por la lista en vivo. Instalación en `worker/README.md`.
 
@@ -29,6 +32,8 @@ Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub
 | Agenda | Ajuntament (`cerdanyola.cat/agenda`) y Generalitat (`rhpv-yr4f`) | Llicència oberta Catalunya; del Ajuntament solo se usa el título, la fecha y el enlace |
 | Equipamientos, recarga, aire | Generalitat (`8gmd-gz7i`, `tb2m-m33b`, `tasf-thgu`) | Llicència oberta Catalunya |
 | Avisos de trenes | Renfe GTFS-RT `alerts.json` | CC BY 4.0 |
+| Farmacias de guardia | Ajuntament: tabla de `cerdanyola.cat/la-ciutat/guia/farmacies` y el PDF mensual que enlaza, leído con un lector mínimo propio (`pdf_runs` en `sources.py`) | Solo hechos: nombre, dirección, teléfono y turno, citando y enlazando la fuente. Validación estricta: ante cualquier duda no se publica el turno |
+| Avisos del Ajuntament | RSS `cerdanyola.cat/actualitat/rssactualitat`, filtrado por palabras clave | Solo titular, fecha y enlace; no se guarda ni se publica el cuerpo de la noticia. Caducan a los 7 días |
 | Luz | web hermana Hora Verda (`light_api_url` en `config.json`: `https://horaverda.es/api/v1/latest.json`) | Red Eléctrica, uso informativo |
 | Agenda UAB y entidades | `uab.cat` (HTML) y calendarios WordPress/The Events Calendar (`TRIBE_FEEDS` en `sources.py`) | UAB: CC BY-NC (otra razón para no monetizar). Si una web cae, se conservan sus actos guardados |
 | Empleo | CIDO de la Diputació (`api.diba.cat`) y XML de Feina Activa (SOC) | CC BY 4.0 y Llicència oberta Catalunya |

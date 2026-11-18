@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
+import zlib
 from datetime import date
 from unittest import mock
 from html.parser import HTMLParser
@@ -139,6 +140,107 @@ class TestSources(unittest.TestCase):
         self.assertNotIn("Castelldefels", texts)
         montcada = [a for a in later if "Montcada Bifurcació" in a["text"]["ca"]]
         self.assertEqual([a["lines"] for a in montcada], [["R7"]])  # una vez, por la entidad más concreta
+
+    def test_notices(self):
+        xml, day = (FIX / "actualitat.rss").read_text(encoding="utf-8"), date(2026, 11, 18)
+        got = S.parse_notices(xml, day)
+        self.assertEqual([n["date"] for n in got], ["2026-11-13"])  # de 10 noticias, la única que es un aviso
+        self.assertIn("afectacions al trànsit", got[0]["title"])
+        self.assertEqual(set(got[0]), {"title", "url", "date"})  # ni cuerpo ni autor: solo se enlaza
+        old = [{"title": "Tall de l'avinguda X", "url": "https://www.cerdanyola.cat/actualitat/x", "date": "2026-11-15"},
+               {"title": "Vell", "url": "https://www.cerdanyola.cat/actualitat/y", "date": "2026-11-01"}]
+        self.assertEqual([n["date"] for n in S.parse_notices(xml, day, old)], ["2026-11-15", "2026-11-13"])
+        self.assertEqual(S.parse_notices(xml, date(2026, 11, 25)), [])  # caducan a los 7 días
+        with self.assertRaises(S.FetchError):
+            S.parse_notices("<rss><channel></channel></rss>", day)
+        self.assertIsNone(S._NOTICE_WORDS.search(S._plain("Taller intergeneracional: fils de futur")))  # «taller» no es «tall»
+        self.assertTrue(S._NOTICE_WORDS.search(S._plain("Talls de trànsit per les obres del carrer Sol")))
+
+    def test_pdf_reader(self):
+        cmap = b"1 beginbfrange\n<0001> <0003> <0041>\nendbfrange\n1 beginbfchar\n<0004> <00E000640027>\nendbfchar"
+        content = zlib.compress(b"BT /F1 12 Tf 1 0 0 -1 10 20 Tm [<00010002>-5<0003>] TJ 1 0 0 -1 50 20 Tm <0004> Tj ET")
+        pdf = (b"%PDF-1.7\n1 0 obj\n<< /Type /Page /Contents 2 0 R /Resources << /Font << /F1 3 0 R >> >> >>\nendobj\n"
+               b"2 0 obj\n<< /Filter /FlateDecode /Length " + str(len(content)).encode() + b" >>\nstream\n" + content +
+               b"\nendstream\nendobj\n3 0 obj\n<< /Type /Font /ToUnicode 4 0 R >>\nendobj\n"
+               b"4 0 obj\n<< /Length " + str(len(cmap)).encode() + b" >>\nstream\n" + cmap + b"\nendstream\nendobj\n")
+        self.assertEqual(S.pdf_runs(pdf), [(10.0, 20.0, "ABC"), (50.0, 20.0, "àd'")])
+        for bad in (b"no es un pdf", b"%PDF-1.7 /Encrypt 5 0 R", b"%PDF-1.7\n1 0 obj\n<< /Type /Page >>\nendobj\n"):
+            with self.assertRaises(S.FetchError):
+                S.pdf_runs(bad)
+
+    def test_pharmacies(self):
+        page = fixture("farmacies.html")
+        directory = S.parse_pharmacy_directory(page)
+        self.assertEqual(len(directory), 29)
+        self.assertEqual(directory[1], {"id": "rovira", "name": "Farmàcia Rovira", "address": "Passeig Cordelles, 64",
+                                        "town": "Cerdanyola", "phone": "935 921 399"})
+        self.assertEqual(sum(p["town"] == "Ripollet" for p in directory), 12)
+        self.assertTrue(S.pharmacy_pdf_link(page).endswith("/sites/default/files/farmacies_de_guardia_novembre_2026_1.pdf"))
+        with self.assertRaises(S.FetchError):
+            S.parse_pharmacy_directory("<table><tr><td>Farmàcia X</td><td>Carrer Y</td><td>935 000 000</td></tr></table>")
+        pdf = (FIX / "farmacies_guardia_2026-11.pdf").read_bytes()
+        runs = S.pdf_runs(pdf)
+        month, days, extra = S.parse_pharmacy_roster(runs, directory)
+        self.assertEqual((month, list(days)), ("2026-11", [str(n) for n in range(1, 31)]))
+        self.assertEqual(days["1"], {"day": "rovira", "night": "nunna"})  # fin de semana: dos turnos
+        self.assertEqual(days["2"], {"all": "la-farigola"})
+        self.assertEqual(days["11"], {"day": "rovira", "night": "hidalgo-valls"})
+        self.assertEqual(days["13"], {"all": "l-auditori"})  # «L’AUDITORI», con apóstrofo tipográfico
+        self.assertEqual(days["24"], {"all": "alvarez"})  # no «Álvarez Pereiro»
+        self.assertEqual(days["17"], {"all": "j-selva"})  # la de Ripollet, no «C. Selva»
+        self.assertEqual(extra, {"origen": {"name": "Farmàcia Origen", "town": "Cerdanyola", "address": "Avda. Catalunya 17"}})
+        # Ante cualquier duda, error: es preferible no enseñar el turno a enseñar uno equivocado.
+        doubts = ([r for r in runs if r[2].strip() != "18"],  # falta un día
+                  [(x, y, text.replace("NOVEMBRE", "DESEMBRE")) for x, y, text in runs],  # 30 días para un mes de 31
+                  [(x, y, text.replace("21 a 9 hores", "22 a 8 hores")) for x, y, text in runs],  # cambian los horarios
+                  [(x, y, text.replace("RIPOLLET", "SABADELL")) for x, y, text in runs])  # municipio desconocido
+        for changed in doubts:
+            with self.assertRaises(S.FetchError):
+                S.parse_pharmacy_roster(changed, directory)
+        with self.assertRaises(S.FetchError):  # demasiadas farmacias fuera del directorio: ha cambiado el formato
+            S.parse_pharmacy_roster(runs, directory[:12])
+
+        now = tz.to_madrid(tz.parse_iso("2026-11-18T19:30:00+01:00"))
+        with mock.patch.object(S, "_cat_get", side_effect=lambda url, binary=False: pdf if binary else page):
+            got = S.fetch_pharmacy(now)
+        self.assertEqual((list(got["rosters"]), len(got["directory"])), (["2026-11"], 29))
+
+        def down(url, binary=False):
+            if binary:
+                raise S.FetchError("timeout")
+            return page
+        with mock.patch.object(S, "_cat_get", side_effect=down):  # sin red para el PDF: vale el calendario guardado
+            self.assertEqual(S.fetch_pharmacy(now, got)["rosters"], got["rosters"])
+        with mock.patch.object(S, "_cat_get", side_effect=lambda url, binary=False: b"%PDF-1.7 roto" if binary else page):
+            broken = S.fetch_pharmacy(now, got)  # hay un PDF nuevo que no se entiende: fuera el calendario del mes
+        self.assertEqual((broken["rosters"], len(broken["directory"])), ({}, 29))
+
+        cfg = {"site_name": "x", "site_url": "https://example.github.io/cerdanyola-local"}
+
+        def site(iso):
+            return Site(cfg, {"pharmacy": {"fetched": iso, "data": got}}, "unused", tz.to_madrid(tz.parse_iso(iso)))
+        early = site("2026-11-08T08:30:00+01:00").pharmacy_shifts()  # domingo antes de las 9: sigue la noche del sábado
+        self.assertEqual([(kind, p["id"]) for _, _, kind, p in early[:3]],
+                         [("night", "caelles"), ("day", "rovira"), ("night", "teruel")])
+        self.assertEqual((early[0][0].isoformat(), early[0][1].isoformat()),
+                         ("2026-11-07T21:00:00+01:00", "2026-11-08T09:00:00+01:00"))
+        block = site("2026-11-18T19:30:00+01:00").pharmacy_block("ca")
+        self.assertIn("Farmàcia Sánchez", block)
+        self.assertIn('data-from="2026-11-18T09:00+01:00" data-to="2026-11-19T09:00+01:00" data-hide-past', block)
+        self.assertIn("data-shifts-empty hidden", block)
+        self.assertIn('href="tel:936923184"', block)
+        self.assertEqual(site("2026-12-01T08:00:00+01:00").pharmacy_shifts()[0][3]["id"], "sant-andreu")  # hasta las 9 del día 1
+        gone = site("2026-12-01T10:00:00+01:00").pharmacy_block("es")  # diciembre aún sin calendario: solo el enlace oficial
+        self.assertNotIn('class="events shifts"', gone)
+        self.assertIn("web del Ayuntamiento", gone)
+        self.assertNotIn("data-shifts-empty hidden", gone)
+        page_ca = site("2026-11-18T19:30:00+01:00").pharmacy_page("ca")
+        self.assertIn("Guàrdies de novembre de 2026", page_ca)
+        self.assertIn("Farmàcia Origen", page_ca)
+        self.assertEqual(page_ca.count("<tr data-from="), 30)
+        strip = site("2026-11-18T19:30:00+01:00").today_strip("ca")
+        self.assertIn("Guàrdia: Sánchez", strip)
+        self.assertIn("data-shift-chip=", strip)
 
     def test_aids(self):
         today = NOW.date()
@@ -385,6 +487,10 @@ class TestSite(unittest.TestCase):
             "offers": S.parse_offers((FIX / "feina_activa.xml").read_text(encoding="utf-8"), NOW.date()),
             "fuel": {"updated": "20/10/2026 18:00:00", "stations": S.parse_fuel(fixture("fuel_931.json"), "Cerdanyola del Vallès")},
             "contracts": S.parse_contracts(fixture("contracts.json")),
+            "pharmacy": {"source": S.PHARMACY_URL, "directory": S.parse_pharmacy_directory(fixture("farmacies.html")),
+                         "rosters": {}},
+            "notices": [{"title": "Talls de trànsit al centre", "url": "https://www.cerdanyola.cat/actualitat/talls",
+                         "date": "2026-10-19"}],
             "companies": {"since": "2025-10-21", "last": "2026-10-19", "known": {}, "events": S.parse_borme(
                 (FIX / "borme_bcn.html").read_text(encoding="utf-8"), "2026-10-19", "https://www.boe.es/b", {})},
         }
@@ -476,6 +582,14 @@ class TestSite(unittest.TestCase):
             self.assertIn('data-filter-tag="indef"', jobs)
             self.assertIn("data-count>(", jobs)
             self.assertNotIn("/static/filter.js", home)
+            pharmacies = (out / "ca/farmacies/index.html").read_text(encoding="utf-8")
+            self.assertIn("Farmàcia Rovira", pharmacies)  # sin calendario del mes queda el directorio...
+            self.assertIn("no podem llegir amb seguretat", pharmacies)  # ...y el enlace oficial
+            self.assertIn('href="#i-pill"', home)
+            sos_ca = (out / "ca/emergencies/index.html").read_text(encoding="utf-8")
+            self.assertIn('id="pharmacy"', sos_ca)
+            self.assertIn("Talls de trànsit al centre", home)
+            self.assertIn("/ca/farmacies/</loc>", (out / "sitemap.xml").read_text(encoding="utf-8"))
             sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
             self.assertIn('href="tel:112"', sos)
             self.assertIn("Policia Local", sos)

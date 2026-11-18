@@ -38,11 +38,13 @@ SOURCES = [
     ("fuel", sources.fetch_fuel, 0, True),
     ("contracts", sources.fetch_contracts, 8, True),  # la Generalitat actualiza los contratos una vez al día
     ("companies", sources.fetch_companies, 0, True),
+    ("notices", sources.fetch_notices, 5, False),  # titulares del Ayuntamiento sobre tráfico, obras y cortes
+    ("pharmacy", sources.fetch_pharmacy, 5, False),  # directorio y calendario mensual de guardias (PDF)
     ("social", sources.fetch_social, 6, False),  # vídeos de canales locales de YouTube; si falla, queda el directorio
     ("light", sources.fetch_light, 0, False),
     ("board", sources.fetch_board, 0, False),  # anuncios de los vecinos; no se guarda en git
 ]
-INCREMENTAL = {"aids", "agenda", "companies"}  # fuentes que reaprovechan lo que ya tenían guardado
+INCREMENTAL = {"aids", "agenda", "companies", "notices", "pharmacy"}  # fuentes que reaprovechan lo que ya tenían guardado
 
 
 def read(name):
@@ -88,6 +90,9 @@ def check(now):
         last = (health.get(name) or {}).get("last_ok")
         if required and (not last or now - tz.parse_iso(last) > MAX_SILENCE):
             problems.append(f"{name} lleva más de 3 días sin datos: {(health.get(name) or {}).get('last_error')}")
+    month = now.strftime("%Y-%m")
+    if now.day > 3 and month not in ((read("pharmacy") or {}).get("data") or {}).get("rosters", {}):
+        print(f"aviso: sin calendario de farmacias de guardia de {month}: la web solo enseña el directorio")
     stale = [p["name"] for p in load_picks() if now.date() - date.fromisoformat(p["checked"]) > timedelta(days=365)]
     if stale:  # solo aviso: las recomendaciones se revisan a mano una vez al año
         print("aviso: recomendaciones sin revisar desde hace más de un año:", ", ".join(stale))
