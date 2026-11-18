@@ -2,21 +2,22 @@
  "data": [
   {
    "lines": [
-    "R7"
+    "R4"
    ],
    "text": {
-    "es": "Sense servei ferroviari per obres a l'entorn de Montcada Bifurcació. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4. Servei alternatiu per carretera entre Cerdanyola del Vallès i Cerdanyola Universitat."
+    "ca": "Circulació amb demores mitjanes que poden superar els 15 minuts a causa de la convocatòria de vaga d'ahir. Es manté el reforç del servei d'autobusos interurbans.",
+    "es": "Circulación con demoras medias que pueden superar los 15 minutos derivada de la convocatoria de vaga de ayer. Se mantiene el refuerzo del servicio de autobuses interurbanos."
    }
   },
   {
    "lines": [
-    "R7",
-    "R8"
+    "R7"
    ],
    "text": {
-    "es": "Per obres d'Adif a l'entorn de Castelldefels, del 12 de novembre al 14 de desembre es modifica temporalment el servei de la línia R2. Els trens Granollers Centre - Castelldefels iniciaran i finalitzaran el seu recorregut a Gavà."
+    "ca": "Sense servei ferroviari per obres a l'entorn de Montcada Bifurcació. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4. Servei alternatiu per carretera entre Cerdanyola del Vallès i Cerdanyola Universitat.",
+    "es": "Sin servicio ferroviario por obras en el entorno de Montcada Bifurcació. El trayecto entre Fabra i Puig y Montcada Bifurcació se realiza mediante los servicios de la línea R4. Servicio alternativo por carretera entre Cerdanyola del Vallès y Cerdanyola Universitat."
    }
   }
  ],
- "fetched": "2026-11-18T18:34:38+01:00"
+ "fetched": "2026-11-18T20:26:40+01:00"
 }
