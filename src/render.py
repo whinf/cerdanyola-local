@@ -177,6 +177,8 @@ class Site:
                   f'{self.i("heart")} {t(lang, "donate")}</a></p>'
                   if self.cfg.get("donate_url") else "")
         install = self.install_block(lang)
+        visits = (f'<p class="visits" data-visits="{esc(self.cfg["visits_url"])}" data-text="{esc(t(lang, "visits"))}" hidden></p>'
+                  if self.cfg.get("visits_url") else "")
         updated = max((v.get("fetched") or "" for v in self.data.values()), default="")
         sprite = icons.sprite(self.icons)
         self.icons.clear()
@@ -226,7 +228,7 @@ class Site:
 <footer class="foot"><div class="wrap">
 <p>{t(lang, "source_line", t=fmt_dt(updated))}</p>
 <ul class="foot-links">{"".join(links)}</ul>
-{install}{donate}
+{visits}{install}{donate}
 </div></footer>
 </body>
 </html>

@@ -45,3 +45,11 @@ CREATE TABLE IF NOT EXISTS bans (
   created INTEGER NOT NULL,
   PRIMARY KEY (kind, value)
 );
+
+-- Contador de visitas anónimo de las webs (POST /hit?site=hv|cer|osm): un número por web y día, sin IP.
+CREATE TABLE IF NOT EXISTS visits (
+  site TEXT NOT NULL,
+  day  TEXT NOT NULL,                                -- AAAA-MM-DD en Europe/Madrid
+  n    INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (site, day)
+);

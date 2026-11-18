@@ -424,17 +424,20 @@ class TestBoard(unittest.TestCase):
         pages = self.build({"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local"})
         self.assertIn("encara no està en marxa", pages["ca"])
         self.assertNotIn("board.js", pages["ca"])
+        self.assertNotIn("data-visits", pages["ca"])  # sin visits_url no hay contador
         self.assertNotIn("challenges.cloudflare.com", pages["ca"])
         self.assertIn('aria-current="page"', pages["en"])
         self.assertIn("Community board", pages["en"])
 
     def test_board_page_with_worker(self):
         cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local",
-               "board_api_url": "https://board.example.workers.dev/", "turnstile_site_key": "1x00000000000000000000AA"}
+               "board_api_url": "https://board.example.workers.dev/", "turnstile_site_key": "1x00000000000000000000AA",
+               "visits_url": "https://board.example.workers.dev/hit?site=cer"}
         data = {"board": {"fetched": NOW.isoformat(), "data": {"posts": [self.POST]}}}
         page = self.build(cfg, data)["es"]
         self.assertIn('data-api="https://board.example.workers.dev"', page)
         self.assertIn("static/board.js", page)
+        self.assertIn('data-visits="https://board.example.workers.dev/hit?site=cer" data-text="Visitas: {today} hoy', page)
         self.assertIn("challenges.cloudflare.com/turnstile", page)
         self.assertIn("Bici &lt;script&gt;alert(1)&lt;/script&gt;", page)  # título escapado
         self.assertNotIn("<script>alert", page)

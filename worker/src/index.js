@@ -2,6 +2,7 @@
 import { MAIL, CATS, LANGS, SLUGS, CAT_NAMES, t, esc, fmtDate, page } from './i18n.js';
 import { sendMail } from './mail.js';
 import { isBlocked, hasIban, hasCard } from './filter.js';
+import { visits } from './visits.js';
 
 const DAY = 86400;
 const HOUR = 3600;
@@ -163,7 +164,7 @@ function preflight(req, env, path) {
   if (origin && allowedOrigins(env).includes(origin)) {
     headers['Access-Control-Allow-Origin'] = origin;
     headers.Vary = 'Origin';
-  } else if (path === '/posts') {
+  } else if (path === '/posts' || path === '/hit') {
     headers['Access-Control-Allow-Origin'] = '*';
   }
   return new Response(null, { status: 204, headers });
@@ -640,6 +641,7 @@ export default {
     env = { ...env, API_URL: url.origin }; // enlaces absolutos a este worker (el cron usa la variable API_URL)
     try {
       if (req.method === 'OPTIONS') return preflight(req, env, path);
+      if (path === '/hit' && (req.method === 'GET' || req.method === 'POST')) return visits(req, env, url.searchParams.get('site'));
       if (req.method === 'GET') {
         if (path === '/health') return json({ ok: true });
         if (path === '/posts') return listPosts(req, env, ctx, url);
