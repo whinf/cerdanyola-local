@@ -72,7 +72,7 @@
     "url": "https://www.cerdanyola.cat/agenda/tardor-solidaria-taller-intergeneracional-fils-de-futur-la-familia-del-canvi"
    },
    {
-    "category": "",
+    "category": "Altres activitats",
     "end": "2026-11-18",
     "place": "",
     "source": "ajuntament",
@@ -82,7 +82,7 @@
     "url": "https://www.cerdanyola.cat/agenda/inauguracio-empiric-conversa-les-altres-fecundacions"
    },
    {
-    "category": "",
+    "category": "Exposicions",
     "end": "2026-11-18",
     "place": "",
     "source": "ajuntament",
@@ -671,5 +671,5 @@
    }
   ]
  },
- "fetched": "2026-11-18T20:45:41+01:00"
+ "fetched": "2026-11-18T23:37:01+01:00"
 }

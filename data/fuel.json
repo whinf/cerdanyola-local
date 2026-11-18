@@ -62,10 +62,10 @@
     "town": "Cerdanyola del Vallès"
    },
    {
-    "address": "Calle Santa Anna, 133",
+    "address": "Calle Bosc Tancat, S/N",
     "hours": "L-D: 24H",
-    "lat": "41.500278",
-    "lon": "2.124972",
+    "lat": "41.499722",
+    "lon": "2.135250",
     "name": "NUROIL",
     "prices": {
      "diesel": 1.659,
@@ -74,10 +74,10 @@
     "town": "Cerdanyola del Vallès"
    },
    {
-    "address": "Calle Bosc Tancat, S/N",
+    "address": "Calle Santa Anna, 133",
     "hours": "L-D: 24H",
-    "lat": "41.499722",
-    "lon": "2.135250",
+    "lat": "41.500278",
+    "lon": "2.124972",
     "name": "NUROIL",
     "prices": {
      "diesel": 1.659,
@@ -230,18 +230,6 @@
     "town": "Montcada i Reixac"
    },
    {
-    "address": "Poligono Industrial Hermes, 4",
-    "hours": "L-V: 06:00-21:00; S: 07:00-15:00",
-    "lat": "41.482083",
-    "lon": "2.162944",
-    "name": "CEPSA",
-    "prices": {
-     "diesel": 1.899,
-     "g95": 1.684
-    },
-    "town": "Montcada i Reixac"
-   },
-   {
     "address": "Avinguda la Ferreria Esq/ Trabajo, S/N",
     "hours": "L-V: 06:30-22:30; S: 08:00-20:00",
     "lat": "41.485222",
@@ -250,6 +238,18 @@
     "prices": {
      "diesel": 1.889,
      "g95": 1.664
+    },
+    "town": "Montcada i Reixac"
+   },
+   {
+    "address": "Poligono Industrial Hermes, 4",
+    "hours": "L-V: 06:00-21:00; S: 07:00-15:00",
+    "lat": "41.482083",
+    "lon": "2.162944",
+    "name": "CEPSA",
+    "prices": {
+     "diesel": 1.899,
+     "g95": 1.684
     },
     "town": "Montcada i Reixac"
    },
@@ -397,18 +397,6 @@
     "town": "Barberà del Vallès"
    },
    {
-    "address": "Carrer Arquimedes, 19",
-    "hours": "L-D: 24H",
-    "lat": "41.511750",
-    "lon": "2.134389",
-    "name": "PETROLOWCOST",
-    "prices": {
-     "diesel": 1.719,
-     "g95": 1.449
-    },
-    "town": "Barberà del Vallès"
-   },
-   {
     "address": "Carretera N-150 Km. 8,6",
     "hours": "L-D: 07:00-00:00",
     "lat": "41.521083",
@@ -417,6 +405,18 @@
     "prices": {
      "diesel": 1.895,
      "g95": 1.699
+    },
+    "town": "Barberà del Vallès"
+   },
+   {
+    "address": "Carrer Arquimedes, 19",
+    "hours": "L-D: 24H",
+    "lat": "41.511750",
+    "lon": "2.134389",
+    "name": "PETROLOWCOST",
+    "prices": {
+     "diesel": 1.719,
+     "g95": 1.449
     },
     "town": "Barberà del Vallès"
    },
@@ -433,18 +433,6 @@
     "town": "Barberà del Vallès"
    },
    {
-    "address": "Carrer Gorcs Lladó, 96",
-    "hours": "L-D: 24H",
-    "lat": "41.517472",
-    "lon": "2.159389",
-    "name": "BENZOIL",
-    "prices": {
-     "diesel": 1.689,
-     "g95": 1.429
-    },
-    "town": "Barberà del Vallès"
-   },
-   {
     "address": "Cl Ronda Santa Maria ,202-210 (Esq.",
     "hours": "L-D: 06:00-22:00",
     "lat": "41.521139",
@@ -453,6 +441,18 @@
     "prices": {
      "diesel": 1.905,
      "g95": 1.709
+    },
+    "town": "Barberà del Vallès"
+   },
+   {
+    "address": "Carrer Gorcs Lladó, 96",
+    "hours": "L-D: 24H",
+    "lat": "41.517472",
+    "lon": "2.159389",
+    "name": "BENZOIL",
+    "prices": {
+     "diesel": 1.689,
+     "g95": 1.429
     },
     "town": "Barberà del Vallès"
    },
@@ -517,18 +517,6 @@
     "town": "Sant Cugat del Vallès"
    },
    {
-    "address": "Ronda Nord, 30",
-    "hours": "L-D: 06:00-22:00",
-    "lat": "41.483083",
-    "lon": "2.086139",
-    "name": "BP COLL FAVA",
-    "prices": {
-     "diesel": 1.875,
-     "g95": 1.699
-    },
-    "town": "Sant Cugat del Vallès"
-   },
-   {
     "address": "Carretera Cerdanyola Km. 108",
     "hours": "L-D: 24H",
     "lat": "41.477306",
@@ -553,6 +541,18 @@
     "town": "Sant Cugat del Vallès"
    },
    {
+    "address": "Ronda Nord, 30",
+    "hours": "L-D: 06:00-22:00",
+    "lat": "41.483083",
+    "lon": "2.086139",
+    "name": "BP COLL FAVA",
+    "prices": {
+     "diesel": 1.875,
+     "g95": 1.699
+    },
+    "town": "Sant Cugat del Vallès"
+   },
+   {
     "address": "Calle Cerdanya Esq Ronda Norte, Sn",
     "hours": "L-D: 24H",
     "lat": "41.479694",
@@ -565,7 +565,7 @@
     "town": "Sant Cugat del Vallès"
    }
   ],
-  "updated": "18/11/2026 20:46:46"
+  "updated": "18/11/2026 23:38:18"
  },
- "fetched": "2026-11-18T20:45:41+01:00"
+ "fetched": "2026-11-18T23:37:01+01:00"
 }
