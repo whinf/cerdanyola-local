@@ -448,6 +448,49 @@ class TestBoard(unittest.TestCase):
         self.assertIn("publicado el 21 de octubre", page)  # 1761000000 = 21/10/2025 00:40 en Madrid
         self.assertIn("<\\/", page)  # el JSON de textos escapa «</»
 
+    def test_social(self):
+        feed = (FIX / "youtube_feed.xml").read_text(encoding="utf-8")
+        videos = S.parse_youtube(feed, "propera-parada", NOW.date())
+        self.assertEqual([v["id"] for v in videos], ["WgyShGeo76U", "M61WQAPUto4", "veodYaaoP34", "_DGggN6rFg4"])
+        self.assertEqual((videos[0]["views"], videos[0]["published"], videos[0]["short"]), (1364, "2026-07-09", True))
+        self.assertFalse(videos[1]["short"])
+        self.assertEqual(S.parse_youtube(feed, "x", date(2028, 1, 1)), [])  # los vídeos viejos no se guardan
+        with self.assertRaises(S.FetchError):
+            S.parse_youtube("<html>", "x", NOW.date())
+        profiles = S.load_social()
+        self.assertEqual(len({p["id"] for p in profiles}), len(profiles))
+        for p in profiles:
+            self.assertIn(p["group"], render.SOCIAL_GROUPS)
+            self.assertEqual(set(p["desc"]), set(i18n.LANGS))
+            self.assertTrue(p["links"] and all(u.startswith("https://") for u in p["links"].values()))
+            date.fromisoformat(p["checked"])
+        cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local"}
+        evil = {"id": "abcdefghijk", "title": "<b>Hola</b>", "published": "2026-10-01", "channel": "propera-parada", "short": False, "views": 37826}
+        old = dict(evil, id="oldoldoldol", published="2025-01-01", views=10 ** 6)
+        other = dict(evil, id="otherchanne", channel="no-existe", views=10 ** 6)
+        data = {"social": {"fetched": NOW.isoformat(), "data": {"videos": videos + [evil, old, other]}}}
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Site(cfg, data, tmp, NOW).build()
+            page = (out / "es/redes/index.html").read_text(encoding="utf-8")
+            home = (out / "es/index.html").read_text(encoding="utf-8")
+            self.assertIn("redes/", (out / "sitemap.xml").read_text(encoding="utf-8"))
+        self.assertIn("&lt;b&gt;Hola&lt;/b&gt;", page)
+        self.assertIn("37.826 visualizaciones", page)
+        self.assertIn('href="https://www.youtube.com/watch?v=abcdefghijk"', page)
+        self.assertIn('href="https://www.youtube.com/shorts/WgyShGeo76U"', page)
+        self.assertEqual(page.count("i.ytimg.com/vi/"), render.VIDEOS_PER_CHANNEL)  # tope por canal
+        for hidden in ("oldoldoldol", "otherchanne", "M61WQAPUto4"):
+            self.assertNotIn(hidden, page)
+        self.assertIn("https://www.instagram.com/totcerdanyola/", page)
+        self.assertIn('aria-current="page">Redes</a>', page)
+        self.assertIn("Lo más visto en las redes", home)
+        with tempfile.TemporaryDirectory() as tmp:  # sin datos de YouTube queda el directorio
+            out = Site(cfg, {}, tmp, NOW).build()
+            page = (out / "ca/xarxes/index.html").read_text(encoding="utf-8")
+            self.assertNotIn("El més vist a les xarxes", (out / "ca/index.html").read_text(encoding="utf-8"))
+        self.assertNotIn("ytimg", page)
+        self.assertIn("A qui seguir", page)
+
     def test_board_home_count(self):
         cfg = {"site_name": "Cerdanyola Avui", "site_url": "https://example.github.io/cerdanyola-local", "board_api_url": "https://b.example"}
         data = {"board": {"fetched": NOW.isoformat(), "data": {"posts": [self.POST]}}}

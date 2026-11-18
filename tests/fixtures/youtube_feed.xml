@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC0UQVtQ19usMsli7bN9JKZQ"/>
+ <id>yt:channel:0UQVtQ19usMsli7bN9JKZQ</id>
+ <yt:channelId>0UQVtQ19usMsli7bN9JKZQ</yt:channelId>
+ <title>Propera Parada: Cerdanyola</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UC0UQVtQ19usMsli7bN9JKZQ"/>
+ <author>
+  <name>Propera Parada: Cerdanyola</name>
+  <uri>https://www.youtube.com/channel/UC0UQVtQ19usMsli7bN9JKZQ</uri>
+ </author>
+ <published>2023-01-18T08:14:49+00:00</published>
+ <entry>
+  <id>yt:video:WgyShGeo76U</id>
+  <yt:videoId>WgyShGeo76U</yt:videoId>
+  <yt:channelId>UC0UQVtQ19usMsli7bN9JKZQ</yt:channelId>
+  <title>La canción para NO PAGAR a medias 🎤🎶</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/WgyShGeo76U"/>
+  <author>
+   <name>Propera Parada: Cerdanyola</name>
+   <uri>https://www.youtube.com/channel/UC0UQVtQ19usMsli7bN9JKZQ</uri>
+  </author>
+  <published>2026-07-09T18:41:16+00:00</published>
+  <updated>2026-10-01T12:33:04+00:00</updated>
+  <media:group>
+   <media:title>La canción para NO PAGAR a medias 🎤🎶</media:title>
+   <media:content url="https://www.youtube.com/v/WgyShGeo76U?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/WgyShGeo76U/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="10" average="5.00" min="1" max="5"/>
+    <media:statistics views="1364"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:M61WQAPUto4</id>
+  <yt:videoId>M61WQAPUto4</yt:videoId>
+  <yt:channelId>UC0UQVtQ19usMsli7bN9JKZQ</yt:channelId>
+  <title>THE LAST SHOW: Se acabó | 4x16 | Propera Parada</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=M61WQAPUto4"/>
+  <author>
+   <name>Propera Parada: Cerdanyola</name>
+   <uri>https://www.youtube.com/channel/UC0UQVtQ19usMsli7bN9JKZQ</uri>
+  </author>
+  <published>2026-06-29T10:40:02+00:00</published>
+  <updated>2026-10-15T05:17:54+00:00</updated>
+  <media:group>
+   <media:title>THE LAST SHOW: Se acabó | 4x16 | Propera Parada</media:title>
+   <media:content url="https://www.youtube.com/v/M61WQAPUto4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/M61WQAPUto4/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="9" average="5.00" min="1" max="5"/>
+    <media:statistics views="82"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:veodYaaoP34</id>
+  <yt:videoId>veodYaaoP34</yt:videoId>
+  <yt:channelId>UC0UQVtQ19usMsli7bN9JKZQ</yt:channelId>
+  <title>Casal Popular LA FLAMA: Papa Lleó XIV | 4x15  | Propera Parada</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=veodYaaoP34"/>
+  <author>
+   <name>Propera Parada: Cerdanyola</name>
+   <uri>https://www.youtube.com/channel/UC0UQVtQ19usMsli7bN9JKZQ</uri>
+  </author>
+  <published>2026-06-18T17:49:11+00:00</published>
+  <updated>2026-11-16T16:43:03+00:00</updated>
+  <media:group>
+   <media:title>Casal Popular LA FLAMA: Papa Lleó XIV | 4x15  | Propera Parada</media:title>
+   <media:content url="https://www.youtube.com/v/veodYaaoP34?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/veodYaaoP34/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="4" average="5.00" min="1" max="5"/>
+    <media:statistics views="83"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:_DGggN6rFg4</id>
+  <yt:videoId>_DGggN6rFg4</yt:videoId>
+  <yt:channelId>UC0UQVtQ19usMsli7bN9JKZQ</yt:channelId>
+  <title>Último show en la 'Cervecería 134' | 4x14 | Propera Parada</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=_DGggN6rFg4"/>
+  <author>
+   <name>Propera Parada: Cerdanyola</name>
+   <uri>https://www.youtube.com/channel/UC0UQVtQ19usMsli7bN9JKZQ</uri>
+  </author>
+  <published>2026-05-28T16:30:06+00:00</published>
+  <updated>2026-10-05T08:01:06+00:00</updated>
+  <media:group>
+   <media:title>Último show en la 'Cervecería 134' | 4x14 | Propera Parada</media:title>
+   <media:content url="https://www.youtube.com/v/_DGggN6rFg4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/_DGggN6rFg4/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="4" average="5.00" min="1" max="5"/>
+    <media:statistics views="49"/>
+   </media:community>
+  </media:group>
+ </entry>
+ </feed>

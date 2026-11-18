@@ -1204,6 +1204,58 @@ def fetch_light(now, url=None):
     return parse_light(get_json(url))
 
 
+# ---------- redes: vídeos de los canales de YouTube de curated/social.json (feed Atom público de cada canal) ----------
+YOUTUBE_FEED = "https://www.youtube.com/feeds/videos.xml?channel_id={}"
+SOCIAL = ROOT / "curated" / "social.json"
+VIDEO_DAYS = 400  # se guardan los vídeos de poco más de un año
+_VIDEO_ID = re.compile(r"^[\w-]{11}$")
+_FEED_NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015",
+            "m": "http://search.yahoo.com/mrss/"}
+
+
+def load_social():
+    return json.loads(SOCIAL.read_text(encoding="utf-8")) if SOCIAL.exists() else []
+
+
+def parse_youtube(xml_text, channel, today):
+    """Vídeos recientes de un canal: solo id, título, fecha y visitas (ni descripciones ni comentarios)."""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as exc:
+        raise FetchError(f"feed de YouTube de {channel}: {exc}") from exc
+    since = (today - timedelta(days=VIDEO_DAYS)).isoformat()
+    out = []
+    for e in root.findall("a:entry", _FEED_NS):
+        vid = e.findtext("yt:videoId", "", _FEED_NS)
+        published = e.findtext("a:published", "", _FEED_NS)[:10]
+        title = " ".join(e.findtext("a:title", "", _FEED_NS).split())
+        if not _VIDEO_ID.match(vid) or not title or published < since:
+            continue
+        link = e.find("a:link[@rel='alternate']", _FEED_NS)
+        stats = e.find("m:group/m:community/m:statistics", _FEED_NS)
+        views = stats.get("views", "") if stats is not None else ""
+        out.append({"id": vid, "title": title[:140], "published": published, "channel": channel,
+                    "short": link is not None and "/shorts/" in link.get("href", ""),
+                    "views": int(views) if views.isdigit() else 0})
+    return out
+
+
+def fetch_social(now):
+    videos, ok = [], 0
+    for p in load_social():
+        if not p.get("youtube_id"):
+            continue
+        try:
+            videos += parse_youtube(get_text(YOUTUBE_FEED.format(p["youtube_id"])), p["id"], now.date())
+            ok += 1
+        except FetchError as exc:  # un canal caído o borrado no deja sin vídeos a los demás
+            print(f"aviso: social: {exc}")
+        time.sleep(1)
+    if not ok:
+        raise FetchError("ningún canal de YouTube responde")
+    return {"videos": sorted(videos, key=lambda v: (-v["views"], v["id"]))}
+
+
 # ---------- tauler veïnal (worker de Cloudflare; solo los campos públicos) ----------
 BOARD_FIELDS = ("id", "cat", "lang", "title", "body", "name", "contact", "price", "created", "expires")
 

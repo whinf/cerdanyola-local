@@ -5,6 +5,7 @@ Web local de Cerdanyola del Vallès y Bellaterra, en catalán, castellano e ingl
 - las horas más baratas de la luz;
 - los avisos de Rodalies R7 y R8;
 - la agenda (Ajuntament, Agenda cultural de Catalunya, agenda de la UAB y calendarios de entidades como el Festival de Blues y AFOCER), con las fiestas y conciertos marcados con el icono de fiesta y los actos infantiles con el suyo;
+- redes («Xarxes»): los vídeos más vistos del último año de los canales de YouTube de entidades locales y un directorio hecho a mano de perfiles de Cerdanyola en Instagram, TikTok y YouTube (`curated/social.json`; añadir un perfil = una línea, y con `youtube_id` sus vídeos entran solos);
 - recomendaciones de la semana: restaurantes y experiencias elegidos a mano (`curated/picks.json`), que rotan cada semana;
 - una página «Ahorra»: horas baratas de la luz, gasolinera más barata, actos gratuitos, ayudas para particulares y tarifas sociales;
 - una guía de ocio: plan para hoy según el tiempo, próximas fiestas, rutas, fuentes, miradores, patrimonio, restaurantes, bares y pubs;
@@ -33,6 +34,7 @@ Se actualiza sola cuatro veces al día con GitHub Actions y se publica en GitHub
 | Empleo | CIDO de la Diputació (`api.diba.cat`) y XML de Feina Activa (SOC) | CC BY 4.0 y Llicència oberta Catalunya |
 | Carburantes | API del Ministerio para la Transición Ecológica (`FiltroMunicipio`) | Reutilización libre citando fuente y fecha |
 | Tablón vecinal | Anuncios de los propios vecinos, vía el worker de Cloudflare (`board_api_url` en `config.json`; `turnstile_site_key` es la clave pública de Turnstile) | Contenido de los usuarios; solo se publican nombre o alias, texto y el contacto que el autor decide mostrar |
+| Redes | Feed Atom público de cada canal de YouTube (`youtube.com/feeds/videos.xml?channel_id=`) + `curated/social.json` | Solo título, fecha, visitas y enlace; miniaturas servidas por YouTube. Instagram y TikTok prohíben la lectura automática: solo se enlazan perfiles |
 | Recomendaciones | `curated/picks.json`, escrito a mano | Propio; `--check` avisa si una ficha lleva más de un año sin revisar (`checked`) |
 | Guía de ocio | OpenStreetMap vía Overpass API (una consulta al día) | ODbL: `data/leisure.json`, `tests/fixtures/osm.json` y `geo/cerdanyola.json` (término municipal) son © colaboradores de OpenStreetMap, bajo ODbL |
 | Más locales nocturnos | Overture Maps, PMTiles de lugares de la última versión (`stac.overturemaps.org`), leído por rangos HTTP: solo las ~25 teselas de Cerdanyola | CDLA Permissive 2.0 (Meta, BrightQuery...); se descartan los registros con otras licencias. Solo se añaden los que no están ya en OpenStreetMap; `_NIGHT_SKIP` en `sources.py` excluye por nombre los clubs de alterne (y se omite la categoría adult_entertainment de Overture) |

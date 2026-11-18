@@ -24,6 +24,15 @@ RODALIES = "https://rodalies.gencat.cat/ca/estat_servei/"
 PICKS = ROOT / "curated" / "picks.json"  # recomendaciones escritas a mano; rotan cada semana
 PICKS_PER_WEEK = {"food": 3, "experience": 2}
 FILL_LITRES = 50  # «llenar el depósito» para comparar gasolineras
+SOCIAL_GROUPS = {"creators": "clapperboard", "media": "megaphone", "shops": "coffee", "sport": "trophy",
+                 "culture": "landmark", "science": "telescope"}  # grupo del directorio de redes -> icono
+NETWORKS = (("instagram", "Instagram"), ("tiktok", "TikTok"), ("youtube", "YouTube"), ("web", "Web"))
+VIDEO_WINDOW = 365  # «más vistos»: vídeos publicados en el último año
+VIDEOS_PER_CHANNEL = 2  # para que un canal grande no ocupe toda la lista
+RADAR = (("#cerdanyola · TikTok", "https://www.tiktok.com/tag/cerdanyola"),
+         ("#cerdanyola · Instagram", "https://www.instagram.com/explore/tags/cerdanyola/"),
+         ("#cerdanyoladelvalles · Instagram", "https://www.instagram.com/explore/tags/cerdanyoladelvalles/"),
+         ("Cerdanyola del Vallès · YouTube", "https://www.youtube.com/results?search_query=cerdanyola+del+vall%C3%A8s"))
 BOARD_CATS = ("help", "give", "deal")  # tauler veïnal: ajuda, regal, ganga
 BOARD_ICONS = {"help": "handshake", "give": "gift", "deal": "tag"}
 FREE_WORDS = re.compile(r"\b(gratu[iï]t[ae]?s?|gratis|gratuit[oa]s?|entrada (?:lliure|libre)|free entry)\b", re.I)
@@ -109,8 +118,9 @@ def osm(lat, lon):
 
 
 class Site:
-    def __init__(self, cfg, data, out_dir, now, picks=None):
+    def __init__(self, cfg, data, out_dir, now, picks=None, social=None):
         self.cfg = cfg
+        self.social = sources.load_social() if social is None else social  # directorio de redes, hecho a mano
         self.picks = load_picks() if picks is None else picks
         self.data = data  # {fuente: {"fetched": iso, "data": ...}}
         self.out = Path(out_dir)
@@ -162,7 +172,7 @@ class Site:
             f'<span class="lg-short" aria-hidden="true">{lg}</span></a>' for lg in LANGS)
         nav = "".join(f'<li><a href="{self.href(self.path(lang, k))}"{" aria-current=\"page\"" if k == kind else ""}>'
                       f'{t(lang, "nav_" + k)}</a></li>'
-                      for k in ("home", "agenda", "leisure", "picks", "board", "save", "aids", "jobs", "invest", "directory", "emergency"))
+                      for k in ("home", "agenda", "leisure", "picks", "social", "board", "save", "aids", "jobs", "invest", "directory", "emergency"))
         theme = (f'<span class="theme-slot"><button class="theme" type="button" hidden data-theme-toggle '
                  f'data-auto="{esc(t(lang, "theme_auto"))}" data-light="{esc(t(lang, "theme_light"))}" '
                  f'data-dark="{esc(t(lang, "theme_dark"))}" aria-label="{esc(t(lang, "theme_auto"))}">'
@@ -706,6 +716,63 @@ class Site:
         body.append(f'<p class="note">{t(lang, "picks_note", n=len(self.picks), repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
         return self.layout(lang, "picks", f'{t(lang, "picks_title")} · {self.name}', t(lang, "picks_desc"), "".join(body))
 
+    # ---------- redes ----------
+    def top_videos(self, n=8):
+        """Los vídeos más vistos del último año de los canales del directorio, con tope por canal."""
+        since = (self.now.date() - timedelta(days=VIDEO_WINDOW)).isoformat()
+        known = {p["id"] for p in self.social}
+        per, out = {}, []
+        for v in sorted((self.get("social") or {}).get("videos", []), key=lambda v: (-v["views"], v["id"])):
+            if v["published"] < since or v["channel"] not in known or per.get(v["channel"], 0) >= VIDEOS_PER_CHANNEL:
+                continue
+            per[v["channel"]] = per.get(v["channel"], 0) + 1
+            out.append(v)
+        return out[:n]
+
+    def video_item(self, lang, v):
+        vid = quote(v["id"])
+        url = f"https://www.youtube.com/shorts/{vid}" if v.get("short") else f"https://www.youtube.com/watch?v={vid}"
+        who = next(p["name"] for p in self.social if p["id"] == v["channel"])
+        day = date.fromisoformat(v["published"])
+        meta = [esc(who), t(lang, "social_views", n=i18n.fmt_count(lang, v["views"])),
+                f"{i18n.fmt_date(lang, day, weekday=False)} {day.year}"]
+        return (f'<li><a href="{url}" rel="noopener"><img src="https://i.ytimg.com/vi/{vid}/mqdefault.jpg" alt="" '
+                f'width="320" height="180" loading="lazy" referrerpolicy="no-referrer">'
+                f'<span class="what">{esc(v["title"])}</span></a>'
+                f'<small class="muted">{" · ".join(meta)}</small></li>')
+
+    def profile_item(self, lang, p):
+        links = " · ".join(f'<a href="{esc(safe_url(p["links"][k]))}" rel="noopener">{label}</a>'
+                           for k, label in NETWORKS if safe_url(p["links"].get(k)))
+        return f'<li><strong>{esc(p["name"])}</strong> — {esc(p["desc"][lang])}<br>{links}</li>'
+
+    def social_preview(self, lang):
+        top = self.top_videos(3)
+        if not top:
+            return ""
+        return (f'<section><h2>{self.i("trending-up")}{t(lang, "social_home")}</h2>'
+                f'<ul class="videos">{"".join(self.video_item(lang, v) for v in top)}</ul>'
+                f'<p><a href="{self.href(self.path(lang, "social"))}">{t(lang, "social_more")} →</a></p></section>')
+
+    def social_page(self, lang):
+        body = [f'<h1>{t(lang, "social_title")}</h1><p class="lede">{t(lang, "social_desc")}</p>']
+        top = self.top_videos()
+        if top:
+            body.append(f'<section><h2>{self.i("trending-up")}{t(lang, "social_top")}</h2>'
+                        f'<ul class="videos">{"".join(self.video_item(lang, v) for v in top)}</ul>'
+                        f'<p class="note">{t(lang, "social_top_note", t=fmt_dt(self.data["social"].get("fetched")))}</p></section>')
+        body.append(f'<h2>{self.i("message-circle")}{t(lang, "social_who")}</h2><p>{t(lang, "social_who_text")}</p>')
+        for g, icon in SOCIAL_GROUPS.items():
+            group = [p for p in self.social if p["group"] == g]
+            if group:
+                body.append(f'<h3>{self.i(icon)} {t(lang, "social_g_" + g)}</h3>'
+                            f'<ul class="dir">{"".join(self.profile_item(lang, p) for p in group)}</ul>')
+        radar = "".join(f'<li><a href="{esc(u)}" rel="noopener">{esc(label)}</a></li>' for label, u in RADAR)
+        body.append(f'<section><h2>{self.i("link")}{t(lang, "social_radar")}</h2><p>{t(lang, "social_radar_text")}</p>'
+                    f'<ul class="months">{radar}</ul></section>')
+        body.append(f'<p class="note">{t(lang, "social_note", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
+        return self.layout(lang, "social", f'{t(lang, "social_title")} · {self.name}', t(lang, "social_desc"), "".join(body))
+
     def free_events(self, days=30):
         limit = (self.now.date() + timedelta(days=days)).isoformat()
         return [e for e in self.events_split()[0] if e["start"] <= limit and is_free(e)]
@@ -822,6 +889,7 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "leisure"))}#weekend">{t(lang, "weekend_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "picks"))}">{t(lang, "picks_title")}</a></li>'
+                 f'<li><a href="{self.href(self.path(lang, "social"))}">{t(lang, "social_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "board"))}">{t(lang, "board_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "save"))}">{t(lang, "save_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "aids"))}">{t(lang, "aids_title")}</a></li>'
@@ -832,7 +900,7 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
         body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
                 f'{t(lang, "tagline")}</p>{self.weather(lang)}{self.install_block(lang, home=True)}{self.light(lang)}{self.transport(lang)}'
-                f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
+                f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.social_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'
                 f'{self.fuel_preview(lang)}'
                 f'{self.air(lang)}{quick}')
         ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": self.name, "inLanguage": lang,
@@ -1071,7 +1139,7 @@ location.replace("{self.prefix}/ca/");}})();
     def sitemap(self):
         today = self.now.date().isoformat()
         urls = []
-        daily = ("home", "agenda", "leisure", "picks", "board", "save", "aids", "jobs", "invest", "directory")
+        daily = ("home", "agenda", "leisure", "picks", "social", "board", "save", "aids", "jobs", "invest", "directory")
         for kind in daily + ("emergency", "about", "legal", "privacy"):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{lg}" href="{self.absolute(self.path(lg, kind))}"/>'
                            for lg in LANGS)
@@ -1121,6 +1189,7 @@ location.replace("{self.prefix}/ca/");}})();
             self.write(self.path(lang, "agenda"), self.agenda_page(lang))
             self.write(self.path(lang, "leisure"), self.leisure_page(lang))
             self.write(self.path(lang, "picks"), self.picks_page(lang))
+            self.write(self.path(lang, "social"), self.social_page(lang))
             self.write(self.path(lang, "board"), self.board_page(lang))
             self.write(self.path(lang, "save"), self.save_page(lang))
             self.write(self.path(lang, "aids"), self.aids_page(lang))

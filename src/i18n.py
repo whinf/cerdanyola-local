@@ -348,6 +348,7 @@ STRINGS = {
 <li>Feina: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) i CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
 <li>Inversions i licitacions: Plataforma de serveis de contractació pública (dades obertes de la Generalitat). Empreses: BORME, de l'Agència Estatal Butlletí Oficial de l'Estat, de reutilització lliure citant-ne la font.</li>
 <li>Preus dels carburants: Ministeri per a la Transició Ecològica i el Repte Demogràfic.</li>
+<li>Xarxes: vídeos dels canals públics de YouTube d'entitats locals (títol, data i visualitzacions) i un directori de perfils fet a mà.</li>
 <li>Recomanacions de restaurants i experiències: llista feta a mà, sense pagaments ni acords comercials; no reproduïm valoracions ni ressenyes de cap plataforma.</li>
 <li>Preu de la llum: Red Eléctrica, a través del web germà <a href="{light}">{light}</a>.</li>
 </ul>
@@ -361,6 +362,7 @@ STRINGS = {
 """,
         "privacy_body": """
 <p>Aquest web no fa servir galetes i no té publicitat ni analítica de seguiment. L'única part que tracta dades personals és el <a href="{board}">tauler veïnal</a>, explicat més avall.</p>
+<p>A la pàgina de xarxes i a la portada, les miniatures dels vídeos es carreguen des dels servidors de YouTube (Google), que reben la teva adreça IP com qualsevol servidor web; no hi ha reproductors incrustats ni galetes.</p>
 <p>El peu de cada pàgina mostra un comptador de visites anònim: cada càrrega de pàgina suma u a un número diari desat a Cloudflare, sense galetes, sense desar la IP ni cap dada sobre tu.</p>
 <p>Si tries el tema clar o fosc, la preferència es desa només al teu navegador (localStorage) i no s'envia enlloc.</p>
 <p>Està allotjat a GitHub Pages. Com qualsevol servidor web, GitHub registra l'adreça IP de les visites per motius de seguretat. Més informació a la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaració de privacitat de GitHub</a>.</p>
@@ -370,6 +372,26 @@ STRINGS = {
 <p>Per evitar abusos es guarda un resum (hash amb sal) de l'adreça IP, del qual no es pot recuperar l'adreça. Els anuncis caduquen als 45 dies i s'esborren del tot set dies després; pots esborrar-los abans amb l'enllaç del correu de confirmació o escrivint al responsable. També pots demanar accés, rectificació o supressió per correu, i reclamar davant l'<a href="https://www.aepd.es">Agència Espanyola de Protecció de Dades</a>.</p>
 <p>Les dades es guarden als servidors de Cloudflare i els correus s'envien amb Gmail (Google). A la pàgina del tauler s'executa <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Turnstile</a> per distingir persones de robots; no fa servir galetes de seguiment.</p>
 """,
+        "slug_social": "xarxes",
+        "nav_social": "Xarxes",
+        "social_title": "Cerdanyola a les xarxes",
+        "social_desc": "Els vídeos més vistos dels canals de Cerdanyola del Vallès i un directori de creadors, comerços, clubs i entitats locals a Instagram, TikTok i YouTube.",
+        "social_home": "El més vist a les xarxes",
+        "social_more": "Més vídeos i perfils locals",
+        "social_top": "Els vídeos més vistos",
+        "social_views": "{n} visualitzacions",
+        "social_top_note": "Vídeos publicats l'últim any als canals de YouTube del directori, ordenats per visualitzacions (com a molt dos per canal). Dades del canal públic de cada compte, llegides el {t}. Les miniatures són de YouTube i cada vídeo s'obre a YouTube.",
+        "social_who": "A qui seguir",
+        "social_who_text": "Comptes amb seu a Cerdanyola o Bellaterra. Els enllaços porten al perfil de cada xarxa.",
+        "social_g_creators": "Creadors",
+        "social_g_media": "Actualitat i ciutat",
+        "social_g_shops": "Comerç i restauració",
+        "social_g_sport": "Esport",
+        "social_g_culture": "Cultura",
+        "social_g_science": "Universitat i ciència",
+        "social_radar": "Què es mou ara",
+        "social_radar_text": "Cerques i etiquetes per veure què es publica sobre Cerdanyola en aquest moment:",
+        "social_note": "Directori fet a mà, sense pagaments ni acords comercials. Instagram i TikTok no permeten llegir publicacions de manera automàtica, així que d'aquestes xarxes només enllacem els perfils; no copiem fotos, textos ni comentaris de ningú. Ets de Cerdanyola i vols sortir-hi, o prefereixes que traiem el teu compte? <a href=\"{repo}/issues\">Digues-nos-ho a GitHub</a>.",
         "slug_board": "tauler",
         "nav_board": "Tauler",
         "board_title": "Tauler veïnal de Cerdanyola",
@@ -605,6 +627,7 @@ STRINGS = {
 <li>Empleo: Servei Públic d'Ocupació de Catalunya (Feina Activa, Llicència oberta de la Generalitat) y CIDO de la Diputació de Barcelona (CC BY 4.0).</li>
 <li>Inversiones y licitaciones: Plataforma de serveis de contractació pública (datos abiertos de la Generalitat). Empresas: BORME, de la Agencia Estatal Boletín Oficial del Estado, de reutilización libre citando la fuente.</li>
 <li>Precios de los carburantes: Ministerio para la Transición Ecológica y el Reto Demográfico.</li>
+<li>Redes: vídeos de los canales públicos de YouTube de entidades locales (título, fecha y visualizaciones) y un directorio de perfiles hecho a mano.</li>
 <li>Recomendaciones de restaurantes y experiencias: lista hecha a mano, sin pagos ni acuerdos comerciales; no reproducimos valoraciones ni reseñas de ninguna plataforma.</li>
 <li>Precio de la luz: Red Eléctrica, a través de la web hermana <a href="{light}">{light}</a>.</li>
 </ul>
@@ -618,6 +641,7 @@ STRINGS = {
 """,
         "privacy_body": """
 <p>Esta web no usa cookies y no tiene publicidad ni analítica de seguimiento. La única parte que trata datos personales es el <a href="{board}">tablón vecinal</a>, explicado más abajo.</p>
+<p>En la página de redes y en la portada, las miniaturas de los vídeos se cargan desde los servidores de YouTube (Google), que reciben tu dirección IP como cualquier servidor web; no hay reproductores incrustados ni cookies.</p>
 <p>El pie de cada página muestra un contador de visitas anónimo: cada carga de página suma uno a un número diario guardado en Cloudflare, sin cookies, sin guardar la IP ni ningún dato sobre ti.</p>
 <p>Si eliges el tema claro u oscuro, la preferencia se guarda solo en tu navegador (localStorage) y no se envía a ningún sitio.</p>
 <p>Está alojada en GitHub Pages. Como cualquier servidor web, GitHub registra la dirección IP de las visitas por motivos de seguridad. Más información en la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.</p>
@@ -627,6 +651,26 @@ STRINGS = {
 <p>Para evitar abusos se guarda un resumen (hash con sal) de la dirección IP, del que no se puede recuperar la dirección. Los anuncios caducan a los 45 días y se borran del todo siete días después; puedes borrarlos antes con el enlace del correo de confirmación o escribiendo al responsable. También puedes pedir acceso, rectificación o supresión por correo, y reclamar ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 <p>Los datos se guardan en los servidores de Cloudflare y los correos se envían con Gmail (Google). En la página del tablón se ejecuta <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Turnstile</a> para distinguir personas de robots; no usa cookies de seguimiento.</p>
 """,
+        "slug_social": "redes",
+        "nav_social": "Redes",
+        "social_title": "Cerdanyola en las redes",
+        "social_desc": "Los vídeos más vistos de los canales de Cerdanyola del Vallès y un directorio de creadores, comercios, clubs y entidades locales en Instagram, TikTok y YouTube.",
+        "social_home": "Lo más visto en las redes",
+        "social_more": "Más vídeos y perfiles locales",
+        "social_top": "Los vídeos más vistos",
+        "social_views": "{n} visualizaciones",
+        "social_top_note": "Vídeos publicados en el último año en los canales de YouTube del directorio, ordenados por visualizaciones (como mucho dos por canal). Datos del canal público de cada cuenta, leídos el {t}. Las miniaturas son de YouTube y cada vídeo se abre en YouTube.",
+        "social_who": "A quién seguir",
+        "social_who_text": "Cuentas con sede en Cerdanyola o Bellaterra. Los enlaces llevan al perfil de cada red.",
+        "social_g_creators": "Creadores",
+        "social_g_media": "Actualidad y ciudad",
+        "social_g_shops": "Comercio y restauración",
+        "social_g_sport": "Deporte",
+        "social_g_culture": "Cultura",
+        "social_g_science": "Universidad y ciencia",
+        "social_radar": "Qué se mueve ahora",
+        "social_radar_text": "Búsquedas y etiquetas para ver qué se publica sobre Cerdanyola en este momento:",
+        "social_note": "Directorio hecho a mano, sin pagos ni acuerdos comerciales. Instagram y TikTok no permiten leer publicaciones de forma automática, así que de esas redes solo enlazamos los perfiles; no copiamos fotos, textos ni comentarios de nadie. ¿Eres de Cerdanyola y quieres aparecer, o prefieres que quitemos tu cuenta? <a href=\"{repo}/issues\">Dínoslo en GitHub</a>.",
         "slug_board": "tablon",
         "nav_board": "Tablón",
         "board_title": "Tablón vecinal de Cerdanyola",
@@ -862,6 +906,7 @@ STRINGS = {
 <li>Jobs: Catalan public employment service (Feina Activa, Catalan open licence) and the Diputació de Barcelona's CIDO (CC BY 4.0).</li>
 <li>Investment and tenders: the Catalan public procurement platform (Generalitat open data). Companies: the BORME, published by the Agencia Estatal Boletín Oficial del Estado, free to reuse with attribution.</li>
 <li>Fuel prices: Spanish Ministry for the Ecological Transition.</li>
+<li>Social media: videos from the public YouTube channels of local organisations (title, date and views) and a hand-made directory of profiles.</li>
 <li>Restaurant and experience picks: a hand-made list with no payments or commercial agreements; we do not reproduce ratings or reviews from any platform.</li>
 <li>Electricity price: Red Eléctrica, via the sister site <a href="{light}">{light}</a>.</li>
 </ul>
@@ -875,6 +920,7 @@ STRINGS = {
 """,
         "privacy_body": """
 <p>This website uses no cookies and has no advertising or tracking analytics. The only part that processes personal data is the <a href="{board}">community board</a>, explained below.</p>
+<p>On the social media page and the home page, video thumbnails are loaded from YouTube (Google) servers, which receive your IP address like any web server; there are no embedded players and no cookies.</p>
 <p>Each page footer shows an anonymous visit counter: every page load adds one to a daily number stored on Cloudflare, with no cookies and without storing your IP or any data about you.</p>
 <p>If you pick the light or dark theme, the preference is stored only in your browser (localStorage) and never sent anywhere.</p>
 <p>It is hosted on GitHub Pages. Like any web server, GitHub logs visitors' IP addresses for security reasons. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
@@ -884,6 +930,26 @@ STRINGS = {
 <p>To prevent abuse we store a salted hash of your IP address, from which the address cannot be recovered. Notices expire after 45 days and are fully deleted seven days later; you can delete them earlier with the link in the confirmation email or by writing to the controller. You can also request access, rectification or erasure by email, and lodge a complaint with the <a href="https://www.aepd.es">Spanish Data Protection Agency</a>.</p>
 <p>Data is stored on Cloudflare servers and emails are sent with Gmail (Google). The board page runs <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Turnstile</a> to tell people from robots; it uses no tracking cookies.</p>
 """,
+        "slug_social": "social",
+        "nav_social": "Social",
+        "social_title": "Cerdanyola on social media",
+        "social_desc": "The most watched videos from Cerdanyola del Vallès channels and a directory of local creators, shops, clubs and organisations on Instagram, TikTok and YouTube.",
+        "social_home": "Most watched on social media",
+        "social_more": "More videos and local profiles",
+        "social_top": "Most watched videos",
+        "social_views": "{n} views",
+        "social_top_note": "Videos published in the last year on the YouTube channels in the directory, sorted by views (two per channel at most). Data from each account's public channel feed, read on {t}. Thumbnails come from YouTube and each video opens on YouTube.",
+        "social_who": "Who to follow",
+        "social_who_text": "Accounts based in Cerdanyola or Bellaterra. Links go to each profile.",
+        "social_g_creators": "Creators",
+        "social_g_media": "News and town",
+        "social_g_shops": "Shops, cafés and bars",
+        "social_g_sport": "Sport",
+        "social_g_culture": "Culture",
+        "social_g_science": "University and science",
+        "social_radar": "What's happening now",
+        "social_radar_text": "Searches and hashtags to see what is being posted about Cerdanyola right now:",
+        "social_note": "A hand-made directory with no payments or commercial agreements. Instagram and TikTok do not allow posts to be read automatically, so for those networks we only link to profiles; we never copy anyone's photos, texts or comments. Based in Cerdanyola and want to be listed, or want your account removed? <a href=\"{repo}/issues\">Tell us on GitHub</a>.",
         "slug_board": "board",
         "nav_board": "Board",
         "board_title": "Cerdanyola community board",
@@ -954,6 +1020,11 @@ def t(lang, key, **kw):
 def fmt_num(lang, x, decimals):
     s = f"{x:.{decimals}f}"
     return s if lang == "en" else s.replace(".", ",")
+
+
+def fmt_count(lang, n):
+    """Entero con separador de miles: 37.826 / 37,826."""
+    return f"{n:,}" if lang == "en" else f"{n:,}".replace(",", ".")
 
 
 def fmt_date(lang, d, weekday=True):

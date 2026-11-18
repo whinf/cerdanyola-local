@@ -44,6 +44,16 @@
   .prose { max-inline-size: 68ch; }
   @media (max-width: 36rem) { .events li { padding: .55rem .7rem; } }
 
+  /* Redes: vídeos más vistos */
+  .videos { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s-3); grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); }
+  .videos li { display: grid; gap: .35rem; align-content: start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-s); box-shadow: var(--shadow-1); overflow: hidden; padding-block-end: .6rem; }
+  .videos a { display: grid; gap: .5rem; text-decoration: none; color: var(--ink); }
+  .videos a:hover .what { text-decoration: underline; }
+  .videos img { inline-size: 100%; block-size: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--border); display: block; }
+  .videos .what { font-weight: 600; padding-inline: .75rem; overflow-wrap: anywhere; }
+  .videos small { padding-inline: .75rem; }
+  h3 .i { color: var(--accent); vertical-align: -.15em; }
+
   /* Tauler veïnal */
   .board-cats { list-style: none; padding: 0; margin: 0 0 var(--s-4); display: grid; gap: 4px; }
   .board-cats .i { color: var(--accent); vertical-align: -.15em; margin-inline-end: .35em; }

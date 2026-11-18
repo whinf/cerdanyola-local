@@ -38,6 +38,7 @@ SOURCES = [
     ("fuel", sources.fetch_fuel, 0, True),
     ("contracts", sources.fetch_contracts, 8, True),  # la Generalitat actualiza los contratos una vez al día
     ("companies", sources.fetch_companies, 0, True),
+    ("social", sources.fetch_social, 6, False),  # vídeos de canales locales de YouTube; si falla, queda el directorio
     ("light", sources.fetch_light, 0, False),
     ("board", sources.fetch_board, 0, False),  # anuncios de los vecinos; no se guarda en git
 ]
@@ -90,6 +91,9 @@ def check(now):
     stale = [p["name"] for p in load_picks() if now.date() - date.fromisoformat(p["checked"]) > timedelta(days=365)]
     if stale:  # solo aviso: las recomendaciones se revisan a mano una vez al año
         print("aviso: recomendaciones sin revisar desde hace más de un año:", ", ".join(stale))
+    old = [p["name"] for p in sources.load_social() if now.date() - date.fromisoformat(p["checked"]) > timedelta(days=365)]
+    if old:
+        print("aviso: perfiles de redes sin revisar desde hace más de un año:", ", ".join(old))
     for p in problems:
         print("ERROR:", p)
     return 1 if problems else 0
