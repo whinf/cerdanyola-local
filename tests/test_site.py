@@ -126,10 +126,19 @@ class TestSources(unittest.TestCase):
         self.assertEqual(i18n.aq_level("NO2", 41), 1)
         self.assertEqual(i18n.aq_level("PM10", 500), 5)
 
-    def test_alerts_only_r7_r8(self):
+    def test_alerts_only_our_lines(self):
         alerts = S.parse_alerts(fixture("renfe_alerts.json"), NOW)
         self.assertEqual(len(alerts), 3)
-        self.assertTrue(all(set(a["lines"]) <= {"R7", "R8"} for a in alerts))
+        self.assertTrue(all(set(a["lines"]) <= {"R4", "R7", "R8"} for a in alerts))
+        strike = next(a for a in alerts if a["text"]["ca"].startswith("Per causes alienes"))
+        self.assertEqual(strike["lines"], ["R4", "R7", "R8"])  # aviso general, sin nombrar líneas
+        self.assertTrue(strike["text"]["es"].startswith("Por causas ajenas"))  # las dos llegan marcadas «es»
+        # Noviembre: Renfe etiqueta con toda la red unas obras de la R2 en Castelldefels y las de Montcada (R7)
+        later = S.parse_alerts(fixture("renfe_alerts.json"), tz.to_madrid(tz.parse_iso("2026-11-18T19:00:00+01:00")))
+        texts = " ".join(a["text"]["ca"] for a in later)
+        self.assertNotIn("Castelldefels", texts)
+        montcada = [a for a in later if "Montcada Bifurcació" in a["text"]["ca"]]
+        self.assertEqual([a["lines"] for a in montcada], [["R7"]])  # una vez, por la entidad más concreta
 
     def test_aids(self):
         today = NOW.date()

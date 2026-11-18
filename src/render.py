@@ -69,6 +69,17 @@ def week_picks(items, today, n):
     return [pool[(start + i) % len(pool)] for i in range(min(n, len(pool)))]
 
 
+def pick_live(p, today):
+    """¿Toca recomendar la ficha hoy? `months` la limita a unos meses; `from`/`until` («MM-DD») afinan al día
+    (una fiesta deja de salir cuando acaba) y pueden cruzar el cambio de año."""
+    if today.month not in p.get("months", range(1, 13)):
+        return False
+    lo, hi, md = p.get("from"), p.get("until"), today.strftime("%m-%d")
+    if lo and hi and lo > hi:
+        return md >= lo or md <= hi
+    return (not lo or md >= lo) and (not hi or md <= hi)
+
+
 def load_picks():
     return json.loads(PICKS.read_text(encoding="utf-8")) if PICKS.exists() else []
 
@@ -289,9 +300,16 @@ class Site:
         site = li.get("site") or ""
         home = f'{site.rstrip("/")}/{lang}/' if site else ""
         more = f'<p><a href="{esc(home)}">{t(lang, "light_more")} →</a></p>' if home else ""
+        tip = t(lang, "light_tip")
+        try:  # la frase del sol solo si las 3 horas baratas caen de día (10–17 h), no de madrugada
+            first = datetime.fromisoformat(li["cheapest"]["3"]["start"]).hour
+            if 10 <= first <= 14:
+                tip += " " + t(lang, "light_tip_solar")
+        except (KeyError, ValueError):
+            pass
         return (f'<section class="light"><h2>{self.i("zap")}{t(lang, "light_title")}</h2>'
                 f'<p>{t(lang, "light_text", w=li["cheapest"]["3"]["label"], h=one["label"], p=price)}</p>'
-                f'<p class="note">{t(lang, "light_tip")}</p>{more}</section>')
+                f'<p class="note">{tip}</p>{more}</section>')
 
     def air(self, lang):
         air = self.get("air")
@@ -680,7 +698,7 @@ class Site:
                            f'<h1>{t(lang, "emergency_title")}</h1>{t(lang, "emergency_body", local=local)}')
 
     def this_week(self):
-        live = [p for p in self.picks if self.now.month in p.get("months", range(1, 13))]  # fiestas: solo en su época
+        live = [p for p in self.picks if pick_live(p, self.now.date())]  # fiestas: solo en su época
         return {k: week_picks([p for p in live if p["kind"] == k], self.now.date(), n)
                 for k, n in PICKS_PER_WEEK.items()}
 

@@ -31,7 +31,7 @@ SOCRATA = "https://analisi.transparenciacatalunya.cat/resource/{}.json?"
 AGENDA_MUNICIPI = "agenda:ubicacions/barcelona/valles-occidental/cerdanyola-del-valles"
 AIR_MUNICIPIS = ("Sant Cugat del Vallès", "Montcada i Reixac", "Barberà del Vallès", "Sabadell")
 POLLUTANTS = ("NO2", "O3", "PM10", "PM2.5")
-LINES = ("R7", "R8")
+LINES = ("R4", "R7", "R8")
 
 # cerdanyola.cat no envía su certificado intermedio; los añadimos: Sectigo (hasta 2036) y,
 # desde octubre de 2026, Let's Encrypt YE1 con su Root YE firmada por ISRG Root X2 (hasta 2028).
@@ -345,25 +345,41 @@ def fetch_air(now):
 
 
 # ---------- avisos de Rodalies (Renfe GTFS-RT, CC BY 4.0) ----------
+_ROUTE_LINE = re.compile(r"51T\d+(\w+)$")  # rutas de Rodalies de Catalunya: «51T0090R8»
+_LINE_CODE = re.compile(r"\bR(?:G1|L\d|T\d|\d{1,2}[NS]?a?)\b")  # líneas nombradas en el texto: R2, R2S, RL4...
+
+
 def parse_alerts(doc, now):
-    ts = now.timestamp()
-    seen, out = set(), []
+    """Avisos activos de nuestras líneas. Renfe etiqueta con toda la red avisos que son de otra línea (unas
+    obras de la R2 en Castelldefels, p. ej.): si el texto nombra líneas y ninguna es nuestra, se descarta.
+    De un aviso repetido en varias entidades queda la más concreta (la que etiqueta menos líneas)."""
+    ts, ours = now.timestamp(), set(LINES)
+    found = {}  # textos -> (nº de líneas etiquetadas, aviso); el dict guarda el orden de llegada
     for ent in doc.get("entity", []):
         al = ent.get("alert", {})
-        routes = {x.get("routeId", "") for x in al.get("informedEntity", [])}
-        lines = sorted({ln for ln in LINES for r in routes if r.startswith("51T") and r.endswith(ln)})
-        if not lines:
+        tagged = {m.group(1) for x in al.get("informedEntity", []) if (m := _ROUTE_LINE.match(x.get("routeId", "")))}
+        if not tagged & ours:
             continue
         periods = al.get("activePeriod") or [{}]
         if not any(int(p.get("start", 0)) <= ts <= int(p.get("end", 2 ** 62)) for p in periods):
             continue
-        texts = {x.get("language") or "es": x.get("text", "").strip()
-                 for x in al.get("descriptionText", {}).get("translation", []) if x.get("text")}
+        trans = [(x.get("language") or "es", x["text"].strip())
+                 for x in al.get("descriptionText", {}).get("translation", []) if (x.get("text") or "").strip()]
+        if not trans:
+            continue
+        langs = [lg for lg, _ in trans]
+        if len(set(langs)) < len(langs):  # Renfe marca las dos como «es»: la primera es castellano y la segunda, catalán
+            langs = ["es", "ca"] + [f"x{i}" for i in range(2, len(trans))]
+        texts = {lg: text for lg, (_, text) in zip(langs, trans)}
+        mentioned = set(_LINE_CODE.findall(" ".join(texts.values())))
+        wide = bool(tagged - ours)
+        if wide and mentioned and not mentioned & ours:
+            continue
+        lines = sorted((mentioned & ours) or (tagged & ours)) if wide else sorted(tagged & ours)
         key = tuple(sorted(texts.values()))
-        if texts and key not in seen:
-            seen.add(key)
-            out.append({"lines": lines, "text": texts})
-    return out
+        if key not in found or len(tagged) < found[key][0]:
+            found[key] = (len(tagged), {"lines": lines, "text": texts})
+    return [alert for _, alert in found.values()]
 
 
 def fetch_alerts(now):

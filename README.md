@@ -3,7 +3,7 @@
 Web local de Cerdanyola del Vallès y Bellaterra, en catalán, castellano e inglés. Reúne:
 - la previsión del tiempo;
 - las horas más baratas de la luz;
-- los avisos de Rodalies R7 y R8;
+- los avisos de Rodalies R4, R7 y R8;
 - la agenda (Ajuntament, Agenda cultural de Catalunya, agenda de la UAB y calendarios de entidades como el Festival de Blues y AFOCER), con las fiestas y conciertos marcados con el icono de fiesta y los actos infantiles con el suyo;
 - redes («Xarxes»): los vídeos más vistos del último año de los canales de YouTube de entidades locales y un directorio hecho a mano de perfiles de Cerdanyola en Instagram, TikTok y YouTube (`curated/social.json`; añadir un perfil = una línea, y con `youtube_id` sus vídeos entran solos);
 - recomendaciones de la semana: restaurantes y experiencias elegidos a mano (`curated/picks.json`), que rotan cada semana;

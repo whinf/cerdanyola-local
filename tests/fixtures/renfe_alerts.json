@@ -3778,5 +3778,682 @@
         }]
       }
     }
-  }]
+  }, {
+  "id": "AVISO_526429",
+  "alert": {
+    "activePeriod": [
+      {
+        "start": "1794757440"
+      }
+    ],
+    "informedEntity": [
+      {
+        "routeId": "51T0030R7"
+      },
+      {
+        "routeId": "51T0029R7"
+      }
+    ],
+    "descriptionText": {
+      "translation": [
+        {
+          "text": "Sin servicio ferroviario por obras en el entorno de Montcada Bifurcació. El trayecto entre Fabra i Puig y Montcada Bifurcació se realiza mediante los servicios de la línea R4. Servicio alternativo por carretera entre Cerdanyola del Vallès y Cerdanyola Universitat.",
+          "language": "es"
+        },
+        {
+          "text": "Sense servei ferroviari per obres a l'entorn de Montcada Bifurcació. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4. Servei alternatiu per carretera entre Cerdanyola del Vallès i Cerdanyola Universitat.",
+          "language": "es"
+        }
+      ]
+    }
+  }
+}, {
+  "id": "AVISO_525563",
+  "alert": {
+    "activePeriod": [
+      {
+        "start": "1794396000"
+      }
+    ],
+    "informedEntity": [
+      {
+        "routeId": "51T0025R2"
+      },
+      {
+        "routeId": "51T0013R2"
+      },
+      {
+        "routeId": "51T0026R2"
+      },
+      {
+        "routeId": "51T0014R2"
+      },
+      {
+        "routeId": "51T0027R2"
+      },
+      {
+        "routeId": "51T0028R2"
+      },
+      {
+        "routeId": "51T0095R2"
+      }
+    ],
+    "descriptionText": {
+      "translation": [
+        {
+          "text": "Por obras de Adif en el entorno de Castelldefels, del 12 de noviembre al 14 de diciembre se modifica temporalmente el servicio de la línea R2. Los trenes Granollers Centre - Castelldefels iniciarán y finalizarán su recorrido en Gavà.",
+          "language": "es"
+        },
+        {
+          "text": "Per obres d'Adif a l'entorn de Castelldefels, del 12 de novembre al 14 de desembre es modifica temporalment el servei de la línia R2. Els trens Granollers Centre - Castelldefels iniciaran i finalitzaran el seu recorregut a Gavà.",
+          "language": "es"
+        }
+      ]
+    }
+  }
+}, {
+  "id": "AVISO_526429",
+  "alert": {
+    "activePeriod": [
+      {
+        "start": "1794757440"
+      }
+    ],
+    "informedEntity": [
+      {
+        "routeId": "51T0110RT2"
+      },
+      {
+        "routeId": "51T0139R13"
+      },
+      {
+        "routeId": "51T0040R3"
+      },
+      {
+        "routeId": "51T0025R2"
+      },
+      {
+        "routeId": "51T0206R3"
+      },
+      {
+        "routeId": "51T0002R1"
+      },
+      {
+        "routeId": "51T0195R3"
+      },
+      {
+        "routeId": "51T0094R11"
+      },
+      {
+        "routeId": "51T0138RT1"
+      },
+      {
+        "routeId": "51T0140R13"
+      },
+      {
+        "routeId": "51T0105R16"
+      },
+      {
+        "routeId": "51T0013R2"
+      },
+      {
+        "routeId": "51T0015R3"
+      },
+      {
+        "routeId": "51T0026R2"
+      },
+      {
+        "routeId": "51T0123R15"
+      },
+      {
+        "routeId": "51T0210R3"
+      },
+      {
+        "routeId": "51T0012R2S"
+      },
+      {
+        "routeId": "51T0196R3"
+      },
+      {
+        "routeId": "51T0207R13"
+      },
+      {
+        "routeId": "51T0014R2"
+      },
+      {
+        "routeId": "51T0185R4"
+      },
+      {
+        "routeId": "51T0187R13"
+      },
+      {
+        "routeId": "51T0164R15"
+      },
+      {
+        "routeId": "51T0106R16"
+      },
+      {
+        "routeId": "51T0208R3"
+      },
+      {
+        "routeId": "51T0016R3"
+      },
+      {
+        "routeId": "51T0039R3"
+      },
+      {
+        "routeId": "51T0211R3"
+      },
+      {
+        "routeId": "51T0048RL4"
+      },
+      {
+        "routeId": "51T0197R3"
+      },
+      {
+        "routeId": "51T0098R15"
+      },
+      {
+        "routeId": "51T0008R2S"
+      },
+      {
+        "routeId": "51T0030R7"
+      },
+      {
+        "routeId": "51T0101R14"
+      },
+      {
+        "routeId": "51T0027R2"
+      },
+      {
+        "routeId": "51T0175R13"
+      },
+      {
+        "routeId": "51T0200R3"
+      },
+      {
+        "routeId": "51T0093R11"
+      },
+      {
+        "routeId": "51T0007R2S"
+      },
+      {
+        "routeId": "51T0020R4"
+      },
+      {
+        "routeId": "51T0209R3"
+      },
+      {
+        "routeId": "51T0190R3"
+      },
+      {
+        "routeId": "51T0198R3"
+      },
+      {
+        "routeId": "51T0113R15"
+      },
+      {
+        "routeId": "51T0163R15"
+      },
+      {
+        "routeId": "51T0107R17"
+      },
+      {
+        "routeId": "51T0031R4"
+      },
+      {
+        "routeId": "51T0124R15"
+      },
+      {
+        "routeId": "51T0028R2"
+      },
+      {
+        "routeId": "51T0201R3"
+      },
+      {
+        "routeId": "51T0111RG1"
+      },
+      {
+        "routeId": "51T0202R3"
+      },
+      {
+        "routeId": "51T0102R14"
+      },
+      {
+        "routeId": "51T0191R3"
+      },
+      {
+        "routeId": "51T0119R11"
+      },
+      {
+        "routeId": "51T0199R3"
+      },
+      {
+        "routeId": "51T0004R2N"
+      },
+      {
+        "routeId": "51T0032R4"
+      },
+      {
+        "routeId": "51T0047RL4"
+      },
+      {
+        "routeId": "51T0029R7"
+      },
+      {
+        "routeId": "51T0099RL3"
+      },
+      {
+        "routeId": "51T0127R3"
+      },
+      {
+        "routeId": "51T0188R3"
+      },
+      {
+        "routeId": "51T0097R15"
+      },
+      {
+        "routeId": "51T0114R15"
+      },
+      {
+        "routeId": "51T0108R17"
+      },
+      {
+        "routeId": "51T0003R2N"
+      },
+      {
+        "routeId": "51T0019R4"
+      },
+      {
+        "routeId": "51T0203R3"
+      },
+      {
+        "routeId": "51T0045R3"
+      },
+      {
+        "routeId": "51T0192R3"
+      },
+      {
+        "routeId": "51T0112RG1"
+      },
+      {
+        "routeId": "51T0176R13"
+      },
+      {
+        "routeId": "51T0033R3"
+      },
+      {
+        "routeId": "51T0103R16"
+      },
+      {
+        "routeId": "51T0120R11"
+      },
+      {
+        "routeId": "51T0128R3"
+      },
+      {
+        "routeId": "51T0189R3"
+      },
+      {
+        "routeId": "51T0137RT1"
+      },
+      {
+        "routeId": "51T0204R3"
+      },
+      {
+        "routeId": "51T0046R3"
+      },
+      {
+        "routeId": "51T0193R3"
+      },
+      {
+        "routeId": "51T0095R2"
+      },
+      {
+        "routeId": "51T0034R3"
+      },
+      {
+        "routeId": "51T0023R8"
+      },
+      {
+        "routeId": "51T0100RL3"
+      },
+      {
+        "routeId": "51T0011R2S"
+      },
+      {
+        "routeId": "51T0205R3"
+      },
+      {
+        "routeId": "51T0104R16"
+      },
+      {
+        "routeId": "51T0001R1"
+      },
+      {
+        "routeId": "51T0194R3"
+      },
+      {
+        "routeId": "51T0109RT2"
+      },
+      {
+        "routeId": "51T0024R8"
+      }
+    ],
+    "descriptionText": {
+      "translation": [
+        {
+          "text": "Sin servicio ferroviario por obras en el entorno de Montcada Bifurcació. El trayecto entre Fabra i Puig y Montcada Bifurcació se realiza mediante los servicios de la línea R4. Servicio alternativo por carretera entre Cerdanyola del Vallès y Cerdanyola Universitat.",
+          "language": "es"
+        },
+        {
+          "text": "Sense servei ferroviari per obres a l'entorn de Montcada Bifurcació. El tram entre Fabra i Puig i Montcada Bifurcació es realitza mitjançant els serveis de la línia R4. Servei alternatiu per carretera entre Cerdanyola del Vallès i Cerdanyola Universitat.",
+          "language": "es"
+        }
+      ]
+    }
+  }
+}, {
+  "id": "AVISO_525563",
+  "alert": {
+    "activePeriod": [
+      {
+        "start": "1794396000"
+      }
+    ],
+    "informedEntity": [
+      {
+        "routeId": "51T0110RT2"
+      },
+      {
+        "routeId": "51T0139R13"
+      },
+      {
+        "routeId": "51T0040R3"
+      },
+      {
+        "routeId": "51T0025R2"
+      },
+      {
+        "routeId": "51T0206R3"
+      },
+      {
+        "routeId": "51T0002R1"
+      },
+      {
+        "routeId": "51T0195R3"
+      },
+      {
+        "routeId": "51T0094R11"
+      },
+      {
+        "routeId": "51T0138RT1"
+      },
+      {
+        "routeId": "51T0140R13"
+      },
+      {
+        "routeId": "51T0105R16"
+      },
+      {
+        "routeId": "51T0013R2"
+      },
+      {
+        "routeId": "51T0015R3"
+      },
+      {
+        "routeId": "51T0026R2"
+      },
+      {
+        "routeId": "51T0123R15"
+      },
+      {
+        "routeId": "51T0210R3"
+      },
+      {
+        "routeId": "51T0012R2S"
+      },
+      {
+        "routeId": "51T0196R3"
+      },
+      {
+        "routeId": "51T0207R13"
+      },
+      {
+        "routeId": "51T0014R2"
+      },
+      {
+        "routeId": "51T0185R4"
+      },
+      {
+        "routeId": "51T0187R13"
+      },
+      {
+        "routeId": "51T0164R15"
+      },
+      {
+        "routeId": "51T0106R16"
+      },
+      {
+        "routeId": "51T0208R3"
+      },
+      {
+        "routeId": "51T0016R3"
+      },
+      {
+        "routeId": "51T0039R3"
+      },
+      {
+        "routeId": "51T0211R3"
+      },
+      {
+        "routeId": "51T0048RL4"
+      },
+      {
+        "routeId": "51T0197R3"
+      },
+      {
+        "routeId": "51T0098R15"
+      },
+      {
+        "routeId": "51T0008R2S"
+      },
+      {
+        "routeId": "51T0030R7"
+      },
+      {
+        "routeId": "51T0101R14"
+      },
+      {
+        "routeId": "51T0027R2"
+      },
+      {
+        "routeId": "51T0175R13"
+      },
+      {
+        "routeId": "51T0200R3"
+      },
+      {
+        "routeId": "51T0093R11"
+      },
+      {
+        "routeId": "51T0007R2S"
+      },
+      {
+        "routeId": "51T0020R4"
+      },
+      {
+        "routeId": "51T0209R3"
+      },
+      {
+        "routeId": "51T0190R3"
+      },
+      {
+        "routeId": "51T0198R3"
+      },
+      {
+        "routeId": "51T0113R15"
+      },
+      {
+        "routeId": "51T0163R15"
+      },
+      {
+        "routeId": "51T0107R17"
+      },
+      {
+        "routeId": "51T0031R4"
+      },
+      {
+        "routeId": "51T0124R15"
+      },
+      {
+        "routeId": "51T0028R2"
+      },
+      {
+        "routeId": "51T0201R3"
+      },
+      {
+        "routeId": "51T0111RG1"
+      },
+      {
+        "routeId": "51T0202R3"
+      },
+      {
+        "routeId": "51T0102R14"
+      },
+      {
+        "routeId": "51T0191R3"
+      },
+      {
+        "routeId": "51T0119R11"
+      },
+      {
+        "routeId": "51T0199R3"
+      },
+      {
+        "routeId": "51T0004R2N"
+      },
+      {
+        "routeId": "51T0032R4"
+      },
+      {
+        "routeId": "51T0047RL4"
+      },
+      {
+        "routeId": "51T0029R7"
+      },
+      {
+        "routeId": "51T0099RL3"
+      },
+      {
+        "routeId": "51T0127R3"
+      },
+      {
+        "routeId": "51T0188R3"
+      },
+      {
+        "routeId": "51T0097R15"
+      },
+      {
+        "routeId": "51T0114R15"
+      },
+      {
+        "routeId": "51T0108R17"
+      },
+      {
+        "routeId": "51T0003R2N"
+      },
+      {
+        "routeId": "51T0019R4"
+      },
+      {
+        "routeId": "51T0203R3"
+      },
+      {
+        "routeId": "51T0045R3"
+      },
+      {
+        "routeId": "51T0192R3"
+      },
+      {
+        "routeId": "51T0112RG1"
+      },
+      {
+        "routeId": "51T0176R13"
+      },
+      {
+        "routeId": "51T0033R3"
+      },
+      {
+        "routeId": "51T0103R16"
+      },
+      {
+        "routeId": "51T0120R11"
+      },
+      {
+        "routeId": "51T0128R3"
+      },
+      {
+        "routeId": "51T0189R3"
+      },
+      {
+        "routeId": "51T0137RT1"
+      },
+      {
+        "routeId": "51T0204R3"
+      },
+      {
+        "routeId": "51T0046R3"
+      },
+      {
+        "routeId": "51T0193R3"
+      },
+      {
+        "routeId": "51T0095R2"
+      },
+      {
+        "routeId": "51T0034R3"
+      },
+      {
+        "routeId": "51T0023R8"
+      },
+      {
+        "routeId": "51T0100RL3"
+      },
+      {
+        "routeId": "51T0011R2S"
+      },
+      {
+        "routeId": "51T0205R3"
+      },
+      {
+        "routeId": "51T0104R16"
+      },
+      {
+        "routeId": "51T0001R1"
+      },
+      {
+        "routeId": "51T0194R3"
+      },
+      {
+        "routeId": "51T0109RT2"
+      },
+      {
+        "routeId": "51T0024R8"
+      }
+    ],
+    "descriptionText": {
+      "translation": [
+        {
+          "text": "Por obras de Adif en el entorno de Castelldefels, del 12 de noviembre al 14 de diciembre se modifica temporalmente el servicio de la línea R2. Los trenes Granollers Centre - Castelldefels iniciarán y finalizarán su recorrido en Gavà.",
+          "language": "es"
+        },
+        {
+          "text": "Per obres d'Adif a l'entorn de Castelldefels, del 12 de novembre al 14 de desembre es modifica temporalment el servei de la línia R2. Els trens Granollers Centre - Castelldefels iniciaran i finalitzaran el seu recorregut a Gavà.",
+          "language": "es"
+        }
+      ]
+    }
+  }
+}]
 }
