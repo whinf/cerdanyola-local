@@ -299,6 +299,53 @@ class TestSite(unittest.TestCase):
         self.assertIn("&lt;script&gt;", item)
         self.assertIn("\\u003c", render.jsonld_text({"name": "</script>"}))
 
+    def test_pick_window(self):
+        fest = {"months": [10, 11], "from": "10-20", "until": "11-15"}
+        self.assertEqual([render.pick_live(fest, d) for d in (date(2026, 10, 19), date(2026, 10, 20), date(2026, 11, 15),
+                                                              date(2026, 11, 18))], [False, True, True, False])
+        xmas = {"from": "12-15", "until": "01-06"}  # cruza el cambio de año
+        self.assertEqual([render.pick_live(xmas, d) for d in (date(2026, 12, 14), date(2026, 12, 31), date(2027, 1, 6),
+                                                              date(2027, 1, 7))], [False, True, True, False])
+        self.assertTrue(render.pick_live({}, date(2026, 5, 1)))
+        self.assertFalse(render.pick_live({"months": [10]}, date(2026, 5, 1)))
+
+    def test_started_events_and_freshness(self):
+        cfg = {"site_name": "x", "site_url": "https://example.github.io/cerdanyola-local"}
+        today = NOW.date().isoformat()  # NOW = 18:16
+        events = [{"title": "Matí", "start": today, "time": "10:00", "source": "uab"},
+                  {"title": "Vespre", "start": today, "time": "20 h", "source": "gencat"},
+                  {"title": "Sense hora", "start": today, "time": "tot el dia", "source": "uab"},
+                  {"title": "Llarg", "start": today, "end": "2026-10-30", "time": "10:00", "source": "uab"}]
+        old = "2026-10-18T09:00:00+02:00"  # más de 26 h antes de NOW
+        site = Site(cfg, {"agenda": {"fetched": NOW.isoformat(), "data": {"events": events}},
+                          "alerts": {"fetched": old, "data": []}}, "unused", NOW)
+        self.assertEqual([site.started(e) for e in events], [True, False, False, False])
+        self.assertEqual(render.event_start(events[1]).isoformat(), f"{today}T20:00:00+02:00")
+        self.assertEqual([e["title"] for e in site.upcoming()], ["Vespre", "Sense hora", "Llarg"])
+        done = site.event_item("ca", events[0])
+        self.assertIn('class="started"', done)
+        self.assertIn('<span class="tier t3 on">Ja ha començat</span>', done)
+        later = site.event_item("ca", events[1])
+        self.assertIn(f'data-start="{today}T20:00+02:00"', later)
+        self.assertIn('class="tier t3 on" hidden', later)
+        self.assertNotIn("data-start", site.event_item("ca", events[3]))  # varios días: no «empieza» hoy
+        self.assertNotIn("Matí", site.agenda_preview("ca"))
+        self.assertIn('data-upcoming="6"', site.agenda_preview("ca"))
+        self.assertIn('class="stale">', site.stamp("ca", "agenda", "alerts"))  # manda la fuente más antigua
+        self.assertIn('class="stale" hidden>', site.stamp("ca", "agenda"))
+        self.assertEqual(site.stamp("ca", "weather"), "")
+
+    def test_light_tip(self):
+        cfg = {"site_name": "x", "site_url": "https://example.github.io/cerdanyola-local"}
+
+        def block(hour):
+            slot = {"avg_eur_kwh": 0.07, "label": f"{hour:02d}:00–{hour + 3:02d}:00", "start": f"2026-10-20T{hour:02d}:00:00+02:00"}
+            light = {"date": NOW.date().isoformat(), "cheapest": {"1": slot, "3": slot}}
+            return Site(cfg, {"light": {"fetched": NOW.isoformat(), "data": light}}, "unused", NOW).light("es")
+        self.assertIn("tarifa regulada (PVPC)", block(3))
+        self.assertNotIn("energía solar", block(3))  # de madrugada no hay sol
+        self.assertIn("energía solar", block(13))
+
     def test_same_keys(self):
         for lang in i18n.LANGS:
             self.assertEqual(set(i18n.STRINGS[lang]), set(i18n.STRINGS["ca"]), lang)
@@ -394,6 +441,13 @@ class TestSite(unittest.TestCase):
             offline = (out / "offline.html").read_text(encoding="utf-8")
             self.assertIn("noindex", offline)
             self.assertIn("Sense connexió", offline)
+            self.assertNotIn('rel="canonical"', offline)  # no es la portada: ni canonical ni chip activo
+            self.assertNotIn('aria-current="page"', offline)
+            self.assertIn('rel="canonical" href="https://example.github.io/cerdanyola-local/ca/"', home)
+            self.assertIn("/static/now.js", home)
+            self.assertIn('og:image', (out / "index.html").read_text(encoding="utf-8"))
+            self.assertIn("Rodalies R4, R7 i R8", home)
+            self.assertIn('class="note fresh" data-fetched=', home)
             sos = (out / "en/emergencies/index.html").read_text(encoding="utf-8")
             self.assertIn('href="tel:112"', sos)
             self.assertIn("Policia Local", sos)

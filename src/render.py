@@ -54,6 +54,11 @@ INVEST_DAYS = 365  # grandes inversiones y anuncios con novedades en este tiempo
 COMPANY_DAYS = 90
 FEED_DAYS = 60
 SOON_PHASES = ("Alerta futura", "Consulta preliminar del mercat", "Anunci previ")
+# Horas sin actualizar a partir de las que un bloque avisa de que el dato puede estar desfasado. El build corre
+# un par de veces al día (unas 16 h entre el de la noche y el del mediodía), así que el mínimo deja pasar uno.
+STALE_HOURS = {"weather": 26, "alerts": 26, "air": 30, "agenda": 36, "fuel": 36, "aids": 48, "cido": 48, "offers": 48,
+               "contracts": 72, "companies": 72, "social": 96}
+STALE_DEFAULT = 120  # equipamientos, recarga y guía de ocio se releen una vez al día y cambian poco
 PHASE_TIER = {"Anunci de licitació": "t0", "Alerta futura": "t1", "Consulta preliminar del mercat": "t1",
               "Anunci previ": "t1", "Expedient en avaluació": "t1"}  # el resto, gris
 
@@ -94,6 +99,15 @@ def is_free(e):
 
 def for_kids(e):
     return e.get("category") == "Infància" or bool(KIDS_WORDS.search(e["title"]))
+
+
+def event_start(e):
+    """Inicio del acto en hora de Madrid si trae una hora legible («17:30», «20 h»); si no, None."""
+    m = re.match(r"\s*(\d{1,2})(?::(\d\d)|\s*h\b)", e.get("time") or "")
+    if not m or int(m.group(1)) > 23 or int(m.group(2) or 0) > 59:
+        return None
+    local = datetime.fromisoformat(e["start"]).replace(hour=int(m.group(1)), minute=int(m.group(2) or 0))
+    return local.replace(tzinfo=tz.offset_at(local.replace(tzinfo=tz.CET)))
 
 
 def aid_level(a):
@@ -181,7 +195,12 @@ class Site:
             f'<a href="{self.href(self.path(lg, kind))}" hreflang="{lg}" lang="{lg}"'
             f'{" aria-current=\"true\"" if lg == lang else ""}><span class="lg-long">{t(lg, "lang_name")}</span>'
             f'<span class="lg-short" aria-hidden="true">{lg}</span></a>' for lg in LANGS)
-        nav = "".join(f'<li><a href="{self.href(self.path(lang, k))}"{" aria-current=\"page\"" if k == kind else ""}>'
+        # 404 y «sin conexión» no son la portada: ni canonical ni alternativas ni chip activo
+        canonical = "" if noindex else (
+            f'<link rel="canonical" href="{self.absolute(self.path(lang, kind))}">\n{alts}'
+            f'<link rel="alternate" hreflang="x-default" href="{x_default}">\n'
+            f'<meta property="og:url" content="{self.absolute(self.path(lang, kind))}">')
+        nav = "".join(f'<li><a href="{self.href(self.path(lang, k))}"{" aria-current=\"page\"" if k == kind and not noindex else ""}>'
                       f'{t(lang, "nav_" + k)}</a></li>'
                       for k in ("home", "agenda", "leisure", "picks", "social", "board", "save", "aids", "jobs", "invest", "directory", "emergency"))
         theme = (f'<span class="theme-slot"><button class="theme" type="button" hidden data-theme-toggle '
@@ -211,12 +230,10 @@ class Site:
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 {'<meta name="robots" content="noindex">' if noindex else ''}
-<link rel="canonical" href="{self.absolute(self.path(lang, kind))}">
-{alts}<link rel="alternate" hreflang="x-default" href="{x_default}">
+{canonical}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
-<meta property="og:url" content="{self.absolute(self.path(lang, kind))}">
 <meta property="og:locale" content="{t(lang, 'locale')}">
 <meta property="og:site_name" content="{esc(self.name)}">
 <meta property="og:image" content="{self.absolute('/static/og.png')}">
@@ -233,6 +250,7 @@ class Site:
 {head}{ld}
 <script src="{self.href('/static/ui.js')}" defer></script>
 <script src="{self.href('/static/app.js')}" data-sw="{self.href('/sw.js')}" defer></script>
+<script src="{self.href('/static/now.js')}" defer></script>
 </head>
 <body>
 {sprite}
@@ -264,6 +282,20 @@ class Site:
                     f'<p><strong>{t(lang, "install_title")}</strong> {t(lang, "install_text")}</p><p>{btn}</p>{help_}</div></aside>')
         return f'<div class="install" hidden data-install><p>{btn}</p>{help_}</div>'
 
+    def stamp(self, lang, *names):
+        """«Datos actualizados: …» del bloque, con la fuente más antigua de las que usa, y un aviso si lleva
+        demasiado sin responder. now.js lo recalcula en el navegador: si el build deja de ejecutarse, el aviso
+        puesto aquí no llegaría nunca."""
+        got = [(self.data[n]["fetched"], STALE_HOURS.get(n, STALE_DEFAULT)) for n in names
+               if (self.data.get(n) or {}).get("fetched")]
+        if not got:
+            return ""
+        fetched, max_h = min(got, key=lambda x: tz.parse_iso(x[0]))
+        stale = self.now - tz.parse_iso(fetched) > timedelta(hours=max_h)
+        return (f'<p class="note fresh" data-fetched="{esc(fetched)}" data-max-h="{max_h}">'
+                f'{t(lang, "fresh_at", t=fmt_dt(fetched))} <strong class="stale"{"" if stale else " hidden"}>'
+                f'{t(lang, "fresh_stale")}</strong></p>')
+
     # ---------- bloques ----------
     def weather(self, lang):
         w = self.get("weather")
@@ -289,7 +321,7 @@ class Site:
                 f'<th>{t(lang, "th_day")}</th><th>{t(lang, "th_sky")}</th><th class="num">{t(lang, "th_min")}</th>'
                 f'<th class="num">{t(lang, "th_max")}</th><th class="num">{t(lang, "th_rain")} (mm)</th>'
                 f'<th class="num">{t(lang, "th_wind")} (km/h)</th></tr></thead><tbody>{"".join(rows)}</tbody></table>'
-                f'<p class="note">{t(lang, "weather_note")}</p></section>')
+                f'<p class="note">{t(lang, "weather_note")}</p>{self.stamp(lang, "weather")}</section>')
 
     def light(self, lang):
         li = self.get("light")
@@ -333,7 +365,7 @@ class Site:
                 f'<th>{t(lang, "station")}</th><th class="num">NO₂</th><th class="num">O₃</th>'
                 f'<th class="num">PM10</th><th class="num">{"PM2.5" if lang == "en" else "PM2,5"}</th></tr></thead>'
                 f'<tbody>{"".join(rows)}</tbody></table></div>'
-                f'<p class="note">{t(lang, "air_note")} µg/m³.</p></section>')
+                f'<p class="note">{t(lang, "air_note")} µg/m³.</p>{self.stamp(lang, "air")}</section>')
 
     def transport(self, lang):
         alerts = self.get("alerts")
@@ -345,11 +377,24 @@ class Site:
             for a in alerts[:6])
         body = f'<ul class="alerts">{items}</ul>' if items else f'<p>{t(lang, "transport_none")}</p>'
         return (f'<section><h2>{self.i("train-front")}{t(lang, "transport_title")}</h2>{body}'
-                f'<p><a href="{RODALIES}">{t(lang, "transport_more")} →</a></p></section>')
+                f'{self.stamp(lang, "alerts")}<p><a href="{RODALIES}">{t(lang, "transport_more")} →</a></p></section>')
 
-    def event_item(self, lang, e):
+    def started(self, e):
+        """Acto de un solo día, de hoy, cuya hora de inicio ya ha pasado. Sin hora de fin no se sabe si sigue."""
+        begin = event_start(e)
+        return bool(begin) and e.get("end", e["start"]) == e["start"] == self.now.date().isoformat() and begin <= self.now
+
+    def event_item(self, lang, e, attrs=""):
+        """`data-start`/`data-end` permiten a now.js marcar lo que empieza y esconder lo que acaba entre dos builds."""
         d = date.fromisoformat(e["start"])
         when = i18n.fmt_date(lang, d) + (f' · {esc(e["time"])}' if e.get("time") else "")
+        begin, on = event_start(e), self.started(e)
+        attrs += f' data-end="{esc(e.get("end") or e["start"])}"'
+        if begin and e.get("end", e["start"]) == e["start"]:
+            attrs += f' data-start="{begin.isoformat(timespec="minutes")}"'
+            when += f' <span class="tier t3 on"{"" if on else " hidden"}>{t(lang, "started")}</span>'
+        if on:
+            attrs = ' class="started"' + attrs
         if e.get("end") and e["end"] != e["start"]:
             when += f' → {i18n.fmt_date(lang, date.fromisoformat(e["end"]), weekday=False)}'
         title = link(e.get("url"), esc(e["title"]))
@@ -359,7 +404,7 @@ class Site:
             title = f'{self.i("baby", t(lang, "kids"), cls="i badge")} {title}'
         meta = " · ".join(x for x in (esc(i18n.agenda_cat(lang, e.get("category", ""))), esc(e.get("place", "")),
                                        t(lang, "free") if is_free(e) else "", t(lang, "src_" + e["source"])) if x)
-        return f'<li><span class="when">{when}</span><span class="what">{title}</span><small class="muted">{meta}</small></li>'
+        return f'<li{attrs}><span class="when">{when}</span><span class="what">{title}</span><small class="muted">{meta}</small></li>'
 
     def events_split(self):
         """(próximos, en curso): los actos de varios días que ya han empezado van aparte."""
@@ -367,13 +412,18 @@ class Site:
         events = [e for e in (self.get("agenda") or {}).get("events", []) if (e.get("end") or e["start"]) >= today]
         return [e for e in events if e["start"] >= today], [e for e in events if e["start"] < today]
 
-    def agenda_preview(self, lang, n=6):
+    def upcoming(self):
+        """Próximos actos, sin los de hoy que ya han empezado."""
+        return [e for e in self.events_split()[0] if not self.started(e)]
+
+    def agenda_preview(self, lang, n=6, spare=4):
+        """Los n próximos, más unos de reserva ocultos que now.js enseña cuando empiezan los primeros."""
         ag = self.get("agenda")
         if ag is None:
             return ""
-        events = self.events_split()[0][:n]
-        body = (f'<ul class="events">{"".join(self.event_item(lang, e) for e in events)}</ul>'
-                if events else f'<p>{t(lang, "agenda_empty")}</p>')
+        events = self.upcoming()[:n + spare]
+        items = "".join(self.event_item(lang, e, " hidden" if i >= n else "") for i, e in enumerate(events))
+        body = f'<ul class="events" data-upcoming="{n}">{items}</ul>' if events else f'<p>{t(lang, "agenda_empty")}</p>'
         return (f'<section><h2>{self.i("calendar")}{t(lang, "agenda_next")}</h2>{body}'
                 f'<p><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "agenda_all")} →</a></p></section>')
 
@@ -449,7 +499,7 @@ class Site:
                     body.append(f'<details class="group">'
                                 f'<summary>{t(lang, "aids_lvl_" + lvl)} <span class="muted">({len(group)})</span></summary>'
                                 f'<ul class="events">{"".join(self.aid_item(lang, *x) for x in group)}</ul></details>')
-        body.append(f'<p class="note">{t(lang, "aids_note")}</p>')
+        body.append(f'<p class="note">{t(lang, "aids_note")}</p>{self.stamp(lang, "aids")}')
         return self.layout(lang, "aids", f'{t(lang, "aids_title")} · {self.name}', t(lang, "aids_desc"), "".join(body))
 
     def public_jobs(self):
@@ -499,7 +549,7 @@ class Site:
                             f'<ul class="events">{"".join(self.public_job_item(lang, j) for j in items)}</ul></details>')
         if not public:
             body.append(f'<p>{t(lang, "jobs_empty")}</p>')
-        body.append(f'<p class="note">{t(lang, "jobs_note")}</p>')
+        body.append(f'<p class="note">{t(lang, "jobs_note")}</p>{self.stamp(lang, "offers", "cido")}')
         return self.layout(lang, "jobs", f'{t(lang, "jobs_title")} · {self.name}', t(lang, "jobs_desc"), "".join(body))
 
     def jobs_preview(self, lang):
@@ -638,6 +688,7 @@ class Site:
         body.append(f'<aside class="tip">{self.i("bell")}<p>{t(lang, "invest_feed", url=feed)}</p></aside>')
         day = lambda iso: i18n.fmt_deadline(lang, date.fromisoformat(iso), self.now.date()) if iso else "–"  # noqa: E731
         body.append(f'<p class="note">{t(lang, "invest_note", t=day((comp or {}).get("last")), since=day((comp or {}).get("since")))}</p>')
+        body.append(self.stamp(lang, "contracts", "companies"))
         head = f'<link rel="alternate" type="application/atom+xml" title="{esc(t(lang, "invest_title"))}" href="{feed}">\n'
         return self.layout(lang, "invest", f'{t(lang, "invest_title")} · {self.name}', t(lang, "invest_desc"),
                            "".join(body), head=head)
@@ -930,12 +981,15 @@ class Site:
         permanent = ag.get("permanent", [])
         upcoming, ongoing = self.events_split()
         events = upcoming + ongoing
+        ongoing = [e for e in upcoming if self.started(e)] + ongoing  # los de hoy ya empezados, con su etiqueta
+        upcoming = [e for e in upcoming if not self.started(e)]
         body = [f'<h1>{t(lang, "agenda_title")}</h1><p class="lede">{t(lang, "agenda_desc")}</p>']
         body.append(f'<ul class="events">{"".join(self.event_item(lang, e) for e in upcoming)}</ul>'
                     if upcoming else f'<p>{t(lang, "agenda_empty")}</p>')
         if ongoing:
             body.append(f'<h2>{self.i("clock")}{t(lang, "ongoing_title")}</h2>'
                         f'<ul class="events">{"".join(self.event_item(lang, e) for e in ongoing)}</ul>')
+        body.append(self.stamp(lang, "agenda"))
         body.append(f'<aside class="tip">{self.i("calendar")}<p>{t(lang, "ics_link", url=self.absolute("/agenda.ics"))}</p></aside>'
                     f'<p class="note">{t(lang, "add_event", repo=esc(self.cfg.get("repo_url") or "https://github.com"))}</p>')
         if permanent:
@@ -978,6 +1032,7 @@ class Site:
                              f'<br>{" · ".join(x for x in extra if x)}</li>')
             body.append(f'<details class="group"><summary>{esc(i18n.category(lang, cat))} '
                         f'<span class="muted">({len(groups[cat])})</span></summary><ul class="dir">{"".join(items)}</ul></details>')
+        body.append(self.stamp(lang, "equipments", "chargers"))
         return self.layout(lang, "directory", f'{t(lang, "directory_title")} · {self.name}',
                            t(lang, "directory_desc"), "".join(body))
 
@@ -1016,7 +1071,7 @@ class Site:
         # cambia cada día, sin azar; separadas un tercio de la lista para mezclar fuentes, miradores, rutas...
         start, step = self.now.date().toordinal() % len(pool), max(1, len(pool) // 3)
         picks = list({id(p): p for p in (pool[(start + i * step) % len(pool)] for i in range(3))}.values())
-        todays = [e for e in self.events_split()[0] if e["start"] == self.now.date().isoformat()]
+        todays = [e for e in self.upcoming() if e["start"] == self.now.date().isoformat()]
         more = (f'<p><a href="{self.href(self.path(lang, "agenda"))}">{t(lang, "plan_events", n=len(todays))} →</a></p>'
                 if todays else "")
         return (f'<section><h2>{self.i("map-pin")}{t(lang, "plan_title")}</h2><p>{intro}</p>'
@@ -1084,6 +1139,13 @@ class Site:
 <meta name="description" content="{esc(t('ca', 'home_desc'))}">
 <link rel="canonical" href="{self.absolute('/')}">
 {alts}<link rel="alternate" hreflang="x-default" href="{self.absolute('/')}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{esc(self.name)} · {esc(t("ca", "home_title"))}">
+<meta property="og:description" content="{esc(t('ca', 'home_desc'))}">
+<meta property="og:url" content="{self.absolute('/')}">
+<meta property="og:site_name" content="{esc(self.name)}">
+<meta property="og:image" content="{self.absolute('/static/og.png')}">
+<meta name="twitter:card" content="summary_large_image">
 {THEME_COLOR}
 <link rel="icon" href="{self.href('/static/favicon.svg')}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{self.href('/static/apple-touch-icon.png')}">

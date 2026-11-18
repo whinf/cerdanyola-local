@@ -27,6 +27,8 @@
   .events .what { font-weight: 600; }
   .events .badge { color: var(--accent); }
   .events .when .i { color: var(--accent); }
+  .events li.started { opacity: .62; }
+  .fresh .stale { color: var(--bad-ink); }
   .alerts li { background: var(--tint-mid); border-radius: var(--r-s); padding: .6rem .85rem; }
   .alerts .line { display: inline-block; background: #e2231a; color: #fff; font-weight: 700; border-radius: 4px; padding: 0 6px; margin-inline-end: 4px; font-size: .85rem; }
   .aq.a0, .aq.a1 { background: var(--tint-good); color: var(--good-ink); }
