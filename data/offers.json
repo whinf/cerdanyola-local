@@ -313,19 +313,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327075"
   },
   {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-10-16",
-   "hours": "Jornada completa",
-   "salary": [
-    1428,
-    1429
-   ],
-   "title": "Recepcionista (ref:30341)",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202630341"
-  },
-  {
    "company": "Empresa de neteja",
    "contract": "Contracte laboral indefinit",
    "date": "2026-10-15",
@@ -1083,6 +1070,19 @@
    "title": "Enfermero/a centro de día (gent gran) - badia y terrassa",
    "town": "BADIA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328256"
+  },
+  {
+   "company": "CENTRE METAL.LÚRGIC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-19",
+   "hours": "Jornada completa",
+   "salary": [
+    2333,
+    2666
+   ],
+   "title": "Electromecànic/a 26.147",
+   "town": "BARBERÀ DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329166"
   },
   {
    "company": "CENTRE METAL.LÚRGIC",
@@ -1932,5 +1932,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-18T23:37:01+01:00"
+ "fetched": "2026-11-19T08:39:42+01:00"
 }

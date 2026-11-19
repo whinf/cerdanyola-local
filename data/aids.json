@@ -1200,25 +1200,6 @@
      "people"
     ]
    },
-   "920153": {
-    "budget": 115000000,
-    "checked": "2026-11-13",
-    "end": "2026-11-18",
-    "id": "920153",
-    "level": "ESTADO",
-    "organ": "INSTITUTO PARA LA DIVERSIFICACIÓN Y AHORRO DE LA ENERGÍA (IDAE)",
-    "purpose": "Industria y Energía",
-    "received": "2026-07-20",
-    "region": "MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA Y EL RETO DEMOGRÁFICO",
-    "start": "2026-09-15",
-    "term": "Hasta las 12:00 horas del 18 de noviembre de 2026",
-    "title": "Primera convocatoria del programa de incentivos a proyectos singulares innovadores de ahorro y eficiencia energética (innovae)",
-    "title_ca": "",
-    "who": [
-     "business",
-     "entities"
-    ]
-   },
    "920887": {
     "budget": 700000,
     "checked": "2026-11-13",
@@ -1328,24 +1309,6 @@
     "title_ca": "Subvencions de suport a projectes de reindustrialització i manteniment activitat industrial (anticipada)",
     "who": [
      "business"
-    ]
-   },
-   "929588": {
-    "budget": 6019500,
-    "checked": "2026-11-13",
-    "end": "",
-    "id": "929588",
-    "level": "AUTONOMICA",
-    "organ": "DEPARTAMENT DE TERRITORI, HABITATGE I TRANSICIÓ ECOLÒGICA",
-    "purpose": "Otras actuaciones de carácter económico",
-    "received": "2026-09-15",
-    "region": "CATALUÑA",
-    "start": "2026-09-19",
-    "term": "02 Mesos",
-    "title": "Convocatoria de subvenciones para la realización de actuaciones de mantenimiento de caminos no rodados de titularidad municipal en las comarcas de montaña y en Aran para el año 2027",
-    "title_ca": "Convocatòria de subvencions per a la realització d'actuacions de manteniment decamins no rodats de titularitat municipal a les comarques de muntanya i a Aran, per a l'any 2027",
-    "who": [
-     "entities"
     ]
    },
    "930722": {
@@ -2740,7 +2703,7 @@
    },
    "941599": {
     "budget": 400000,
-    "checked": "2026-11-12",
+    "checked": "2026-11-19",
     "end": "2026-12-17",
     "id": "941599",
     "level": "AUTONOMICA",
@@ -2758,7 +2721,7 @@
    },
    "941791": {
     "budget": 30000,
-    "checked": "2026-11-12",
+    "checked": "2026-11-19",
     "end": "",
     "id": "941791",
     "level": "ESTADO",
@@ -2776,7 +2739,7 @@
    },
    "941797": {
     "budget": 150000,
-    "checked": "2026-11-12",
+    "checked": "2026-11-19",
     "end": "2026-11-26",
     "id": "941797",
     "level": "ESTADO",
@@ -3211,12 +3174,6 @@
    }
   },
   "closed": [
-   "869261",
-   "869265",
-   "869297",
-   "869336",
-   "869407",
-   "869408",
    "869611",
    "869626",
    "869723",
@@ -4729,6 +4686,7 @@
    "919971",
    "920036",
    "920045",
+   "920153",
    "920187",
    "920195",
    "920196",
@@ -4930,6 +4888,7 @@
    "929411",
    "929418",
    "929492",
+   "929588",
    "929611",
    "929612",
    "929614",
@@ -5218,5 +5177,5 @@
    "942999"
   ]
  },
- "fetched": "2026-11-18T23:37:01+01:00"
+ "fetched": "2026-11-19T08:39:42+01:00"
 }

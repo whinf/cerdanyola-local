@@ -2,15 +2,6 @@
  "data": [
   {
    "lines": [
-    "R4"
-   ],
-   "text": {
-    "ca": "Circulació amb demores mitjanes que poden superar els 15 minuts a causa de la convocatòria de vaga d'ahir. Es manté el reforç del servei d'autobusos interurbans.",
-    "es": "Circulación con demoras medias que pueden superar los 15 minutos derivada de la convocatoria de vaga de ayer. Se mantiene el refuerzo del servicio de autobuses interurbanos."
-   }
-  },
-  {
-   "lines": [
     "R7"
    ],
    "text": {
@@ -19,5 +10,5 @@
    }
   }
  ],
- "fetched": "2026-11-18T23:37:01+01:00"
+ "fetched": "2026-11-19T08:39:42+01:00"
 }

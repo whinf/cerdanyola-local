@@ -2,6 +2,15 @@
  "data": {
   "events": [
    {
+    "activity": "La explotacion directa o mediante arrendamiento (excluyendose el arrendamiento financiero en concepto de arrendador)…",
+    "capital": 3000.0,
+    "date": "2026-11-19",
+    "id": "2026-11-19-521033-new",
+    "kind": "new",
+    "name": "FB HABITATGES S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-222-08"
+   },
+   {
     "date": "2026-11-18",
     "id": "2026-11-18-518281-closed",
     "kind": "closed",
@@ -717,13 +726,14 @@
    "B 666021": "VARGAS CONSTRUCCIONES 1084 S.L.",
    "B 666439": "SPHERIONYX S.L.",
    "B 666561": "R.A.C.G. ELEVADORES S.L.",
+   "B 666780": "FB HABITATGES S.L.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-18",
+  "last": "2026-11-19",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-18T23:37:01+01:00"
+ "fetched": "2026-11-19T08:39:42+01:00"
 }

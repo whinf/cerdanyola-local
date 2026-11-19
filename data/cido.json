@@ -1,50 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-18",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Metge especialista en Psiquiatria",
-   "url": "https://cido.diba.cat/oposicions/22370841"
-  },
-  {
-   "end": "2026-11-18",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 10.2,
-   "org": "Consorci Sanitari de Terrassa",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Cap de Servei de Cardiologia",
-   "url": "https://cido.diba.cat/oposicions/22357741"
-  },
-  {
-   "end": "2026-11-18",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Predoctoral Researcher for Sea-To-Summit project",
-   "url": "https://cido.diba.cat/oposicions/22350737"
-  },
-  {
-   "end": "2026-11-18",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Predoctoral Researcher for the eMETA-RARE project",
-   "url": "https://cido.diba.cat/oposicions/22350721"
-  },
-  {
    "end": "2026-11-19",
    "group": "Agrupacions professionals",
    "kind": "Laboral",
@@ -1343,5 +1299,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-18T23:37:01+01:00"
+ "fetched": "2026-11-19T08:39:42+01:00"
 }
