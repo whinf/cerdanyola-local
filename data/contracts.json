@@ -1,6 +1,45 @@
 {
  "data": [
   {
+   "amount": 11000.0,
+   "date": "2026-11-18",
+   "deadline": "2026-11-16T14:00",
+   "id": "5443212/IEEC/255/2026",
+   "lots": 0,
+   "organ": "Institut d'Estudis Espacials de Catalunya",
+   "phase": "Anul·lació",
+   "title": "Contracte menor de subministrament d'un adaptador de prototipat d'FPGAs per la missió Lisa de l’Agència Espacial Europea en el marc del Projecte científic “Spanish contribution to LISA: diagnostics system development and scientific exploita",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/fe50b86e-f713-4b9c-91a5-b843bbe939d8/300942142",
+   "winners": []
+  },
+  {
+   "amount": 49950920.77,
+   "date": "2026-11-18",
+   "deadline": "2026-07-24T14:00",
+   "id": "23584847/CUCDCV-2027-1",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Obres del Projecte d'Urbanització E1: Passeig dels Gorgs",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e76e93c-aec0-4465-bfcf-2000c6f9f5b6/300942438",
+   "winners": []
+  },
+  {
+   "amount": 282479.34,
+   "date": "2026-11-18",
+   "deadline": "2026-12-11T14:00",
+   "id": "16138154/153/2026/0028",
+   "lots": 2,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anunci de licitació",
+   "title": "Subministrament de materials de ferreteria, fontaneria i jardineria, en dos lots",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/9f6ca567-af69-4e37-a9b5-952e63c1e150/300942186",
+   "winners": []
+  },
+  {
    "amount": 900.0,
    "date": "2026-11-17",
    "deadline": "2026-11-06T23:59",
@@ -430,19 +469,6 @@
    "title": "Contractació de serveis de seqüenciació massiva (ngs) per al centre de recerca en agrigenòmica csic-irta-uab-ub (crag)",
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/155fc004-bc97-4a14-a001-9df6e87959de/300929534",
-   "winners": []
-  },
-  {
-   "amount": 49950920.77,
-   "date": "2026-11-05",
-   "deadline": "2026-07-24T14:00",
-   "id": "23584847/CUCDCV-2027-1",
-   "lots": 0,
-   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Obres del Projecte d'Urbanització E1: Passeig dels Gorgs",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e76e93c-aec0-4465-bfcf-2000c6f9f5b6/300930091",
    "winners": []
   },
   {
@@ -5531,5 +5557,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-19T08:39:42+01:00"
+ "fetched": "2026-11-19T23:41:05+01:00"
 }
