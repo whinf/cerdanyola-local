@@ -1237,7 +1237,7 @@ class Site:
                  f'<li><a href="{self.href(self.path(lang, "directory"))}#chargers">{t(lang, "chargers_title")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "pharmacy"))}">{t(lang, "pharmacy_home")}</a></li>'
                  f'<li><a href="{self.href(self.path(lang, "emergency"))}">{t(lang, "emergency_title")}</a></li></ul></section>')
-        body = (f'<h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
+        body = (f'<div class="banner" aria-hidden="true"></div><h1>{t(lang, "home_title")}</h1><p class="lede">{i18n.fmt_date(lang, self.now.date())} · '
                 f'{t(lang, "tagline")}</p>{self.today_strip(lang)}{self.weather(lang)}{self.install_block(lang, home=True)}'
                 f'{quick}{self.pharmacy_block(lang, n=2)}{self.light(lang)}{self.transport(lang)}{self.notices(lang)}'
                 f'{self.agenda_preview(lang)}{self.picks_preview(lang)}{self.social_preview(lang)}{self.board_preview(lang)}{self.save_preview(lang)}{self.aids_preview(lang)}{self.deadlines_block(lang)}{self.jobs_preview(lang)}{self.invest_preview(lang)}'

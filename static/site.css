@@ -108,4 +108,23 @@
   .foot .install { margin-block-end: var(--s-3); }
   .tip.install > div { flex: 1; }
   .tip.install p + p { margin-block-start: var(--s-2); }
+
+  /* Banner de la portada: imagen de fondo para que solo se descargue la que toca (día/noche, móvil/escritorio).
+     Imágenes generadas con tools/make_banner.py. */
+  .banner { aspect-ratio: 1800 / 247; margin: var(--s-2) 0 var(--s-4); border-radius: var(--r-l);
+    background: url(img/banner-day.webp) center / cover no-repeat;
+    -webkit-mask-image: linear-gradient(#000 82%, transparent); mask-image: linear-gradient(#000 82%, transparent); }
+  @media (max-width: 600px) {
+    .banner { aspect-ratio: 3 / 1; background-image: url(img/banner-day-m.webp); }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .banner { background-image: url(img/banner-night.webp); }
+  }
+  @media (prefers-color-scheme: dark) and (max-width: 600px) {
+    :root:not([data-theme="light"]) .banner { background-image: url(img/banner-night-m.webp); }
+  }
+  :root[data-theme="dark"] .banner { background-image: url(img/banner-night.webp); }
+  @media (max-width: 600px) {
+    :root[data-theme="dark"] .banner { background-image: url(img/banner-night-m.webp); }
+  }
 }
