@@ -24,6 +24,17 @@
   },
   {
    "end": "2026-11-20",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 5.1,
+   "org": "Ajuntament de Sant Cugat del Vallès - EPEL Cugat.cat",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça de Tècnic de so",
+   "url": "https://cido.diba.cat/oposicions/22523920"
+  },
+  {
+   "end": "2026-11-20",
    "group": "A1",
    "kind": "Laboral temporal",
    "km": 2.9,
@@ -618,6 +629,28 @@
   },
   {
    "end": "2026-12-02",
+   "group": "A1",
+   "kind": "Laboral",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en Medicina Interna",
+   "url": "https://cido.diba.cat/oposicions/22523775"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en Radiologia Vascular Intervencionista",
+   "url": "https://cido.diba.cat/oposicions/22523759"
+  },
+  {
+   "end": "2026-12-02",
    "group": "C2",
    "kind": "Laboral temporal",
    "km": 7.8,
@@ -626,6 +659,28 @@
    "pool": true,
    "title": "Borsa de treball de places d'Ajudant de cuina",
    "url": "https://cido.diba.cat/oposicions/22512782"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "A",
+   "kind": "Laboral",
+   "km": 5.6,
+   "org": "Fundació Institut Català de Paleontologia Miquel Crusafont (ICP Miquel Crusafont)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic Preparació - Quadriennals",
+   "url": "https://cido.diba.cat/oposicions/22522138"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A2",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Infermer especialista en Geriatria",
+   "url": "https://cido.diba.cat/oposicions/22523789"
   },
   {
    "end": "2026-12-03",
@@ -846,6 +901,28 @@
    "pool": false,
    "title": "1 plaça de Responsable de l'oficina de coordinació científica",
    "url": "https://cido.diba.cat/oposicions/22496150"
+  },
+  {
+   "end": "2026-12-09",
+   "group": "A1",
+   "kind": "Funcionari",
+   "km": 6.0,
+   "org": "Ajuntament de Santa Perpètua de Mogoda",
+   "places": 2,
+   "pool": true,
+   "title": "2 places de Tècnic superior arquitecte",
+   "url": "https://cido.diba.cat/oposicions/16607751"
+  },
+  {
+   "end": "2026-12-09",
+   "group": "A2",
+   "kind": "Interí o temporal",
+   "km": 9.8,
+   "org": "Consell Comarcal del Vallès Occidental",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places d'Educador Social de l'Àrea Bàsica de Serveis Socials (ABSS) i l'Equip d'Atenció a la Infància i l'Adolescència (EAIA)",
+   "url": "https://cido.diba.cat/oposicions/22524004"
   },
   {
    "end": "2026-12-09",
@@ -1299,5 +1376,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-19T08:39:42+01:00"
+ "fetched": "2026-11-19T15:28:22+01:00"
 }

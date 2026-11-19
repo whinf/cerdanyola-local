@@ -39,7 +39,7 @@
     "published": "2025-12-10",
     "short": false,
     "title": "Presentació Cerdanyola FC 2025/2026",
-    "views": 2213
+    "views": 2217
    },
    {
     "channel": "propera-parada",
@@ -71,7 +71,7 @@
     "published": "2026-11-07",
     "short": false,
     "title": "XVIII Cerimònia de lliurament de títols de doctor/a i de premis extraordinaris de doctorat",
-    "views": 795
+    "views": 796
    },
    {
     "channel": "alba",
@@ -103,7 +103,7 @@
     "published": "2026-03-26",
     "short": false,
     "title": "Anees Jilanis: Kebab casero, orígenes y tradición | 4x10 | Propera Parada",
-    "views": 512
+    "views": 513
    },
    {
     "channel": "propera-parada",
@@ -119,7 +119,7 @@
     "published": "2025-10-22",
     "short": false,
     "title": "ALBA II: Together, we build a bright future",
-    "views": 307
+    "views": 308
    },
    {
     "channel": "alba",
@@ -167,7 +167,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Tots els camins portaven a Roma? La xarxa que va transformar un imperi - Veus UAB",
-    "views": 149
+    "views": 151
    },
    {
     "channel": "alba",
@@ -187,6 +187,14 @@
    },
    {
     "channel": "uab",
+    "id": "JtozSGtnTlU",
+    "published": "2026-11-09",
+    "short": false,
+    "title": "Igualtat de gènere en els usos del temps: canvis, resistències i continuïtats - Veus UAB",
+    "views": 125
+   },
+   {
+    "channel": "uab",
     "id": "jJVTQHpQGis",
     "published": "2026-11-09",
     "short": false,
@@ -195,11 +203,11 @@
    },
    {
     "channel": "uab",
-    "id": "JtozSGtnTlU",
+    "id": "speX2MSE-04",
     "published": "2026-11-09",
     "short": false,
-    "title": "Igualtat de gènere en els usos del temps: canvis, resistències i continuïtats - Veus UAB",
-    "views": 121
+    "title": "Més enllà del primer esbós. Art, economia i el viatge d’una recerca - Veus UAB",
+    "views": 120
    },
    {
     "channel": "uab",
@@ -207,14 +215,6 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Treballar amb les màquines: té alguna conseqüència l’ús de la IA en el nostre cervell? - Veus UAB",
-    "views": 118
-   },
-   {
-    "channel": "uab",
-    "id": "speX2MSE-04",
-    "published": "2026-11-09",
-    "short": false,
-    "title": "Més enllà del primer esbós. Art, economia i el viatge d’una recerca - Veus UAB",
     "views": 118
    },
    {
@@ -231,7 +231,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "De l’euro al joule. Alfabetització energètica - Veus UAB",
-    "views": 89
+    "views": 90
    },
    {
     "channel": "propera-parada",
@@ -279,7 +279,7 @@
     "published": "2026-11-04",
     "short": true,
     "title": "Mercat de pagès de la UAB!🧑‍🌾",
-    "views": 54
+    "views": 55
    },
    {
     "channel": "propera-parada",
@@ -427,5 +427,5 @@
    }
   ]
  },
- "fetched": "2026-11-19T08:39:42+01:00"
+ "fetched": "2026-11-19T15:28:22+01:00"
 }

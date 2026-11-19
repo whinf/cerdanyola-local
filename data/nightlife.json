@@ -37,24 +37,6 @@
    "web": ""
   },
   {
-   "address": "Carrer d'Altimira, 42, Loc 1",
-   "cuisine": "",
-   "group": "night",
-   "hours": "",
-   "km": "",
-   "lat": 41.490353,
-   "lon": 2.140896,
-   "name": "Bar La Candelaria",
-   "osm": "",
-   "phone": "+34 643 998 522",
-   "ref": "",
-   "src": [
-    "meta"
-   ],
-   "type": "cocktail_bar",
-   "web": "https://www.facebook.com/674102892460906"
-  },
-  {
    "address": "Carretera de Barcelona, 158",
    "cuisine": "",
    "group": "night",
@@ -109,25 +91,6 @@
    "web": ""
   },
   {
-   "address": "Carrer de Torras i Bages, 1",
-   "cuisine": "",
-   "group": "night",
-   "hours": "",
-   "km": "",
-   "lat": 41.490863,
-   "lon": 2.139764,
-   "name": "Cervecería The Coven",
-   "osm": "",
-   "phone": "+34 670 038 726",
-   "ref": "",
-   "src": [
-    "BrightQuery",
-    "meta"
-   ],
-   "type": "cocktail_bar",
-   "web": "https://www.facebook.com/1737736359676427"
-  },
-  {
    "address": "Carrer de Torras i Bages 3",
    "cuisine": "",
    "group": "night",
@@ -169,8 +132,8 @@
    "group": "night",
    "hours": "",
    "km": "",
-   "lat": 41.502045,
-   "lon": 2.135945,
+   "lat": 41.502077,
+   "lon": 2.135966,
    "name": "Gabana Disco Show",
    "osm": "",
    "phone": "+34 647 723 775",
@@ -307,7 +270,25 @@
     "meta"
    ],
    "type": "music_venue",
-   "web": "http://WWW.AFUEGOFM.COM/"
+   "web": "https://www.facebook.com/661477997379059"
+  },
+  {
+   "address": "Carrer del Bosc Tancat, 2",
+   "cuisine": "",
+   "group": "night",
+   "hours": "",
+   "km": "",
+   "lat": 41.50055,
+   "lon": 2.135612,
+   "name": "Mesié",
+   "osm": "",
+   "phone": "",
+   "ref": "",
+   "src": [
+    "meta"
+   ],
+   "type": "nightclub",
+   "web": "https://www.facebook.com/312435572710456"
   },
   {
    "address": "Carrer de Portugal 33",
@@ -456,5 +437,5 @@
    "web": ""
   }
  ],
- "fetched": "2026-11-18T15:04:42+01:00"
+ "fetched": "2026-11-19T15:28:22+01:00"
 }
