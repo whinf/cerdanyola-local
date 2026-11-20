@@ -1,28 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-19",
-   "group": "Agrupacions professionals",
-   "kind": "Laboral",
-   "km": 13.3,
-   "org": "Ajuntament de Castellbisbal",
-   "places": 2,
-   "pool": true,
-   "title": "2 places de Peó d'obres",
-   "url": "https://cido.diba.cat/oposicions/16596329"
-  },
-  {
-   "end": "2026-11-19",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Secretari tècnic",
-   "url": "https://cido.diba.cat/oposicions/22442646"
-  },
-  {
    "end": "2026-11-20",
    "group": "C1",
    "kind": "Laboral temporal",
@@ -663,7 +641,7 @@
   {
    "end": "2026-12-02",
    "group": "A",
-   "kind": "Laboral",
+   "kind": "Laboral temporal",
    "km": 5.6,
    "org": "Fundació Institut Català de Paleontologia Miquel Crusafont (ICP Miquel Crusafont)",
    "places": 1,
@@ -958,6 +936,28 @@
    "url": "https://cido.diba.cat/oposicions/22452786"
   },
   {
+   "end": "2026-12-19",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Postdoctoral researcher (MAIAMI) - Machine-guided Discovery of High Entropy Allows for Electrocatalysis: From first-principles simulations to feature extraction",
+   "url": "https://cido.diba.cat/oposicions/22529140"
+  },
+  {
+   "end": "2026-12-21",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Psicòleg Clínic (Salut mental Infanto-Juvenil)",
+   "url": "https://cido.diba.cat/oposicions/22526859"
+  },
+  {
    "end": "2026-12-26",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -1000,17 +1000,6 @@
    "pool": false,
    "title": "1 plaça de Predoctoral researcher interested in applying for a FPU or FI fellowship's for the Dryland Project",
    "url": "https://cido.diba.cat/oposicions/22282539"
-  },
-  {
-   "end": "2030-12-31",
-   "group": "",
-   "kind": "Interí o temporal",
-   "km": 13.5,
-   "org": "Ajuntament de Terrassa",
-   "places": 0,
-   "pool": true,
-   "title": "Borsa de treball de places de Mestre i Educador per a les escoles d'educació especial",
-   "url": "https://cido.diba.cat/oposicions/9911696"
   },
   {
    "end": "",
@@ -1376,5 +1365,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-19T23:41:05+01:00"
+ "fetched": "2026-11-20T15:04:05+01:00"
 }

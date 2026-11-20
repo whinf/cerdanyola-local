@@ -1,6 +1,71 @@
 {
  "data": [
   {
+   "amount": 470000.0,
+   "date": "2026-11-19",
+   "deadline": "2026-12-22T14:00",
+   "id": "208087/2026-24 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Suministro, instalación y puesta en marcha de un sistema de deposición térmica en alto/ultraalto vacío de materiales orgánicos y metales, con load-lock en caja de guantes",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3258b0a6-ae2c-4233-9a2a-c293d99304fd/300942633",
+   "winners": []
+  },
+  {
+   "amount": 313710.0,
+   "date": "2026-11-19",
+   "deadline": "2026-12-21T14:00",
+   "id": "208087/2026-20 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Suministro instalación y puesta en marcha de sistema de nanolitografía térmica sonda de barrido adaptado para integración en caja de guantes",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/469fd771-e2a2-4f5d-85fe-22d0717ee464/300942816",
+   "winners": []
+  },
+  {
+   "amount": 795000.0,
+   "date": "2026-11-19",
+   "deadline": "2026-12-18T14:00",
+   "id": "208087/2026-17 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Suministro, instalación y puesta en marcha de un difractómetro de rayos X de ultra-alto brillo y gran sensibilidad.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e1d560c-2384-42b2-a448-214b50dae4b9/300942762",
+   "winners": []
+  },
+  {
+   "amount": 209500.0,
+   "date": "2026-11-19",
+   "deadline": "2026-12-04T14:00",
+   "id": "16138154/153/2026/0031",
+   "lots": 2,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anunci de licitació",
+   "title": "Subministrament de dos vehicles destinats a la Brigada Municipal",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/faa5133d-1b14-4a53-a035-8865971aa617/300943226",
+   "winners": []
+  },
+  {
+   "amount": 30316.23,
+   "date": "2026-11-19",
+   "deadline": "2026-11-04T14:00",
+   "id": "100000101/08037292/2027/01",
+   "lots": 0,
+   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
+   "phase": "Expedient en avaluació",
+   "title": "Servei de neteja de CEEPSIR CFT Flor de Maig",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e6e8bd60-ea9b-4953-8e92-5813c5492214/300944374",
+   "winners": []
+  },
+  {
    "amount": 11000.0,
    "date": "2026-11-18",
    "deadline": "2026-11-16T14:00",
@@ -63,19 +128,6 @@
    "title": "Suministro, instalación y puesta en marcha de un sistema de microscopía de fuerza atómica con carga automatizada, integrado en una caja de guantes y apto para la medida del potencial de superficie, destinado al institut català de nanociènci",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b4055ef-d636-4cdb-8bd8-e6c04a54418d/300939484",
-   "winners": []
-  },
-  {
-   "amount": 795000.0,
-   "date": "2026-11-17",
-   "deadline": "2026-12-18T14:00",
-   "id": "208087/2026-17 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Anunci de licitació",
-   "title": "Suministro, instalación y puesta en marcha de un difractómetro de rayos X de ultra-alto brillo y gran sensibilidad.",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/2e1d560c-2384-42b2-a448-214b50dae4b9/300938850",
    "winners": []
   },
   {
@@ -994,19 +1046,6 @@
    "winners": [
     "Illumina Productos de España, S.L.U."
    ]
-  },
-  {
-   "amount": 30316.23,
-   "date": "2026-10-22",
-   "deadline": "2026-11-04T14:00",
-   "id": "100000101/08037292/2027/01",
-   "lots": 0,
-   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
-   "phase": "Anunci de licitació",
-   "title": "Servei de neteja de CEEPSIR CFT Flor de Maig",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e6e8bd60-ea9b-4953-8e92-5813c5492214/300916030",
-   "winners": []
   },
   {
    "amount": 283415.23,
@@ -5488,49 +5527,6 @@
    ]
   },
   {
-   "amount": 24819.72,
-   "date": "2025-10-15",
-   "deadline": "2025-08-01T13:00",
-   "id": "11061850/CONTR-82/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Execució",
-   "title": "Servei d’assegurances de la flota de vehicles de la Universitat Autònoma de Barcelona",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/7e58d298-f552-46b6-b3e0-ead9b77be000/300671977",
-   "winners": [
-    "AXA Seguros Generales, S.A. de Seguros y Reaseguros"
-   ]
-  },
-  {
-   "amount": 1497988.0,
-   "date": "2025-10-15",
-   "deadline": "2025-07-15T10:06",
-   "id": "11061850/CONTR-77/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Formalització",
-   "title": "Subministrament d’accessoris moderns per a l’actualització d’un escàner de ressonància magnètica d’imatges de 7 Tesles-FEDER",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/cbab1dac-3415-4f6b-b00a-cb3dc66ba495/300588846",
-   "winners": [
-    "BRUKER ESPAÑOLA S.A"
-   ]
-  },
-  {
-   "amount": 170000.0,
-   "date": "2025-10-15",
-   "deadline": "2025-11-17T13:00",
-   "id": "11061850/CONTR-75/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Anunci de licitació",
-   "title": "Acord Marc per a la contractació de serveis de transport col·lectiu en autocar per a viatges i sortides de la UAB",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f11103c9-d786-4d0e-8232-0fa897bd3191/300587660",
-   "winners": []
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5557,5 +5553,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-19T23:41:05+01:00"
+ "fetched": "2026-11-20T15:04:05+01:00"
 }

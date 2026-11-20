@@ -53,36 +53,6 @@
    },
    {
     "category": "",
-    "end": "2026-11-19",
-    "place": "Facultat CC. de la Comunicació- Plató 2",
-    "source": "uab",
-    "start": "2026-11-19",
-    "time": "12:00",
-    "title": "Projecció del documental 'Espai Minvant' i cinefòrum",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-documental-espai-minvant-i-cineforum-1345828727816.html?detid=1346005236178"
-   },
-   {
-    "category": "Actes literaris",
-    "end": "2026-11-19",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-19",
-    "time": "19:00",
-    "title": "Cafè amb lletres amb Núria Perpinyà",
-    "url": "https://www.cerdanyola.cat/agenda/cafe-amb-lletres-amb-nuria-perpinya"
-   },
-   {
-    "category": "Cinema",
-    "end": "2026-11-19",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-19",
-    "time": "20:30",
-    "title": "Cinema: Omaha",
-    "url": "https://www.cerdanyola.cat/agenda/cinema-omaha"
-   },
-   {
-    "category": "",
     "end": "2026-11-21",
     "place": "Sala d'actes de la Facultat d'Economia i Empresa",
     "source": "uab",
@@ -771,5 +741,5 @@
    }
   ]
  },
- "fetched": "2026-11-19T23:41:05+01:00"
+ "fetched": "2026-11-20T15:04:05+01:00"
 }

@@ -2,6 +2,22 @@
  "data": {
   "events": [
    {
+    "activity": "La provision de comidas preparadas para eventos, asi como las actividades de catering por contrato y otros servicios…",
+    "capital": 3580.0,
+    "date": "2026-11-20",
+    "id": "2026-11-20-523843-new",
+    "kind": "new",
+    "name": "COR CREATIVE FOOD S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-223-08"
+   },
+   {
+    "date": "2026-11-20",
+    "id": "2026-11-20-523827-moved_in",
+    "kind": "moved_in",
+    "name": "INMOTEC 09 ASESORES INMOBILIARIOS SL",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-223-08"
+   },
+   {
     "activity": "La explotacion directa o mediante arrendamiento (excluyendose el arrendamiento financiero en concepto de arrendador)…",
     "capital": 3000.0,
     "date": "2026-11-19",
@@ -539,13 +555,6 @@
     "kind": "closed",
     "name": "MH GESTION CORPORATIVA S.L.",
     "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-141-08"
-   },
-   {
-    "date": "2026-07-22",
-    "id": "2026-07-22-343076-moved_in",
-    "kind": "moved_in",
-    "name": "AS THINKCARE S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-139-08"
    }
   ],
   "known": {
@@ -556,6 +565,7 @@
    "B 294545": "MEDINVEST BARCLIF SL",
    "B 316961": "NEURAL LABS SL",
    "B 356135": "PMP IMPACTO INGENIERIA SL",
+   "B 378767": "INMOTEC 09 ASESORES INMOBILIARIOS SL",
    "B 421659": "ASCIL PROYECTOS SL",
    "B 430667": "LA TASCA DE CA L'ENRIC SL",
    "B 449167": "DESIGN GLASSCUBE SL",
@@ -727,13 +737,14 @@
    "B 666439": "SPHERIONYX S.L.",
    "B 666561": "R.A.C.G. ELEVADORES S.L.",
    "B 666780": "FB HABITATGES S.L.",
+   "B 666895": "COR CREATIVE FOOD S.L.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-19",
+  "last": "2026-11-20",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-19T23:41:05+01:00"
+ "fetched": "2026-11-20T15:04:05+01:00"
 }
