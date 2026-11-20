@@ -3151,6 +3151,97 @@
      "business",
      "people"
     ]
+   },
+   "943529": {
+    "budget": 4000000,
+    "checked": "2026-11-20",
+    "end": "",
+    "id": "943529",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT DE SALUT",
+    "purpose": "Sanidad",
+    "received": "2026-11-20",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "15 Dies Hàbils",
+    "title": "Convocatoria para el año 2027 para la concesión de subvenciones para la financiación a entidades privadas sin afán de lucro que realicen actuaciones en el ámbito de la salud para el fomento de la salud y el apoyo a los pacientes y a las familias",
+    "title_ca": "Convocatòria per a l'any 2027 per a la concessió de subvencions per al finanament a entitats privades sense afany de lucre que realitzin actuacions en l'àmbit de la salut per al foment de la salut i el suport als pacients i a les famílies.",
+    "who": [
+     "entities"
+    ]
+   },
+   "943723": {
+    "budget": 23127236.93,
+    "checked": "2026-11-20",
+    "end": "2026-12-18",
+    "id": "943723",
+    "level": "AUTONOMICA",
+    "organ": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
+    "purpose": "Investigación, desarrollo e innovación",
+    "received": "2026-11-20",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "",
+    "title": "Ayudas Joan Oró para la contratación de personal investigador predoctoral en formación (FI) para el año 2027",
+    "title_ca": "Ajuts Joan Oró per a la contractació de personal investigador predoctoral en formació (FI) per a l’any 2027",
+    "who": [
+     "business",
+     "entities"
+    ]
+   },
+   "943739": {
+    "budget": 57500,
+    "checked": "2026-11-20",
+    "end": "",
+    "id": "943739",
+    "level": "LOCAL",
+    "organ": "ÀREA METROPOLITANA DE BARCELONA",
+    "purpose": "Investigación, desarrollo e innovación",
+    "received": "2026-11-20",
+    "region": "AREA METROPOLITANA DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvención a favor del CREAF para el fomento de la gestión de los sistemas agroforestales y fluviales metropolitanos y de acciones de mitigación y adaptación al cambio climático (exp. 2026/903946)",
+    "title_ca": "Subvenció a favor del CREAF per al foment de la gestió dels sistemes agroforestals i fluvials metropolitans i d’accions de mitigació i adaptació al canvi climàtic (exp. 2026/903946)",
+    "who": [
+     "entities"
+    ]
+   },
+   "943812": {
+    "budget": 60000,
+    "checked": "2026-11-20",
+    "end": "2026-11-27",
+    "id": "943812",
+    "level": "ESTADO",
+    "organ": "SECRETARÍA DE ESTADO DE TURISMO",
+    "purpose": "Comercio, Turismo y Pymes",
+    "received": "2026-11-20",
+    "region": "MINISTERIO DE INDUSTRIA Y TURISMO",
+    "start": "2026-11-21",
+    "term": "",
+    "title": "Subvención a FEMP, prevista en el RD 1016/2026, de 18 de noviembre, de concesión directa de subv en materia de turismo por el MINTUR, ejercicio 2026",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
+   },
+   "943813": {
+    "budget": 80000,
+    "checked": "2026-11-20",
+    "end": "2026-11-27",
+    "id": "943813",
+    "level": "ESTADO",
+    "organ": "SECRETARÍA DE ESTADO DE TURISMO",
+    "purpose": "Comercio, Turismo y Pymes",
+    "received": "2026-11-20",
+    "region": "MINISTERIO DE INDUSTRIA Y TURISMO",
+    "start": "2026-11-21",
+    "term": "",
+    "title": "Subvención a la Confederación Empresarial de Hostelería de España CEHE , prevista en el RD 1016/2026, de 18 de noviembre, de concesión directa de subv en materia de turismo por el MINTUR, ejercicio 2026",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
    }
   },
   "closed": [
@@ -5160,8 +5251,13 @@
    "943278",
    "943282",
    "943288",
-   "943361"
+   "943361",
+   "943541",
+   "943545",
+   "943546",
+   "943547",
+   "943548"
   ]
  },
- "fetched": "2026-11-20T15:04:05+01:00"
+ "fetched": "2026-11-20T23:14:59+01:00"
 }

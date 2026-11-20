@@ -302,6 +302,16 @@
     "url": "https://www.cerdanyola.cat/agenda/hora-del-conte-menuts-44"
    },
    {
+    "category": "Exposicions",
+    "end": "2027-01-29",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-11-28",
+    "time": "",
+    "title": "Exposició Retrats: vides en trànsit i records d’un pati de Sevilla de Vicenç Semper al local social",
+    "url": "https://afocer.cat/event/exposicio-retrats-vides-en-transit-i-records-dun-pati-de-sevilla-de-vicenc-semper-al-local-social/"
+   },
+   {
     "category": "",
     "end": "2026-11-28",
     "place": "Ateneu de Cerdanyola",
@@ -310,6 +320,16 @@
     "time": "17:30",
     "title": "Veredicte concurs social color i monocrom de novembre",
     "url": "https://afocer.cat/event/veredicte-concurs-social-color-i-monocrom-de-novembre-4/"
+   },
+   {
+    "category": "Exposicions",
+    "end": "2026-11-28",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-11-28",
+    "time": "19:00",
+    "title": "Inauguració exposició Retrats: vides en trànsit i records d’un pati de Sevilla de Vicenç Semper al local social",
+    "url": "https://afocer.cat/event/inauguracio-exposicio-retrats-vides-en-transit-i-records-dun-pati-de-sevilla-de-vicenc-semper-al-local-social/"
    },
    {
     "category": "Teatre i dansa",
@@ -718,10 +738,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    },
    {
     "category": "Exposicions",
@@ -734,12 +754,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-20T15:04:05+01:00"
+ "fetched": "2026-11-20T23:14:59+01:00"
 }
