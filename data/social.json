@@ -15,7 +15,7 @@
     "published": "2026-04-05",
     "short": true,
     "title": "¿Es verdad que el padre de Omar Montes introdujo el kebab en España? 🤔",
-    "views": 22585
+    "views": 22586
    },
    {
     "channel": "propera-parada",
@@ -23,7 +23,7 @@
     "published": "2026-03-21",
     "short": true,
     "title": "Torrente en Cataluña 🔥 #humor",
-    "views": 5458
+    "views": 5459
    },
    {
     "channel": "propera-parada",
@@ -39,7 +39,7 @@
     "published": "2025-12-10",
     "short": false,
     "title": "Presentació Cerdanyola FC 2025/2026",
-    "views": 2222
+    "views": 2224
    },
    {
     "channel": "propera-parada",
@@ -71,7 +71,7 @@
     "published": "2026-11-07",
     "short": false,
     "title": "XVIII Cerimònia de lliurament de títols de doctor/a i de premis extraordinaris de doctorat",
-    "views": 804
+    "views": 807
    },
    {
     "channel": "alba",
@@ -79,7 +79,7 @@
     "published": "2026-06-25",
     "short": true,
     "title": "Installation of the Insertion Device for the new ALBA beamline: 3Sbar",
-    "views": 785
+    "views": 788
    },
    {
     "channel": "alba",
@@ -95,7 +95,7 @@
     "published": "2026-10-30",
     "short": false,
     "title": "Ple en directe Aj. Cerdanyola del Vallès 29 d'Octubre del 2026",
-    "views": 572
+    "views": 573
    },
    {
     "channel": "propera-parada",
@@ -143,7 +143,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Entendre l’univers mitjançant els neutrins - Veus UAB",
-    "views": 197
+    "views": 199
    },
    {
     "channel": "uab",
@@ -151,7 +151,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "La vida secreta d’una bossa de sang - Veus UAB",
-    "views": 163
+    "views": 164
    },
    {
     "channel": "uab",
@@ -159,7 +159,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Tots els camins portaven a Roma? La xarxa que va transformar un imperi - Veus UAB",
-    "views": 161
+    "views": 163
    },
    {
     "channel": "uab",
@@ -207,7 +207,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Més enllà del primer esbós. Art, economia i el viatge d’una recerca - Veus UAB",
-    "views": 123
+    "views": 125
    },
    {
     "channel": "uab",
@@ -215,7 +215,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Treballar amb les màquines: té alguna conseqüència l’ús de la IA en el nostre cervell? - Veus UAB",
-    "views": 122
+    "views": 121
    },
    {
     "channel": "uab",
@@ -255,7 +255,7 @@
     "published": "2026-10-28",
     "short": true,
     "title": "Inauguració del curs acadèmic 2026-2027 a la UAB!📚",
-    "views": 64
+    "views": 65
    },
    {
     "channel": "propera-parada",
@@ -290,6 +290,14 @@
     "views": 53
    },
    {
+    "channel": "uab",
+    "id": "5GWHT7uI0dY",
+    "published": "2026-11-19",
+    "short": false,
+    "title": "La videomemoria de la UAB 2025/2026",
+    "views": 49
+   },
+   {
     "channel": "alba",
     "id": "I2N3SZe6om0",
     "published": "2026-07-22",
@@ -306,14 +314,6 @@
     "views": 49
    },
    {
-    "channel": "uab",
-    "id": "5GWHT7uI0dY",
-    "published": "2026-11-19",
-    "short": false,
-    "title": "La videomemoria de la UAB 2025/2026",
-    "views": 46
-   },
-   {
     "channel": "ajuntament",
     "id": "ozZheipnz3k",
     "published": "2026-11-04",
@@ -323,19 +323,19 @@
    },
    {
     "channel": "ajuntament",
+    "id": "5zbmAusWJvw",
+    "published": "2026-11-04",
+    "short": false,
+    "title": "TVC21 - 2 programas PLENO MUNICIPAL MUY BUENO, MONTFLORIT...",
+    "views": 24
+   },
+   {
+    "channel": "ajuntament",
     "id": "UwReCRiczZY",
     "published": "2026-11-04",
     "short": false,
     "title": "TVC11 . MUNICIPALS - PREVI A LES VOTACIONS",
     "views": 24
-   },
-   {
-    "channel": "ajuntament",
-    "id": "5zbmAusWJvw",
-    "published": "2026-11-04",
-    "short": false,
-    "title": "TVC21 - 2 programas PLENO MUNICIPAL MUY BUENO, MONTFLORIT...",
-    "views": 23
    },
    {
     "channel": "ajuntament",
@@ -427,5 +427,5 @@
    }
   ]
  },
- "fetched": "2026-11-20T23:14:59+01:00"
+ "fetched": "2026-11-21T14:30:03+01:00"
 }

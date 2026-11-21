@@ -1,6 +1,101 @@
 {
  "data": [
   {
+   "amount": 105751.72,
+   "date": "2026-11-20",
+   "deadline": "2026-11-17T23:57",
+   "id": "29827823/240/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Adjudicació",
+   "title": "Subministrament, instal·lació i configuració d'una solució d’emmagatzematge huawei oceanstore o equivalent i còpia de seguretat (backup) mitjançant cabina nas qnap o equivalent pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c8d82ea5-601d-4386-810a-a4f3d7a0b1a3/300945052",
+   "winners": [
+    "MAIN MEMORY, S.A"
+   ]
+  },
+  {
+   "amount": 828219.25,
+   "date": "2026-11-20",
+   "deadline": "2026-09-28T12:00",
+   "id": "23584847/CUCDCV-2027-2",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Redacció del Projecte i DO, CSS i DA Projecte Urb. E2",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/7a04d701-5123-4d42-88c4-0156146fe879/300945059",
+   "winners": []
+  },
+  {
+   "amount": 344284.32,
+   "date": "2026-11-20",
+   "deadline": "2026-12-18T14:00",
+   "id": "16138154/153/2026/0023",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anunci de licitació",
+   "title": "Subministrament rènting màquines fitness",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f26bc53d-22b7-4145-b37f-936749c4c16b/300945069",
+   "winners": []
+  },
+  {
+   "amount": 49990.0,
+   "date": "2026-11-20",
+   "deadline": "2026-12-04T14:00",
+   "id": "11712677/3/2026",
+   "lots": 0,
+   "organ": "Fundació Hospital Clínic Veterinari MP",
+   "phase": "Anunci de licitació",
+   "title": "Contracte de subministrament d'un equip d'esterilització a vapor",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d45e6bd8-9c88-4ae3-8f38-bf23745172f3/300941943",
+   "winners": []
+  },
+  {
+   "amount": 92001.68,
+   "date": "2026-11-20",
+   "deadline": "2026-07-20T13:00",
+   "id": "11061850/CONTR-26/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Adjudicació",
+   "title": "Obres de substitució de la coberta de fibrociment per xapa aïllada a la granja nº3 del Servei de Granges al campus de Bellaterra de la Universitat Autònoma de Barcelona",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ffb0fa64-506c-4ee1-910d-187cdef7c432/300945083",
+   "winners": [
+    "DESACOMPLET, S.L."
+   ]
+  },
+  {
+   "amount": 12000.0,
+   "date": "2026-11-20",
+   "deadline": "2026-12-04T23:59",
+   "id": "10423023/2026-CREAF-OSA-014-90022",
+   "lots": 0,
+   "organ": "Consorci Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
+   "phase": "Anunci de licitació",
+   "title": "Servei d' anàlisis de laboratori per al projecte restarc",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3ea6736f-0279-4181-82c8-e4858838ea66/300946139",
+   "winners": []
+  },
+  {
+   "amount": 30316.23,
+   "date": "2026-11-20",
+   "deadline": "2026-11-04T14:00",
+   "id": "100000101/08037292/2027/01",
+   "lots": 0,
+   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
+   "phase": "Expedient en avaluació",
+   "title": "Servei de neteja de CEEPSIR CFT Flor de Maig",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e6e8bd60-ea9b-4953-8e92-5813c5492214/300945034",
+   "winners": []
+  },
+  {
    "amount": 470000.0,
    "date": "2026-11-19",
    "deadline": "2026-12-22T14:00",
@@ -50,19 +145,6 @@
    "title": "Subministrament de dos vehicles destinats a la Brigada Municipal",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/faa5133d-1b14-4a53-a035-8865971aa617/300943226",
-   "winners": []
-  },
-  {
-   "amount": 30316.23,
-   "date": "2026-11-19",
-   "deadline": "2026-11-04T14:00",
-   "id": "100000101/08037292/2027/01",
-   "lots": 0,
-   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de neteja de CEEPSIR CFT Flor de Maig",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e6e8bd60-ea9b-4953-8e92-5813c5492214/300944374",
    "winners": []
   },
   {
@@ -764,19 +846,6 @@
    "winners": []
   },
   {
-   "amount": 103769.1,
-   "date": "2026-10-30",
-   "deadline": "2026-07-20T13:00",
-   "id": "11061850/CONTR-26/2026",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Expedient en avaluació",
-   "title": "Obres de substitució de la coberta de fibrociment per xapa aïllada a la granja nº3 del Servei de Granges al campus de Bellaterra de la Universitat Autònoma de Barcelona",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ffb0fa64-506c-4ee1-910d-187cdef7c432/300924671",
-   "winners": []
-  },
-  {
    "amount": 884192.4,
    "date": "2026-10-29",
    "deadline": "2026-06-15T20:00",
@@ -1376,19 +1445,6 @@
    "winners": [
     "MSS SEIDOR SL"
    ]
-  },
-  {
-   "amount": 828219.25,
-   "date": "2026-10-09",
-   "deadline": "2026-09-28T12:00",
-   "id": "23584847/CUCDCV-2027-2",
-   "lots": 0,
-   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Redacció del Projecte i DO, CSS i DA Projecte Urb. E2",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/7a04d701-5123-4d42-88c4-0156146fe879/300904877",
-   "winners": []
   },
   {
    "amount": 214049.59,
@@ -5512,21 +5568,6 @@
    ]
   },
   {
-   "amount": 75075.1,
-   "date": "2025-10-16",
-   "deadline": "2023-03-09T10:00",
-   "id": "23584847/CUCDCV-2023-00004",
-   "lots": 0,
-   "organ": "Consorci Urbanístic del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Formalització",
-   "title": "Contracte de serveis de seguiment i control dels trebals de jardineria a l'àmbit del parc de l'alba",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/9648c53a-5394-7b47-215e-b6d4ecbafd05/200097754",
-   "winners": [
-    "JC & AL PROJECT MANAGEMENT &ENGINEERING SL"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5553,5 +5594,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-20T23:14:59+01:00"
+ "fetched": "2026-11-21T14:30:03+01:00"
 }

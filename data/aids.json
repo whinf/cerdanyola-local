@@ -1383,24 +1383,6 @@
      "business"
     ]
    },
-   "931709": {
-    "budget": 81000,
-    "checked": "2026-11-20",
-    "end": "2026-11-20",
-    "id": "931709",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-09-25",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-19",
-    "term": "",
-    "title": "Resolución de 24 de septiembre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la participación en Feria Asociación HEIMTEXTIL, Frankfurt, del 12 de enero de 2027 al 15 de enero de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
    "931749": {
     "budget": 100000,
     "checked": "2026-11-20",
@@ -1852,24 +1834,6 @@
      "business"
     ]
    },
-   "938468": {
-    "budget": 16500,
-    "checked": "2026-11-20",
-    "end": "2026-11-20",
-    "id": "938468",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-28",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-28",
-    "term": "",
-    "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación BIJORHCA I París del 16 de enero de 2027 al 18 de enero de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
    "938474": {
     "budget": 16500,
     "checked": "2026-11-20",
@@ -1919,42 +1883,6 @@
     "start": "2026-10-28",
     "term": "",
     "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación SEMANA DE LA MODA I 2027 Paris, 1 de marzo de 2027 al 9 de marzo de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
-   "938488": {
-    "budget": 25000,
-    "checked": "2026-11-20",
-    "end": "2026-11-20",
-    "id": "938488",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-28",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-28",
-    "term": "",
-    "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación LINEAPELLE LONDON ENERO 2027 Londres 19 de enero de 2027.",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
-   "938491": {
-    "budget": 30000,
-    "checked": "2026-11-20",
-    "end": "2026-11-20",
-    "id": "938491",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-28",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-29",
-    "term": "",
-    "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación LINEAPELLE NEW YORK ENERO 2027 Nueva York, 27 al 28 enero 2027",
     "title_ca": "",
     "who": [
      "business"
@@ -2099,24 +2027,6 @@
     "start": "2026-10-28",
     "term": "",
     "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación FA BAU 2027 Múnich del 11 de enero de 2027 al 15 de enero de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
-   "938582": {
-    "budget": 32000,
-    "checked": "2026-11-20",
-    "end": "2026-11-20",
-    "id": "938582",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-28",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-28",
-    "term": "",
-    "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria Asociación FA MAISON&OBJET I 2027 Paris del 14 de enero de 2027 al 18 de enero de 202",
     "title_ca": "",
     "who": [
      "business"
@@ -3245,9 +3155,6 @@
    }
   },
   "closed": [
-   "869997",
-   "870000",
-   "870150",
    "870220",
    "870254",
    "870256",
@@ -4999,6 +4906,7 @@
    "931701",
    "931703",
    "931705",
+   "931709",
    "931754",
    "931761",
    "931763",
@@ -5142,6 +5050,10 @@
    "938365",
    "938437",
    "938461",
+   "938468",
+   "938488",
+   "938491",
+   "938582",
    "938643",
    "938649",
    "938650",
@@ -5259,5 +5171,5 @@
    "943548"
   ]
  },
- "fetched": "2026-11-20T23:14:59+01:00"
+ "fetched": "2026-11-21T14:30:03+01:00"
 }

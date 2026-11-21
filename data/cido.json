@@ -1,83 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-20",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 5.1,
-   "org": "Ajuntament de Sant Cugat del Vallès - EPEL Cugat.cat",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça de Tècnic de so",
-   "url": "https://cido.diba.cat/oposicions/22523920"
-  },
-  {
-   "end": "2026-11-20",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.9,
-   "org": "Consorci Centre de Recerca Matemàtica (CRM)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de FPI PhD Student",
-   "url": "https://cido.diba.cat/oposicions/22327169"
-  },
-  {
-   "end": "2026-11-20",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Cap de Projecte del COICC (Project Manager)",
-   "url": "https://cido.diba.cat/oposicions/22350797"
-  },
-  {
-   "end": "2026-11-20",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Metge especialista en Aparell Digestiu",
-   "url": "https://cido.diba.cat/oposicions/22461884"
-  },
-  {
-   "end": "2026-11-20",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Predoctoral researcher for Severo Ochoa Project Effects of climate change and other stressors on solitary bee populations",
-   "url": "https://cido.diba.cat/oposicions/22489697"
-  },
-  {
-   "end": "2026-11-20",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic especialista de suport a la recerca amb destinació al Departament de Bioquímica i Biologia Molecular",
-   "url": "https://cido.diba.cat/oposicions/22497397"
-  },
-  {
-   "end": "2026-11-20",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic superior de suport a la recerca amb destinació al Servei de Psicologia i de Logopèdia",
-   "url": "https://cido.diba.cat/oposicions/22497406"
-  },
-  {
    "end": "2026-11-21",
    "group": "C1",
    "kind": "Laboral temporal",
@@ -1365,5 +1288,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-20T23:14:59+01:00"
+ "fetched": "2026-11-21T14:30:03+01:00"
 }
