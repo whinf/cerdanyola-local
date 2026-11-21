@@ -127,7 +127,7 @@
     "published": "2026-11-03",
     "short": false,
     "title": "2a Jornada de Ciència Oberta",
-    "views": 301
+    "views": 305
    },
    {
     "channel": "alba",
@@ -143,7 +143,15 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Entendre l’univers mitjançant els neutrins - Veus UAB",
-    "views": 199
+    "views": 201
+   },
+   {
+    "channel": "uab",
+    "id": "AmNjsILyKOc",
+    "published": "2026-11-09",
+    "short": false,
+    "title": "Tots els camins portaven a Roma? La xarxa que va transformar un imperi - Veus UAB",
+    "views": 164
    },
    {
     "channel": "uab",
@@ -152,14 +160,6 @@
     "short": false,
     "title": "La vida secreta d’una bossa de sang - Veus UAB",
     "views": 164
-   },
-   {
-    "channel": "uab",
-    "id": "AmNjsILyKOc",
-    "published": "2026-11-09",
-    "short": false,
-    "title": "Tots els camins portaven a Roma? La xarxa que va transformar un imperi - Veus UAB",
-    "views": 163
    },
    {
     "channel": "uab",
@@ -175,7 +175,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Igualtat de gènere en els usos del temps: canvis, resistències i continuïtats - Veus UAB",
-    "views": 135
+    "views": 136
    },
    {
     "channel": "alba",
@@ -191,7 +191,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Promoure la pau en un món amb més guerres - Veus UAB",
-    "views": 135
+    "views": 134
    },
    {
     "channel": "alba",
@@ -223,7 +223,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "De l’euro al joule. Alfabetització energètica - Veus UAB",
-    "views": 93
+    "views": 97
    },
    {
     "channel": "propera-parada",
@@ -239,7 +239,7 @@
     "published": "2026-06-29",
     "short": false,
     "title": "THE LAST SHOW: Se acabó | 4x16 | Propera Parada",
-    "views": 82
+    "views": 83
    },
    {
     "channel": "propera-parada",
@@ -283,19 +283,19 @@
    },
    {
     "channel": "uab",
+    "id": "5GWHT7uI0dY",
+    "published": "2026-11-19",
+    "short": false,
+    "title": "La videomemoria de la UAB 2025/2026",
+    "views": 53
+   },
+   {
+    "channel": "uab",
     "id": "7itq-hEWZ-0",
     "published": "2026-11-09",
     "short": false,
     "title": "Bacteris adormits sobre el metall. Per què algunes infeccions són tan difícils de curar? - Veus UAB",
     "views": 53
-   },
-   {
-    "channel": "uab",
-    "id": "5GWHT7uI0dY",
-    "published": "2026-11-19",
-    "short": false,
-    "title": "La videomemoria de la UAB 2025/2026",
-    "views": 49
    },
    {
     "channel": "alba",
@@ -427,5 +427,5 @@
    }
   ]
  },
- "fetched": "2026-11-21T14:30:03+01:00"
+ "fetched": "2026-11-21T21:54:53+01:00"
 }
