@@ -539,22 +539,6 @@
     "kind": "new",
     "name": "GREEN TRAFFIC SOLUTIONS S.L.",
     "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-143-08"
-   },
-   {
-    "activity": "La prestacion de servicios corporativos de soporte a sociedades del grupo, comprendiendo, entre otros, los servicios…",
-    "capital": 5000.0,
-    "date": "2026-07-24",
-    "id": "2026-07-24-347742-new",
-    "kind": "new",
-    "name": "MH GESTION CORPORATIVA S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-141-08"
-   },
-   {
-    "date": "2026-07-24",
-    "id": "2026-07-24-347742-closed",
-    "kind": "closed",
-    "name": "MH GESTION CORPORATIVA S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-141-08"
    }
   ],
   "known": {
@@ -743,8 +727,8 @@
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-20",
+  "last": "2026-11-21",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-21T21:54:53+01:00"
+ "fetched": "2026-11-22T14:24:18+01:00"
 }

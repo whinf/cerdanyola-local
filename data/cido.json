@@ -1,17 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-21",
-   "group": "C1",
-   "kind": "Laboral temporal",
-   "km": 7.4,
-   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic de laboratori",
-   "url": "https://cido.diba.cat/oposicions/22367292"
-  },
-  {
    "end": "2026-11-22",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -1288,5 +1277,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-21T21:54:53+01:00"
+ "fetched": "2026-11-22T14:24:18+01:00"
 }

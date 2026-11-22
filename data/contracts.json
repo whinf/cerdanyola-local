@@ -5538,36 +5538,6 @@
    ]
   },
   {
-   "amount": 2239825.97,
-   "date": "2025-10-17",
-   "deadline": "",
-   "id": "23584847/056/2022",
-   "lots": 0,
-   "organ": "Consorci Urbanístic del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Formalització",
-   "title": "Obres de soterrament de les línies elèctriques a l'àmbit dels Gorgs",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/da05d304-0792-4258-9f10-43cecd1fdf7b/300586752",
-   "winners": [
-    "edistribución redes digitales SLU"
-   ]
-  },
-  {
-   "amount": 491925.35,
-   "date": "2025-10-17",
-   "deadline": "2025-07-21T13:00",
-   "id": "11061850/CONTR-67/2025",
-   "lots": 2,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Execució",
-   "title": "Subministrament d’una plataforma de microscòpia òptica automatitzada d'alt rendiment per al cribratge i seguiment de mostres biològiques i materials destinat al Servei de Microscòpia i Difracció de Raigs X (SMiDRX) de la Universitat Autònom",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/936ccffe-e2fa-4fba-94a4-8a9727c4f4ed/300726976",
-   "winners": [
-    "EVIDENT EUROPE GmbH, sucursal en España"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5594,5 +5564,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-21T14:30:03+01:00"
+ "fetched": "2026-11-22T14:24:18+01:00"
 }

@@ -52,66 +52,6 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
-    "category": "",
-    "end": "2026-11-21",
-    "place": "Sala d'actes de la Facultat d'Economia i Empresa",
-    "source": "uab",
-    "start": "2026-11-20",
-    "time": "",
-    "title": "Idees per revitalitzar l'ús social del català des de l'escola",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/idees-per-revitalitzar-l-us-social-del-catala-des-de-l-escola-1345828727816.html?detid=1346005304258"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-11-21",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-21",
-    "time": "12:00",
-    "title": "Petit Empíric. Espectacle familiar 'Matemàgia'",
-    "url": "https://www.cerdanyola.cat/agenda/petit-empiric-espectacle-familiar-matemagia"
-   },
-   {
-    "category": "Esports",
-    "end": "2026-11-21",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-21",
-    "time": "17:30",
-    "title": "38a edició Milles de Cerdanyola",
-    "url": "https://www.cerdanyola.cat/agenda/38a-edicio-milles-de-cerdanyola"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-21",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-21",
-    "time": "18:00",
-    "title": "Empíric Festival. Conversa i lectures 'Científics protagonistes dels relats'",
-    "url": "https://www.cerdanyola.cat/agenda/empiric-festival-conversa-i-lectures-cientifics-protagonistes-dels-relats"
-   },
-   {
-    "category": "Música",
-    "end": "2026-11-21",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-21",
-    "time": "19:00",
-    "title": "Concert de Santa Cecilia de l'AMCV",
-    "url": "https://www.cerdanyola.cat/agenda/concert-de-santa-cecilia-de-lamcv-1"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-21",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-21",
-    "time": "19:30",
-    "title": "Empíric Festival. Recital 'La dualitat dels clostridis'",
-    "url": "https://www.cerdanyola.cat/agenda/empiric-festival-recital-la-dualitat-dels-clostridis"
-   },
-   {
     "category": "Infància",
     "end": "2026-11-22",
     "place": "",
@@ -190,6 +130,16 @@
     "time": "19:00",
     "title": "Empíric Festival. Club de lectura de ciència -ficció",
     "url": "https://www.cerdanyola.cat/agenda/empiric-festival-club-de-lectura-de-ciencia-ficcio"
+   },
+   {
+    "category": "Conferències",
+    "end": "2026-11-26",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-26",
+    "time": "19:00",
+    "title": "Xerrada amb la fotògrafa Paroma Basu",
+    "url": "https://www.cerdanyola.cat/agenda/xerrada-amb-la-fotografa-paroma-basu"
    },
    {
     "category": "",
@@ -280,7 +230,7 @@
     "start": "2026-11-28",
     "time": "20:00",
     "title": "Teatre 'Federico García'",
-    "url": "https://www.cerdanyola.cat/agenda/teatre-federico-garcia-0"
+    "url": "https://www.cerdanyola.cat/agenda/teatre-federico-garcia"
    },
    {
     "category": "Infància",
@@ -668,10 +618,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    },
    {
     "category": "Exposicions",
@@ -684,12 +634,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    }
   ]
  },
- "fetched": "2026-11-21T21:54:53+01:00"
+ "fetched": "2026-11-22T14:24:18+01:00"
 }

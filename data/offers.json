@@ -421,46 +421,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325608"
   },
   {
-   "company": "First Hunting RRHH",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-22",
-   "hours": "Jornada indiferent",
-   "salary": [],
-   "title": "Firmware engineer(m/f)",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325292"
-  },
-  {
-   "company": "David Fdez. Ttes. S.L.",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-22",
-   "hours": "Jornada completa",
-   "salary": [],
-   "title": "Mecánico/a",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325261"
-  },
-  {
-   "company": "David Fdez. Ttes. S.L.",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-22",
-   "hours": "Jornada completa",
-   "salary": [],
-   "title": "Mozos/zas de almacén",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325282"
-  },
-  {
-   "company": "David Fdez. Ttes. S.L.",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-22",
-   "hours": "Jornada completa",
-   "salary": [],
-   "title": "Chóferes(h/m)",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325281"
-  },
-  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-20",
@@ -1020,19 +980,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325624"
   },
   {
-   "company": "FUNDACIO ENGRUNES",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-22",
-   "hours": "Jornada completa",
-   "salary": [
-    2342,
-    2342
-   ],
-   "title": "Encargados/as de obras de rehabilitacion",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325346"
-  },
-  {
    "company": "",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-04",
@@ -1301,39 +1248,6 @@
    "title": "Conductores/as de tráiler",
    "town": "BARBERÀ DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325707"
-  },
-  {
-   "company": "",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-22",
-   "hours": "Jornada intensiva",
-   "salary": [
-    2333,
-    2666
-   ],
-   "title": "Administrativo/a contable",
-   "town": "BARBERÀ DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325298"
-  },
-  {
-   "company": "Com a casa menjadors escolars S.L",
-   "contract": "Contracte laboral indiferent",
-   "date": "2026-09-22",
-   "hours": "Jornada parcial (3 hores - jornada diaria)",
-   "salary": [],
-   "title": "Monitor/monitora de menjador (barberà)",
-   "town": "BARBERÀ DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325306"
-  },
-  {
-   "company": "Empresa del sector del comerç",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-22",
-   "hours": "Jornada intensiva",
-   "salary": [],
-   "title": "Mozo/a de almacen",
-   "town": "BARBERÀ DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325363"
   },
   {
    "company": "ARAMARK",
@@ -1883,5 +1797,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-21T14:30:03+01:00"
+ "fetched": "2026-11-22T14:24:18+01:00"
 }

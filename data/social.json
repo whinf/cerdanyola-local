@@ -39,7 +39,7 @@
     "published": "2025-12-10",
     "short": false,
     "title": "Presentació Cerdanyola FC 2025/2026",
-    "views": 2224
+    "views": 2225
    },
    {
     "channel": "propera-parada",
@@ -103,7 +103,7 @@
     "published": "2026-03-26",
     "short": false,
     "title": "Anees Jilanis: Kebab casero, orígenes y tradición | 4x10 | Propera Parada",
-    "views": 518
+    "views": 521
    },
    {
     "channel": "propera-parada",
@@ -127,7 +127,7 @@
     "published": "2026-11-03",
     "short": false,
     "title": "2a Jornada de Ciència Oberta",
-    "views": 305
+    "views": 306
    },
    {
     "channel": "alba",
@@ -143,7 +143,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Entendre l’univers mitjançant els neutrins - Veus UAB",
-    "views": 201
+    "views": 204
    },
    {
     "channel": "uab",
@@ -151,7 +151,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Tots els camins portaven a Roma? La xarxa que va transformar un imperi - Veus UAB",
-    "views": 164
+    "views": 168
    },
    {
     "channel": "uab",
@@ -167,7 +167,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Noves formes de radioteràpia: més enllà de la dosi - Veus UAB",
-    "views": 156
+    "views": 160
    },
    {
     "channel": "uab",
@@ -175,6 +175,14 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Igualtat de gènere en els usos del temps: canvis, resistències i continuïtats - Veus UAB",
+    "views": 137
+   },
+   {
+    "channel": "uab",
+    "id": "jJVTQHpQGis",
+    "published": "2026-11-09",
+    "short": false,
+    "title": "Promoure la pau en un món amb més guerres - Veus UAB",
     "views": 136
    },
    {
@@ -184,14 +192,6 @@
     "short": false,
     "title": "ALBA Hackathon: talento, ciencia y empresa para solucionar retos industriales",
     "views": 135
-   },
-   {
-    "channel": "uab",
-    "id": "jJVTQHpQGis",
-    "published": "2026-11-09",
-    "short": false,
-    "title": "Promoure la pau en un món amb més guerres - Veus UAB",
-    "views": 134
    },
    {
     "channel": "alba",
@@ -258,6 +258,14 @@
     "views": 65
    },
    {
+    "channel": "uab",
+    "id": "5GWHT7uI0dY",
+    "published": "2026-11-19",
+    "short": false,
+    "title": "La videomemoria de la UAB 2025/2026",
+    "views": 59
+   },
+   {
     "channel": "propera-parada",
     "id": "vVP9XsTJXOM",
     "published": "2026-04-30",
@@ -280,14 +288,6 @@
     "short": true,
     "title": "Canción educativa para usar protección 😇",
     "views": 54
-   },
-   {
-    "channel": "uab",
-    "id": "5GWHT7uI0dY",
-    "published": "2026-11-19",
-    "short": false,
-    "title": "La videomemoria de la UAB 2025/2026",
-    "views": 53
    },
    {
     "channel": "uab",
@@ -427,5 +427,5 @@
    }
   ]
  },
- "fetched": "2026-11-21T21:54:53+01:00"
+ "fetched": "2026-11-22T14:24:18+01:00"
 }
