@@ -39,7 +39,7 @@
     "published": "2025-12-10",
     "short": false,
     "title": "Presentació Cerdanyola FC 2025/2026",
-    "views": 2225
+    "views": 2227
    },
    {
     "channel": "propera-parada",
@@ -71,7 +71,7 @@
     "published": "2026-11-07",
     "short": false,
     "title": "XVIII Cerimònia de lliurament de títols de doctor/a i de premis extraordinaris de doctorat",
-    "views": 807
+    "views": 812
    },
    {
     "channel": "alba",
@@ -103,7 +103,7 @@
     "published": "2026-03-26",
     "short": false,
     "title": "Anees Jilanis: Kebab casero, orígenes y tradición | 4x10 | Propera Parada",
-    "views": 521
+    "views": 523
    },
    {
     "channel": "propera-parada",
@@ -127,7 +127,7 @@
     "published": "2026-11-03",
     "short": false,
     "title": "2a Jornada de Ciència Oberta",
-    "views": 306
+    "views": 307
    },
    {
     "channel": "alba",
@@ -151,7 +151,15 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Tots els camins portaven a Roma? La xarxa que va transformar un imperi - Veus UAB",
-    "views": 168
+    "views": 170
+   },
+   {
+    "channel": "uab",
+    "id": "xPXPQbHy5RI",
+    "published": "2026-11-09",
+    "short": false,
+    "title": "Noves formes de radioteràpia: més enllà de la dosi - Veus UAB",
+    "views": 165
    },
    {
     "channel": "uab",
@@ -163,19 +171,11 @@
    },
    {
     "channel": "uab",
-    "id": "xPXPQbHy5RI",
-    "published": "2026-11-09",
-    "short": false,
-    "title": "Noves formes de radioteràpia: més enllà de la dosi - Veus UAB",
-    "views": 160
-   },
-   {
-    "channel": "uab",
     "id": "JtozSGtnTlU",
     "published": "2026-11-09",
     "short": false,
     "title": "Igualtat de gènere en els usos del temps: canvis, resistències i continuïtats - Veus UAB",
-    "views": 137
+    "views": 138
    },
    {
     "channel": "uab",
@@ -223,7 +223,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "De l’euro al joule. Alfabetització energètica - Veus UAB",
-    "views": 97
+    "views": 98
    },
    {
     "channel": "propera-parada",
@@ -263,7 +263,7 @@
     "published": "2026-11-19",
     "short": false,
     "title": "La videomemoria de la UAB 2025/2026",
-    "views": 59
+    "views": 61
    },
    {
     "channel": "propera-parada",
@@ -427,5 +427,5 @@
    }
   ]
  },
- "fetched": "2026-11-22T14:24:18+01:00"
+ "fetched": "2026-11-22T22:05:47+01:00"
 }
