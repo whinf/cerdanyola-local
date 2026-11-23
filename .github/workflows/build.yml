@@ -22,9 +22,6 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     timeout-minutes: 30  # Overpass, Feina Activa y la BDNS pueden tardar; con 15 se perdía la pasada entera
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
 
@@ -55,9 +52,26 @@ jobs:
         with:
           path: _site
 
+  # Publicar en un job aparte (como la plantilla oficial de Pages): en el mismo job, deploy-pages a veces
+  # buscaba el artefacto recién subido antes de que GitHub lo listara («No artifacts named github-pages»).
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v4
 
-      # Si una fuente lleva 3 días sin responder, este paso falla y GitHub te envía un email.
+  # Si una fuente lleva 3 días sin responder, este paso falla y GitHub te envía un email.
+  check:
+    needs: deploy
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main  # con los datos que acaba de subir el build
+
       - name: Comprobar las fuentes de datos
         run: python3 src/build.py --check
