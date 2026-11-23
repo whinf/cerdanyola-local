@@ -1,28 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-22",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Metge especialista en Cirurgia Ortopèdica i Traumatologia",
-   "url": "https://cido.diba.cat/oposicions/22489350"
-  },
-  {
-   "end": "2026-11-22",
-   "group": "A1",
-   "kind": "Laboral",
-   "km": 10.2,
-   "org": "Consorci Sanitari de Terrassa",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Especialista en Psiquiatria per a la Unitat d'Hospitalització d'Aguts",
-   "url": "https://cido.diba.cat/oposicions/22382270"
-  },
-  {
    "end": "2026-11-23",
    "group": "Agrupacions professionals",
    "kind": "Funcionari",
@@ -771,6 +749,17 @@
    "url": "https://cido.diba.cat/oposicions/17601481"
   },
   {
+   "end": "2026-12-07",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 13.6,
+   "org": "Ajuntament de Terrassa - Terrassa Cicle de l'Aigua, EPEL",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça d'Administratiu de comptabilitat",
+   "url": "https://cido.diba.cat/oposicions/22538455"
+  },
+  {
    "end": "2026-12-08",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -1277,5 +1266,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-22T22:05:47+01:00"
+ "fetched": "2026-11-23T09:15:59+01:00"
 }

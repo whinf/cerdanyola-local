@@ -1,60 +1,60 @@
 {
  "agenda": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "aids": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "air": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "alerts": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "board": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "chargers": {
   "last_ok": "2026-11-22T14:24:18+01:00"
  },
  "cido": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "companies": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "contracts": {
-  "last_ok": "2026-11-22T14:24:18+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "equipments": {
   "last_ok": "2026-11-22T14:24:18+01:00"
  },
  "fuel": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "leisure": {
-  "last_error": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3B%0Aarea%5B%22boundary%22%3D%22administrative%22%5D%5B%22admin_level% | https://overpass.private.coffee/api/interpreter: solo 0 lugares",
+  "last_error": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3B%0Aarea%5B%22boundary%22%3D%22administrative%22%5D%5B%22admin_level% | https://overpass.private.coffee/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3B%0Aarea%5B%22boundary%22%3D%22administrative%22%5D%5B%22a",
   "last_ok": "2026-11-21T21:54:53+01:00"
  },
  "light": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "nightlife": {
   "last_ok": "2026-11-22T14:24:18+01:00"
  },
  "notices": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "offers": {
-  "last_ok": "2026-11-22T14:24:18+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "pharmacy": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "social": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  },
  "weather": {
-  "last_ok": "2026-11-22T22:05:47+01:00"
+  "last_ok": "2026-11-23T09:15:59+01:00"
  }
 }

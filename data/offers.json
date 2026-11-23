@@ -1,9 +1,22 @@
 {
  "data": [
   {
-   "company": "EMPRESA DE MANTENIMENT",
+   "company": "COOPERATIVA DOBLE VIA SCCL",
+   "contract": "Contracte laboral temporal (6 mesos)",
+   "date": "2026-11-23",
+   "hours": "Jornada parcial (35 hores - jornada setmanal)",
+   "salary": [
+    1700,
+    1800
+   ],
+   "title": "Animador/a sociocultural pel casal de joves de cerdanyola del vallès",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329347"
+  },
+  {
+   "company": "EMPRESA MANTENIMENT",
    "contract": "Contracte laboral indefinit",
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "hours": "Jornada completa",
    "salary": [
     1800,
@@ -11,7 +24,7 @@
    ],
    "title": "Técnico/a de montaje audiovisual – pantallas led y eventos",
    "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329322"
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329367"
   },
   {
    "company": "Oficina de Treball del SOC",
@@ -77,19 +90,6 @@
    "title": "Atenció al client",
    "town": "CERDANYOLA DEL VALLÈS",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632359"
-  },
-  {
-   "company": "EMPRESA DE MANTENIMIENTO",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-11-16",
-   "hours": "Jornada completa",
-   "salary": [
-    2300,
-    2700
-   ],
-   "title": "OFICIAL/OFICIALA DE 1.ª DE MANTENIMIENTO INDUSTRIAL | CERDANYOLA DEL VALLÈS",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92328952"
   },
   {
    "company": "Talher, S.A.",
@@ -601,19 +601,6 @@
    "title": "Administratiu/iva comptable",
    "town": "RIPOLLET",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327233"
-  },
-  {
-   "company": "TOBALINA CONSULTING GROUP",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-23",
-   "hours": "Jornada completa",
-   "salary": [
-    2600,
-    2900
-   ],
-   "title": "Responsable de manteniment",
-   "town": "RIPOLLET",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325417"
   },
   {
    "company": "Nascor Formación SLU",
@@ -1250,6 +1237,19 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325707"
   },
   {
+   "company": "GRUP CATALA DE TREBALL, ETT, S.L.",
+   "contract": "Contracte laboral temporal (1 mesos)",
+   "date": "2026-11-23",
+   "hours": "Jornada parcial tarda (25 hores - jornada setmanal)",
+   "salary": [
+    1000,
+    1200
+   ],
+   "title": "Teleoperadores/as (campaña navidad)",
+   "town": "SANT CUGAT DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329338"
+  },
+  {
    "company": "ARAMARK",
    "contract": "Contracte laboral temporal (2 mesos)",
    "date": "2026-11-20",
@@ -1797,5 +1797,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-22T14:24:18+01:00"
+ "fetched": "2026-11-23T09:15:59+01:00"
 }

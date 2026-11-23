@@ -1816,24 +1816,6 @@
      "business"
     ]
    },
-   "938459": {
-    "budget": 45000,
-    "checked": "2026-11-20",
-    "end": "2026-11-22",
-    "id": "938459",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-28",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-28",
-    "term": "",
-    "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación LIGHT MIDDLE EAST 2027 Dubái, 12 de enero de 2027 al 14 de enero de 2027.",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
    "938474": {
     "budget": 16500,
     "checked": "2026-11-20",
@@ -5025,6 +5007,7 @@
    "938362",
    "938365",
    "938437",
+   "938459",
    "938461",
    "938468",
    "938488",
@@ -5147,5 +5130,5 @@
    "943548"
   ]
  },
- "fetched": "2026-11-22T22:05:47+01:00"
+ "fetched": "2026-11-23T09:15:59+01:00"
 }

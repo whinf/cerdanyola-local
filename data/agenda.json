@@ -52,36 +52,6 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
-    "category": "Infància",
-    "end": "2026-11-22",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-22",
-    "time": "11:30",
-    "title": "Jugatecambiental. Escape room: refredem el planeta",
-    "url": "https://www.cerdanyola.cat/agenda/jugatecambiental-escape-room-refredem-el-planeta"
-   },
-   {
-    "category": "Infància",
-    "end": "2026-11-22",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-22",
-    "time": "12:00",
-    "title": "Teatre familiar 'SPUMae'",
-    "url": "https://www.cerdanyola.cat/agenda/teatre-familiar-spumae"
-   },
-   {
-    "category": "Música",
-    "end": "2026-11-22",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-22",
-    "time": "17:30",
-    "title": "Ball de la Gent Gran",
-    "url": "https://www.cerdanyola.cat/agenda/ball-de-la-gent-gran-11"
-   },
-   {
     "category": "",
     "end": "2026-11-24",
     "place": "Edifici L'Àgora, plaça Cívica",
@@ -120,6 +90,16 @@
     "time": "17:00",
     "title": "Concert homenatge a Narcisa Freixas \"de Sabadell a París\"",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/concert-homenatge-a-narcisa-freixas-de-sabadell-a-paris-1345828727816.html?detid=1346005239500"
+   },
+   {
+    "category": "Conferències",
+    "end": "2026-11-26",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-26",
+    "time": "17:30",
+    "title": "Taller 'Malestars emocionals i salut mental. Com fer una detecció precoç i un bon acompanyament en població preadolescent, adolescent i jove',",
+    "url": "https://www.cerdanyola.cat/agenda/taller-malestars-emocionals-i-salut-mental-com-fer-una-deteccio-precoc-i-un-bon-acompanyament"
    },
    {
     "category": "Altres activitats",
@@ -618,10 +598,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    },
    {
     "category": "Exposicions",
@@ -634,12 +614,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    }
   ]
  },
- "fetched": "2026-11-22T22:05:47+01:00"
+ "fetched": "2026-11-23T09:15:59+01:00"
 }

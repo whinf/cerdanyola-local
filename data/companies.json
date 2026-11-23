@@ -2,6 +2,39 @@
  "data": {
   "events": [
    {
+    "date": "2026-11-23",
+    "id": "2026-11-23-526540-moved_out",
+    "kind": "moved_out",
+    "name": "PROMOCIONES AREPA 2025 S.L.",
+    "town": "SANT CUGAT DEL VALLES",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-224-08"
+   },
+   {
+    "date": "2026-11-23",
+    "id": "2026-11-23-526432-moved_in",
+    "kind": "moved_in",
+    "name": "NANOLIGENT SL",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-224-08"
+   },
+   {
+    "capital": 11.0,
+    "date": "2026-11-23",
+    "id": "2026-11-23-526432-capital",
+    "kind": "capital",
+    "name": "NANOLIGENT SL",
+    "total": 152511.0,
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-224-08"
+   },
+   {
+    "activity": "Comercio al por menor de flores, plantas, fertilizantes, animales de compañia y alimentos para estos",
+    "capital": 2500.0,
+    "date": "2026-11-23",
+    "id": "2026-11-23-526145-new",
+    "kind": "new",
+    "name": "AMIRAT GLOBAL S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-224-08"
+   },
+   {
     "activity": "La provision de comidas preparadas para eventos, asi como las actividades de catering por contrato y otros servicios…",
     "capital": 3580.0,
     "date": "2026-11-20",
@@ -559,6 +592,7 @@
    "B 486403": "MONVITEC METALL SL",
    "B 494766": "LACABA ABOGADOS SLP",
    "B 496621": "ONALABS INNO-HUB SL",
+   "B 501344": "NANOLIGENT SL",
    "B 505650": "26 NILMARTA S.L.",
    "B 507268": "CELSA WIRE CERDANYOLA S.A.",
    "B 515606": "SORT CAPITAL S.L.",
@@ -586,7 +620,6 @@
    "B 643877": "LIMO LUX BCN S.L.",
    "B 643888": "PSK DESARROLLOS S.L.",
    "B 644017": "HUND GLOBAL S.L.",
-   "B 644519": "PROMOCIONES AREPA 2025 S.L.",
    "B 644775": "IMCODISPROL S.L.",
    "B 644989": "ZAFIR NOVA S.L.",
    "B 645027": "EL CAMPANAR DEL GRAU S.L.",
@@ -722,13 +755,14 @@
    "B 666561": "R.A.C.G. ELEVADORES S.L.",
    "B 666780": "FB HABITATGES S.L.",
    "B 666895": "COR CREATIVE FOOD S.L.",
+   "B 666945": "AMIRAT GLOBAL S.L.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-21",
+  "last": "2026-11-23",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-22T22:05:47+01:00"
+ "fetched": "2026-11-23T09:15:59+01:00"
 }
