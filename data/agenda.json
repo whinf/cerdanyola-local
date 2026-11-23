@@ -52,6 +52,16 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
+    "category": "Cursos i tallers",
+    "end": "2026-11-23",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-23",
+    "time": "15:00",
+    "title": "Xerrada de l'Escola de famílies 'Tinc un fill de 6 a 9 anys, i ara què?'",
+    "url": "https://www.cerdanyola.cat/agenda/xerrada-de-lescola-de-families-tinc-un-fill-de-6-9-anys-i-ara-que"
+   },
+   {
     "category": "",
     "end": "2026-11-24",
     "place": "Edifici L'Àgora, plaça Cívica",
@@ -60,6 +70,16 @@
     "time": "13:30",
     "title": "Taller \"buscant la felicitat\". Què ens diu la ciència sobre oj trobar-la?",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/taller-buscant-la-felicitat-que-ens-diu-la-ciencia-sobre-oj-trobar-la-1345828727816.html?detid=1346006575786"
+   },
+   {
+    "category": "",
+    "end": "2026-11-25",
+    "place": "Sala Cinema de la UAB",
+    "source": "uab",
+    "start": "2026-11-25",
+    "time": "12:30",
+    "title": "Presentació i projecció del curtmetratge \"Kokuhaku\" d'Adrià Guxens",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/presentacio-i-projeccio-del-curtmetratge-kokuhaku-d-adria-guxens-1345828727816.html?detid=1346006682360"
    },
    {
     "category": "",
@@ -140,6 +160,16 @@
     "time": "20:30",
     "title": "Cinema: Manas",
     "url": "https://www.cerdanyola.cat/agenda/cinema-manas"
+   },
+   {
+    "category": "",
+    "end": "2026-11-27",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-11-27",
+    "time": "10:00",
+    "title": "Projecció del film \"Pequeña Miss Sunshine\" de Valerie Faris i Jonathan Dayton",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-pequena-miss-sunshine-de-valerie-faris-i-jonathan-dayton-1345828727816.html?detid=1346006685183"
    },
    {
     "category": "Festes populars",
@@ -331,6 +361,16 @@
     "time": "09:30",
     "title": "Donació de sang i plasma",
     "url": "https://www.cerdanyola.cat/agenda/donacio-de-sang-i-plasma-38"
+   },
+   {
+    "category": "",
+    "end": "2026-12-09",
+    "place": "Sala Cinema UAB",
+    "source": "uab",
+    "start": "2026-12-09",
+    "time": "11:00",
+    "title": "Projecció del film \"Yo soy la Juani\", de Bigas Luna",
+    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-yo-soy-la-juani-de-bigas-luna-1345828727816.html?detid=1346006687691"
    },
    {
     "category": "Altres activitats",
@@ -598,10 +638,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    },
    {
     "category": "Exposicions",
@@ -614,12 +654,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    }
   ]
  },
- "fetched": "2026-11-23T09:40:19+01:00"
+ "fetched": "2026-11-23T17:02:07+01:00"
 }

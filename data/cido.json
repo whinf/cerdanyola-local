@@ -287,6 +287,50 @@
    "url": "https://cido.diba.cat/oposicions/22491151"
   },
   {
+   "end": "2026-11-27",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador postdoctoral amb destinació a l'Institut de Neurociències",
+   "url": "https://cido.diba.cat/oposicions/22540923"
+  },
+  {
+   "end": "2026-11-27",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic superior de Suport a la Recerca amb destinació al Departament de Geografia",
+   "url": "https://cido.diba.cat/oposicions/22540958"
+  },
+  {
+   "end": "2026-11-29",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Postdoctoral researcher position for the ERC-STG-STOIKOS Project",
+   "url": "https://cido.diba.cat/oposicions/22539468"
+  },
+  {
+   "end": "2026-11-29",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Research support teechnician for emeta-rare and emining projects",
+   "url": "https://cido.diba.cat/oposicions/22539612"
+  },
+  {
    "end": "2026-11-29",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -815,6 +859,17 @@
    "url": "https://cido.diba.cat/oposicions/22469984"
   },
   {
+   "end": "2026-12-11",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Data Manager - Titulat de Grau Superior",
+   "url": "https://cido.diba.cat/oposicions/22539605"
+  },
+  {
    "end": "2026-12-13",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -1266,5 +1321,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-23T09:40:19+01:00"
+ "fetched": "2026-11-23T17:02:07+01:00"
 }

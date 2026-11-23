@@ -3134,6 +3134,43 @@
     "who": [
      "business"
     ]
+   },
+   "943899": {
+    "budget": 1000000,
+    "checked": "2026-11-23",
+    "end": "",
+    "id": "943899",
+    "level": "ESTADO",
+    "organ": "SECRETARÍA DE ESTADO DE DIGITALIZACIÓN E INTELIGENCIA ARTIFICIAL",
+    "purpose": "Otras Prestaciones económicas",
+    "received": "2026-11-23",
+    "region": "MINISTERIO PARA LA TRANSFORMACIÓN DIGITAL Y DE LA FUNCIÓN PÚBLICA",
+    "start": "",
+    "term": "N/A",
+    "title": "Concesión directa de una subvención a la sociedad de garantía recíproca Audiovisual Fianzas SGR (CREA SGR) para facilitar el acceso a la financiación por parte de las PYMEs del sector audiovisual.",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
+   },
+   "944127": {
+    "budget": 5878800,
+    "checked": "2026-11-23",
+    "end": "2027-01-26",
+    "id": "944127",
+    "level": "AUTONOMICA",
+    "organ": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
+    "purpose": "Investigación, desarrollo e innovación",
+    "received": "2026-11-23",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "",
+    "title": "Convocatoria de doctorados industriales (DI) 2026",
+    "title_ca": "Convocatòria de doctorats industrials (DI) 2026",
+    "who": [
+     "business",
+     "entities"
+    ]
    }
   },
   "closed": [
@@ -5127,8 +5164,28 @@
    "943545",
    "943546",
    "943547",
-   "943548"
+   "943548",
+   "943863",
+   "943864",
+   "943865",
+   "943895",
+   "943896",
+   "943942",
+   "943946",
+   "944005",
+   "944012",
+   "944048",
+   "944051",
+   "944053",
+   "944056",
+   "944060",
+   "944066",
+   "944068",
+   "944073",
+   "944076",
+   "944078",
+   "944079"
   ]
  },
- "fetched": "2026-11-23T09:40:19+01:00"
+ "fetched": "2026-11-23T17:02:07+01:00"
 }

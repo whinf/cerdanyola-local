@@ -5,8 +5,8 @@
     "R4"
    ],
    "text": {
-    "ca": "Circulació restablerta entre Cerdanyola del Vallès i Fabra i Puig, amb demores que poden superar els 30 minuts de mitjana. Es manté el servei alternatiu per carretera entre Cerdanyola del Vallès i Fabra i Puig, i entre Manresa i Terrassa Estació del Nord, amb parades intermèdies.",
-    "es": "Circulación restablecida entre Cerdanyola del Vallès y Fabra i Puig, con demoras que pueden superar los 30 minutos de media. Se mantiene el servicio alternativo por carretera entre Cerdanyola del Vallès y Fabra i Puig, y entre Manresa y Terrassa Estació del Nord, con paradas intermedias"
+    "ca": "Circulació amb demores que poden superar els 20 minuts a causa d'una incidència a la infraestructura d'Adif, ja resolta.",
+    "es": "Circulación con demoras que pueden superar los 20 minutos debido a una incidencia en la infraestructura de Adif, ya resuelta."
    }
   },
   {
@@ -19,5 +19,5 @@
    }
   }
  ],
- "fetched": "2026-11-23T09:40:19+01:00"
+ "fetched": "2026-11-23T17:02:07+01:00"
 }
