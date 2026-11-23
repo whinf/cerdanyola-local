@@ -127,4 +127,36 @@
   @media (max-width: 600px) {
     :root[data-theme="dark"] .banner { background-image: url(img/banner-night-m.webp); }
   }
+
+  /* Participa: escalera de niveles (el punto crece con el nivel) y fichas por nivel */
+  .ladder { list-style: none; padding: 0; margin: var(--s-3) 0 0; display: grid; gap: 2px;
+    background: linear-gradient(var(--border), var(--border)) 1.75rem 1.4rem / 2px calc(100% - 2.8rem) no-repeat; }
+  .ladder a { display: grid; grid-template-columns: 2.3rem 1fr auto; column-gap: var(--s-3); align-items: center; padding: .45rem .6rem; border-radius: var(--r-s); color: var(--ink); text-decoration: none; }
+  .ladder a:hover { background: var(--surface-2); }
+  .ladder a:hover .what { text-decoration: underline; }
+  .ladder .dot { grid-row: span 2; justify-self: center; inline-size: calc(.55rem + 1.65rem * var(--k)); aspect-ratio: 1; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); box-shadow: 0 0 0 3px var(--bg, var(--surface)); }
+  .ladder .what { font-weight: 600; }
+  .ladder .muted { grid-column: 2; }
+  .ladder .vote { grid-column: 3; grid-row: 1 / span 2; }
+  .vote { display: inline-block; font-size: .72rem; font-weight: 600; padding: .05rem .55em; border-radius: var(--r-pill); white-space: nowrap; vertical-align: .1em; }
+  .vote.v-direct { background: var(--tint-good); color: var(--good-ink); }
+  .vote.v-indirect { background: var(--tint-mid); color: var(--mid-ink); }
+  .vote.v-none { background: var(--surface-2); color: var(--ink-2); }
+  .level.card { padding: var(--s-1) var(--s-5) var(--s-3); margin-block: var(--s-5); scroll-margin-block-start: 10rem; } /* bajo la cabecera y la barra de secciones, que son fijas */
+  .level h2 { display: flex; align-items: center; gap: .6rem; }
+  .level h2 small { display: block; font-size: var(--fs-s); font-weight: 500; color: var(--ink-2); letter-spacing: 0; }
+  .level .lvl { flex: none; display: inline-grid; place-items: center; inline-size: 2rem; block-size: 2rem; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-size: 1rem; font-weight: 700; }
+  .facts { display: grid; grid-template-columns: max-content 1fr; gap: .4rem var(--s-4); margin: 0; }
+  .facts dt { font-weight: 600; color: var(--ink-2); font-size: var(--fs-s); padding-block-start: .1rem; }
+  .facts dd { margin: 0; }
+  .ways { padding-inline-start: 1.1rem; margin: 0; display: grid; gap: .5rem; }
+  @media (max-width: 36rem) {
+    .ladder a { grid-template-columns: 2.3rem 1fr; }
+    .ladder .dot { grid-row: span 3; }
+    .ladder .vote { grid-column: 2; grid-row: auto; justify-self: start; }
+    .ladder { background-size: 2px calc(100% - 3.4rem); background-position: 1.75rem 1.7rem; }
+    .facts { grid-template-columns: 1fr; }
+    .facts dd { margin-block-end: var(--s-2); }
+    .level.card { padding-inline: var(--s-4); }
+  }
 }

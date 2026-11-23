@@ -17,7 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import sources  # noqa: E402
 import tz  # noqa: E402
-from render import ROOT, Site, load_picks  # noqa: E402
+from render import ROOT, Site, load_picks, load_politics  # noqa: E402
 
 DATA = ROOT / "data"
 MAX_SILENCE = timedelta(days=3)
@@ -99,6 +99,9 @@ def check(now):
     old = [p["name"] for p in sources.load_social() if now.date() - date.fromisoformat(p["checked"]) > timedelta(days=365)]
     if old:
         print("aviso: perfiles de redes sin revisar desde hace más de un año:", ", ".join(old))
+    checked = load_politics().get("checked")
+    if checked and now.date() - date.fromisoformat(checked) > timedelta(days=365):
+        print("aviso: la guía «Participa» (curated/politics.json) lleva más de un año sin revisar")
     for p in problems:
         print("ERROR:", p)
     return 1 if problems else 0
