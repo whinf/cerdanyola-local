@@ -3098,6 +3098,24 @@
      "business",
      "entities"
     ]
+   },
+   "944494": {
+    "budget": 750000,
+    "checked": "2026-11-24",
+    "end": "",
+    "id": "944494",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'AGRICULTURA, RAMADERIA, PESCA I ALIMENTACIÓ",
+    "purpose": "Agricultura, Pesca y Alimentación",
+    "received": "2026-11-24",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "05 Dies Hàbils",
+    "title": "Ayudas a las comunidades de regantes para la gestión sostenible del agua en relación con las medidas ambientales aplicables en zonas de la red Natura 2000",
+    "title_ca": "Ajuts a les comunitats de regants per a la gestió sostenible de l'aigua en relació amb les mesures ambientals aplicables en zones de la xarxa Natura 2000",
+    "who": [
+     "business"
+    ]
    }
   },
   "closed": [
@@ -5115,8 +5133,14 @@
    "944073",
    "944076",
    "944078",
-   "944079"
+   "944079",
+   "944192",
+   "944411",
+   "944489",
+   "944490",
+   "944492",
+   "944506"
   ]
  },
- "fetched": "2026-11-24T05:18:18+01:00"
+ "fetched": "2026-11-24T16:55:55+01:00"
 }

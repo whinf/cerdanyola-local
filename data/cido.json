@@ -244,6 +244,17 @@
   },
   {
    "end": "2026-11-29",
+   "group": "C2",
+   "kind": "Laboral temporal",
+   "km": 3.0,
+   "org": "Centre de Visió per Computador (CVC)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal de suport per al servei de tractament d'imatges",
+   "url": "https://cido.diba.cat/oposicions/22547331"
+  },
+  {
+   "end": "2026-11-29",
    "group": "A1",
    "kind": "Laboral temporal",
    "km": 2.8,
@@ -520,6 +531,17 @@
   {
    "end": "2026-12-03",
    "group": "A2",
+   "kind": "Funcionari interí",
+   "km": 2.8,
+   "org": "Ajuntament de Badia del Vallès",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places de Tècnic mitjà del Servei de Promoció Econòmica i Ocupació",
+   "url": "https://cido.diba.cat/oposicions/22544995"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A2",
    "kind": "Laboral temporal",
    "km": 7.8,
    "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
@@ -784,6 +806,17 @@
   {
    "end": "2026-12-09",
    "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 5.6,
+   "org": "Fundació Institut Català de Paleontologia Miquel Crusafont (ICP Miquel Crusafont)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic 3D",
+   "url": "https://cido.diba.cat/oposicions/22545264"
+  },
+  {
+   "end": "2026-12-09",
+   "group": "A1",
    "kind": "Funcionari",
    "km": 3.3,
    "org": "Universitat Autònoma de Barcelona (UAB)",
@@ -817,6 +850,17 @@
   {
    "end": "2026-12-14",
    "group": "A2",
+   "kind": "Funcionari interí",
+   "km": 6.0,
+   "org": "Ajuntament de Santa Perpètua de Mogoda",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça de Tècnic de serveis jurídics",
+   "url": "https://cido.diba.cat/oposicions/22545607"
+  },
+  {
+   "end": "2026-12-14",
+   "group": "A2",
    "kind": "Funcionari",
    "km": 13.1,
    "org": "Ajuntament de Sentmenat",
@@ -824,6 +868,50 @@
    "pool": true,
    "title": "1 plaça d'Enginyer tècnic",
    "url": "https://cido.diba.cat/oposicions/22452786"
+  },
+  {
+   "end": "2026-12-14",
+   "group": "C2",
+   "kind": "Laboral",
+   "km": 17.1,
+   "org": "Ajuntament de Viladecavalls",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça d'Oficial 1a de jardineria",
+   "url": "https://cido.diba.cat/oposicions/22545695"
+  },
+  {
+   "end": "2026-12-15",
+   "group": "A2",
+   "kind": "Funcionari",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 16,
+   "pool": true,
+   "title": "16 places de Bibliotecari",
+   "url": "https://cido.diba.cat/oposicions/22548645"
+  },
+  {
+   "end": "2026-12-15",
+   "group": "A2",
+   "kind": "Laboral",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 2,
+   "pool": false,
+   "title": "2 places de Responsable tècnic d'obres de la Vicegerència d'Infraestructures i Serveis (L04255 - L07034)",
+   "url": "https://cido.diba.cat/oposicions/22548499"
+  },
+  {
+   "end": "2026-12-15",
+   "group": "A2",
+   "kind": "Laboral",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 2,
+   "pool": false,
+   "title": "2 places de Responsable tècnic de zona de la Vicegerència d'Infraestructures i Serveis (L00083)",
+   "url": "https://cido.diba.cat/oposicions/22548503"
   },
   {
    "end": "2026-12-19",
@@ -835,6 +923,17 @@
    "pool": false,
    "title": "1 plaça de Postdoctoral researcher (MAIAMI) - Machine-guided Discovery of High Entropy Allows for Electrocatalysis: From first-principles simulations to feature extraction",
    "url": "https://cido.diba.cat/oposicions/22529140"
+  },
+  {
+   "end": "2026-12-21",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en Angiologia i Cirurgia Vascular",
+   "url": "https://cido.diba.cat/oposicions/22547669"
   },
   {
    "end": "2026-12-21",
@@ -1255,5 +1354,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-24T05:18:18+01:00"
+ "fetched": "2026-11-24T16:55:55+01:00"
 }

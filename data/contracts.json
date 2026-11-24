@@ -1,6 +1,60 @@
 {
  "data": [
   {
+   "amount": 900.0,
+   "date": "2026-11-23",
+   "deadline": "2026-11-06T23:59",
+   "id": "29827823/246/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Adjudicació",
+   "title": "Servei de manteniment d’ultracongeladors per al departament de genètica animal del centre de recerca en agrigenòmica csic irta uab ub crag.",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ec53b521-1396-4208-95a7-797ec54524cc/300947384",
+   "winners": [
+    "BELMACO MANTENIMIENTO, S.L."
+   ]
+  },
+  {
+   "amount": 55867.99,
+   "date": "2026-11-23",
+   "deadline": "2026-12-21T14:00",
+   "id": "16138154/154/2026/0039",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anunci de licitació",
+   "title": "Transport en autocar per als desplaçaments associats a diverses activitats",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a3225a56-84a5-4315-9254-5c3823ff6070/300944492",
+   "winners": []
+  },
+  {
+   "amount": 25506.58,
+   "date": "2026-11-23",
+   "deadline": "2026-12-09T14:00",
+   "id": "16138154/153/2026/0029",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anunci de licitació",
+   "title": "Subministrament de bidons i ampolles d'aigua",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c5392f90-47f6-4c44-aa7e-caa790d40a92/300937276",
+   "winners": []
+  },
+  {
+   "amount": 46000.0,
+   "date": "2026-11-23",
+   "deadline": "2026-11-27T13:00",
+   "id": "11061850/CONSU-1/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": "Concessió de serveis per a l’organització, gestió i explotació de les Jornades Ocupacionals Veterinàries (JOVs) de la Facultat de Veterinària de la Universitat Autònoma de Barcelona",
+   "type": "Concessió de serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a9d2c294-ffde-4623-8a8c-32af27837b6a/300947030",
+   "winners": []
+  },
+  {
    "amount": 105751.72,
    "date": "2026-11-20",
    "deadline": "2026-11-17T23:57",
@@ -184,19 +238,6 @@
    "title": "Subministrament de materials de ferreteria, fontaneria i jardineria, en dos lots",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/9f6ca567-af69-4e37-a9b5-952e63c1e150/300942186",
-   "winners": []
-  },
-  {
-   "amount": 900.0,
-   "date": "2026-11-17",
-   "deadline": "2026-11-06T23:59",
-   "id": "29827823/246/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de manteniment d’ultracongeladors per al departament de genètica animal del centre de recerca en agrigenòmica csic irta uab ub crag.",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/ec53b521-1396-4208-95a7-797ec54524cc/300940850",
    "winners": []
   },
   {
@@ -588,8 +629,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
    ]
   },
   {
@@ -603,19 +644,6 @@
    "title": "Contractació de serveis de seqüenciació massiva (ngs) per al centre de recerca en agrigenòmica csic-irta-uab-ub (crag)",
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/155fc004-bc97-4a14-a001-9df6e87959de/300929534",
-   "winners": []
-  },
-  {
-   "amount": 46000.0,
-   "date": "2026-11-05",
-   "deadline": "2026-11-23T13:00",
-   "id": "11061850/CONSU-1/2026",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Anunci de licitació",
-   "title": "Concessió de serveis per a l’organització, gestió i explotació de les Jornades Ocupacionals Veterinàries (JOVs) de la Facultat de Veterinària de la Universitat Autònoma de Barcelona",
-   "type": "Concessió de serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a9d2c294-ffde-4623-8a8c-32af27837b6a/300929942",
    "winners": []
   },
   {
@@ -746,8 +774,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "FUNBRAIN, SL",
-    "ASSOCIACIO PLASTICFREEWARE"
+    "ASSOCIACIO PLASTICFREEWARE",
+    "FUNBRAIN, SL"
    ]
   },
   {
@@ -5564,5 +5592,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-23T22:42:44+01:00"
+ "fetched": "2026-11-24T16:55:55+01:00"
 }

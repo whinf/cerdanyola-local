@@ -2,6 +2,15 @@
  "data": [
   {
    "lines": [
+    "R4"
+   ],
+   "text": {
+    "ca": "Circulació restablerta entre Sant Sadurní d'Anoia i Sant Vicenç de Calders. Els trens circulen amb demores que poden superar els 20 minuts de mitjana.",
+    "es": "Circulación restablecida entre Sant Sadurní d'Anoia y Sant Vicenç de Calders. Los trenes circulan con demoras que pueden superar los 20 minutos de media."
+   }
+  },
+  {
+   "lines": [
     "R7"
    ],
    "text": {
@@ -10,5 +19,5 @@
    }
   }
  ],
- "fetched": "2026-11-24T05:18:18+01:00"
+ "fetched": "2026-11-24T16:55:55+01:00"
 }
