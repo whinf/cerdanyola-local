@@ -1,72 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-23",
-   "group": "Agrupacions professionals",
-   "kind": "Funcionari",
-   "km": 9.1,
-   "org": "Ajuntament de Rubí",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça de Taquiller",
-   "url": "https://cido.diba.cat/oposicions/16757272"
-  },
-  {
-   "end": "2026-11-23",
-   "group": "A1",
-   "kind": "Funcionari",
-   "km": 9.1,
-   "org": "Ajuntament de Rubí",
-   "places": 2,
-   "pool": true,
-   "title": "2 places de Tècnic d'administració general de serveis jurídics",
-   "url": "https://cido.diba.cat/oposicions/22429994"
-  },
-  {
-   "end": "2026-11-23",
-   "group": "C1",
-   "kind": "Funcionari",
-   "km": 6.0,
-   "org": "Ajuntament de Santa Perpètua de Mogoda",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic auxiliar - Delineant",
-   "url": "https://cido.diba.cat/oposicions/18685396"
-  },
-  {
-   "end": "2026-11-23",
-   "group": "",
-   "kind": "Laboral temporal",
-   "km": 2.9,
-   "org": "Consorci Centre de Recerca Matemàtica (CRM)",
-   "places": 0,
-   "pool": false,
-   "title": "Adscripció d'investigador o tenure track - 2026",
-   "url": "https://cido.diba.cat/oposicions/22374799"
-  },
-  {
-   "end": "2026-11-23",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de PhD Student: 3D Nanoelectrode-Engineered Flexible Epicortical Brain Probes for In Vivo Recording and Stimulation",
-   "url": "https://cido.diba.cat/oposicions/22327317"
-  },
-  {
-   "end": "2026-11-23",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Investigador ordinari amb destinació a l'Institut de Ciència i Tecnologia Ambiental",
-   "url": "https://cido.diba.cat/oposicions/22506964"
-  },
-  {
    "end": "2026-11-24",
    "group": "C1",
    "kind": "Funcionari",
@@ -1321,5 +1255,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-23T22:42:44+01:00"
+ "fetched": "2026-11-24T05:18:18+01:00"
 }

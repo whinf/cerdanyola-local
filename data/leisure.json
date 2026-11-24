@@ -196,6 +196,21 @@
    "web": ""
   },
   {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4862629,
+   "lon": 2.1463299,
+   "name": "El jardí de les papallones. info",
+   "osm": "node/14405412101",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
+  },
+  {
    "address": "Carrer de Sant Antoni 16",
    "cuisine": "",
    "group": "culture",
@@ -209,6 +224,66 @@
    "ref": "",
    "type": "gallery",
    "web": "http://www.eltallerescoladart.com/"
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4912409,
+   "lon": 2.1479341,
+   "name": "Escales",
+   "osm": "node/14405383602",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4861099,
+   "lon": 2.1463754,
+   "name": "Generalitat Catalunya. Institut Cartogràfic. Senyal geodèsic",
+   "osm": "node/14405412102",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4862516,
+   "lon": 2.1463738,
+   "name": "Jardí de les papallones",
+   "osm": "node/14405412001",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4861903,
+   "lon": 2.1462823,
+   "name": "La bassa. info",
+   "osm": "node/14405412201",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
   },
   {
    "address": "",
@@ -268,6 +343,66 @@
    "phone": "",
    "ref": "",
    "type": "museum",
+   "web": ""
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4916533,
+   "lon": 2.1474261,
+   "name": "Pisos",
+   "osm": "node/14405383701",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4921484,
+   "lon": 2.1476615,
+   "name": "Plaça",
+   "osm": "node/14405383601",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4910711,
+   "lon": 2.147952,
+   "name": "Pont",
+   "osm": "node/14405383603",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
+   "web": ""
+  },
+  {
+   "address": "",
+   "cuisine": "",
+   "group": "culture",
+   "hours": "",
+   "km": "",
+   "lat": 41.4909848,
+   "lon": 2.1477718,
+   "name": "Rampa",
+   "osm": "node/14405383604",
+   "phone": "",
+   "ref": "",
+   "type": "attraction",
    "web": ""
   },
   {
@@ -3616,5 +3751,5 @@
    "web": ""
   }
  ],
- "fetched": "2026-11-21T21:54:53+01:00"
+ "fetched": "2026-11-24T05:18:18+01:00"
 }

@@ -2,15 +2,6 @@
  "data": [
   {
    "lines": [
-    "R4"
-   ],
-   "text": {
-    "ca": "Circulació restablerta entre Barcelona-Fabra i Puig i Montcada Bifurcació.",
-    "es": "Circulación restablecida entre Barcelona-Fabra i Puig y Montcada Bifurcació."
-   }
-  },
-  {
-   "lines": [
     "R7"
    ],
    "text": {
@@ -19,5 +10,5 @@
    }
   }
  ],
- "fetched": "2026-11-23T22:42:44+01:00"
+ "fetched": "2026-11-24T05:18:18+01:00"
 }

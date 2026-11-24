@@ -52,16 +52,6 @@
     "url": "https://www.cerdanyola.cat/agenda/mes-de-la-salut-mental-cerdanyola-1"
    },
    {
-    "category": "Cursos i tallers",
-    "end": "2026-11-23",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-23",
-    "time": "15:00",
-    "title": "Xerrada de l'Escola de famílies 'Tinc un fill de 6 a 9 anys, i ara què?'",
-    "url": "https://www.cerdanyola.cat/agenda/xerrada-de-lescola-de-families-tinc-un-fill-de-6-9-anys-i-ara-que"
-   },
-   {
     "category": "",
     "end": "2026-12-01",
     "place": "",
@@ -648,10 +638,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    },
    {
     "category": "Exposicions",
@@ -664,12 +654,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    }
   ]
  },
- "fetched": "2026-11-23T22:42:44+01:00"
+ "fetched": "2026-11-24T05:18:18+01:00"
 }
