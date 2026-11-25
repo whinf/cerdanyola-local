@@ -1923,24 +1923,6 @@
      "business"
     ]
    },
-   "938580": {
-    "budget": 18000,
-    "checked": "2026-11-20",
-    "end": "2026-11-24",
-    "id": "938580",
-    "level": "ESTADO",
-    "organ": "ICEX ESPAÑA EXPORTACIÓN E INVERSIONES, EP E.",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-10-28",
-    "region": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-    "start": "2026-10-28",
-    "term": "",
-    "title": "Resolución de 27 de octubre de 2026 de ICEX España Exportación e Inversiones, E.P.E. por la que se convoca concesión de ayudas para la Participación Agrupada en la Feria_Asociación FA BAU 2027 Múnich del 11 de enero de 2027 al 15 de enero de 2027",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
    "938586": {
     "budget": 35000,
     "checked": "2026-11-20",
@@ -2484,7 +2466,7 @@
    },
    "941551": {
     "budget": 1750000,
-    "checked": "2026-11-18",
+    "checked": "2026-11-25",
     "end": "",
     "id": "941551",
     "level": "AUTONOMICA",
@@ -2900,7 +2882,7 @@
    },
    "942856": {
     "budget": 2520000,
-    "checked": "2026-11-18",
+    "checked": "2026-11-25",
     "end": "",
     "id": "942856",
     "level": "AUTONOMICA",
@@ -2908,7 +2890,7 @@
     "purpose": "Sanidad",
     "received": "2026-11-18",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-24",
     "term": "15 Dies Hàbils",
     "title": "Convocatoria año 2027, para la concesión de subvenciones para la financiacion a entidades privadas sin ànimo de de lucro, para actuacions en el ámbito de la salud de prevención y tratamento de las drogodependencias y adicciones comportamentales",
     "title_ca": "Convocatòria per a l'any 2027 per a la concessió de subvencions per al finanament a entitats privades sense afany de lucre, per a les actuacions en l'àmbit de la salut de prevenció i tractament de les drogodependències i addiccions comportamentals",
@@ -2918,7 +2900,7 @@
    },
    "942860": {
     "budget": 1785000,
-    "checked": "2026-11-18",
+    "checked": "2026-11-25",
     "end": "",
     "id": "942860",
     "level": "AUTONOMICA",
@@ -2926,7 +2908,7 @@
     "purpose": "Sanidad",
     "received": "2026-11-18",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-24",
     "term": "15 Dies Hàbils",
     "title": "Convocatoria para el año 2027 para la concesión de subvenciones para la financiacion a entidades privadas sin ànimo de lucro, para las actuacions en el ámbito de la salud para la prevención de la infección por el virus del VIH/Sida",
     "title_ca": "Convocatòria per a l'any 2027,per a la concessió de subvencions per al finanament a entitats privades sense afany de lucre, per a les actuacions en l'àmbit de la salut per a la prevenció de la infecció per VIH/sida",
@@ -2936,7 +2918,7 @@
    },
    "942880": {
     "budget": 1000,
-    "checked": "2026-11-18",
+    "checked": "2026-11-25",
     "end": "",
     "id": "942880",
     "level": "AUTONOMICA",
@@ -2944,7 +2926,7 @@
     "purpose": "Agricultura, Pesca y Alimentación",
     "received": "2026-11-18",
     "region": "CATALUÑA",
-    "start": "",
+    "start": "2026-11-24",
     "term": "15 Dies Hàbils",
     "title": "Ayudas al control de rendimiento lechero.",
     "title_ca": "Ajuts al control de rendiment lleter",
@@ -2954,7 +2936,7 @@
    },
    "943016": {
     "budget": 1750000,
-    "checked": "2026-11-18",
+    "checked": "2026-11-25",
     "end": "2026-12-17",
     "id": "943016",
     "level": "AUTONOMICA",
@@ -3119,7 +3101,6 @@
    }
   },
   "closed": [
-   "870675",
    "870720",
    "870726",
    "870729",
@@ -4998,6 +4979,7 @@
    "938488",
    "938491",
    "938518",
+   "938580",
    "938582",
    "938643",
    "938649",
@@ -5142,5 +5124,5 @@
    "944506"
   ]
  },
- "fetched": "2026-11-24T16:55:55+01:00"
+ "fetched": "2026-11-25T04:03:33+01:00"
 }

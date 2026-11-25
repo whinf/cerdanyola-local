@@ -437,16 +437,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325909"
   },
   {
-   "company": "CENTRE METAL.LÚRGIC",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-25",
-   "hours": "Jornada completa",
-   "salary": [],
-   "title": "Magatzem i aprovisionament de materials 26.120",
-   "town": "CERDANYOLA DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325608"
-  },
-  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-20",
@@ -1030,19 +1020,6 @@
    "title": "Cap de cuina -montcada",
    "town": "MONTCADA I REIXAC",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326029"
-  },
-  {
-   "company": "SOSMATIC, S.L.",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-25",
-   "hours": "Jornada completa",
-   "salary": [
-    1600,
-    1700
-   ],
-   "title": "Técnico/a informático/a con inglés, presencial",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325624"
   },
   {
    "company": "",
@@ -1927,5 +1904,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-24T16:55:55+01:00"
+ "fetched": "2026-11-25T04:03:33+01:00"
 }
