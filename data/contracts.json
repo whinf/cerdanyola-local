@@ -1,6 +1,118 @@
 {
  "data": [
   {
+   "amount": 2854.29,
+   "date": "2026-11-24",
+   "deadline": "2026-11-19T23:59",
+   "id": "29827823/252/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Adjudicació",
+   "title": "Subministrament material informatic apple per al centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/1ae256dc-c1ed-4462-8d3d-193f928cc1b9/300947400",
+   "winners": [
+    "ECONOCOM SEMIC SAU"
+   ]
+  },
+  {
+   "amount": 5565.98,
+   "date": "2026-11-24",
+   "deadline": "2026-11-06T23:59",
+   "id": "29827823/248/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Adjudicació",
+   "title": "Subministrament de llicències de software microsoft office 365 pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/56dc9cf1-3bfe-48e7-93a3-273252bc10d8/300947848",
+   "winners": [
+    "PKF ATTEST ITC, S.L."
+   ]
+  },
+  {
+   "amount": 75000.0,
+   "date": "2026-11-24",
+   "deadline": "2026-11-20T23:59",
+   "id": "29827823/242/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Expedient en avaluació",
+   "title": "Subministrament d’actualizació de la maquinaria de tres cambres climàtiques de creixement de plantes del centre de recerca en agrigenòmica csic-irta-uab-ub (crag)",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d9ba9c3c-fdb2-4ee7-9fdd-23f924f14efb/300948293",
+   "winners": []
+  },
+  {
+   "amount": 828219.25,
+   "date": "2026-11-24",
+   "deadline": "2026-09-28T12:00",
+   "id": "23584847/CUCDCV-2027-2",
+   "lots": 0,
+   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Redacció del Projecte i DO, CSS i DA Projecte Urb. E2",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/7a04d701-5123-4d42-88c4-0156146fe879/300949490",
+   "winners": []
+  },
+  {
+   "amount": 104850.0,
+   "date": "2026-11-24",
+   "deadline": "2026-09-22T14:00",
+   "id": "16138154/153/2026/0024",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Subministrament d’un domo geodèsic",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/05624700-ecc2-4a1d-bed7-4775d9ac5a75/300948341",
+   "winners": [
+    "FINT VARK, SL"
+   ]
+  },
+  {
+   "amount": 42363.98,
+   "date": "2026-11-24",
+   "deadline": "2026-12-09T14:00",
+   "id": "16138154/153/2026/0010",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anunci de licitació",
+   "title": "Subministrament de panots",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/a350ce12-a6c4-417a-92bb-4504f4afcfc3/300948176",
+   "winners": []
+  },
+  {
+   "amount": 33636.36,
+   "date": "2026-11-24",
+   "deadline": "2026-06-11T14:00",
+   "id": "16138154/153/2026/0001",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Adjudicació",
+   "title": "Subministrament Trenet de Nadal",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/fca870b1-e247-42b5-9b02-69a462282a4f/300948468",
+   "winners": [
+    "PRODILLE ESPECTACLES, SL"
+   ]
+  },
+  {
+   "amount": 66416.63,
+   "date": "2026-11-24",
+   "deadline": "2026-09-17T14:00",
+   "id": "16138154/151/2026/0011",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Anul·lació",
+   "title": "Obres millora del funcionament de la xarxa de recollida d’aigües pluvials",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/6c1b905a-da18-4d87-ad4b-d52073111eab/300948637",
+   "winners": []
+  },
+  {
    "amount": 900.0,
    "date": "2026-11-23",
    "deadline": "2026-11-06T23:59",
@@ -68,19 +180,6 @@
    "winners": [
     "MAIN MEMORY, S.A"
    ]
-  },
-  {
-   "amount": 828219.25,
-   "date": "2026-11-20",
-   "deadline": "2026-09-28T12:00",
-   "id": "23584847/CUCDCV-2027-2",
-   "lots": 0,
-   "organ": "Consorci Urbanístic per al Desenvolupament del Centre Direccional de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Redacció del Projecte i DO, CSS i DA Projecte Urb. E2",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/7a04d701-5123-4d42-88c4-0156146fe879/300945059",
-   "winners": []
   },
   {
    "amount": 344284.32,
@@ -562,19 +661,6 @@
    "winners": []
   },
   {
-   "amount": 8038.11,
-   "date": "2026-11-09",
-   "deadline": "2026-11-06T23:59",
-   "id": "29827823/248/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Expedient en avaluació",
-   "title": "Subministrament de llicències de software microsoft office 365 pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/56dc9cf1-3bfe-48e7-93a3-273252bc10d8/300932934",
-   "winners": []
-  },
-  {
    "amount": 6900.0,
    "date": "2026-11-06",
    "deadline": "2026-09-18T12:00",
@@ -629,8 +715,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
    ]
   },
   {
@@ -774,8 +860,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "FUNBRAIN, SL",
-    "ASSOCIACIO PLASTICFREEWARE"
+    "ASSOCIACIO PLASTICFREEWARE",
+    "FUNBRAIN, SL"
    ]
   },
   {
@@ -792,19 +878,6 @@
    "winners": [
     "FUNDACIÓ LAFACT FACTORIA SOCIAL DE TERRASSA"
    ]
-  },
-  {
-   "amount": 75000.0,
-   "date": "2026-11-02",
-   "deadline": "2026-11-20T23:59",
-   "id": "29827823/242/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Anunci de licitació",
-   "title": "Subministrament d’actualizació de la maquinaria de tres cambres climàtiques de creixement de plantes del centre de recerca en agrigenòmica csic-irta-uab-ub (crag)",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d9ba9c3c-fdb2-4ee7-9fdd-23f924f14efb/300925533",
-   "winners": []
   },
   {
    "amount": 60000.0,
@@ -1001,32 +1074,6 @@
    "winners": [
     "R-MEDIA EVOLUTION TWF-C, SL"
    ]
-  },
-  {
-   "amount": 107100.0,
-   "date": "2026-10-27",
-   "deadline": "2026-09-22T14:00",
-   "id": "16138154/153/2026/0024",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Subministrament d’un domo geodèsic",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/05624700-ecc2-4a1d-bed7-4775d9ac5a75/300920093",
-   "winners": []
-  },
-  {
-   "amount": 40991.36,
-   "date": "2026-10-27",
-   "deadline": "2026-06-11T14:00",
-   "id": "16138154/153/2026/0001",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Subministrament Trenet de Nadal",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/fca870b1-e247-42b5-9b02-69a462282a4f/300920207",
-   "winners": []
   },
   {
    "amount": 24300.0,
@@ -1980,19 +2027,6 @@
    "winners": [
     "AIRVALIDATION, S.L."
    ]
-  },
-  {
-   "amount": 66416.63,
-   "date": "2026-09-02",
-   "deadline": "2026-09-17T14:00",
-   "id": "16138154/151/2026/0011",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Anunci de licitació",
-   "title": "Obres millora del funcionament de la xarxa de recollida d’aigües pluvials",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/6c1b905a-da18-4d87-ad4b-d52073111eab/300872223",
-   "winners": []
   },
   {
    "amount": 715392.0,
@@ -5577,5 +5611,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-25T04:03:33+01:00"
+ "fetched": "2026-11-25T16:39:35+01:00"
 }

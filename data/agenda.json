@@ -87,7 +87,7 @@
     "place": "",
     "source": "ajuntament",
     "start": "2026-11-25",
-    "time": "17:00",
+    "time": "18:00",
     "title": "Acte central 25N Dia Internacional contra les Violències Masclistes",
     "url": "https://www.cerdanyola.cat/agenda/acte-central-25n-dia-internacional-contra-les-violencies-masclistes-4"
    },
@@ -140,6 +140,16 @@
     "time": "19:00",
     "title": "Xerrada de la fotoperiodista Paroma Basu",
     "url": "https://afocer.cat/event/xerrada-de-la-fotoperiodista-paroma-basu/"
+   },
+   {
+    "category": "Activitats polítiques",
+    "end": "2026-11-26",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-26",
+    "time": "19:30",
+    "title": "Ple Municipal de novembre de 2026",
+    "url": "https://www.cerdanyola.cat/agenda/ple-municipal-de-novembre-de-2026"
    },
    {
     "category": "Cinema",
@@ -321,6 +331,16 @@
     "time": "09:45",
     "title": "La democràcia en acció: com podem enfortir la democràcia i la participació ciutadana?",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/la-democracia-en-accio-com-podem-enfortir-la-democracia-i-la-participacio-ciutadana-1345828727816.html?detid=1346004174469"
+   },
+   {
+    "category": "",
+    "end": "2026-12-03",
+    "place": "Ateneu de Cerdanyola",
+    "source": "afocer",
+    "start": "2026-12-03",
+    "time": "19:00",
+    "title": "Pràctica de generació d’imatges amb IA",
+    "url": "https://afocer.cat/event/practica-de-generacio-dimatges-amb-ia/"
    },
    {
     "category": "",
@@ -628,10 +648,10 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu d'Art de Cerdanyola",
+    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
     "source": "gencat",
-    "title": "Relats compartits. Diàlegs d'art",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
+    "title": "Cerdanyola, terra d’Ibers",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
    },
    {
     "category": "Exposicions",
@@ -644,12 +664,12 @@
    {
     "category": "Exposicions",
     "free": false,
-    "place": "Museu i Poblat Ibèric de Ca n'Oliver",
+    "place": "Museu d'Art de Cerdanyola",
     "source": "gencat",
-    "title": "Cerdanyola, terra d’Ibers",
-    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6IiIsInBvYmxhY2lvIjoiY2VyZGFueW9sYSIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__&page=0"
+    "title": "Relats compartits. Diàlegs d'art",
+    "url": "https://agenda.cultura.gencat.cat/content/agenda/ca/results.html?c=eyJrZXl3b3JkcyI6IiIsImRhdGFPcHRpb24iOiIiLCJkYXRhRGVzZGUiOiIiLCJkYXRhRmluc2EiOiIiLCJlc3BhaSI6Im11c2V1IGQnYXJ0IGRlIGNlcmRhbnlvbGEiLCJwb2JsYWNpbyI6IiIsImFtYml0cyI6W10sImNhdGVnb3JpZXMiOltdfQ__"
    }
   ]
  },
- "fetched": "2026-11-25T04:03:33+01:00"
+ "fetched": "2026-11-25T16:39:35+01:00"
 }

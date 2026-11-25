@@ -217,7 +217,7 @@
    "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
    "places": 1,
    "pool": false,
-   "title": "1 plaça de Research support teechnician for emeta-rare and emining projects",
+   "title": "1 plaça de Research support technician for emeta-rare and emining projects",
    "url": "https://cido.diba.cat/oposicions/22539612"
   },
   {
@@ -384,6 +384,28 @@
    "pool": false,
    "title": "2 places de Postdoctoral Positions in Simulation-Based Inference for Cosmology",
    "url": "https://cido.diba.cat/oposicions/22358180"
+  },
+  {
+   "end": "2026-12-01",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista de Suport a la Recerca amb destinació al Departament de Bioquímica i Biologia Molecular",
+   "url": "https://cido.diba.cat/oposicions/22556053"
+  },
+  {
+   "end": "2026-12-01",
+   "group": "C1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista de Suport a la Recerca amb destinació al Departament de Genètica i Microbiologia",
+   "url": "https://cido.diba.cat/oposicions/22556045"
   },
   {
    "end": "2026-12-02",
@@ -683,6 +705,17 @@
    "url": "https://cido.diba.cat/oposicions/18041139"
   },
   {
+   "end": "2026-12-06",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Predoctoral researcher for the Lemonwurst Project",
+   "url": "https://cido.diba.cat/oposicions/22553496"
+  },
+  {
    "end": "2026-12-07",
    "group": "Agrupacions professionals",
    "kind": "Laboral",
@@ -762,6 +795,17 @@
   {
    "end": "2026-12-09",
    "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Research Support Technician for 2D-based optoelectronic device fabrication",
+   "url": "https://cido.diba.cat/oposicions/22553519"
+  },
+  {
+   "end": "2026-12-09",
+   "group": "A1",
    "kind": "Funcionari",
    "km": 3.3,
    "org": "Universitat Autònoma de Barcelona (UAB)",
@@ -827,6 +871,28 @@
   },
   {
    "end": "2026-12-15",
+   "group": "C1",
+   "kind": "Funcionari interí",
+   "km": 4.1,
+   "org": "Ajuntament de Montcada i Reixac",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places d'Administratiu",
+   "url": "https://cido.diba.cat/oposicions/22483845"
+  },
+  {
+   "end": "2026-12-15",
+   "group": "C2",
+   "kind": "Laboral",
+   "km": 6.0,
+   "org": "Ajuntament de Santa Perpètua de Mogoda - Mogoda Serveis, SAM",
+   "places": 1,
+   "pool": true,
+   "title": "1 plaça d'Oficial 2a administratiu",
+   "url": "https://cido.diba.cat/oposicions/22537925"
+  },
+  {
+   "end": "2026-12-15",
    "group": "A2",
    "kind": "Funcionari",
    "km": 3.3,
@@ -857,6 +923,17 @@
    "pool": false,
    "title": "2 places de Responsable tècnic de zona de la Vicegerència d'Infraestructures i Serveis (L00083)",
    "url": "https://cido.diba.cat/oposicions/22548503"
+  },
+  {
+   "end": "2026-12-18",
+   "group": "A1",
+   "kind": "Laboral",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic Unitat Hospitalització a Domicili",
+   "url": "https://cido.diba.cat/oposicions/22337467"
   },
   {
    "end": "2026-12-19",
@@ -1299,5 +1376,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-25T04:03:33+01:00"
+ "fetched": "2026-11-25T16:39:35+01:00"
 }

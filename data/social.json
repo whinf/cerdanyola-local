@@ -39,7 +39,7 @@
     "published": "2025-12-10",
     "short": false,
     "title": "Presentació Cerdanyola FC 2025/2026",
-    "views": 2238
+    "views": 2248
    },
    {
     "channel": "propera-parada",
@@ -111,7 +111,7 @@
     "published": "2025-10-22",
     "short": false,
     "title": "ALBA II: Together, we build a bright future",
-    "views": 317
+    "views": 318
    },
    {
     "channel": "uab",
@@ -119,7 +119,7 @@
     "published": "2026-11-03",
     "short": false,
     "title": "2a Jornada de Ciència Oberta",
-    "views": 308
+    "views": 312
    },
    {
     "channel": "alba",
@@ -143,7 +143,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Tots els camins portaven a Roma? La xarxa que va transformar un imperi - Veus UAB",
-    "views": 174
+    "views": 175
    },
    {
     "channel": "uab",
@@ -175,7 +175,7 @@
     "published": "2026-11-09",
     "short": false,
     "title": "Promoure la pau en un món amb més guerres - Veus UAB",
-    "views": 138
+    "views": 139
    },
    {
     "channel": "alba",
@@ -195,19 +195,19 @@
    },
    {
     "channel": "uab",
+    "id": "osaPWSb2EkU",
+    "published": "2026-11-09",
+    "short": false,
+    "title": "Treballar amb les màquines: té alguna conseqüència l’ús de la IA en el nostre cervell? - Veus UAB",
+    "views": 126
+   },
+   {
+    "channel": "uab",
     "id": "speX2MSE-04",
     "published": "2026-11-09",
     "short": false,
     "title": "Més enllà del primer esbós. Art, economia i el viatge d’una recerca - Veus UAB",
     "views": 126
-   },
-   {
-    "channel": "uab",
-    "id": "osaPWSb2EkU",
-    "published": "2026-11-09",
-    "short": false,
-    "title": "Treballar amb les màquines: té alguna conseqüència l’ús de la IA en el nostre cervell? - Veus UAB",
-    "views": 125
    },
    {
     "channel": "uab",
@@ -226,20 +226,20 @@
     "views": 86
    },
    {
+    "channel": "uab",
+    "id": "5GWHT7uI0dY",
+    "published": "2026-11-19",
+    "short": false,
+    "title": "La videomemoria de la UAB 2025/2026",
+    "views": 85
+   },
+   {
     "channel": "propera-parada",
     "id": "M61WQAPUto4",
     "published": "2026-06-29",
     "short": false,
     "title": "THE LAST SHOW: Se acabó | 4x16 | Propera Parada",
     "views": 83
-   },
-   {
-    "channel": "uab",
-    "id": "5GWHT7uI0dY",
-    "published": "2026-11-19",
-    "short": false,
-    "title": "La videomemoria de la UAB 2025/2026",
-    "views": 82
    },
    {
     "channel": "propera-parada",
@@ -303,7 +303,7 @@
     "published": "2026-11-04",
     "short": false,
     "title": "TVC26 - ESPORTS I TONI ALVARO_NOMES AIXO",
-    "views": 43
+    "views": 49
    },
    {
     "channel": "ajuntament",
@@ -319,7 +319,7 @@
     "published": "2026-11-04",
     "short": false,
     "title": "TVC21 - 2 programas PLENO MUNICIPAL MUY BUENO, MONTFLORIT...",
-    "views": 24
+    "views": 26
    },
    {
     "channel": "uab",
@@ -327,7 +327,7 @@
     "published": "2026-11-24",
     "short": true,
     "title": "Resum dels Jocs Esportius de la UAB 2026!! 💪🤩",
-    "views": 19
+    "views": 22
    },
    {
     "channel": "ajuntament",
@@ -343,7 +343,7 @@
     "published": "2026-11-04",
     "short": false,
     "title": "TVC25 - PROGRAMA 67 - PEPE COLLADO - ELECCIONS GENERALS",
-    "views": 12
+    "views": 15
    },
    {
     "channel": "ajuntament",
@@ -363,6 +363,22 @@
    },
    {
     "channel": "ajuntament",
+    "id": "DF7Wcp8PfoU",
+    "published": "2026-11-24",
+    "short": false,
+    "title": "TVC32 - PEPE COLLADO XANE XAVI GORDO JOSE LUIS RODRIGUEZ",
+    "views": 11
+   },
+   {
+    "channel": "ajuntament",
+    "id": "XfQO7imjwlw",
+    "published": "2026-11-24",
+    "short": false,
+    "title": "TVC34 - ESPORTS SALILLAS FRAGMENTS TEATRE",
+    "views": 11
+   },
+   {
+    "channel": "ajuntament",
     "id": "so0o_jtLBtA",
     "published": "2026-11-04",
     "short": false,
@@ -371,10 +387,10 @@
    },
    {
     "channel": "ajuntament",
-    "id": "DF7Wcp8PfoU",
+    "id": "fodaFWc0IrE",
     "published": "2026-11-24",
     "short": false,
-    "title": "TVC32 - PEPE COLLADO XANE XAVI GORDO JOSE LUIS RODRIGUEZ",
+    "title": "TVC33 - ESPORTS SALILLAS OTRO LOCUTOR MITICO",
     "views": 9
    },
    {
@@ -387,27 +403,11 @@
    },
    {
     "channel": "ajuntament",
-    "id": "XfQO7imjwlw",
-    "published": "2026-11-24",
-    "short": false,
-    "title": "TVC34 - ESPORTS SALILLAS FRAGMENTS TEATRE",
-    "views": 6
-   },
-   {
-    "channel": "ajuntament",
     "id": "muZqg4CCyqo",
     "published": "2026-11-24",
     "short": false,
     "title": "TVC30 - DEBAT ELECTORAL COLLADO 13 JUNY 86",
-    "views": 6
-   },
-   {
-    "channel": "ajuntament",
-    "id": "fodaFWc0IrE",
-    "published": "2026-11-24",
-    "short": false,
-    "title": "TVC33 - ESPORTS SALILLAS OTRO LOCUTOR MITICO",
-    "views": 5
+    "views": 7
    },
    {
     "channel": "ajuntament",
@@ -415,7 +415,7 @@
     "published": "2026-11-24",
     "short": false,
     "title": "TVC29 - MITINGS POLITICS PUJOL OBIOLS - DEBAT COLLADO ELECCIONS GENERALS ES SUPOSA 86",
-    "views": 4
+    "views": 5
    },
    {
     "channel": "ajuntament",
@@ -427,5 +427,5 @@
    }
   ]
  },
- "fetched": "2026-11-25T04:03:33+01:00"
+ "fetched": "2026-11-25T16:39:35+01:00"
 }

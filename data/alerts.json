@@ -2,6 +2,15 @@
  "data": [
   {
    "lines": [
+    "R4"
+   ],
+   "text": {
+    "ca": "A causa d'una incidència tècnica en un tren a l'estació d'Arc de Triomf, els trens circulen fora del seu horari habitual, amb demores que poden superar els 30 minuts de mitjana.",
+    "es": "A causa de una incidencia técnica en un tren en la estación de Arc de Triomf, los trenes circulan fuera de su horario habitual, con demoras que pueden superar los 30 minutos de media."
+   }
+  },
+  {
+   "lines": [
     "R7"
    ],
    "text": {
@@ -10,5 +19,5 @@
    }
   }
  ],
- "fetched": "2026-11-25T04:03:33+01:00"
+ "fetched": "2026-11-25T16:39:35+01:00"
 }

@@ -1,6 +1,19 @@
 {
  "data": [
   {
+   "company": "Ferronol Servicio Integral S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-25",
+   "hours": "Jornada completa",
+   "salary": [
+    1500,
+    1550
+   ],
+   "title": "Controladors/es d'accesos",
+   "town": "CERDANYOLA DEL VALLÈS",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329568"
+  },
+  {
    "company": "COOPERATIVA DOBLE VIA SCCL",
    "contract": "Contracte laboral temporal (6 mesos)",
    "date": "2026-11-23",
@@ -437,6 +450,30 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325909"
   },
   {
+   "company": "Pollería Román",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-25",
+   "hours": "Jornada intensiva",
+   "salary": [
+    1100
+   ],
+   "title": "Dependiente/a de polleria, charcutería",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329561"
+  },
+  {
+   "company": "Emocional Technologies 22 S.L",
+   "contract": "Contracte laboral temporal (8 mesos)",
+   "date": "2026-11-25",
+   "hours": "Jornada parcial (35 hores - jornada setmanal)",
+   "salary": [
+    1466
+   ],
+   "title": "Técnico/a de acogida- sustitución temporal por navidad",
+   "town": "RIPOLLET",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329566"
+  },
+  {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-20",
@@ -543,19 +580,6 @@
   {
    "company": "Oficina de Treball del SOC",
    "contract": "Contracte laboral indefinit",
-   "date": "2026-11-12",
-   "hours": "Jornada completa",
-   "salary": [
-    1229,
-    1229
-   ],
-   "title": "Operari/ària de repàs i rebobinatge d'etiquetes",
-   "town": "RIPOLLET",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202632143"
-  },
-  {
-   "company": "Oficina de Treball del SOC",
-   "contract": "Contracte laboral indefinit",
    "date": "2026-11-02",
    "hours": "Jornada completa",
    "salary": [
@@ -617,6 +641,58 @@
    "title": "Administratiu/iva comptable",
    "town": "RIPOLLET",
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92327233"
+  },
+  {
+   "company": "GRUP CATALA DE TREBALL, ETT, S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-25",
+   "hours": "Jornada completa",
+   "salary": [
+    1600,
+    1800
+   ],
+   "title": "Técnico/a calidad alimentaria",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329629"
+  },
+  {
+   "company": "GRUP CATALA DE TREBALL, ETT, S.L.",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-25",
+   "hours": "Jornada completa",
+   "salary": [
+    2500,
+    3100
+   ],
+   "title": "Controller industrial",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329654"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-25",
+   "hours": "Jornada completa",
+   "salary": [
+    2475,
+    2475
+   ],
+   "title": "Tècnic/a manteniment industrial",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202633053"
+  },
+  {
+   "company": "Oficina de Treball del SOC",
+   "contract": "Contracte laboral indefinit",
+   "date": "2026-11-25",
+   "hours": "Jornada completa",
+   "salary": [
+    2375,
+    2375
+   ],
+   "title": "Operari/ària de producció",
+   "town": "MONTCADA I REIXAC",
+   "url": "https://feinaactiva.gencat.cat/search/offers/detail/09202633109"
   },
   {
    "company": "Empresa de mantenimiento y reparación",
@@ -1904,5 +1980,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-25T04:03:33+01:00"
+ "fetched": "2026-11-25T16:39:35+01:00"
 }
