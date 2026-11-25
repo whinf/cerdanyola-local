@@ -5,6 +5,7 @@ export const SITES = {
   cer: 'https://cerdanyola.horaverda.es',
   sc: 'https://santcugat.horaverda.es',
   se: 'https://santesteve.horaverda.es',
+  vd: 'https://vilassar.horaverda.es',
   osm: 'https://onestudioman.horaverda.es',
 };
 
