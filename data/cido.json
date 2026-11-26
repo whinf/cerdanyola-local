@@ -463,6 +463,28 @@
    "url": "https://cido.diba.cat/oposicions/22522138"
   },
   {
+   "end": "2026-12-02",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador postdoctoral amb destinació a l'Institut de Neurociències",
+   "url": "https://cido.diba.cat/oposicions/22565623"
+  },
+  {
+   "end": "2026-12-02",
+   "group": "C2",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic especialista de Suport a la Recerca al Departament de Filologia Anglesa i Germanística",
+   "url": "https://cido.diba.cat/oposicions/22566126"
+  },
+  {
    "end": "2026-12-03",
    "group": "A2",
    "kind": "Funcionari interí",
@@ -717,6 +739,50 @@
   },
   {
    "end": "2026-12-08",
+   "group": "A",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Gestor d'innovació",
+   "url": "https://cido.diba.cat/oposicions/22563324"
+  },
+  {
+   "end": "2026-12-08",
+   "group": "A",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Gestor d'innovació",
+   "url": "https://cido.diba.cat/oposicions/22563349"
+  },
+  {
+   "end": "2026-12-08",
+   "group": "A",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Gestor d'innovació",
+   "url": "https://cido.diba.cat/oposicions/22563420"
+  },
+  {
+   "end": "2026-12-08",
+   "group": "A",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Gestor d'innovació",
+   "url": "https://cido.diba.cat/oposicions/22563455"
+  },
+  {
+   "end": "2026-12-08",
    "group": "A1",
    "kind": "Laboral temporal",
    "km": 7.4,
@@ -780,6 +846,17 @@
    "pool": false,
    "title": "1 plaça de Professor titular d'universitat per a l'Àrea de coneixement: Anatomia i Embriologia Humana (ATU01201)",
    "url": "https://cido.diba.cat/oposicions/22469984"
+  },
+  {
+   "end": "2026-12-10",
+   "group": "C2",
+   "kind": "Interí o temporal",
+   "km": 13.5,
+   "org": "Ajuntament de Terrassa - Eco-equip, SAM",
+   "places": 0,
+   "pool": true,
+   "title": "Borsa de treball de places de Mecànics de taller",
+   "url": "https://cido.diba.cat/oposicions/22563590"
   },
   {
    "end": "2026-12-11",
@@ -890,6 +967,28 @@
    "pool": false,
    "title": "2 places de Responsable tècnic de zona de la Vicegerència d'Infraestructures i Serveis (L00083)",
    "url": "https://cido.diba.cat/oposicions/22548503"
+  },
+  {
+   "end": "2026-12-16",
+   "group": "A1",
+   "kind": "Funcionari",
+   "km": 9.8,
+   "org": "Consell Comarcal del Vallès Occidental",
+   "places": 2,
+   "pool": true,
+   "title": "2 places de Tècnic superior en Dret",
+   "url": "https://cido.diba.cat/oposicions/21705187"
+  },
+  {
+   "end": "2026-12-16",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador postdoctoral amb destinació a l'Institut de Biotecnologia i Biomedicina",
+   "url": "https://cido.diba.cat/oposicions/22565599"
   },
   {
    "end": "2026-12-18",
@@ -1343,5 +1442,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-26T03:14:29+01:00"
+ "fetched": "2026-11-26T16:21:40+01:00"
 }

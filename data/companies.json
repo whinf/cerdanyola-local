@@ -2,6 +2,15 @@
  "data": {
   "events": [
    {
+    "activity": "La promocion inmobiliaria; las actividades de los agentes de la propiedad inmobiliaria; la compraventa de bienes…",
+    "capital": 3000.0,
+    "date": "2026-11-26",
+    "id": "2026-11-26-533988-new",
+    "kind": "new",
+    "name": "CALMA DE MAR 2026 S.L.",
+    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-227-08"
+   },
+   {
     "activity": "La actividad inmobiliaria en general entendida en su mas amplia acepcion, asi como tambien la promocion de todo tipo…",
     "capital": 3000.0,
     "date": "2026-11-25",
@@ -732,13 +741,14 @@
    "B 666895": "COR CREATIVE FOOD S.L.",
    "B 666945": "AMIRAT GLOBAL S.L.",
    "B 666975": "ESPAIBUILDINGS 26 S.L.",
+   "B 667215": "CALMA DE MAR 2026 S.L.",
    "B 69842": "TORRAGABE SA",
    "B 7054": "XR 66 SA",
    "B 9475": "ESTRUCTURAS Y OBRAS CERDANYOLA SA",
    "B 96163": "OLIMPIC CHUS SL"
   },
-  "last": "2026-11-25",
+  "last": "2026-11-26",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-26T03:14:29+01:00"
+ "fetched": "2026-11-26T16:21:40+01:00"
 }

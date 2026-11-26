@@ -4,59 +4,59 @@
    {
     "date": "2026-11-26",
     "rain_mm": 0.0,
-    "symbol": "fair_day",
+    "symbol": "cloudy",
     "tmax": 15,
-    "tmin": 5,
-    "wind_kmh": 17
+    "tmin": 6,
+    "wind_kmh": 16
    },
    {
     "date": "2026-11-27",
     "rain_mm": 0.0,
     "symbol": "clearsky_day",
-    "tmax": 13,
+    "tmax": 14,
     "tmin": 4,
-    "wind_kmh": 14
+    "wind_kmh": 13
    },
    {
     "date": "2026-11-28",
     "rain_mm": 0.0,
     "symbol": "clearsky_day",
-    "tmax": 13,
+    "tmax": 14,
     "tmin": 3,
     "wind_kmh": 9
    },
    {
     "date": "2026-11-29",
-    "rain_mm": 0.2,
+    "rain_mm": 0.1,
     "symbol": "cloudy",
-    "tmax": 13,
-    "tmin": 8,
-    "wind_kmh": 5
-   },
-   {
-    "date": "2026-11-30",
-    "rain_mm": 0.2,
-    "symbol": "fair_day",
-    "tmax": 15,
+    "tmax": 14,
     "tmin": 6,
     "wind_kmh": 7
    },
    {
+    "date": "2026-11-30",
+    "rain_mm": 1.3,
+    "symbol": "partlycloudy_day",
+    "tmax": 14,
+    "tmin": 9,
+    "wind_kmh": 6
+   },
+   {
     "date": "2026-12-01",
     "rain_mm": 0.0,
-    "symbol": "clearsky_day",
+    "symbol": "partlycloudy_day",
     "tmax": 13,
-    "tmin": 5,
+    "tmin": 6,
     "wind_kmh": 8
    }
   ],
   "now": {
-   "symbol": "clearsky_night",
-   "temp": 7.4,
-   "time": "2026-11-26T03:00:00+01:00",
-   "wind_kmh": 17
+   "symbol": "cloudy",
+   "temp": 14.6,
+   "time": "2026-11-26T16:00:00+01:00",
+   "wind_kmh": 9
   },
-  "updated": "2026-11-26T01:17:48Z"
+  "updated": "2026-11-26T13:17:05Z"
  },
- "fetched": "2026-11-26T03:14:29+01:00"
+ "fetched": "2026-11-26T16:21:40+01:00"
 }

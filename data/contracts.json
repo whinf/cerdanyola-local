@@ -1,6 +1,62 @@
 {
  "data": [
   {
+   "amount": 340240.0,
+   "date": "2026-11-25",
+   "deadline": "2026-12-16T11:00",
+   "id": "208087/2026-18 ICN2",
+   "lots": 0,
+   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "phase": "Anunci de licitació",
+   "title": "Suministro, instalación y puesta en marcha de un sistema de microscopía de fuerza atómica con carga automatizada, integrado en una caja de guantes y apto para la medida del potencial de superficie, destinado al institut català de nanociènci",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b4055ef-d636-4cdb-8bd8-e6c04a54418d/300949959",
+   "winners": []
+  },
+  {
+   "amount": 260158.03,
+   "date": "2026-11-25",
+   "deadline": "2026-09-18T14:00",
+   "id": "11778989/1/2026",
+   "lots": 0,
+   "organ": "Vila Universitària, SL",
+   "phase": "Adjudicació",
+   "title": "Contracte de serveis de jardineria dels espais de la Vila Universitària",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/84fbcfd3-dea7-4d15-8983-cf95bccde0c5/300948803",
+   "winners": [
+    "AMBIENTALIA WORLD SL"
+   ]
+  },
+  {
+   "amount": 22000.0,
+   "date": "2026-11-25",
+   "deadline": "2026-12-14T13:00",
+   "id": "11061850/.CONTR-51/2026",
+   "lots": 0,
+   "organ": "Universitat Autònoma de Barcelona",
+   "phase": "Anunci de licitació",
+   "title": ".CONTR-51/2026-Subministrament d’un vehicle elèctric tipus furgó XL per a la Facultat de Veterinària de la Universitat Autònoma de Barcelona",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/acf06d95-ec72-4533-8cf6-2fc66cd0b3ff/300951020",
+   "winners": []
+  },
+  {
+   "amount": 28898.2,
+   "date": "2026-11-25",
+   "deadline": "2026-11-04T14:00",
+   "id": "100000101/08037292/2027/01",
+   "lots": 0,
+   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
+   "phase": "Adjudicació",
+   "title": "Servei de neteja de CEEPSIR CFT Flor de Maig",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e6e8bd60-ea9b-4953-8e92-5813c5492214/300950262",
+   "winners": [
+    "Higserguiss SL"
+   ]
+  },
+  {
    "amount": 2854.29,
    "date": "2026-11-24",
    "deadline": "2026-11-19T23:59",
@@ -236,19 +292,6 @@
    "winners": []
   },
   {
-   "amount": 30316.23,
-   "date": "2026-11-20",
-   "deadline": "2026-11-04T14:00",
-   "id": "100000101/08037292/2027/01",
-   "lots": 0,
-   "organ": "Centres educatius - Serveis Territorials al Vallès Occidental",
-   "phase": "Expedient en avaluació",
-   "title": "Servei de neteja de CEEPSIR CFT Flor de Maig",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/e6e8bd60-ea9b-4953-8e92-5813c5492214/300945034",
-   "winners": []
-  },
-  {
    "amount": 470000.0,
    "date": "2026-11-19",
    "deadline": "2026-12-22T14:00",
@@ -337,19 +380,6 @@
    "title": "Subministrament de materials de ferreteria, fontaneria i jardineria, en dos lots",
    "type": "Subministraments",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/9f6ca567-af69-4e37-a9b5-952e63c1e150/300942186",
-   "winners": []
-  },
-  {
-   "amount": 340240.0,
-   "date": "2026-11-17",
-   "deadline": "2026-12-16T11:00",
-   "id": "208087/2026-18 ICN2",
-   "lots": 0,
-   "organ": "Fundació Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "phase": "Anunci de licitació",
-   "title": "Suministro, instalación y puesta en marcha de un sistema de microscopía de fuerza atómica con carga automatizada, integrado en una caja de guantes y apto para la medida del potencial de superficie, destinado al institut català de nanociènci",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/4b4055ef-d636-4cdb-8bd8-e6c04a54418d/300939484",
    "winners": []
   },
   {
@@ -633,19 +663,6 @@
    "winners": [
     "TOT CARRER, SL"
    ]
-  },
-  {
-   "amount": 299129.71,
-   "date": "2026-11-10",
-   "deadline": "2026-09-18T14:00",
-   "id": "11778989/1/2026",
-   "lots": 0,
-   "organ": "Vila Universitària, SL",
-   "phase": "Expedient en avaluació",
-   "title": "Contracte de serveis de jardineria dels espais de la Vila Universitària",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/84fbcfd3-dea7-4d15-8983-cf95bccde0c5/300934218",
-   "winners": []
   },
   {
    "amount": 199887.01,
@@ -5596,5 +5613,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-26T03:14:29+01:00"
+ "fetched": "2026-11-26T16:21:40+01:00"
 }
