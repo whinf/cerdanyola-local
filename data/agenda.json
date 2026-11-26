@@ -63,36 +63,6 @@
    },
    {
     "category": "",
-    "end": "2026-11-25",
-    "place": "Sala Cinema de la UAB",
-    "source": "uab",
-    "start": "2026-11-25",
-    "time": "12:30",
-    "title": "Presentació i projecció del curtmetratge \"Kokuhaku\" d'Adrià Guxens",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/presentacio-i-projeccio-del-curtmetratge-kokuhaku-d-adria-guxens-1345828727816.html?detid=1346006682360"
-   },
-   {
-    "category": "",
-    "end": "2026-11-25",
-    "place": "Sala Teatre UAB",
-    "source": "uab",
-    "start": "2026-11-25",
-    "time": "13:30",
-    "title": "\"Cor, imatge, mirada\" un taller de dansa obert a tota la comunitat",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/cor-imatge-mirada-un-taller-de-dansa-obert-a-tota-la-comunitat-1345828727816.html?detid=1346006577094"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-25",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-25",
-    "time": "18:00",
-    "title": "Acte central 25N Dia Internacional contra les Violències Masclistes",
-    "url": "https://www.cerdanyola.cat/agenda/acte-central-25n-dia-internacional-contra-les-violencies-masclistes-4"
-   },
-   {
-    "category": "",
     "end": "2026-11-26",
     "place": "Sala Teatre UAB",
     "source": "uab",
@@ -240,7 +210,7 @@
     "start": "2026-11-28",
     "time": "20:00",
     "title": "Teatre 'Federico García'",
-    "url": "https://www.cerdanyola.cat/agenda/teatre-federico-garcia"
+    "url": "https://www.cerdanyola.cat/agenda/teatre-federico-garcia-0"
    },
    {
     "category": "Infància",
@@ -671,5 +641,5 @@
    }
   ]
  },
- "fetched": "2026-11-25T16:39:35+01:00"
+ "fetched": "2026-11-26T03:14:29+01:00"
 }

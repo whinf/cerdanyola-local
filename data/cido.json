@@ -1,39 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-25",
-   "group": "A2",
-   "kind": "Funcionari",
-   "km": 9.1,
-   "org": "Ajuntament de Rubí",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça de Tècnic de gestió",
-   "url": "https://cido.diba.cat/oposicions/22445867"
-  },
-  {
-   "end": "2026-11-25",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 5.6,
-   "org": "Fundació Institut Català de Paleontologia Miquel Crusafont (ICP Miquel Crusafont)",
-   "places": 3,
-   "pool": false,
-   "title": "3 places d'Investigador Postdoctoral \"Lourdes Casanovas\"",
-   "url": "https://cido.diba.cat/oposicions/22438424"
-  },
-  {
-   "end": "2026-11-25",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 5.6,
-   "org": "Fundació Institut Català de Paleontologia Miquel Crusafont (ICP Miquel Crusafont)",
-   "places": 3,
-   "pool": false,
-   "title": "3 places de Postdoctoral Researcher - Lourdes Casanovas Postdoctoral Contracts Program",
-   "url": "https://cido.diba.cat/oposicions/22444469"
-  },
-  {
    "end": "2026-11-26",
    "group": "A2",
    "kind": "Laboral",
@@ -1376,5 +1343,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-25T16:39:35+01:00"
+ "fetched": "2026-11-26T03:14:29+01:00"
 }

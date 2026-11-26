@@ -715,8 +715,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
    ]
   },
   {
@@ -860,8 +860,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "ASSOCIACIO PLASTICFREEWARE",
-    "FUNBRAIN, SL"
+    "FUNBRAIN, SL",
+    "ASSOCIACIO PLASTICFREEWARE"
    ]
   },
   {
@@ -5570,21 +5570,6 @@
    ]
   },
   {
-   "amount": 49876.7,
-   "date": "2025-10-21",
-   "deadline": "2025-03-07T13:00",
-   "id": "11061850/CONTR-3/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Execució",
-   "title": "Obres d’Instal·lació de dos equips d’electròlisi de baixa salinitat per a la generació de clor neutre, a la piscina gran del Servei d’Activitat Física de la Universitat Autònoma de Barcelona",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/dd0ea763-fa93-422d-b517-31b94cc25367/300726393",
-   "winners": [
-    "EQUICLOR, S.L."
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5611,5 +5596,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-25T16:39:35+01:00"
+ "fetched": "2026-11-26T03:14:29+01:00"
 }

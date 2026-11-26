@@ -1472,19 +1472,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329419"
   },
   {
-   "company": "ARAMARK",
-   "contract": "Contracte laboral temporal (2 mesos)",
-   "date": "2026-11-20",
-   "hours": "Jornada completa",
-   "salary": [
-    1600,
-    1600
-   ],
-   "title": "Cocineros/as - educación - empresa",
-   "town": "SANT CUGAT DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329261"
-  },
-  {
    "company": "AJUNTAMENT DE RUBI",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-19",
@@ -1980,5 +1967,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-25T16:39:35+01:00"
+ "fetched": "2026-11-26T03:14:29+01:00"
 }

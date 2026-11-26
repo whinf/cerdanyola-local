@@ -547,40 +547,6 @@
     "kind": "new",
     "name": "CONSAP INNOVA S.L.",
     "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-145-08"
-   },
-   {
-    "date": "2026-07-28",
-    "id": "2026-07-28-351917-moved_in",
-    "kind": "moved_in",
-    "name": "CATALONIAROCK S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-143-08"
-   },
-   {
-    "activity": "La comercializacion, distribucion, importacion, exportacion, compraventa y venta al por mayor y al por menor de toda…",
-    "capital": 3000.0,
-    "date": "2026-07-28",
-    "id": "2026-07-28-351760-new",
-    "kind": "new",
-    "name": "TORRE DEL PI INDUSTRIAL S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-143-08"
-   },
-   {
-    "activity": "Objeto principal: compraventa de vehiculos. venta de automoviles y vehiculos de motor ligeros nuevos y usados. cnae…",
-    "capital": 4000.0,
-    "date": "2026-07-28",
-    "id": "2026-07-28-351699-new",
-    "kind": "new",
-    "name": "DEWAN GROUP 1954 S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-143-08"
-   },
-   {
-    "activity": "Otras actividades de telecomunicaciones",
-    "capital": 3000.0,
-    "date": "2026-07-28",
-    "id": "2026-07-28-351690-new",
-    "kind": "new",
-    "name": "GREEN TRAFFIC SOLUTIONS S.L.",
-    "url": "https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-143-08"
    }
   ],
   "known": {
@@ -774,5 +740,5 @@
   "last": "2026-11-25",
   "since": "2025-10-25"
  },
- "fetched": "2026-11-25T16:39:35+01:00"
+ "fetched": "2026-11-26T03:14:29+01:00"
 }
