@@ -63,76 +63,6 @@
    },
    {
     "category": "",
-    "end": "2026-11-26",
-    "place": "Sala Teatre UAB",
-    "source": "uab",
-    "start": "2026-11-26",
-    "time": "17:00",
-    "title": "Concert homenatge a Narcisa Freixas \"de Sabadell a París\"",
-    "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/concert-homenatge-a-narcisa-freixas-de-sabadell-a-paris-1345828727816.html?detid=1346005239500"
-   },
-   {
-    "category": "Conferències",
-    "end": "2026-11-26",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-26",
-    "time": "17:30",
-    "title": "Taller 'Malestars emocionals i salut mental. Com fer una detecció precoç i un bon acompanyament en població preadolescent, adolescent i jove'",
-    "url": "https://www.cerdanyola.cat/agenda/taller-malestars-emocionals-i-salut-mental-com-fer-una-deteccio-precoc-i-un-bon-acompanyament"
-   },
-   {
-    "category": "Altres activitats",
-    "end": "2026-11-26",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-26",
-    "time": "19:00",
-    "title": "Empíric Festival. Club de lectura de ciència -ficció",
-    "url": "https://www.cerdanyola.cat/agenda/empiric-festival-club-de-lectura-de-ciencia-ficcio"
-   },
-   {
-    "category": "Conferències",
-    "end": "2026-11-26",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-26",
-    "time": "19:00",
-    "title": "Xerrada amb la fotògrafa Paroma Basu",
-    "url": "https://www.cerdanyola.cat/agenda/xerrada-amb-la-fotografa-paroma-basu"
-   },
-   {
-    "category": "",
-    "end": "2026-11-26",
-    "place": "Ateneu de Cerdanyola",
-    "source": "afocer",
-    "start": "2026-11-26",
-    "time": "19:00",
-    "title": "Xerrada de la fotoperiodista Paroma Basu",
-    "url": "https://afocer.cat/event/xerrada-de-la-fotoperiodista-paroma-basu/"
-   },
-   {
-    "category": "Activitats polítiques",
-    "end": "2026-11-26",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-26",
-    "time": "19:30",
-    "title": "Ple Municipal de novembre de 2026",
-    "url": "https://www.cerdanyola.cat/agenda/ple-municipal-de-novembre-de-2026"
-   },
-   {
-    "category": "Cinema",
-    "end": "2026-11-26",
-    "place": "",
-    "source": "ajuntament",
-    "start": "2026-11-26",
-    "time": "20:30",
-    "title": "Cinema: Manas",
-    "url": "https://www.cerdanyola.cat/agenda/cinema-manas"
-   },
-   {
-    "category": "",
     "end": "2026-11-27",
     "place": "Sala Cinema UAB",
     "source": "uab",
@@ -140,6 +70,26 @@
     "time": "10:00",
     "title": "Projecció del film \"Pequeña Miss Sunshine\" de Valerie Faris i Jonathan Dayton",
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/projeccio-del-film-pequena-miss-sunshine-de-valerie-faris-i-jonathan-dayton-1345828727816.html?detid=1346006685183"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-27",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-27",
+    "time": "17:00",
+    "title": "Parc de Nadal",
+    "url": "https://www.cerdanyola.cat/agenda/parc-de-nadal-2"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-11-27",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-11-27",
+    "time": "17:00",
+    "title": "Trenet de Nadal",
+    "url": "https://www.cerdanyola.cat/agenda/trenet-de-nadal-3"
    },
    {
     "category": "Festes populars",
@@ -178,8 +128,8 @@
     "source": "ajuntament",
     "start": "2026-11-28",
     "time": "10:00",
-    "title": "Activitats de Nadal de Promoció de la Ciclomobilitat",
-    "url": "https://www.cerdanyola.cat/agenda/activitats-de-nadal-de-promocio-de-la-ciclomobilitat"
+    "title": "Activitats de Promoció de la Ciclomobilitat",
+    "url": "https://www.cerdanyola.cat/agenda/activitats-de-promocio-de-la-ciclomobilitat"
    },
    {
     "category": "",
@@ -363,6 +313,16 @@
     "url": "https://www.uab.cat/web/agenda/detall-de-l-activitat/la-democracia-en-accio-com-podem-enfortir-la-democracia-i-la-participacio-ciutadana-1345828727816.html?detid=1346004183755"
    },
    {
+    "category": "Infància",
+    "end": "2026-12-04",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-12-04",
+    "time": "17:00",
+    "title": "El Laboratori de la Fada Alba",
+    "url": "https://www.cerdanyola.cat/agenda/el-laboratori-de-la-fada-alba-3"
+   },
+   {
     "category": "Altres activitats",
     "end": "2026-12-04",
     "place": "",
@@ -381,6 +341,16 @@
     "time": "10:30",
     "title": "Ca n'Oliver, un poblat ibèric laietà",
     "url": "https://www.cerdanyola.cat/agenda/ca-noliver-un-poblat-iberic-laieta-21"
+   },
+   {
+    "category": "Altres activitats",
+    "end": "2026-12-06",
+    "place": "",
+    "source": "ajuntament",
+    "start": "2026-12-06",
+    "time": "18:00",
+    "title": "Inauguració del Parc de Nadal",
+    "url": "https://www.cerdanyola.cat/agenda/inauguracio-del-parc-de-nadal-0"
    },
    {
     "category": "Altres activitats",
@@ -791,5 +761,5 @@
    }
   ]
  },
- "fetched": "2026-11-26T16:21:40+01:00"
+ "fetched": "2026-11-27T03:14:00+01:00"
 }

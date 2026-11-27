@@ -7,7 +7,7 @@
     "published": "2026-04-09",
     "short": true,
     "title": "El KEBAB ORIGINAL: ¿qué lleva? #kebab #original #recetas #podcast",
-    "views": 37830
+    "views": 37839
    },
    {
     "channel": "propera-parada",
@@ -15,7 +15,7 @@
     "published": "2026-04-05",
     "short": true,
     "title": "¿Es verdad que el padre de Omar Montes introdujo el kebab en España? 🤔",
-    "views": 22587
+    "views": 22589
    },
    {
     "channel": "propera-parada",
@@ -23,7 +23,7 @@
     "published": "2026-03-21",
     "short": true,
     "title": "Torrente en Cataluña 🔥 #humor",
-    "views": 5459
+    "views": 5462
    },
    {
     "channel": "propera-parada",
@@ -31,7 +31,7 @@
     "published": "2026-04-03",
     "short": true,
     "title": "¿KEBAB = FAST FOOD? #kebab #fastfood #burgerking #mcdonalds",
-    "views": 2513
+    "views": 2515
    },
    {
     "channel": "cerdanyola-fc",
@@ -39,7 +39,7 @@
     "published": "2025-12-10",
     "short": false,
     "title": "Presentació Cerdanyola FC 2025/2026",
-    "views": 2256
+    "views": 2267
    },
    {
     "channel": "propera-parada",
@@ -47,7 +47,7 @@
     "published": "2026-05-10",
     "short": true,
     "title": "¿Quién escribe mejor 'Jordi Wild' o 'Arturo Pérez Reverte'?",
-    "views": 2208
+    "views": 2213
    },
    {
     "channel": "propera-parada",
@@ -55,7 +55,7 @@
     "published": "2026-03-10",
     "short": true,
     "title": "Envía esta canción a tu amigo que apuesta por el Barça 🤑💙❤️",
-    "views": 1618
+    "views": 1621
    },
    {
     "channel": "propera-parada",
@@ -63,7 +63,7 @@
     "published": "2026-07-09",
     "short": true,
     "title": "La canción para NO PAGAR a medias 🎤🎶",
-    "views": 1366
+    "views": 1368
    },
    {
     "channel": "uab",
@@ -79,7 +79,7 @@
     "published": "2026-06-25",
     "short": true,
     "title": "Installation of the Insertion Device for the new ALBA beamline: 3Sbar",
-    "views": 789
+    "views": 790
    },
    {
     "channel": "alba",
@@ -87,7 +87,7 @@
     "published": "2025-11-28",
     "short": true,
     "title": "Unboxing the brand new 3Sbar detector!",
-    "views": 667
+    "views": 668
    },
    {
     "channel": "propera-parada",
@@ -95,7 +95,7 @@
     "published": "2026-03-26",
     "short": false,
     "title": "Anees Jilanis: Kebab casero, orígenes y tradición | 4x10 | Propera Parada",
-    "views": 538
+    "views": 539
    },
    {
     "channel": "propera-parada",
@@ -111,15 +111,7 @@
     "published": "2026-11-03",
     "short": false,
     "title": "2a Jornada de Ciència Oberta",
-    "views": 324
-   },
-   {
-    "channel": "alba",
-    "id": "Jwp_vDJJHpI",
-    "published": "2025-10-22",
-    "short": false,
-    "title": "ALBA II: Together, we build a bright future",
-    "views": 321
+    "views": 330
    },
    {
     "channel": "alba",
@@ -136,6 +128,14 @@
     "short": false,
     "title": "Entendre l’univers mitjançant els neutrins - Veus UAB",
     "views": 224
+   },
+   {
+    "channel": "ajuntament",
+    "id": "EvSP924EHXw",
+    "published": "2026-11-23",
+    "short": false,
+    "title": "Ple en directe Aj. Cerdanyola del Vallès 26 de Novembre del 2026",
+    "views": 208
    },
    {
     "channel": "uab",
@@ -218,12 +218,20 @@
     "views": 113
    },
    {
+    "channel": "ajuntament",
+    "id": "HU2fKwO9934",
+    "published": "2026-11-26",
+    "short": false,
+    "title": "Audiència Ciutadana en directe Aj. Cerdanyola del Vallès 26- Novembre- 2026",
+    "views": 107
+   },
+   {
     "channel": "uab",
     "id": "5GWHT7uI0dY",
     "published": "2026-11-19",
     "short": false,
     "title": "La videomemoria de la UAB 2025/2026",
-    "views": 89
+    "views": 94
    },
    {
     "channel": "propera-parada",
@@ -255,7 +263,15 @@
     "published": "2026-11-04",
     "short": true,
     "title": "Mercat de pagès de la UAB!🧑‍🌾",
-    "views": 61
+    "views": 64
+   },
+   {
+    "channel": "propera-parada",
+    "id": "URyckXmR-8Y",
+    "published": "2026-03-17",
+    "short": true,
+    "title": "Canción educativa para usar protección 😇",
+    "views": 56
    },
    {
     "channel": "propera-parada",
@@ -266,14 +282,6 @@
     "views": 56
    },
    {
-    "channel": "propera-parada",
-    "id": "URyckXmR-8Y",
-    "published": "2026-03-17",
-    "short": true,
-    "title": "Canción educativa para usar protección 😇",
-    "views": 54
-   },
-   {
     "channel": "uab",
     "id": "7itq-hEWZ-0",
     "published": "2026-11-09",
@@ -282,19 +290,19 @@
     "views": 53
    },
    {
-    "channel": "alba",
-    "id": "I2N3SZe6om0",
-    "published": "2026-07-22",
-    "short": false,
-    "title": "ALBA Workshop | Technology services for semiconductor industries and quantum technologies",
-    "views": 51
-   },
-   {
     "channel": "ajuntament",
     "id": "ozZheipnz3k",
     "published": "2026-11-04",
     "short": false,
     "title": "TVC26 - ESPORTS I TONI ALVARO_NOMES AIXO",
+    "views": 52
+   },
+   {
+    "channel": "alba",
+    "id": "I2N3SZe6om0",
+    "published": "2026-07-22",
+    "short": false,
+    "title": "ALBA Workshop | Technology services for semiconductor industries and quantum technologies",
     "views": 51
    },
    {
@@ -311,7 +319,7 @@
     "published": "2026-11-24",
     "short": false,
     "title": "TVC28 - ESPORTS I ANUNCIS",
-    "views": 35
+    "views": 36
    },
    {
     "channel": "uab",
@@ -319,7 +327,7 @@
     "published": "2026-11-24",
     "short": true,
     "title": "Resum dels Jocs Esportius de la UAB 2026!! 💪🤩",
-    "views": 32
+    "views": 34
    },
    {
     "channel": "ajuntament",
@@ -331,19 +339,19 @@
    },
    {
     "channel": "ajuntament",
-    "id": "_HibFzx08qE",
-    "published": "2026-11-04",
-    "short": false,
-    "title": "TVC24 - ESPORTS HOQUEI ENTREVISTES GONZALEZ I ALTRES",
-    "views": 20
-   },
-   {
-    "channel": "ajuntament",
     "id": "DF7Wcp8PfoU",
     "published": "2026-11-24",
     "short": false,
     "title": "TVC32 - PEPE COLLADO XANE XAVI GORDO JOSE LUIS RODRIGUEZ",
-    "views": 19
+    "views": 22
+   },
+   {
+    "channel": "ajuntament",
+    "id": "_HibFzx08qE",
+    "published": "2026-11-04",
+    "short": false,
+    "title": "TVC24 - ESPORTS HOQUEI ENTREVISTES GONZALEZ I ALTRES",
+    "views": 22
    },
    {
     "channel": "ajuntament",
@@ -351,7 +359,7 @@
     "published": "2026-11-24",
     "short": false,
     "title": "TVC34 - ESPORTS SALILLAS FRAGMENTS TEATRE",
-    "views": 18
+    "views": 19
    },
    {
     "channel": "ajuntament",
@@ -360,14 +368,6 @@
     "short": false,
     "title": "TVC25 - PROGRAMA 67 - PEPE COLLADO - ELECCIONS GENERALS",
     "views": 16
-   },
-   {
-    "channel": "ajuntament",
-    "id": "rXBi1ILAjUg",
-    "published": "2026-11-04",
-    "short": false,
-    "title": "TVC19 - Alvaro Pirata - Pleno Municipal - XIII Aplec Sardana",
-    "views": 15
    },
    {
     "channel": "ajuntament",
@@ -416,16 +416,8 @@
     "short": false,
     "title": "TVC29 - MITINGS POLITICS PUJOL OBIOLS - DEBAT COLLADO ELECCIONS GENERALS ES SUPOSA 86",
     "views": 5
-   },
-   {
-    "channel": "ajuntament",
-    "id": "HU2fKwO9934",
-    "published": "2026-11-23",
-    "short": false,
-    "title": "Audiència Ciutadana en directe Aj. Cerdanyola del Vallès 26- Novembre- 2026",
-    "views": 0
    }
   ]
  },
- "fetched": "2026-11-26T16:21:40+01:00"
+ "fetched": "2026-11-27T03:14:00+01:00"
 }

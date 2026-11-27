@@ -1,50 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-26",
-   "group": "A2",
-   "kind": "Laboral",
-   "km": 6.0,
-   "org": "Ajuntament de Santa Perpètua de Mogoda",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça d'Educador social",
-   "url": "https://cido.diba.cat/oposicions/22402164"
-  },
-  {
-   "end": "2026-11-26",
-   "group": "Agrupacions professionals",
-   "kind": "Laboral temporal",
-   "km": 8.6,
-   "org": "Entitat Municipal Descentralitzada de Valldoreix",
-   "places": 2,
-   "pool": true,
-   "title": "2 places de Peó de la brigada d'obres i serveis. Pla d'ocupació 2026-2027",
-   "url": "https://cido.diba.cat/oposicions/22144148"
-  },
-  {
-   "end": "2026-11-26",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Research Assistant - NanoElectrocatalysis and Sustainable Chemistry",
-   "url": "https://cido.diba.cat/oposicions/22485071"
-  },
-  {
-   "end": "2026-11-26",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Research support technician - Nanoestructures",
-   "url": "https://cido.diba.cat/oposicions/22485049"
-  },
-  {
    "end": "2026-11-27",
    "group": "A2",
    "kind": "Laboral temporal",
@@ -1442,5 +1398,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-26T16:21:40+01:00"
+ "fetched": "2026-11-27T03:14:00+01:00"
 }

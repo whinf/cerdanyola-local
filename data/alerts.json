@@ -2,15 +2,6 @@
  "data": [
   {
    "lines": [
-    "R4"
-   ],
-   "text": {
-    "ca": "Circulació amb demores que poden superar els 25 minuts, a causa d'una incidència ja resolta.",
-    "es": "Circulación con demoras que pueden superar los 25 minutos, a causa de una incidencia ya resuelta."
-   }
-  },
-  {
-   "lines": [
     "R7"
    ],
    "text": {
@@ -19,5 +10,5 @@
    }
   }
  ],
- "fetched": "2026-11-26T16:21:40+01:00"
+ "fetched": "2026-11-27T03:14:00+01:00"
 }

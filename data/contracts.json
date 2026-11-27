@@ -5557,36 +5557,6 @@
    ]
   },
   {
-   "amount": 64525.27,
-   "date": "2025-10-22",
-   "deadline": "2024-01-24T14:00",
-   "id": "16138154/151/2023/006",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Adjudicació",
-   "title": "Obres consistents en “la reforma interior al viver d’empreses del servei de Promoció econòmica”",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/5096332b-7b14-4fe0-84a4-1d6ca1b232e4/300595014",
-   "winners": [
-    "EXPERT LINE, SL"
-   ]
-  },
-  {
-   "amount": 1800.0,
-   "date": "2025-10-22",
-   "deadline": "2025-10-06T15:00",
-   "id": "10423023/2025-CREAF-AS-004-IV00123",
-   "lots": 0,
-   "organ": "Consorci Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
-   "phase": "Adjudicació",
-   "title": "Contratación del servicio de Controlador de Primer Nivel del proyecto Europeo Interreg Euro-MED UrbanGreenLeap para el Centre de Recerca Ecològica i Aplicacions Forestals..",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/d0a77533-cd85-4486-b5b2-1c8a53ce48d5/300595132",
-   "winners": [
-    "EQA Certificados I Mas D Mas I, SL"
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5613,5 +5583,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-26T16:21:40+01:00"
+ "fetched": "2026-11-27T03:14:00+01:00"
 }
