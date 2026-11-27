@@ -709,19 +709,6 @@
   },
   {
    "company": "GRUP CATALA DE TREBALL, ETT, S.L.",
-   "contract": "Contracte laboral temporal (12 mesos)",
-   "date": "2026-11-24",
-   "hours": "Jornada completa",
-   "salary": [
-    1500,
-    1800
-   ],
-   "title": "Administrativo/a (nivel compras básico)",
-   "town": "MONTCADA I REIXAC",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92329510"
-  },
-  {
-   "company": "GRUP CATALA DE TREBALL, ETT, S.L.",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-24",
    "hours": "Jornada completa",
@@ -1371,29 +1358,6 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92326114"
   },
   {
-   "company": "TOYS CENTRE SL",
-   "contract": "Contracte laboral temporal (2 mesos)",
-   "date": "2026-09-28",
-   "hours": "Jornada parcial (20 hores - jornada setmanal)",
-   "salary": [
-    757,
-    757
-   ],
-   "title": "Ajudant de botiga jogueteria - barbera del valles ( baricentro)",
-   "town": "BARBERÀ DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325683"
-  },
-  {
-   "company": "Empresa de logística",
-   "contract": "Contracte laboral indefinit",
-   "date": "2026-09-28",
-   "hours": "Jornada completa",
-   "salary": [],
-   "title": "Conductores/as de tráiler",
-   "town": "BARBERÀ DEL VALLÈS",
-   "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325707"
-  },
-  {
    "company": "Gi Group Spain",
    "contract": "Contracte laboral indefinit",
    "date": "2026-11-27",
@@ -1992,5 +1956,5 @@
    "url": "https://feinaactiva.gencat.cat/search/offers/detail/FA92325911"
   }
  ],
- "fetched": "2026-11-27T16:09:33+01:00"
+ "fetched": "2026-11-28T00:29:17+01:00"
 }

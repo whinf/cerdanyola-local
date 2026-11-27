@@ -1,116 +1,6 @@
 {
  "data": [
   {
-   "end": "2026-11-27",
-   "group": "A2",
-   "kind": "Laboral temporal",
-   "km": 5.5,
-   "org": "Ajuntament de Sant Cugat del Vallès - Organisme Autònom Municipal d'Educació (OAME)",
-   "places": 0,
-   "pool": true,
-   "title": "Borsa de treball de places de Mestre d'escola bressol",
-   "url": "https://cido.diba.cat/oposicions/22409836"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "C2",
-   "kind": "Laboral temporal",
-   "km": 13.1,
-   "org": "Ajuntament de Sentmenat",
-   "places": 1,
-   "pool": true,
-   "title": "1 plaça d'Oficial 2a pintor. Pla Local d'Ocupació",
-   "url": "https://cido.diba.cat/oposicions/22489105"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "Agrupacions professionals",
-   "kind": "Laboral temporal",
-   "km": 13.1,
-   "org": "Ajuntament de Sentmenat",
-   "places": 2,
-   "pool": true,
-   "title": "2 places de Peó de neteja viària. Pla Local d'Ocupació",
-   "url": "https://cido.diba.cat/oposicions/22489102"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "A1",
-   "kind": "Laboral",
-   "km": 13.5,
-   "org": "Ajuntament de Terrassa - Eco-equip, SAM",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic de relacions laborals",
-   "url": "https://cido.diba.cat/oposicions/22498469"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.0,
-   "org": "Centre de Visió per Computador (CVC)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Postdoc on Adaptive Agentic AI",
-   "url": "https://cido.diba.cat/oposicions/22513464"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 7.8,
-   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Facultatiu especialista en Anàlisis Clíniques per al Servei de Laboratoris Clínics",
-   "url": "https://cido.diba.cat/oposicions/22496394"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "A2",
-   "kind": "Laboral",
-   "km": 10.2,
-   "org": "Consorci Sanitari de Terrassa",
-   "places": 5,
-   "pool": false,
-   "title": "5 places d'Infermer d'Atenció Intermèdia Extrahospitalària",
-   "url": "https://cido.diba.cat/oposicions/22405337"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 2.8,
-   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Junior Postdoc - Advanced Electron Nanoscopy (GAeN) Group",
-   "url": "https://cido.diba.cat/oposicions/22491151"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça d'Investigador postdoctoral amb destinació a l'Institut de Neurociències",
-   "url": "https://cido.diba.cat/oposicions/22540923"
-  },
-  {
-   "end": "2026-11-27",
-   "group": "A1",
-   "kind": "Laboral temporal",
-   "km": 3.3,
-   "org": "Universitat Autònoma de Barcelona (UAB)",
-   "places": 1,
-   "pool": false,
-   "title": "1 plaça de Tècnic superior de Suport a la Recerca amb destinació al Departament de Geografia",
-   "url": "https://cido.diba.cat/oposicions/22540958"
-  },
-  {
    "end": "2026-11-29",
    "group": "C2",
    "kind": "Laboral temporal",
@@ -1706,5 +1596,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-27T16:09:33+01:00"
+ "fetched": "2026-11-28T00:29:17+01:00"
 }

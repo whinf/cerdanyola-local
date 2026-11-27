@@ -1455,24 +1455,6 @@
      "business"
     ]
    },
-   "936968": {
-    "budget": 2750000,
-    "checked": "2026-11-27",
-    "end": "",
-    "id": "936968",
-    "level": "AUTONOMICA",
-    "organ": "AGÈNCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (AGAUR)",
-    "purpose": "Educación",
-    "received": "2026-10-21",
-    "region": "CATALUÑA",
-    "start": "2026-10-28",
-    "term": "1 Mesos",
-    "title": "Convocatoria de ayudas a la movilidad internacional del estudiantado con reconocimiento académico y a la movilidad del estudiantado en el marco del Programa de Mejora e Innovación en la Formación de docentes de las universidades catalanas (MOBINT - MIF)",
-    "title_ca": "Convocatòria d'ajuts a la mobilitat internacional de l’estudiantat amb reconeixement acadèmic i a la mobilitat de l’estudiantat en el marc del Programa de millora i innovació en la formació de mestres de les universitats catalanes (MOBINT-MIF)",
-    "who": [
-     "people"
-    ]
-   },
    "937289": {
     "budget": 37628660.23,
     "checked": "2026-11-27",
@@ -2119,24 +2101,6 @@
     "title_ca": "",
     "who": [
      "business"
-    ]
-   },
-   "940450": {
-    "budget": 13200,
-    "checked": "2026-11-27",
-    "end": "",
-    "id": "940450",
-    "level": "LOCAL",
-    "organ": "AYUNTAMIENTO DE CERDANYOLA DEL VALLÈS",
-    "purpose": "Otras actuaciones de carácter económico",
-    "received": "2026-11-06",
-    "region": "CERDANYOLA DEL VALLÈS",
-    "start": "",
-    "term": "Diez días hábiles desde la publicación de la convocatoria en el BOP de Barcelona",
-    "title": "Convocatoria de subvenciones para promocionar, dinamizar y facilitar las actuaciones de las asociaciones de vecinos y vecinas mediante la confinanciación de actividades de interés vecinal, sociocultural y comunitario.",
-    "title_ca": "",
-    "who": [
-     "entities"
     ]
    },
    "940640": {
@@ -2864,42 +2828,6 @@
      "entities"
     ]
    },
-   "943812": {
-    "budget": 60000,
-    "checked": "2026-11-27",
-    "end": "2026-11-27",
-    "id": "943812",
-    "level": "ESTADO",
-    "organ": "SECRETARÍA DE ESTADO DE TURISMO",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-11-20",
-    "region": "MINISTERIO DE INDUSTRIA Y TURISMO",
-    "start": "2026-11-21",
-    "term": "",
-    "title": "Subvención a FEMP, prevista en el RD 1016/2026, de 18 de noviembre, de concesión directa de subv en materia de turismo por el MINTUR, ejercicio 2026",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
-   "943813": {
-    "budget": 80000,
-    "checked": "2026-11-27",
-    "end": "2026-11-27",
-    "id": "943813",
-    "level": "ESTADO",
-    "organ": "SECRETARÍA DE ESTADO DE TURISMO",
-    "purpose": "Comercio, Turismo y Pymes",
-    "received": "2026-11-20",
-    "region": "MINISTERIO DE INDUSTRIA Y TURISMO",
-    "start": "2026-11-21",
-    "term": "",
-    "title": "Subvención a la Confederación Empresarial de Hostelería de España CEHE , prevista en el RD 1016/2026, de 18 de noviembre, de concesión directa de subv en materia de turismo por el MINTUR, ejercicio 2026",
-    "title_ca": "",
-    "who": [
-     "business"
-    ]
-   },
    "943899": {
     "budget": 1000000,
     "checked": "2026-11-23",
@@ -3407,23 +3335,154 @@
      "business",
      "entities"
     ]
+   },
+   "945161": {
+    "budget": 140000,
+    "checked": "2026-11-28",
+    "end": "2027-01-20",
+    "id": "945161",
+    "level": "LOCAL",
+    "organ": "DIPUTACIÓN PROVINCIAL DE BARCELONA",
+    "purpose": "Cultura",
+    "received": "2026-11-27",
+    "region": "DIPUTACIÓN PROV. DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Concesión de subvenciones, destinadas a financiar proyectos y actividades de las orquestas simfónicas o de cámara profesionales y estables con sede en la demarcación de Barcelona (excluyendo Barcelona ciudad) durante la temporada 2026-2027",
+    "title_ca": "Concessió de subvencions, destinades a finançar projectes i activitats de les orquestres simfòniques o de cambra professionals i estables que tinguin la seva seu social a la demarcació de Barcelona (excloent Barcelona ciutat) durant la temporada 2026-2027",
+    "who": [
+     "entities"
+    ]
+   },
+   "945164": {
+    "budget": 4000000,
+    "checked": "2026-11-28",
+    "end": "2027-03-18",
+    "id": "945164",
+    "level": "ESTADO",
+    "organ": "INSTITUTO DE LA CINEMATOGRAFÍA Y DE LAS ARTES AUDIOVISUALES",
+    "purpose": "Cultura",
+    "received": "2026-11-27",
+    "region": "MINISTERIO DE CULTURA",
+    "start": "2027-02-01",
+    "term": "18/03/2027",
+    "title": "Resolución de 26 de noviembre de 2026 del Instituto de la Cinematografía y de las Artes Audiovisuales por la que se convocan ayudas a la distribución de películas de largometraje y conjuntos de cortometrajes comunitarios e iberoamericanos para el año 2027",
+    "title_ca": "",
+    "who": [
+     "business"
+    ]
+   },
+   "945201": {
+    "budget": 1000000,
+    "checked": "2026-11-28",
+    "end": "2027-01-18",
+    "id": "945201",
+    "level": "LOCAL",
+    "organ": "DIPUTACIÓN PROVINCIAL DE BARCELONA",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-27",
+    "region": "DIPUTACIÓN PROV. DE BARCELONA",
+    "start": "2026-12-04",
+    "term": "",
+    "title": "Subvenciones en régimen de concurrencia competitiva a favor de entidades sin finalidad de lucro que gestionan viviendas de inserción social, año 2027.",
+    "title_ca": "Subvencions en règim de concurrència competitiva a favor d'entitats sense finalitat de lucre que gestionen habitatges d'inserció social, any 2027.",
+    "who": [
+     "entities"
+    ]
+   },
+   "945229": {
+    "budget": 300000,
+    "checked": "2026-11-28",
+    "end": "",
+    "id": "945229",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT DE DRETS SOCIALS I INCLUSIÓ",
+    "purpose": "Servicios Sociales y Promoción Social",
+    "received": "2026-11-27",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "15 Dies Hàbils",
+    "title": "Proyectos de inversión en locales destinados al desarrollo de actividades de educación en el ocio por parte de entidades sin afán de lucro. Línea de actuación subvencionable en esta convocatoria: a) Inversiones destinadas a mejorar la seguridad",
+    "title_ca": "Projectes d'inversió en locals destinats al desenvolupament d'activitats d'educació en el lleure per part d'entitats sense afany de lucre. Línia d'actuació subvencionable en aquesta convocatòria: a) Inversions destinades a millorar la seguretat",
+    "who": [
+     "entities"
+    ]
+   },
+   "945238": {
+    "budget": 200000,
+    "checked": "2026-11-28",
+    "end": "2027-01-29",
+    "id": "945238",
+    "level": "LOCAL",
+    "organ": "DIPUTACIÓN PROVINCIAL DE BARCELONA",
+    "purpose": "Cultura",
+    "received": "2026-11-27",
+    "region": "DIPUTACIÓN PROV. DE BARCELONA",
+    "start": "",
+    "term": "",
+    "title": "Subvenciones Cocrea Bibliolab para financiar proyectos de creación comunitaria que se desarrollen en una o más bibliotecas o bibliobuses del Sistema de Lectura Pública de Cataluña en la província de Barcelona, 2027-2028",
+    "title_ca": "Subvencions Cocrea Bibliolab per finançar projectes de creació comunitària que es desenvolupin en una o més biblioteques o bibliobusos del Sistema de Lectura Pública de Catalunya a la Província de Barcelona, 2027-2028",
+    "who": [
+     "entities"
+    ]
+   },
+   "945340": {
+    "budget": 2194800,
+    "checked": "2026-11-28",
+    "end": "",
+    "id": "945340",
+    "level": "ESTADO",
+    "organ": "DIRECCIÓN GENERAL DEL LIBRO, DEL CÓMIC Y DE LA LECTURA",
+    "purpose": "Cultura",
+    "received": "2026-11-27",
+    "region": "MINISTERIO DE CULTURA",
+    "start": "",
+    "term": "Quince días hábiles contados a partir del día siguiente al de la publicación en el BOE",
+    "title": "Resolución de 27 de noviembre de 2026 de la Secretaría de Estado de Cultura por la que se convocan subvenciones, en régimen de concurrencia competitiva, para la promoción de la lectura y las letras españolas, correspondientes al año 2027",
+    "title_ca": "",
+    "who": [
+     "business",
+     "entities"
+    ]
+   },
+   "945376": {
+    "budget": 2300000,
+    "checked": "2026-11-28",
+    "end": "2027-01-18",
+    "id": "945376",
+    "level": "AUTONOMICA",
+    "organ": "INSTITUT CATALÀ DE LES EMPRESES CULTURALS (ICEC)",
+    "purpose": "Cultura",
+    "received": "2026-11-27",
+    "region": "CATALUÑA",
+    "start": "2026-12-18",
+    "term": "",
+    "title": "Resolución de convocatoria anticipada para la concesión de subvenciones para colaborar con salas privadas de Cataluña para apoyar la programación de espectáculos de artes escénicas",
+    "title_ca": "Resolució de convocatòria anticipada per a la concessió de subvencions per collaborar amb sales privades de Catalunya per donar suport a la programació d'espectacles d'arts escèniques",
+    "who": [
+     "business"
+    ]
+   },
+   "945390": {
+    "budget": 1817944,
+    "checked": "2026-11-28",
+    "end": "",
+    "id": "945390",
+    "level": "AUTONOMICA",
+    "organ": "DEPARTAMENT D'EMPRESA I TREBALL  ",
+    "purpose": "Fomento del Empleo",
+    "received": "2026-11-27",
+    "region": "CATALUÑA",
+    "start": "",
+    "term": "05 Dies Hàbils",
+    "title": "Subvenciones para la financiación de planes de formación del ámbito de Cataluña dirigidos a la capacitación para el desarrollo de las funciones relacionadas con el diálogo social y la negociación colectiva",
+    "title_ca": "Subvencions per al finanament de plans de formació de l'àmbit de Catalunya adreats a la capacitació per al desenvolupament de les funcions relacionades amb el diàleg social i la negociació collectiva",
+    "who": [
+     "entities"
+    ]
    }
   },
   "closed": [
-   "871366",
-   "871368",
-   "871377",
-   "871387",
-   "871409",
-   "871418",
-   "871422",
-   "871427",
-   "871443",
-   "871548",
-   "871569",
-   "871574",
-   "871575",
-   "871582",
    "871616",
    "871619",
    "871629",
@@ -5228,6 +5287,7 @@
    "936541",
    "936756",
    "936963",
+   "936968",
    "937166",
    "937168",
    "937238",
@@ -5291,6 +5351,7 @@
    "940151",
    "940152",
    "940153",
+   "940450",
    "940525",
    "940551",
    "940552",
@@ -5372,6 +5433,8 @@
    "943546",
    "943547",
    "943548",
+   "943812",
+   "943813",
    "943863",
    "943864",
    "943865",
@@ -5406,8 +5469,11 @@
    "944714",
    "944814",
    "944853",
-   "945086"
+   "945086",
+   "945255",
+   "945392",
+   "945397"
   ]
  },
- "fetched": "2026-11-27T16:09:33+01:00"
+ "fetched": "2026-11-28T00:29:17+01:00"
 }

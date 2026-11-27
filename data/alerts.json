@@ -2,46 +2,6 @@
  "data": [
   {
    "lines": [
-    "R4"
-   ],
-   "text": {
-    "ca": "Circulació amb demores que poden superar els 30 minuts a causa d'una incidència a la infraestructura.",
-    "es": "Circulación con demoras que pueden superar los 30 minutos a causa de una incidencia en la infraestructura."
-   }
-  },
-  {
-   "lines": [
-    "R8"
-   ],
-   "text": {
-    "ca": "A causa d'una incidència a la infraestructura a l'estació de Mollet-Sant Fost, els trens poden romandre aturats més temps de l'habitual en aproximar-se al punt afectat i patir demores que poden superar els 10 minuts.",
-    "es": "A causa de una incidencia en la infraestructura en la estación de Mollet-Sant Fost, los trenes pueden permanecer detenidos más tiempo de lo habitual al aproximarse al punto afectado y sufrir demoras que pueden superar los 10 minutos."
-   }
-  },
-  {
-   "lines": [
-    "R4",
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "ca": "Un cop resolta la incidència a la infraestructura entre Sitges i Vilanova i la Geltrú, els trens recuperen progressivament les freqüències de pas habituals, tot i que poden mantenir demores superiors als 15 minuts de mitjana.",
-    "es": "Una vez resuelta la incidencia en la infraestructura entre Sitges y Vilanova i la Geltrú, los trenes recuperan progresivamente sus frecuencias de paso habituales, aunque pueden mantener demoras superiores a 15 minutos de media."
-   }
-  },
-  {
-   "lines": [
-    "R4",
-    "R7",
-    "R8"
-   ],
-   "text": {
-    "ca": "Un cop resolta la incidència a la infraestructura entre Sitges i Vilanova i la Geltrú, els trens recuperen progressivament les freqüències de pas habituals.",
-    "es": "Una vez resuelta la incidencia en la infraestructura entre Sitges y Vilanova i la Geltrú, los trenes recuperan progresivamente sus frecuencias de paso habituales."
-   }
-  },
-  {
-   "lines": [
     "R7"
    ],
    "text": {
@@ -50,5 +10,5 @@
    }
   }
  ],
- "fetched": "2026-11-27T16:09:33+01:00"
+ "fetched": "2026-11-28T00:29:17+01:00"
 }

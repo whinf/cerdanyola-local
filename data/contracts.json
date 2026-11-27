@@ -771,8 +771,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
    ]
   },
   {
@@ -916,8 +916,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "ASSOCIACIO PLASTICFREEWARE",
-    "FUNBRAIN, SL"
+    "FUNBRAIN, SL",
+    "ASSOCIACIO PLASTICFREEWARE"
    ]
   },
   {
@@ -5527,49 +5527,6 @@
    ]
   },
   {
-   "amount": 187200.0,
-   "date": "2025-10-23",
-   "deadline": "2025-06-02T14:00",
-   "id": "16138154/155/2025/0001",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Formalització",
-   "title": "Gestió bar centre cívic Serraparera",
-   "type": "Administratiu especial",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/706d34f8-f753-408e-9b9e-3c91fd8634f7/300596415",
-   "winners": []
-  },
-  {
-   "amount": 165289.26,
-   "date": "2025-10-23",
-   "deadline": "2025-06-26T14:00",
-   "id": "16138154/151/2025/0006",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Formalització",
-   "title": "Manteniment en els equipaments educatius municipals",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/67227649-6373-489e-ac22-c211fad4a7ff/300596368",
-   "winners": [
-    "CONSTRUCCIONES FERTRES, SL"
-   ]
-  },
-  {
-   "amount": 512924.2,
-   "date": "2025-10-23",
-   "deadline": "2025-09-08T13:00",
-   "id": "11061850/CONTR-81/2025",
-   "lots": 0,
-   "organ": "Universitat Autònoma de Barcelona",
-   "phase": "Execució",
-   "title": "Subministrament, instal·lació i posada en marxa d’una plataforma de High Content Screening (HCS) per al cribratge de fàrmacs en cèl·lules i models cel·lulars 3D al Servei de Cultius Cel·lulars, Anticossos i Citometria (SCAC) de la Universit",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/3cbad02b-f820-480f-9bcc-2e35a1ed907f/300751251",
-   "winners": [
-    "Revvity España S.L."
-   ]
-  },
-  {
    "amount": 3000000.0,
    "date": "2025-09-02",
    "deadline": "2029-10-01T17:00",
@@ -5596,5 +5553,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-27T16:09:33+01:00"
+ "fetched": "2026-11-28T00:29:17+01:00"
 }
