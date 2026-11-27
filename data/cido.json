@@ -201,6 +201,39 @@
   {
    "end": "2026-11-30",
    "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Especialista en Diagnòstic per la Imatge - Radiologia abdominal",
+   "url": "https://cido.diba.cat/oposicions/22573020"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Especialista en Diagnòstic per la Imatge - Radiologia mamària",
+   "url": "https://cido.diba.cat/oposicions/22573084"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Especialista en psicologia clínica",
+   "url": "https://cido.diba.cat/oposicions/22572961"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
    "kind": "Laboral",
    "km": 10.2,
    "org": "Consorci Sanitari de Terrassa",
@@ -208,6 +241,149 @@
    "pool": false,
    "title": "1 plaça de Cap de Servei de Cardiologia",
    "url": "https://cido.diba.cat/oposicions/22304078"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Facultatiu especialista en Psiquiatria d'Hospitalització Domiciliaria (HAD)",
+   "url": "https://cido.diba.cat/oposicions/22573148"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en hematologia i hemoteràpia",
+   "url": "https://cido.diba.cat/oposicions/22573353"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal especialista en psicologia de salut laboral",
+   "url": "https://cido.diba.cat/oposicions/22572320"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en Anestesiologia i Reanimació",
+   "url": "https://cido.diba.cat/oposicions/22572489"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en Cirurgia General i Aparell Digestiu (cirurgia endocrina)",
+   "url": "https://cido.diba.cat/oposicions/22573444"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en Cirurgia General i Aparell Digestiu (cirurgia mamària)",
+   "url": "https://cido.diba.cat/oposicions/22573418"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en Psiquiatria (Centre Salut Mental Adults)",
+   "url": "https://cido.diba.cat/oposicions/22573404"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en cirurgia ortopèdica i traumatologia (especial dedicació mà-canell i colze)",
+   "url": "https://cido.diba.cat/oposicions/22573325"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en cirurgia plàstica i reparadora",
+   "url": "https://cido.diba.cat/oposicions/22572375"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en dermatologia",
+   "url": "https://cido.diba.cat/oposicions/22572439"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en medicina familiar i comunitària",
+   "url": "https://cido.diba.cat/oposicions/22572877"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A",
+   "kind": "Laboral",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Responsable de l'Àrea d'equipaments",
+   "url": "https://cido.diba.cat/oposicions/22573260"
+  },
+  {
+   "end": "2026-11-30",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 2,
+   "pool": false,
+   "title": "2 places de Personal mèdic per urgències de Cirurgia General i Aparell Digestiu",
+   "url": "https://cido.diba.cat/oposicions/22573116"
   },
   {
    "end": "2026-11-30",
@@ -476,6 +652,28 @@
   {
    "end": "2026-12-03",
    "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador ordinari amb destinació a l'Institut de Ciència Ambiental i Tecnologia Ambientals",
+   "url": "https://cido.diba.cat/oposicions/22573991"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.3,
+   "org": "Universitat Autònoma de Barcelona (UAB)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça d'Investigador ordinari amb destinació al Departament de Biologia Cel·lular, Fisiologia e Immunologia",
+   "url": "https://cido.diba.cat/oposicions/22573995"
+  },
+  {
+   "end": "2026-12-03",
+   "group": "A1",
    "kind": "Laboral",
    "km": 3.3,
    "org": "Universitat Autònoma de Barcelona (UAB)",
@@ -653,6 +851,17 @@
    "end": "2026-12-06",
    "group": "A1",
    "kind": "Laboral temporal",
+   "km": 7.8,
+   "org": "Consorci Corporació Sanitària Parc Taulí de Sabadell",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Metge especialista en Psiquiatria",
+   "url": "https://cido.diba.cat/oposicions/22572242"
+  },
+  {
+   "end": "2026-12-06",
+   "group": "A1",
+   "kind": "Laboral temporal",
    "km": 2.8,
    "org": "Consorci del Centre de Recerca Ecològica i Aplicacions Forestals (CREAF)",
    "places": 1,
@@ -815,6 +1024,28 @@
    "url": "https://cido.diba.cat/oposicions/22563590"
   },
   {
+   "end": "2026-12-10",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.2,
+   "org": "Consorci Institut Metròpoli",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic superior en cohesió social i urbana",
+   "url": "https://cido.diba.cat/oposicions/22572990"
+  },
+  {
+   "end": "2026-12-10",
+   "group": "A",
+   "kind": "Laboral temporal",
+   "km": 3.2,
+   "org": "Consorci Institut Metròpoli",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic superior en cohesió social i urbana en dades",
+   "url": "https://cido.diba.cat/oposicions/22572953"
+  },
+  {
    "end": "2026-12-11",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -824,6 +1055,17 @@
    "pool": false,
    "title": "1 plaça de Data Manager - Titulat de Grau Superior",
    "url": "https://cido.diba.cat/oposicions/22539605"
+  },
+  {
+   "end": "2026-12-11",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Digital Channels and Science Communication Officer",
+   "url": "https://cido.diba.cat/oposicions/22572565"
   },
   {
    "end": "2026-12-13",
@@ -890,6 +1132,17 @@
    "pool": true,
    "title": "1 plaça d'Oficial 2a administratiu",
    "url": "https://cido.diba.cat/oposicions/22537925"
+  },
+  {
+   "end": "2026-12-15",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 7.4,
+   "org": "Fundació Institut d'Investigació i Innovació Parc Taulí (I3PT)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Tècnic jurídic",
+   "url": "https://cido.diba.cat/oposicions/22572250"
   },
   {
    "end": "2026-12-15",
@@ -991,6 +1244,50 @@
    "url": "https://cido.diba.cat/oposicions/22526859"
   },
   {
+   "end": "2026-12-23",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en Cardiologia",
+   "url": "https://cido.diba.cat/oposicions/22573194"
+  },
+  {
+   "end": "2026-12-23",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 10.2,
+   "org": "Consorci Sanitari de Terrassa",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Personal mèdic especialista en Cardiologia (imatge cardíaca)",
+   "url": "https://cido.diba.cat/oposicions/22573223"
+  },
+  {
+   "end": "2026-12-24",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.1,
+   "org": "Ministerio de Ciencia, Innovación y Universidades - Consejo Superior de Investigaciones Científicas (CSIC) - Institut de Ciències Espacials (ICE)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Software Engineer - Scheduler Development for the Cherenkov Telescope Array Observatory",
+   "url": "https://cido.diba.cat/oposicions/22570892"
+  },
+  {
+   "end": "2026-12-24",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 3.1,
+   "org": "Ministerio de Ciencia, Innovación y Universidades - Consejo Superior de Investigaciones Científicas (CSIC) - Institut de Ciències Espacials (ICE)",
+   "places": 2,
+   "pool": false,
+   "title": "2 places de Postdoctoral Positions in Simulation-Based Inference for Cosmology",
+   "url": "https://cido.diba.cat/oposicions/22570945"
+  },
+  {
    "end": "2026-12-26",
    "group": "A1",
    "kind": "Laboral temporal",
@@ -1011,6 +1308,17 @@
    "pool": false,
    "title": "2 places de Postdoctoral Junior Researcher position in Theory Group",
    "url": "https://cido.diba.cat/oposicions/22491711"
+  },
+  {
+   "end": "2027-01-31",
+   "group": "A1",
+   "kind": "Laboral temporal",
+   "km": 2.8,
+   "org": "Institut Català de Nanociència i Nanotecnologia (ICN2)",
+   "places": 1,
+   "pool": false,
+   "title": "1 plaça de Postdoctoral Researcher - Topological and Altermagnetic Spin Torques",
+   "url": "https://cido.diba.cat/oposicions/22572538"
   },
   {
    "end": "2027-01-31",
@@ -1398,5 +1706,5 @@
    "url": "https://cido.diba.cat/oposicions/17499447"
   }
  ],
- "fetched": "2026-11-27T03:14:00+01:00"
+ "fetched": "2026-11-27T16:09:33+01:00"
 }

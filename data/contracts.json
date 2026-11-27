@@ -1,6 +1,60 @@
 {
  "data": [
   {
+   "amount": 10130.0,
+   "date": "2026-11-26",
+   "deadline": "2026-11-25T23:59",
+   "id": "29827823/253/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Anul·lació",
+   "title": "Subministrament material informatic per al centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/6115eb62-ca02-4825-afd4-89805e40077f/300952521",
+   "winners": []
+  },
+  {
+   "amount": 105751.72,
+   "date": "2026-11-26",
+   "deadline": "2026-11-17T23:57",
+   "id": "29827823/240/2026",
+   "lots": 0,
+   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
+   "phase": "Formalització",
+   "title": "Subministrament, instal·lació i configuració d'una solució d’emmagatzematge huawei oceanstore o equivalent i còpia de seguretat (backup) mitjançant cabina nas qnap o equivalent pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
+   "type": "Subministraments",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c8d82ea5-601d-4386-810a-a4f3d7a0b1a3/300951488",
+   "winners": [
+    "MAIN MEMORY, S.A"
+   ]
+  },
+  {
+   "amount": 41146.32,
+   "date": "2026-11-26",
+   "deadline": "2026-01-29T14:00",
+   "id": "16138154/154/2025/0035",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Servei redacció projecte carrers Ramon Cases i Murillo",
+   "type": "Serveis",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/421e3863-a5ea-45dc-950d-4b7dc5abce1f/300951992",
+   "winners": []
+  },
+  {
+   "amount": 149912.9,
+   "date": "2026-11-26",
+   "deadline": "2026-01-28T14:00",
+   "id": "16138154/151/2025/0014",
+   "lots": 0,
+   "organ": "Ajuntament de Cerdanyola del Vallès",
+   "phase": "Expedient en avaluació",
+   "title": "Obres projecte de millora clavegueram al carrer Mare de Deu de les Feixes.",
+   "type": "Obres",
+   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f295300b-52ff-46ef-931d-df2ff91d52e3/300952038",
+   "winners": []
+  },
+  {
    "amount": 340240.0,
    "date": "2026-11-25",
    "deadline": "2026-12-16T11:00",
@@ -221,21 +275,6 @@
    "type": "Concessió de serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/a9d2c294-ffde-4623-8a8c-32af27837b6a/300947030",
    "winners": []
-  },
-  {
-   "amount": 105751.72,
-   "date": "2026-11-20",
-   "deadline": "2026-11-17T23:57",
-   "id": "29827823/240/2026",
-   "lots": 0,
-   "organ": "Centre de Recerca Agrigenòmica (CRAG)",
-   "phase": "Adjudicació",
-   "title": "Subministrament, instal·lació i configuració d'una solució d’emmagatzematge huawei oceanstore o equivalent i còpia de seguretat (backup) mitjançant cabina nas qnap o equivalent pel centre de recerca en agrigenòmica csic-irta-uab-ub crag.",
-   "type": "Subministraments",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/c8d82ea5-601d-4386-810a-a4f3d7a0b1a3/300945052",
-   "winners": [
-    "MAIN MEMORY, S.A"
-   ]
   },
   {
    "amount": 344284.32,
@@ -732,8 +771,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/153bf142-cdaa-45fc-b3ba-f0c908a9f1e8/300929299",
    "winners": [
-    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8",
-    "GRUP CARLES, GESTIÓ I PROJECTES, SL"
+    "GRUP CARLES, GESTIÓ I PROJECTES, SL",
+    "LLEAL I TULSÀ & ASSOCIATS, SOCIETAT LIMITADA I ASSESSORIA JURÍDICA LLEAL TULSA, SOCIETAT LIMITADA PROFESSIONAL, UTE LLEI 18/1982 NÚMERO 8"
    ]
   },
   {
@@ -877,8 +916,8 @@
    "type": "Serveis",
    "url": "https://contractaciopublica.cat/ca/detall-publicacio/35176519-81f9-460d-bfeb-2c3ca22972c2/300927023",
    "winners": [
-    "FUNBRAIN, SL",
-    "ASSOCIACIO PLASTICFREEWARE"
+    "ASSOCIACIO PLASTICFREEWARE",
+    "FUNBRAIN, SL"
    ]
   },
   {
@@ -2872,19 +2911,6 @@
    ]
   },
   {
-   "amount": 41146.32,
-   "date": "2026-06-19",
-   "deadline": "2026-01-29T14:00",
-   "id": "16138154/154/2025/0035",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Servei redacció projecte carrers Ramon Cases i Murillo",
-   "type": "Serveis",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/421e3863-a5ea-45dc-950d-4b7dc5abce1f/300792457",
-   "winners": []
-  },
-  {
    "amount": 651981.96,
    "date": "2026-06-19",
    "deadline": "2022-12-21T14:00",
@@ -4509,19 +4535,6 @@
    ]
   },
   {
-   "amount": 149912.9,
-   "date": "2026-01-30",
-   "deadline": "2026-01-28T14:00",
-   "id": "16138154/151/2025/0014",
-   "lots": 0,
-   "organ": "Ajuntament de Cerdanyola del Vallès",
-   "phase": "Expedient en avaluació",
-   "title": "Obres projecte de millora clavegueram al carrer Mare de Deu de les Feixes.",
-   "type": "Obres",
-   "url": "https://contractaciopublica.cat/ca/detall-publicacio/f295300b-52ff-46ef-931d-df2ff91d52e3/300681129",
-   "winners": []
-  },
-  {
    "amount": 50784.0,
    "date": "2026-01-28",
    "deadline": "2025-12-12T14:00",
@@ -5583,5 +5596,5 @@
    "winners": []
   }
  ],
- "fetched": "2026-11-27T03:14:00+01:00"
+ "fetched": "2026-11-27T16:09:33+01:00"
 }
